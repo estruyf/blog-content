@@ -1,0 +1,633 @@
+{
+  "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.experimental": true,
+  "frontMatter.git.enabled": true,
+  "frontMatter.dashboard.content.pagination": true,
+  "frontMatter.git.actions": true,
+  "frontMatter.dashboard.contentTags": "tags",
+  "frontMatter.content.autoUpdateDate": false,
+  "frontMatter.content.fmHighlight": false,
+  "frontMatter.content.wysiwyg": true,
+  "frontMatter.extensibility.scripts": [
+    "[[workspace]]/.frontmatter/ui/external.js"
+  ],
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Pages",
+      "path": "[[workspace]]/content",
+      "excludeSubdir": true
+    },
+    {
+      "title": "Blog posts",
+      "path": "[[workspace]]/content/posts"
+    },
+    {
+      "title": "projects",
+      "path": "[[workspace]]/content/projects"
+    }
+  ],
+  "frontMatter.content.sorting": [
+    {
+      "title": "Date (asc)",
+      "name": "date",
+      "order": "asc",
+      "type": "date"
+    },
+    {
+      "title": "Date (desc)",
+      "name": "date",
+      "order": "desc",
+      "type": "date"
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "title": "Title (long)",
+          "name": "longTitle",
+          "type": "string"
+        },
+        {
+          "title": "Custom field",
+          "name": "customField",
+          "type": "customField"
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "slug",
+          "required": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string",
+          "required": true
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "required": true
+        },
+        {
+          "title": "Modified date",
+          "name": "lastmod",
+          "type": "datetime"
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image",
+          "default": "{{ogImage}}",
+          "required": true
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft",
+          "default": false
+        },
+        {
+          "title": "Comments",
+          "name": "comments",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags",
+          "default": [],
+          "required": true
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string",
+          "default": "post",
+          "hidden": true
+        }
+      ]
+    }
+  ],
+  "frontMatter.content.placeholders": [
+    {
+      "id": "ogImage",
+      "script": "./scripts/og-image.js",
+      "command": "~/.nvm/versions/node/v16.11.1/bin/node"
+    }
+  ],
+  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.content.defaultSorting": "DateDesc",
+  "frontMatter.custom.scripts": [
+    {
+      "title": "Generate social image",
+      "script": "./scripts/social-img.js",
+      "command": "~/.nvm/versions/node/v16.19.0/bin/node"
+    },
+    {
+      "title": "LQIP (macOS)",
+      "script": "./scripts/lqip.js",
+      "command": "~/.nvm/versions/node/v16.19.0/bin/node"
+    },
+    {
+      "title": "Publish GitHub Stars profile",
+      "script": "./scripts/github-stars.js",
+      "command": "~/.nvm/versions/node/v16.19.0/bin/node"
+    },
+    {
+      "title": "Optimize media",
+      "script": "./scripts/media.js",
+      "command": "~/.nvm/versions/node/v16.19.0/bin/node",
+      "type": "mediaFile"
+    },
+    {
+      "title": "Optimize images",
+      "script": "./scripts/media-all.js",
+      "command": "~/.nvm/versions/node/v16.19.0/bin/node",
+      "type": "mediaFolder"
+    }
+  ],
+  "frontMatter.dashboard.openOnStart": true,
+  "frontMatter.taxonomy.categories": [
+    "Active Directory",
+    "Add-in",
+    "Apps",
+    "Azure",
+    "Backup",
+    "Branding",
+    "Central Administration",
+    "Conference",
+    "Cross-site Publishing",
+    "Delve",
+    "Development",
+    "Display Templates",
+    "ECMAscript",
+    "JavaScript",
+    "MUI",
+    "Master Page",
+    "Microsoft Graph",
+    "My Site",
+    "Navigation",
+    "Node.js",
+    "Office",
+    "Office 365",
+    "Office Graph",
+    "Office Web Apps",
+    "Page Layout",
+    "Permissions",
+    "Personal",
+    "PowerApps",
+    "REST",
+    "Ribbon",
+    "SPC12",
+    "Search",
+    "SharePoint",
+    "SharePoint 2013",
+    "SharePoint Designer",
+    "SharePoint Online",
+    "SharePoint Saturday",
+    "Social",
+    "Speaking",
+    "Styling",
+    "Testing",
+    "UI Fabric",
+    "Uncategorized",
+    "VSTS",
+    "Views",
+    "Web Part",
+    "Workflows",
+    "XSLT"
+  ],
+  "frontMatter.taxonomy.slugPrefix": "/",
+  "frontMatter.taxonomy.slugSuffix": "/",
+  "frontMatter.taxonomy.tags": [
+    "AI",
+    "API",
+    "Accounts",
+    "Actions",
+    "Active Directory",
+    "Add-in",
+    "Add-in; Office; Outlook",
+    "Ajax",
+    "Alexa",
+    "Algolia",
+    "Android",
+    "AngularJS",
+    "App Services",
+    "Application",
+    "Application Customizer",
+    "Application Page",
+    "Apps",
+    "Asset Library",
+    "Authentication",
+    "Automation",
+    "Azure",
+    "Azure AD",
+    "Azure DevOps",
+    "Azure Functions",
+    "Azure Web PubSub",
+    "BIWUG",
+    "Backup",
+    "Best Practices",
+    "Blog",
+    "Branding",
+    "Breadcrumb",
+    "Browsers",
+    "Builds",
+    "Busy Light",
+    "C#",
+    "CDN",
+    "CI/CD",
+    "CSR",
+    "CSS",
+    "Caching",
+    "Callout",
+    "Callouts",
+    "Career",
+    "Central Administration",
+    "Chart",
+    "Check In",
+    "Claims",
+    "Code coverage",
+    "Codespaces",
+    "Color Palettes",
+    "Comments",
+    "Components",
+    "Compose form",
+    "Composed Looks",
+    "Conference",
+    "Configuration",
+    "Content Query",
+    "CosmosDB",
+    "Crawled Property",
+    "Cross-site Publishing",
+    "Custom Actions",
+    "Cypress",
+    "Database",
+    "Debugging",
+    "Delve",
+    "Dependencies",
+    "Deployment",
+    "Design Files",
+    "DevOps",
+    "Development",
+    "Devhack",
+    "Discussion List",
+    "Display Template",
+    "Display Templates",
+    "Document Sets",
+    "Documentation",
+    "Documents",
+    "E2E",
+    "ECMAscript",
+    "ESPC14",
+    "Error",
+    "Excel",
+    "Extensions",
+    "External users",
+    "Farm",
+    "Fiddler",
+    "Fields",
+    "Font Scheme",
+    "Fonts",
+    "Footer",
+    "Functions",
+    "GitHub",
+    "GitHub Actions",
+    "Gitpod",
+    "Google",
+    "Google Fonts",
+    "Graph",
+    "GraphQL",
+    "Grouping",
+    "Guest users",
+    "Gulp",
+    "HTML",
+    "Hardware",
+    "Headset",
+    "Home automation",
+    "Hosting",
+    "Hover Panels",
+    "HubSite",
+    "Hugo",
+    "Hybrid",
+    "IE9",
+    "Icons",
+    "Image Dimensions",
+    "JS LInk",
+    "Jabra",
+    "Jamstack",
+    "JavaScript",
+    "Language",
+    "Likes",
+    "List views",
+    "ListView Command Set",
+    "Localization",
+    "Logic Apps",
+    "MUI",
+    "MVP",
+    "Mail",
+    "Managed Metadata",
+    "Managed Properties",
+    "Managed Property",
+    "Markdown",
+    "Master Page",
+    "Meeting Workspace",
+    "Metadata",
+    "Microsoft Edge",
+    "Microsoft Graph",
+    "Microsoft Graph Toolkit",
+    "Microsoft Teams",
+    "MkDocs",
+    "Modern Sites",
+    "Multilingual",
+    "My Links",
+    "My Site",
+    "MySQL",
+    "NPM",
+    "Navigation",
+    "Next.js",
+    "Node.js",
+    "NuGet",
+    "OAuth",
+    "OWA",
+    "Office",
+    "Office 365",
+    "Office 365 CLI",
+    "Office 365 Dev",
+    "Office 365 Groups",
+    "Office 365 public CDN",
+    "Office App",
+    "Office Graph",
+    "Office Web Apps",
+    "Outlook",
+    "Outlook module",
+    "PWA",
+    "Package",
+    "Page Layout",
+    "Page Layouts",
+    "Page State",
+    "Password",
+    "People Results",
+    "Permissions",
+    "Personal",
+    "Pie",
+    "PnP",
+    "PowerApps",
+    "PowerPoint",
+    "PowerShell",
+    "Productivity",
+    "Project",
+    "Property Pane",
+    "Provisioning",
+    "Publishing Page",
+    "Puppeteer",
+    "Quiesce",
+    "REST",
+    "Rating",
+    "Raycast",
+    "React",
+    "Refiner",
+    "Refiners",
+    "Reorder",
+    "Review",
+    "Ribbon",
+    "SOAP",
+    "SPC Adriatics",
+    "SPFx",
+    "SPS",
+    "SPSBCN",
+    "SPSBE",
+    "SPSBE2014",
+    "SPSBEX",
+    "SPSLondon",
+    "SPSMUC",
+    "SPSNL",
+    "SPSOslo",
+    "SPSParis",
+    "SPSSTHLM",
+    "Sandboxed",
+    "Search",
+    "Search Center",
+    "Search Results",
+    "Searchbox",
+    "Security",
+    "Serverless",
+    "Setup",
+    "SharePoint",
+    "SharePoint Designer",
+    "SharePoint Foundation",
+    "SharePoint Framework",
+    "SharePoint Online",
+    "SharePoint Saturday",
+    "SharePoint Server",
+    "Sharing",
+    "Slack",
+    "Slidev",
+    "Social",
+    "Social Actions",
+    "Social Features",
+    "Solution",
+    "Sonos",
+    "Sorting",
+    "Speaking",
+    "Startup",
+    "Static site",
+    "StyleSheets",
+    "Styling",
+    "Synonyms",
+    "Task pane",
+    "Team news",
+    "Testing",
+    "Theme",
+    "Themes",
+    "Theming",
+    "Timer Jobs",
+    "Tips",
+    "Top Navigation",
+    "Translations",
+    "Troubleshooting",
+    "TypeScript",
+    "UI",
+    "UI Fabric",
+    "UI Tests",
+    "Unified API",
+    "Unique ID",
+    "Unit tests",
+    "VSCode",
+    "VSTO",
+    "VSTS",
+    "Variations",
+    "Vercel",
+    "Views",
+    "Visual Studio",
+    "Visual Studio Code",
+    "Visual Studio Team Services",
+    "Visualisation",
+    "Viva",
+    "Viva Connections",
+    "WSL",
+    "Web API",
+    "Web App",
+    "Web Font",
+    "Web Part",
+    "Web Services",
+    "WebSockets",
+    "Webhook",
+    "Webpack",
+    "Webview",
+    "Word",
+    "Workflow",
+    "XSLT",
+    "Yeoman",
+    "azure storage",
+    "client object model",
+    "cloudflare",
+    "cors",
+    "iOS",
+    "jQuery",
+    "jQuery UI",
+    "job",
+    "minimal.master",
+    "mocks",
+    "personal",
+    "recap",
+    "services",
+    "sharepoint-framework",
+    "tasks",
+    "tool",
+    "v4.master"
+  ],
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.taxonomy.customTaxonomy": [
+    {
+      "id": "customTags",
+      "options": [
+        "dsafdfas"
+      ]
+    }
+  ],
+  "frontMatter.data.files": [
+    {
+      "id": "projects",
+      "title": "Projects",
+      "file": "[[workspace]]/themes/eliostruyf-v2/data/projects.json",
+      "fileType": "json",
+      "labelField": "title",
+      "schema": {
+        "title": "Sponsors",
+        "type": "object",
+        "required": [
+          "title",
+          "href"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ],
+  "frontMatter.data.folders": [
+    {
+      "id": "Testable",
+      "path": "[[workspace]]/themes/eliostruyf-v2/data/",
+      "labelField": "title",
+      "schema": {
+        "title": "Sponsors",
+        "type": "object",
+        "required": [
+          "title",
+          "href"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ],
+  "frontMatter.content.snippets": {
+    "Image snippet": {
+      "body": "{{< caption-new \"[[&mediaUrl]]\" \"[[caption]]\" >}}",
+      "isMediaSnippet": true,
+      "description": ""
+    },
+    "Video snippet": {
+      "body": [
+        "{{< video \"[[&mediaUrl]]\" \"[[caption]]\" >}}"
+      ],
+      "isMediaSnippet": true
+    },
+    "Highlight (single)": {
+      "description": "Creates a code highlighting box",
+      "body": [
+        "{{< highlight [[type]] \"linenos=table,noclasses=false\" >}}",
+        "[[&selection]]",
+        "{{< / highlight >}}"
+      ],
+      "fields": [
+        {
+          "name": "type",
+          "title": "Language",
+          "type": "choice",
+          "choices": [
+            "html",
+            "css",
+            "typescript",
+            "json"
+          ],
+          "default": "typescript"
+        },
+        {
+          "name": "selection",
+          "title": "Selection",
+          "type": "string",
+          "default": "FM_SELECTED_TEXT"
+        }
+      ]
+    },
+    "Blockquote": {
+      "body": "{{< blockquote type=\"[[type]]\" text=\"[[&selection]]\" >}}",
+      "description": "Creates a blockquote",
+      "fields": [
+        {
+          "name": "type",
+          "title": "Type",
+          "type": "choice",
+          "choices": [
+            "info",
+            "important"
+          ],
+          "default": "info"
+        },
+        {
+          "name": "selection",
+          "title": "Selection",
+          "type": "string",
+          "default": "FM_SELECTED_TEXT"
+        }
+      ]
+    }
+  }
+}
