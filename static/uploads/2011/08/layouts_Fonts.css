@@ -1,0 +1,35 @@
+/*
+ * 
+ * layouts.css
+ * 
+ */
+
+/* font-family */
+.ms-formula, .ms-templatepicker select, .ms-propertysheet th.ms-vh2-nofilter-notextalign, .ms-dspadapterlist, .ms-sectionheader, .ms-linksectionheader, .ms-sectionhighlight-top, table.ms-pageinformation, table.ms-createpageinformation, .ms-pageinformation table td,.ms-createpageinformation table td, .ms-pageinformation h3.ms-standardheader, .ms-vh2-nofilter,.ms-vh2-nofilter-notextalign, .UserButton, .ms-subsmanageheader, .ms-subsmanagecell, .ms-smallheader, th.ms-smallheader, .ms-wikifieldheader, .ms-pickerdropdown, .ms-dialogHeaderDescription, .ms-dialogHelpLink, .ms-dialogHelpLink a, .ms-dialogBodyMain, .ms-dialogButtonCell, .ms-dialogButtonCell INPUT, .ms-create-h2, .ms-create-h2b, .ms-create-h2d, .ms-create-h3, .ms-create-sectionheader, .ms-create-listitem-a, .ms-listedit table.ms-pageinformation, .ms-listedit .ms-pageinformation table td, .ms-listedit .ms-propertysheet, .ms-listedit .ms-descriptiontext, .ms-listedit .ms-standardheader, .ms-listedit .ms-linksectionheader, .ms-listedit .ms-linksectionheader .ms-standardheader, .ms-inputuserfield, .ms-formlabel, .ms-long {
+
+}
+
+/* font-size */
+.ms-create-h3, .ms-create-listitem-a, .ms-rtedialog-input {
+	font-size:1em;
+}
+.ms-wikifieldheader {
+	font-size: 1.2em;
+}
+.ms-create-h2, .ms-create-h2b, .ms-create-h2d, .ms-create-sectionheader {
+	font-size: 1.5em;
+}
+
+.ms-formula, .ms-templatepicker select, .ms-dspadapterlist, .ms-authoringcontrols, .ms-sectionheader, .ms-linksectionheader, .ms-sectionhighlight-top, table.ms-pageinformation, table.ms-createpageinformation, .ms-pageinformation table td, .ms-createpageinformation table td, .ms-vh2-nofilter, .ms-vh2-nofilter-notextalign, .UserButton, .ms-subsmanageheader, .ms-smallheader,th.ms-smallheader, .ms-dialogHeaderDescription, .ms-dialogHelpLink, .ms-dialogHelpLink a, .ms-dialogBodyMain, .ms-dialogButtonCell, .ms-dialogButtonCell INPUT, .ms-inputuserfield, .ms-long {
+	font-size:8pt;
+}
+.ms-pickerdropdown, .ms-listedit .ms-standardheader, .ms-listedit .ms-linksectionheader, .ms-listedit .ms-linksectionheader .ms-standardheader {
+	font-size: 10pt;
+}
+.ms-pageinformation h3.ms-standardheader {
+	font-size: 11pt;
+}
+
+.ms-sectionline, .ms-dtinput, .ms-dttimeinput {
+	font-size: 0px;
+}

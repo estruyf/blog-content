@@ -1,0 +1,118 @@
+/*
+ * 
+ * COREV4.css
+ * 
+ */
+
+/* font-family */
+body,
+.ms-toolbar, .ms-menutoolbar td a, td.ms-menutoolbarheader, .ms-listheaderlabel, .ms-viewselector, .ms-viewselectortext, .ms-viewselectorhover, .ms-paging, .ms-viewselect a:link, select, .ms-input, table.ms-navitem td, span.ms-navitem, .ms-nav, .ms-titlearea, .ms-pagetitle, .ms-propertysheet th.ms-vh2, .ms-propertysheet th.ms-vh2-nofilter, .ms-descriptiontext, .ms-statusdescriptiontext, .ms-webpartpagedescriptionn, .ms-propertysheet th.ms-linksectionheader, .ms-propertysheet, .ms-propertysheet th, .ms-vh, .ms-vh2, .ms-vh-icon, .ms-vh-icon-empty, .ms-vhImage, .ms-gb, .ms-gb2, .ms-gbload, .ms-vb, .ms-vb2, .ms-vb-tall, .ms-vb-user, .ms-vh2-nograd, .ms-vh3-nograd, .ms-vh2-nograd-icon, .ms-vh2-nofilter-icon, .ms-pb, .ms-pb-selected, .ms-ph, th.ms-vh3-nograd, .ms-pb a, .ms-pb-selected a, th .ms-vb, .ms-vh2-nofilter-icon, th.ms-vh2-nograd, th.ms-vh2-nograd-icon, a.ms-addnew, .ms-error, .ms-WPTitle, .ms-WPBody, .ms-WPBody td, table.ms-listviewtable > tbody > tr > td.ms-stylebox, .ms-stylelabel, .ms-styleheader, .ms-stylebody, .ms-pickerwait, .ms-formvalidation, .ms-ribbontabswitchloading span, .ms-welcomepageheader, div.ms-MenuUIPopupBody .ms-MenuUIPopupScreen, div.ms-MenuUIPopupBody.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner, div.ms-MenuUIPopupBody.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner div, .ms-wpadder-categoryColumn, .ms-wpadder-categoryColumn TD, .ms-wpadder-items, .ms-wpadder-upload INPUT, .ms-wpadder-upload BUTTON,
+.ms-wpadder-tabTable TH, .ms-wpadder-description, .ms-wpadder-zoneArea BUTTON, .ms-wpadder-sectionhead, .ms-wpadder-wpname, .ms-SPLink, .ms-siteactionsmenuinner, .ms-siteactionsmenuhover, .ms-welcomeMenu, .ms-socialNotif-Container, .s4-titletable, .ms-ltviewselectormenuheader .ms-viewselector a, .ms-ltviewselectormenuheader .ms-viewselectorhover a, .s4-search select, body #pageStatusBar, .ms-rteElement-Callout4, .ms-rteStyle-Normal, .ms-rte-autocomplete, .ms-rte-wpbox, .ms-rtedialog, .ms-dlgTitleText, .ms-linksection-level1, .ms-linksection-level2, .ms-ratingPopup, .ms-developerdashboard > table tr td, .ms-cui-ribbon, .ms-cui-menu, .ms-cui-toolbar-toolbar, .ms-cui-contextmenu-inner, .ms-cui-cb-input, .ms-cui-tb, .ms-cui-spn-txtbx, .ms-cui-tooltip {
+	
+}
+.ms-rteFontFace-1, .ms-rteFontFace-2, .ms-rteFontFace-3, .ms-rteFontFace-4, .ms-rteFontFace-5, .ms-rteFontFace-6, .ms-rteFontFace-7, .ms-rteFontFace-8, .ms-rteFontFace-9, .ms-rteFontFace-10, .ms-rteFontFace-11 {}
+.ms-rteThemeFontFace-1, .ms-rteThemeFontFace-2 {}
+
+/* font-size */
+.s4-ctx span {
+	font-size: 0pt;
+}
+.ms-PartSpacingVertical, .ms-PartSpacingHorizontal {
+	font-size: 1pt;
+}
+body,
+.ms-toolbar, .ms-menutoolbar td a, .ms-listheaderlabel, .ms-viewselector, .ms-viewselectortext, .ms-viewselectorhover, .ms-paging, .ms-viewselect a:link, select, .ms-input, .ms-titlearea, .ms-descriptiontext, .ms-statusdescriptiontext, .ms-webpartpagedescription, .ms-propertysheet th.ms-linksectionheader, .ms-propertysheet th, .ms-vh, .ms-vh2, .ms-vh-icon, .ms-vh-icon-empty, .ms-vhImage, .ms-gb, .ms-gb2, .ms-gbload, .ms-vb, .ms-vb2, .ms-vb-tall, .ms-vb-user, .ms-vh2-nograd, .ms-vh3-nograd, .ms-vh2-nograd-icon, .ms-vh2-nofilter-icon, .ms-pb, .ms-pb-selected, .ms-ph, th.ms-vh3-nograd, .ms-pb a, .ms-pb-selected a, th .ms-vb, .ms-vh2-nofilter-icon, th.ms-vh2-nograd, th.ms-vh2-nograd-icon, a.ms-addnew, .ms-error, .ms-WPBody, .ms-WPBody td, .ms-stylelabel, .ms-stylebody, .ms-pickerwait, .ms-formvalidation, .ms-MenuUIItemTableCell, .ms-MenuUIItemTableCellCompact, .ms-MenuUILabel, .ms-MenuUILabelRtL, .ms-menuuilabelcompact, .ms-menuuilabelcompactRtl, .ms-wpadder-categoryColumn, .ms-wpadder-categoryColumn TD, .ms-wpadder-items, .ms-wpadder-upload INPUT, .ms-wpadder-upload BUTTON, .ms-wpadder-tabTable TH, .ms-wpadder-description, .ms-wpadder-zoneArea BUTTON, .ms-siteactionsmenu, .s4-titletable, .s4-breadcrumb-menu, .ms-rteStyle-Normal, .ms-rte-wpbox, .ms-rtedialog, .ms-linksection-level1 ul li a, .ms-linksection-level2 ul li, .ms-ratingPopup, .ms-developerdashboard > table tr td, .ms-developerdashboard > table th, .ms-developerdashboardnav ul li a, .ms-cui-ribbon, .ms-cui-menu, .ms-cui-toolbar-toolbar, .ms-cui-contextmenu-inner, .ms-cui-cb-input, .ms-cui-tb, .ms-cui-spn-txtbx {
+	font-size: 8pt;
+}
+.s4-search select {
+	font-size: 9pt;
+}
+td.ms-menutoolbarheader, .ms-separator, .ms-WPTitle, .ms-welcomepageheader {
+	font-size: 10pt;
+}
+..ms-piclib-slideshow .ms-formdescription, .ms-ribbontabswitchloading span, .ms-linksection-level1 h3, .ms-linksection-level2 h3 {
+	font-size: 11pt;
+}
+.ms-pagetitle {
+	font-size: 16pt;
+}
+
+.ms-cui-TabRowLeft, .s4-itm-hdrcol {
+	font-size: 0px;
+}
+.ms-1pxfont, div.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner ul.ms-MenuUIUL div.ms-MenuUISeparator,div.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner ul.ms-MenuUIUL div.ms-MenuUISeparatorRtL,div.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner ul.ms-MenuUIUL div.ms-MenuUISeparatorLarge,div.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner ul.ms-MenuUIUL div.ms-MenuUISeparatorLargeRtl, .ms-cui-ctl-menu32clear, .ms-cui-spn-imgcnt {
+	font-size: 1px;
+}
+.ms-MenuUISeparator, .ms-MenuUISeparatorRtL, .ms-MenuUISeparatorLarge, .ms-MenuUISeparatorLargeRtl {
+	font-size: 2px;
+}
+.ms-uploadbtnlink button {
+	font-size: 14px;
+}
+
+.s4-superscript {
+	font-size: 0.6em;
+}
+.ms-libraryFileDlgView th {
+	font-size: 0.7em;
+}
+.s4-titletext .ms-titlewpTitleArea {
+	font-size: 0.72em;
+}
+.ms-SPLink {
+	font-size: 0.8em;
+}
+.ms-propertysheet, .ms-quickLaunch h3, .ms-propertysheet, .ms-standardheader, .ms-WPBody table, .ms-pagecaption, .ms-welcomeMenu, .ms-socialNotif-Container, .s4-title .s4-pagedescription, .s4-title .s4uniqpermdescription, body #pageStatusBar, .ms-rteTable-1, .ms-rteTable-6, .ms-rte-autocomplete, .ms-dlgLoadingText, .ms-cui-tooltip, .ms-cui-tooltip h1, .ms-cui-tooltip-clear {
+	font-size: 1em;
+}
+.ms-KFHead, div.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner div.ms-MenuUILarge ul.ms-MenuUIUL div.ms-MenuUIULItem a.ms-MenuUIULLink,div.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner div.ms-MenuUILargeRtL ul.ms-MenuUIUL div.ms-MenuUIULItem a.ms-MenuUIULLink, .s4-search input, .s4-dlg-err-itmName, .s4-titletext h1.ms-fileDlgListTitle, .s4-titletext h1.ms-fileDlgAllContentTitle, .ms-fileDlgSectionTitle {
+	font-size: 1.1em;
+}
+.s4-ql ul.root > li > .menu-item, .s4-qlheader, .s4-qlheader:visited {
+	font-size: 1.2em;
+}
+.ms-wpadder-sectionhead, .ms-wpadder-wpname, body #s4-simple-gobackcont, .ms-rteStyle-Tagline, .ms-dlgTitleText {
+	font-size: 1.3em;
+}
+.s4-title h1, .s4-title h2, .ms-titlewpTitleArea .ms-pagetitle, .ms-ltviewselectormenuheader .ms-viewselector a, .ms-ltviewselectormenuheader .ms-viewselectorhover a, body #s4-simple-card h1 {
+	font-size: 1.4em;
+}
+.s4-popuptitle h1 {
+	font-size: 1.7em;
+}
+
+.ms-quicklaunchheader {
+	font-size: inherit;
+}
+
+.ms-MenuUIPopupBody table {
+	font-size: 100%;
+}
+
+/* Headings */
+.ms-WPBody h1 { font-size: 200%; }
+.ms-WPBody h2 { font-size: 150%; }
+.ms-WPBody h3 { font-size: 120%; }
+.ms-WPBody h4 { font-size: 100%; }
+.ms-WPBody h5 { font-size: 80%; }
+.ms-WPBody h6 { font-size: 65%; }
+
+.ms-rteElement-H1 { font-size: 2em; }
+.ms-rteElement-H2 { font-size: 1.3em; }
+.ms-rteElement-H3 { font-size: 1em; }
+.ms-rteElement-H4 { font-size: 1em; }
+
+.ms-rteElement-H1B { font-size: 2em; }
+.ms-rteElement-H2B { font-size: 1.3em; }
+.ms-rteElement-H3B { font-size: 2.2em; }
+.ms-rteElement-H4B { font-size: 1em; }
+
+/* Font sizes */
+.ms-rteFontSize-1 { font-size: 8pt; }
+.ms-rteFontSize-2 { font-size: 10pt; }
+.ms-rteFontSize-3 { font-size: 12pt; }
+.ms-rteFontSize-4 { font-size: 18pt; }
+.ms-rteFontSize-5 { font-size: 24pt; }
+.ms-rteFontSize-6 { font-size: 36pt; }
+.ms-rteFontSize-7 { font-size: 48pt; }
+.ms-rteFontSize-8 { font-size: 72pt; }

@@ -1,0 +1,50 @@
+/*
+ * 
+ * search.css
+ * 
+ */
+
+/* font-family */
+.srch-AutoCompList, .srch-SocDistTitle, .psrch-Description, .psrch-PropLabel, .psrch-PropValue, .psrch-Title, .psrch-Title A:link, .psrch-Title A:visited, .psrch-Metadata, .ms-searchref-main, span.srch-BB-URL2, .srch-BestBetsTitle, .srch-BB-Description2, .srch-BB-Description, div.srch-BB-SpecialTerm, div.srch-BB-SpecialTerm div, .srch-InputText, td.ms-vb, th.ms-vh, .ms-advsrchText-v2box, select.ms-advsrchPropertyDDL, select.ms-advsrchOperatorDDL, .ms-advsrchPropValue, select.ms-advsrchAndOrDDL, .ms-redirectControl, .ms-redirectControl a, .ms-searchsummaryUrl, div.ms-searchsummarydesc, .ms-searchsummarydesc font, .ms-searchChannelTitle span, .ms-searchtadesc div, .ms-searchtadesc font, div.ms-searchtadesc, .ms-searchtaChannelTitle span, .srch-stats, .srch-HCSocDistTitle, .ms-sbtable, .ms-sbtablealt, .ms-sbtext, .ms-sbplain, .ms-sbplainwithborder, select.ms-sbscopes, .srch-WPBody, .srch-sort-right, .srch-Summary, .srch-Description, .srch-Title A:link, .srch-Title A:visited, .srch-BBTitle a:link, .srch-BBTitle a:visited, .srch-BBTitle a:hover, .srch-BBTitle, .srch-Page, .ms-sctabcn, .ms-sctabcnhover, .ms-sctabcfhover, .ms-sctabcf A:link, .ms-sctabcf A:visited, .ms-sctabcfhover A:link, .ms-sctabcfhover A:visited, .ms-sctabcfhover A:hover, .ms-sctabnt A:link, .ms-sctabnt A:visited, .ms-sctabcf, span.srch-BestBetsWPTitle, .srch-ext-findSimilarLink {
+
+}
+
+/* font-size */
+.ms-sbtablealt {
+	font-size: 0.7em;
+}
+.ms-searchref-count, .srch-ext-duplicate-count {
+	font-size:0.9em;
+}
+.psrch-Description, .psrch-PropLabel, .psrch-PropValue, .psrch-Metadata, .ms-searchref-main, span.srch-BB-URL2, .srch-BB-Description2, .srch-BB-Description, div.srch-BB-SpecialTerm , div.srch-BB-SpecialTerm div, .ms-advsrchText-v2box, .ms-searchsummaryUrl, div.ms-searchsummarydesc, .ms-searchsummarymorelink, .ms-searchtaUrl, div.ms-searchtadesc, .ms-sbtext, .srch-WPBody, .srch-sort, .srch-sort-right, .srch-sort-right a:link, .srch-sort-right a:visited, .srch-Summary, .srch-Description2, .srch-Description2 b, .srch-Description, .srch-BBTitle a:link, .srch-BBTitle a:visited, .srch-BBTitle a:hover, span.srch-urllink a:link, .srch-urllink a:visited, .srch-Page, .ms-sctabcn, .ms-sctabcnhover, .ms-sctabcfhover, .ms-sctabcf, h3.ms-advsearch-header {
+	font-size: 1em;
+}	
+.psrch-Main #FieldTitle, .ms-searchref-categoryname, .ms-searchChannelTitle span, .ms-searchtadesc b, .srch-Page A:link,.srch-Page A:visited, .srch-Page STRONG, .srch-dropdown, .s4-search input.ms-sbplain {
+	font-size: 1.1em;
+}	
+.srch-SocDistTitle, .psrch-Title, .srch-BestBetsTitle, .srch-BB-SpecialTerm b, .srch-Title A:link, .srch-Title A:visited, span.srch-BestBetsWPTitle {
+	font-size: 1.2em;
+}
+.psrch-Main #ContactInfo #NameField a, .srch-AutoCompList, td.ms-advsrchHeadingText, .ms-searchtaTitle A:link, .ms-searchtaTitle A:visited, .ms-searchtaTitle A:hover, select.ms-sbscopes, .srch-Title2 a:link, .srch-Title2 a:visited, .srch-Title2 a:hover, .srch-BBTitle{
+	font-size: 1.3em;
+}
+
+td.ms-vb, th.ms-vh, select.ms-advsrchPropertyDDL, select.ms-advsrchOperatorDDL, .ms-advsrchPropValue, select.ms-advsrchAndOrDDL, .ms-redirectControl, .ms-searchtadesc font, .ms-sbplainwithborder, .ms-sblink a:link, .ms-sblink a:visited, .ms-sblink a:hover, .ms-sctabnt A:link, .ms-sctabnt A:visited {
+	font-size:8pt;
+}
+.srch-ext-findSimilarLink {
+	font-size: 9pt;
+}
+.srch-InputText, .ms-searchsummarydesc font, .ms-searchtaChannelTitle span, .srch-HCSocDistTitle, .srch-ext-fullViewClose {
+	font-size: 10pt;
+}
+.ms-sbplain {
+	font-size: 10.5pt;
+}
+
+.psrch-OptionsTitle {
+	font-size: 12px;
+}
+.srch-ext-spanleft, .srch-ext-spanleftdis, .srch-ext-spanright, .srch-ext-spanrightdis {
+	font-size: 24px;
+}

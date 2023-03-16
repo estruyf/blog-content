@@ -26,6 +26,9 @@ type: post
 
 ## March
 
+- Talking at JS BE meetup
+- Talk with James Q Quick about Front Matter CMS - https://www.youtube.com/live/aCkkEDsJgL0?feature=share
+
 ## April
 
 ## May

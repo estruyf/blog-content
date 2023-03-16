@@ -1,0 +1,174 @@
+<%@ Master Language="C#" %>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Import Namespace="Microsoft.SharePoint" %> <%@ Assembly Name="Microsoft.Web.CommandUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
+<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="wssuc" TagName="Welcome" src="~/_controltemplates/Welcome.ascx" %>
+<%@ Register TagPrefix="wssuc" TagName="MUISelector" src="~/_controltemplates/MUISelector.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="<%$Resources:wss,language_value%>" xmlns:o="urn:schemas-microsoft-com:office:office" runat="server" dir="<%$Resources:wss,multipages_direction_dir_value%>" __expr-val-dir="ltr">
+<head runat="server">
+	<meta http-equiv="X-UA-Compatible" content="IE=8"/>
+	<meta name="GENERATOR" content="Microsoft SharePoint"/>
+	<meta name="progid" content="SharePoint.WebPartPage.Document"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Expires" content="0"/>
+	<SharePoint:RobotsMetaTag runat="server"/>
+	<title id="onetidTitle"><asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server"/></title>
+	<SharePoint:CssLink runat="server" Alternate="true"/>
+	<SharePoint:Theme runat="server"/>
+	<SharePoint:CssRegistration Name="minimalv4.css" runat="server"/>
+	<SharePoint:CssRegistration Name="layouts.css" runat="server"/>
+	<SharePoint:ULSClientConfig runat="server"/>
+	<SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server"/>
+	<SharePoint:CustomJSUrl runat="server"/>
+	<SharePoint:SoapDiscoveryLink runat="server"/>
+	<asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server"/>
+	<SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true"/>
+	<SharePoint:SPShortcutIcon runat="server" IconUrl="/_layouts/images/favicon.ico"/>
+	<SharePoint:SPHelpPageComponent Visible="false" runat="server"/>
+	
+	<style type="text/css">
+		/* Page needs to have a 100% height. */
+		html, body { 
+			height: 100%;
+		}
+		body #aspnetForm { 
+			min-height: 100%;
+			height: auto !important;
+			height: 100%;
+			/* The bottom margin is the negative value of the footer's height */
+			margin: 0 auto -40px;
+			overflow: visible !important;
+		}
+		.footer, .push {
+			/* .push must be the same height as .footer */ 
+			height: 40px;
+			/* Multicolumn Layout With Sticky Footer */
+			clear: both;
+		}
+		.footer {
+			background: url("/_layouts/images/bgximg.png") repeat-x scroll 0 -565px #21374C;
+			color: #fff;
+			font-size: 150%;
+			font-weight: bold;
+			line-height: 40px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body onload="javascript:if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();">
+	<form runat="server" onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}">
+	<asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
+	<WebPartPages:SPWebPartManager id="m" runat="Server"/>
+	<SharePoint:FormDigest runat="server"/>
+	<span id="TurnOnAccessibility" style="display:none" class="s4-notdlg">
+		<a id="linkTurnOnAcc" href="#" class="ms-TurnOnAcc" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+	<SharePoint:EncodedLiteral runat="server" text="<%$Resources:wss,master_turnonaccessibility%>" EncodeMethod="HtmlEncode"/></a>
+	</span>
+	<span id="TurnOffAccessibility" style="display:none" class="s4-notdlg">
+		<a id="linkTurnOffAcc" href="#" class="ms-TurnOffAcc" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+	<SharePoint:EncodedLiteral runat="server" text="<%$Resources:wss,master_turnoffaccessibility%>" EncodeMethod="HtmlEncode"/></a>
+	</span>
+	<span class="s4-notdlg">
+		<a href="javascript:;" onclick="javascript:this.href='#mainContent';" class="ms-SkiptoMainContent" accesskey="<%$Resources:wss,maincontent_accesskey%>" runat="server">
+	<SharePoint:EncodedLiteral runat="server" text="<%$Resources:wss,mainContentLink%>" EncodeMethod="HtmlEncode"/></a>
+	</span>
+	<a id="HiddenAnchor" href="javascript:;" style="display:none;"></a>
+	<asp:ContentPlaceHolder ID="SPNavigation" runat="server">
+	</asp:ContentPlaceHolder>
+	<div id="s4-mini-header" class="s4-pr s4-notdlg">
+		<div class="s4-rp">
+			<div id="notificationArea" class="s4-mini-noti"></div>
+			<SharePoint:DelegateControl ControlId="GlobalSiteLink3-mini" Scope="Farm" runat="server"/>
+			<asp:ContentPlaceHolder id="PlaceHolderHelpButton" runat="server">
+				<div class="ms-mini-trcHelp">
+					<span style="height:17px;width:17px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><a href="#" style="height:17px;width:17px;display:inline-block;" onclick="TopHelpButtonClick('NavBarHelpHome');return false" accesskey="<%$Resources:wss,multipages_helplink_accesskey%>" id="TopHelpLink" title="<%$Resources:wss,multipages_helplinkalt_text%>" runat="server"><img src="/_layouts/images/fgimg.png" alt="<%$Resources:wss,multipages_helplinkalt_text%>" style="left:-0px !important;top:-309px !important;position:absolute;" align="absmiddle" border="0" runat="server" /></a></span>
+				</div>
+			</asp:ContentPlaceHolder>
+			<asp:ContentPlaceHolder id="PlaceHolderWelcomeMenu" runat="server">
+				<div class="lb ms-mini-trcMenu">
+					<wssuc:Welcome id="IdWelcome" runat="server" EnableViewState="false">
+					</wssuc:Welcome>
+					<wssuc:MUISelector runat="server"/>
+				</div>
+			</asp:ContentPlaceHolder>
+			<SharePoint:DelegateControl ControlId="GlobalSiteLink2-mini" Scope="Farm" runat="server"/>
+			<asp:ContentPlaceHolder id="PlaceHolderDeveloperDashboardLauncher" runat="server">
+				<span class="s4-devdashboard">
+					<Sharepoint:DeveloperDashboardLauncher
+						ID="DeveloperDashboardLauncher"
+						NavigateUrl="javascript:ToggleDeveloperDashboard()"
+						runat="server"
+						ImageUrl="/_layouts/images/fgimg.png"
+						Text="<%$Resources:wss,multipages_launchdevdashalt_text%>"
+						OffsetX=0
+						OffsetY=222
+						Height=16
+						Width=16/>
+				</span>
+			</asp:ContentPlaceHolder>
+		</div>
+		<div id="s4-mini-titlearea" class="s4-lp">
+			<SharePoint:DelegateControl ControlId="MinimalMasterSiteLogo" Scope="Web" runat="server">
+				<Template_Controls>
+					<SharePoint:SPLinkButton runat="server" NavigateUrl="~site/" id="onetidProjectPropertyTitleGraphic" CssClass="s4-mini-sitelogo-a">
+						<SharePoint:SiteLogoImage id="onetidHeadbnnr0" LogoImageUrl="/_layouts/images/siteIcon.png" runat="server" CssClass="s4-mini-sitelogo" />
+					</SharePoint:SPLinkButton>
+				</Template_Controls>
+			</SharePoint:DelegateControl>
+			<h1 class="s4-mini-header">
+				<asp:ContentPlaceHolder id="PlaceHolderSiteName" runat="server">
+					<SharePoint:SPLinkButton runat="server" NavigateUrl="~site/" id="onetidProjectPropertyTitle" CssClass="s4-mini-h1-a">
+						<SharePoint:ProjectProperty Property="Title" runat="server" /></SharePoint:SPLinkButton>
+				</asp:ContentPlaceHolder>
+			</h1>
+			<SharePoint:ClusteredDirectionalImage
+				runat="server"
+				ImageUrl="/_layouts/images/fgimg.png"
+				LTROffsetX=0
+				RTLOffsetX=0
+				LTROffsetY=607
+				RTLOffsetY=618
+				LTRWidth=11
+				LTRHeight=11
+				RTLWidth=11
+				RTLHeight=11
+				AlternateText=":"
+				ClassName="s4-mini-titlesep"/>
+			<h2 class="s4-mini-header">
+				<asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server" />
+			</h2>
+			<h3 class="s4-mini-header">
+				<asp:ContentPlaceHolder id="PlaceHolderPageSubTitle" runat="server" />
+			</h3>
+		</div>
+	</div>
+	<div>
+		<asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" runat="server" />
+	</div>
+	<div id="maincontent" class="s4-pr">
+		<asp:ContentPlaceHolder id="PlaceHolderMain" runat="server" />
+	</div>
+	<div style="display:none;">
+		<asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" runat="server" />
+		<asp:ContentPlaceHolder id="PlaceHolderNavSpacer" runat="server" />
+		<asp:ContentPlaceHolder id="PlaceHolderBodyLeftBorder" runat="server" />
+		<asp:ContentPlaceHolder id="PlaceHolderPageImage" runat="server" />
+		<asp:ContentPlaceHolder id="PlaceHolderTitleLeftBorder" runat="server" />
+		<asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server" />
+		<asp:ContentPlaceHolder id="PlaceHolderTitleAreaClass" runat="server" />
+		<asp:ContentPlaceHolder id="PlaceHolderTitleAreaSeparator" runat="server" />
+	</div>
+	<div id="DeveloperDashboard" class="ms-developerdashboard">
+		<SharePoint:DeveloperDashboard runat="server"/>
+	</div>
+		<!-- =Push is needed for the footer to be correctly placed on the page. s4-notdlg used to not let it be shown in the SharePoint dialogs. -->
+		<div class="push s4-notdlg"></div>
+	</form>
+	<!-- =Footer: s4-notdlg used to not let it be shown in the SharePoint dialogs. -->
+	<div class="footer s4-notdlg">
+		<span>This is my minimal.master page footer.</span>
+	</div>
+</body>
+</html>

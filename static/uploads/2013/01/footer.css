@@ -1,0 +1,23 @@
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* The bottom margin is the negative value of the footer's height */
+    margin: 0 auto -30px;
+    overflow: visible !important;
+}
+.footer, .push {
+    /* .push must be the same height as .footer */
+    height: 30px;
+    /* Multicolumn Layout With Sticky Footer */
+    clear: both;
+}
+.footer {
+   background: #0072C6;
+   color: #fff;
+   line-height: 30px;
+   text-align: center;
+}
+body #s4-workspace {
+    margin-bottom: -30px;
+}

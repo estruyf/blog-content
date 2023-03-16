@@ -1,0 +1,131 @@
+<xsl:stylesheet xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" version="1.0" exclude-result-prefixes="xsl msxsl ddwrt" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:SharePoint="Microsoft.SharePoint.WebControls" xmlns:ddwrt2="urn:frontpage:internal">
+	<xsl:output method="html" indent="no"/>
+	<xsl:decimal-format NaN=""/>
+	<xsl:param name="dvt_apos">&apos;</xsl:param>
+	<xsl:param name="ManualRefresh"></xsl:param>
+	<xsl:variable name="dvt_1_automode">0</xsl:variable>
+	<xsl:template match="/" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:SharePoint="Microsoft.SharePoint.WebControls">
+		
+		<!-- Google Chart JavaScript Reference -->
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		
+		<!-- Call the dvt_1 template -->
+		<xsl:call-template name="dvt_1"/>
+		
+		<!-- Create the chart div -->
+		<div id="chart_div"></div>
+	</xsl:template>
+	
+	<xsl:template name="dvt_1">
+		<xsl:variable name="Rows" select="/dsQueryResponse/Rows/Row"/>
+		<xsl:variable name="RowCount" select="count($Rows)"/>
+		
+		<!-- CDATA - (Unparsed) Character Data -->
+		<!-- The text inside CDATA will not be parsed by the XML parser. -->
+		<!-- Check http://code.google.com/apis/chart/interactive/docs/quick_start.html for more information -->
+		<xsl:text disable-output-escaping="yes"><![CDATA[
+			<script type="text/javascript">
+				google.load('visualization', '1.0', {'packages':['corechart']});
+				google.setOnLoadCallback(drawChart);
+				function drawChart() {
+					var data = new google.visualization.DataTable();
+					data.addColumn('string', 'Tasks');
+					data.addColumn('number', 'Status');
+					
+					data.addRows([
+		]]></xsl:text>
+		
+		<!-- Call the body template -->
+		<xsl:call-template name="dvt_1.body">
+			<xsl:with-param name="Rows" select="$Rows"/>
+			<xsl:with-param name="FirstRow" select="1" />
+			<xsl:with-param name="LastRow" select="$RowCount" />
+		</xsl:call-template>
+		
+		<xsl:text disable-output-escaping="yes"><![CDATA[
+					]);
+					
+					var options = {'title':'Task Overview', 'width':500, 'height':400, is3D: true, colors:['#4F81BD','#C0504D','#F79646','#9BBB59','#8064A2']};
+					var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+					chart.draw(data, options);
+				}	
+			</script>
+		]]></xsl:text>
+	</xsl:template>
+	
+	<xsl:template name="dvt_1.body">
+		<xsl:param name="Rows"/>
+		<xsl:param name="FirstRow" />
+		<xsl:param name="LastRow" />
+		<xsl:variable name="dvt_Rows">
+			<root>
+				<xsl:for-each select="$Rows">
+					<xsl:if test="(position() &gt;= $FirstRow and position() &lt;= $LastRow)"><xsl:copy-of select="." /></xsl:if>
+				</xsl:for-each>
+			</root>
+		</xsl:variable>
+
+		<xsl:for-each select="$Rows">
+			<!-- Sort items on the task status -->
+			<xsl:sort select="@Status" order="descending"/>
+
+			<!-- Retrieve the current group name -->
+			<xsl:variable name="NewGroup">
+				<xsl:value-of select="ddwrt:NameChanged(string(@Status), 0)" />
+			</xsl:variable>
+						
+			<xsl:if test="not($NewGroup='') and position() &gt;= $FirstRow and position() &lt;= $LastRow or ($FirstRow = position())">
+				<!-- Retrieve the current group name -->
+				<xsl:variable name="GroupingName">
+					<xsl:choose>
+						<xsl:when test="$NewGroup=''"><xsl:value-of select="@Status" /></xsl:when>
+						<xsl:otherwise><xsl:value-of select="$NewGroup" /></xsl:otherwise>
+					</xsl:choose>
+				</xsl:variable>
+			
+				<!-- Do not call the GoogleDataRow template on the first run, otherwise you will have an empty datarow. -->
+				<xsl:if test="not((position()=1) or (position()=$FirstRow))">
+					<xsl:call-template name="GoogleDataRow">
+						<xsl:with-param name="fieldvalue" select="$GroupingName" />
+						<!-- Count rows that share the same Status value -->
+						<xsl:with-param name="total" select="count($Rows[@Status = $GroupingName])"/>
+						<xsl:with-param name="last"></xsl:with-param>
+					</xsl:call-template>
+				</xsl:if>
+			</xsl:if>
+			
+			<!-- Check if the current row is the last row to be processed. -->
+			<xsl:if test="position() = count($Rows)">
+				<xsl:variable name="GroupingName">
+					<xsl:value-of select="@Status" />
+				</xsl:variable>
+
+				<xsl:call-template name="GoogleDataRow">
+					<xsl:with-param name="fieldvalue" select="$GroupingName" />
+					<!-- Count rows that share the same Status value -->
+					<xsl:with-param name="total" select="count($Rows[@Status = current()/@Status])"/>
+					<!-- Let the function know that it is the last row -->
+					<xsl:with-param name="last">true</xsl:with-param>
+				</xsl:call-template>
+			</xsl:if>
+		
+		</xsl:for-each>
+	</xsl:template>
+	
+	<!-- GoogleDataRow template -->
+	<xsl:template name="GoogleDataRow">
+		<xsl:param name="fieldvalue" /> 
+		<xsl:param name="total" />
+		<xsl:param name="last" />       
+		<!-- The Google JavaScript Chart expects the data to be written in the following format: ['String', number] -->
+        <xsl:choose>
+            <xsl:when test="$last='true'">
+            	[&apos;<xsl:value-of select="$fieldvalue"/> - <xsl:value-of select="$total" />&apos;, <xsl:value-of select="$total" />]
+            </xsl:when>
+            <xsl:otherwise>
+                [&apos;<xsl:value-of select="$fieldvalue"/> - <xsl:value-of select="$total" />&apos;, <xsl:value-of select="$total" />],
+            </xsl:otherwise>
+        </xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

@@ -1,0 +1,82 @@
+using System;
+using System.Linq;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using Microsoft.Office.Server.SocialData;
+using Microsoft.SharePoint;
+using Microsoft.SharePoint.Utilities;
+
+namespace estruyf.SocialTaggingControl.ControlTemplates.estruyf.SocialTaggingControl
+{
+    public partial class Tags : UserControl
+    {
+        private string _tags = string.Empty;
+        private string _likes = string.Empty;
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+        }
+
+        protected override void OnInit(EventArgs e)
+        {
+            base.OnInit(e);
+            GetTags();
+
+            lblTags.Text = _tags;
+            lblLikes.Text = _likes;
+        }
+
+        private void GetTags()
+        {
+            try
+            {
+                SPSecurity.RunWithElevatedPrivileges(delegate()
+                {
+                    using (SPSite site = new SPSite(SPContext.Current.Web.Url))
+                    using (SPWeb web = site.OpenWeb())
+                    {
+                        var type = typeof(SocialTagManager);
+                        var methods = type.GetMethods(System.Reflection.BindingFlags.DeclaredOnly | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                        var method = methods.FirstOrDefault(m => m.ToString() == "Microsoft.Office.Server.SocialData.SocialTag[] GetTags(System.Uri, Int32, Microsoft.Office.Server.SocialData.SocialItemPrivacy)");
+                        if (method == null) throw new MissingMethodException("Social Tag method not found.");
+
+                        SPServiceContext serviceContext = SPServiceContext.GetContext(site);
+                        SocialTagManager stm = new SocialTagManager(serviceContext);
+                        
+                        // Get page URL
+                        Uri uri = this.Page.Request.Url;
+                        // Check if it is a blog post
+                        if (-1 == uri.AbsoluteUri.IndexOf("post.aspx", StringComparison.OrdinalIgnoreCase))
+                        {
+                            // Check if page is welcome page
+                            string root = web.RootFolder.WelcomePage;
+                            // Check if welcome page is not empty
+                            if (!string.IsNullOrEmpty(root))
+                            {
+                                if (uri.AbsoluteUri.Contains(root))
+                                {
+                                    uri = new Uri(SPContext.Current.Web.Url);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            uri = new Uri(uri.AbsoluteUri.Replace("Post.aspx", "ViewPost.aspx"));
+                        }
+
+                        var itemTags = (SocialTag[])method.Invoke(stm, new object[] { uri, 1000, SocialItemPrivacy.PublicOnly });
+
+                        //string str = StringResourceManager.GetString("SocialTag_QuickTag_ILikeIt");
+                        //if (string.Compare(termLabel, str, StringComparison.CurrentCulture) != 0)
+                        _tags = itemTags.Count(t => t.Term.Name.ToLower() != "i like it").ToString();
+                        _likes = itemTags.Count(t => t.Term.Name.ToLower() == "i like it").ToString();
+                    }
+                });
+            }
+            catch (Exception)
+            {
+            }
+        }
+    }
+}

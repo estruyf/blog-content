@@ -1,0 +1,15 @@
+/*
+ * 
+ * datepickerv4.css
+ * 
+ */
+
+/* font-family */
+.ms-picker-table .ms-picker-dayheader, .ms-picker-weekbox, .ms-picker-weekboxRTL, table.ms-picker-table td.ms-picker-today, table.ms-picker-table td.ms-picker-dayother,table.ms-picker-table td.ms-picker-daycenterOn, table.ms-picker-table td.ms-picker-daycenter, table.ms-picker-table td.ms-picker-dayselected, .ms-picker-monthcenter a, .ms-picker-monthcenter a:active, .ms-picker-monthcenter a:link, .ms-picker-monthcenter a:visited, .ms-picker-monthcenterOn a, .ms-picker-monthcenterOn a:active, .ms-picker-monthcenterOn a:link, .ms-picker-monthcenterOn a:visited, .ms-picker-monthselected a, .ms-picker-monthselected a:active, .ms-picker-monthselected a:link, .ms-picker-monthselected a:hover, .ms-picker-monthselected a:visited, table.ms-picker-table td.ms-picker-footer {
+
+}
+
+/* font-size */
+.ms-picker-table .ms-picker-dayheader, .ms-picker-weekbox, .ms-picker-weekboxRTL, table.ms-picker-table td.ms-picker-today, table.ms-picker-table td.ms-picker-dayother, table.ms-picker-table td.ms-picker-daycenterOn, table.ms-picker-table td.ms-picker-daycenter, table.ms-picker-table td.ms-picker-dayselected, .ms-picker-monthcenter a, .ms-picker-monthcenter a:active, .ms-picker-monthcenter a:link, .ms-picker-monthcenter a:visited, .ms-picker-monthcenterOn a, .ms-picker-monthcenterOn a:active, .ms-picker-monthcenterOn a:link, .ms-picker-monthcenterOn a:visited, .ms-picker-monthselected a, .ms-picker-monthselected a:active, .ms-picker-monthselected a:link, .ms-picker-monthselected a:hover, .ms-picker-monthselected a:visited, table.ms-picker-table td.ms-picker-footer, .ms-picker-month {
+	font-size: 8pt;
+}

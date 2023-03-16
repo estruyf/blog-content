@@ -1,0 +1,36 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
+<head>
+<title>Clean Search Results Control</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string">Displays the Search Results control.</mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106601</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <script>
+		$includeScript(this.url, "~sitecollection/_catalogs/masterpage/Tests/Clean-Search-Results-Group.js");
+	</script>
+
+    <div id="Control_SearchResults">
+<!--#_        
+        // Don't remove the following line
+        ctx.ListDataJSONGroupsKey = "ResultTables";
+
+        if(!$isNull(ctx.ListData.ResultTables[0])) {
+	        // Override the Group Display Template
+	        ctx.ListData.ResultTables.GroupTemplateId = "~sitecollection/_catalogs/masterpage/Tests/Clean-Search-Results-Group.js";
+        }
+_#-->
+        <div class="sr-clean">
+            _#= ctx.RenderGroups(ctx) =#_
+        </div>
+    </div>
+</body>
+</html>

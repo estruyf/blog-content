@@ -1,0 +1,85 @@
+$spInstalled = Get-PSSnapin | Select-String Sharepoint
+if (!$spInstalled)
+{
+    Add-PSSnapin Microsoft.Sharepoint.PowerShell
+}
+
+$app = Get-SPWebApplication -Identity http://your-web-application-url
+
+$markup = @"
+<div id='javascript-breadcrumb' class='ms-core-brandingText' style='line-height: 15px; width: auto;'></div>
+<script>
+(function () {
+	if(document.addEventListener ) {
+	    document.addEventListener('DOMContentLoaded', function() {
+	        EnsureScriptFunc('sp.js', 'SP.ClientContext', JavascriptBreadcrumb);
+	    }, false);
+	} else {
+	    window.setTimeout(function() {
+	        EnsureScriptFunc('sp.js', 'SP.ClientContext', JavascriptBreadcrumb);
+	    }, 0);
+	}
+	
+	function JavascriptBreadcrumb() {
+	    this.elm = document.getElementById('javascript-breadcrumb');
+	
+	    // Show the list link
+	    var list = "";
+	    if (ctx !== null && typeof ctx !== "undefined" && _spPageContextInfo.pageListId !== null && typeof _spPageContextInfo.pageListId !== "undefined") {
+		    if (typeof ctx.listName !== "undefined") {
+		        if (_spPageContextInfo.pageListId.toUpperCase() == ctx.listName.toUpperCase()) {
+		            list = "<a href='" + ctx.listUrlDir + "' title='" + ctx.ListTitle + "' style='color:#fff'>" + ctx.ListTitle + "</a> > ";
+		
+		            // Check if you are inside a folder
+		            if (rootFolder !== "" && typeof rootFolder !== "undefined") {
+		                var listUrl = decodeURIComponent(ctx.listUrlDir);
+		                var rootFolder = decodeURIComponent(ctx.rootFolder);
+		                rootFolder = rootFolder.replace(listUrl, "");
+		  
+		                var folders = rootFolder.split("/");
+		                for (var i = 0; i < folders.length; i++) {
+		                    if (folders[i] !== "" && typeof folders[i] !== "undefined") {
+		                        listUrl = listUrl + "/" + folders[i];
+		                        list += "<a href='" + listUrl + "' title='" + folders[i] + "' style='color:#fff'>" + folders[i] + "</a> > ";
+		                    }
+		                }
+		            }
+		        }
+		    }
+	    }
+	    
+	    this.breadcrumb = "<a href='" + _spPageContextInfo.webAbsoluteUrl + "' style='color:#fff;'>" + _spPageContextInfo.webTitle + "</a> > " + list + "<span style='font-style:italic;'>" + document.title + "</span>";
+	    this.elm.innerHTML = this.breadcrumb;
+	
+	    var clientContext = new SP.ClientContext.get_current();
+	    this.web = clientContext.get_web();
+	    this.parentweb = this.web.get_parentWeb();
+	
+	    clientContext.load(this.parentweb);
+	    clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySuccess), Function.createDelegate(this, this.onCreationFail));
+	}
+	
+	function onQuerySuccess() {
+	    try {
+	        if (typeof this.parentweb.get_title() !== "undefined" && this.parentweb.get_title().toLowerCase() !== "intranet") {
+	            this.breadcrumb = "<a href='" + this.parentweb.get_serverRelativeUrl() + "' style='color:#fff'>" + this.parentweb.get_title() + "</a>" + " > " + this.breadcrumb;
+	            this.elm.innerHTML = this.breadcrumb;
+	
+	            var clientContext = new SP.ClientContext(this.parentweb.get_serverRelativeUrl());
+	            this.web = clientContext.get_web();
+	            this.parentweb = this.web.get_parentWeb();
+	
+	            clientContext.load(this.parentweb);
+	            clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySuccess), Function.createDelegate(this, this.onCreationFail));
+	        }
+	    }
+	    catch (e) {}
+	}
+	
+	function onCreationFail() {}
+})();
+</script>
+"@
+
+$app.SuiteBarBrandingElementHtml = $markup
+$app.Update();

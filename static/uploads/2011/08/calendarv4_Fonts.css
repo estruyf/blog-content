@@ -1,0 +1,24 @@
+/*
+ * 
+ * CALENDARV4.css
+ * 
+ */
+
+/* font-family */
+
+
+/* font-size */
+.ms-fb-root * {
+	font-size: 8pt;
+}
+
+.ms-fb-select td div {
+	font-size: 0;
+}
+.ms-acal-display {
+	font-size: 14px;
+}
+
+.ms-fb-time sup {
+	font-size: smaller;
+}

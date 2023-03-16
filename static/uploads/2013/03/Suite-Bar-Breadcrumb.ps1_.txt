@@ -1,0 +1,51 @@
+$spInstalled = Get-PSSnapin | Select-String Sharepoint
+if (!$spInstalled)
+{
+  Add-PSSnapin Microsoft.Sharepoint.PowerShell
+}
+
+$app = Get-SPWebApplication -Identity http://your-web-application-url
+
+$markup = @"
+<div id='javascript-breadcrumb' class='ms-core-brandingText'></div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    EnsureScriptFunc('sp.js', 'SP.ClientContext', JavascriptBreadcrumb);
+}, false);
+
+function JavascriptBreadcrumb() {
+  this.elm = document.getElementById('javascript-breadcrumb');
+  this.breadcrumb = "<a href='" + _spPageContextInfo.webAbsoluteUrl + "' style='color:#fff; font-style:italic;'>" + _spPageContextInfo.webTitle + "</a>";
+  this.elm.innerHTML = this.breadcrumb;
+
+  var clientContext = new SP.ClientContext.get_current();
+  this.web = clientContext.get_web();
+  this.parentweb = this.web.get_parentWeb();
+
+  clientContext.load(this.parentweb);
+  clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySuccess), Function.createDelegate(this, this.onCreationFail));
+}
+
+function onQuerySuccess() {
+  try {
+    if (this.parentweb.get_title() !== undefined) {
+      this.breadcrumb = "<a href='" + this.parentweb.get_serverRelativeUrl() + "' style='color:#fff'>" + this.parentweb.get_title() + "</a>" + " > " + this.breadcrumb;
+      this.elm.innerHTML = this.breadcrumb;
+
+      var clientContext = new SP.ClientContext(this.parentweb.get_serverRelativeUrl());
+      this.web = clientContext.get_web();
+      this.parentweb = this.web.get_parentWeb();
+      
+      clientContext.load(this.parentweb);
+      clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySuccess), Function.createDelegate(this, this.onCreationFail));
+    }
+  }
+  catch (e) {}
+}
+
+function onCreationFail() {}
+</script>
+"@
+
+$app.SuiteBarBrandingElementHtml = $markup
+$app.Update();

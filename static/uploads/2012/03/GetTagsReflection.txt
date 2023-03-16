@@ -1,0 +1,51 @@
+using System;
+using System.Linq;
+using Microsoft.SharePoint;
+using Microsoft.Office.Server.SocialData;
+using Microsoft.SharePoint.Utilities;
+using System.Reflection;
+
+namespace estruyf.SocialTagging
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string url = "http://SP2010";
+
+            using (SPSite site = new SPSite(url))
+            using (SPWeb web   = site.OpenWeb())
+            {
+                SPList list = web.Lists["Site Pages"];
+                int i = 1;
+
+                SPServiceContext serviceContext = SPServiceContext.GetContext(site);
+                SocialTagManager stm = new SocialTagManager(serviceContext);
+
+                // Retrieve the type of the SocialTagManager
+                var type = typeof(SocialTagManager);
+                // Get the nonpublic methods
+                MethodInfo[] methods = type.GetMethods(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly);
+                MethodInfo method = methods.First(m => m.ToString() == "Microsoft.Office.Server.SocialData.SocialTag[] GetTags(System.Uri, Int32, Microsoft.Office.Server.SocialData.SocialItemPrivacy)");
+
+                if (method != null)
+                {
+                    foreach (SPListItem item in list.Items)
+                    {
+                        Uri uri = new Uri(SPUtility.ConcatUrls(web.Url, item.Url));
+
+                        var itemTags = (SocialTag[])method.Invoke(stm, new object[] { uri, 1000, SocialItemPrivacy.PublicOnly });
+
+                        Console.WriteLine();
+                        Console.WriteLine("-----------------------------------------------");
+                        Console.WriteLine(string.Format("{0}. Title: {1} - URL: {2}", i, item.DisplayName, uri.AbsoluteUri));
+                        Console.WriteLine("Tags: " + itemTags.Count(t => t.Term.Name.ToLower() != "i like it"));
+                        Console.WriteLine("Likes: " + itemTags.Count(t => t.Term.Name.ToLower() == "i like it"));
+                        i++;
+                    }
+                }
+            }
+            Console.Read();
+        }
+    }
+}

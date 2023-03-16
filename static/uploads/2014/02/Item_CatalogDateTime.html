@@ -1,0 +1,42 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<title>Catalog DateTime Value</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:ManagedPropertyMapping msdt:dt="string">'DateTime':'PublicationDate'</mso:ManagedPropertyMapping>
+<mso:TargetControlType msdt:dt="string">;#Content Web Parts;#</mso:TargetControlType>
+<mso:MasterPageDescription msdt:dt="string"></mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+<mso:HtmlDesignPreviewUrl msdt:dt="string"></mso:HtmlDesignPreviewUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+  <div id="Item_CatalogDateTime">
+
+<!--#_
+  console.log(ctx.CurrentItem.Title);
+  var dataField = $getItemValue(ctx, "DateTime");
+_#-->
+
+    <div class='cbs-Item'>
+<!--#_
+    if (!$isNull(dataField)) 
+    { 
+      var data = dataField.value.format('yyyy-MM-dd / HH:mm:ss');
+      if (!$isNull(data))
+      { 
+_#-->
+        _#= data =#_
+<!--#_ 
+      }
+    } 
+_#-->
+    </div>
+  </div>
+</body>
+</html>
