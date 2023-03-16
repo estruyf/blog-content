@@ -118,10 +118,10 @@
   "frontMatter.content.placeholders": [{
     "id": "ogImage",
     "script": "./scripts/og-image.js",
-    "command": "~/.nvm/versions/node/v16.11.1/bin/node"
+    "command": "~/.nvm/versions/node/v16.19.0/bin/node"
   }],
   "frontMatter.preview.host": "http://localhost:1313",
-  "frontMatter.content.publicFolder": "static",
+  "frontMatter.content.publicFolder": "[[workspace]]/.frontmatter/static",
   "frontMatter.content.defaultSorting": "DateDesc",
   "frontMatter.custom.scripts": [{
       "title": "Generate social image",
@@ -223,6 +223,7 @@
     "Application Page",
     "Apps",
     "Asset Library",
+    "Astro",
     "Authentication",
     "Automation",
     "Azure",
@@ -295,6 +296,7 @@
     "Font Scheme",
     "Fonts",
     "Footer",
+    "Framework",
     "Functions",
     "GitHub",
     "GitHub Actions",
