@@ -1,5 +1,6 @@
 {
   "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.sponsors.ai.titleEnabled": true,
   "frontMatter.experimental": true,
   "frontMatter.git.enabled": true,
   "frontMatter.dashboard.content.pagination": true,
@@ -11,7 +12,8 @@
   "frontMatter.extensibility.scripts": [
     "[[workspace]]/.frontmatter/ui/external.js"
   ],
-  "frontMatter.content.pageFolders": [{
+  "frontMatter.content.pageFolders": [
+    {
       "title": "Pages",
       "path": "[[workspace]]/.frontmatter/content",
       "excludeSubdir": true
@@ -25,7 +27,8 @@
       "path": "[[workspace]]/.frontmatter/content/projects"
     }
   ],
-  "frontMatter.content.sorting": [{
+  "frontMatter.content.sorting": [
+    {
       "title": "Date (asc)",
       "name": "date",
       "order": "asc",
@@ -38,92 +41,98 @@
       "type": "date"
     }
   ],
-  "frontMatter.taxonomy.contentTypes": [{
-    "name": "default",
-    "pageBundle": false,
-    "fields": [{
-        "title": "Title",
-        "name": "title",
-        "type": "string",
-        "required": true
-      },
-      {
-        "title": "Title (long)",
-        "name": "longTitle",
-        "type": "string"
-      },
-      {
-        "title": "Custom field",
-        "name": "customField",
-        "type": "customField"
-      },
-      {
-        "title": "Slug",
-        "name": "slug",
-        "type": "slug",
-        "required": true
-      },
-      {
-        "title": "Description",
-        "name": "description",
-        "type": "string",
-        "required": true
-      },
-      {
-        "title": "Publishing date",
-        "name": "date",
-        "type": "datetime",
-        "required": true
-      },
-      {
-        "title": "Modified date",
-        "name": "lastmod",
-        "type": "datetime"
-      },
-      {
-        "title": "Content preview",
-        "name": "preview",
-        "type": "image",
-        "default": "{{ogImage}}",
-        "required": true
-      },
-      {
-        "title": "Is in draft",
-        "name": "draft",
-        "type": "draft",
-        "default": false
-      },
-      {
-        "title": "Comments",
-        "name": "comments",
-        "type": "boolean",
-        "default": true
-      },
-      {
-        "title": "Tags",
-        "name": "tags",
-        "type": "tags",
-        "default": [],
-        "required": true
-      },
-      {
-        "title": "type",
-        "name": "type",
-        "type": "string",
-        "default": "post",
-        "hidden": true
-      }
-    ]
-  }],
-  "frontMatter.content.placeholders": [{
-    "id": "ogImage",
-    "script": "./scripts/og-image.js",
-    "command": "~/.nvm/versions/node/v16.19.0/bin/node"
-  }],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "title": "Title (long)",
+          "name": "longTitle",
+          "type": "string"
+        },
+        {
+          "title": "Custom field",
+          "name": "customField",
+          "type": "customField"
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "slug",
+          "required": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string",
+          "required": true
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "required": true
+        },
+        {
+          "title": "Modified date",
+          "name": "lastmod",
+          "type": "datetime"
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image",
+          "default": "{{ogImage}}",
+          "required": true
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft",
+          "default": false
+        },
+        {
+          "title": "Comments",
+          "name": "comments",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags",
+          "default": [],
+          "required": true
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string",
+          "default": "post",
+          "hidden": true
+        }
+      ]
+    }
+  ],
+  "frontMatter.content.placeholders": [
+    {
+      "id": "ogImage",
+      "script": "./scripts/og-image.js",
+      "command": "~/.nvm/versions/node/v16.19.0/bin/node"
+    }
+  ],
   "frontMatter.preview.host": "http://localhost:1313",
-  "frontMatter.content.publicFolder": "[[workspace]]/.frontmatter/static",
+  "frontMatter.content.publicFolder": ".frontmatter/static",
   "frontMatter.content.defaultSorting": "DateDesc",
-  "frontMatter.custom.scripts": [{
+  "frontMatter.custom.scripts": [
+    {
       "title": "Generate social image",
       "script": "./scripts/social-img.js",
       "command": "~/.nvm/versions/node/v16.19.0/bin/node"
@@ -300,6 +309,7 @@
     "Functions",
     "GitHub",
     "GitHub Actions",
+    "GitHub Copilot",
     "Gitpod",
     "Google",
     "Google Fonts",
@@ -309,6 +319,7 @@
     "Guest users",
     "Gulp",
     "HTML",
+    "Hack",
     "Hardware",
     "Headset",
     "Home automation",
@@ -366,6 +377,7 @@
     "Office App",
     "Office Graph",
     "Office Web Apps",
+    "OpenAI",
     "Outlook",
     "Outlook module",
     "PWA",
@@ -505,56 +517,62 @@
     "v4.master"
   ],
   "frontMatter.framework.id": "hugo",
-  "frontMatter.taxonomy.customTaxonomy": [{
-    "id": "customTags",
-    "options": [
-      "dsafdfas"
-    ]
-  }],
-  "frontMatter.data.files": [{
-    "id": "projects",
-    "title": "Projects",
-    "file": "[[workspace]]/themes/eliostruyf-v2/data/projects.json",
-    "fileType": "json",
-    "labelField": "title",
-    "schema": {
-      "title": "Sponsors",
-      "type": "object",
-      "required": [
-        "title",
-        "href"
-      ],
-      "properties": {
-        "title": {
-          "type": "string"
-        },
-        "href": {
-          "type": "string"
+  "frontMatter.taxonomy.customTaxonomy": [
+    {
+      "id": "customTags",
+      "options": [
+        "dsafdfas"
+      ]
+    }
+  ],
+  "frontMatter.data.files": [
+    {
+      "id": "projects",
+      "title": "Projects",
+      "file": "[[workspace]]/themes/eliostruyf-v2/data/projects.json",
+      "fileType": "json",
+      "labelField": "title",
+      "schema": {
+        "title": "Sponsors",
+        "type": "object",
+        "required": [
+          "title",
+          "href"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string"
+          }
         }
       }
     }
-  }],
-  "frontMatter.data.folders": [{
-    "id": "Testable",
-    "path": "[[workspace]]/themes/eliostruyf-v2/data/",
-    "labelField": "title",
-    "schema": {
-      "title": "Sponsors",
-      "type": "object",
-      "required": [
-        "title",
-        "href"
-      ],
-      "properties": {
-        "title": {
-          "type": "string"
-        },
-        "href": {
-          "type": "string"
+  ],
+  "frontMatter.data.folders": [
+    {
+      "id": "Testable",
+      "path": "[[workspace]]/themes/eliostruyf-v2/data/",
+      "labelField": "title",
+      "schema": {
+        "title": "Sponsors",
+        "type": "object",
+        "required": [
+          "title",
+          "href"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string"
+          }
         }
       }
     }
-  }],
+  ],
   "frontMatter.content.snippets": {
     "Image snippet": {
       "body": "{{< caption-new \"[[&mediaUrl]]\" \"[[caption]]\" >}}",
@@ -574,7 +592,8 @@
         "[[&selection]]",
         "{{< / highlight >}}"
       ],
-      "fields": [{
+      "fields": [
+        {
           "name": "type",
           "title": "Language",
           "type": "choice",
@@ -597,7 +616,8 @@
     "Blockquote": {
       "body": "{{< blockquote type=\"[[type]]\" text=\"[[&selection]]\" >}}",
       "description": "Creates a blockquote",
-      "fields": [{
+      "fields": [
+        {
           "name": "type",
           "title": "Type",
           "type": "choice",
