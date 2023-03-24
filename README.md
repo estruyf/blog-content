@@ -1,6 +1,7 @@
 # Welcome to the repository of Elio Struyf's blog
 
 [![CC BY-NC-ND 4.0][cc-by-nc-nd-image]][cc-by-nc-nd]
+[![CC BY 4.0][cc-by-shield]][cc-by]
 
 This repository holds all of the contents and assets for the [eliostruyf.com](https://eliostruyf.com) website.
 
