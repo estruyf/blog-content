@@ -145,3 +145,5 @@ Once you have pushed the changes to the submodule's remote repository, you can n
 One of the nice features of Visual Studio Code is that it notices that you are working with two git repositories instead of writing these commands manually. Visual Studio Code can do it all for you.
 
 I hope you learned something from this approach and want to try it for your blog/website.
+
+## Front Matter CMS Configuration changes
