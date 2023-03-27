@@ -144,6 +144,49 @@ Once you have pushed the changes to the submodule's remote repository, you can n
 
 One of the nice features of Visual Studio Code is that it notices that you are working with two git repositories instead of writing these commands manually. Visual Studio Code can do it all for you.
 
-I hope you learned something from this approach and want to try it for your blog/website.
+## Front Matter CMS configuration changes
 
-## Front Matter CMS Configuration changes
+As I mentioned earlier, I also moved my `frontmatter.json` file to the content repository. The `<submodule_folder>` I used, is `.frontmatter`. This way, all of the CMS content is in one place.
+
+{{< caption-new "/uploads/2023/03/blog-content.png" "Blog content structure"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAAB5SURBVD3By00EQRBEwZdZLTggrSErceECXuAOJrIeMdP1QRyGCN1f376eX27vuTeZycVhJGOb8/h5LOLpY5/n53kcOALbZG4yhz8RAYOWJGwz00iBLKabixAYVuYGhqrGbmaGquZiNwhWVX2vWCNBd9PVSPzrLkCPX4U0O/UOobIPAAAAAElFTkSuQmCC" "999" >}}
+
+To make this work, I had to make a few changes.
+
+### Update the page folders and public folder
+
+In my `frontmatter.json` file, I had to update the `frontMatter.content.pageFolders` and `frontMatter.content.publicFolder` settings to include the `.frontmatter` folder. In my configuration it looks as follows:
+
+{{< highlight json "linenos=table,noclasses=false" >}}
+{
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Pages",
+      "path": "[[workspace]]/.frontmatter/content",
+      "excludeSubdir": true
+    },
+    {
+      "title": "Blog posts",
+      "path": "[[workspace]]/.frontmatter/content/posts"
+    },
+    {
+      "title": "projects",
+      "path": "[[workspace]]/.frontmatter/content/projects"
+    }
+  ],
+  "frontMatter.content.publicFolder": ".frontmatter/static"
+}
+{{< / highlight >}}
+
+### Update the root frontmatter.json file
+
+One more change is needed to make this work. The root `frontmatter.json` file needs to know that it can use the configuration found in the `.frontmatter/frontmatter.json` file. To so, you can use the `frontMatter.extends` setting. In my case, it looks as follows:
+
+{{< highlight json "linenos=table,noclasses=false" >}}
+{
+  "frontMatter.extends": [
+    ".frontmatter/frontmatter.json"
+  ]
+}
+{{< / highlight >}}
+
+That was the last change in order to make it all work. I hope you learned something from this approach and want to try it for your blog/website.
