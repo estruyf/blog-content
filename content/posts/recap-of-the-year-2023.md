@@ -28,6 +28,7 @@ type: post
 
 - Talking at JS BE meetup
 - Talk with James Q Quick about Front Matter CMS - https://www.youtube.com/live/aCkkEDsJgL0?feature=share
+- Starting a youtube channel and publising my first video - https://www.youtube.com/watch?v=xb6pZiier_E
 
 ## April
 
