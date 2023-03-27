@@ -35,7 +35,7 @@ Another motivating factor behind this decision was enhancing my Front Matter CMS
 
 First, I added my content to the Astro project by adding the git submodule. In my case, all the content and my Front Matter CMS configuration is added to a `.frontmatter` folder.
 
-{{< caption-new "/uploads/2023/03/symlink-folder.png" ".frontmatter folders from the submodule"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAklEQVR4AewaftIAAAC1SURBVJXBQU7CQBSA4f/NvLRmWBRDjFFWHMAjcHqO4AHqQldEkTZoy7TzqFJIl/p9/JUwuFs+bZyT1U3maGPil0GfjEG5fXteK2erRRGWRYAo4ETY1w0fnx0XjtGubsg04fyCJHP2tTHluBLyXBEnqCqzEJhSrozcG9V7zTFG2mPLlDLq+8TXNhJCQd5ndF3HlGNkZrx8NwiC957becHjwz3qPT+Us5JBdRCqwysXIoKZlfzHCY1HP/TM5G0GAAAAAElFTkSuQmCC" "280" >}}
+{{< caption-new "/uploads/2023/03/updated-symlinked-folder.png" ".frontmatter folder as a submodule"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAABxSURBVH3BMQ6CMBSA4f+1BUpwksmBiZkjkHAV7+VhOJGJA4iRvlqZDDF8n9RN1wIDx0YH9JdzebNZYF6U+2Pll7PCGuLVkGgMOFeyvJQ9jZEvQ2JEmJ6CsZ49VTaGZJ7eZHnOqarwvuAfqZuuBQaOjR8inB5n2bZulAAAAABJRU5ErkJggg==" "497" >}}
 
 Once the content was added, I only needed to symlink it to the `./src/content/` folder.
 
@@ -77,5 +77,25 @@ export default defineConfig({
 Once the local server restarted, I started to see the content of my blog.
 
 {{< caption-new "/uploads/2023/03/astro-blog-content.png" "Showing my blog content with Astro"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACeSURBVF3BMU4DMRCG0e8f28EgIdYoW3MPSs5Bw0Upc5gtkRPtgncGiETDe1qW5bX3/hIRjDGY55nWGv+856kdn+/uH9+SCQICCOdKAsSvNV/OH/TeMWus50QAZuAjmI6ZhymRTOQf1Fr5ssK6O8ngkMVNNjbB54DbA5gkJGEmImB3cIexw9iDy+YMD3Kt9VRKqX0TT3PhjwQRXIVz+gbFOD9XYhUQLwAAAABJRU5ErkJggg==" "755" >}}
+
+## Linking my assets
+
+As it works for the content, I could do the same for the assets of my site. In my public/static folder, I have two folders:
+
+- `social`: For all my Open Graph images;
+- `uploads`: For all my images (I kept this as I once moved from WordPress to Hugo).
+
+I symlinked both folders as follows:
+
+{{< highlight bash "linenos=table,noclasses=false" >}}
+ln -s "$(pwd)/.frontmatter/static/social" "$(pwd)/public/social"
+ln -s "$(pwd)/.frontmatter/static/uploads" "$(pwd)/public/uploads"
+{{< / highlight >}}
+
+{{< caption-new "/uploads/2023/03/symlinked-asset-folders.png" "Symlinked asset folders"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAAB8SURBVH3BwQ2CMBiA0a/Qlv4Q9SKJCWEEzgzgJE7mPAzi0ROJRdpQ4WY04T1VN10L9OwbNHA9X6r7aIT34wlL4ptyhjSFW8YqjhN6ihSl8GdJbDSr4CpKpckri881YQ68vGeT5sgmY6WkwIlDxHE6HrDW8EvVTdcCPfuGDy9uH7PS09jcAAAAAElFTkSuQmCC" "497" >}}
+
+The blog post result looks like this:
+
+{{< caption-new "/uploads/2023/03/symlinked-post-result.png" "Outcome of the symlinked content and assets"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAVCAYAAAB/sn/zAAAAAklEQVR4AewaftIAAAHWSURBVHXBT2oUQRTA4d979aqmGyY9kATRiQvJMjtBRBB05R08gleQXMS9O29hLuBC3GaRbRLBxHRP/6lXpoWBMeD3yfn5+ftxHN+ICF3XcXx8zHK55IEzWz999tZL+cCOKRcsCDvEfnz/xvX1NU3TsNlsqOua9XqNuyMiNE3DarXCTk5OKKWwWCwQEf7HLi4uuL295fDwkKqqiDEyjiMigpmxv7/PzA4ODlgul4gI7s5ms0FEcHfcnaurK1arFZZSYpomzIxSCu5OSokYI6UUUkrEGLGbmxv6vielRN/3iAiqyszM2NvbI6WEqSoxRvq+5+joiFIKMxHB3QkhMLMQAu5OVVVcXl4iItR1zZaIEELA6romhMBMVXF3VJVZzhkRoZSCDsNA3/d0XUcpBRFBRHB3QgiYGTFGzN3JOWNm3N3doaqICDlnzIy6rnF37B4pJUSEEALujogQQiCEwDiOqCo2TRPDMKCqqCoiQlVVzOq6RkSYqYigqszcnZm7k3OmbVvatmVmTdMwjiOqymKxQEQopfCQpZR48fodqiM/f2Uo/PXq5XO+fP7ElnEvjz2SEm37m62u27BLuTcOI8MUSDGyVQr/MODr6enHknNm15PHj9hx9gf9p8V7629H5wAAAABJRU5ErkJggg==" "757" >}}
 
 I hope this might help you achieve the same in your projects.
