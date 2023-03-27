@@ -25,7 +25,7 @@ I have been testing it out, and the flow works great. To make my site go live wi
 
 What I want to achieve is the following:
 
-{{< caption-new "/uploads/2023/03/dispatch-github-action.png" "Trigger a new build" >}}
+{{< caption-new "/uploads/2023/03/dispatch-github-action.png" "Trigger a new build"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABlSURBVBXBQQ6DIBBA0Q9DUjRh3HKIbrvzjL1Yt16DhWBiG1Eq75k1l3et54ubiGXSQLfmwnldgEGs+bij1mfO28xtHDyGRvf9HaSUeHjPpGF3TmRRDQOtIWJRVbpWNmKMGEDELn+3pSLv1W+a1wAAAABJRU5ErkJggg==" "1148" >}}
 
 ## GitHub Action Trigger
 
@@ -50,7 +50,7 @@ To be able to call the webhook, you will need to add a token with the following 
 - Read access to **metadata** (by default enabled)
 - Read and Write access to **contents**
 
-{{< caption-new "/uploads/2023/03/fine-grained-permissions.png" "Fine-grained permissions" >}}
+{{< caption-new "/uploads/2023/03/fine-grained-permissions.png" "Fine-grained permissions"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAC0SURBVF3BsVHDQBCG0W9Xd5I9yFRAC0REEFAIDdAniTuhAhhZutv9GTGjAN6zx6eX94x8bW3jIImIYJ4vjKcT67J8lIh4dvc3SUQmh7kUzm1jMaNHb4WdwH0gM5HE7qt3FuAssSu1VsC4rTf+c3PqNJES3lsnI3B3zIy/BBI7l8S6rigTM2MYBg4p0dpGRMcxKLWyy0wigsPDNIL4VcpQrijrWI3vPmBAZpKZfG6dy/0dkq4/shloBjte2PAAAAAASUVORK5CYII=" "831" >}}
 
 Once you have the token, add it to the secrets of your repository, and configure the following workflow to trigger the build:
 
