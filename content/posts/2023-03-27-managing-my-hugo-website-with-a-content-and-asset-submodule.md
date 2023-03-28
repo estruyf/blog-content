@@ -190,5 +190,3 @@ One more change is needed to make this work. The root `frontmatter.json` file ne
 {{< / highlight >}}
 
 That was the last change in order to make it all work. I hope you learned something from this approach and want to try it for your blog/website.
-
-OK
