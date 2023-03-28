@@ -5,6 +5,8 @@
   "frontMatter.git.enabled": true,
   "frontMatter.dashboard.content.pagination": true,
   "frontMatter.git.actions": true,
+  "frontMatter.git.pushSubmodule": true,
+  "frontMatter.git.pullSubmodule": true,
   "frontMatter.dashboard.contentTags": "tags",
   "frontMatter.content.autoUpdateDate": false,
   "frontMatter.content.fmHighlight": false,
