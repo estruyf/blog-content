@@ -7,13 +7,14 @@ description: In this article, Elio shows you how he manages his Hugo website's c
 date: 2023-03-27T13:50:57.428Z
 lastmod: 2023-03-27T13:50:57.428Z
 preview: /social/23da18ae-8755-44b4-bbe5-1c13a2426482.png
-draft: true
+draft: false
 comments: true
 tags:
+  - Assets
+  - Content Management
   - git
   - Hugo
-  - submodule
-  - FrontMatter
+  - Submodule
 type: post
 ---
 
@@ -49,9 +50,9 @@ git submodule add -b main <your repository> <submodule_folder>
 git config -f .gitmodules submodule.<submodule_folder>.update merge
 {{< / highlight >}}
 
-This command adds the submodule and tracks its changes to the `main` branch. If you run: `git submodule add` without defining the branch argument, it will run in a "detached HEAD" state where you might lose changes.
+This command adds the submodule and tracks its changes to the `main` branch. If you run: `git submodule add` without defining the branch argument, it will run in a **detached HEAD** state where you might lose changes.
 
-{{< blockquote type="info" text="You can read more about the "detached HEAD" state on the [git submodules documentation)[https://git-scm.com/book/en/v2/Git-Tools-Submodules]." >}}
+{{< blockquote type="info" text="You can read more about the **detached HEAD** state on the [git submodules documentation](https://git-scm.com/book/en/v2/Git-Tools-Submodules)." >}}
 
 When you run in a detached HEAD state, you can run the following commands to configure it correctly:
 
@@ -85,9 +86,30 @@ This configuration lets Hugo know the location of the content and asset files.
 
 ## GitHub Actions
 
+### Changes in my website workflow
+
+First, I was using the `actions/checkout` with the `submodules: true` argument. However, this was not working as expected. It was not fetching the latest changes from the submodule. It was only fetching the commit that was added to the main repository. That led to issues when the submodule was not yet synced. 
+
+{{< caption-new "/uploads/2023/03/issue-getting-commit.png" "Fetching submodule commit"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABFSURBVA3BwRFAMBRAwfdNjJGTGlzclKAhXSqKIYnHbszLuqdx2lTKfYKiDRR9sRV+R8odZC9adETuUYkYiACFWgv1efgAytsi217ESQkAAAAASUVORK5CYII=" "863" >}}
+
+To make sure to get the latest changes from the submodule, I removed the `submodules: true` argument and added the following to my website's workflow:
+
+{{< highlight yaml "linenos=table,noclasses=false" >}}
+- name: Checkout submodules main branch
+  run: |
+    git config --global --add url.https://github.com/.insteadOf git@github.com:
+    git submodule update --init --recursive --remote
+{{< / highlight >}}
+
+As my content is hosted on a public repository, I do not need authentication. That is why I added the first line to rewrite the SSH URL to the HTTPS URL. That way, I can fetch it without needing to provide the SSH key.
+
+The second line is to initiate the submodule and fetch the latest changes.
+
+### Workflow on the content repository
+
 Finally, you can set up GitHub Actions to trigger your website to rebuild whenever there are changes to the submodule. This GitHub Action is practical when you only apply a change to the content repository. For instance, when you fix a typo.
 
-Inside the content repository its project, I created the following workflow:
+Inside the content repository project, I created the following workflow:
 
 {{< highlight yaml "linenos=table,noclasses=false" >}}
 name: Trigger blog to build
@@ -118,7 +140,11 @@ This workflow triggers a build on the website repository whenever content change
 
 One last thing, how do you get the latest changes downloaded locally?
 
-Well, you need to use the following command: `git submodule update --remote`.
+Well, you need to use the following command:
+
+{{< highlight bash "linenos=table,noclasses=false" >}}
+git submodule update --remote
+{{< / highlight >}}
 
 This command updates the contents of the submodule to the latest commit on the branch specified in the .gitmodules file (in this case, `main`) and then pulls those changes into your local repository. If the submodule has any new commits since the last time you updated it, those changes will be downloaded and merged into your local copy of the submodule.
 
@@ -130,9 +156,9 @@ As a submodule is "just" another git repository, pushing new changes requires yo
 
 {{< highlight bash "linenos=table,noclasses=false" >}}
 cd <submodule_folder>
-git checkout master
+git checkout main
 git add .
-git commit -a -m "commit in submodule"
+git commit -a -m "Update to the submodule content"
 git push
 cd ..
 git add <submodule_folder>
@@ -144,9 +170,27 @@ Once you have pushed the changes to the submodule's remote repository, you can n
 
 One of the nice features of Visual Studio Code is that it notices that you are working with two git repositories instead of writing these commands manually. Visual Studio Code can do it all for you.
 
+## Things to do after cloning your repository
+
+When you clone your repository, you will notice that the submodule is not initialized. To initialize the submodule, you need to run the following command:
+
+{{< highlight bash "linenos=table,noclasses=false" >}}
+git submodule update --init --recursive --remote
+{{< / highlight >}}
+
+- The `--init` flag tells git to initialize the submodule. 
+- The `--recursive` flag tells git to initialize all submodules within the submodule.
+- The `--remote` flag tells git to fetch the latest commits from the remote repository.
+
+This command fetches the latest commit of the submodule but is not yet checked out to the correct branch. To do that, you need to run the following command:
+
+{{< highlight bash "linenos=table,noclasses=false" >}}
+git submodule foreach git checkout main
+{{< / highlight >}}
+
 ## Front Matter CMS configuration changes
 
-As I mentioned earlier, I also moved my `frontmatter.json` file to the content repository. The `<submodule_folder>` I used, is `.frontmatter`. This way, all of the CMS content is in one place.
+As I mentioned earlier, I also moved my `frontmatter.json` file to the content repository. The `<submodule_folder>` I used is `.frontmatter`. This way, all of the CMS content is in one place.
 
 {{< caption-new "/uploads/2023/03/blog-content.png" "Blog content structure"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAAB5SURBVD3By00EQRBEwZdZLTggrSErceECXuAOJrIeMdP1QRyGCN1f376eX27vuTeZycVhJGOb8/h5LOLpY5/n53kcOALbZG4yhz8RAYOWJGwz00iBLKabixAYVuYGhqrGbmaGquZiNwhWVX2vWCNBd9PVSPzrLkCPX4U0O/UOobIPAAAAAElFTkSuQmCC" "999" >}}
 
@@ -154,7 +198,7 @@ To make this work, I had to make a few changes.
 
 ### Update the page folders and public folder
 
-In my `frontmatter.json` file, I had to update the `frontMatter.content.pageFolders` and `frontMatter.content.publicFolder` settings to include the `.frontmatter` folder. In my configuration it looks as follows:
+In my `frontmatter.json` file, I had to update the `frontMatter.content.pageFolders` and `frontMatter.content.publicFolder` settings to include the `.frontmatter` folder. In my configuration, it looks as follows:
 
 {{< highlight json "linenos=table,noclasses=false" >}}
 {
