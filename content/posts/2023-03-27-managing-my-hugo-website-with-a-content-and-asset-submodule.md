@@ -18,6 +18,8 @@ tags:
 type: post
 ---
 
+<iframe width="843" height="474" style="max-width:100%" src="https://www.youtube.com/embed/mO-JFM1wmjA" title="Managing my Hugo website with a content and asset submodule" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 As a developer, I've found that managing my Hugo website's content with a submodule has been an excellent solution for keeping everything organized and easily accessible. There are several benefits to using a submodule, including the ability to share content with others and reuse it on different sites.
 
 With a content submodule, all of your website's content and assets are stored in a separate repository on GitHub.
