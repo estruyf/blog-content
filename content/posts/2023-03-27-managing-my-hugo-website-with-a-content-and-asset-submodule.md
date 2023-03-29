@@ -4,8 +4,8 @@ longTitle: ""
 customField: ""
 slug: /managing-hugo-website-content-asset-submodule/
 description: In this article, Elio shows you how he manages his Hugo website's content and assets by separating them into a submodule.
-date: 2023-03-27T13:50:57.428Z
-lastmod: 2023-03-27T13:50:57.428Z
+date: 2023-03-29T07:30:56.835Z
+lastmod: 2023-03-29T07:30:57.377Z
 preview: /social/23da18ae-8755-44b4-bbe5-1c13a2426482.png
 draft: false
 comments: true
