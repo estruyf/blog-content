@@ -7,6 +7,7 @@
   "frontMatter.git.submodule.push": true,
   "frontMatter.git.submodule.pull": true,
   "frontMatter.git.submodule.branch": "main",
+  "frontMatter.git.submodule.folder": ".frontmatter",
   "frontMatter.dashboard.content.pagination": true,
   "frontMatter.dashboard.contentTags": "tags",
   "frontMatter.content.autoUpdateDate": false,
