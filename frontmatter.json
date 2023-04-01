@@ -1,7 +1,10 @@
 {
   "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
-  "frontMatter.sponsors.ai.enabled": true,
   "frontMatter.experimental": true,
+  "frontMatter.extensibility.scripts": [
+    "[[workspace]]/.frontmatter/ui/external.js"
+  ],
+  "frontMatter.sponsors.ai.enabled": true,
   "frontMatter.git.enabled": true,
   "frontMatter.git.actions": true,
   "frontMatter.git.submodule.push": true,
@@ -13,9 +16,6 @@
   "frontMatter.content.autoUpdateDate": false,
   "frontMatter.content.fmHighlight": false,
   "frontMatter.content.wysiwyg": true,
-  "frontMatter.extensibility.scripts": [
-    "[[workspace]]/.frontmatter/ui/external.js"
-  ],
   "frontMatter.content.pageFolders": [
     {
       "title": "Pages",
