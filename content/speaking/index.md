@@ -17,11 +17,21 @@ If you are interested in having Elio speak at your event, you can check out the 
   <figure><img class="wp-image-15258 size-full" title="taken by Anna Imm" src="{{< resource url="/uploads/2021/12/ecs_2021_speaking.jpg" >}}" alt="Speaking at ECS 2021" width="760" height="507" /><figcaption id="caption-attachment-15258" class="wp-caption-text">The photo was taken by Anna Imm at ECS 2021</figcaption></figure>
 </div>
 
-
-
 ## Upcoming events
 
 <!-- No upcoming events planned yet.  -->
+
+### 19 April 2023 / GDG April Meetup - HTML and VS code
+
+The novice: a journey to start developing VS Code extensions
+
+[Link to the event](https://gdg.community.dev/events/details/google-gdg-berlin-presents-gdg-april-meetup-html-and-vs-code/)
+
+### 29 November 2023 / ESPC23 Amsterdam
+
+Automated Testing for Microsoft 365 with Playwright
+
+[Link to the event](https://www.sharepointeurope.com/)
 
 ### 2023
 
@@ -41,7 +51,7 @@ A Journey to Start Developing VS Code Extensions
 
 ### 2023
 
-#### 9th - 12th February 2023 / Arctic Cloud Developer Challenge 
+#### 9th - 12th February 2023 / Arctic Cloud Developer Challenge
 
 Judge at the Arctic Cloud Developer Challenge
 
@@ -193,7 +203,7 @@ How Pro Developers and Citizen Developers can team up - a #BetterTogether Story.
 
 #### 10 December 2019 - Modern Workplace Conference Paris
 
-#Sketchnotes and #FunctionalDrawing (not only) for Consultants and IT Pros. Together with [Luise Freese](https://twitter.com/LuiseFreese)
+# Sketchnotes and #FunctionalDrawing (not only) for Consultants and IT Pros. Together with [Luise Freese](https://twitter.com/LuiseFreese)
 
 [Link to the event](https://modern-workplace.pro/) - [Session information](https://www.eliostruyf.com/speaking/sketchnotes-and-functional-drawing-not-only-for-consultants-and-it-pros/)
 
@@ -713,14 +723,12 @@ An introduction to XSL in SharePoint
 
 [Link to the slides][113]
 
- [1]: uploads/2019/06/ecs-12019-small.jpg
  [2]: http://www.spsevents.org/city/Helsinki/Helsinki2019
  [3]: https://www.nccomms.com/conferences/office-365-and-sharepoint-connect/
  [4]: https://twitter.com/baywet
  [5]: https://twitter.com/CulverMelanie
  [6]: https://www.sharepointeurope.com
  [7]: http://www.spsevents.org/city/netherlands/netherlands2019
- [8]: https://1drv.ms/u/s!AukeddqwapKJhfB0hENhirBP0zzOBQ?e=2wlqOn
  [9]: https://www.collabsummit.eu
  [10]: https://1drv.ms/f/s!AukeddqwapKJhfBp2dxP61Jt1YIAdQ
  [11]: https://www.portiva.nl/sharing-sushi-20190410/
