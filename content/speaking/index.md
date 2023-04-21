@@ -21,12 +21,6 @@ If you are interested in having Elio speak at your event, you can check out the 
 
 <!-- No upcoming events planned yet.  -->
 
-### 19 April 2023 / GDG April Meetup - HTML and VS code
-
-The novice: a journey to start developing VS Code extensions
-
-[Link to the event](https://gdg.community.dev/events/details/google-gdg-berlin-presents-gdg-april-meetup-html-and-vs-code/)
-
 ### 29 November 2023 / ESPC23 Amsterdam
 
 Automated Testing for Microsoft 365 with Playwright
@@ -34,6 +28,12 @@ Automated Testing for Microsoft 365 with Playwright
 [Link to the event](https://www.sharepointeurope.com/)
 
 ### 2023
+
+#### 19 April 2023 / GDG April Meetup - HTML and VS code
+
+The novice: a journey to start developing VS Code extensions
+
+[Link to the event](https://gdg.community.dev/events/details/google-gdg-berlin-presents-gdg-april-meetup-html-and-vs-code/)
 
 #### 2 March 2023 / James Q Quick - YouTube Live
 
