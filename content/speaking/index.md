@@ -14,7 +14,7 @@ Elio is a frequent speaker at various Microsoft related community events and con
 If you are interested in having Elio speak at your event, you can check out the presentations he can present here at your event: [Sessions](/sessions/).
 
 <div class="text-center">
-  <figure><img class="wp-image-15258 size-full" title="taken by Anna Imm" src="{{< resource url="/uploads/2021/12/ecs_2021_speaking.jpg" >}}" alt="Speaking at ECS 2021" width="760" height="507" /><figcaption id="caption-attachment-15258" class="wp-caption-text">The photo was taken by Anna Imm at ECS 2021</figcaption></figure>
+  <figure><img class="wp-image-15258 size-full" title="Speaking at #GDGBerlin" src="{{< resource url="/uploads/2023/04/speaking-gdgberlin.png" >}}" alt="Speaking at #GDGBerlin"  /><figcaption id="caption-attachment-15258" class="wp-caption-text">The photo was taken by Anna Imm at ECS 2021</figcaption></figure>
 </div>
 
 ## Upcoming events
