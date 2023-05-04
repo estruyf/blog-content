@@ -1,13 +1,71 @@
 import {
+  enableDevelopmentMode,
   registerCardFooter,
+  registerCardImage,
   registerCustomField,
   registerPanelView,
-} from "https://cdn.jsdelivr.net/npm/@frontmatter/extensibility@0.0.4/+esm";
+} from "https://cdn.jsdelivr.net/npm/@frontmatter/extensibility/+esm";
 import {
   css,
   html,
   LitElement
 } from 'https://esm.run/lit';
+
+// enableDevelopmentMode();
+
+class CardImage extends LitElement {
+  static styles = css `
+    .card__image {
+      background: #FBE574;
+      color: #0F131E;
+      font-weight: 800;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .card__image__overlay { 
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.25rem 0.5rem;
+      width: 100%;
+    }
+  `;
+
+  static properties = {
+    title: {
+      type: String
+    },
+    src: {
+      type: String
+    }
+  };
+
+  constructor() {
+    super();
+
+    this.title = undefined;
+    this.src = undefined;
+  }
+
+  render() {
+    return html `
+      <div class="card__image">
+        <div class="card__image__overlay">${this.title}</div>
+      <div>
+    `;
+  }
+}
+customElements.define('card-image', CardImage);
+
+// registerCardImage(async (filePath, data) => {
+//   return `
+//     <card-image title="${data.title}" src="${data.fmPreviewImage}"></card-image>
+//   `;
+// });
+
+
 
 class CardFooter extends LitElement {
   static styles = css `
@@ -93,6 +151,12 @@ registerCardFooter(async (filePath, data) => {
     <card-footer slug="${data.slug}"></card-footer>
   `;
 });
+
+// registerCardFooter(async (filePath, data) => {
+//   return `
+//     <div style="background: #FBE574; color: #0F131E; text-align: center; padding: .5em">Your HTML for the card footer</div>
+//   `;
+// });
 
 
 registerPanelView(async (data) => {
