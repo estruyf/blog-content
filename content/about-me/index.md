@@ -41,7 +41,7 @@ Driven to build on his enduring vision, he immersed himself in the project with 
 
 Over the coming weeks of his recovery, Elio would continue to share his journey of physiotherapy and at-home training online. Still, he was yearning to connect with real-life audiences again through public speaking. In November 2021, just as he could sit and stand for prolonged periods, he was invited to speak at the European Collaboration Summit before kicking off 2022 with his talk, Tips on Building Products for Microsoft 365 at CollabDays Bletchley Park in London.
 
-Today, along with acting as VP of BIWUG, Elio is a Lead DevTools Engineer for RapidAPI on an independent contractor basis and has launched his own consulting company, Struyf Consulting. 
+Today, along with acting as VP of BIWUG, Elio works as an independent contractor for his own consulting company, Struyf Consulting. 
 
 Elio remains a sought-after speaker at various Microsoft-related community events and conferences, where he inspires, educates, and creates authentic connections with technology professionals and developers across Europe.
 

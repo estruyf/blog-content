@@ -34,6 +34,8 @@ type: post
 
 ## May
 
+- Getting laid off at Rapid
+
 ## June
 
 ## July

@@ -14,7 +14,7 @@ tags:
 ## Additional information
 
 - Role: Lead DevTools Engineer
-- Company: Struyf Consulting / RapidAPI
+- Company: Struyf Consulting
 - Location: Belgium
 - Website: `https://www.eliostruyf.com`
 - Github: `https://github.com/estruyf`
@@ -33,7 +33,7 @@ Elio Struyf has led a remarkable career as an award-winning Engineering Lead, a 
 
 Over his career, he has been invited to numerous cities including Barcelona, London, Paris, and Stockholm, where he has spoken on thought-provoking, development-related topics on Microsoft 365, SharePoint, and Azure DevOps. His extensive knowledge has seen him recognized as a Microsoft MVP eight times, twice as a GitHub Star, and he has been recognized as a SharePoint/Microsoft 365 Top 25 Influencer four times.
 
-Today, along with acting as VP of BIWUG (Belgian Information Worker User Group), Elio is a Lead DevTools Engineer for RapidAPI on an independent contractor basis and has launched his own consulting company, Struyf Consulting.
+Today, along with acting as VP of BIWUG (Belgian Information Worker User Group), Elio works as an independent contractor for his own consulting company, Struyf Consulting.
 
 Elio remains a sought-after speaker at various Microsoft-related community events and conferences, where he inspires, educates, and creates authentic connections with technology professionals and developers across Europe.
 
