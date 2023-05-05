@@ -9,7 +9,8 @@ lastmod: 2023-05-05T13:46:01.806Z
 preview: /social/768038f8-cde9-4fe7-92a9-7d7edbbe009d.png
 draft: false
 comments: true
-tags: []
+tags:
+  - Career
 type: post
 ---
 
@@ -33,6 +34,6 @@ Life can be tough, and it's easy to get bogged down by the challenges we face. B
 
 Looking back, I'm grateful for the opportunities I had and the wonderful people I met during my time at Rapid. Building a successful Visual Studio Code extension was a rewarding experience, and I'm proud to have been a part of it. As I embark on a new chapter in my career, I'll always cherish the memories and lessons learned during my time at Rapid.
 
-# KeepOnSmiling
-
 {{< caption-new "/uploads/2023/05/eliostruyf-bike-2023.jpg" "Keep on smiling"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAA0ACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP0c8Mftx/F/wl+2r8S/Cvib4s/D++/Zm0fSVbwZY+EtCiTXfDenahoVjc6XqmnaoNF1mbU/Eepa1nS/EsmvXUmjWsF1LFoSwSRWZufHxfjfwbhZ43GVsbhMZk1KtCnHNcLWni8JipuE3FU5J4PmVOteg19bpRdWNSShOlFVXzT4DzpcJ4XiiOExFDB1pSjCcoqnVUI4yOBlWcJRxEIYWWIk6EMTOmqbrRjR9oq1SnTqfZTft9fDF2Lw+LPGc8TktFP/AG34nTzo2OUl2W/hcwJ5ikPtgJhXOIyUC18rL6TnhhCUoe3h7snH/dsmXwu2087clttJuS6u583/AGJjXrzVddf99rddfs4VR+5JdlY/ns/ZR0bTviT+1trWk6nc+ItJvrtvGfh+XWND8Q3ETs+hpqGsw6zc6dqEGo2Or6reSaclvey6/Hq8SwrANOi07F8NR/BMyw+T8S8OY3gbH5Jl8cuzXH8mJxdCn7PH0sLl8qNbA4PA1lb6jh6NfAqpJYdQlUhWnRclBI/2/wDpJcH5Pj/CbivMaaxOC/sbL8iyzL8uwld4bJ8JhKHEmV1J+wyzCRwuGdfEKlhaUqmKji6OHo4LDwwWHwsvbTrfst/wyjqR5X4wa5tPK+Z4N8INJg9PMaK0giZ8feMcMKFslIo1wg/I5/Rn4QlKTjmeZQi5NxgveUIttqKlKs5SUVpeTcna7bZ/ld/Y2H6VsSl25qP/AMoP/9k=" "1200" >}}
+
+**#KeepOnSmiling**
