@@ -22,7 +22,7 @@ My time at Rapid was a memorable and fulfilling experience, and I want to share 
 
 Firstly, let me tell you that working at Rapid was a great experience. The team was full of talented and passionate developers who were always striving to create products that made a difference. Their energy and enthusiasm were contagious, and it motivated me to give my best.
 
-One of the highlights of my time at Rapid was building a Visual Studio Code extension. As a developer, it's always rewarding to see your work being appreciated and adopted by users. The fact that our product gained so much traction among developers was a testament to the team's dedication and hard work. Since the launch in July 2021, the extension has been installed over 190k times and had over 88k monthly active users.
+One of the highlights of my time at Rapid was building a Visual Studio Code extension. As a developer, it's always rewarding to see your work being appreciated and adopted by users. The fact that our product gained so much traction among developers was a testament to the team's dedication and hard work. Since the launch in July 2021, the extension has been installed over 190k times and had over 100k monthly active users.
 
 {{< caption-new "/uploads/2023/05/rapidapi-client.png" "RapidAPI Client - Visual Studio Code Extension"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABvSURBVF3BMQ6CQBBA0b/LRCEhNsbO2Fp5AuNFPAGdF/MWhoRb0EKMQUALdHfG0Pqe21/qIk/9qXkGsoXjMUa6t/LnJofd8qhm57YPvCZFxLFdCx4lsYkPGfchqlyrsQT8ZpUwC9H4BmPmSAHFoPwBI4gpY3ir24sAAAAASUVORK5CYII=" "856" >}}
 
