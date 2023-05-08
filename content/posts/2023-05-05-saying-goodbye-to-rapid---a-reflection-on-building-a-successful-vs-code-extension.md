@@ -16,7 +16,7 @@ type: post
 
 It's with a heavy heart that I need to say farewell to Rapid. In this company, I had the opportunity to work and build a Visual Studio Code extension that quickly gained popularity among developers. Today Rapid decided to lay off even more people. This time, I was one of them.
 
-> More information about it: [RapidAPI, valued at $1 billion last year, cuts staff by 50%](https://techcrunch.com/2023/04/25/rapidapi-valued-at-1-billion-last-year-cuts-staff-by-50/).
+> More information about it: [RapidAPI, valued at $1 billion last year, cuts staff by 50%](https://techcrunch.com/2023/04/25/rapidapi-valued-at-1-billion-last-year-cuts-staff-by-50/) - [RapidAPI headcount down 82% from fresh layoffs less than two weeks after cutting 50% of staff](https://techcrunch.com/2023/05/05/rapidapi-headcount-down-82-from-fresh-layoffs-less-than-two-weeks-after-cutting-50-of-staff/).
 
 My time at Rapid was a memorable and fulfilling experience, and I want to share my reflections on this journey.
 
