@@ -22,19 +22,21 @@ type: post
 - Getting my second GitHub star
 - Front Matter gets 1000 stars on GitHub
 - Arctic Cloud Developer Challenge
-- Creating Screendown - https://marketplace.visualstudio.com/items?itemName=eliostruyf.screendown
+- Creating Screendown - <https://marketplace.visualstudio.com/items?itemName=eliostruyf.screendown>
 
 ## March
 
 - Talking at JS BE meetup
-- Talk with James Q Quick about Front Matter CMS - https://www.youtube.com/live/aCkkEDsJgL0?feature=share
-- Starting a youtube channel and publising my first video - https://www.youtube.com/watch?v=xb6pZiier_E
+- Talk with James Q Quick about Front Matter CMS - <https://www.youtube.com/live/aCkkEDsJgL0?feature=share>
+- Starting a youtube channel and publising my first video - <https://www.youtube.com/watch?v=xb6pZiier_E>
 
 ## April
 
+- First GDG meeting in Berlin - <https://gdg.community.dev/events/details/google-gdg-berlin-presents-gdg-april-meetup-html-and-vs-code/>
+
 ## May
 
-- Getting laid off at Rapid
+- Getting laid off at Rapid - <https://www.eliostruyf.com/goodbye-rapid-reflection-building-successful-code-extension/>
 
 ## June
 
