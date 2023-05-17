@@ -22,6 +22,12 @@ If you are interested in having Elio speak at your event, you can check out the 
 
 <!-- No upcoming events planned yet.  -->
 
+### 10 June 2023 / CollabDays Netherlands 2023
+
+The future is APIs, and here is how you can benefit from it
+
+[Link to the event](https://www.collabdays.org/2023-nl/)
+
 ### 29 November 2023 / ESPC23 Amsterdam
 
 Automated Testing for Microsoft 365 with Playwright
