@@ -36,6 +36,12 @@ Automated Testing for Microsoft 365 with Playwright
 
 ### 2023
 
+#### 22 May - Microsoft 365 PnP Weekly
+
+Microsoft 365 PnP Weekly – Episode 211
+
+[Link to the article](https://pnp.github.io/blog/microsoft-365-pnp-weekly/episode-211/) - [Link to the video](https://www.youtube.com/watch?v=3yC5YSpu6ok)
+
 #### 19 April 2023 / GDG April Meetup - HTML and VS code
 
 The novice: a journey to start developing VS Code extensions
