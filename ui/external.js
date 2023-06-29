@@ -4,7 +4,15 @@ import {
   registerCardImage,
   registerCustomField,
   registerPanelView,
+  registerCardTitle,
+  registerCardDescription,
+  registerCardTags,
+  registerCardDate,
+  registerCardStatus
 } from "https://cdn.jsdelivr.net/npm/@frontmatter/extensibility/+esm";
+import {
+  format
+} from "https://cdn.jsdelivr.net/npm/date-fns@2.30.0/+esm"
 import {
   css,
   html,
@@ -12,6 +20,74 @@ import {
 } from 'https://esm.run/lit';
 
 // enableDevelopmentMode();
+
+class CardTitle extends LitElement {
+  static styles = css `
+    .card__title {
+      background: #FBE574;
+      color: #0F131E;
+      font-weight: 800;
+      padding: 0.25rem 0.5rem;
+    }
+  `;
+
+  static properties = {
+    title: {
+      type: String
+    }
+  };
+
+  constructor() {
+    super();
+
+    this.title = undefined;
+  }
+
+  render() {
+    return html `
+      <div class="card__title">
+        ${this.title}
+      <div>
+    `;
+  }
+}
+customElements.define('card-title', CardTitle);
+
+registerCardTitle(async (filePath, data) => {
+  return `
+    <card-title title="${data.title}"></card-title>
+  `;
+});
+
+registerCardDescription(async (filePath, data) => {
+  return `
+    <p>Custom description</p>
+  `;
+});
+
+registerCardDate(async (filePath, data) => {
+  console.log(data["lastmod"])
+  if (data["lastmod"]) {
+    return `
+      <p>${format(new Date(data["lastmod"]), 'MM-dd')}</p>
+    `;
+  }
+  return ``;
+});
+
+registerCardStatus(async (filePath, data) => {
+  return `
+    <p>Custom status</p>
+  `;
+});
+
+registerCardTags(async (filePath, data) => {
+  return `
+    <p>Custom tags</p>
+  `;
+});
+
+
 
 class CardImage extends LitElement {
   static styles = css `
