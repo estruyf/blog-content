@@ -67,7 +67,7 @@ The only thing left to do is to add the commands to the submenu:
   ...
   "contributes": {
     "menus": [
-      "sparkup.menu": [
+      "sparkup.submenu": [
         {
           "command": "vscode-sparkup.biasFreeLanguage"
         }
@@ -96,7 +96,7 @@ The whole example looks as follows:
           "group": "sparkup"
         }
       ],
-      "sparkup.menu": [
+      "sparkup.submenu": [
         {
           "command": "vscode-sparkup.biasFreeLanguage"
         }

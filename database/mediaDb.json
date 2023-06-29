@@ -1,1 +1,596 @@
-{"static":{"uploads":{"2021":{"10":{"frontmatter-social.png":{"caption":"Front Matter content dashboard","alt":"Front Matter content dashboard"},"frontmatter-panel.png":{"caption":"Front Matter its editor panel in VS Code","alt":"Front Matter its editor panel in VS Code"},"frontmatter-preview.png":{"caption":"Front Matter - Site/Page preview","alt":"Front Matter - Site/Page preview"},"frontmatter-content.png":{"caption":"Front Matter - Content Management","alt":"Front Matter - Content Management"},"frontmatter-media-metadata.png":{"caption":"Front Matter - Media management","alt":"Front Matter - Media management"},"frontmatter-media-insert.png":{"caption":"Front Matter - Insert media","alt":"Front Matter - Insert media"},"cloudflare-pages.png":{"caption":"Cloudflare Pages","alt":"Cloudflare Pages"},"cloudflare-pages-create-project.png":{"caption":"Create a new project","alt":"Create a new project"},"cloudflare-pages-github.png":{"caption":"Link to GitHub","alt":"Link to GitHub"},"cloudflare-pages-configure.png":{"caption":"Configuring your project","alt":"Configuring your project"},"cloudflare-pages-website.png":{"caption":"Website running on Cloudflare","alt":"Website running on Cloudflare"},"ai-ghostwriter-outline.png":{"caption":"Article outline by Peppertype.ai","alt":"Article outline by Peppertype.ai"},"ai-ghostwriter-section-content.png":{"caption":"Using Rytr for section content","alt":"Using Rytr for section content"},"ai-content-generation.png":{},"ai-content-generation2.png":{}},"11":{"cloudflare-pages-dns.png":{"caption":"Transfer domain to Cloudflare DNS","alt":"Transfer domain to Cloudflare DNS"}},"12":{"ecs_2021_speaking.jpg":{"caption":"The photo was taken by Anna Imm at ECS 2021","alt":"The photo was taken by Anna Imm at ECS 2021"},"cra-vscode-failed-load.png":{"caption":"Failed to load the file update","alt":"Failed to load the file update"},"cra-vscode-wrong-path.png":{"caption":"VS Code path","alt":"VS Code path"},"cra-vscode-correct.png":{"caption":"Loading HMR changes correctly","alt":"Loading HMR changes correctly"},"quote-2022.png":{"caption":"Take the good out of the bad experiences","alt":"Take the good out of the bad experiences"},"walking-2022.jpg":{"caption":"Total distance walked on my treadmill","alt":"Total distance walked on my treadmill"}}},"2022":{"10":{"extension-webview-communication.png":{"caption":"Communication flow","alt":"Communication flow","title":"Communication flow"},"extension-webview-communication2.png":{"caption":"Required listeners for the communication","alt":"Required listeners for the communication","title":"Required listeners for the communication"},"new-communication-flow.png":{"caption":"API like communication flow","alt":"API like communication flow","title":"API like communication flow"},"ddos-azure-function1.png":{"caption":"Cost increase on Azure subscription","alt":"Cost increase on Azure subscription","title":"Cost increase on Azure subscription"},"ddos-azure-function2.png":{"caption":"Azure Function execution cost","alt":"Azure Function execution cost","title":"Azure Function execution cost"},"ddos-azure-function3.png":{"caption":"Function servers/hosts running","alt":"Function servers/hosts running","title":"Function servers/hosts running"},"ddos-azure-function4.png":{"caption":"Azure Functions log","alt":"Azure Functions log","title":"Azure Functions log"},"ddos-azure-function5.png":{"caption":"4 million Azure Function calls at the start of their script","alt":"4 million Azure Function calls at the start of their script","title":"4 million Azure Function calls at the start of their script"},"ddos-azure-function6.png":{"caption":"Banned badge","alt":"Banned badge","title":"Banned badge"},"ddos-azure-function7.png":{"caption":"WAF rules to block requests","alt":"WAF rules to block requests","title":"WAF rules to block requests"},"ddos-azure-function8.png":{"caption":"Requests per user-agent","alt":"Requests per user-agent","title":"Requests per user-agent"},"ddos-azure-function9.png":{"caption":"Azure Front Door - Requests","alt":"Azure Front Door - Requests","title":"Azure Front Door - Requests"},"ddos-azure-function10.png":{"caption":"Azure Functions - Executions","alt":"Azure Functions - Executions","title":"Azure Functions - Executions"},"ddos-azure-function11.png":{"caption":"User-agent rule","alt":"User-agent rule","title":"User-agent rule"},"ddos-azure-function12.png":{"caption":"Rate limit rule","alt":"Rate limit rule","title":"Rate limit rule"}},"11":{"github-codespaces1.png":{"caption":"GitHub Codespaces storage usage","alt":"GitHub Codespaces storage usage","title":"GitHub Codespaces storage usage"},"github-codespaces2.png":{"caption":"Storage usage on billing","alt":"Storage usage on billing","title":"Storage usage on billing"},"github-codespaces3.png":{"caption":"Finding the old Codepace instance on the repository","alt":"Finding the old Codepace instance on the repository","title":"Finding the old Codepace instance on the repository"},"github-codespaces4.png":{"caption":"Codespaces cleaned","alt":"Codespaces cleaned","title":"Codespaces cleaned"},"github-codespaces5.png":{"caption":"Billing report with Codespace instances","alt":"Billing report with Codespace instances","title":"Billing report with Codespace instances"},"github-app-installation.png":{"caption":"Install a GitHub App","alt":"Install a GitHub App","title":"Install a GitHub App"},"github-discussions-migration1.png":{"caption":"GitHub Discussions - Completed migration","alt":"GitHub Discussions - Completed migration","title":"GitHub Discussions - Completed migration"},"github-discussions-migration2.png":{"caption":"GitHub Discussions - Notifications","alt":"GitHub Discussions - Notifications","title":"GitHub Discussions - Notifications"}},"12":{"vscode-authentication-flow.png":{"caption":"Visual Studio Code - Authentication flow","alt":"Visual Studio Code - Authentication flow","title":"Visual Studio Code - Authentication flow"},"vscode-proxy.png":{"caption":"Visual Studio Code - Proxy only allows Microsoft known endpoints","alt":"Visual Studio Code - Proxy only allows Microsoft known endpoints","title":"Visual Studio Code - Proxy only allows Microsoft known endpoints"},"vcode-authentication-flow2.png":{"caption":"Visual Studio Code - Authentication flow with proxy","alt":"Visual Studio Code - Authentication flow with proxy","title":"Visual Studio Code - Authentication flow with proxy"},"vscode-redirect-proxy.png":{"caption":"Visual Studio Code - Redirect page","alt":"Visual Studio Code - Redirect page","title":"Visual Studio Code - Redirect page"},"gitpod-authentication.mov":{"title":"Visual Studio Code - Authentication flow in Gitpod"},"vscode-github-authentication.mov":{"title":"Visual Studio Code - Authentication flow in GitHub Codespaces"},"vscode-gitpod-authentication.mp4":{"title":"Visual Studio Code - Authentication flow in Gitpod"},"vscode-github-authentication.mp4":{"title":"Visual Studio Code - Authentication flow in GitHub Codespaces"},"progress-notification1.png":{"caption":"Progress notification in Visual Studio Code","alt":"Progress notification in Visual Studio Code","title":"Progress notification in Visual Studio Code"},"progress-notification2.png":{"caption":"Cancelled message from the code snippet","alt":"Cancelled message from the code snippet","title":"Cancelled message from the code snippet"},"github-start.jpg":{"caption":"GitHub Star","alt":"GitHub Star","title":"GitHub Star"},"rapidapi-client-extension.png":{"caption":"RapidAPI Client - VS Code Extension","alt":"RapidAPI Client - VS Code Extension","title":"RapidAPI Client - VS Code Extension"},"vscode-lego.jpg":{"caption":"VS Code logo with LEGO","alt":"VS Code logo with LEGO","title":"VS Code logo with LEGO"},"frontmattercms-vscode.png":{"caption":"Front Matter CMS - VS Code Extension","alt":"Front Matter CMS - VS Code Extension","title":"Front Matter CMS - VS Code Extension"},"biwug-lanyards.jpg":{"caption":"BIWUG lanyards at Collabdays Belgium","alt":"BIWUG lanyards at Collabdays Belgium","title":"BIWUG lanyards at Collabdays Belgium"},"biwug-team.jpg":{"caption":"The BIWUG Team - Jim, Thomas, Elio, Sofie, and Rick","alt":"The BIWUG Team - Jim, Thomas, Elio, Sofie, and Rick","title":"The BIWUG Team - Jim, Thomas, Elio, Sofie, and Rick"},"hugo-conf.png":{"caption":"Presenting at Hugo Conf","alt":"Presenting at Hugo Conf","title":"Presenting at Hugo Conf"},"presenting-espc22.jpg":{"caption":"Presenting at ESPC22","alt":"Presenting at ESPC22","title":"Presenting at ESPC22"},"espc22-sharegate-party.jpg":{"caption":"Thanks Adam King for this picture at the Sharegate party","alt":"Thanks Adam King for this picture at the Sharegate party","title":"Thanks Adam King for this picture at the Sharegate party"},"visitorbadges-stats.png":{"caption":"Visitor Badge Stats","alt":"Visitor Badge Stats","title":"Visitor Badge Stats"},"eliostruyf-fireplace.jpg":{"caption":"Me at a fireplace","alt":"Me at a fireplace","title":"Me at a fireplace"},"click-event-progress-notification.mov":{"title":"Click event on a progress notification"}},"vscode-theming-variables.png":{"caption":"CSS Variables passed on the HTML element","alt":"CSS Variables passed on the HTML element"},"04":{"vscode-azure-ad.png":{"caption":"Azure AD - Redirect URL","alt":"Azure AD - Redirect URL","title":"Azure AD - Redirect URL"},"auth0-auth-provider.mp4":{"title":"Auth0 Authentication Provider"}},"05":{"uri-handler.png":{"caption":"URI Handler showing the notification","alt":"URI Handler showing the notification","title":"URI Handler showing the notification"},"github-project.png":{"caption":"GitHub Project example from Front Matter","alt":"GitHub Project example from Front Matter","title":"GitHub Project example from Front Matter"},"project-labelling.png":{"caption":"Project labelling for issues","alt":"Project labelling for issues","title":"Project labelling for issues"}},"06":{"open-folder-1.png":{"caption":"Failed to open folder on Windows","alt":"Failed to open folder on Windows","title":"Failed to open folder on Windows"},"terminal-link-handler.png":{"caption":"Handle the link in the terminal","alt":"Handle the link in the terminal","title":"Handle the link in the terminal"}},"07":{"eliostruyf_aboutme.png":{"caption":"Elio Struyf on a cycling trip","alt":"Elio Struyf on a cycling trip","title":"Elio Struyf on a cycling trip"},"walkthrough-experience.png":{"caption":"Walkthrough experience","alt":"Walkthrough experience","title":"Walkthrough experience"},"get-started.png":{"caption":"VS Code - Get started","alt":"VS Code - Get started","title":"VS Code - Get started"},"welcome-command.png":{"caption":"Welcome command","alt":"Welcome command","title":"Welcome command"}},"09":{"webview-editor-title.png":{"caption":"Webview - Editor title commands","alt":"Webview - Editor title commands","title":"Webview - Editor title commands"},"webview-editor-title-command.png":{"caption":"Webview - Custom command enabled in editor/title","alt":"Webview - Custom command enabled in editor/title","title":"Webview - Custom command enabled in editor/title"}}},"2023":{"01":{"context-menus.png":{"caption":"Submenu in a context menu","alt":"Submenu in a context menu","title":"Submenu in a context menu"}},"02":{"slidev-1.png":{"caption":"Slidev","alt":"Slidev","title":"Slidev"},"slidev-2.png":{"caption":"Slides folder","alt":"Slides folder","title":"Slides folder"},"slidev-3.png":{"caption":"Slidev presentation view","alt":"Slidev presentation view","title":"Slidev presentation view"},"slidev-4.png":{"caption":"Slidev presenters view","alt":"Slidev presenters view","title":"Slidev presenters view"},"open-link.png":{"caption":"Open link to external website","alt":"Open link to external website","title":"Open link to external website"},"betterdisplay-resolution.png":{"caption":"BetterDisplay - Resolution","alt":"BetterDisplay - Resolution","title":"BetterDisplay - Resolution"},"macbook-box.jpg":{"caption":"Macbook Air in the box","alt":"Macbook Air in the box","title":"Macbook Air in the box"},"macbook-comparison.jpg":{"caption":"Size comparison with Macbook PRO 16\", PRO 14\", and the Air","alt":"Size comparison with Macbook PRO 16\", PRO 14\", and the Air","title":"Size comparison with Macbook PRO 16\", PRO 14\", and the Air"},"macbook-firstproject.jpg":{"caption":"Coding the first project on the Macbook Air - Screendown","alt":"Coding the first project on the Macbook Air - Screendown","title":"Coding the first project on the Macbook Air - Screendown"},"macbook-moft.jpg":{"caption":"Using MacBook with Moft stand","alt":"Using MacBook with Moft stand","title":"Using MacBook with Moft stand"}},"03":{"symlink-folder.png":{"caption":".frontmatter folders from the submodule","alt":".frontmatter folders from the submodule","title":".frontmatter folders from the submodule"},"symlink-error.png":{"caption":"Asset include error","alt":"Asset include error","title":"Asset include error"},"astro-blog-content.png":{"caption":"Showing my blog content with Astro","alt":"Showing my blog content with Astro","title":"Showing my blog content with Astro"},"symlink-posts.png":{"caption":"Symlinked posts folder","alt":"Symlinked posts folder","title":"Symlinked posts folder"},"updated-symlinked-folder.png":{"caption":".frontmatter folder as a submodule","alt":".frontmatter folder as a submodule","title":".frontmatter folder as a submodule"},"symlinked-asset-folders.png":{"caption":"Symlinked asset folders","alt":"Symlinked asset folders","title":"Symlinked asset folders"},"symlinked-post-result.png":{"caption":"Outcome of the symlinked content and assets","alt":"Outcome of the symlinked content and assets","title":"Outcome of the symlinked content and assets"},"css-hack-debug.png":{"caption":"Debug toolbar in the macOS Titlebar","alt":"Debug toolbar in the macOS Titlebar","title":"Debug toolbar in the macOS Titlebar"},"floating-debug-toolbar.png":{"caption":"Floating debug toolbar in front of editor controls","alt":"Floating debug toolbar in front of editor controls","title":"Floating debug toolbar in front of editor controls"},"front-matter-cms-ai.png":{"caption":"Front Matter CMS - Documentation AI","alt":"Front Matter CMS - Documentation AI","title":"Front Matter CMS - Documentation AI"},"langchain-frontmatter.png":{"caption":"Using LangChain against Front Matter docs","alt":"Using LangChain against Front Matter docs","title":"Using LangChain against Front Matter docs"},"mendable-frontmatter.png":{"caption":"Mendable on the Front Matter CMS website","alt":"Mendable on the Front Matter CMS website","title":"Mendable on the Front Matter CMS website"},"github-copilot-for-docs.png":{"caption":"GitHub Copilot for Docs","alt":"GitHub Copilot for Docs","title":"GitHub Copilot for Docs"},"github-copilot-docs-quote.png":{"caption":"My quote on the GitHub Copilot for Docs website","alt":"My quote on the GitHub Copilot for Docs website","title":"My quote on the GitHub Copilot for Docs website"}}}}},".frontmatter":{"static":{"uploads":{"2023":{"03":{"dispatch-github-action.png":{"caption":"Trigger a new build","alt":"Trigger a new build","title":"Trigger a new build"},"fine-grained-permissions.png":{"caption":"Fine-grained permissions","alt":"Fine-grained permissions","title":"Fine-grained permissions"},"report-issues-on-github.png":{"caption":"Report issues or make changes on GitHub","alt":"Report issues or make changes on GitHub","title":"Report issues or make changes on GitHub"},"blog-content.png":{"caption":"Blog content structure","alt":"Blog content structure","title":"Blog content structure"},"issue-getting-commit.png":{"caption":"Fetching submodule commit","alt":"Fetching submodule commit","title":"Fetching submodule commit"}},"04":{"speaking-gdgberlin.png":{"caption":"Speaking at #GDGBerlin","alt":"Speaking at #GDGBerlin","title":"Speaking at #GDGBerlin"}},"05":{"rapidapi-client.png":{"caption":"RapidAPI Client - Visual Studio Code Extension","alt":"RapidAPI Client - Visual Studio Code Extension","title":"RapidAPI Client - Visual Studio Code Extension"},"eliostruyf-bike-2023.jpg":{"caption":"Keep on smiling","alt":"Keep on smiling","title":"Keep on smiling"},"screenshot 2023-05-05 at 15.50.43.png":{"caption":"sadfdsadsa","alt":"asdfdasf","title":"asdfdas"}},"06":{"permission-request-1.png":{},"permission-request-2.png":{"caption":"Testing out the resource types","alt":"Testing out the resource types","title":"Testing out the resource types"}}}}}}}
+{
+  "static": {
+    "uploads": {
+      "2021": {
+        "10": {
+          "frontmatter-social.png": {
+            "caption": "Front Matter content dashboard",
+            "alt": "Front Matter content dashboard"
+          },
+          "frontmatter-panel.png": {
+            "caption": "Front Matter its editor panel in VS Code",
+            "alt": "Front Matter its editor panel in VS Code"
+          },
+          "frontmatter-preview.png": {
+            "caption": "Front Matter - Site/Page preview",
+            "alt": "Front Matter - Site/Page preview"
+          },
+          "frontmatter-content.png": {
+            "caption": "Front Matter - Content Management",
+            "alt": "Front Matter - Content Management"
+          },
+          "frontmatter-media-metadata.png": {
+            "caption": "Front Matter - Media management",
+            "alt": "Front Matter - Media management"
+          },
+          "frontmatter-media-insert.png": {
+            "caption": "Front Matter - Insert media",
+            "alt": "Front Matter - Insert media"
+          },
+          "cloudflare-pages.png": {
+            "caption": "Cloudflare Pages",
+            "alt": "Cloudflare Pages"
+          },
+          "cloudflare-pages-create-project.png": {
+            "caption": "Create a new project",
+            "alt": "Create a new project"
+          },
+          "cloudflare-pages-github.png": {
+            "caption": "Link to GitHub",
+            "alt": "Link to GitHub"
+          },
+          "cloudflare-pages-configure.png": {
+            "caption": "Configuring your project",
+            "alt": "Configuring your project"
+          },
+          "cloudflare-pages-website.png": {
+            "caption": "Website running on Cloudflare",
+            "alt": "Website running on Cloudflare"
+          },
+          "ai-ghostwriter-outline.png": {
+            "caption": "Article outline by Peppertype.ai",
+            "alt": "Article outline by Peppertype.ai"
+          },
+          "ai-ghostwriter-section-content.png": {
+            "caption": "Using Rytr for section content",
+            "alt": "Using Rytr for section content"
+          },
+          "ai-content-generation.png": {},
+          "ai-content-generation2.png": {}
+        },
+        "11": {
+          "cloudflare-pages-dns.png": {
+            "caption": "Transfer domain to Cloudflare DNS",
+            "alt": "Transfer domain to Cloudflare DNS"
+          }
+        },
+        "12": {
+          "ecs_2021_speaking.jpg": {
+            "caption": "The photo was taken by Anna Imm at ECS 2021",
+            "alt": "The photo was taken by Anna Imm at ECS 2021"
+          },
+          "cra-vscode-failed-load.png": {
+            "caption": "Failed to load the file update",
+            "alt": "Failed to load the file update"
+          },
+          "cra-vscode-wrong-path.png": {
+            "caption": "VS Code path",
+            "alt": "VS Code path"
+          },
+          "cra-vscode-correct.png": {
+            "caption": "Loading HMR changes correctly",
+            "alt": "Loading HMR changes correctly"
+          },
+          "quote-2022.png": {
+            "caption": "Take the good out of the bad experiences",
+            "alt": "Take the good out of the bad experiences"
+          },
+          "walking-2022.jpg": {
+            "caption": "Total distance walked on my treadmill",
+            "alt": "Total distance walked on my treadmill"
+          }
+        }
+      },
+      "2022": {
+        "10": {
+          "extension-webview-communication.png": {
+            "caption": "Communication flow",
+            "alt": "Communication flow",
+            "title": "Communication flow"
+          },
+          "extension-webview-communication2.png": {
+            "caption": "Required listeners for the communication",
+            "alt": "Required listeners for the communication",
+            "title": "Required listeners for the communication"
+          },
+          "new-communication-flow.png": {
+            "caption": "API like communication flow",
+            "alt": "API like communication flow",
+            "title": "API like communication flow"
+          },
+          "ddos-azure-function1.png": {
+            "caption": "Cost increase on Azure subscription",
+            "alt": "Cost increase on Azure subscription",
+            "title": "Cost increase on Azure subscription"
+          },
+          "ddos-azure-function2.png": {
+            "caption": "Azure Function execution cost",
+            "alt": "Azure Function execution cost",
+            "title": "Azure Function execution cost"
+          },
+          "ddos-azure-function3.png": {
+            "caption": "Function servers/hosts running",
+            "alt": "Function servers/hosts running",
+            "title": "Function servers/hosts running"
+          },
+          "ddos-azure-function4.png": {
+            "caption": "Azure Functions log",
+            "alt": "Azure Functions log",
+            "title": "Azure Functions log"
+          },
+          "ddos-azure-function5.png": {
+            "caption": "4 million Azure Function calls at the start of their script",
+            "alt": "4 million Azure Function calls at the start of their script",
+            "title": "4 million Azure Function calls at the start of their script"
+          },
+          "ddos-azure-function6.png": {
+            "caption": "Banned badge",
+            "alt": "Banned badge",
+            "title": "Banned badge"
+          },
+          "ddos-azure-function7.png": {
+            "caption": "WAF rules to block requests",
+            "alt": "WAF rules to block requests",
+            "title": "WAF rules to block requests"
+          },
+          "ddos-azure-function8.png": {
+            "caption": "Requests per user-agent",
+            "alt": "Requests per user-agent",
+            "title": "Requests per user-agent"
+          },
+          "ddos-azure-function9.png": {
+            "caption": "Azure Front Door - Requests",
+            "alt": "Azure Front Door - Requests",
+            "title": "Azure Front Door - Requests"
+          },
+          "ddos-azure-function10.png": {
+            "caption": "Azure Functions - Executions",
+            "alt": "Azure Functions - Executions",
+            "title": "Azure Functions - Executions"
+          },
+          "ddos-azure-function11.png": {
+            "caption": "User-agent rule",
+            "alt": "User-agent rule",
+            "title": "User-agent rule"
+          },
+          "ddos-azure-function12.png": {
+            "caption": "Rate limit rule",
+            "alt": "Rate limit rule",
+            "title": "Rate limit rule"
+          }
+        },
+        "11": {
+          "github-codespaces1.png": {
+            "caption": "GitHub Codespaces storage usage",
+            "alt": "GitHub Codespaces storage usage",
+            "title": "GitHub Codespaces storage usage"
+          },
+          "github-codespaces2.png": {
+            "caption": "Storage usage on billing",
+            "alt": "Storage usage on billing",
+            "title": "Storage usage on billing"
+          },
+          "github-codespaces3.png": {
+            "caption": "Finding the old Codepace instance on the repository",
+            "alt": "Finding the old Codepace instance on the repository",
+            "title": "Finding the old Codepace instance on the repository"
+          },
+          "github-codespaces4.png": {
+            "caption": "Codespaces cleaned",
+            "alt": "Codespaces cleaned",
+            "title": "Codespaces cleaned"
+          },
+          "github-codespaces5.png": {
+            "caption": "Billing report with Codespace instances",
+            "alt": "Billing report with Codespace instances",
+            "title": "Billing report with Codespace instances"
+          },
+          "github-app-installation.png": {
+            "caption": "Install a GitHub App",
+            "alt": "Install a GitHub App",
+            "title": "Install a GitHub App"
+          },
+          "github-discussions-migration1.png": {
+            "caption": "GitHub Discussions - Completed migration",
+            "alt": "GitHub Discussions - Completed migration",
+            "title": "GitHub Discussions - Completed migration"
+          },
+          "github-discussions-migration2.png": {
+            "caption": "GitHub Discussions - Notifications",
+            "alt": "GitHub Discussions - Notifications",
+            "title": "GitHub Discussions - Notifications"
+          }
+        },
+        "12": {
+          "vscode-authentication-flow.png": {
+            "caption": "Visual Studio Code - Authentication flow",
+            "alt": "Visual Studio Code - Authentication flow",
+            "title": "Visual Studio Code - Authentication flow"
+          },
+          "vscode-proxy.png": {
+            "caption": "Visual Studio Code - Proxy only allows Microsoft known endpoints",
+            "alt": "Visual Studio Code - Proxy only allows Microsoft known endpoints",
+            "title": "Visual Studio Code - Proxy only allows Microsoft known endpoints"
+          },
+          "vcode-authentication-flow2.png": {
+            "caption": "Visual Studio Code - Authentication flow with proxy",
+            "alt": "Visual Studio Code - Authentication flow with proxy",
+            "title": "Visual Studio Code - Authentication flow with proxy"
+          },
+          "vscode-redirect-proxy.png": {
+            "caption": "Visual Studio Code - Redirect page",
+            "alt": "Visual Studio Code - Redirect page",
+            "title": "Visual Studio Code - Redirect page"
+          },
+          "gitpod-authentication.mov": {
+            "title": "Visual Studio Code - Authentication flow in Gitpod"
+          },
+          "vscode-github-authentication.mov": {
+            "title": "Visual Studio Code - Authentication flow in GitHub Codespaces"
+          },
+          "vscode-gitpod-authentication.mp4": {
+            "title": "Visual Studio Code - Authentication flow in Gitpod"
+          },
+          "vscode-github-authentication.mp4": {
+            "title": "Visual Studio Code - Authentication flow in GitHub Codespaces"
+          },
+          "progress-notification1.png": {
+            "caption": "Progress notification in Visual Studio Code",
+            "alt": "Progress notification in Visual Studio Code",
+            "title": "Progress notification in Visual Studio Code"
+          },
+          "progress-notification2.png": {
+            "caption": "Cancelled message from the code snippet",
+            "alt": "Cancelled message from the code snippet",
+            "title": "Cancelled message from the code snippet"
+          },
+          "github-start.jpg": {
+            "caption": "GitHub Star",
+            "alt": "GitHub Star",
+            "title": "GitHub Star"
+          },
+          "rapidapi-client-extension.png": {
+            "caption": "RapidAPI Client - VS Code Extension",
+            "alt": "RapidAPI Client - VS Code Extension",
+            "title": "RapidAPI Client - VS Code Extension"
+          },
+          "vscode-lego.jpg": {
+            "caption": "VS Code logo with LEGO",
+            "alt": "VS Code logo with LEGO",
+            "title": "VS Code logo with LEGO"
+          },
+          "frontmattercms-vscode.png": {
+            "caption": "Front Matter CMS - VS Code Extension",
+            "alt": "Front Matter CMS - VS Code Extension",
+            "title": "Front Matter CMS - VS Code Extension"
+          },
+          "biwug-lanyards.jpg": {
+            "caption": "BIWUG lanyards at Collabdays Belgium",
+            "alt": "BIWUG lanyards at Collabdays Belgium",
+            "title": "BIWUG lanyards at Collabdays Belgium"
+          },
+          "biwug-team.jpg": {
+            "caption": "The BIWUG Team - Jim, Thomas, Elio, Sofie, and Rick",
+            "alt": "The BIWUG Team - Jim, Thomas, Elio, Sofie, and Rick",
+            "title": "The BIWUG Team - Jim, Thomas, Elio, Sofie, and Rick"
+          },
+          "hugo-conf.png": {
+            "caption": "Presenting at Hugo Conf",
+            "alt": "Presenting at Hugo Conf",
+            "title": "Presenting at Hugo Conf"
+          },
+          "presenting-espc22.jpg": {
+            "caption": "Presenting at ESPC22",
+            "alt": "Presenting at ESPC22",
+            "title": "Presenting at ESPC22"
+          },
+          "espc22-sharegate-party.jpg": {
+            "caption": "Thanks Adam King for this picture at the Sharegate party",
+            "alt": "Thanks Adam King for this picture at the Sharegate party",
+            "title": "Thanks Adam King for this picture at the Sharegate party"
+          },
+          "visitorbadges-stats.png": {
+            "caption": "Visitor Badge Stats",
+            "alt": "Visitor Badge Stats",
+            "title": "Visitor Badge Stats"
+          },
+          "eliostruyf-fireplace.jpg": {
+            "caption": "Me at a fireplace",
+            "alt": "Me at a fireplace",
+            "title": "Me at a fireplace"
+          },
+          "click-event-progress-notification.mov": {
+            "title": "Click event on a progress notification"
+          }
+        },
+        "vscode-theming-variables.png": {
+          "caption": "CSS Variables passed on the HTML element",
+          "alt": "CSS Variables passed on the HTML element"
+        },
+        "04": {
+          "vscode-azure-ad.png": {
+            "caption": "Azure AD - Redirect URL",
+            "alt": "Azure AD - Redirect URL",
+            "title": "Azure AD - Redirect URL"
+          },
+          "auth0-auth-provider.mp4": {
+            "title": "Auth0 Authentication Provider"
+          }
+        },
+        "05": {
+          "uri-handler.png": {
+            "caption": "URI Handler showing the notification",
+            "alt": "URI Handler showing the notification",
+            "title": "URI Handler showing the notification"
+          },
+          "github-project.png": {
+            "caption": "GitHub Project example from Front Matter",
+            "alt": "GitHub Project example from Front Matter",
+            "title": "GitHub Project example from Front Matter"
+          },
+          "project-labelling.png": {
+            "caption": "Project labelling for issues",
+            "alt": "Project labelling for issues",
+            "title": "Project labelling for issues"
+          }
+        },
+        "06": {
+          "open-folder-1.png": {
+            "caption": "Failed to open folder on Windows",
+            "alt": "Failed to open folder on Windows",
+            "title": "Failed to open folder on Windows"
+          },
+          "terminal-link-handler.png": {
+            "caption": "Handle the link in the terminal",
+            "alt": "Handle the link in the terminal",
+            "title": "Handle the link in the terminal"
+          }
+        },
+        "07": {
+          "eliostruyf_aboutme.png": {
+            "caption": "Elio Struyf on a cycling trip",
+            "alt": "Elio Struyf on a cycling trip",
+            "title": "Elio Struyf on a cycling trip"
+          },
+          "walkthrough-experience.png": {
+            "caption": "Walkthrough experience",
+            "alt": "Walkthrough experience",
+            "title": "Walkthrough experience"
+          },
+          "get-started.png": {
+            "caption": "VS Code - Get started",
+            "alt": "VS Code - Get started",
+            "title": "VS Code - Get started"
+          },
+          "welcome-command.png": {
+            "caption": "Welcome command",
+            "alt": "Welcome command",
+            "title": "Welcome command"
+          }
+        },
+        "09": {
+          "webview-editor-title.png": {
+            "caption": "Webview - Editor title commands",
+            "alt": "Webview - Editor title commands",
+            "title": "Webview - Editor title commands"
+          },
+          "webview-editor-title-command.png": {
+            "caption": "Webview - Custom command enabled in editor/title",
+            "alt": "Webview - Custom command enabled in editor/title",
+            "title": "Webview - Custom command enabled in editor/title"
+          }
+        }
+      },
+      "2023": {
+        "01": {
+          "context-menus.png": {
+            "caption": "Submenu in a context menu",
+            "alt": "Submenu in a context menu",
+            "title": "Submenu in a context menu"
+          }
+        },
+        "02": {
+          "slidev-1.png": {
+            "caption": "Slidev",
+            "alt": "Slidev",
+            "title": "Slidev"
+          },
+          "slidev-2.png": {
+            "caption": "Slides folder",
+            "alt": "Slides folder",
+            "title": "Slides folder"
+          },
+          "slidev-3.png": {
+            "caption": "Slidev presentation view",
+            "alt": "Slidev presentation view",
+            "title": "Slidev presentation view"
+          },
+          "slidev-4.png": {
+            "caption": "Slidev presenters view",
+            "alt": "Slidev presenters view",
+            "title": "Slidev presenters view"
+          },
+          "open-link.png": {
+            "caption": "Open link to external website",
+            "alt": "Open link to external website",
+            "title": "Open link to external website"
+          },
+          "betterdisplay-resolution.png": {
+            "caption": "BetterDisplay - Resolution",
+            "alt": "BetterDisplay - Resolution",
+            "title": "BetterDisplay - Resolution"
+          },
+          "macbook-box.jpg": {
+            "caption": "Macbook Air in the box",
+            "alt": "Macbook Air in the box",
+            "title": "Macbook Air in the box"
+          },
+          "macbook-comparison.jpg": {
+            "caption": "Size comparison with Macbook PRO 16\", PRO 14\", and the Air",
+            "alt": "Size comparison with Macbook PRO 16\", PRO 14\", and the Air",
+            "title": "Size comparison with Macbook PRO 16\", PRO 14\", and the Air"
+          },
+          "macbook-firstproject.jpg": {
+            "caption": "Coding the first project on the Macbook Air - Screendown",
+            "alt": "Coding the first project on the Macbook Air - Screendown",
+            "title": "Coding the first project on the Macbook Air - Screendown"
+          },
+          "macbook-moft.jpg": {
+            "caption": "Using MacBook with Moft stand",
+            "alt": "Using MacBook with Moft stand",
+            "title": "Using MacBook with Moft stand"
+          }
+        },
+        "03": {
+          "symlink-folder.png": {
+            "caption": ".frontmatter folders from the submodule",
+            "alt": ".frontmatter folders from the submodule",
+            "title": ".frontmatter folders from the submodule"
+          },
+          "symlink-error.png": {
+            "caption": "Asset include error",
+            "alt": "Asset include error",
+            "title": "Asset include error"
+          },
+          "astro-blog-content.png": {
+            "caption": "Showing my blog content with Astro",
+            "alt": "Showing my blog content with Astro",
+            "title": "Showing my blog content with Astro"
+          },
+          "symlink-posts.png": {
+            "caption": "Symlinked posts folder",
+            "alt": "Symlinked posts folder",
+            "title": "Symlinked posts folder"
+          },
+          "updated-symlinked-folder.png": {
+            "caption": ".frontmatter folder as a submodule",
+            "alt": ".frontmatter folder as a submodule",
+            "title": ".frontmatter folder as a submodule"
+          },
+          "symlinked-asset-folders.png": {
+            "caption": "Symlinked asset folders",
+            "alt": "Symlinked asset folders",
+            "title": "Symlinked asset folders"
+          },
+          "symlinked-post-result.png": {
+            "caption": "Outcome of the symlinked content and assets",
+            "alt": "Outcome of the symlinked content and assets",
+            "title": "Outcome of the symlinked content and assets"
+          },
+          "css-hack-debug.png": {
+            "caption": "Debug toolbar in the macOS Titlebar",
+            "alt": "Debug toolbar in the macOS Titlebar",
+            "title": "Debug toolbar in the macOS Titlebar"
+          },
+          "floating-debug-toolbar.png": {
+            "caption": "Floating debug toolbar in front of editor controls",
+            "alt": "Floating debug toolbar in front of editor controls",
+            "title": "Floating debug toolbar in front of editor controls"
+          },
+          "front-matter-cms-ai.png": {
+            "caption": "Front Matter CMS - Documentation AI",
+            "alt": "Front Matter CMS - Documentation AI",
+            "title": "Front Matter CMS - Documentation AI"
+          },
+          "langchain-frontmatter.png": {
+            "caption": "Using LangChain against Front Matter docs",
+            "alt": "Using LangChain against Front Matter docs",
+            "title": "Using LangChain against Front Matter docs"
+          },
+          "mendable-frontmatter.png": {
+            "caption": "Mendable on the Front Matter CMS website",
+            "alt": "Mendable on the Front Matter CMS website",
+            "title": "Mendable on the Front Matter CMS website"
+          },
+          "github-copilot-for-docs.png": {
+            "caption": "GitHub Copilot for Docs",
+            "alt": "GitHub Copilot for Docs",
+            "title": "GitHub Copilot for Docs"
+          },
+          "github-copilot-docs-quote.png": {
+            "caption": "My quote on the GitHub Copilot for Docs website",
+            "alt": "My quote on the GitHub Copilot for Docs website",
+            "title": "My quote on the GitHub Copilot for Docs website"
+          }
+        }
+      }
+    }
+  },
+  ".frontmatter": {
+    "static": {
+      "uploads": {
+        "2023": {
+          "03": {
+            "dispatch-github-action.png": {
+              "caption": "Trigger a new build",
+              "alt": "Trigger a new build",
+              "title": "Trigger a new build"
+            },
+            "fine-grained-permissions.png": {
+              "caption": "Fine-grained permissions",
+              "alt": "Fine-grained permissions",
+              "title": "Fine-grained permissions"
+            },
+            "report-issues-on-github.png": {
+              "caption": "Report issues or make changes on GitHub",
+              "alt": "Report issues or make changes on GitHub",
+              "title": "Report issues or make changes on GitHub"
+            },
+            "blog-content.png": {
+              "caption": "Blog content structure",
+              "alt": "Blog content structure",
+              "title": "Blog content structure"
+            },
+            "issue-getting-commit.png": {
+              "caption": "Fetching submodule commit",
+              "alt": "Fetching submodule commit",
+              "title": "Fetching submodule commit"
+            }
+          },
+          "04": {
+            "speaking-gdgberlin.png": {
+              "caption": "Speaking at #GDGBerlin",
+              "alt": "Speaking at #GDGBerlin",
+              "title": "Speaking at #GDGBerlin"
+            }
+          },
+          "05": {
+            "rapidapi-client.png": {
+              "caption": "RapidAPI Client - Visual Studio Code Extension",
+              "alt": "RapidAPI Client - Visual Studio Code Extension",
+              "title": "RapidAPI Client - Visual Studio Code Extension"
+            },
+            "eliostruyf-bike-2023.jpg": {
+              "caption": "Keep on smiling",
+              "alt": "Keep on smiling",
+              "title": "Keep on smiling"
+            },
+            "screenshot 2023-05-05 at 15.50.43.png": {
+              "caption": "sadfdsadsa",
+              "alt": "asdfdasf",
+              "title": "asdfdas"
+            }
+          },
+          "06": {
+            "permission-request-1.png": {},
+            "permission-request-2.png": {
+              "caption": "Testing out the resource types",
+              "alt": "Testing out the resource types",
+              "title": "Testing out the resource types"
+            }
+          }
+        }
+      }
+    }
+  }
+}
