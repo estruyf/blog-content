@@ -40,7 +40,12 @@ type: post
 
 ## June
 
+- Looking for a new job
+- Started the meetings for GDE
+
 ## July
+
+- Got accepted to the GDE program
 
 ## August
 
