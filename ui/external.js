@@ -53,39 +53,39 @@ class CardTitle extends LitElement {
 }
 customElements.define('card-title', CardTitle);
 
-registerCardTitle(async (filePath, data) => {
-  return `
-    <card-title title="${data.title}"></card-title>
-  `;
-});
+// registerCardTitle(async (filePath, data) => {
+//   return `
+//     <card-title title="${data.title}"></card-title>
+//   `;
+// });
 
-registerCardDescription(async (filePath, data) => {
-  return `
-    <p>Custom description</p>
-  `;
-});
+// registerCardDescription(async (filePath, data) => {
+//   return `
+//     <p>Custom description</p>
+//   `;
+// });
 
-registerCardDate(async (filePath, data) => {
-  console.log(data["lastmod"])
-  if (data["lastmod"]) {
-    return `
-      <p>${format(new Date(data["lastmod"]), 'MM-dd')}</p>
-    `;
-  }
-  return ``;
-});
+// registerCardDate(async (filePath, data) => {
+//   console.log(data["lastmod"])
+//   if (data["lastmod"]) {
+//     return `
+//       <p>${format(new Date(data["lastmod"]), 'MM-dd')}</p>
+//     `;
+//   }
+//   return ``;
+// });
 
-registerCardStatus(async (filePath, data) => {
-  return `
-    <p>Custom status</p>
-  `;
-});
+// registerCardStatus(async (filePath, data) => {
+//   return `
+//     <p>Custom status</p>
+//   `;
+// });
 
-registerCardTags(async (filePath, data) => {
-  return `
-    <p>Custom tags</p>
-  `;
-});
+// registerCardTags(async (filePath, data) => {
+//   return `
+//     <p>Custom tags</p>
+//   `;
+// });
 
 
 
