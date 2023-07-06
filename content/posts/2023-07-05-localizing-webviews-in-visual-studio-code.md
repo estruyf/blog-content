@@ -100,9 +100,11 @@ Example:
 
 Once all these hardcoded strings are replaced, you can start using the `@vscode/l10n-dev` CLI tool to export all your strings to the `bundle.l10n.json` file. You can do this by running the following command:
 
-```bash
+<!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"typescript"},{"name":"selection","value":"npx @vscode/l10n-dev export -o ./l10n ./src"}]} -->
+{{< highlight bash "linenos=table,noclasses=false" >}}
 npx @vscode/l10n-dev export -o ./l10n ./src
-```
+{{< / highlight >}}
+<!-- FM:Snippet:End -->
 
 <!-- FM:Snippet:Start data:{"id":"Blockquote","fields":[{"name":"type","value":"info"},{"name":"selection","value":"You can always create your own `bundle.l10n.json` and `bundle.l10n.<locale>.json` files, but the tool gives you a good headstart."}]} -->
 {{< blockquote type="info" text="You can always create your own `bundle.l10n.json` and `bundle.l10n.<locale>.json` files, but the tool gives you a good head start." >}}
