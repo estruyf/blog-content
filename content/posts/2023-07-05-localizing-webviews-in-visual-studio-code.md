@@ -36,19 +36,23 @@ When you are using a framework/library, you will need to do some extra work to g
 
 First of all, follow the steps that were mentioned in the "[localizing the strings used in your source files](https://www.eliostruyf.com/localization-visual-studio-code-extensions/#localizing-the-strings-used-in-your-source-files)" section of the previous localization article. You must ensure you have configured the `l10n` property in your `package.json` file.
 
-```json
+<!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"json"},{"name":"selection","value":"{\n  \"l10n\": \"./l10n\"\n}"}]} -->
+{{< highlight json "linenos=table,noclasses=false" >}}
 {
   "l10n": "./l10n"
 }
-```
+{{< / highlight >}}
+<!-- FM:Snippet:End -->
 
 Next, we will use the [@vscode/l10n](https://www.npmjs.com/package/@vscode/l10n-dev) dependency. This dependency is used internally by the `vscode.l10n.t()` function, but this function is not available in the webview context.
 
 To get started, you will need to install the dependency:
 
-```bash
+<!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"typescript"},{"name":"selection","value":"npm install @vscode/l10n"}]} -->
+{{< highlight bash "linenos=table,noclasses=false" >}}
 npm install @vscode/l10n
-```
+{{< / highlight >}}
+<!-- FM:Snippet:End -->
 
 ## Localizing your webview
 
