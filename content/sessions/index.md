@@ -22,34 +22,21 @@ tags:
 - Twitter: `https://twitter.com/eliostruyf`
 - GitHub Star: `https://stars.github.com/profiles/estruyf/`
 - MVP Nr: `5001411`
+- Google Developer Expert: `https://developers.google.com/profile/u/eliostruyf`
 
 ## Picture
 
-{{< caption-new "/images/eliostruyf_2022.jpg" "Link: https://www.eliostruyf.com/images/eliostruyf_2022.jpg" >}}
+{{< caption-new "/images/eliostruyf_2022.jpg" "Link: <https://www.eliostruyf.com/images/eliostruyf_2022.jpg>" >}}
 
 ## Bio
 
 Elio Struyf has led a remarkable career as an award-winning Engineering Lead, a trusted information technology thought-leader, and an energizing public speaker with over a decade of experience facilitating events and conferences across Europe.
 
-Over his career, he has been invited to numerous cities including Barcelona, London, Paris, and Stockholm, where he has spoken on thought-provoking, development-related topics on Microsoft 365, SharePoint, and Azure DevOps. His extensive knowledge has seen him recognized as a Microsoft MVP eight times, twice as a GitHub Star, and he has been recognized as a SharePoint/Microsoft 365 Top 25 Influencer four times.
+Over his career, he has been invited to numerous cities including Barcelona, London, Paris, and Stockholm, where he has spoken on thought-provoking, development-related topics on Microsoft 365, SharePoint, and Azure DevOps. His extensive knowledge has seen him recognized as a Microsoft MVP nine times, twice as a GitHub Star, a Google Developer Expert, and he has been recognized as a SharePoint/Microsoft 365 Top 25 Influencer four times.
 
 Today, along with acting as VP of BIWUG (Belgian Information Worker User Group), Elio works as an independent contractor for his own consulting company, Struyf Consulting.
 
 Elio remains a sought-after speaker at various Microsoft-related community events and conferences, where he inspires, educates, and creates authentic connections with technology professionals and developers across Europe.
-
-<!-- ### Long version
-
-Elio Struyf is an independent Belgium-based Engineering Lead, Blogger, and Public Speaker whose tenacity, determination, and drive have all earned him the reputation as a trusted thought leader in the information technology space. Deeply passionate about what he does for a living, he is a firm believer in following your dreams no matter what. To him, one’s profession should also be their purpose. Furthermore, he believes that we only have this one life to live, so we should spend that life feeling truly fulfilled both professionally and personally.
-
-Throughout the last decade, Elio has gained extensive experience in Azure, Microsoft 365, and Visual Studio Code extension development. Within those +10 years, he was deemed a Microsoft MVP seven consecutive times, he became a GitHub Star, and has been recognized as a SharePoint/Office 365 Top 25 Influencer three times.
-
-Elio’s inspiration for his blog began back in 2010 when he was facing a challenge that took him several days to overcome. The moment he found that solution, he realized how much he wanted to share his findings with the world. That’s when his blog was born. Fast-forward two years, and he expanded his horizons by dabbling in the public speaking arena. After speaking at a local BIWUG community (https://biwug.be) event and becoming their VP a year later, he knew this was yet another way he could not only connect with others but share valuable knowledge with them. What was once a fear of public speaking ultimately turned into an obsession.
-
-When he isn’t helping fellow IT developers, you can find Elio Struyf on his bike, coding, gaming (the Final Fantasy games are his favorite), binge-watching anime, or building random structures with Legos.  -->
-
-<!-- ### Short version
-
-Elio Struyf is an independent Lead DevTools Engineer, Blogger, and Speaker on a mission to share his tried-and-true wisdom with as many IT developers as possible. Armed with a deep-rooted passion for all things information technology, he has always been of the belief that one’s job should go beyond something that just “pays the bills”. What you do for a living should leave you feeling inspired every day of your life. For the last +10 years, he has been immersed in Azure, Microsoft 365, and Visual Studio Code extension development, earning multiple awards along the way. He has also had the opportunity to share his know-how at various speaking engagements and create articles for his blog that help others on their professional journeys. -->
 
 ## Sessions
 
@@ -90,7 +77,7 @@ Are you looking for a CMS to manage your site? Front Matter is a Visual Studio C
 
 You want to go for a static website but don't want to lose the content management features of your previous site. That is one reason why Elio started developing Front Matter CMS. In this talk, Elio will guide you through the process of creating a new static site and managing its content with Front Matter. This overview allows you to create and manage your static sites with ease.
 
-### The future is APIs, and here is how you can benefit from it.
+### The future is APIs, and here is how you can benefit from it
 
 - Audience: `DEV | makers`
 - Level: `200`
