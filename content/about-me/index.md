@@ -31,7 +31,7 @@ Along with facilitating his newfound love for public speaking, BIWUG, an organiz
 
 Over the years that followed, Elio has been recognized as a renowned public speaker. He has been invited to numerous European cities, including Barcelona, Milan, London, Cambridge, Paris, Stockholm, Oslo, Zagreb, Warsaw, Helsinki, and Munich, where he has spoken on a variety of thought-provoking development-related topics on Microsoft 365, SharePoint, and Azure DevOps, including Improving the Performance of your SharePoint Framework Solutions, Tips on building products for Microsoft 365 and How Pro Developers and Citizen Developers Can Team up.
 
-Over his notable career, Elio's extensive knowledge of Azure, Microsoft 365 development, and Visual Studio Code extensions development has recognized him as a Microsoft MVP nine times, twice as a GitHub Star, a Google Developer Expert, and a SharePoint/Microsoft 365 Top 25 Influencer four times.
+Over his notable career, Elio's extensive knowledge of Azure, Microsoft 365 development, and Visual Studio Code extensions development has recognized him as a Microsoft MVP nine times, twice as a GitHub Star, a Google Developer Experts member, and a SharePoint/Microsoft 365 Top 25 Influencer four times.
 
 In mid-2021, Elio, a passionate cyclist, was involved in a serious cycling accident. In line with his inherently resilient nature, he attempted to cycle home after the accident but instead, he had to be taken to the hospital by ambulance. Doctors informed him that he had a broken vertebra, provided him with a lumbar corset, and put him on bed rest for the next six weeks. Over this time, he drew on his global community for support and documented the experience on his blog.
 
