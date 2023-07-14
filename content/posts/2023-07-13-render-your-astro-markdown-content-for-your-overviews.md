@@ -23,7 +23,15 @@ When I retrieved the news collection data, I only got the front matter data and 
 
 Looking at the Astro documentation, I found several ways to get the HTML. The first one was to use the `marked` dependency, although I found an easier and better way to utilize the `Astro.glob()` functionality.
 
-With the [Astro.glob()](https://docs.astro.build/en/guides/imports/#astroglob) function, you can provide a glob pattern to retrieve your files, and it returns the front matter data, the Astro Content component.
+The [Astro.glob()](https://docs.astro.build/en/guides/imports/#astroglob) function is a way to retrieve files from a directory. It takes a glob pattern as its input, and it returns an array of the files that match the pattern.
+
+For example, the following code would retrieve all of the news articles in the `content/news` directory:
+
+{{< highlight typescript "linenos=table,noclasses=false" >}}
+const allNewsPosts = await Astro.glob(../content/news/*.md);
+{{< / highlight >}}
+
+The nice part about the `Astro.glob()` function is that it returns the front matter data and the Astro Content component. This means that you can use the Astro Content component to render the HTML.
 
 On the BIWUG website, I used it as follows:
 
