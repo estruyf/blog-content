@@ -28,9 +28,9 @@ Here you can see an example of how it looks like for a single object:
 {{< highlight json "linenos=table,noclasses=false" >}}
 {
   "contributes": {
-		"configuration": [
-			{
-				"title": "Content",
+    "configuration": [
+      {
+        "title": "Content",
         "properties": {
           "frontMatter.content.hideFm": {
             "type": "boolean",
@@ -66,9 +66,9 @@ To create multiple categories, all you need to do is change the `contributes.con
 {{< highlight json "linenos=table,noclasses=false" >}}
 {
   "contributes": {
-		"configuration": [
-			{
-				"title": "Content",
+    "configuration": [
+      {
+        "title": "Content",
         "properties": {
           "frontMatter.content.hideFm": {
             "type": "boolean",
