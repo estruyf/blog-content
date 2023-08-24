@@ -136,8 +136,13 @@ class CardImage extends LitElement {
 customElements.define('card-image', CardImage);
 
 // registerCardImage(async (filePath, data) => {
+//   console.log(data)
+//   // return `
+//   //   <card-image title="${data.title}" src="${data.fmPreviewImage}"></card-image>
+//   // `;
+
 //   return `
-//     <card-image title="${data.title}" src="${data.fmPreviewImage}"></card-image>
+//     <img src="${data.fmWebviewUrl}/screendown/twitter.png" />
 //   `;
 // });
 
@@ -293,6 +298,15 @@ class CustomField extends LitElement {
 customElements.define('custom-field', CustomField);
 
 registerCustomField("customField", async (value, onChange) => {
+  // Bind the event handler for the onChange evet
+  CustomFieldValueChange = onChange;
+  // Return the HTML of the custom field
+  return `
+    <custom-field inputValue="${value || ""}"></custom-field>
+  `;
+});
+
+registerCustomField("customField123", async (value, onChange) => {
   // Bind the event handler for the onChange evet
   CustomFieldValueChange = onChange;
   // Return the HTML of the custom field
