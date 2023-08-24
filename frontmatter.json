@@ -4,6 +4,7 @@
   "frontMatter.extensibility.scripts": [
     "[[workspace]]/.frontmatter/ui/external.js"
   ],
+  "frontMatter.snippets.wrapper.enabled": false,
   "frontMatter.sponsors.ai.enabled": true,
   "frontMatter.git.enabled": true,
   "frontMatter.git.actions": true,
