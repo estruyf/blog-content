@@ -21,7 +21,7 @@ In the past, I have written a couple of articles about end-to-end (E2E) testing 
 
 For me, the most significant advantage of Cypress was the visual UI for running your tests, but the main disadvantage was its use of an iframe, which caused issues for testing SharePoint and Microsoft Teams. In these other articles, I shared how you could overcome these issues, but a couple of versions ago, Playwright added its [UI mode](https://playwright.dev/docs/test-ui-mode), which is very similar to the Cypress UI but without the iframe issues. That, for me, was the main reason to switch to Playwright.
 
-{{< caption-new "/uploads/2023/08/playwright-ui-mode.png" "UI mode of Playwright" >}}
+{{< caption-new "/uploads/2023/08/playwright-ui-mode.png" "UI mode of Playwright"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAAClSURBVE3BzW3CQBCA0W9mZ10Jig9Y/PiSRMk19EgxvkEBWKYQcCLh7HonipAQ78mmbfcUX4/jSNM01HVNsEDOGXcnhEDXdSfLM8uU8muMkWEYWG1bPt/fKF4Q7q6Xa7bvX0e1IpJRcbarht3ui2d932OWfvjnqjhKSolpmng2zzOyWLwcgA+LhojgJXO7TbjzoKpHA86AuVYgSioBqSK449xp0PMfBTJHsH8dppsAAAAASUVORK5CYII=" "1342" >}}
 
 In this article, I will show you how to get started with Playwright and how to test your Microsoft 365 solutions with it.
 
@@ -150,7 +150,7 @@ Another great feature of the Playwright's testing library is that it includes vi
 
 The result of such a visual comparison can be seen in the following screenshot:
 
-{{< caption-new "/uploads/2023/08/playwright-visual-comparison.png" "Visual comparison of a page" >}}
+{{< caption-new "/uploads/2023/08/playwright-visual-comparison.png" "Visual comparison of a page"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACNSURBVDXBQWrDUBBEwdfzR6vE2uYAMRh0e98nAl/AeBNBhL6mYy1Upd77PSK+JXGyzUES2IDn3Lbt2lqbJCGJqmJZFmwzDAOZyZtyXVciAklUFZLITE77vmObtE3vHUlUFRHBobWGbU45jiMHv57wmNFtgr9fuHxhQBKHjIgfwAhoho9PaB1CIAHibf4HvTc774R3nGsAAAAASUVORK5CYII=" "1900" >}}
 
 {{< blockquote type="info" text="Here I have added a button to the page which pushes the content at the bottom downwards." >}}
 

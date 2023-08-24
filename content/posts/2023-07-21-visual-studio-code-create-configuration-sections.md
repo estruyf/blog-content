@@ -105,4 +105,4 @@ To create multiple categories, all you need to do is change the `contributes.con
 
 This results in the following outcome:
 
-{{< caption-new "/uploads/2023/07/group-settings.png" "Grouping extension settings" >}}
+{{< caption-new "/uploads/2023/07/group-settings.png" "Grouping extension settings"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABjSURBVFXBMQ7CQAxFwWd/L1IikXNw/zulp8imwV7Twoxd12yFmPNm3zdGDH7dn5vzfRJZhSQeY5CZhIS5cHPc4Ygnx/bCu2F1k5XIRdWiG8z4EyOEmwGiqmgM9aJqAQY0ZsYXT5cqDCTuxLMAAAAASUVORK5CYII=" "1395" >}}
