@@ -241,9 +241,9 @@
     "Highlight (single)": {
       "description": "Creates a code highlighting box",
       "body": [
-        "{{< highlight [[type]] \"linenos=table,noclasses=false\" >}}",
+        "```[[type]] {linenos=table,noclasses=false}",
         "[[&selection]]",
-        "{{< / highlight >}}"
+        "```"
       ],
       "fields": [
         {
