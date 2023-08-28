@@ -111,7 +111,7 @@ test("API throttled (success) - 429", async () => {
 
 When you run this in the UI mode of Playwright, you will see the following result:
 
-{{< caption-new "/uploads/2023/08/mocking-429.png" "Mocking 429 calls" >}}
+{{< caption-new "/uploads/2023/08/mocking-429.png" "Mocking 429 calls"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAAC2SURBVC3BMU7DQBRF0fv+2BKENCwhSZG0FChrQ1CBKECsg924i4zZQ5ICLDT2+M+AJc7Rfn/7PgxpN00Tq9WazWaNmeGe8Zw5HY80TdNVMabdNPlNKYWP9kDbHgDh7tzdP/D2+kJKiSrnTEojZmJxtUQS7k7f9zw/PTKThMUYKaWwvLxmK2eREhfjiCTMjJkkjH/fP2c+S6APgS8ghIAkZpKogI4/IQTquibnjCSGYaCUwszMul+v3VVlyKjmUgAAAABJRU5ErkJggg==" "1620" >}}
 
 ### Mocking an incorrect body response
 
