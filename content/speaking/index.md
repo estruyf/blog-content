@@ -7,7 +7,7 @@ url: /speaking/
 menu:
   main:
     weight: 2
-preview: "Unable to launch browser, error message: read ECONNRESET"
+preview: /social/ed92cc3e-e397-477e-bb41-26aa62e056e2.png
 ---
 
 Elio is a frequent speaker at various Microsoft related community events and conferences. In his sessions, he focusses on development-related topics on Microsoft 365, SharePoint and Azure DevOps.
