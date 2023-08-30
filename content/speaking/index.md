@@ -22,11 +22,23 @@ If you are interested in having Elio speak at your event, you can check out the 
 
 <!-- No upcoming events planned yet.  -->
 
+### 21 September 2023 / Hugo Conf
+
+Manage your Hugo website with external content and assets
+
+[Link to the event](https://hugoconf.io)
+
 ### 29 November 2023 / ESPC23 Amsterdam
 
 Automated Testing for Microsoft 365 with Playwright
 
 [Link to the event](https://www.sharepointeurope.com/)
+
+### 4-6 December 2023 / Cloud Summit
+
+From Code to Cloud: Automated Deployments with GitHub Actions
+
+[Link to the event](https://cloudsummit.eu/)
 
 ### 2023
 
