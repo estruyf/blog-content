@@ -42,13 +42,19 @@ From Code to Cloud: Automated Deployments with GitHub Actions
 
 ### 2023
 
+#### 6 September 2023 / Code and Coffee show
+
+Using Front Matter CMS to manage your static site
+
+[Link to the video](https://www.youtube.com/watch?v=YX4HBXHojOA)
+
 #### 10 June 2023 / CollabDays Netherlands 2023
 
 The future is APIs, and here is how you can benefit from it
 
 [Link to the event](https://www.collabdays.org/2023-nl/)
 
-#### 22 May - Microsoft 365 PnP Weekly
+#### 22 May / Microsoft 365 PnP Weekly
 
 Microsoft 365 PnP Weekly – Episode 211
 
