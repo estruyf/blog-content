@@ -1,0 +1,105 @@
+{
+  "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.website.host": "https://www.eliostruyf.com",
+  "frontMatter.experimental": true,
+  "frontMatter.extensibility.scripts": [
+    "[[workspace]]/.frontmatter/ui/external.js"
+  ],
+  "frontMatter.snippets.wrapper.enabled": false,
+  "frontMatter.sponsors.ai.enabled": true,
+  "frontMatter.git.enabled": true,
+  "frontMatter.git.actions": true,
+  "frontMatter.git.submodule.push": true,
+  "frontMatter.git.submodule.pull": true,
+  "frontMatter.git.submodule.branch": "main",
+  "frontMatter.git.submodule.folder": ".frontmatter",
+  "frontMatter.dashboard.content.pagination": true,
+  "frontMatter.dashboard.contentTags": "tags",
+  "frontMatter.content.autoUpdateDate": false,
+  "frontMatter.content.fmHighlight": false,
+  "frontMatter.content.wysiwyg": true,
+  "frontMatter.content.sorting": [
+    {
+      "title": "Date (asc)",
+      "name": "date",
+      "order": "asc",
+      "type": "date"
+    },
+    {
+      "title": "Date (desc)",
+      "name": "date",
+      "order": "desc",
+      "type": "date"
+    }
+  ],
+  "frontMatter.content.placeholders": [
+    {
+      "id": "ogImage",
+      "script": "./scripts/og-image.js",
+      "command": "~/.nvm/versions/node/v16.19.0/bin/node"
+    }
+  ],
+  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.content.publicFolder": ".frontmatter/static",
+  "frontMatter.content.defaultSorting": "DateDesc",
+  "frontMatter.dashboard.openOnStart": true,
+  "frontMatter.taxonomy.slugPrefix": "/",
+  "frontMatter.taxonomy.slugSuffix": "/",
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.taxonomy.customTaxonomy": [
+    {
+      "id": "customTags",
+      "options": [
+        "Custom"
+      ]
+    }
+  ],
+  "frontMatter.data.files": [
+    {
+      "id": "projects",
+      "title": "Projects",
+      "file": "[[workspace]]/themes/eliostruyf-v2/data/projects.json",
+      "fileType": "json",
+      "labelField": "title",
+      "schema": {
+        "title": "Sponsors",
+        "type": "object",
+        "required": [
+          "title",
+          "href"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ],
+  "frontMatter.data.folders": [
+    {
+      "id": "Testable",
+      "path": "[[workspace]]/themes/eliostruyf-v2/data/",
+      "labelField": "title",
+      "schema": {
+        "title": "Sponsors",
+        "type": "object",
+        "required": [
+          "title",
+          "href"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Pages",
+      "path": "[[workspace]]/.frontmatter/content",
+      "excludeSubdir": true
+    },
+    {
+      "title": "Blog posts",
+      "path": "[[workspace]]/.frontmatter/content/posts"
+    },
+    {
+      "title": "projects",
+      "path": "[[workspace]]/.frontmatter/content/projects"
+    }
+  ]
+}
