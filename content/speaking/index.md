@@ -28,6 +28,12 @@ Manage your Hugo website with external content and assets
 
 [Link to the event](https://hugoconf.io)
 
+### 21 October 2023 / Collabdays Belgium
+
+Automated Testing for Microsoft 365 with Playwright
+
+[Link to the event](https://www.collabdays.org/2023-belgium/)
+
 ### 29 November 2023 / ESPC23 Amsterdam
 
 Automated Testing for Microsoft 365 with Playwright
