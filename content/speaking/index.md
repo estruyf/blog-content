@@ -46,6 +46,8 @@ From Code to Cloud: Automated Deployments with GitHub Actions
 
 [Link to the event](https://cloudsummit.eu/)
 
+## Past events
+
 ### 2023
 
 #### 6 September 2023 / Code and Coffee show
@@ -83,10 +85,6 @@ VS Code Extension for Working with Frontmatter - [James Q Quick](https://www.you
 A Journey to Start Developing VS Code Extensions
 
 [Link to the event](https://beta.guild.host/events/meetupbejs24-a-journey-tr50sc)
-
-## Past events
-
-### 2023
 
 #### 9th - 12th February 2023 / Arctic Cloud Developer Challenge
 
