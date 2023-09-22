@@ -54,7 +54,7 @@ Manage your Hugo website with external content and assets
 
 Using Front Matter CMS to manage your static site
 
-[Link to the video](https://www.youtube.com/watch?v=YX4HBXHojOA)
+[Link to the video](https://youtu.be/YX4HBXHojOA)
 
 #### 10 June 2023 / CollabDays Netherlands 2023
 
