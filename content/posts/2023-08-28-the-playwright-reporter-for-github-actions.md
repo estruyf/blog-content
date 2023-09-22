@@ -3,7 +3,7 @@ title: The Playwright Reporter for GitHub Actions
 longTitle: ""
 customField: ""
 slug: /playwright-reporter-github-actions/
-description: Learn how to use the @estruyf/github-actions-reporter to quickly discern Playwright test results in GitHub Actions with
+description: Learn how to use the @estruyf/github-actions-reporter to discern Playwright test results in GitHub Actions quickly.
 date: 2023-08-28T08:56:53.930Z
 lastmod: 2023-08-28T08:56:54.541Z
 preview: /social/d188aa82-13cc-4c9d-9ba2-78d6fc343ec4.png
