@@ -22,12 +22,6 @@ If you are interested in having Elio speak at your event, you can check out the 
 
 <!-- No upcoming events planned yet.  -->
 
-### 21 September 2023 / Hugo Conf
-
-Manage your Hugo website with external content and assets
-
-[Link to the event](https://hugoconf.io)
-
 ### 21 October 2023 / Collabdays Belgium
 
 Automated Testing for Microsoft 365 with Playwright
@@ -49,6 +43,12 @@ From Code to Cloud: Automated Deployments with GitHub Actions
 ## Past events
 
 ### 2023
+
+#### 21 September 2023 / Hugo Conf
+
+Manage your Hugo website with external content and assets
+
+[Link to the event](https://hugoconf.io) - [Link to the video](https://youtu.be/OTclpTZq-S4?t=9416)
 
 #### 6 September 2023 / Code and Coffee show
 
