@@ -1,11 +1,9 @@
 {
   "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
-  "frontMatter.taxonomy.contentTypes": [
-    {
-      "name": "default",
+  "frontMatter.taxonomy.contentTypes": [{
+      "name": "post",
       "pageBundle": false,
-      "fields": [
-        {
+      "fields": [{
           "title": "Title",
           "name": "title",
           "type": "string",
@@ -79,6 +77,16 @@
           "hidden": true
         }
       ]
+    },
+    {
+      "name": "default",
+      "pageBundle": false,
+      "fields": [{
+        "title": "Title",
+        "name": "title",
+        "type": "string",
+        "required": true
+      }]
     }
   ]
 }

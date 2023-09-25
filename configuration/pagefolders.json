@@ -3,11 +3,13 @@
   "frontMatter.content.pageFolders": [{
       "title": "Pages",
       "path": "[[workspace]]/.frontmatter/content",
-      "excludeSubdir": true
+      "excludeSubdir": true,
+      "contentTypes": ["post"]
     },
     {
       "title": "Blog posts",
-      "path": "[[workspace]]/.frontmatter/content/posts"
+      "path": "[[workspace]]/.frontmatter/content/posts",
+      "contentTypes": ["post"]
     },
     {
       "title": "projects",
