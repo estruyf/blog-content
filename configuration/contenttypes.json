@@ -82,11 +82,17 @@
       "name": "default",
       "pageBundle": false,
       "fields": [{
-        "title": "Title",
-        "name": "title",
-        "type": "string",
-        "required": true
-      }]
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        }
+      ]
     }
   ]
 }

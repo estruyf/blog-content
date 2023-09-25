@@ -202,9 +202,18 @@ class CardFooter extends LitElement {
   }
 
   render() {
+    let slug = this.slug;
+    if (!slug.startsWith("/")) {
+      slug = `/${slug}`;
+    }
+    if (!slug.endsWith("/")) {
+      slug = `${slug}/`;
+    }
+    slug = encodeURIComponent(slug).toLowerCase();
+
     return html `
       <div class="card__footer">
-        <img src="https://api.visitorbadge.io/api/combined?path=https%3a%2f%2fwww.eliostruyf.com${encodeURIComponent(this.slug).toLowerCase()}&readonly=true&labelColor=%230e131f&countColor=%23ffe45e&label=Views&style=flat-square" />
+        <img src="https://api.visitorbadge.io/api/combined?path=https%3a%2f%2fwww.eliostruyf.com${slug}&readonly=true&labelColor=%230e131f&countColor=%23ffe45e&label=Views&style=flat-square" />
 
         ${
           this.commentTotal >= 0 ? html `
@@ -240,13 +249,12 @@ registerCardFooter(async (filePath, data) => {
 // });
 
 
-registerPanelView(async (data) => {
+registerPanelView(async (data) => {  
   return {
-    title: "Custom View",
+    title: "Page stats",
     content: `
       <div>
-        <h1>Custom view...</h1>
-        <p>Here you can add your own custom view.</p>
+        <card-footer slug="${data.slug}"></card-footer>
       </div>
     `
   }
