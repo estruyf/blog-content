@@ -46,6 +46,7 @@ Now that we have backups, it's time to modify the `workbench.desktop.main.css` f
 cat << EOF >> "./workbench.desktop.main.css"
 /* START - DEBUG TOOLBAR */
 .debug-toolbar {
+  -webkit-app-region: no-drag !important;
   background: transparent !important;
   top: 2px !important;
   box-shadow: none !important;
@@ -56,6 +57,8 @@ EOF
 {{< / highlight >}}
 
 This CSS snippet modifies the Debug Toolbar's appearance and positions it within the titlebar. The `background` property sets the toolbar color, `top` adjusts the position, and `box-shadow` and `border` remove any extraneous styling.
+
+{{< blockquote type="edit" text="Updated the CSS to set the debug toolbar not as draggable, otherwise the buttons are not clickable since the latest update on the title bar." >}}
 
 ## Step 3: Copy the modified file
 
