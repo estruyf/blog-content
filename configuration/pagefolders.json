@@ -1,7 +1,6 @@
 {
   "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
-  "frontMatter.content.pageFolders": [
-    {
+  "frontMatter.content.pageFolders": [{
       "title": "Pages",
       "path": "[[workspace]]/.frontmatter/content",
       "excludeSubdir": true
@@ -13,6 +12,11 @@
     {
       "title": "projects",
       "path": "[[workspace]]/.frontmatter/content/projects"
+    },
+    {
+      "title": "speaking",
+      "path": "[[workspace]]/.frontmatter/content/speaking",
+      "disableCreation": true
     }
   ]
 }

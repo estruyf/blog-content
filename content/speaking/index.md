@@ -8,6 +8,7 @@ menu:
   main:
     weight: 2
 preview: /social/ed92cc3e-e397-477e-bb41-26aa62e056e2.png
+description: Elio is a frequent Microsoft-related community event speaker, focusing on topics around M365, SharePoint, Azure DevOps & more.
 ---
 
 Elio is a frequent speaker at various Microsoft related community events and conferences. In his sessions, he focusses on development-related topics on Microsoft 365, SharePoint and Azure DevOps.
