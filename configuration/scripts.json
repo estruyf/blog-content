@@ -1,32 +1,36 @@
 {
   "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
-  "frontMatter.custom.scripts": [
-    {
+  "frontMatter.custom.scripts": [{
       "title": "Generate social image",
       "script": "./scripts/social-img.js",
-      "command": "~/.nvm/versions/node/v16.19.0/bin/node"
+      "command": "~/.nvm/versions/node/v16.19.0/bin/node",
+      "contentTypes": ["post"]
     },
     {
       "title": "LQIP (macOS)",
       "script": "./scripts/lqip.js",
-      "command": "~/.nvm/versions/node/v16.19.0/bin/node"
+      "command": "~/.nvm/versions/node/v16.19.0/bin/node",
+      "contentTypes": ["post"]
     },
     {
       "title": "Publish GitHub Stars profile",
       "script": "./scripts/github-stars.js",
-      "command": "~/.nvm/versions/node/v16.19.0/bin/node"
+      "command": "~/.nvm/versions/node/v16.19.0/bin/node",
+      "contentTypes": ["post"]
     },
     {
       "title": "Optimize media",
       "script": "./scripts/media.js",
       "command": "~/.nvm/versions/node/v16.19.0/bin/node",
-      "type": "mediaFile"
+      "type": "mediaFile",
+      "contentTypes": ["post"]
     },
     {
       "title": "Optimize images",
       "script": "./scripts/media-all.js",
       "command": "~/.nvm/versions/node/v16.19.0/bin/node",
-      "type": "mediaFolder"
+      "type": "mediaFolder",
+      "contentTypes": ["post"]
     }
   ]
 }

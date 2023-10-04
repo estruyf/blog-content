@@ -101,5 +101,8 @@
         }
       }
     }
+  ],
+  "frontMatter.panel.actions.disabled": [
+    "optimizeSlug"
   ]
 }
