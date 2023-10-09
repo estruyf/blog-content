@@ -22,15 +22,19 @@
       "title": "Optimize media",
       "script": "./scripts/media.js",
       "command": "~/.nvm/versions/node/v16.19.0/bin/node",
-      "type": "mediaFile",
-      "contentTypes": ["post"]
+      "type": "mediaFile"
+    },
+    {
+      "title": "Resize media",
+      "script": "./scripts/resize.js",
+      "command": "~/.nvm/versions/node/v16.19.0/bin/node",
+      "type": "mediaFile"
     },
     {
       "title": "Optimize images",
       "script": "./scripts/media-all.js",
       "command": "~/.nvm/versions/node/v16.19.0/bin/node",
-      "type": "mediaFolder",
-      "contentTypes": ["post"]
+      "type": "mediaFolder"
     }
   ]
 }
