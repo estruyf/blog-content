@@ -9,7 +9,7 @@ import {
   registerCardTags,
   registerCardDate,
   registerCardStatus
-} from "https://cdn.jsdelivr.net/npm/@frontmatter/extensibility/+esm";
+} from "https://cdn.jsdelivr.net/npm/@frontmatter/extensibility@0.0.11-beta.6466792/+esm";
 import {
   format
 } from "https://cdn.jsdelivr.net/npm/date-fns@2.30.0/+esm"

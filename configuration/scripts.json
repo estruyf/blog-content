@@ -2,7 +2,7 @@
   "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
   "frontMatter.custom.scripts": [{
       "title": "Generate social image",
-      "script": "./scripts/social-img.js",
+      "script": "./scripts/social-img.mjs",
       "command": "~/.nvm/versions/node/v16.19.0/bin/node",
       "contentTypes": ["post"]
     },
@@ -26,7 +26,7 @@
     },
     {
       "title": "Resize media",
-      "script": "./scripts/resize.js",
+      "script": "./scripts/resize.mjs",
       "command": "~/.nvm/versions/node/v16.19.0/bin/node",
       "type": "mediaFile"
     },
