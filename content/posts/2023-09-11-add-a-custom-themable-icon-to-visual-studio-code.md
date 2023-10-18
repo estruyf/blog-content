@@ -44,12 +44,12 @@ You can use [IcoMoon](https://icomoon.io/) to create an icon font. IcoMoon is a 
 - Click on the **import icons** button
 - Upload and select your `SVG` icons
 
-{{< caption-new "/uploads/2023/09/icon-font.png" "Front Matter SVG" >}}
+{{< caption-new "/uploads/2023/09/icon-font.png" "Front Matter SVG"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABESURBVE3BMQqAMBBFwffNgiCWgo124t29UsBWsIv9JmslOKNSnuM6731eBlI/IgkzQxIRQfVKR2STGus20Uh83J2/CrwN4hTMJ2Ty1QAAAABJRU5ErkJggg==" "3382" >}}
 
 - Click on the **generate font** button
 - Set the font character or use the default
 
-{{< caption-new "/uploads/2023/09/font-character-code.png" "Set the font character" >}}
+{{< caption-new "/uploads/2023/09/font-character-code.png" "Set the font character"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAACVSURBVHXBMQ6CUAyA4b+lTSCGzZHRE5g4uLl5Zk/g5hm8AgnkLbxW2NDE75NxHHvgnJmICH+8DLhO0/RYlgURoes6RITMJDNRVdz9bqyapsHdiQjMDFXll7Fq25a9zGRPRDBWpRTmeaaUQkRgZgzDwJ5lJrVWju83HA7k6QRmRASbWivujonIs+/7G5cLG+GbqrJ6fQCmjzgP2N+g8wAAAABJRU5ErkJggg==" "854" >}}
 
 {{< blockquote type="important" text="You will need this font character code for the icon contribution configuration." >}}
 

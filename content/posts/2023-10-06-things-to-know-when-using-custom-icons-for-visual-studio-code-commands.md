@@ -84,11 +84,11 @@ Since the change in version 1.83.0, you need to make sure that your image file m
 
 To explain this, we need to look at how these icons were rendered in the UI. In the versions older than `1.83.0` of Visual Studio Code, the icons were added as the background image of the element in the UI.
 
-{{< caption-new "/uploads/2023/10/svg-background-img.png" "SVG as background image" >}}
+{{< caption-new "/uploads/2023/10/svg-background-img.png" "SVG as background image"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAADTSURBVBXBO04DMRRA0evPzGA+AzQUIARiA3RUrIHdsEC6KHuggypCIpkktp8/D3GOeXp4fL88P3sBxWlDFI5DACyaEq024mG39qMzryfeviUcOSeMH7i9uuYZw8eyB1V6zaMVH5gGizFQuxKl8N0rB29BG/tlSxbBd4VtdUw906eJ0VhCh02poEoIgVIEX11A5zuWkkEV3zPb0RJbB2OJcY+I4CXckC/uUWPpqpyWDX3zSVPFG8M8z9Ra8Onna/XbEg1DbZ2jRpzs0FIQEf6leFz9AbV9fKrCpmRhAAAAAElFTkSuQmCC" "637" >}}
 
 In the newer versions of Visual Studio Code, the icons are added as a background mask to the element.
 
-{{< caption-new "/uploads/2023/10/svg-background-mask.png" "SVG background mask" >}}
+{{< caption-new "/uploads/2023/10/svg-background-mask.png" "SVG background mask"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACmSURBVBXBTy4EURDA4d+bqu7W8SeEldhJbCTs3MEVncYJ7PoOFiYmM2hV71U98X3l4e72ZZ6m+yjCV+vUTMKc3hMRRWRDq3VRk/nxdNCnTRGyN56vb3j9+CQi6Rm05kSa6vnJzNXlBSUrdffD22HPUJLaVuido2kkm6LHk3I2KwXFtwf2bsS6EhH8MzPcDH3f7pbv9bd4S7w23CthTkQgKozDCKUvf+5bXkywg5M0AAAAAElFTkSuQmCC" "1000" >}}
 
 As images are now used as a mask, the need for a light and dark version of the icon is not required anymore.
 
