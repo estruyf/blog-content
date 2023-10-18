@@ -30,7 +30,7 @@ Vite is a build tool that focuses on speed and simplicity. I want to switch to V
 
 To start, create a new Visual Studio Code extension project with `yo code`. You can choose not to use the webpack setup; we will change the configuration anyway.
 
-{{< caption-new "/uploads/2023/10/new-extension.png" "Create a new VS Code extension"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACaSURBVHXBTWoCQRSF0a9eP6KmCQ5sdyLZQ3blAoMLkGQkDqMDbbT+bgWEBieeExYfw/Zt/r5pDcyMSS6ZiXL8doJ99vPZVxashzWdd1wuV/5OJyYK2TwEEA1JHI5HXnFzp++XVAlJdGaMTdzVaDHyUCJu3jEMK0opmBmpinQ+c7uP0BqkBBKexuvu92fvZkatlSRRYuSZStr9A+srUaCed+SjAAAAAElFTkSuQmCC" "750" >}}
+{{< caption-new "/uploads/2023/10/new-extension1.png" "Create a new VS Code extension"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACaSURBVHXBTWoCQRSF0a9eP6KmCQ5sdyLZQ3blAoMLkGQkDqMDbbT+bgWEBieeExYfw/Zt/r5pDcyMSS6ZiXL8doJ99vPZVxashzWdd1wuV/5OJyYK2TwEEA1JHI5HXnFzp++XVAlJdGaMTdzVaDHyUCJu3jEMK0opmBmpinQ+c7uP0BqkBBKexuvu92fvZkatlSRRYuSZStr9A+srUaCed+SjAAAAAElFTkSuQmCC" "750" >}}
 
 Once the project is created, you can install Vite by running the `npm i vite -D` command.
 
@@ -78,7 +78,7 @@ In the `package.json` file we can update the `scripts` section to use Vite.
 
 Now that everything is in place, we can test if the extension still works. Run the `npm run compile` command to build the extension.
 
-{{< caption-new "/uploads/2023/10/bundle-extension.png" "Bundle the extension code with Vite"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACASURBVGXBTQrCQAyA0S+dVKggglA8i2uv4cK7KngSwZ2L/uA4k0QQutH3pNvszqntDiJCRBAR/LLyumlKeuz7/YmvYJpmVJVhHFlYfa/VQxhKIcJ5YyAOGDQCHiwUgXalVBG21cllxnJFkkICd8eaBi15vjwf90BgqAbBH6v5+gHFdD8eMEYpEwAAAABJRU5ErkJggg==" "350" >}}
+{{< caption-new "/uploads/2023/10/bundle-extension1.png" "Bundle the extension code with Vite"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACASURBVGXBTQrCQAyA0S+dVKggglA8i2uv4cK7KngSwZ2L/uA4k0QQutH3pNvszqntDiJCRBAR/LLyumlKeuz7/YmvYJpmVJVhHFlYfa/VQxhKIcJ5YyAOGDQCHiwUgXalVBG21cllxnJFkkICd8eaBi15vjwf90BgqAbBH6v5+gHFdD8eMEYpEwAAAABJRU5ErkJggg==" "350" >}}
 
 To debug, I typically run the `npm run watch` command myself, giving me more flexibility in opening/closing the debugging extension. This flexibility requires a small change in the `launch.json` file. 
 
@@ -88,4 +88,4 @@ To debug, I typically run the `npm run watch` command myself, giving me more fle
 
 If you applied this change, you can now run `npm run watch` and press `F5` to debug your extension.
 
-{{< caption-new "/uploads/2023/10/vite-test-extension.png" "Test the extension with a Vite generated bundle"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAACoSURBVE3BPUpDURCA0W/mzg1IAhELEbG3srJ0lS5NXYNgmaQwL+/Ojz7EkHPk9u7+dRrtCYRuxnqzpqlSVez3B6wbPp8+bIQ9g7zwa3iw2x1YZDiqjchB+FhZZQHCojJBhPSZolhoMxaamZwJxJgQVVQblzQyOaui2YrKoDK5ZGaN4s/VZku3BlVUBd/HEyJKpmOPvn2bNCo9YHYg+HdD5/ph4uuzv/8AXMRUxLhjIB8AAAAASUVORK5CYII=" "750" >}}
+{{< caption-new "/uploads/2023/10/vite-test-extension1.png" "Test the extension with a Vite generated bundle"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAACoSURBVE3BPUpDURCA0W/mzg1IAhELEbG3srJ0lS5NXYNgmaQwL+/Ojz7EkHPk9u7+dRrtCYRuxnqzpqlSVez3B6wbPp8+bIQ9g7zwa3iw2x1YZDiqjchB+FhZZQHCojJBhPSZolhoMxaamZwJxJgQVVQblzQyOaui2YrKoDK5ZGaN4s/VZku3BlVUBd/HEyJKpmOPvn2bNCo9YHYg+HdD5/ph4uuzv/8AXMRUxLhjIB8AAAAASUVORK5CYII=" "750" >}}
