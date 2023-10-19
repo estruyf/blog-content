@@ -50,13 +50,24 @@ type: post
 
 ## August
 
+- Family vacation in Canada
+
 ## September
+
+- Job hunt continues
 
 ## October
 
+- Started working at IceFire/PointFire
+- Collabdays Belgium + speaking about a new topic
+
 ## November
 
+- Going to my first GitHub Universe
+
 ## December
+
+- Speaking at ESPC
 
 ## Conclusion
 
