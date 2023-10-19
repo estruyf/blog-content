@@ -46,7 +46,7 @@ type: post
 ## July
 
 - Got accepted to the GDE program
-- Awared with my 9th MVP award
+- awarded with my 9th MVP award
 
 ## August
 
