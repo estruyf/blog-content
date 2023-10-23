@@ -6,7 +6,7 @@ description: Recap of the year 2023
 date: 2023-02-09T08:38:48.220Z
 lastmod: 2023-02-09T08:38:48.220Z
 preview: /social/9a0f33bc-3cf3-4864-be67-6c724eb54b5b.png
-draft: true
+draft: false
 comments: true
 tags:
   - recap
