@@ -79,6 +79,27 @@
       ]
     },
     {
+      "name": "session",
+      "pageBundle": false,
+      "fields": [{
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Slug",
+          "name": "Slug",
+          "type": "slug"
+        }
+      ]
+    },
+    {
       "name": "default",
       "pageBundle": false,
       "fields": [{

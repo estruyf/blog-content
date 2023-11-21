@@ -19,6 +19,12 @@
       "title": "speaking",
       "path": "[[workspace]]/.frontmatter/content/speaking",
       "disableCreation": true
+    },
+    {
+      "title": "sessions",
+      "path": "[[workspace]]/.frontmatter/content/session",
+      "contentTypes": ["session"],
+      "disableCreation": true
     }
   ]
 }
