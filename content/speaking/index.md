@@ -23,19 +23,13 @@ If you are interested in having Elio speak at your event, you can check out the 
 
 <!-- No upcoming events planned yet.  -->
 
-### 21 October 2023 / Collabdays Belgium
-
-Automated Testing for Microsoft 365 with Playwright
-
-[Link to the event](https://www.collabdays.org/2023-belgium/)
-
 ### 29 November 2023 / ESPC23 Amsterdam
 
 Automated Testing for Microsoft 365 with Playwright
 
 [Link to the event](https://www.sharepointeurope.com/)
 
-### 4-6 December 2023 / Cloud Summit
+### 14-16 May 2024 / Cloud Summit
 
 From Code to Cloud: Automated Deployments with GitHub Actions
 
@@ -44,6 +38,12 @@ From Code to Cloud: Automated Deployments with GitHub Actions
 ## Past events
 
 ### 2023
+
+#### 21 October 2023 / Collabdays Belgium
+
+Automated Testing for Microsoft 365 with Playwright
+
+[Link to the event](https://www.collabdays.org/2023-belgium/)
 
 #### 21 September 2023 / Hugo Conf
 
@@ -63,7 +63,7 @@ The future is APIs, and here is how you can benefit from it
 
 [Link to the event](https://www.collabdays.org/2023-nl/)
 
-#### 22 May / Microsoft 365 PnP Weekly
+#### 22 May 2023 / Microsoft 365 PnP Weekly
 
 Microsoft 365 PnP Weekly – Episode 211
 
