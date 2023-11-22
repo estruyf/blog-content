@@ -18,6 +18,8 @@ tags:
 type: post
 ---
 
+{{< blockquote type="important" text="The `CJS` build of Vite’s Node API is no longer supported and will be removed in version 6. As Visual Studio Code extensions do not support ESM, my recommendation is use an alternative bundler such as `webpack`, `tsup`, or `esbuild` instead of Vite." >}}
+
 A couple of weeks ago, I started looking into the possibility of retrieving the Content Collections from Astro and generating content-types for [Front Matter CMS](https://frontmatter.codes). Eventually, this got me into [Vite](https://vitejs.dev), and I started to wonder if I could use it to bundle my Visual Studio Code extension to replace the current Webpack setup.
 
 In this article, I will explain how I got it working.
