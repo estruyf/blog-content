@@ -5,6 +5,7 @@
   "frontMatter.extensibility.scripts": [
     "[[workspace]]/.frontmatter/ui/external.js"
   ],
+  "frontMatter.taxonomy.quoteStringValues": true,
   "frontMatter.snippets.wrapper.enabled": false,
   "frontMatter.sponsors.ai.enabled": true,
   "frontMatter.git.enabled": true,
