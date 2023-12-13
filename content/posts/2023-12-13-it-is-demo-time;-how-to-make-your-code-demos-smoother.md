@@ -92,4 +92,6 @@ Here you can see a demo of the extension:
 
 {{< video "/uploads/2023/12/demo-of-demo-time.mp4" "Demo of Demo Time" >}}
 
+{{< blockquote type="info" text="Here you can find the whole demo configuration for my session: [Playwright demo](https://github.com/estruyf/m365-playwright-demo/tree/dev/.demo)." >}}
+
 Let me know what you think of it. I am curious to hear your feedback.
