@@ -1,6 +1,21 @@
 {
   "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
   "frontMatter.website.host": "https://www.eliostruyf.com",
+  "frontMatter.framework.startCommand": "hugo server -D",
+  "frontMatter.content.fmHighlight": true,
+  "frontMatter.global.activeMode": "",
+  "frontMatter.global.modes": [
+    {
+      "id": "minimal",
+      "features": [
+        "panel.metadata",
+        "panel.globalSettings",
+        "panel.seo",
+        "dashboard.data.view",
+        "dashboard.snippets.view"
+      ]
+    }
+  ],
   "frontMatter.experimental": true,
   "frontMatter.extensibility.scripts": [
     "[[workspace]]/.frontmatter/ui/external.js"
@@ -17,7 +32,6 @@
   "frontMatter.dashboard.content.pagination": true,
   "frontMatter.dashboard.contentTags": "tags",
   "frontMatter.content.autoUpdateDate": false,
-  "frontMatter.content.fmHighlight": false,
   "frontMatter.content.wysiwyg": true,
   "frontMatter.content.sorting": [
     {
@@ -43,7 +57,7 @@
   "frontMatter.preview.host": "http://localhost:1313",
   "frontMatter.content.publicFolder": ".frontmatter/static",
   "frontMatter.content.defaultSorting": "DateDesc",
-  "frontMatter.dashboard.openOnStart": true,
+  "frontMatter.dashboard.openOnStart": false,
   "frontMatter.taxonomy.slugPrefix": "/",
   "frontMatter.taxonomy.slugSuffix": "/",
   "frontMatter.framework.id": "hugo",

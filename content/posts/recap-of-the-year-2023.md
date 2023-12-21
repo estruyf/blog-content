@@ -63,11 +63,13 @@ type: post
 
 ## November
 
-- Going to my first GitHub Universe
+- Going to my first GitHub Universe - add pictures
 
 ## December
 
 - Speaking at ESPC
+- Creating a new extension called Demo Time
+- Growing Front Matter CMS to 1600 stars on GitHub
 
 ## Conclusion
 
