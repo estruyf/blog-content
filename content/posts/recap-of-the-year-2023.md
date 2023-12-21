@@ -14,17 +14,7 @@ tags:
 type: "post"
 ---
 
-The end of 2023 is near, and that means it is time to look back at what happened this year. A lot has happened this year, personally and professionally. It was a year with ups and downs, a year where I lost a job I loved, but also a year where I found a new job which brought be back into the Microsoft 365 world.
-
-Last year, I said to myself I wanted to make it easier for myself and keep a list of highlights throughout the year. I did that and used the list to write this post.
-
-## Highlights of 2023
-
-First some highlights:
-
-- I became a [Google Developer Expert](https://developers.google.com/profile/u/eliostruyf) in July
-- I got my 9th [Microsoft MVP](https://mvp.microsoft.com/en-us/PublicProfile/5001411) award
-- I got my second [GitHub star](https://stars.github.com/profiles/estruyf/) and went toThe end of 2023 is near, meaning it is time to reflect on what happened this year. A lot has happened this year, personally and professionally. It was a year with ups and downs, a year where I lost a job I loved, and a year where I found a new job that brought me back into the Microsoft 365 world.
+The end of 2023 is near, meaning it is time to reflect on what happened this year. A lot has happened this year, personally and professionally. It was a year with ups and downs, a year where I lost a job I loved, and a year where I found a new job that brought me back into the Microsoft 365 world.
 
 Last year, I told myself I wanted to make it easier and keep a list of highlights throughout the year. I did that and used the list to write this post.
 
