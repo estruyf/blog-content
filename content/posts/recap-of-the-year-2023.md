@@ -1,16 +1,17 @@
 ---
-title: Recap of the year 2023
+title: "The ups and downs. A look back at 2023."
 longTitle: ""
-slug: /recap-year-2023/
-description: Recap of the year 2023
-date: 2023-02-09T08:38:48.220Z
-lastmod: 2023-02-09T08:38:48.220Z
-preview: /social/9a0f33bc-3cf3-4864-be67-6c724eb54b5b.png
+slug: "/ups-downs-recap-2023/"
+description: "Reflect on the highs and lows of 2023! In this article, Elio looks back at 2023 on his personal and work-related achievements and progress."
+date: "2023-12-21T11:03:44.571Z"
+lastmod: "2023-12-21T11:03:45.149Z"
+preview: "/social/bcca1165-c288-4f84-ba75-fb02a4e6d6cd.png"
 draft: false
 comments: true
 tags:
-  - recap
-type: post
+  - "recap"
+  - "Personal"
+type: "post"
 ---
 
 The end of 2023 is near, and that means it is time to look back at what happened this year. A lot has happened this year, personally and professionally. It was a year with ups and downs, a year where I lost a job I loved, but also a year where I found a new job which brought be back into the Microsoft 365 world.
