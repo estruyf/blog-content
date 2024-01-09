@@ -24,7 +24,7 @@ comments: true
 
 On the SharePoint Saturday Belgium I gave an introduction presentation about XSLT ([Slides](http://www.slideshare.net/estruyf/introduction-to-xslt-spsbe07 "Presentation")). In the following blog post series, consisting of three parts, I will step by step explain my given demos.
 
-# Selecting Data With XSLT
+## Selecting Data With XSLT
 
 The first demo that I gave was about selecting data with XSLT. The best way to start with this is to create an empty web part page and use a Data View Web Part.
 

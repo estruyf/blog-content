@@ -25,9 +25,9 @@ Here is the link to the original blog post: [Creating a Sandboxed Visual Web Par
 
 If you are the lucky owner of an Office 365 Beta account, you can follow the next steps to make use of my To-Do list web part.
 
-# Steps to make use of the web part
+## Steps to make use of the web part
 
-## Resources
+### Resources
 
 The first step is to set the resource quota for your SharePoint Online site.
 
@@ -42,7 +42,7 @@ The first step is to set the resource quota for your SharePoint Online site.
 *   In the resources textbox you can specify the number of resources for your site. I have used 200 in this example, if you are finished, click on save.
 {{< caption-legacy "uploads/2011/04/042711_1727_SandboxedTo4.png" "Number of Resources" >}}
 
-## Deploying the sandboxed solution
+### Deploying the sandboxed solution
 
 When you set the number of resources for your site, you can upload the sandboxed solution to the site. Here is the download link for the solution: [To-Do List Web Part Solution File](uploads/2011/03/EStruyf.TodoWP_Solution.zip)
 
@@ -55,7 +55,7 @@ When you set the number of resources for your site, you can upload the sandboxed
 *   When the solution is uploaded, you need to activate the solution by clicking on "**Activate**" in the modal dialog window.
 {{< caption-legacy "uploads/2011/04/042711_1727_SandboxedTo6.png" "Activate User Solution" >}}
 
-## Using the web part
+### Using the web part
 
 When you have uploaded and activated the sandboxed solution, you can make use of the web part.
 
@@ -66,6 +66,6 @@ When you have uploaded and activated the sandboxed solution, you can make use of
 {{< caption-legacy "uploads/2011/04/042711_1727_SandboxedTo8.png" "Selecting and Adding the To-Do List Web Part" >}}
 *   Configure the web part and you are done.
 
-# Result
+## Result
 
 {{< caption-legacy "uploads/2011/04/042711_1727_SandboxedTo9.png" "Result" >}}

@@ -154,7 +154,7 @@ The end result should be the same as in IE.
 
 **Note**: this is a bug/problem that is present in the RTM version of SharePoint 2013. This could be resolved in the final version, but I don't know.
 
-# Scripts
+## Scripts
 
 Here you can download the new debug and minimal script:
 

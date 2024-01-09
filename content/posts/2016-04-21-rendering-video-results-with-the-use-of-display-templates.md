@@ -105,7 +105,7 @@ SPContentType="Video"
 > **Info**: this is the default video content type that is used in the asset library. If you made a custom content type for your videos, be aware that you need to adapt this query.
 
 
-# Download the template
+## Download the template
 
 The template is available in the SPCSR GitHub repository: [Video Display Template](https://github.com/SPCSR/DisplayTemplates/tree/master/Search%20Display%20Templates/Video%20display%20template).
 

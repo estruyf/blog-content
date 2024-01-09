@@ -25,7 +25,7 @@ But "easier" was not the case when I tried to implement it in SharePoint 2010. S
 The end result will be:
 {{< caption-legacy "uploads/2011/04/041111_1604_PinningShar1.png" "IE9 Site Pinning with Custom Jump List" >}}
 
-# Problems with ie9ify and SharePoint 2010
+## Problems with ie9ify and SharePoint 2010
 
 The first problem was the following JavaScript error: "Object doesn't support property or method 'ie9ify'". This error can be solved when all the necessary scripts are moved to the bottom of the master page.
 
@@ -35,7 +35,7 @@ Another problem was that only the navigation button color were working.
 {{< caption-legacy "uploads/2011/04/041111_1604_PinningShar2.png" "Navigation Buttons" >}}
 All the other functionality like adding links to the jump lists were not working.
 
-# Alternative site pinning solution
+## Alternative site pinning solution
 
 Because of all these problems with of implementing ie9ify with SharePoint, I started to create my own solution to make it work.
 
@@ -147,18 +147,18 @@ This is the full code block that can be added in the head section of the master 
 {{< / highlight >}}
 
 
-# End Result
+## End Result
 
 {{< caption-legacy "uploads/2011/04/041111_1604_PinningShar1.png" "IE9 Site Pinning with Custom Jump List" >}}
 The only thing that is not working is the taskbar icon. For some reason IE9 does not take the favicon, on a custom HTML sample page with the same favicon it works correctly. If you have any advice or a solution, feel free to add a comment.
 
-# References
+## References
 
 [http://msdn.microsoft.com/en-us/library/gg131029%28VS.85%29.aspx](http://msdn.microsoft.com/en-us/library/gg131029%28VS.85%29.aspx)
 
-# Updates
+## Updates
 
-## Site Icon: 15/04/2011
+### Site Icon: 15/04/2011
 
 The site icon problem has something to do with the "msapplication-starturl" meta tag. If you specify a full URL or do not implement the meta tag, then the site icon works. 
 

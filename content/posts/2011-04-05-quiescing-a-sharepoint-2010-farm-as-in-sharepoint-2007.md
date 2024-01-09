@@ -27,7 +27,7 @@ But, I have done some research and development to achieve the same as in SharePo
 
 [QuiesceFarm Solution](uploads/2011/04/estruyf.QuiesceFarm.zip "QuiesceFarm Solution")
 
-# Programming
+## Programming
 
 To be able to start writing some code to quiesce your farm, you need to add the following reference to your project: "Microsoft.Office.Server.Administration".
 
@@ -56,7 +56,7 @@ sessionStateService.Update();
 {{< / highlight >}}
 
 
-# SharePoint 2010 Quiesce Solution
+## SharePoint 2010 Quiesce Solution
 
 The solution that I have created enables you to quiesce the SharePoint 2010 farm through central administration. This solution is based on the SharePoint 2007 version.
 
@@ -81,7 +81,7 @@ When you quiesce the farm you will get the following results.
 
 {{< caption-legacy "uploads/2011/04/040511_0854_QuiescingaS5.png" "Farm Quiesced" >}}
 
-# Download
+## Download
 
 [QuiesceFarm Solution](uploads/2011/04/estruyf.QuiesceFarm.zip "QuiesceFarm Solution")
 

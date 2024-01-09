@@ -26,7 +26,7 @@ After some research I found two solution to set the width of the list view to th
 
 {{< caption-legacy "uploads/2011/02/020711_1811_ProblemWith2.png" "" >}}
 
-# Solution 1
+## Solution 1
 
 The first solution is a CSS based and works only for IE 8, FF and Chrome. Add the following CSS code to a custom stylesheet.
 
@@ -39,7 +39,7 @@ The first solution is a CSS based and works only for IE 8, FF and Chrome. Add th
 }
 {{< / highlight >}}
 
-# Solution 2
+## Solution 2
 
 This solution makes use of some JavaScript to set the correct width to the title row. This solution works on IE 7, IE 8, FF, and Chrome.
 

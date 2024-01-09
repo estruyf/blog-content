@@ -21,7 +21,7 @@ Now in the SharePoint 2010 days, this problem has been resolved in the &#8220;MW
 
 {{< caption-legacy "uploads/2011/02/020811_1723_FixV4master1.png" "g_InstanceID JavaScript Error" >}}
 
-# Solution
+## Solution
 
 The solution is still the same, only the version number has changed.
 

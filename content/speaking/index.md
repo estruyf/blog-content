@@ -239,7 +239,7 @@ How Pro Developers and Citizen Developers can team up - a #BetterTogether Story.
 
 #### 10 December 2019 - Modern Workplace Conference Paris
 
-# Sketchnotes and #FunctionalDrawing (not only) for Consultants and IT Pros. Together with [Luise Freese](https://twitter.com/LuiseFreese)
+Sketchnotes and #FunctionalDrawing (not only) for Consultants and IT Pros. Together with [Luise Freese](https://twitter.com/LuiseFreese)
 
 [Link to the event](https://modern-workplace.pro/) - [Session information](https://www.eliostruyf.com/speaking/sketchnotes-and-functional-drawing-not-only-for-consultants-and-it-pros/)
 
