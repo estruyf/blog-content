@@ -1,23 +1,24 @@
 ---
-title: Change the Active Directory User Password Through SharePoint
-author: Elio Struyf
-type: post
-date: 2011-07-12T07:06:42+00:00
-slug: /change-the-active-directory-user-password-through-sharepoint/
+title: "Change the Active Directory User Password Through SharePoint"
+author: "Elio Struyf"
+type: "post"
+date: "2011-07-12T07:06:42+00:00"
+slug: "/change-the-active-directory-user-password-through-sharepoint/"
 NBSP:
-  - https://www.nothingbutsharepoint.com/sites/devwiki/articles/Pages/Change-the-Active-Directory-User-Password-Through-SharePoint.aspx
+  - "https://www.nothingbutsharepoint.com/sites/devwiki/articles/Pages/Change-the-Active-Directory-User-Password-Through-SharePoint.aspx"
 dsq_thread_id:
   - 3837610324
 categories:
-  - Active Directory
-  - Development
-  - SharePoint
+  - "Active Directory"
+  - "Development"
+  - "SharePoint"
 tags:
-  - Authentication
-  - Claims
-  - Development
-  - Password
+  - "Authentication"
+  - "Claims"
+  - "Development"
+  - "Password"
 comments: true
+preview: "/social/39f7d1f9-2fa0-4cc2-a6c2-c4bd6d0d400e.png"
 ---
 
 ## Give the user control to manage their password through SharePoint.
