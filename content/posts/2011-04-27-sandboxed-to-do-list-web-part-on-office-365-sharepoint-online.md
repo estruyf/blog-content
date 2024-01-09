@@ -44,7 +44,7 @@ The first step is to set the resource quota for your SharePoint Online site.
 
 ### Deploying the sandboxed solution
 
-When you set the number of resources for your site, you can upload the sandboxed solution to the site. Here is the download link for the solution: [To-Do List Web Part Solution File](uploads/2011/03/EStruyf.TodoWP_Solution.zip)
+When you set the number of resources for your site, you can upload the sandboxed solution to the site. Here is the download link for the solution: [To-Do List Web Part Solution File](/uploads/2011/03/EStruyf.TodoWP_Solution.zip)
 
 *   Go to your SharePoint Online site;
 *   Open the "**Site Actions**" menu, and click on "**Site Settings**";

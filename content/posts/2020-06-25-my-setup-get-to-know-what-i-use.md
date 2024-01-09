@@ -120,7 +120,7 @@ Here are a couple of the VSCode dependencies which I like to use:
 - **[1Password](https://1password.com/)** — IMO best password manager, and they provide excellent support.
 - **[Grammarly](https://app.grammarly.com/)** — For writing my articles.
 - **[Bartender](https://www.macbartender.com/)** — Organize your menu bar icons.
-- **[BetterDisplayTool](betterdisplay.pro)** — Better control over your display an its resolutions.
+- **[BetterDisplayTool](https://betterdisplay.pro)** — Better control over your display an its resolutions.
 
 ## Other
 

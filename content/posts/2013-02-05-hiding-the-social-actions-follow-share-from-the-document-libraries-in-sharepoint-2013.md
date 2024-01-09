@@ -82,7 +82,7 @@ function CalloutOnPostRenderCustomTemplate(renderCtx, calloutActionMenu) {
 {{< / highlight >}}
 
 
-**Download the full JavaScript code here: [Hide the Follow and Share Actions](uploads/2013/02/Hide-Follow-Share.js)**.
+**Download the full JavaScript code here: [Hide the Follow and Share Actions](/uploads/2013/02/Hide-Follow-Share.js)**.
 
 _Note: Best is to add this code at the bottom of you master page. This can be either in a script block or in a script file itself (your choice, but a script file is always cleaner).
 _

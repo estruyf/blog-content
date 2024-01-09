@@ -158,5 +158,5 @@ The end result should be the same as in IE.
 
 Here you can download the new debug and minimal script:
 
-- [Updated SearchUI debug version](uploads/2013/01/updated.SearchUI.debug_.js "Updated SearchUI debug version")
-- [Updated SearchUI minimized version](uploads/2013/01/updated.SearchUI.js "Updated SearchUI minimized version")
+- [Updated SearchUI debug version](/uploads/2013/01/updated.SearchUI.debug_.js "Updated SearchUI debug version")
+- [Updated SearchUI minimized version](/uploads/2013/01/updated.SearchUI.js "Updated SearchUI minimized version")

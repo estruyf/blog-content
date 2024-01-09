@@ -176,7 +176,7 @@ $(document).ready(function () {
 {{< / highlight >}}
 
 
-Here you can download the whole script here: [App.js](uploads/2013/03/App-Provision-CT.js)
+Here you can download the whole script here: [App.js](/uploads/2013/03/App-Provision-CT.js)
 
 ## Executing the Code
 

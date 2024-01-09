@@ -268,6 +268,6 @@ That is all, I hope these cleaned-up version help you with creating your own tem
 
 Download the files here:
 
-- [Clean-Search-Results-Group](uploads/2013/07/Clean-Search-Results-Group.html)
-- [Clean-Search-Results-Control](uploads/2013/07/Clean-Search-Results-Control1.html)
-- [Clean-Search-Results-Item](uploads/2013/07/Clean-Search-Results-Item.html)
+- [Clean-Search-Results-Group](/uploads/2013/07/Clean-Search-Results-Group.html)
+- [Clean-Search-Results-Control](/uploads/2013/07/Clean-Search-Results-Control1.html)
+- [Clean-Search-Results-Item](/uploads/2013/07/Clean-Search-Results-Item.html)

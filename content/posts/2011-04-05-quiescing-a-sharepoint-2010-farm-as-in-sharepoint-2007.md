@@ -25,7 +25,7 @@ stsadm -o quiescefarm -maxduration minutes
 
 But, I have done some research and development to achieve the same as in SharePoint 2007. In this blog post I will explain you how you can quiesce your farm by code, and I deliver you my SharePoint 2010 Solution file that makes the same functionality as in SharePoint 2007 available.
 
-[QuiesceFarm Solution](uploads/2011/04/estruyf.QuiesceFarm.zip "QuiesceFarm Solution")
+[QuiesceFarm Solution](/uploads/2011/04/estruyf.QuiesceFarm.zip "QuiesceFarm Solution")
 
 ## Programming
 
@@ -83,6 +83,6 @@ When you quiesce the farm you will get the following results.
 
 ## Download
 
-[QuiesceFarm Solution](uploads/2011/04/estruyf.QuiesceFarm.zip "QuiesceFarm Solution")
+[QuiesceFarm Solution](/uploads/2011/04/estruyf.QuiesceFarm.zip "QuiesceFarm Solution")
 
-[VS2010 Project](uploads/2011/07/estruyf.QuiesceFarm.zip "VS2010 Project")
+[VS2010 Project](/uploads/2011/07/estruyf.QuiesceFarm.zip "VS2010 Project")

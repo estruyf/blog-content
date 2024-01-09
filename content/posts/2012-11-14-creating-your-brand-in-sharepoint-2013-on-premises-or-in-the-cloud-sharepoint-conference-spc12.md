@@ -154,7 +154,7 @@ Custom CSS options
 
 ## Planning for Full Branding
 
-[![Design considerations SP2013](uploads/2012/11/A7rmfIECQAQnOO_.jpg_large-300x224.jpeg "Design considerations SP2013")](uploads/2012/11/A7rmfIECQAQnOO_.jpg_large.jpeg)
+[![Design considerations SP2013](/uploads/2012/11/A7rmfIECQAQnOO_.jpg_large-300x224.jpeg "Design considerations SP2013")](/uploads/2012/11/A7rmfIECQAQnOO_.jpg_large.jpeg)
 
 1.  Vision & goals requirement
 2.  IA / taxonomy / wireframes

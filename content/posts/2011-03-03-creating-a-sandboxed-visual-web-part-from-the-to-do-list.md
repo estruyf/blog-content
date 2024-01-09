@@ -57,7 +57,7 @@ In the "Add New Item" window select "Visual Web Part (Sandboxed)" and add this t
 
 ### Add the HTML and JavaScript to the User Control
 
-Now that you have created the visual web part it is time to add the HTML and JavaScript code from the [to-do list blog post](uploads/2011/02/To-do_List.zip) to the User Control.
+Now that you have created the visual web part it is time to add the HTML and JavaScript code from the [to-do list blog post](/uploads/2011/02/To-do_List.zip) to the User Control.
 
 {{< caption-legacy "uploads/2011/03/030311_1309_CreatingaSa5.png" "Add the HTML to the User Control" >}}
 
@@ -198,10 +198,10 @@ if (ListName != null && ListName != "") {
 ## Files
 
 Here is my Visual Studio Project.
-[VS 2010 Project](uploads/2011/03/EStruyf.TodoWP.zip "Download the to-do VS 2010 Project")
+[VS 2010 Project](/uploads/2011/03/EStruyf.TodoWP.zip "Download the to-do VS 2010 Project")
 
 If you only want the Sandboxed solution file you can download it here.
-[Solution](uploads/2011/03/EStruyf.TodoWP_Solution.zip "Download to-do the solution file")
+[Solution](/uploads/2011/03/EStruyf.TodoWP_Solution.zip "Download to-do the solution file")
 
 ## Changes
 

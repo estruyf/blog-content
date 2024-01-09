@@ -220,4 +220,4 @@ Check if you made your class public.
 
 ## Sources
 
-[Download Project](uploads/2011/03/estruyf.SPDActivity.GetFileExtension.zip)
+[Download Project](/uploads/2011/03/estruyf.SPDActivity.GetFileExtension.zip)

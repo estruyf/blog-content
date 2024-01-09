@@ -247,4 +247,4 @@ Remove this parameter and you will retrieve all the items.
 
 ## Download
 
-[XSLT Data View Web Part](uploads/2012/04/XSLT-Data-View-Web-Part.txt "XSLT Data View Web Part")
+[XSLT Data View Web Part](/uploads/2012/04/XSLT-Data-View-Web-Part.txt "XSLT Data View Web Part")

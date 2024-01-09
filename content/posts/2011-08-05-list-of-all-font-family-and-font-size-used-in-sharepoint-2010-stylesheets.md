@@ -27,27 +27,27 @@ Because of these problems/frustrations I started to map out all the **font-famil
 
 ## calendarv4.css
 
-[calendarv4.css Fonts](uploads/2011/08/calendarv4_Fonts.css "calendarv4.css Fonts")
+[calendarv4.css Fonts](/uploads/2011/08/calendarv4_Fonts.css "calendarv4.css Fonts")
 
 ## corev4.css
 
-[corev4.css Fonts](uploads/2011/08/corev4_Fonts.css "corev4.css Fonts")
+[corev4.css Fonts](/uploads/2011/08/corev4_Fonts.css "corev4.css Fonts")
 
 ## datepickerv4.css
 
-[datepickerv4.css Fonts](uploads/2011/08/datepickerv4_Fonts.css "datepickerv4.css Fonts")
+[datepickerv4.css Fonts](/uploads/2011/08/datepickerv4_Fonts.css "datepickerv4.css Fonts")
 
 ## layouts.css
 
-[layouts.css Fonts](uploads/2011/08/layouts_Fonts.css "layouts.css Fonts")
+[layouts.css Fonts](/uploads/2011/08/layouts_Fonts.css "layouts.css Fonts")
 
 ## search.css
 
-[search.css Fonts](uploads/2011/08/search_Fonts.css "search.css Fonts")
+[search.css Fonts](/uploads/2011/08/search_Fonts.css "search.css Fonts")
 
 ## wiki.css
 
-[WIKI.css Fonts](uploads/2011/08/wiki_Fonts.css "wiki.css Fonts")
+[WIKI.css Fonts](/uploads/2011/08/wiki_Fonts.css "wiki.css Fonts")
 
 ## References
 

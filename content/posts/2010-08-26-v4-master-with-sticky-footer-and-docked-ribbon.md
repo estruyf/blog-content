@@ -66,7 +66,7 @@ body #s4-workspace {
 
 {{< caption-legacy "uploads/2010/08/image001.png" "SharePoint 2010 with sticky footer Docked Ribbon" >}}
 
-Here you can download the docked version: [V4.Master_Footer_Docked_Ribbon](uploads/2011/04/V4_Master_Footer_Docked_Ribbon.zip). This version should work for Internet Explorer 8 and Firefox v3.6.8.
+Here you can download the docked version: [V4.Master_Footer_Docked_Ribbon](/uploads/2011/04/V4_Master_Footer_Docked_Ribbon.zip). This version should work for Internet Explorer 8 and Firefox v3.6.8.
 
 ## Changes
 
@@ -76,4 +76,4 @@ I updated the master page today. There was a small problem with a "div" closing 
 
 ## Download
 
-[Master Page](uploads/2011/04/V4_Master_Footer_Docked_Ribbon.zip)
+[Master Page](/uploads/2011/04/V4_Master_Footer_Docked_Ribbon.zip)

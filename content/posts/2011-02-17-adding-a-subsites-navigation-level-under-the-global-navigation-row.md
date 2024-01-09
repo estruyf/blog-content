@@ -103,6 +103,6 @@ That is all, so you see it is fairly simple to add a new navigation level to you
 
 {{< caption-legacy "uploads/2011/02/021711_1526_AddingaSubs4.png" "Subsite navigation level final result" >}}
 
-[Download v4](uploads/2011/02/Subsite-Navigation-level.master.txt)
+[Download v4](/uploads/2011/02/Subsite-Navigation-level.master.txt)
 
-[Download nightandday](uploads/2011/07/nightandday_toplevelnavigation.zip)
+[Download nightandday](/uploads/2011/07/nightandday_toplevelnavigation.zip)

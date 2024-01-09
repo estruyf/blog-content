@@ -79,4 +79,4 @@ The end result should be like this.
 
 {{< caption-legacy "uploads/2011/01/minimal_scroll.png" "Minimal.master at the bottom of the page scrolling" >}}
 
-Here you can download my version of the ["minimal.master" master page with a footer](uploads/2011/01/minimal_with_footer.master.txt).
+Here you can download my version of the ["minimal.master" master page with a footer](/uploads/2011/01/minimal_with_footer.master.txt).

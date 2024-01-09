@@ -35,7 +35,7 @@ The problem / downside with the default multi-value search refiner control, is t
 
 To give you more flexibility, I'll explain how you could create your own multi-value search refiner control.
 
-> **Note**: I'll make use of a light version from refiner control that was created in part 4 of this series: [Light Custom Search Refiner Control](uploads/2013/11/Display-Template-Part4-light.txt).
+> **Note**: I'll make use of a light version from refiner control that was created in part 4 of this series: [Light Custom Search Refiner Control](/uploads/2013/11/Display-Template-Part4-light.txt).
 
 This will be the end result:
 

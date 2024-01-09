@@ -58,4 +58,4 @@ Images don't say much in this scenario, but what you can see is that the first r
 
 This is the default list control display template with the piece of code added to it. Feel free to test this on your environment.
 
-[Control_Refresh.html](uploads/2014/04/Control_Refresh.html) (Right click - save as).
+[Control_Refresh.html](/uploads/2014/04/Control_Refresh.html) (Right click - save as).

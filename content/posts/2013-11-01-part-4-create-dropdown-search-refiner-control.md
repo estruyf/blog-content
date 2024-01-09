@@ -23,7 +23,7 @@ In this blog post part of the search refiner control series, I'll show how to cr
 
 {{< caption-legacy "uploads/2013/11/110113_0928_Part4Create1.png" "Mockup" >}}
 
-> **Note**: for this post I start with the file I created in part 2 of this series. Download the template here: [Custom Search Refiner Control Part 2](uploads/2013/10/Display-Template-Part2.txt "Custom Search Refiner Control Part 2").
+> **Note**: for this post I start with the file I created in part 2 of this series. Download the template here: [Custom Search Refiner Control Part 2](/uploads/2013/10/Display-Template-Part2.txt "Custom Search Refiner Control Part 2").
 
 ## Creating a Dropdown Menu
 

@@ -154,4 +154,4 @@ To override the default property mapping, you need to specify the managed proper
 
 With this method, a lot more possibilities are possible.
 
-Here is the template that is used for this post: [Item_CatalogDateTime](uploads/2014/02/Item_CatalogDateTime.html)
+Here is the template that is used for this post: [Item_CatalogDateTime](/uploads/2014/02/Item_CatalogDateTime.html)

@@ -125,7 +125,7 @@ Here are a few screenshots of the sticky footer in action.
 
 Here is the masterpage zip file: 
 
-[v4_Sticky_Footer.master](uploads/2010/08/v4_Sticky_Footer.master.txt)
+[v4_Sticky_Footer.master](/uploads/2010/08/v4_Sticky_Footer.master.txt)
 
 This version is tested in IE7, IE8, IE9, and Firefox v3+.
 

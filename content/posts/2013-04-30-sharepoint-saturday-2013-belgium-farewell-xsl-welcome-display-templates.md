@@ -23,8 +23,8 @@ Here are my slides from this years session:
 
 Here are the files I had created during the demo's:
 
-- [CSWP Control Slideshow](uploads/2013/04/Control_SPSBE.html)
-- [CSWP Item Template](uploads/2013/04/Item_SPSBE.html "CSWP Item Template")
+- [CSWP Control Slideshow](/uploads/2013/04/Control_SPSBE.html)
+- [CSWP Item Template](/uploads/2013/04/Item_SPSBE.html "CSWP Item Template")
 
 ## Blog Post Mentions
 

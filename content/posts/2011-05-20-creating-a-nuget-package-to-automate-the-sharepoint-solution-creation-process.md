@@ -157,4 +157,4 @@ This should have added your files to the project.
 
 ## Download
 
-[NuGet Branding Package](uploads/2011/05/EStruyfSP2010Branding.1.0.zip)
+[NuGet Branding Package](/uploads/2011/05/EStruyfSP2010Branding.1.0.zip)

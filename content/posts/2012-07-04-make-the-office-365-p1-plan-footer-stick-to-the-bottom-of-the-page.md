@@ -104,4 +104,4 @@ The end result looks like this:
 
 {{< caption-legacy "uploads/2012/06/060312_1533_MaketheOffi3.png" "Result" >}}
 
-[v4_Office365.master](uploads/2012/06/v4_Office365.master.txt)
+[v4_Office365.master](/uploads/2012/06/v4_Office365.master.txt)

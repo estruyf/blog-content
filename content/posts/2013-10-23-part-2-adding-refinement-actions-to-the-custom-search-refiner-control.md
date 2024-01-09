@@ -21,7 +21,7 @@ comments: true
 
 In the previous post I explained how to create your first search refiner control template. The template that was created wasn't that useful, because it missed the refinement actions. In this post I explain how to add these refinement actions to your template and what to do once results are refined.
 
-> **Note**: For this post I'm going to use that display template as the starting point for this post. Here you can download it directly: [Custom Search Refiner Control](uploads/2013/10/Display-Template-Part1.txt).
+> **Note**: For this post I'm going to use that display template as the starting point for this post. Here you can download it directly: [Custom Search Refiner Control](/uploads/2013/10/Display-Template-Part1.txt).
 
 ## Adding Refinement Actions
 

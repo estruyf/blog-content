@@ -14,7 +14,6 @@ categories:
   - SharePoint
 tags:
   - Authentication
-  - 'C#'
   - Claims
   - Development
   - Password
@@ -25,8 +24,7 @@ comments: true
 
 When you want to use form based authentication for SharePoint authentication, one of the requirements could be that users can change their passwords from within SharePoint. Because this functionality is not OOTB available, you will need to create a custom web part or application page for it. Check what best matches your project requirements. The code behind it will be the same, and this is what will be covered in this blog post.
 
-The assembly that will be used for changing the password is the following: **System.DirectoryServices.AccountManagement.
-**
+The assembly that will be used for changing the password is the following: **System.DirectoryServices.AccountManagement**.
 
 When working with claims-based authentication (which is standard when form based authentication is configured), it is useful to add the following reference: **Microsoft.SharePoint.Administration.Claims**. This class can be used to encode and decode claims-based usernames.
 

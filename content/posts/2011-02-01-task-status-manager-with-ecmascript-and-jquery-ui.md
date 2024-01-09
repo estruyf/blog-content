@@ -243,4 +243,4 @@ The "onQueryFailed" function is reused from the "Retrieve the task list items" s
 
 ## Download
 
-[Download the source files.](uploads/2011/02/DragTasks.zip)
+[Download the source files.](/uploads/2011/02/DragTasks.zip)

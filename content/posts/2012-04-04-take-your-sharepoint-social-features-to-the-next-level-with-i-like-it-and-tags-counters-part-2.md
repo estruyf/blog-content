@@ -78,7 +78,7 @@ When you compare this result with the first part, you can see that "How To Use T
 
 ## Complete Source Code
 
-[GetTags Code](uploads/2012/03/GetTagsReflection.txt)
+[GetTags Code](/uploads/2012/03/GetTagsReflection.txt)
 
 ## Part 3
 

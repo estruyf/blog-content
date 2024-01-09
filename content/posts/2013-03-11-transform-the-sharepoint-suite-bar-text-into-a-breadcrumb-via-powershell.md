@@ -223,7 +223,7 @@ $app.Update();
 
 ## Download
 
-Download the script here: [Suite-Bar-Breadcrumb.ps1 - update](uploads/2013/08/Suite-Bar-Breadcrumb.ps1-update3.txt)
+Download the script here: [Suite-Bar-Breadcrumb.ps1 - update](/uploads/2013/08/Suite-Bar-Breadcrumb.ps1-update3.txt)
 
 ## Revert to the default
 

@@ -189,4 +189,4 @@ Save and publish your master page. When you now go to a SharePoint page, you sho
 
 ## Download
 
-[Social Tagging Control](uploads/2012/03/estruyf.SocialTaggingControl.zip)
+[Social Tagging Control](/uploads/2012/03/estruyf.SocialTaggingControl.zip)

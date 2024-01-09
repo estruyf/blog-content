@@ -21,7 +21,7 @@ comments: true
 
 In the previous posts I explained how to create a new refiner control, but there is one search data type that needs some special attention. The search data type that will be explained in this post is the FileType. In this post I'll show you the things that are so special about working with filetypes.
 
-> **Note**: for this post I'll use the display template that was created in the previous post: [Custom Search Refiner Control Part 2](uploads/2013/10/Display-Template-Part2.txt).
+> **Note**: for this post I'll use the display template that was created in the previous post: [Custom Search Refiner Control Part 2](/uploads/2013/10/Display-Template-Part2.txt).
 
 ## Point 1: Comparison Custom Template versus Default Template
 

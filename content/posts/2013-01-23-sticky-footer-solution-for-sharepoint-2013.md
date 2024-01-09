@@ -105,5 +105,5 @@ During the writing of this blog post Randy Drisgill posted his solution of addin
 
 ### Download the files
 
-- [Seattle With Sticky Footer](uploads/2013/01/seattle-with-sticky-footer.html)
-- [Footer CSS file](uploads/2013/01/footer.css)
+- [Seattle With Sticky Footer](/uploads/2013/01/seattle-with-sticky-footer.html)
+- [Footer CSS file](/uploads/2013/01/footer.css)

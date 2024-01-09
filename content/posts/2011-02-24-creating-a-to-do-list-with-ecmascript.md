@@ -19,7 +19,7 @@ In one of my previous post I created a task manager with ECMAscript. In this pos
 
 {{< caption-legacy "uploads/2011/02/022411_1409_CreatingaTo4.png" "To-do list final result" >}}
 
-[Download the solution package](uploads/2011/02/To-do_List.zip)
+[Download the solution package](/uploads/2011/02/To-do_List.zip)
 
 ## Things you need
 
@@ -362,4 +362,4 @@ function DeleteItem(itemID) {
 
 ## Download
 
-[Download the solution package](uploads/2011/02/To-do_List.zip)
+[Download the solution package](/uploads/2011/02/To-do_List.zip)

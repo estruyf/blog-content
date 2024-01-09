@@ -85,12 +85,6 @@ Generating unique discount codes when you have enough points.
 
 Compared to the previous function, this contains a lot more logic, so we choose to handle it via Azure Functions.
 
-## Workshop
-
-Are you interested to learn more about this approach? I am currently working on a workshop where you can learn more and reuse this approach for running your own business on top of Microsoft 365, Azure, and the PowerPlatform. 
-
-You can find more information on the [Running a small business website powered by Microsoft 365 and Azure](https://www.eliostruyf.com/workshops/running-a-small-business-website-powered-by-microsoft-365-and-azure/) workshop page.
-
 ## Ignite and podcasts
 
 Our shop and approach gained a lot of interest from the Microsoft 365 & Azure community. 

@@ -77,7 +77,7 @@ else
 
 Here you can find the whole code:
 
-[SocialFeatures Code](uploads/2012/04/SocialFeatures-Part4-Code.txt)
+[SocialFeatures Code](/uploads/2012/04/SocialFeatures-Part4-Code.txt)
 
 ## Result
 

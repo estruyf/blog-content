@@ -167,7 +167,7 @@ Now that I explained you how to add the **Add to My Links**, the next step is to
 
 If you want to install this solution you can download the my SharePoint 2010 solution file.
 
-[Solution File](uploads/2012/02/estruyf.MyLinks.Solution.File_.zip)
+[Solution File](/uploads/2012/02/estruyf.MyLinks.Solution.File_.zip)
 
 Deploy the solution to your SharePoint environment and activate the following site collection feature: **estruyf MyLinks Feature**.
 
@@ -175,7 +175,7 @@ Deploy the solution to your SharePoint environment and activate the following si
 
 If you want to make changes to the code, here is my Visual Studio project.
 
-[VS Project](uploads/2011/08/estruyf.MyLinks.VS_.Project.zip)
+[VS Project](/uploads/2011/08/estruyf.MyLinks.VS_.Project.zip)
 
 ## Useful Links
 

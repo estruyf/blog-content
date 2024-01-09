@@ -1,23 +1,24 @@
 ---
-title: How to use Google Fonts in your font scheme
-author: Elio Struyf
-type: post
-date: 2014-09-10T11:58:48+00:00
-slug: /use-google-fonts-font-scheme/
+title: "How to use Google Fonts in your font scheme"
+author: "Elio Struyf"
+type: "post"
+date: "2014-09-10T11:58:48+00:00"
+slug: "/use-google-fonts-font-scheme/"
 dsq_thread_id:
   - 3836535641
 categories:
-  - Office 365
-  - SharePoint 2013
-  - Styling
+  - "Office 365"
+  - "SharePoint 2013"
+  - "Styling"
 tags:
-  - Composed Looks
-  - Font Scheme
-  - Fonts
-  - Google Fonts
-  - Styling
-  - Web Font
+  - "Composed Looks"
+  - "Font Scheme"
+  - "Fonts"
+  - "Google Fonts"
+  - "Styling"
+  - "Web Font"
 comments: true
+preview: "/social/ef3a5e6d-2ac8-4323-8e20-1aa4b74811ab.png"
 ---
 
 In the previous post I showed you how to create a font scheme with custom web fonts. Now a lot of people (even me) are using the fonts from the Google Fonts gallery. Google works a bit differently compared to SharePoint font schemes. Google provides a CSS reference which you need to add to your HTML.
@@ -108,7 +109,7 @@ When the font scheme is applied on the site. The font references in the themed *
 
 The next step is to add the Google font CSS reference to your site. You can do this by adding it to your master page or via a custom action. The master page option is probably the quickest way.
 
-Here is the **[Seattle.html](uploads/2014/09/master-google-font.html)** (right click - save as) file with a reference set to the Google Fonts CSS file. When this master page gets applied on your site, you should receive the following output:
+Here is the **[Seattle.html](/uploads/2014/09/master-google-font.html)** (right click - save as) file with a reference set to the Google Fonts CSS file. When this master page gets applied on your site, you should receive the following output:
 
 {{< caption-legacy "uploads/2014/09/091014_1158_HowtouseGoo4.png" "Site output after the CSS reference is added" >}}
 
