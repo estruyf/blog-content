@@ -218,7 +218,8 @@ class CardFooter extends LitElement {
         ${
           this.commentTotal >= 0 ? html `
             <a href="${this.commentUrl}">
-              <img src="https://img.shields.io/static/v1?label=comments&message=${this.commentTotal}&color=%23ffe45e&style=flat-square" />
+              <img src="https://img.shields.io/badge/${this.commentTotal}-ffe45e?style=flat-square&label=comments&labelColor=0e131f
+              " />
             </a>
           ` : ''
         }
