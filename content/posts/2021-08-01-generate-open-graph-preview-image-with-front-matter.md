@@ -100,7 +100,7 @@ if (contentScriptArgs) {
 
       // @ts-ignore
       nodeHtmlToImage({
-        output: `${workspacePath}/.frontmatter/static/social/${fileName}`,
+        output: `${workspacePath}/static/social/${fileName}`,
         html: parsedHtml,
       })
         .then(() =>
