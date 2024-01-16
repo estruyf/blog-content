@@ -38,11 +38,12 @@ My preview image looks as follows:
 
 The code of the script looks as follows:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```typescript {linenos=table,noclasses=false}
 //@ts-check
-const nodeHtmlToImage = require('node-html-to-image')
-const uuid = require('uuid')
-const { format, parseJSON } = require('date-fns');
+import nodeHtmlToImage from "node-html-to-image";
+import * as uuid from "uuid";
+import { format, parseJSON } from "date-fns";
+import { ContentScript } from "@frontmatter/extensibility";
 
 const html = `
 <html>
@@ -85,42 +86,47 @@ const html = `
 </html>
 `;
 
-const arguments = process.argv;
+const contentScriptArgs = ContentScript.getArguments();
 
-if (arguments && arguments.length > 0 && arguments[2]) {
-  const workspaceArg = arguments[2];
-  const fileArg = arguments[3];
-  const dataArg = arguments[4];
-  const data = dataArg && typeof dataArg === "string" ? JSON.parse(dataArg) : null;
-  
-  if (data.title && data.date) {
-    const parsedHtml = html.replace(`{title}`, data.title).replace(`{date}`, format(parseJSON(data.date), "MMM dd, yyyy"));
-    const fileName = `${uuid.v4()}.png`;
+if (contentScriptArgs) {
+  const { workspacePath, frontMatter } = contentScriptArgs;
 
-    // @ts-ignore
-    nodeHtmlToImage({
-      output: `${workspaceArg}/static/social/${fileName}`,
-      html: parsedHtml
-    }).then(() => console.log(`preview: "/social/${fileName}"`)).catch(e => console.log(e?.message || e));
+  if (workspacePath && frontMatter) {
+    if (frontMatter.title && frontMatter.date) {
+      const parsedHtml = html
+        .replace(`{title}`, frontMatter.title)
+        .replace(`{date}`, format(parseJSON(frontMatter.date), "MMM dd, yyyy"));
+      const fileName = `${uuid.v4()}.png`;
+
+      // @ts-ignore
+      nodeHtmlToImage({
+        output: `${workspacePath}/.frontmatter/static/social/${fileName}`,
+        html: parsedHtml,
+      })
+        .then(() =>
+          ContentScript.updateFrontMatter({ preview: `/social/${fileName}` })
+        )
+        .catch((e) => ContentScript.done(e?.message || e));
+    }
   }
 }
-{{< / highlight >}}
+```
 
 ## Adding the script to Front Matter
 
 To make the script available as an action in the Front Matter side panel, you will first have to add a file with the script's code to your project.
 
-{{< blockquote type="Info" text="I use a `scripts` folder in my project, where I created the `social-img.js` file." >}}
+{{< blockquote type="Info" text="I use a `scripts` folder in my project, where I created the `social-img.mjs` file." >}}
 
-Once you added the file, make sure to install the dependencies: `npm i node-html-to-image uuid date-fns -D -E`.
+Once you added the file, make sure to install the dependencies: `npm i node-html-to-image uuid date-fns @frontmatter/extensibility -D`.
 
 After that, it is time for the final step, registering the command. You can register the script in your `.vscode/settings.json` file with the following code:
 
 {{< highlight json "linenos=table,noclasses=false" >}}
 "frontMatter.custom.scripts": [{
     "title": "Generate social image",
-    "script": "./scripts/social-img.js",
-    "nodeBin": "~/.nvm/versions/node/v14.17.4/bin/node"
+    "script": "./scripts/social-img.mjs",
+    "nodeBin": "~/.nvm/versions/node/v18.17.1/bin/node"
   }]
 {{< / highlight >}}
 
@@ -139,3 +145,9 @@ I encountered an issue when trying to run the script in WSL. It had to do with s
 
 sudo apt install ca-certificates fonts-liberation gconf-service libappindicator1 libasound2 libatk-bridge2.0-0 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgbm1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libnss3 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 lsb-release wget xdg-utils -y 
 {{< / highlight >}}
+
+## Update
+
+### 2024-01-16
+
+Updated the script to use the new `@frontmatter/extensibility` dependency.
