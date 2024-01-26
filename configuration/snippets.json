@@ -62,18 +62,18 @@
           "default": "FM_SELECTED_TEXT"
         }
       ]
+    },
+    "Speaking entry": {
+      "description": "Use this to add a new entry when you're speaking at an event",
+      "body": [
+        "### {{date}} / {{event}}",
+        "",
+        "{{session}}",
+        "",
+        "[Link to the event]({{&link}})"
+      ],
+      "openingTags": "{{",
+      "closingTags": "}}"
     }
-  },
-  "Speaking entry": {
-    "description": "Use this to add a new entry when you're speaking at an event",
-    "body": [
-      "### {{date}} / {{event}}",
-      "",
-      "{{session}}",
-      "",
-      "[Link to the event]({{link}})"
-    ],
-    "openingTags": "{{",
-    "closingTags": "}}"
   }
 }
