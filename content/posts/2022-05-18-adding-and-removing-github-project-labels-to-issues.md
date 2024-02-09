@@ -15,6 +15,7 @@ type: post
 slug: /adding-or-deleting-github-project-labels-on-issues/
 ---
 
+{{< blockquote type="important" text="This approach makes use of GitHub classic projects and are being discontinued. The approach will not work for new Projects as they require you to use the webhook functionality in order to create Project Item triggers." >}}
 
 Since projects got added to GitHub, I started using it more and more. For [Front Matter](https://frontmatter.codes), I am using projects to manage its releases. Before projects, I used milestones, but with projects, it is easier to follow up on what things I still need to do before the release.
 
