@@ -31,6 +31,12 @@
       "type": "mediaFile"
     },
     {
+      "title": "Convert to webp",
+      "script": "./scripts/webp.mjs",
+      "command": "~/.nvm/versions/node/v18.17.1/bin/node",
+      "type": "mediaFile"
+    },
+    {
       "title": "Optimize images",
       "script": "./scripts/media-all.js",
       "command": "~/.nvm/versions/node/v16.19.0/bin/node",

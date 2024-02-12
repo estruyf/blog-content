@@ -22,7 +22,7 @@ The classic Projects experience has been discontinued, and there is a big differ
 
 Previously, you could create those classic projects on the repository level, which allowed hooking it up with some GitHub actions to add or remove issue labels when managing them on the project board. These labels enable quick filtering of issues in the list for a specific status or project.
 
-{{< caption-new "/uploads/2024/02/issue-project-labels.png" "Project labels on the issues"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABmSURBVE3BQQ6CMBBA0T+2kLAgJsiChTHR+x+Bu5hwAtuggTrTwaXvyTBd58sw3gRo2pb3ugICOKcQqGao6hLd/R677tEIaIXan6n5RRChlEJKiZ8Q7WvPbd/NRHCB/ClYzqDKn+UAG7EtmFsl3fYAAAAASUVORK5CYII=" "900" >}}
+{{< caption-new "/uploads/2024/02/issue-project-labels.webp" "Project labels on the issues"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABmSURBVE3BQQ6CMBBA0T+2kLAgJsiChTHR+x+Bu5hwAtuggTrTwaXvyTBd58sw3gRo2pb3ugICOKcQqGao6hLd/R677tEIaIXan6n5RRChlEJKiZ8Q7WvPbd/NRHCB/ClYzqDKn+UAG7EtmFsl3fYAAAAASUVORK5CYII=" "900" >}}
 
 {{< blockquote type="info" text="Read more about on [Adding or deleting GitHub project (classic) labels on issues](https://www.eliostruyf.com/adding-or-deleting-github-project-labels-on-issues/)." >}}
 
@@ -72,9 +72,9 @@ Once you have created the app, you can install the app on the user/organization.
 
 If you use a setup similar to mine, you will notice the difference between the user and organization installation permissions. 
 
-{{< caption-new "/uploads/2024/02/github-app-personal.png" "GitHub App installed on user level"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABhSURBVHXBOw7CQAxAweeNreQIyaVokDguPUG05Aik3Wo/IJuGCikzcjmdH7fnNvfWKO1NIBAQBPFp/Ox6Xe9LSmkREUYbqLXi7vwRHaeJISVyzrg7R7SU8jLVMDN67xzYv5tpKTiMXXVVAAAAAElFTkSuQmCC" "900" >}}
+{{< caption-new "/uploads/2024/02/github-app-personal.webp" "GitHub App installed on user level"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABhSURBVHXBOw7CQAxAweeNreQIyaVokDguPUG05Aik3Wo/IJuGCikzcjmdH7fnNvfWKO1NIBAQBPFp/Ox6Xe9LSmkREUYbqLXi7vwRHaeJISVyzrg7R7SU8jLVMDN67xzYv5tpKTiMXXVVAAAAAElFTkSuQmCC" "900" >}}
 
-{{< caption-new "/uploads/2024/02/github-app-organization.png" "GitHub App installed on organization level"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABjSURBVG3Buw3CUAyG0c9c8/AGZCgaJNalB0QLI5AJsHKD/NNQoZxjp8Pxfnk893Pv5DQjDARC6DPxM/r5ehtaa4OZsd04mYmq+GOriGAXgSSqClWxxN+Zr7W7qoreO2bGgvELyCUvYltfLuYAAAAASUVORK5CYII=" "900" >}}
+{{< caption-new "/uploads/2024/02/github-app-organization.webp" "GitHub App installed on organization level"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABjSURBVG3Buw3CUAyG0c9c8/AGZCgaJNalB0QLI5AJsHKD/NNQoZxjp8Pxfnk893Pv5DQjDARC6DPxM/r5ehtaa4OZsd04mYmq+GOriGAXgSSqClWxxN+Zr7W7qoreO2bGgvELyCUvYltfLuYAAAAASUVORK5CYII=" "900" >}}
 
 ## The sample project
 
