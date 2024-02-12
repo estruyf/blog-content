@@ -1,5 +1,5 @@
 ---
-title: "Using GitHub Project webhooks to manage labeling issues"
+title: "Using GitHub Project webhooks to manage labeling repo issues"
 longTitle: ""
 customField: ""
 slug: "/github-project-webhooks-manage-labeling-issues/"
