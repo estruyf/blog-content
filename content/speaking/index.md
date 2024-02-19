@@ -23,6 +23,12 @@ If you are interested in having Elio speak at your event, you can check out the 
 
 <!-- No upcoming events planned yet.  -->
 
+### 6-8 May 2024 / Techorama Belgium
+
+Automated Testing for Microsoft 365 with Playwright
+
+[Link to the event](https://techorama.be/)
+
 ### 14-16 May 2024 / Cloud Summit
 
 From Code to Cloud: Automated Deployments with GitHub Actions
