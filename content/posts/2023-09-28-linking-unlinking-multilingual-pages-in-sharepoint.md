@@ -56,7 +56,7 @@ Odata-Version: 3.0
 
 {
   "__metadata": {
-    "type": "SP.Field",
+    "type": "SP.Field"
   },
   "ReadOnlyField": false
 }
@@ -92,7 +92,7 @@ Odata-Version: 3.0
 
 {
   "__metadata": {
-    "type": "SP.Data.SitePagesItem",
+    "type": "SP.Data.SitePagesItem"
   },
   "OData__SPIsTranslation": true,
   "OData__SPTranslationLanguage": "<locale>",
@@ -122,7 +122,7 @@ Odata-Version: 3.0
 
 {
   "__metadata": {
-    "type": "SP.Data.SitePagesItem",
+    "type": "SP.Data.SitePagesItem"
   },
   "OData__SPTranslationSourceItemId": null
 }

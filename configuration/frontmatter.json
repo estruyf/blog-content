@@ -24,7 +24,6 @@
   "frontMatter.snippets.wrapper.enabled": false,
   "frontMatter.sponsors.ai.enabled": true,
   "frontMatter.git.enabled": true,
-  "frontMatter.git.actions": true,
   "frontMatter.git.submodule.push": true,
   "frontMatter.git.submodule.pull": true,
   "frontMatter.git.submodule.branch": "main",
@@ -33,6 +32,14 @@
   "frontMatter.dashboard.contentTags": "tags",
   "frontMatter.content.autoUpdateDate": false,
   "frontMatter.content.wysiwyg": true,
+  "frontMatter.content.filters": [
+    "contentFolders",
+    "tags",
+    {
+      "title": "Content Type",
+      "name": "fmContentType"
+    }
+  ],
   "frontMatter.content.sorting": [
     {
       "title": "Date (asc)",
