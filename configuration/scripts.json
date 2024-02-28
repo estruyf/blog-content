@@ -3,7 +3,7 @@
   "frontMatter.custom.scripts": [{
       "title": "Generate social image",
       "script": "./scripts/social-img.mjs",
-      "command": "~/.nvm/versions/node/v16.19.0/bin/node",
+      "command": "~/.nvm/versions/node/v18.17.1/bin/node",
       "contentTypes": ["post"]
     },
     {

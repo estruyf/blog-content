@@ -57,8 +57,8 @@
   "frontMatter.content.placeholders": [
     {
       "id": "ogImage",
-      "script": "./scripts/og-image.js",
-      "command": "~/.nvm/versions/node/v16.19.0/bin/node"
+      "script": "./scripts/social-img.mjs",
+      "command": "~/.nvm/versions/node/v18.17.1/bin/node"
     }
   ],
   "frontMatter.preview.host": "http://localhost:1313",
