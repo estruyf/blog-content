@@ -57,7 +57,7 @@
   "frontMatter.content.placeholders": [
     {
       "id": "ogImage",
-      "script": "./scripts/social-img.mjs",
+      "script": "./scripts/og-image.mjs",
       "command": "~/.nvm/versions/node/v18.17.1/bin/node"
     }
   ],
