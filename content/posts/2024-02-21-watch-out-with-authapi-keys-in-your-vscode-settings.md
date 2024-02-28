@@ -82,7 +82,7 @@ The downside of using the SecretStorage API is that you will need to tell your u
 
 For example:
 
-```typescript
+```typescript {linenos=table,noclasses=false}
 // On loading your extension, you can retrieve the API key from the secrets storage
 const apiKey = context.secrets.get(`deepl.apiKey`);
 
