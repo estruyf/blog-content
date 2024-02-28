@@ -43,7 +43,7 @@ As Firefox is blocking the third-party cookies, the flow of loading your page an
 - The page gets redirected to `/_forms/spfxsinglesignon.aspx` to get the access token
 - An error is returned (but you do not see this), and the page gets redirected back to the original page
 
-{{< caption-new "/uploads/2024/02/msal-error.png" "Error during the token retrieval" >}}
+{{< caption-new "/uploads/2024/02/msal-error.png" "Error during the token retrieval"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAJElEQVR4nGPISIz/nxof+x9Mx8X8T4FikBgIp8RG/09LjP8PAKwBFUdUJJ/5AAAAAElFTkSuQmCC" "1224" >}}
 
 - The original page loads and it starts all over again
 
@@ -53,7 +53,7 @@ The issue does not occur in Chrome or Edge when writing the article. Third-party
 
 As it is not yet blocked, the access token for Microsoft Graph is retrieved with the implicit grant flow, which uses the hidden iframe. As this is not blocked, only an error is returned in the console.
 
-{{< caption-new "/uploads/2024/02/msal-error-console.webp" "MSAL token retrieval error" >}}
+{{< caption-new "/uploads/2024/02/msal-error-console.webp" "MSAL token retrieval error"  "data:image/jpeg;base64,UklGRl4AAABXRUJQVlA4WAoAAAAQAAAACQAAAQAAQUxQSA0AAAABD/B294gIsQIR/Q8FAFZQOCAqAAAA0AEAnQEqCgACAAFAJiWUAnQBA310CsAA/vfSRMvtBdvZcg2puVeryuAA" "2568" >}}
 
 This error gives the developer enough information to understand what is happening and fix the issue.
 

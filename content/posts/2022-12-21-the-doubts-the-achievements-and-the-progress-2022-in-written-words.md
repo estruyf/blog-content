@@ -53,7 +53,7 @@ That is what arrived in my mailbox on the 28th of January.
 
 There are [101 stars](https://stars.github.com/profiles/), and I am proud to be one of them.
 
-{{< caption-new "/uploads/2022/12/github-start.JPG" "GitHub Star" >}}
+{{< caption-new "/uploads/2022/12/github-start.JPG" "GitHub Star"  "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANAAoDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABAUGB//EACQQAAIBAwMDBQAAAAAAAAAAAAECAwUGEQAEIRITMQcWIkFR/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/xAAeEQABBAEFAAAAAAAAAAAAAAABAAMRMQUCIjJhwf/aAAwDAQACEQMRAD8Ak7lvi6luirGAvBT+/EibOXZ95UEygMO5jIODnn941rsdj0iVFkllmWRgGZetxgnyMZ40guj06oVw1zcVEpuNnvlYfKGU9GUAAIU+DwPvQTmvI7J7mqJ6TjJIJOpLmWGsiOQufLTG8ftuB0v/2Q==" "768" >}}
 
 ### An extra Microsoft MVP category
 

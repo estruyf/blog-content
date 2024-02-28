@@ -56,7 +56,7 @@ In just seconds, I found one which used a setting named `***.apiKey`.
 
 The next step is to discover if users accidentally expose their keys. All I need to do is to search for the `***.apiKey` in the GitHub search.
 
-{{< caption-new "/uploads/2024/02/exposed-api-keys.webp" "Exposed API Keys" >}}
+{{< caption-new "/uploads/2024/02/exposed-api-keys.webp" "Exposed API Keys"  "data:image/jpeg;base64,UklGRnIAAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSCMAAAABHyAQSPydVpgpjYgIGYratoGqvroLXlX+ZIYhov8RH6EnPgBWUDggKAAAAHABAJ0BKgoABgABQCYlnALsAYhAAP78nNQFqT9Untiorle/sZNUAAA=" "1482" >}}
 
 There are many results; I didn't have to search for a long time to find them.
 

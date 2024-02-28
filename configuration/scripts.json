@@ -8,8 +8,8 @@
     },
     {
       "title": "LQIP (macOS)",
-      "script": "./scripts/lqip.js",
-      "command": "~/.nvm/versions/node/v16.19.0/bin/node",
+      "script": "./scripts/lqip.mjs",
+      "command": "~/.nvm/versions/node/v18.17.1/bin/node",
       "contentTypes": ["post"]
     },
     {
