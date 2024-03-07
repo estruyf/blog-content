@@ -191,11 +191,19 @@ The settings should look similar to this:
 }
 ```
 
-{{< blockquote type="info" text="Make sure you replace the placeholders with your values" >}}
+{{< blockquote type="important" text="Make sure you replace the placeholders with your values" >}}
+
+#### Why not use the Azure Key Vault references?
+
+In the settings, we use the Azure Key Vault URL and certificate's name to retrieve the certificate. Another way would be using key vault references like: `@Microsoft.KeyVault(SecretUri=<certificate identifier>)`.
+
+{{< caption-new "/uploads/2024/03/key-vault-reference.webp" "Using the Azure Key Vault reference"  "data:image/jpeg;base64,UklGRmQAAABXRUJQVlA4WAoAAAAQAAAACQAAAQAAQUxQSBMAAAABD6AQQADEX7XxiYgYrEBE/0MBAFZQOCAqAAAAsAEAnQEqCgACAAFAJiWkAALc/0uw0AD+/g7gGLRH5gPqkU34zSGgAAAA" "2228" >}}
+
+The downside of this approach is that you have to store the certificate value in the `local.settings.json` file, which is not recommended. By using the certificate name, we control everything in the Azure Key Vault.
 
 ### Using ESM modules in Azure Functions
 
-As the latest version of CLI for Microsoft 365 uses ESM modules, we need to configure the Azure Functions project to use ESM modules. 
+As the latest version of CLI for Microsoft 365 uses ESM modules, we need to configure the Azure Functions project to use ESM modules.
 
 In the `package.json` file, add the following line:
 
