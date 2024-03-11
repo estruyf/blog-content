@@ -15,12 +15,11 @@
     "Highlight (single)": {
       "description": "Creates a code highlighting box",
       "body": [
-        "```[[type]] {linenos=table,noclasses=false}",
+        "```[[type]] {title=\"[[&title]]\"}",
         "[[&selection]]",
         "```"
       ],
-      "fields": [
-        {
+      "fields": [{
           "name": "type",
           "title": "Language",
           "type": "choice",
@@ -44,8 +43,7 @@
     "Blockquote": {
       "body": "{{< blockquote type=\"[[type]]\" text=\"[[&selection]]\" >}}",
       "description": "Creates a blockquote",
-      "fields": [
-        {
+      "fields": [{
           "name": "type",
           "title": "Type",
           "type": "choice",
