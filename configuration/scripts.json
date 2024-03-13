@@ -14,8 +14,8 @@
     },
     {
       "title": "Publish GitHub Stars profile",
-      "script": "./scripts/github-stars.js",
-      "command": "~/.nvm/versions/node/v16.19.0/bin/node",
+      "script": "./scripts/github-stars.mjs",
+      "command": "~/.nvm/versions/node/v18.17.1/bin/node",
       "contentTypes": ["post"]
     },
     {
