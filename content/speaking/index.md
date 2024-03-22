@@ -35,6 +35,12 @@ From Code to Cloud: Automated Deployments with GitHub Actions
 
 [Link to the event](https://cloudsummit.eu/)
 
+### 1 June 2024 / CollabDays Netherlands 2024
+
+Automated Testing for Microsoft 365 with Playwright
+
+[Link to the event](https://www.collabdays.org/2024-nl/)
+
 ## Past events
 
 ### 2024
