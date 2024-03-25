@@ -35,6 +35,8 @@ Like the macOS runner, you can install the bash script provided in the Dev Proxy
   run: ./devproxy/devproxy &
 ```
 
+{{< blockquote type="info" text="The Dev Proxy commands is using an ampersand `&` to run it as a background service. You can read more about it in the [#DevHack: Running a background service on GitHub Actions](https://www.eliostruyf.com/devhack-running-background-service-github-actions/) article." >}}
+
 ## Trust the root certificate
 
 Once the Dev Proxy is installed, you can run it, but you cannot yet intercept HTTPS traffic.
