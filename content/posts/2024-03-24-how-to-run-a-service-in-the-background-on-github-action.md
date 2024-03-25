@@ -4,10 +4,10 @@ longTitle: ""
 customField: ""
 slug: "/devhack-running-background-service-github-actions/"
 description: "Learn how to run a background service on GitHub Actions and use it in combination with other steps."
-date: "2024-03-24T13:04:01.780Z"
-lastmod: "2024-03-24T13:04:01.780Z"
+date: "2024-03-25T09:05:07.256Z"
+lastmod: "2024-03-25T09:05:07.932Z"
 preview: "/social/e1f8e75c-44fc-480c-8df4-00d9b847ef78.png"
-draft: true
+draft: false
 comments: true
 tags:
   - "Automation"

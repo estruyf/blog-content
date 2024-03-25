@@ -18,7 +18,7 @@ type: "post"
 
 GitHub Actions Job Summaries are a great way to provide more information on your job's output. This summary is shown in the Actions tab of your repository.
 
-{{< caption-new "/uploads/2023/08/example-with-details.png" "GitHub Actions reporter for Playwright with details markup" >}}
+{{< caption-new "/uploads/2023/08/example-with-details.png" "GitHub Actions reporter for Playwright with details markup"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAbklEQVR4nGMwNrObrWtsdVXX2Pq0uo7JWUU1nbNK6npgrKyhd1pJXe+akrruNAZ9C6uDRpaO/7X0zf+qaBn+V9U2QsKGf9R1Tf6raBvtZtA0NpunbWJ5U8fQ4ryyhv5FJXU9ZHxeUU3vlqKa3kwArS4odypGMBsAAAAASUVORK5CYII=" "1287" >}}
 
 {{< blockquote type="info" text="You can read more about it on [Supercharging GitHub Actions with Job Summaries](https://github.blog/2022-05-09-supercharging-github-actions-with-job-summaries/)" >}}
 
