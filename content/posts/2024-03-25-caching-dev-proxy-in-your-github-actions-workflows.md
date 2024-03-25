@@ -71,3 +71,61 @@ In the above step, we use the `if` condition to check if the Dev Proxy version w
 Using this approach, you can cache the Dev Proxy in your GitHub Actions workflows and speed up your workflow.
 
 {{< caption-new "/uploads/2024/03/using-cached-devproxy.webp" "Using the cached Dev Proxy"  "data:image/jpeg;base64,UklGRm4AAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSCoAAAABJ0CQbTOASU76OteIiOBLGASYJoVucIcMmr/UDxHR/wnQLZCxvU+B6AJWUDggHgAAADABAJ0BKgoABgABQCYlpAADcAD+/RsYm5efeOAAAA==" "1568" >}}
+
+## The complete GitHub Actions workflow
+
+Here is the complete GitHub Actions workflow that caches the Dev Proxy:
+
+```yaml {title="Complete GitHub Actions workflow"}
+name: macOS Dev Proxy
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  workflow_dispatch:
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+
+      - name: Store Dev Proxy's Version
+        run: |
+          DEVPROXY_VERSION=$(curl -s https://api.github.com/repos/microsoft/dev-proxy/releases/latest | jq .tag_name -r)
+          echo "Dev Proxy's Version: $DEVPROXY_VERSION"
+          echo "DEVPROXY_VERSION=$DEVPROXY_VERSION" >> $GITHUB_ENV
+
+      - name: Cache Dev Proxy
+        id: cache-devproxy
+        uses: actions/cache@v4
+        with:
+          path: ./devproxy
+          if: steps.cache-devproxy.outputs.cache-hit != 'true'
+          key: devproxy-${{ env.DEVPROXY_VERSION }}
+
+      - name: Install Dev Proxy
+        run: bash -c "$(curl -sL https://aka.ms/devproxy/setup.sh)"
+
+      - name: Trigger the first run of Dev Proxy and stop after 5 seconds
+        run: ./devproxy/devproxy & sleep 5
+
+      - name: Install the Dev Proxy certificate
+        timeout-minutes: 1
+        run: |
+          echo "Finding certificate..."
+          security find-certificate -c "Dev Proxy CA" -a -p > dev-proxy-ca.pem
+
+          echo "Trusting certificate..."
+          sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain dev-proxy-ca.pem
+
+      - name: Run Dev Proxy
+        run: ./devproxy/devproxy &
+
+      # Include the additional steps you want to run after the Dev Proxy started
+```
