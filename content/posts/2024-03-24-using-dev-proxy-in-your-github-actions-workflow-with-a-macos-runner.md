@@ -1,12 +1,12 @@
 ---
 title: "Using Dev Proxy in your GitHub Actions workflow on macOS"
-longTitle: "Using Dev Proxy in your GitHub Actions workflow on a macOS runner"
+longTitle: "Using Dev Proxy in your GitHub Actions workflow on a macOS hosted VM"
 customField: ""
 slug: "/dev-proxy-github-actions-workflow-macos/"
-description: "Learn how to use Dev Proxy in a GitHub Actions workflow on macOS for intercepting and inspecting your API calls"
+description: "Learn how to use Dev Proxy in a GitHub Actions workflow on macOS hosted VM for intercepting and inspecting your API calls"
 date: "2024-03-25T09:03:41.224Z"
 lastmod: "2024-03-25T09:03:41.673Z"
-preview: "/social/00355740-5659-4461-973b-07cdd3fe2b8e.png"
+preview: "/social/d057cd08-df11-4833-89a2-65cc3a2c1e6c.png"
 draft: true
 comments: true
 tags:
@@ -69,18 +69,10 @@ My first attempt was to run the `trust-cert.sh` script in my GitHub Actions work
 
 After some research, I found an article about [Trusting Certificates in System Keychain without Prompting](https://twocanoes.com/trusting-certificates-in-system-keychain-without-prompting/). The article explains that you will not be prompted for a password when you add a certificate to the system keychain, and this will be our solution to make it work in our GitHub Actions workflow.
 
-To trust the certificate, we will have to do two things after we installed the Dev Proxy:
-
-1. Run the Dev Proxy for the first time. This step is required to generate the root certificate, which we must trust.
-2. Run a script to trust the certificate.
-
-The steps look like this:
+The script to trust the certificate in the system keychain looks as follows:
 
 ```yaml {title="Trust certificate - GitHub Actions steps"}
-- name: Trigger the first run of Dev Proxy and stop after 5 seconds
-  run: ./devproxy/devproxy & sleep 5
-
-- name: Install the Dev Proxy certificate
+- name: Install the Dev Proxy's certificate
   timeout-minutes: 1
   run: |
     echo "Finding certificate..."
@@ -88,15 +80,24 @@ The steps look like this:
 
     echo "Trusting certificate..."
     sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain dev-proxy-ca.pem
+    echo "Certificate trusted."
+
+    # Set the system proxy settings (optional)
+    echo "http_proxy=http://127.0.0.1:8000" >> $GITHUB_ENV
+    echo "https_proxy=http://127.0.0.1:8000" >> $GITHUB_ENV
+
+    # Required to test CURL with the Dev Proxy (optional)
+    echo "SSL_CERT_FILE=$GITHUB_WORKSPACE/dev-proxy-ca.pem" >> $GITHUB_ENV
 ```
 
-In the first step, we start the Dev Proxy and stop it after 5 seconds. We need to stop the Dev Proxy, as we only needed the first run experience to generate the root certificate.
+This script is similar to the [trust-cert.sh](https://github.com/microsoft/dev-proxy/blob/main/dev-proxy/trust-cert.sh) script, but instead of adding it to the login keychain, we add it to the system keychain.
 
-{{< caption-new "/uploads/2024/03/devproxy-first-experience.webp" "Run Dev Proxy for the first time and stop it after 5 seconds"  "data:image/jpeg;base64,UklGRnoAAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSCoAAAABJ6CQbQQ4dRRn8/JcRATGCwYBpokhg8Zwg+cv9UNE9H8CdAN4284TwLpWUDggKgAAAFABAJ0BKgoABgABQCYlpAAEAAAA/vzrDsqefh3WHV/YgrmPhAKJeAAAAA==" "900" >}}
+Add the end of the script there are three exports which are all optional. 
 
-In the second step, we find and trust the certificate using the `security add-trusted-cert` command. This script is similar to the [trust-cert.sh](https://github.com/microsoft/dev-proxy/blob/main/dev-proxy/trust-cert.sh) script, but instead of adding it to the login keychain, we add it to the system keychain.
+- The `http_proxy` and `https_proxy` environment variables are used to set the system proxy settings.
+- The `SSL_CERT_FILE` environment variable is required on macOS to make the `curl` commands work with the Dev Proxy.
 
-{{< caption-new "/uploads/2024/03/devproxy-trust-certificate.webp" "Trust the self-signed certificate on the macOS runner"  "data:image/jpeg;base64,UklGRmYAAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSB0AAAABFyAQSPJnHGWQiAgHwmyjfQe484c5iIj+J7dccgBWUDggIgAAADABAJ0BKgoABgABQCYlpAADcAD+/MXLjmNbynES3sBMAAA=" "900" >}}
+{{< caption-new "/uploads/2024/03/devproxy-trust-certificate.webp" "Trust the self-signed certificate on the macOS runner"  "data:image/jpeg;base64,UklGRlYAAABXRUJQVlA4WAoAAAAQAAAACQAAAQAAQUxQSA0AAAABD3Bx8oiIsAIR/Q8FAFZQOCAiAAAAsAEAnQEqCgACAAFAJiWcAnQBDvbEyAD+/uSR3Uvp2shmAA==" "900" >}}
 
 ## The complete GitHub Actions workflow
 
@@ -124,10 +125,10 @@ jobs:
       - name: Install Dev Proxy
         run: bash -c "$(curl -sL https://aka.ms/devproxy/setup.sh)"
 
-      - name: Trigger the first run of Dev Proxy and stop after 5 seconds
-        run: ./devproxy/devproxy & sleep 5
+      - name: Run Dev Proxy
+        run: ./devproxy/devproxy &
 
-      - name: Install the Dev Proxy certificate
+      - name: Install the Dev Proxy's certificate
         timeout-minutes: 1
         run: |
           echo "Finding certificate..."
@@ -135,13 +136,23 @@ jobs:
 
           echo "Trusting certificate..."
           sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain dev-proxy-ca.pem
+          echo "Certificate trusted."
 
-      - name: Run Dev Proxy
-        run: ./devproxy/devproxy &
+          # Set the system proxy settings (optional)
+          echo "http_proxy=http://127.0.0.1:8000" >> $GITHUB_ENV
+          echo "https_proxy=http://127.0.0.1:8000" >> $GITHUB_ENV
+
+          # Required to test CURL with the Dev Proxy (optional)
+          echo "SSL_CERT_FILE=$GITHUB_WORKSPACE/dev-proxy-ca.pem" >> $GITHUB_ENV
 
       # Include the additional steps you want to run after the Dev Proxy started
+      - name: Test Dev Proxy
+        run: |
+          curl -ix http://127.0.0.1:8000 https://jsonplaceholder.typicode.com/posts
+          # When you used the system proxy settings, you don't need to specify the proxy in the curl command
+          curl -i https://jsonplaceholder.typicode.com/posts
 ```
 
-{{< caption-new "/uploads/2024/03/devproxy-with-trusted-root-certificate.webp" "Dev Proxy ready to be used on your GitHub Actions runner"  "data:image/jpeg;base64,UklGRnYAAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSCoAAAABJ0CYbZwbxWj2PZeLiGA+GASYJoYMGsMNnr/UDxHR/wnQDeBtO08A6wJWUDggJgAAAFABAJ0BKgoABgABQCYlpAAEAAAA/vzz1HCjPH2avPNsyROfDyAA" "900" >}}
+{{< caption-new "/uploads/2024/03/devproxy-with-trusted-root-certificate.webp" "Test Dev Proxy on GitHub Actions"  "data:image/jpeg;base64,UklGRnQAAABXRUJQVlA4WAoAAAAQAAAACQAABgAAQUxQSCQAAAABH6CQbQTIn3L3eNxpREScFWoCIGEY3vTPAD3NENH/WEPcvwZWUDggKgAAAPABAJ0BKgoABwABQCYlnALsAQN9qaGwgAD+/tQofIXyVWeusWS/egAAAA==" "900" >}}
 
 With this setup, you can use the Dev Proxy in your GitHub Actions workflow on a macOS runner. This allows you to use the Dev Proxy in combination with Playwright or any other tool for testing your solutions.
