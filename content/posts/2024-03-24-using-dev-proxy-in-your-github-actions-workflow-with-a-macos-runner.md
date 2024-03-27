@@ -25,6 +25,8 @@ The Dev Proxy is a .NET Core application that can run on any platform that suppo
 
 In this blog post, I will show you how to use the Dev Proxy in your GitHub Actions workflow on a macOS virtual machine.
 
+{{< blockquote type="important" text="Be aware of that jobs running on Windows and macOS runners that GitHub hosts consume minutes at 2 and 10 times the rate that jobs on Linux runners consume. You can read more about it in the [GitHub Actions - Minute multipliers for hosted runners](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions#minute-multipliers) documentation section." >}}
+
 ## Installing the Dev Proxy
 
 Let us start with installing the Dev Proxy on the macOS virtual machine. We can use the bash script provided in the Dev Proxy documentation for this. To include this into your GitHub Actions workflow, you can use the following step:
