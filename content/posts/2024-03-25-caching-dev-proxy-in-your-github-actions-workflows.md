@@ -106,14 +106,14 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ./devproxy
-          if: steps.cache-devproxy.outputs.cache-hit != 'true'
           key: devproxy-${{ env.DEVPROXY_VERSION }}
 
       - name: Install Dev Proxy
+        if: steps.cache-devproxy.outputs.cache-hit != 'true'
         run: bash -c "$(curl -sL https://aka.ms/devproxy/setup.sh)"
 
-      - name: Trigger the first run of Dev Proxy and stop after 5 seconds
-        run: ./devproxy/devproxy & sleep 5
+      - name: Run Dev Proxy
+        run: ./devproxy/devproxy &
 
       - name: Install the Dev Proxy certificate
         timeout-minutes: 1
@@ -123,9 +123,6 @@ jobs:
 
           echo "Trusting certificate..."
           sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain dev-proxy-ca.pem
-
-      - name: Run Dev Proxy
-        run: ./devproxy/devproxy &
 
       # Include the additional steps you want to run after the Dev Proxy started
 ```
