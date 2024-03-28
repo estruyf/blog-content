@@ -278,7 +278,7 @@ class CardFooter extends LitElement {
             ` : ''
           }
   
-          <img src="https://api.visitorbadge.io/api/combined?path=https%3a%2f%2fwww.eliostruyf.com${data.slug}&readonly=true&labelColor=%230e131f&countColor=%23ffe45e&label=Views&style=flat-square" />
+          <img src="https://api.visitorbadge.io/api/combined?path=https%3a%2f%2fwww.eliostruyf.com${data.slug}&readonly=true&labelColor=%230e131f&countColor=%23ffe45e&label=Page%20Views&style=flat-square" />
   
           ${
             (data?.comments?.count && data.comments.count >= 0) ? html `
@@ -317,13 +317,87 @@ registerCardFooter(async (filePath, data) => {
 //   `;
 // });
 
+class GitHubActions extends LitElement {
+  static styles = css ``;
+
+  static properties = {
+    name: {
+      type: String
+    },
+    status: {
+      type: Number
+    },
+    url: {
+      type: String
+    }
+  };
+
+  getDataTask = new Task(
+    this,
+    {
+      task: async () => {
+        const data = await this.getWorkflowStatus();
+        
+        return {
+          name: data?.name, 
+          status: data?.status, 
+          url: data?.url
+        }
+      },
+      args: () => []
+    }
+  )
+
+  getWorkflowStatus = async () => {
+    const response = await fetch("https://elio.dev/api/blog-workflow");
+    if (!response.ok) return;
+
+    const data = await response.json();
+    if (data && data.name && data.status && data.url) {
+      return {
+        name: data.name,
+        status: data.status,
+        url: data.url
+      }
+    }
+
+    return;
+  };
+
+  constructor() {
+    super();
+
+    this.name = undefined;
+    this.status = undefined;
+    this.url = undefined;
+  }
+
+  render() {
+    return this.getDataTask.render({
+      pending: () => html ``,
+      complete: (data) => html `
+        <a href="${data.url}">
+          <img src="https://img.shields.io/badge/${data.status}-ffe45e?style=flat-square&label=${data.name}&labelColor=0e131f" />
+        </a>
+      `,
+      error: (err) => html ``
+    });
+  }
+}
+customElements.define('github-actions', GitHubActions);
 
 registerPanelView(async (data) => {  
   return {
-    title: "Page stats",
+    title: "GitHub Actions & page stats",
     content: `
-      <div>
-        <card-footer slug="${data.slug}"></card-footer>
+      <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
+        <github-actions></github-actions>
+
+        <img src="https://api.visitorbadge.io/api/combined?user=estruyf&repo=website&readonly=true&labelColor=%230e131f&countColor=%23ffe45e&label=Site%20Views&style=flat-square" />
+
+        ${
+          data?.slug ? `<card-footer slug="${data.slug}"></card-footer>` : ''
+        }
       </div>
     `
   }

@@ -4,10 +4,10 @@ longTitle: ""
 customField: ""
 slug: "/caching-dev-proxy-github-actions-workflows/"
 description: "Learn how to cache the Dev Proxy in your GitHub Actions workflows. This allows you to reuse the Dev Proxy installation and speed up your workflow."
-date: "2024-03-25T09:33:30.815Z"
-lastmod: "2024-03-25T09:33:30.815Z"
+date: "2024-03-28T07:16:59.209Z"
+lastmod: "2024-03-28T07:16:59.700Z"
 preview: "/social/1b9ac592-1bcd-4cc1-adda-134a68e4b434.png"
-draft: true
+draft: false
 comments: true
 tags:
   - "caching"
@@ -17,13 +17,13 @@ tags:
 type: "post"
 ---
 
-In the previous post, I explained using the [Microsoft Dev Proxy](https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/overview) in a GitHub Actions workflow on a macOS runner. One thing I noticed is that the Dev Proxy installation fails in some runs.
+In the previous posts, I explained using the [Microsoft Dev Proxy](https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/overview) in a GitHub Actions workflow on a macOS and Ubuntu virtual machine. One thing I noticed is that the Dev Proxy installation fails in some runs.
 
 {{< caption-new "/uploads/2024/03/failed-installing-devproxy.webp" "Failed to install the Dev Proxy"  "data:image/jpeg;base64,UklGRmwAAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSCQAAAABHyAUQPylgunHkEZExBIUtW0DVX11F7yq/MkMQ0T/Iz5CT3xWUDggIgAAALABAJ0BKgoABgABQCYlpAAC6NtvXKAA/v7o1BGKauyXgAA=" "900" >}}
 
 A way to solve this issue is by caching the Dev Proxy, and another benefit is that it speeds up your workflow.
 
-This blog post shows how to cache the Dev Proxy in your GitHub Actions workflows. By caching it, it will use the cached version if it is available, and if not, it will download and install it.
+This blog post shows how to cache the Dev Proxy in your GitHub Actions workflows. By caching it, it uses the cached version if it is available, and if not, it will download and install it.
 
 ## Retrieving the latest Dev Proxy version number
 
@@ -77,7 +77,7 @@ Using this approach, you can cache the Dev Proxy in your GitHub Actions workflow
 Here is the complete GitHub Actions workflow that caches the Dev Proxy:
 
 ```yaml {title="Complete GitHub Actions workflow"}
-name: macOS Dev Proxy
+name: ubuntu Dev Proxy
 
 on:
   push:
@@ -89,7 +89,7 @@ on:
 jobs:
   test:
     timeout-minutes: 60
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
@@ -115,14 +115,7 @@ jobs:
       - name: Run Dev Proxy
         run: ./devproxy/devproxy &
 
-      - name: Install the Dev Proxy certificate
-        timeout-minutes: 1
-        run: |
-          echo "Finding certificate..."
-          security find-certificate -c "Dev Proxy CA" -a -p > dev-proxy-ca.pem
-
-          echo "Trusting certificate..."
-          sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain dev-proxy-ca.pem
-
-      # Include the additional steps you want to run after the Dev Proxy started
+      # Include all the other steps to start using the Dev Proxy
 ```
+
+In the above workflow, we first store the Dev Proxy's version number. We then cache the Dev Proxy using the `actions/cache` action. If the Dev Proxy version was not cached, we install it using the `curl` command. Finally, we run the Dev Proxy using the `./devproxy/devproxy` command.
