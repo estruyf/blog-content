@@ -17,7 +17,7 @@ tags:
 type: "post"
 ---
 
-In the previous posts, I explained using the [Microsoft Dev Proxy](https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/overview) in a GitHub Actions workflow on a macOS and Ubuntu virtual machine. One thing I noticed is that the Dev Proxy installation fails in some runs.
+In the previous posts, I explained using the [Microsoft's Dev Proxy](https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/overview) in a GitHub Actions workflow on a macOS and Ubuntu virtual machine. One thing I noticed is that the Dev Proxy installation fails in some runs.
 
 {{< caption-new "/uploads/2024/03/failed-installing-devproxy.webp" "Failed to install the Dev Proxy"  "data:image/jpeg;base64,UklGRmwAAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSCQAAAABHyAUQPylgunHkEZExBIUtW0DVX11F7yq/MkMQ0T/Iz5CT3xWUDggIgAAALABAJ0BKgoABgABQCYlpAAC6NtvXKAA/v7o1BGKauyXgAA=" "900" >}}
 

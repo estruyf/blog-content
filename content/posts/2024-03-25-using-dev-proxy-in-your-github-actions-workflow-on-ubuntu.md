@@ -17,7 +17,7 @@ tags:
 type: "post"
 ---
 
-In my previous blog post, I explained how you could use the [Microsoft Dev Proxy](https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/overview) in a GitHub Actions workflow on a macOS runner. In this blog post, I will show you how to use the Dev Proxy in your GitHub Actions workflow on an Ubuntu runner.
+In my previous blog post, I explained how you could use the [Microsoft's Dev Proxy](https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/overview) in a GitHub Actions workflow on a macOS runner. In this blog post, I will show you how to use the Dev Proxy in your GitHub Actions workflow on an Ubuntu runner.
 
 {{< blockquote type="info" text="You can read how to configure it on a macOS runner in the [Using Dev Proxy in your GitHub Actions workflow on a macOS runner](https://www.eliostruyf.com/dev-proxy-github-actions-workflow-macos/) article." >}}
 

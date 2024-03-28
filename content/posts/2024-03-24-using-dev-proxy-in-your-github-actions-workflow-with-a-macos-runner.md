@@ -17,7 +17,7 @@ tags:
 type: "post"
 ---
 
-Lately, I have been working with the [Microsoft Dev Proxy](https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/overview), a tool for API simulation, mocking, and testing. One of the things I wanted to try was to use the Dev Proxy in a GitHub Actions workflow so that I could use it in combination with Playwright to test my solutions with mocked APIs.
+Lately, I have been working with the [Microsoft's Dev Proxy](https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/overview), a tool for API simulation, mocking, and testing. One of the things I wanted to try was to use the Dev Proxy in a GitHub Actions workflow so that I could use it in combination with Playwright to test my solutions with mocked APIs.
 
 The Dev Proxy is a .NET Core application that can run on any platform that supports .NET Core, so it works on Windows, Linux, and macOS. I chose to use a macOS virtual machine/runner because, at the time of writing, the Dev Proxy cannot automatically trust the root certificate.
 
