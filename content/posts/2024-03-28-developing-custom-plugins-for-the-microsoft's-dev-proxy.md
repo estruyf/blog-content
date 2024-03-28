@@ -72,6 +72,7 @@ cd DevProxyCustomPlugin
 
 ```bash {title="Add the required packages"}
 dotnet add package Microsoft.Extensions.Configuration
+dotnet add package Microsoft.Extensions.Configuration.Binder
 dotnet add package Titanium.Web.Proxy
 ```
 
