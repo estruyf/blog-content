@@ -34,7 +34,7 @@ Before you can start developing custom plugins for the Dev Proxy, you need to ha
 
 {{< blockquote type="important" text="The Dev Proxy Abstractions DLL is available on the [Microsoft's Dev Proxy GitHub releases](https://github.com/microsoft/dev-proxy/releases) page." >}}
 
-{{< caption-new "/uploads/2024/03/devproxy-abstractions.webp" "Dev Proxy Abstractions DLL" >}}
+{{< caption-new "/uploads/2024/03/devproxy-abstractions.webp" "Dev Proxy Abstractions DLL"  "data:image/jpeg;base64,UklGRnQAAABXRUJQVlA4WAoAAAAQAAAACQAAAwAAQUxQSCEAAAABH0AgadM/6PaXOK8REXFWqAlAgLFu/TNQOKL/8ZUIka8AVlA4ICwAAABwAQCdASoKAAQAAUAmJZwCdAFAAAD+/FN68yIkZuMmDyv3+4IuZgJk0eAAAA==" "1896" >}}
 
 ## Setting up the project
 
@@ -109,7 +109,7 @@ public class RedirectCalls : BaseProxyPlugin
 
 With this in place, you can start developing your custom plugin for the Dev Proxy.
 
-{{< caption-new "/uploads/2024/03/devproxy-custom-plugin.webp" "Start developing your custom plugin" >}}
+{{< caption-new "/uploads/2024/03/devproxy-custom-plugin.webp" "Start developing your custom plugin"  "data:image/jpeg;base64,UklGRn4AAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSCMAAAABH0AgadM/5vbXOK8REXFWqAmAhGF40z8D9DRDRP9jDXHPGgBWUDggNAAAABACAJ0BKgoABgABQCYllAJ0AQ8CbxdjOAAA/v54dZUFPTnTrXaLpCju2Z8uQZbbQ0OIAAA=" "1626" >}}
 
 ## Adding a before-request event handler
 
@@ -192,7 +192,7 @@ devproxy
 
 Now, you can test the plugin by requesting the URL specified in the `urlsToWatch` configuration. In my example, when I call the `https://frontmatter.codes/api/stars` API, the request gets redirected to `http://localhost:5000/api/stars`, and I can see the response from my local API.
 
-{{< caption-new "/uploads/2024/03/devproxy-redirect.webp" "Test the plugin by making a request" >}}
+{{< caption-new "/uploads/2024/03/devproxy-redirect.webp" "Test the plugin by making a request"  "data:image/jpeg;base64,UklGRmQAAABXRUJQVlA4WAoAAAAQAAAACQAAAQAAQUxQSBMAAAABD0CQbeOvuO3niojgWIGI/ocCAFZQOCAqAAAA0AEAnQEqCgACAAFAJiWUAnQBDv4DyAAA/v1Xo4i0ByPhQySESbaqZwAA" "1302" >}}
 
 ## Adding some plugin configuration
 
@@ -287,7 +287,7 @@ public class RedirectCalls : BaseProxyPlugin
 
 With this configuration in place, you can test the plugin with the new configuration options.
 
-{{< caption-new "/uploads/2024/03/devproxy-redirect-configuration.webp" "Test the plugin with the new configuration options" >}}
+{{< caption-new "/uploads/2024/03/devproxy-redirect-configuration.webp" "Test the plugin with the new configuration options"  "data:image/jpeg;base64,UklGRm4AAABXRUJQVlA4WAoAAAAQAAAACQAABAAAQUxQSCEAAAABFyCQTfxJvyjSiIhYUNC2DdP9DWDLH8xARPQ/xDPkFw8AVlA4ICYAAACwAQCdASoKAAUAAUAmJZwAAxZiFubAAP7+KWvPnWVn4MttPgAAAA==" "2040" >}}
 
 The example above is available on my [GitHub devproxy-redirect-plugin repository](https://github.com/estruyf/devproxy-redirect-plugin).
 
