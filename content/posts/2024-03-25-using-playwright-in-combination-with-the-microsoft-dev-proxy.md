@@ -4,10 +4,10 @@ longTitle: "Using Playwright in combination with the Microsoft Dev Proxy on GitH
 customField: ""
 slug: "/playwright-microsoft-dev-proxy-github-actions/"
 description: "Learn how to use Playwright with Microsoft Dev Proxy on GitHub Actions to easily test your solutions with the same mocked API responses as during development."
-date: "2024-03-25T19:15:43.679Z"
-lastmod: "2024-03-25T19:15:43.679Z"
-preview: "/social/eec23b5d-da00-4123-8b12-d2c80dc49093.png"
-draft: true
+date: "2024-03-29T09:50:00.420Z"
+lastmod: "2024-03-29T09:50:01.145Z"
+preview: "/social/55edde1b-4905-404e-b397-654fa5f81c45.png"
+draft: false
 comments: true
 tags:
   - "API"
@@ -73,6 +73,8 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
+        with:
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -117,9 +119,9 @@ jobs:
         if: steps.cache-devproxy.outputs.cache-hit != 'true'
         run: bash -c "$(curl -sL https://aka.ms/devproxy/setup.sh)"
 
-      ###########################
-      # Start running the tests #
-      ###########################
+      #######################
+      # Configure Dev Proxy #
+      #######################
       - name: Run Dev Proxy
         run: ./devproxy/devproxy &
 
@@ -133,23 +135,26 @@ jobs:
           sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain dev-proxy-ca.pem
           echo "Certificate trusted."
 
+      ##########################
+      # Start Playwright tests #
+      ##########################
       - name: Run Playwright tests
         run: npx playwright test
 ```
 
-SCREENSHOT
+{{< caption-new "/uploads/2024/03/playwright-with-devproxy-macos.webp" "Playwright outcome with Dev Proxy on a macOS runner"  "data:image/jpeg;base64,UklGRmgAAABXRUJQVlA4WAoAAAAQAAAACQAAAgAAQUxQSB4AAAABHyCQTfxNWxLXiIiQoSYAAca69c9A4Yj+x1ciXwFWUDggJAAAAHABAJ0BKgoAAwABQCYlnAJ0AUAAAP79BJovp+v8O9LqoVgAAA==" "2084" >}}
 
 ### Using an Ubuntu runner
 
 Things are a bit more complicated when you want to use the Dev Proxy with Playwright on an Ubuntu virtual machine/runner. The reason is the way browsers manage certificates on Linux. On macOS, all browsers use the certificates wich are trusted in the Keychain, but on Linux, each browser has its own certificate store which complicates things.
 
-Chromium uses the [NSS Shared DB](https://chromium.googlesource.com/chromium/src/+/master/docs/linux/cert_management.md) to manage certificates. 
+Chromium uses the [NSS Shared DB](https://chromium.googlesource.com/chromium/src/+/master/docs/linux/cert_management.md) to manage certificates.
 
-Firefox does not have a central location where it looks for certificates. It will use the current profile or you can assign a [policy template](https://mozilla.github.io/policy-templates/) to manage certificates. 
+Firefox does not have a central location where it looks for certificates. It will use the current profile or you can assign a [policy template](https://mozilla.github.io/policy-templates/) to manage certificates.
 
 When using Firefox with Playwright, it creates an in-memory profile, so you cannot add the certificate to the profile before starting the browser. The policy approach is not yet supported by Playwright [Playwright issue #28967](https://github.com/microsoft/playwright/issues/28967). So, in case of using Firefox, you will have to ignore the HTTPS errors.
 
-#### Ignoring HTTPS errors
+#### Ignoring HTTPS errors (the simple approach)
 
 The simple approach is to ignore HTTPS errors by setting the `ignoreHTTPSErrors` to `true` in your Playwright configuration. You can do this for all browsers or for specific browsers. Here is an example of how you can do this:
 
@@ -268,9 +273,9 @@ jobs:
         if: steps.cache-devproxy.outputs.cache-hit != 'true'
         run: bash -c "$(curl -sL https://aka.ms/devproxy/setup.sh)"
 
-      ###########################
-      # Start running the tests #
-      ###########################
+      #######################
+      # Configure Dev Proxy #
+      #######################
       - name: Run Dev Proxy
         run: ./devproxy/devproxy &
 
@@ -289,11 +294,14 @@ jobs:
           certutil -d sql:$HOME/.pki/nssdb -A -t "CT,," -n dev-proxy-ca.crt -i dev-proxy-ca.crt
           echo "Certificate trusted."
 
+      ##########################
+      # Start Playwright tests #
+      ##########################
       - name: Run Playwright tests
         run: npx playwright test
 ```
 
-SCREENSHOT
+{{< caption-new "/uploads/2024/03/playwright-with-devproxy-ubuntu.webp" "Playwright outcome with Dev Proxy on an Ubuntu runner"  "data:image/jpeg;base64,UklGRmgAAABXRUJQVlA4WAoAAAAQAAAACQAAAgAAQUxQSB4AAAABHyCQTfxNWxLXiIiQoSYAAca69c9A4Yj+x1ciXwFWUDggJAAAAHABAJ0BKgoAAwABQCYlnAJ0AUAAAP79BJovp+v8O9LqoVgAAA==" "2084" >}}
 
 ## Conclusion
 
