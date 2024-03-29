@@ -188,7 +188,7 @@ If you are only using Chromium in your tests, you can add the certificate to the
 
 To add the certificate to the NSS Shared DB, you can use the following steps:
 
-```yaml {title="Add certificate to NSS Shared DB - GitHub Actions steps",hl_lines="12"}
+```yaml {title="Add certificate to NSS Shared DB - GitHub Actions steps",hl_lines="13"}
 - name: Install the Dev Proxy certificate for Chromium
   timeout-minutes: 1
   run: |
