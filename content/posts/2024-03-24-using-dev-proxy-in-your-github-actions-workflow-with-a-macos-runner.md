@@ -158,3 +158,5 @@ jobs:
 {{< caption-new "/uploads/2024/03/devproxy-with-trusted-root-certificate.webp" "Test Dev Proxy on GitHub Actions"  "data:image/jpeg;base64,UklGRnQAAABXRUJQVlA4WAoAAAAQAAAACQAABgAAQUxQSCQAAAABH6CQbQTIn3L3eNxpREScFWoCIGEY3vTPAD3NENH/WEPcvwZWUDggKgAAAPABAJ0BKgoABwABQCYlnALsAQN9qaGwgAD+/tQofIXyVWeusWS/egAAAA==" "900" >}}
 
 With this setup, you can use the Dev Proxy in your GitHub Actions workflow on a macOS virtual machine. This allows you to use the Dev Proxy in combination with Playwright or any other tool for testing your solutions.
+
+{{< blockquote type="info" text="Templates are available on the following [GitHub repository](https://github.com/estruyf/devproxy-github-actions-templates)." >}}

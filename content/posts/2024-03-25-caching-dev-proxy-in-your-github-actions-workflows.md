@@ -93,8 +93,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-
       - name: Store Dev Proxy's Version
         run: |
           DEVPROXY_VERSION=$(curl -s https://api.github.com/repos/microsoft/dev-proxy/releases/latest | jq .tag_name -r)
@@ -119,3 +117,5 @@ jobs:
 ```
 
 In the above workflow, we first store the Dev Proxy's version number. We then cache the Dev Proxy using the `actions/cache` action. If the Dev Proxy version was not cached, we install it using the `curl` command. Finally, we run the Dev Proxy using the `./devproxy/devproxy` command.
+
+{{< blockquote type="info" text="Templates are available on the following [GitHub repository](https://github.com/estruyf/devproxy-github-actions-templates)." >}}

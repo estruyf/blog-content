@@ -306,3 +306,5 @@ jobs:
 ## Conclusion
 
 Using Playwright in combination with the Microsoft Dev Proxy on GitHub Actions is possible, but as you can see it requires some additional steps when using an Ubuntu runner. The macOS runner is more straightforward to configure. Hopefully these configuration differences will change in the future, but for now I hope you can get started with the provided examples.
+
+{{< blockquote type="info" text="Templates are available on the following [GitHub repository](https://github.com/estruyf/devproxy-github-actions-templates)." >}}
