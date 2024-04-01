@@ -93,7 +93,7 @@ const linkUri = {
 
 return (
   <>
-    <a href={`command:vscode.open?${encodeURIComponent(JSON.stringify(linkUri))}`}>Open link</a>
+    <a href=${`command:vscode.open?${encodeURIComponent(JSON.stringify(linkUri))}`}>Open link</a>
   </>
 )
 {{< / highlight >}}
@@ -114,6 +114,6 @@ const fileUri = {
 };
 
 return (
-  <a href={`command:vscode.open?${encodeURIComponent(JSON.stringify(fileUri))}`}>Open file</a>
+  <a href=${`command:vscode.open?${encodeURIComponent(JSON.stringify(fileUri))}`}>Open file</a>
 )
 {{< / highlight >}}
