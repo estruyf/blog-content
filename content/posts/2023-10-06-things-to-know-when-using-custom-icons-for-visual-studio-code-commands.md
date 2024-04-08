@@ -35,8 +35,6 @@ This change in version `1.83.0` made me write this article, as it affected one o
 
 When you want to use an image file as an icon, you can specify the path to the image file in the `icon` property of the command. The path is relative to the extension root.
 
-Before version `1.83.0`:
-
 ```json {linenos=table,noclasses=false}
 {
   "contributes": {
@@ -55,45 +53,27 @@ Before version `1.83.0`:
 }
 ```
 
-Since version `1.83.0`, you no longer have to specify the `light` and `dark` properties. You can specify the relative path to the SVG file:
-
-```json {linenos=table,noclasses=false}
-{
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.sayHello",
-        "title": "Hello World",
-        "category": "Hello",
-        "icon": "path/to/icon.svg"
-      }
-    ]
-  }
-}
-```
-
 ## Image specifications
 
-Since the change in version 1.83.0, you need to make sure that your image file meets the following requirements:
-
 - The size of the image should be `16x16` pixels. When using an SVG, make sure that the `width` and `height` attributes of the image are set to `16`;
-- Colors in the image will be ignored, so keep it single-colored;
 - SVG is recommended, but you can, for instance, use a PNG file as well.
 
-## What changed in version 1.83.0?
+## ~~What changed in version 1.83.0?~~
 
-To explain this, we need to look at how these icons were rendered in the UI. In the versions older than `1.83.0` of Visual Studio Code, the icons were added as the background image of the element in the UI.
+~~To explain this, we need to look at how these icons were rendered in the UI. In the versions older than `1.83.0` of Visual Studio Code, the icons were added as the background image of the element in the UI.~~
 
 {{< caption-new "/uploads/2023/10/svg-background-img.png" "SVG as background image"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAADTSURBVBXBO04DMRRA0evPzGA+AzQUIARiA3RUrIHdsEC6KHuggypCIpkktp8/D3GOeXp4fL88P3sBxWlDFI5DACyaEq024mG39qMzryfeviUcOSeMH7i9uuYZw8eyB1V6zaMVH5gGizFQuxKl8N0rB29BG/tlSxbBd4VtdUw906eJ0VhCh02poEoIgVIEX11A5zuWkkEV3zPb0RJbB2OJcY+I4CXckC/uUWPpqpyWDX3zSVPFG8M8z9Ra8Onna/XbEg1DbZ2jRpzs0FIQEf6leFz9AbV9fKrCpmRhAAAAAElFTkSuQmCC" "637" >}}
 
-In the newer versions of Visual Studio Code, the icons are added as a background mask to the element.
+~~In the newer versions of Visual Studio Code, the icons are added as a background mask to the element.~~
 
 {{< caption-new "/uploads/2023/10/svg-background-mask.png" "SVG background mask"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACmSURBVBXBTy4EURDA4d+bqu7W8SeEldhJbCTs3MEVncYJ7PoOFiYmM2hV71U98X3l4e72ZZ6m+yjCV+vUTMKc3hMRRWRDq3VRk/nxdNCnTRGyN56vb3j9+CQi6Rm05kSa6vnJzNXlBSUrdffD22HPUJLaVuido2kkm6LHk3I2KwXFtwf2bsS6EhH8MzPcDH3f7pbv9bd4S7w23CthTkQgKozDCKUvf+5bXkywg5M0AAAAAElFTkSuQmCC" "1000" >}}
 
-As images are now used as a mask, the need for a light and dark version of the icon is not required anymore.
+~~As images are now used as a mask, the need for a light and dark version of the icon is not required anymore.~~
 
-The current Visual Studio Code theme determines the color of the icon. Behind the scenes, the `--vscode-icon-foreground` CSS variable is used for it.
+~~The current Visual Studio Code theme determines the color of the icon. Behind the scenes, the `--vscode-icon-foreground` CSS variable is used for it.~~
 
-This change gives the VSCode team and theme authors more control of the icon. For instance, before, you could use a colored icon, but right now, as it is used as a mask, this always renders in the same color.
+~~This change gives the VSCode team and theme authors more control of the icon. For instance, before, you could use a colored icon, but right now, as it is used as a mask, this always renders in the same color.~~
 
-{{< blockquote type="important" text="When changing to this new way of adding SVG command icons, make sure to set the VSCode `engines` property to `1.83.0`, otherwise it might break your extension on older VSCode installations." >}}
+## Update
+
+In version `1.83.1` they reverted the masking logic to how icons where originally loaded. More information on: [Theme colour applied to SVG icons](https://github.com/microsoft/vscode/issues/194710).
