@@ -12,10 +12,10 @@
       ],
       "isMediaSnippet": true
     },
-    "Highlight (single)": {
+    "Codeblock": {
       "description": "Creates a code highlighting box",
       "body": [
-        "```[[type]] {title=\"[[&title]]\"}",
+        "```[[type]] {[[#title]]title=\"[[&title]]\"[[/title]][[#title]][[#highlight]],[[/highlight]][[/title]][[#highlight]]hl_lines=\"[[&highlight]]\"[[/highlight]]}",
         "[[&selection]]",
         "```"
       ],
@@ -37,6 +37,20 @@
           "title": "Selection",
           "type": "string",
           "default": "FM_SELECTED_TEXT"
+        },
+        {
+          "name": "title",
+          "title": "Title",
+          "type": "string",
+          "single": true,
+          "default": ""
+        },
+        {
+          "name": "highlight",
+          "title": "Highlight lines",
+          "type": "string",
+          "single": true,
+          "default": ""
         }
       ]
     },
