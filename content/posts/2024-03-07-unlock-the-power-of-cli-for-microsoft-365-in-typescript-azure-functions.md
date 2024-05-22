@@ -83,7 +83,7 @@ Please give it a couple of seconds to generate the certificate. Once the certifi
 
 Next, we need to create an app registration for the Azure portal. The App registration will be used to authenticate with the CLI for Microsoft 365 to your tenant.
 
-{{< blockquote type="important" text="Make sure you create the new app registration on the tenant linked to your Micorosft 365 environment" >}}
+{{< blockquote type="important" text="Make sure you create the new app registration on the tenant linked to your Microsoft 365 environment" >}}
 
 On the CLI for Microsoft 365 documentation, you can follow the [Use your own Microsoft 365 Entra ID identity](https://pnp.github.io/cli-microsoft365/user-guide/using-own-identity) steps to create a new App registration.
 
