@@ -771,8 +771,6 @@ Farewell XSL, Welcome Display Templates
 
 [Link to the event][110] &#8211; [Link to the slides][111] &#8211; <a title="Recorded video" href="https://www.youtube.com/watch?v=46bEPsPH-Z8" target="_blank" rel="noopener noreferrer">Link to the Youtube video</a>
 
-<br />
-
 ### 2013
 
 #### 27/04/2013 &#8211; SharePoint Saturday Belgium
@@ -780,8 +778,6 @@ Farewell XSL, Welcome Display Templates
 Farewell XSL, Welcome Display Templates
 
 [Link to the slides][112]
-
-<br />
 
 ### 2012
 
