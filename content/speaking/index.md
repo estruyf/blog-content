@@ -23,6 +23,12 @@ If you are interested in having Elio speak at your event, you can check out the 
 
 <!-- No upcoming events planned yet.  -->
 
+### 29 May 2024 / devs.gent
+
+From Code to Cloud: Automated Deployments with GitHub Actions
+
+[Link to the event](https://www.meetup.com/devs-gent/events/298803280/) - [Link to the community](https://devs.gent/)
+
 ### 1 June 2024 / CollabDays Netherlands 2024
 
 Automated Testing for Microsoft 365 with Playwright
