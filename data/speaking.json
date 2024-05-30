@@ -1,0 +1,95 @@
+[{
+    "title": "Test Automation with GitHub Actions and Playwright for Microsoft 365 solutions",
+    "description": "GitHub Actions is a powerful tool for creating and running CI/CD pipelines. Playwright is a modern tool for end-to-end testing. In this session, you will learn how to combine these two tools to automate your testing process and improve the quality of your Microsoft 365 solutions. You will see how to set up GitHub Actions for running Playwright tests, handle test results and notifications, and follow best practices for test automation. By the end of this session, you will have the skills and confidence to implement test automation in your projects with GitHub Actions and Playwright.",
+    "startDate": "2024-12-02",
+    "endDate": "2024-12-05",
+    "location": "Stockholm (SE)",
+    "event": {
+      "name": "ESPC",
+      "link": "https://www.sharepointeurope.com/"
+    },
+    "links": [{
+      "title": "Link to the event",
+      "link": "https://www.sharepointeurope.com/"
+    }],
+    "reporting": {
+      "gde": false,
+      "mvp": true,
+      "github": false
+    }
+  },
+  {
+    "title": "Automated Testing for Microsoft 365 with Playwright",
+    "description": "In this session, we will explore how to use Playwright to automate testing of Microsoft 365 applications. We will focus on how Playwright can be used to create end-to-end tests that verify the behavior of Microsoft 365 applications for Microsoft Teams, and SharePoint. We will discuss how Playwright can be integrated into a continuous integration and deployment (CI/CD) pipeline, and how it can be used to catch bugs and regressions before they reach production. Additionally, we will provide tips and best practices for creating effective tests that cover common scenarios in Microsoft 365 applications. By the end of this session, attendees will have a deeper understanding of how to use Playwright to improve the quality of their Microsoft 365 applications.",
+    "startDate": "2024-06-01",
+    "endDate": "2024-06-01",
+    "location": "Vianen (NL)",
+    "event": {
+      "name": "CollabDays NL",
+      "link": "https://www.collabdays.org/2024-nl/"
+    },
+    "links": [{
+      "title": "Link to the event",
+      "link": "https://www.collabdays.org/2024-nl/"
+    }],
+    "reporting": {
+      "gde": true,
+      "mvp": true,
+      "github": true
+    }
+  },
+  {
+    "title": "From Code to Cloud: Automated Deployments with GitHub Actions",
+    "description": "Let us dive into the world of GitHub Actions, an instrumental component in modern Continuous Integration and Continuous Deployment (CI/CD) practices. In this session, we'll explore how to harness GitHub Actions to streamline your deployment workflows, making the process of moving from code commits to live deployments seamless and efficient. We'll cover how to use variables, secrets, environment approvals, and more. If you want to automate your deployments, this session is for you!",
+    "startDate": "2024-05-29",
+    "endDate": "2024-05-29",
+    "location": "Gent (BE)",
+    "event": {
+      "name": "devs.gent",
+      "link": "https://devs.gent/"
+    },
+    "links": [{
+        "title": "Link to the event",
+        "url": "https://www.meetup.com/devs-gent/events/298803280/"
+      },
+      {
+        "title": "Link to the slides",
+        "url": "https://slides.elio.dev/20240529-devsgent/"
+      },
+      {
+        "title": "Link to the community",
+        "url": "https://devs.gent/"
+      }
+    ],
+    "reporting": {
+      "gde": true,
+      "mvp": true,
+      "github": true
+    }
+  },
+  {
+    "title": "From Code to Cloud: Automated Deployments with GitHub Actions",
+    "description": "",
+    "startDate": "2024-05-06",
+    "endDate": "2024-05-08",
+    "location": "Wiesbaden (DE)",
+    "event": {
+      "name": "Cloud Summit",
+      "link": "https://cloudsummit.eu/"
+    },
+    "links": [{
+        "title": "Link to the event",
+        "url": "https://cloudsummit.eu/"
+      },
+      {
+        "title": "Link to the slides",
+        "url": "https://slides.elio.dev/20240515-cloudsummit/"
+      }
+    ],
+    "reporting": {
+      "gde": true,
+      "mvp": true,
+      "github": true
+    }
+  }
+]

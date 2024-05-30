@@ -2,16 +2,16 @@
 title: Speaking
 date: 2019-08-14T19:38:30.000Z
 draft: false
-type: page
+type: speaking
 url: /speaking/
 menu:
   main:
     weight: 2
 preview: /social/ed92cc3e-e397-477e-bb41-26aa62e056e2.png
-description: Elio is a frequent Microsoft-related community event speaker, focusing on topics around M365, SharePoint, Azure DevOps & more.
+description: Elio is a frequent Microsoft-related community event speaker, focusing on topics around M365, GitHub, E2E Testing, Azure, DevOps & more.
 ---
 
-Elio is a frequent speaker at various Microsoft related community events and conferences. In his sessions, he focusses on development-related topics on Microsoft 365, SharePoint and Azure DevOps.
+Elio is a frequent speaker at various Microsoft related community events and conferences. In his sessions, he focusses on development-related topics on Microsoft 365, GitHub, E2E Testing, Azure, DevOps, and more.
 
 If you are interested in having Elio speak at your event, you can check out the presentations he can present here at your event: [Sessions](/sessions/).
 
@@ -19,37 +19,15 @@ If you are interested in having Elio speak at your event, you can check out the 
   <figure><img class="size-full" title="Speaking at #GDGBerlin" src="{{< resource url="/uploads/2023/06/collabdaysnl2023-eliostruyf.jpg" >}}" alt="Speaking at CollabDays NL 2023" /><figcaption id="caption-attachment-15258" class="wp-caption-text">This photo was taken at CollabDays NL 2023</figcaption></figure>
 </div>
 
-## Upcoming events
-
 <!-- No upcoming events planned yet.  -->
 
-### 29 May 2024 / devs.gent
+<!-- UPCOMING_EVENTS_PLACEHOLDER -->
 
-From Code to Cloud: Automated Deployments with GitHub Actions
+<div class="flex justify-center mt-4">
+  <div class="w-16 h-1 rounded-full bg-lightseagreen-600 inline-flex"></div>
+</div>
 
-[Link to the event](https://www.meetup.com/devs-gent/events/298803280/) - [Link to the community](https://devs.gent/)
-
-### 1 June 2024 / CollabDays Netherlands 2024
-
-Automated Testing for Microsoft 365 with Playwright
-
-[Link to the event](https://www.collabdays.org/2024-nl/)
-
-### 2-5 December 2024 / ESPC Stockholm
-
-Test Automation with GitHub Actions and Playwright for Microsoft 365 solutions
-
-[Link to the event](https://www.sharepointeurope.com/)
-
-## Past events
-
-### 2024
-
-#### 14-16 May 2024 / Cloud Summit
-
-From Code to Cloud: Automated Deployments with GitHub Actions
-
-[Link to the event](https://cloudsummit.eu/)
+<!-- PAST_EVENTS_PLACEHOLDER -->
 
 #### 6-8 May 2024 / Techorama Belgium
 
