@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://www.eliostruyf.com/dev/speaking.schema.json",
+  "title": "Speaking schema",
+  "description": "Schema for the speaking engagements",
+  "lastModified": "2024-06-06",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the session"
+    },
+    "description": {
+      "type": "string",
+      "description": "Abstract of the session"
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the speaking engagement (YYYY-MM-DD)"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date",
+      "description": "End date of the speaking engagement (YYYY-MM-DD)"
+    },
+    "location": {
+      "type": "string",
+      "description": "Location of the speaking engagement"
+    },
+    "event": {
+      "type": "object",
+      "description": "Event details",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the event"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the event"
+        }
+      }
+    },
+    "links": {
+      "type": "array",
+      "description": "Links to the session",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the link"
+          },
+          "link": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL of the link"
+          }
+        }
+      }
+    },
+    "reporting": {
+      "type": "object",
+      "description": "Reporting details",
+      "properties": {
+        "gde": {
+          "type": "boolean",
+          "description": "Is added to Google Developer Expert profile?"
+        },
+        "mvp": {
+          "type": "boolean",
+          "description": "Is added to Microsoft MVP profile?"
+        },
+        "github": {
+          "type": "boolean",
+          "description": "Is added to GitHub Star profile?"
+        }
+      }
+    }
+  }
+}
