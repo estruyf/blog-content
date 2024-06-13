@@ -20,7 +20,7 @@ type: "post"
 
 Ever since I created the Visual Studio Code - [Demo Time](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-demo-time) extension, I have been experimenting with ways of taking full advantage of presenting my slides and demos more interactively. A couple of weeks ago at [Cloud Summit](https://cloudsummit.eu/), I did a presentation about GitHub Actions and scripted my whole slide and demo flow with the help of the [Slidev](https://sli.dev/) and the [Demo Time](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-demo-time) extension.
 
-{{< caption-new "/uploads/2024/05/scripted-presentation.webp" "Presenting from Visual Studio Code" >}}
+{{< caption-new "/uploads/2024/05/scripted-presentation.webp" "Presenting from Visual Studio Code"  "data:image/jpeg;base64,UklGRrwAAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSC8AAAABL6CmbSSGP8vby//vlUZExKOaCYWQrFA3GfwAcngTQAz586QQ0f8od18D+h1JBwBWUDggZgAAAFACAJ0BKgoABgABQCYlkAJ0Bpi8AtDoHg+r4AD++r7+Y4dZv1cH/un9HPchaksg4xpwaMN2B4XX/U/z16P//qlyFuIL9fCJ+tfV0B4tOhTYROuybBnK8vgqnhbxxpNZ55zQeHroAA==" "2672" >}}
 
 In this article, I explain how I am using Slidev and the Demo Time extension to present and perform live coding without the stress of demo gods.
 
@@ -32,7 +32,7 @@ For example, my slides are available at [https://slides.elio.dev/20240515-clouds
 
 To show these in Visual Studio Code, you can use the **Simple Browser** capability (available from the command palette - ID: `simpleBrowser.show`). When you first execute the command, it will ask you to provide the website URL you want to show.
 
-{{< caption-new "/uploads/2024/06/simple-browser.webp" "Opening the slides in Visual Studio Code" >}}
+{{< caption-new "/uploads/2024/06/simple-browser.webp" "Opening the slides in Visual Studio Code"  "data:image/jpeg;base64,UklGRqQAAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSCEAAAABHyAgIf5flQ3ciIiYhJoASBiGN/0zQE8zRPQ/1hD3rAEAVlA4IFwAAACwAQCdASoKAAYAAUAmJZACdAD0h9dkAP75CfC6x7338eHcEp+f/M9z7Xv9aAlde4g37fW0gYj3qJt+9AJM6LtdwFZ/6IMrO0K4OhznJaOvfD9v/xR7xTcuAZfcAA==" "1954" >}}
 
 With Demo Time, we can script the opening of the slides by using the `executeVSCodeCommand` action in combination with the `simpleBrowser.show` command.
 
@@ -68,7 +68,7 @@ Typically, I create the demo first and then script the steps I want to show. For
 
 In the above example, a new `/.github/workflows/main.yml` workflow file is created with the content from the `./crafting/step1.yml` file. The file is then opened in the editor.
 
-{{< caption-new "/uploads/2024/06/first-demo.webp" "First demo: create workflow file and open it" >}}
+{{< caption-new "/uploads/2024/06/first-demo.webp" "First demo: create workflow file and open it"  "data:image/jpeg;base64,UklGRnIAAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSCEAAAABHyAgIf5flQ3ciIiYhJoASBiGN/0zQE8zRPQ/1hD3rAEAVlA4ICoAAACwAQCdASoKAAYAAUAmJaQAAvh1xMQAAP7+bI7SxjLI4Chc7K7k4r9sAAA=" "1954" >}}
 
 The extension allows you to run various types of actions like:
 
@@ -114,7 +114,7 @@ To start the presentation, I created a step that opens the slide and closes the 
 
 You can follow the steps from the Demo Time panel and execute them one by one. This way, you can focus on the content you are presenting rather than the steps you must take.
 
-{{< caption-new "/uploads/2024/06/demo-time-panel.webp" "Demo time panel and its steps" >}}
+{{< caption-new "/uploads/2024/06/demo-time-panel.webp" "Demo time panel and its steps"  "data:image/jpeg;base64,UklGRoAAAABXRUJQVlA4WAoAAAAQAAAACQAABAAAQUxQSCMAAAABHyAUQGMvoiwyKiJiCQoaSXHo+HdB8Ni+iIjof0RSjf+RBABWUDggNgAAALABAJ0BKgoABQABQCYlpAAC51l/dwAA/vpZG81a+dvLYK9FVECP9kc3fltuSOMEg/kCOlmAAA==" "538" >}}
 
 {{< blockquote type="tip" text="It makes it easier when you split up your whole presentation into multiple sections where, at the start, you can use a base template for the demo. You always have a new starting point if something goes wrong without running all the steps again." >}}
 

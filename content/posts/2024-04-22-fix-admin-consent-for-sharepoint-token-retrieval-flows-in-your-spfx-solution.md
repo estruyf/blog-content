@@ -56,7 +56,7 @@ AADSTS650057 Invalid resource. The client has requested access to a resource tha
 
 The issue was that the `SharePoint Online Client Extensibility Web Application Principal` Entra app was missing the **Authorized client applications** for the `SharePoint Online Web Client Extensibility` app and `Office 365 SharePoint Online`.
 
-{{< caption-new "/uploads/2024/04/missing-authorized-client-apps.webp" "Missing authorized client apps" >}}
+{{< caption-new "/uploads/2024/04/missing-authorized-client-apps.webp" "Missing authorized client apps"  "data:image/jpeg;base64,UklGRngAAABXRUJQVlA4WAoAAAAQAAAACQAABAAAQUxQSCYAAAABH6CQbQTIH3P3aNxpREScFYratoGqvroLXlX+XAYiov8RH6EfH1ZQOCAsAAAAsAEAnQEqCgAFAAFAJiWkAALoMFR6AAD+/kYxmWl5IRQdKqAmna1wxoAAAAA=" "2652" >}}
 
 To fix this issue, you need to add the following client IDs to the **Authorized client applications** of the `SharePoint Online Client Extensibility Web Application Principal` app:
 
@@ -65,8 +65,8 @@ To fix this issue, you need to add the following client IDs to the **Authorized 
 - `1fec8e78-bce4-4aaf-ab1b-5451cc387264` (Microsoft Teams)
 - `5e3ce6c0-2b1f-4285-8d4b-75ee78787346` (Microsoft Teams Web Client)
 
-{{< caption-new "/uploads/2024/04/authorized-client-apps.webp" "Authorized client apps" >}}
+{{< caption-new "/uploads/2024/04/authorized-client-apps.webp" "Authorized client apps"  "data:image/jpeg;base64,UklGRngAAABXRUJQVlA4WAoAAAAQAAAACQAAAwAAQUxQSCAAAAABHyAWTPzlesOZRkSEDMUNyMBR8aLHeCKi/9E8IULNA1ZQOCAyAAAA0AEAnQEqCgAEAAFAJiWkAuwBDv9PfEAA/vykxr+o2hp2BZuTM0Sz2nbIhtkBhw6cAAA=" "1710" >}}
 
 I do not know why those apps were missing from the configuration. They should normally be automatically added when accessing the SharePoint admin API access page. The solution started to work again once the first two client IDs were added.
 
-{{< caption-new "/uploads/2024/04/succesfull-token-retrieval.webp" "Successful token retrieval" >}}
+{{< caption-new "/uploads/2024/04/succesfull-token-retrieval.webp" "Successful token retrieval"  "data:image/jpeg;base64,UklGRnIAAABXRUJQVlA4WAoAAAAQAAAACQAAAgAAQUxQSB8AAAAAu9jY2NjY2NjYu93//////////9272NjY2NjY2Ni7AFZQOCAsAAAA8AEAnQEqCgADAAFAJiWcAANTUDmoGfIAAP78au0BzWZ+saTJI/s0+PIAAAA=" "2534" >}}
