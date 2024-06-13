@@ -18,11 +18,11 @@ type: "post"
 
 For a new Visual Studio Code extension called [CommitHelper](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-commit-helper), I wanted to integrate the extension in the Source Control Management (SCM) input. The extension should provide a list of predefined commit messages from which the user can select by using a slash `/` in the input field.
 
-{{< caption-new "/uploads/2024/06/scm-input.webp" "Source Control Management Input" >}}
+{{< caption-new "/uploads/2024/06/scm-input.webp" "Source Control Management Input"  "data:image/jpeg;base64,UklGRngAAABXRUJQVlA4WAoAAAAQAAAACQAAAwAAQUxQSCAAAAABHyAQQXO12BYzHBGRDDJpG3rX3ubfyWYjov+RsrubAlZQOCAyAAAAsAEAnQEqCgAEAAFAJiUAToAh34sBoAD+/loqzE7YVeVZNp1YlrRtfO3Xia5atPf9wAA=" "836" >}}
 
 I got the idea from the [GitHub Pull Requests extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) that provides a similar experience when tagging/linking issues.
 
-{{< caption-new "/uploads/2024/06/tagging-issues.webp" "GitHub Pull Requests - Tagging issues" >}}
+{{< caption-new "/uploads/2024/06/tagging-issues.webp" "GitHub Pull Requests - Tagging issues"  "data:image/jpeg;base64,UklGRn4AAABXRUJQVlA4WAoAAAAQAAAACQAABgAAQUxQSCEAAAABHyAQSPylRlgpjYgIGWoCIGEY3vTPAD3NENH/WEPcvwYAVlA4IDYAAADwAQCdASoKAAcAAUAmJZQCdAERHwHviAAA/v26QgkzbF3NMhz8G27C4mFrlTPJlNuKZv/AAAA=" "1316" >}}
 
 In this article, I will explain how to integrate your Visual Studio Code extension into the SCM input.
 
@@ -58,35 +58,35 @@ export class MessageCompletionProvider implements vscode.CompletionItemProvider
     position: vscode.Position,
     token: vscode.CancellationToken,
     context: vscode.CompletionContext
- ) {
+  ) {
     // No completion items if the SMC input is not used
     if (
       document.languageId !== "scminput" &&
       context.triggerKind === vscode.CompletionTriggerKind.Invoke
- ) {
+    ) {
       return [];
     }
 
     const range = new vscode.Range(
       new vscode.Position(position.line, position.character - 1),
       position
- );
+    );
 
     const list: vscode.CompletionList = new vscode.CompletionList();
 
     // Add your completion items
     list.items.push({
- label: "feat",
- insertText: `feat `,
- kind: vscode.CompletionItemKind.Value,
- additionalTextEdits: [vscode.TextEdit.delete(range)], // Delete the trigger character
+      label: "feat",
+      insertText: `feat `,
+      kind: vscode.CompletionItemKind.Value,
+      additionalTextEdits: [vscode.TextEdit.delete(range)], // Delete the trigger character
     });
 
     list.items.push({
- label: "fix",
- insertText: `fix `,
- kind: vscode.CompletionItemKind.Value,
- additionalTextEdits: [vscode.TextEdit.delete(range)], // Delete the trigger character
+      label: "fix",
+      insertText: `fix `,
+      kind: vscode.CompletionItemKind.Value,
+      additionalTextEdits: [vscode.TextEdit.delete(range)], // Delete the trigger character
     });
 
     return list;
@@ -96,7 +96,6 @@ export class MessageCompletionProvider implements vscode.CompletionItemProvider
 
 You can add your completion items in the MessageCompletionProvider class. In the example above, I added two: `feat` and `fix`. When the user selects one of these items, it inserts the text in the SCM input field.
 
-{{< caption-new "/uploads/2024/06/scminput-completion-items.webp" "SCM Input - Completion items" >}}
+{{< caption-new "/uploads/2024/06/scminput-completion-items.webp" "SCM Input - Completion items"  "data:image/jpeg;base64,UklGRnYAAABXRUJQVlA4WAoAAAAQAAAACQAAAwAAQUxQSCAAAAABHyAQQXM12BorHBGRDDJpG3rX3ubfyWYjov+RsrubAlZQOCAwAAAA8AEAnQEqCgAEAAFAJiWUAnQBEBRGWZwAAP7+UKNnttuatdm3DLmKhstEn9bM0AAA" "836" >}}
 
 *Happy coding!*
-
