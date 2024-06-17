@@ -12,10 +12,6 @@
       "contentTypes": ["post"]
     },
     {
-      "title": "projects",
-      "path": "[[workspace]]/.frontmatter/content/projects"
-    },
-    {
       "title": "speaking",
       "path": "[[workspace]]/.frontmatter/content/speaking",
       "disableCreation": true
