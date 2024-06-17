@@ -4,7 +4,8 @@
       "title": "Pages",
       "path": "[[workspace]]/.frontmatter/content",
       "excludeSubdir": true,
-      "contentTypes": ["post"]
+      "contentTypes": ["post"],
+      "disableCreation": true
     },
     {
       "title": "Blog posts",
