@@ -83,11 +83,11 @@ Combining this with the above sample looks like this:
 
 When you go to the settings UI in Visual Studio Code and search for the setting `frontMatter.projects`, you will see the description with both links.
 
-{{< caption-new "/uploads/2024/06/setting-with-links.webp" "Setting with command URI link" >}}
+{{< caption-new "/uploads/2024/06/setting-with-links.webp" "Setting with command URI link"  "data:image/jpeg;base64,UklGRnQAAABXRUJQVlA4WAoAAAAQAAAACQAAAwAAQUxQSCIAAAABH6CmbQOGP72cwdJBIyLiRKgJQICxbv0zUDii//GVCJGvVlA4ICwAAACwAQCdASoKAAQAAUAmJaQAAudsu8FYAP78pDV/MgoqUfvCD+LuOyZMtpZgAA==" "1892" >}}
 
 When you click on the **View in VS Code** link, the documentation page will open in a simple browser.
 
-{{< caption-new "/uploads/2024/06/simple-browser-docs.webp" "Setting documentation shown in the simple browser from VS Code" >}}
+{{< caption-new "/uploads/2024/06/simple-browser-docs.webp" "Setting documentation shown in the simple browser from VS Code"  "data:image/jpeg;base64,UklGRnwAAABXRUJQVlA4WAoAAAAQAAAACQAAAwAAQUxQSCAAAAABH0AgQPF/ZzGDGxERZ4WaAAQY69Y/A4Uj+h9fiRD5ClZQOCA2AAAA0AEAnQEqCgAEAAFAJiWcAnQBDveKX8AA/vuUv7yeFf/3q49PVfLf7OjXH2N/H8PPY9wEW4AA" "2952" >}}
 
 ## Side note
 
