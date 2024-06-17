@@ -24,8 +24,8 @@ By default, VS Code supports the `github`, `github-enterprise`, and `microsoft` 
 
 There are two good references from which you can learn all of it:
 
-1. (GitHub Authentication Provider)[https://github.com/microsoft/vscode/tree/main/extensions/github-authentication]
-2. (Microsoft Authentication Provider)[https://github.com/microsoft/vscode/tree/main/extensions/microsoft-authentication]
+1. [GitHub Authentication Provider](https://github.com/microsoft/vscode/tree/main/extensions/github-authentication)
+2. [Microsoft Authentication Provider](https://github.com/microsoft/vscode/tree/main/extensions/microsoft-authentication)
 
 ## Getting started
 
