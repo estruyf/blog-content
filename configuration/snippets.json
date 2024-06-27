@@ -63,7 +63,8 @@
           "type": "choice",
           "choices": [
             "info",
-            "important"
+            "important",
+            "tip"
           ],
           "default": "info"
         },
