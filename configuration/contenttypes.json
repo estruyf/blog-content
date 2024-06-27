@@ -7,7 +7,12 @@
           "title": "Title",
           "name": "title",
           "type": "string",
-          "required": true
+          "required": true,
+          "action": {
+            "title": "Update titles",
+            "script": "./scripts/fields/title.options.mjs",
+            "command": "~/.nvm/versions/node/v20.11.1/bin/node"
+          }
         },
         {
           "title": "Title (long)",
