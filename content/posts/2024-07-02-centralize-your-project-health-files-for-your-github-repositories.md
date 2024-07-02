@@ -38,4 +38,6 @@ Here is an example from before I had a `.github` repository:
 
 And here you can see the new `.github` repository with the `funding.yml` and `CODE_OF_CONDUCT.md` files:
 
-{{< caption-new "/uploads/2024/07/after-github-repository.webp" "After the .github repository is added"  "data:image/jpeg;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoKAAYAAUAmJaQAAudHzYAA/v7edXHLsyGiAcZ8v4m3CAAA" "2508" >}}
+{{< caption-new "/uploads/2024/07/after-github-repository.webp" "After the .github repository is added."  "data:image/jpeg;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoKAAYAAUAmJaQAAudHzYAA/v7edXHLsyGiAcZ8v4m3CAAA" "2508" >}}
+
+Notice the **sponsor this project** section is now showing up in the repository.
