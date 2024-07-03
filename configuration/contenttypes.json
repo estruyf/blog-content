@@ -8,11 +8,15 @@
           "name": "title",
           "type": "string",
           "required": true,
-          "action": {
-            "title": "Update titles",
+          "actions": [{
+            "title": "Suggest titles",
             "script": "./scripts/fields/title.options.mjs",
             "command": "~/.nvm/versions/node/v20.11.1/bin/node"
-          }
+          }, {
+            "title": "Update title",
+            "script": "./scripts/fields/title.mjs",
+            "command": "~/.nvm/versions/node/v20.11.1/bin/node"
+          }]
         },
         {
           "title": "Title (long)",
@@ -53,7 +57,12 @@
           "name": "preview",
           "type": "image",
           "default": "{{ogImage}}",
-          "required": true
+          "required": true,
+          "actions": [{
+            "title": "Generate preview image",
+            "script": "./scripts/fields/preview.mjs",
+            "command": "~/.nvm/versions/node/v20.11.1/bin/node"
+          }]
         },
         {
           "title": "Is in draft",
@@ -72,7 +81,12 @@
           "name": "tags",
           "type": "tags",
           "default": [],
-          "required": true
+          "required": true,
+          "actions": [{
+            "title": "Update tags",
+            "script": "./scripts/fields/tags.mjs",
+            "command": "~/.nvm/versions/node/v20.11.1/bin/node"
+          }]
         },
         {
           "title": "type",
