@@ -50,4 +50,4 @@ Once set up, executing tests on GitHub Actions will display the results in the s
 
 The reporter is also customizable, offering options such as detailed views and error displays. Dive into the [GitHub Actions reporter documentation](https://github.com/estruyf/playwright-github-actions-reporter) for a comprehensive understanding.
 
-Give it a try and let me know your experiences. Feedback and suggestions are always appreciated!
+Give it a try, and let me know your experiences. Feedback and suggestions are always appreciated!
