@@ -31,13 +31,31 @@ Before you can start reporting your Playwright test results to Microsoft Teams, 
 - A Microsoft Teams webhook URL
 - The [playwright-msteams-reporter](https://www.npmjs.com/package/playwright-msteams-reporter) dependency
 
-### Setting up the Microsoft Teams webhook
+### Create an incoming webhook for Microsoft Teams channel (will stop working after October 1, 2024)
+
+{{< blockquote type="important" text="As Microsoft announce the [retirement of Office 365 connectors within Microsoft Teams](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/). It is best to make use of the Power Automate webhook functionality." >}}
 
 The `playwright-msteams-reporter` dependency uses the incoming webhook feature in Microsoft Teams. You can find more information on how to do this in the [Microsoft documentation](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=newteams%2Cdotnet#create-an-incoming-webhook).
 
 Once you have configured the incoming webhook, you will receive a URL that you can use to send messages to a specific channel. Copy this URL, as you will need it in the reporter's configuration.
 
 {{< caption-new "/uploads/2024/06/incoming-webhook-url.webp" "Incoming webhook URL"  "data:image/jpeg;base64,UklGRnwAAABXRUJQVlA4WAoAAAAQAAAACQAAAwAAQUxQSCMAAAABH6CQbQTI32sE47lHIyLiRChuQAaOihc9xhMR/Y/mCRFqHgBWUDggMgAAAJABAJ0BKgoABAABQCYlnAACW8e8xAD++VKU0Gge51s8fOQPjzrTarY9L9ehDyc8MAAA" "680" >}}
+
+### Create a Microsoft Teams webhook with Power Automate
+
+To create a webhook with Power Automate, you can follow these steps:
+
+- Start with the following [post to a channel when a webhook request is received](https://make.preview.powerautomate.com/galleries/public/templates/d271a6f01c2545a28348d8f2cddf4c8f/post-to-a-channel-when-a-webhook-request-is-received) template
+- Click continue to use the template
+- Click on the **Post your own adaptive card as the Flow bot to a channel** action
+- Configure the action with the following settings:
+  - **Team**: Select the team where you want to post the message
+  - **Channel**: Select the channel where you want to post the message
+
+{{< caption-new "/uploads/2024/07/powerautomate-settings.webp" "Update the channel setting for the Adaptive Card action"  "data:image/jpeg;base64,UklGRoQAAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSCMAAAABHyAWTPwF+2KZRkSEDEVt20BVX90Fryp/MsMQ0f+Ij9ATHwBWUDggOgAAALABAJ0BKgoABgABQCYlpAAC52rG5YAA/v5GtRcmhrl73HMJxk2/BxKMtaEUThT7GtjE12wBLOEAAAA=" "2034" >}}
+
+- Click on the **Save** button
+- Click on **When a Teams webhook request is received** and copy the **HTTP URL**
 
 ### Installing the reporter
 
@@ -61,13 +79,14 @@ export default defineConfig({
       'playwright-msteams-reporter',
       {
         webhookUrl: "<webhookUrl>",
+        webhookType: "powerautomate", // or "msteams"
       }
     ]
   ],
 });
 ```
 
-{{< blockquote type="important" text="Add the webhook URL to the `<webhookUrl>` property." >}}
+Add your **webhook URL** to the `<webhookUrl>` property. You can also specify the **webhook type** as `powerautomate` or `msteams`. The default value is `powerautomate`.
 
 ### Mentioning users on failed tests
 
@@ -83,7 +102,7 @@ export default defineConfig({
       'playwright-msteams-reporter',
       {
         webhookUrl: "<webhookUrl>",
-        mentionOnFailure: "Name <name@sample.be>, name@sample.be",
+        mentionOnFailure: "name1@sample.be, name2@sample.be",
       }
     ]
   ],
@@ -96,7 +115,7 @@ export default defineConfig({
 
 ### Linking to the GitHub workflow run
 
-You can add a link workflow when running your Playwright tests in a GitHub Actions workflow. To enable this feature, you can add the `linkToResultsUrl` property to the configuration:
+If you are running your Playwright tests in a GitHub Actions workflow, you can add a link to the workflow run. To enable this feature, you can add the `linkToResultsUrl` property to the configuration:
 
 ```typescript {title="Configure the reporter with workflow URL"}
 import { defineConfig } from '@playwright/test';
@@ -125,3 +144,9 @@ Once you have configured the reporter, you can run your Playwright tests. The re
 More configuration options are available for the `playwright-msteams-reporter`. For more information, check out the [playwright-msteams-reporter](https://www.npmjs.com/package/playwright-msteams-reporter) documentation.
 
 Give it a try, and let me know your experiences. Feedback and suggestions are always appreciated!
+
+## Update
+
+### 2024-07-09
+
+Updated the article with the information of the [retirement of Office 365 connectors within Microsoft Teams](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/). Therefore, it is better to make use of the Power Automate webhook functionality to send messages to Microsoft Teams.
