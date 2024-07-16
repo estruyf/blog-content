@@ -1,5 +1,5 @@
 ---
-title: "Locally testing your custom GitHub Action"
+title: "Locally running and testing your custom GitHub Action"
 longTitle: ""
 customField: ""
 slug: "/locally-testing-custom-github-action/"
@@ -19,7 +19,7 @@ fmContentType: "post"
 
 When developing a custom GitHub Action, you should test and run it locally before pushing it to your repository. Initially, I created a script that allowed me to run it locally, but over the weekend, I found a better way by using the [@github/local-action](https://github.com/github/local-action) command-line tool.
 
-{{< caption-new "/uploads/2024/07/local-action-debugger.webp" "GitHub local-action debugger" >}}
+{{< caption-new "/uploads/2024/07/local-action-debugger.webp" "GitHub local-action debugger"  "data:image/jpeg;base64,UklGRoIAAABXRUJQVlA4WAoAAAAQAAAACQAACwAAQUxQSCIAAAABFyAWTPwB9+WSRkTEgoK2bZjubwBb/nTGIKL/IZ4hX+IBVlA4IDoAAAAQAgCdASoKAAwAAUAmJZwCw7EQE/LnMYAAAP79mBunNL+Sa6k5cSbRuPbJNFTENHwm4CVbnalAAAAA" "1005" >}}
 
 In this post, I will show you how to use the `@github/local-action` command-line tool to test your custom GitHub Action locally.
 
@@ -123,7 +123,7 @@ Here is an example of how I run it for my [Playwright Issue Creator](https://git
 npx @github/local-action run ./ src/index.ts .env
 ```
 
-{{< caption-new "/uploads/2024/07/local-action-debugger.webp" "GitHub local-action debugger" >}}
+{{< caption-new "/uploads/2024/07/local-action-debugger.webp" "GitHub local-action debugger"  "data:image/jpeg;base64,UklGRoIAAABXRUJQVlA4WAoAAAAQAAAACQAACwAAQUxQSCIAAAABFyAWTPwB9+WSRkTEgoK2bZjubwBb/nTGIKL/IZ4hX+IBVlA4IDoAAAAQAgCdASoKAAwAAUAmJZwCw7EQE/LnMYAAAP79mBunNL+Sa6k5cSbRuPbJNFTENHwm4CVbnalAAAAA" "1005" >}}
 
 This command-line tool is great during the development process of your custom GitHub Action.
 
