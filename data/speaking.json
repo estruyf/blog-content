@@ -16,7 +16,7 @@
     "reporting": {
       "gde": false,
       "mvp": true,
-      "github": false
+      "github": true
     }
   },
   {
