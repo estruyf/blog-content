@@ -1,0 +1,119 @@
+{
+  "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.data.files": [{
+      "id": "projects",
+      "title": "Projects",
+      "file": "[[workspace]]/themes/eliostruyf-v2/data/projects.json",
+      "fileType": "json",
+      "labelField": "title",
+      "schema": {
+        "title": "Sponsors",
+        "type": "object",
+        "required": [
+          "title",
+          "href"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "id": "speaking",
+      "title": "Speaking",
+      "file": "[[workspace]]/.frontmatter/data/speaking.json",
+      "fileType": "json",
+      "labelField": "title",
+      "schema": {
+        "title": "Speaking",
+        "type": "object",
+        "required": [
+          "title",
+          "href"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "startDate": {
+            "type": "string"
+          },
+          "endDate": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "event": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              }
+            }
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "reporting": {
+            "type": "object",
+            "properties": {
+              "gde": {
+                "type": "boolean"
+              },
+              "mvp": {
+                "type": "boolean"
+              },
+              "github": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "frontMatter.data.folders": [{
+    "id": "Testable",
+    "path": "[[workspace]]/themes/eliostruyf-v2/data/",
+    "labelField": "title",
+    "schema": {
+      "title": "Sponsors",
+      "type": "object",
+      "required": [
+        "title",
+        "href"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        }
+      }
+    }
+  }]
+}

@@ -78,54 +78,6 @@
       ]
     }
   ],
-  "frontMatter.data.files": [
-    {
-      "id": "projects",
-      "title": "Projects",
-      "file": "[[workspace]]/themes/eliostruyf-v2/data/projects.json",
-      "fileType": "json",
-      "labelField": "title",
-      "schema": {
-        "title": "Sponsors",
-        "type": "object",
-        "required": [
-          "title",
-          "href"
-        ],
-        "properties": {
-          "title": {
-            "type": "string"
-          },
-          "href": {
-            "type": "string"
-          }
-        }
-      }
-    }
-  ],
-  "frontMatter.data.folders": [
-    {
-      "id": "Testable",
-      "path": "[[workspace]]/themes/eliostruyf-v2/data/",
-      "labelField": "title",
-      "schema": {
-        "title": "Sponsors",
-        "type": "object",
-        "required": [
-          "title",
-          "href"
-        ],
-        "properties": {
-          "title": {
-            "type": "string"
-          },
-          "href": {
-            "type": "string"
-          }
-        }
-      }
-    }
-  ],
   "frontMatter.panel.actions.disabled": [
     "optimizeSlug"
   ]
