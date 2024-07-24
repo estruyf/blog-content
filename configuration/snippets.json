@@ -62,8 +62,10 @@
           "title": "Type",
           "type": "choice",
           "choices": [
+            "alert",
             "info",
             "important",
+            "note",
             "tip"
           ],
           "default": "info"

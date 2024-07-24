@@ -75,6 +75,8 @@ setup("authenticate", async ({ page }) => {
 
 {{< blockquote type="important" text="Make sure to use a test account which does not require MFA." >}}
 
+{{< blockquote type="alert" text="The Playwright M365 starter template allows you to use MFA-enabled accounts too. For more information on using MFA-enabled acccounts, check the [Automating Microsoft 365 login with multi-factor authentication in Playwright tests](https://www.eliostruyf.com/automating-microsoft-365-login-mfa-playwright-tests/) article." >}}
+
 The login has been added as a dependency for the other tests, meaning that when you run a test, it authenticates, stores the state in the `playwright/.auth/user.json` file, and then runs the test.
 
 You can check this out in the `playwright.config.ts` file:
@@ -169,3 +171,9 @@ test("Check screenshot", async () => {
 Playwright is an excellent tool for E2E testing your Microsoft 365 solutions. It is easy to get started with and has many great features out-of-the-box. To learn more about Playwright, check out their [documentation](https://playwright.dev/docs/intro).
 
 {{< blockquote type="info" text="You can make use of the following GitHub Repository to get you started: [E2E Testing of Microsoft 365 solutions with Playwright](https://github.com/estruyf/testing-microsoft365-playwright-template) " >}}
+
+## Updates
+
+### 2024-07-24
+
+The Playwright M365 starter template can now be used in combination with MFA-enabled accounts. For more information check the [Automating Microsoft 365 login with multi-factor authentication in Playwright tests](https://www.eliostruyf.com/automating-microsoft-365-login-mfa-playwright-tests/) article.
