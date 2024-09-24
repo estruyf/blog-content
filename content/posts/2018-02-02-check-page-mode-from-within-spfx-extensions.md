@@ -35,7 +35,7 @@ As it turns out, SharePoint is using the **History API** of your browser. This A
 
 > **Info**: read more about the history API here - [Manipulating the browser history](https://developer.mozilla.org/en-US/docs/Web/API/History_API).
 
-When SharePoint puts the page in edit mode or back to read mode, the **pushState** method of the History API is used. This method allows you to add history entries. A problem with this method is that it does not yet contain an event handler. This is something we should create it ourselves.
+When SharePoint switches the page to edit mode or back to read mode, it uses the **pushState** method of the History API. This method allows adding history entries. However, it does not include an event handler by default, so we need to implement one ourselves.
 
 In the following component, this got implemented, check lines 20 - 35.
 
