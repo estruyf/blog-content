@@ -16,7 +16,10 @@ Elio is a frequent speaker at various Microsoft related community events and con
 If you are interested in having Elio speak at your event, you can check out the presentations he can present here at your event: [Sessions](/sessions/).
 
 <div class="text-center">
-  <figure><img class="size-full" title="Speaking at #GDGBerlin" src="{{< resource url="/uploads/2023/06/collabdaysnl2023-eliostruyf.jpg" >}}" alt="Speaking at CollabDays NL 2023" /><figcaption id="caption-attachment-15258" class="wp-caption-text">This photo was taken at CollabDays NL 2023</figcaption></figure>
+  <figure>
+    <img class="size-full" src="{{< resource url="/uploads/2023/06/collabdaysnl2023-eliostruyf.jpg" >}}" alt="Speaking at CollabDays NL 2023" />
+    <figcaption id="caption-attachment-15258" class="wp-caption-text">This photo was taken at CollabDays NL 2023</figcaption>
+  </figure>
 </div>
 
 <!-- No upcoming events planned yet.  -->
