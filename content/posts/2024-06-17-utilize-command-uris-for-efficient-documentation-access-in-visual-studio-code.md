@@ -54,7 +54,7 @@ To open the simple browser, use the following command: `simpleBrowser.show`. Add
 
 Here's an example of how you can open the documentation page in the simple browser:
 
-```markdown {title:"Open the documentation page in the simple browser"}
+```markdown {title="Open the documentation page in the simple browser"}
 [View in VS Code](command:simpleBrowser.show?%5B%22https://frontmatter.codes/docs/settings/overview%23frontmatter.projects%22%5D)
 ```
 
