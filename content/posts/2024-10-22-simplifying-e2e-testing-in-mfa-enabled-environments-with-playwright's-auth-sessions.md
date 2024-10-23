@@ -4,8 +4,8 @@ longTitle: "Simplifying E2E testing in MFA-enabled environments with Playwright'
 customField: ""
 slug: "/e2e-testing-mfa-environment-playwright-auth-session/"
 description: "Easily perform E2E testing in MFA environments using Playwright's authenticated session state. Learn how to automate your tests without logging in every time."
-date: "2024-10-22T12:30:37.389Z"
-lastmod: "2024-10-22T12:30:37.984Z"
+date: "2024-10-23T10:05:24.847Z"
+lastmod: "2024-10-23T10:05:25.382Z"
 preview: "/social/670d898c-bd5a-4b8a-b858-c30365d56ef9.png"
 draft: false
 comments: true
