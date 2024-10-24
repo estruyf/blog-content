@@ -1,19 +1,19 @@
 ---
-title: '#DevHack: check how your VSCode extension is running'
-description: 'This article describes how you can check if your VSCode extension is running in development, production, or test mode.'
-date: '2021-12-17T13:15:57.292Z'
-lastmod: '2021-12-17T13:15:57.860Z'
-type: post
+title: "#DevHack: check how your VSCode extension is running"
+description: "This article describes how you can check if your VSCode extension is running in development, production, or test mode."
+date: "2021-12-17T13:15:57.292Z"
+lastmod: "2021-12-17T13:15:57.860Z"
+type: "post"
 draft: false
 tags:
-  - Extensions
-  - VSCode
-  - Development
+  - "Extensions"
+  - "VSCode"
+  - "Development"
 categories: null
-slug: /devhack-check-vscode-extension-running/
-preview: "/social/f480e3b8-29d0-4507-9411-4211b193f20c.png"
+slug: "/devhack-check-vscode-extension-running/"
+preview: "/social/51757d96-10e1-4c6f-9eee-582ddd85d464.png"
 keywords:
-  - vscode
+  - "vscode"
 ---
 
 When developing Visual Studio Code extensions, it might come in handy to know when running a production- or debug-build.

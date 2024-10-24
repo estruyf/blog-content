@@ -6,7 +6,7 @@ slug: "/level-presentations-slidev-demo-time-code/"
 description: "Learn how to enhance your presentations and live coding demos with Slidev and the Demo Time extension in Visual Studio Code."
 date: "2024-06-07T13:27:19.803Z"
 lastmod: "2024-06-07T13:27:20.408Z"
-preview: "/social/3d2b1699-3569-450b-9e60-5ade4dbb064e.png"
+preview: "/social/b3b98b6f-e917-47c4-abf2-13cf2f99afef.png"
 draft: false
 comments: true
 tags:

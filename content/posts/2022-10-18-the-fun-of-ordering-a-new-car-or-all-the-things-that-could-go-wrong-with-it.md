@@ -1,20 +1,18 @@
 ---
-title: The story of buying a car and what went wrong with it
+title: "The story of buying a car and what went wrong with it"
 longTitle: ""
-slug: /story-buying-car-wrong/
-description: "Instead of a technical article, Elio tells you his experience of buying a new
-  Mercedes-Benz and all the things that went wrong during the complete process.
-  "
-date: 2022-10-18T08:44:52.616Z
-lastmod: 2022-10-18T08:44:53.351Z
-preview: /social/d1a25b73-35f3-451c-9e9e-52ba26a16d91.png
+slug: "/story-buying-car-wrong/"
+description: "Instead of a technical article, Elio tells you his experience of buying a new Mercedes-Benz and all the things that went wrong during the complete process. "
+date: "2022-10-18T08:44:52.616Z"
+lastmod: "2022-10-18T08:44:53.351Z"
+preview: "/social/a696f7d4-f4af-44ff-9f5b-3eb1c3371312.png"
 draft: false
 comments: true
 tags:
-  - Car
-  - Tesla
-  - Mercedes-Benz
-type: post
+  - "Car"
+  - "Tesla"
+  - "Mercedes-Benz"
+type: "post"
 ---
 
 Let us go back to the end of 2020. My wife and I were chatting in the kitchen about buying a new car. One of the criteria of my wife the vehicle should have was to have seven seats as it would be easier to bring kids to tennis. I wanted to go for a fully electric car.

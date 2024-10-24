@@ -1,19 +1,19 @@
 ---
-title: "Protect keys by keeping those out of your VS Code settings"
-longTitle: "Protect your API/auth keys by keeping those out of your Visual Studio Code settings"
+title: Protect keys by keeping those out of your VS Code settings
+longTitle: Protect your API/auth keys by keeping those out of your Visual Studio Code settings
 customField: ""
-slug: "/protect-api-auth-keys-keeping-out-vscode-settings/"
-description: "Learn how to better protect your API/Authentication keys by keeping them out of your Visual Studio Code settings. This article helps developers and users."
-date: "2024-02-21T12:31:41.917Z"
-lastmod: "2024-02-21T12:31:42.470Z"
-preview: "/social/f065a382-42bb-4414-8396-d3ac8f710a2b.png"
+slug: /protect-api-auth-keys-keeping-out-vscode-settings/
+description: Learn how to better protect your API/Authentication keys by keeping them out of your Visual Studio Code settings. This article helps developers and users.
+date: 2024-02-21T12:31:41.917Z
+lastmod: 2024-02-21T12:31:42.470Z
+preview: /social/e42c34d6-730f-4cb4-96b3-fe953ad5f5d1.png
 draft: false
 comments: true
 tags:
-  - "Security"
-  - "Visual Studio Code"
-  - "API"
-type: "post"
+  - Security
+  - Visual Studio Code
+  - API
+type: post
 ---
 
 While implementing the i18n (internationalization) features in [Front Matter CMS](https://frontmatter.codes), I wanted to include the ability for users to use DeepL to translate their content automatically.

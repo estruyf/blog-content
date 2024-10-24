@@ -13,7 +13,7 @@ tags:
   - "Open Graph"
 categories: []
 comments: true
-preview: "/social/b7930c1a-0823-48e4-a2ef-133e56cd1f42.png"
+preview: "/social/110f9492-57a4-483e-9fc3-82962e838af0.png"
 description: "Get to know how you can generate a preview image for your articles by using a custom script and the Front Matter Visual Studio Code extension."
 keywords:
   - "front matter"

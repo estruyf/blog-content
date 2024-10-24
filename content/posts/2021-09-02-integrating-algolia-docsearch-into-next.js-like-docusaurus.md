@@ -1,22 +1,22 @@
 ---
-title: 'Integrating Algolia DocSearch into Next.js like Docusaurus'
+title: "Integrating Algolia DocSearch into Next.js like Docusaurus"
 description: "Learn more about using Algolia's DocSearch documentation scrapper and component in your Next.js website."
-slug: /integrating-algolia-docsearch-next-js-docusaurus/
-author: Elio Struyf
-type: post
-date: '2021-09-02T14:08:16.180Z'
-lastmod: '2021-09-02T14:08:16.180Z'
+slug: "/integrating-algolia-docsearch-next-js-docusaurus/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-09-02T14:08:16.180Z"
+lastmod: "2021-09-02T14:08:16.180Z"
 draft: false
 tags:
-  - Algolia
-  - Next.js
-  - Search
-  - Documentation
+  - "Algolia"
+  - "Next.js"
+  - "Search"
+  - "Documentation"
 categories: []
 comments: true
 keywords:
-  - search
-preview: "/social/6d3bf1f7-f22b-4c17-a9e7-b623e0a0eaff.png"
+  - "search"
+preview: "/social/3b217772-ffd2-481c-bd2d-1805a1e1ee55.png"
 ---
 
 For the new [Front Matter](https://frontmatter.codes) website, I needed to integrate search capabilities. Instead of building my own search experience this time, as I did on this website. I wanted to give [Algolia](https://www.algolia.com/) a try. 

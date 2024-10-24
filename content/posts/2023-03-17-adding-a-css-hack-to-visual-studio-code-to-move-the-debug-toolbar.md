@@ -1,19 +1,19 @@
 ---
-title: A CSS hack to Visual Studio Code to move the Debug Toolbar
+title: "A CSS hack to Visual Studio Code to move the Debug Toolbar"
 longTitle: ""
 customField: ""
 slug: "/css-hack-visual-studio-code-move-debug-toolbar/"
 description: "Discover how I crafted a clever CSS hack to embed the Debug Toolbar into the titlebar. Level up your workflow!"
-date: 2023-03-17T13:58:49.472Z
-lastmod: 2023-03-17T13:58:49.472Z
-preview: /social/0c8c0f2e-697d-4f5e-b263-5cdde9f50001.png
+date: "2023-03-17T13:58:49.472Z"
+lastmod: "2023-03-17T13:58:49.472Z"
+preview: "/social/5cc48643-4ab5-4a90-9019-4a6bbc5524a2.png"
 draft: false
 comments: true
 tags:
-  - Devhack
-  - Visual Studio Code
-  - Hack
-type: post
+  - "Devhack"
+  - "Visual Studio Code"
+  - "Hack"
+type: "post"
 ---
 
 As developers, we're always looking for ways to enhance our productivity and streamline our workflows. One thing which has bothered me endlessly is the floating Debug Toolbar. I love the fact that it is floating, but I have to move it out of the way every time I want to do something.

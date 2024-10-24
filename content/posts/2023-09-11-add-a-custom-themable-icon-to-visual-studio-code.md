@@ -6,7 +6,7 @@ slug: /add-custom-themable-icon-visual-studio-code/
 description: Learn how to create an icon font and add it to your Visual Studio Code extension to add a custom themable icon to the editor.
 date: 2023-09-11T08:47:57.020Z
 lastmod: 2023-09-11T08:47:57.020Z
-preview: /social/a9b74b8a-09ef-401a-b83e-48b3ae031c46.png
+preview: /social/ebb7b405-d11c-4e3a-9665-c72d26271c25.png
 draft: false
 comments: true
 tags:

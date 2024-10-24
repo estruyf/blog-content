@@ -1,19 +1,18 @@
 ---
 title: "#DevHack: VS Code extension storage options"
-date: 2022-02-22T16:17:10.178Z
+date: "2022-02-22T16:17:10.178Z"
 draft: false
-type: post
-description: In this article Elio helps you find out what the options of data storage are
-  in Visual Studio code an which one to use in which circumstances.
-lastmod: 2022-02-22T16:17:11.136Z
-preview: "/social/04677b0d-ff25-4131-bfe7-c5717180b011.png"
+type: "post"
+description: "In this article Elio helps you find out what the options of data storage are in Visual Studio code an which one to use in which circumstances."
+lastmod: "2022-02-22T16:17:11.136Z"
+preview: "/social/e92b2e3a-2f83-4413-9f85-0bfa725c672d.png"
 tags:
-  - Development
-  - Storage
-  - VSCode
-  - Extensions
+  - "Development"
+  - "Storage"
+  - "VSCode"
+  - "Extensions"
 categories: ""
-slug: /devhack-code-extension-storage-options/
+slug: "/devhack-code-extension-storage-options/"
 comments: true
 ---
 

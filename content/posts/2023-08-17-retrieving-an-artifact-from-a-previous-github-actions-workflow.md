@@ -1,19 +1,19 @@
 ---
-title: Retrieving an artifact from a previous GitHub Actions
-longTitle: Retrieving an artifact from a previous GitHub Actions workflow
+title: "Retrieving an artifact from a previous GitHub Actions"
+longTitle: "Retrieving an artifact from a previous GitHub Actions workflow"
 customField: ""
-slug: /retrieving-artifact-previous-github-actions-workflow/
-description: Learn how to download artifacts from previous GitHub Actions runs. A GitHub Script and workflow configuration is included.
-date: 2023-08-17T14:12:50.527Z
-lastmod: 2023-08-17T14:12:50.979Z
-preview: /social/4346984f-0160-4d2d-8c02-ac642bc27bf3.png
+slug: "/retrieving-artifact-previous-github-actions-workflow/"
+description: "Learn how to download artifacts from previous GitHub Actions runs. A GitHub Script and workflow configuration is included."
+date: "2023-08-17T14:12:50.527Z"
+lastmod: "2023-08-17T14:12:50.979Z"
+preview: "/social/0c70be6b-b49b-4300-a3ec-6401d39556a0.png"
 draft: false
 comments: true
 tags:
-  - Actions
-  - GitHub
-  - GitHub Actions
-type: post
+  - "Actions"
+  - "GitHub"
+  - "GitHub Actions"
+type: "post"
 ---
 
 While configuring some end-to-end tests with Playwright, I wanted to achieve a visual comparison between the current run and the previous one.

@@ -1,24 +1,24 @@
 ---
-title: A code-driven approach to theme your VS Code webview
-slug: /code-driven-approach-theme-vscode-webview/
-author: Elio Struyf
-type: post
-date: '2022-01-31T17:03:36.203Z'
-lastmod: '2022-01-31T17:03:36.812Z'
+title: "A code-driven approach to theme your VS Code webview"
+slug: "/code-driven-approach-theme-vscode-webview/"
+author: "Elio Struyf"
+type: "post"
+date: "2022-01-31T17:03:36.203Z"
+lastmod: "2022-01-31T17:03:36.812Z"
 draft: false
 tags:
-  - Styling
-  - Theme
-  - Theming
-  - VSCode
-  - Extensions
+  - "Styling"
+  - "Theme"
+  - "Theming"
+  - "VSCode"
+  - "Extensions"
 categories: []
 comments: true
 keywords:
-  - code-driven
-  - theme
-description: 'In this article, Elio shows a code-driven approach to theme your Visual Studio Code extension webviews.'
-preview: /social/2bdd180c-3be7-4ef8-a2f9-15b54303abb2.png
+  - "code-driven"
+  - "theme"
+description: "In this article, Elio shows a code-driven approach to theme your Visual Studio Code extension webviews."
+preview: "/social/4d267925-2e11-4389-a715-7709bfdc6a6e.png"
 ---
 
 When it comes to theming the webview's content of your Visual Studio Code extensions, the proposed way by the Visual Studio Code team is to use the provided CSS variables from the current theme. Although, in some cases, you want a bit more control, or make sure it matches what you want to achieve. That is why a code-driven approach is sometimes required.

@@ -1,17 +1,17 @@
 ---
-title: Deploy your Azure Functions as a package from GitHub Actions
-slug: /deploy-azure-functions-package-github-actions/
-author: Elio Struyf
-type: post
-date: 2021-05-03T07:30:00.253Z
+title: "Deploy your Azure Functions as a package from GitHub Actions"
+slug: "/deploy-azure-functions-package-github-actions/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-05-03T07:30:00.253Z"
 draft: false
 tags:
-  - GitHub
-  - GitHub Actions
-  - Azure Functions
+  - "GitHub"
+  - "GitHub Actions"
+  - "Azure Functions"
 categories: []
 comments: true
-preview: "/social/6d9f72e5-a7a4-4711-a823-7ac412949d90.png"
+preview: "/social/71c2cd1d-c729-4172-b9da-83e2b9664bc8.png"
 ---
 
 For [Squarl](https://squarl.com), I started to implement a couple of improvements for the back-end running on Azure Functions. I created these functions with TypeScript. In the past, I used webpack and later Azure Funcpack to bundle my functions to one file per function. That way, the host does not have to do all those read actions for retrieving the dependencies.

@@ -6,7 +6,7 @@ slug: "/caching-dev-proxy-github-actions-workflows/"
 description: "Learn how to cache the Dev Proxy in your GitHub Actions workflows. This allows you to reuse the Dev Proxy installation and speed up your workflow."
 date: "2024-03-28T07:16:59.209Z"
 lastmod: "2024-03-28T07:16:59.700Z"
-preview: "/social/1b9ac592-1bcd-4cc1-adda-134a68e4b434.png"
+preview: "/social/27c6ec4f-18df-49d2-842d-f10ad7d61062.png"
 draft: false
 comments: true
 tags:

@@ -1,18 +1,18 @@
 ---
-title: Render your Astro markdown content for your overviews
+title: "Render your Astro markdown content for your overviews"
 longTitle: ""
 customField: ""
-slug: /render-astro-markdown-content-overviews/
-description: Learn how to easily render your Astro markdown content for overviews using Astro.glob() in this blog post.
-date: 2023-07-13T13:16:03.235Z
-lastmod: 2023-07-13T13:16:03.235Z
-preview: /social/b7dbff0d-5a7f-4014-80fb-7092e4264bc3.png
+slug: "/render-astro-markdown-content-overviews/"
+description: "Learn how to easily render your Astro markdown content for overviews using Astro.glob() in this blog post."
+date: "2023-07-13T13:16:03.235Z"
+lastmod: "2023-07-13T13:16:03.235Z"
+preview: "/social/f0812b4c-57ab-487e-be26-1f0caa7197eb.png"
 draft: false
 comments: true
 tags:
-  - Astro
-  - Markdown
-type: post
+  - "Astro"
+  - "Markdown"
+type: "post"
 ---
 
 I wanted to create a roll-up of the latest news articles on our new BIWUG community site (which still needs to be released).

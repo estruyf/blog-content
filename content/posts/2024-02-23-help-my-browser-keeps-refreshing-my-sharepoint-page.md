@@ -1,20 +1,20 @@
 ---
-title: "Help my browser keeps refreshing my SharePoint page"
+title: Help my browser keeps refreshing my SharePoint page
 longTitle: ""
 customField: ""
-slug: "/browser-refreshing-sharepoint-page/"
-description: "Learn how to fix your SharePoint page from going into an endless refreshing loop when third-party cookies are blocked."
-date: "2024-02-23T14:05:23.917Z"
-lastmod: "2024-02-23T14:05:24.546Z"
-preview: "/social/70ff43c9-0b10-4298-9304-68372e0db3e8.png"
+slug: /browser-refreshing-sharepoint-page/
+description: Learn how to fix your SharePoint page from going into an endless refreshing loop when third-party cookies are blocked.
+date: 2024-02-23T14:05:23.917Z
+lastmod: 2024-02-23T14:05:24.546Z
+preview: /social/eaf88734-f879-4e93-aaee-21e47dc6f67b.png
 draft: false
 comments: true
 tags:
-  - "Browsers"
-  - "Cookies"
-  - "SharePoint"
-  - "Troubleshooting"
-type: "post"
+  - Browsers
+  - Cookies
+  - SharePoint
+  - Troubleshooting
+type: post
 ---
 
 One of my customers reported that their SharePoint page kept refreshing in Firefox. While investigating the issue, it turned out it was an issue with the Microsoft Graph permission scope that was missing.

@@ -6,7 +6,7 @@ slug: /test-unexpected-api-results-playwright-mocking/
 description: "Test unexpected API results with Playwright mocking: Simulate server issues, throttling, ... to make sure your application handles it as expected."
 date: 2023-08-25T14:22:30.885Z
 lastmod: 2023-08-25T14:22:31.365Z
-preview: /social/ff73356c-b231-4ecc-986f-fa6e563b49fb.png
+preview: /social/520b8d94-5990-49f9-bdd9-9b4cd9230623.png
 draft: false
 comments: true
 tags:

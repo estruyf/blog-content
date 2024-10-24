@@ -1,19 +1,19 @@
 ---
-title: How a broken vertebra got me healthier working from home
-slug: /broken-vertebra-healthier-working-home/
-author: Elio Struyf
-type: post
-date: '2021-09-24T10:07:15.875Z'
-lastmod: '2021-09-24T10:07:16.271Z'
+title: "How a broken vertebra got me healthier working from home"
+slug: "/broken-vertebra-healthier-working-home/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-09-24T10:07:15.875Z"
+lastmod: "2021-09-24T10:07:16.271Z"
 draft: false
 tags:
-  - walking
-  - wfh
-  - treadmill
+  - "walking"
+  - "wfh"
+  - "treadmill"
 categories: []
 comments: true
-description: 'In June 2021, I broke a vertebra and was only allowed to walk or rest. While sitting was painful, I bought a treadmill and started working while walking.'
-preview: /social/e0e6ccf7-ce17-4e55-82e3-56397ef302aa.png
+description: "In June 2021, I broke a vertebra and was only allowed to walk or rest. While sitting was painful, I bought a treadmill and started working while walking."
+preview: "/social/40f53f39-dea0-4aad-a2a4-4111cf64d6f5.png"
 ---
 
 Catchy title, isn't it? Well, actually, it really happened. Let us go back to June 6th, 2021. I was cycling with a couple of people, wherein in an unfortunate circumstance, the rider in front of me accidentally hit me while he moved to the middle of the road. In the move he made, he took my front wheel with his back wheel, and I hit the road pretty hard with the right side.

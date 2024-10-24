@@ -6,7 +6,7 @@ slug: "/github-project-webhooks-manage-labeling-issues/"
 description: "Learn how to automate project management using GitHub Project webhooks for labeling issues."
 date: "2024-02-12T08:40:39.063Z"
 lastmod: "2024-02-12T08:40:39.063Z"
-preview: "/social/f5d98ac3-fbdb-4bae-90ee-9c09ac9904b5.png"
+preview: "/social/0af95894-048e-49b8-ae7c-14863d59d6a6.png"
 draft: false
 comments: true
 tags:

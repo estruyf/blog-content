@@ -1,19 +1,19 @@
 ---
-title: "Dispatch a GitHub Action workflow with script action"
-longTitle: "Dispatch a GitHub Action workflow with Github script action"
+title: Dispatch a GitHub Action workflow with script action
+longTitle: Dispatch a GitHub Action workflow with Github script action
 customField: ""
-slug: "/dispatch-github-action-workflow-script-action/"
-description: "Learn how to use the `repository_dispatch` event in GitHub Actions to trigger a workflow with a webhook."
-date: "2024-07-10T11:05:11.830Z"
-lastmod: "2024-07-10T11:05:11.830Z"
-preview: "/social/403997f3-3f84-4795-87dc-452bb11c6d55.png"
+slug: /dispatch-github-action-workflow-script-action/
+description: Learn how to use the `repository_dispatch` event in GitHub Actions to trigger a workflow with a webhook.
+date: 2024-07-10T11:05:11.830Z
+lastmod: 2024-07-10T11:05:11.830Z
+preview: /social/67a2998b-5e1d-4b7f-b8bb-a5133f98a173.png
 draft: false
 comments: true
 tags:
-  - "GitHub Actions"
-  - "GitHub"
-type: "post"
-fmContentType: "post"
+  - GitHub Actions
+  - GitHub
+type: post
+fmContentType: post
 ---
 
 You can use the GitHub Actions workflow `repository_dispatch` event trigger to start a workflow by triggering a webhook. 

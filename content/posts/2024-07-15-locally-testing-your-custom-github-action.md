@@ -6,7 +6,7 @@ slug: "/locally-testing-custom-github-action/"
 description: "Learn how to locally test and run your custom GitHub Action using the @github/local-action command-line tool with this step-by-step guide."
 date: "2024-07-16T09:05:40.297Z"
 lastmod: "2024-07-16T09:05:40.763Z"
-preview: "/social/f674312b-e6a2-4f93-94f3-5d3978755cdf.png"
+preview: "/social/bfe5bdbc-fc6f-446e-9edc-1bf8ec186309.png"
 draft: false
 comments: true
 tags:

@@ -6,7 +6,7 @@ slug: /future-documentation-ready-change/
 description: Discover the latest advancements in documentation technology and how tools like GitHub Copilot for Docs, Mendable, and OpenAI are changing the game.
 date: 2023-03-23T07:41:15.181Z
 lastmod: 2023-03-23T07:41:15.181Z
-preview: /social/c3af868f-5e8b-419c-9797-71da58904a7a.png
+preview: /social/176abae2-64b0-4196-954e-b4b52a2333bb.png
 draft: false
 comments: true
 tags:

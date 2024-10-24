@@ -1,21 +1,20 @@
 ---
 title: "#DevHack: Fetching sponsors via the GitHub GraphQL API"
-date: 2022-02-24T11:36:20.956Z
+date: "2022-02-24T11:36:20.956Z"
 draft: false
-type: post
-description: In this article Elio explains how you can retrieve your sponsors for your
-  open-source projects via the GitHub GraphQL API.
-lastmod: 2022-02-24T11:36:20.956Z
+type: "post"
+description: "In this article Elio explains how you can retrieve your sponsors for your open-source projects via the GitHub GraphQL API."
+lastmod: "2022-02-24T11:36:20.956Z"
 tags:
-  - Development
-  - GitHub
-  - GraphQL
-  - API
+  - "Development"
+  - "GitHub"
+  - "GraphQL"
+  - "API"
 categories: ""
-slug: /devhack-fetching-sponsors-github-graphql-api/
+slug: "/devhack-fetching-sponsors-github-graphql-api/"
 keywords:
-  - graphql
-preview: /social/400285cf-4928-4c07-8ca5-158f249a3bc1.png
+  - "graphql"
+preview: "/social/4685d700-3dde-4029-87db-6bb44a492b0e.png"
 comments: true
 ---
 

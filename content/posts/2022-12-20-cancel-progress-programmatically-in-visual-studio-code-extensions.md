@@ -2,11 +2,10 @@
 title: Cancel progress programmatically in VS Code extensions
 longTitle: Cancel progress programmatically in Visual Studio Code extensions
 slug: /cancel-progress-programmatically-visual-studio-code-extensions/
-description: In this article, Elio explains how you can create your cancellation token with
-  the CancellationTokenSource class to cancel the progress programmatically.
+description: In this article, Elio explains how you can create your cancellation token with the CancellationTokenSource class to cancel the progress programmatically.
 date: 2022-12-20T08:17:47.202Z
 lastmod: 2022-12-20T08:17:47.202Z
-preview: /social/a91e15fd-a9c4-4fb2-ac17-e6d070376583.png
+preview: /social/7c53ad42-64a9-48e5-9c41-1a231bad7799.png
 draft: false
 comments: true
 tags:

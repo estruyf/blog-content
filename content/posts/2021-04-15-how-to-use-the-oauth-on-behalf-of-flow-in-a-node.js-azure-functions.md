@@ -13,7 +13,7 @@ tags:
   - Azure AD
 categories: []
 comments: true
-preview: "/social/fa822456-1832-44ef-972a-3729c68ea5a2.png"
+preview: /social/b79b073c-45ed-4c46-860f-6aee43ae2de2.png
 ---
 
 While implementing a couple of Azure Functions, I needed to use the [OAuth 2.0 On-Behalf-Of flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow). With this flow, you can allow, for instance, an API to perform tasks on your behalf. This flow is great when you want to offload some of the work from the front-end or perform additional calls on the back-end when processing data.

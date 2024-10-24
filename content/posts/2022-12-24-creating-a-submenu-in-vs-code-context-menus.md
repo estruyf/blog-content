@@ -1,19 +1,18 @@
 ---
 title: "Creating a Submenu in VS Code: A Step-by-Step Guide"
 longTitle: ""
-slug: /creating-submenu-code-step-step-guide/
-description: In this article, Elio explains how to create a submenu in your Visual Studio
-  Code context menus to make these less cluttered.
-date: 2023-01-24T10:44:49.047Z
-lastmod: 2023-01-24T10:44:50.590Z
-preview: /social/88eba977-0e83-40ee-93e2-eab30b2222ba.png
+slug: "/creating-submenu-code-step-step-guide/"
+description: "In this article, Elio explains how to create a submenu in your Visual Studio Code context menus to make these less cluttered."
+date: "2023-01-24T10:44:49.047Z"
+lastmod: "2023-01-24T10:44:50.590Z"
+preview: "/social/4b2202ea-339c-48aa-974f-db2de7ebff44.png"
 draft: false
 comments: true
 tags:
-  - Development
-  - VSCode
-  - Extensions
-type: post
+  - "Development"
+  - "VSCode"
+  - "Extensions"
+type: "post"
 ---
 
 While creating a session about Visual Studio Code extension development, I discovered that creating a submenu in the context menus is possible. These submenus are a great way to make the context menus less cluttered and easier to use.

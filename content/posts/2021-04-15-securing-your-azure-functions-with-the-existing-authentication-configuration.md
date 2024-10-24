@@ -1,18 +1,18 @@
 ---
-title: Securing your Azure Functions with an existing Azure AD app
-slug: /securing-azure-functions-existing-azure-ad-app/
-author: Elio Struyf
-type: post
-date: 2021-04-15T14:47:07.155Z
+title: "Securing your Azure Functions with an existing Azure AD app"
+slug: "/securing-azure-functions-existing-azure-ad-app/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-04-15T14:47:07.155Z"
 draft: false
 tags:
-  - Azure
-  - Azure AD
-  - Authentication
-  - OAuth
+  - "Azure"
+  - "Azure AD"
+  - "Authentication"
+  - "OAuth"
 categories: []
 comments: true
-preview: "/social/d8a6626d-9577-47be-bbff-a24fec84005d.png"
+preview: "/social/9e514a26-1116-4961-bb72-b4fa471ba13c.png"
 ---
 
 This article continues the previous article about using the OAuth On-Behalf-Of flow in your Azure Functions. In the last article, the Azure Function only verifies the JWT Token, and if valid, uses it to request an access token and get data on your behalf.

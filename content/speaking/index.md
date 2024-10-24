@@ -7,7 +7,7 @@ url: /speaking/
 menu:
   main:
     weight: 2
-preview: /social/ed92cc3e-e397-477e-bb41-26aa62e056e2.png
+preview: /social/ac28eeb0-c717-4292-8ecf-4e5d1553c68c.png
 description: Elio is a frequent Microsoft-related community event speaker, focusing on topics around M365, GitHub, E2E Testing, Azure, DevOps & more.
 ---
 

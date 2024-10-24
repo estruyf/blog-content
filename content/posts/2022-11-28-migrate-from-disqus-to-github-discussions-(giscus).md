@@ -1,19 +1,18 @@
 ---
-title: Migrate from Disqus to GitHub Discussions (giscus)
-longTitle: ""
-slug: /migrate-disqus-github-discussions-giscus/
-description: In this article, Elio explains how he migrated from Disqus to GitHub
-  Discussions and how you can do so.
-date: 2022-11-28T11:15:08.015Z
-lastmod: 2022-11-28T11:15:08.015Z
-preview: /social/2668ed7d-8e88-429a-a1dc-9342690fa45b.png
+title: "Migrate from Disqus to GitHub Discussions (giscus)"
+date: "2022-11-28T11:15:08.015Z"
 draft: false
+type: "post"
+description: "In this article, Elio explains how he migrated from Disqus to GitHub Discussions and how you can do so."
+lastmod: "2022-11-28T11:15:08.015Z"
+preview: "/social/39965f7c-c16c-495e-8eb1-8862b416d327.png"
 comments: true
 tags:
-  - GitHub
-  - GitHub Discussions
-  - migration
-type: post
+  - "GitHub"
+  - "GitHub Discussions"
+  - "migration"
+slug: "/migrate-disqus-github-discussions-giscus/"
+longTitle: ""
 ---
 
 For years I have been using Disqus on my blog, and for a long time, I have been looking for a good alternative that would fit into the daily tools. Another reason why I wanted to move away from Disqus is because of their tracking and ads.

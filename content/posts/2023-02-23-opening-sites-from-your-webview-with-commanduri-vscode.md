@@ -1,20 +1,19 @@
 ---
-title: Use command URI in a VSCode webview to open files and links
-longTitle: Use command URI in a Visual Studio Code webview to open files and links
-slug: /command-uri-vscode-webview-open-files-links/
-description: In this article, Elio shows how to use command URI to open files and links in
-  a webview from a Visual Studio Code extension.
-date: 2023-02-23T11:26:20.326Z
-lastmod: 2023-02-23T11:26:20.823Z
-preview: /social/eaa12c42-52f3-48a3-be75-f316a735c802.png
+title: "Use command URI in a VSCode webview to open files and links"
+longTitle: "Use command URI in a Visual Studio Code webview to open files and links"
+slug: "/command-uri-vscode-webview-open-files-links/"
+description: "In this article, Elio shows how to use command URI to open files and links in a webview from a Visual Studio Code extension."
+date: "2023-02-23T11:26:20.326Z"
+lastmod: "2023-02-23T11:26:20.823Z"
+preview: "/social/a3bd32ca-432f-4a55-8c22-4a470f5d3afe.png"
 draft: false
 comments: true
 tags:
-  - Development
-  - Visual Studio Code
-  - VSCode
-  - Extensions
-type: post
+  - "Development"
+  - "Visual Studio Code"
+  - "VSCode"
+  - "Extensions"
+type: "post"
 ---
 
 If you work with webviews, you may want to open a link to a website or file within the same instance of Visual Studio Code. There are a couple of ways to achieve this, such as posting a message to the extension host or using the command URI option of your webview.

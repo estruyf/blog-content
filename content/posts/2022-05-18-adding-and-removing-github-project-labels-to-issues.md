@@ -1,11 +1,10 @@
 ---
 title: Adding or deleting GitHub project (classic) labels on issues
 longTitle: ""
-description: In this article, Elio explains how you can use GitHub Actions to automatically
-  add or delete project labels to issues when you add, move, or delete.
+description: In this article, Elio explains how you can use GitHub Actions to automatically add or delete project labels to issues when you add, move, or delete.
 date: 2022-05-18T14:57:42.798Z
 lastmod: 2022-05-18T14:57:42.288Z
-preview: /social/13ab1cc9-7ef3-4e1d-8e18-9945136f931e.png
+preview: /social/4afb7f9b-8819-4434-9203-125d7ee8ccda.png
 draft: false
 comments: true
 tags:

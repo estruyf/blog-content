@@ -1,11 +1,10 @@
 ---
 title: How to use the Microsoft auth provider in Visual Studio Code
 longTitle: How to use the Microsoft authentication provider in Visual Studio Code
-description: In this article, Elio explains how you can use the Microsoft authentication
-  provider in your extensions.
+description: In this article, Elio explains how you can use the Microsoft authentication provider in your extensions.
 date: 2022-04-27T13:44:07.529Z
 lastmod: 2022-04-27T13:44:08.012Z
-preview: /social/b786a94f-6381-4e90-bd9d-cf8440411918.png
+preview: /social/b3b8b581-fbd6-454c-9d5b-95ef76d39712.png
 draft: false
 comments: true
 type: post

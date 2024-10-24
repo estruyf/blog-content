@@ -1,18 +1,17 @@
 ---
-title: Open your VSCode extension walkthrough from a command
-longTitle: Open your Visual Studio Code extension walkthrough from a command
-slug: /open-vscode-extension-walkthrough-command/
-description: In this article Elio explains how you can open your Visual Studio Code
-  extension walkthrough from a custom command.
-date: 2022-07-25T14:17:07.364Z
-lastmod: 2022-07-25T14:17:08.214Z
-preview: /social/42636139-7632-4229-a62d-cbe23ea1beb5.png
+title: "Open your VSCode extension walkthrough from a command"
+longTitle: "Open your Visual Studio Code extension walkthrough from a command"
+description: "In this article Elio explains how you can open your Visual Studio Code extension walkthrough from a custom command."
+date: "2022-07-25T14:17:07.364Z"
+lastmod: "2022-07-25T14:17:08.214Z"
+preview: "/social/7c738dac-3af9-407a-88f9-6f9eac5ce2cf.png"
 draft: false
 comments: true
 tags:
-  - VSCode
-  - Extensions
-type: post
+  - "VSCode"
+  - "Extensions"
+type: "post"
+slug: "/open-vscode-extension-walkthrough-command/"
 ---
 
 A great feature that allows your users to get familiar with your extension is the ability for you to create [walkthroughs](https://code.visualstudio.com/api/ux-guidelines/walkthroughs).

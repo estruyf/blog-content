@@ -1,21 +1,21 @@
 ---
-title: '#DevHack: How to rename a file from a VSCode extension'
-slug: /devhack-rename-file-vscode-extension/
-author: Elio Struyf
-description: 'In this DevHack we will learn how to rename a file from a vscode extension. If you are looking for a simple appraoch, this will be the one to use.'
-type: post
-date: '2021-08-16T12:32:56.873Z'
-lastmod: '2021-08-16T12:32:58.313Z'
+title: "#DevHack: How to rename a file from a VSCode extension"
+slug: "/devhack-rename-file-vscode-extension/"
+author: "Elio Struyf"
+description: "In this DevHack we will learn how to rename a file from a vscode extension. If you are looking for a simple appraoch, this will be the one to use."
+type: "post"
+date: "2021-08-16T12:32:56.873Z"
+lastmod: "2021-08-16T12:32:58.313Z"
 draft: false
 tags:
-  - Extensions
-  - VSCode
-  - Development
+  - "Extensions"
+  - "VSCode"
+  - "Development"
 categories: []
 comments: true
 keywords:
-  - rename
-preview: "/social/06cb09c8-e6ed-4595-8047-b577dc45c061.png"
+  - "rename"
+preview: "/social/a8a88bd7-1f78-4308-b995-ffc4259cebf6.png"
 ---
 
 Renaming a file is something that we do very often, but in my case, I wanted to do it from within a Visual Studio Code extension. When I first looked at the APIs and available documentation, I found the `vscode.executeDocumentRenameProvider` command and `RenameProvider`.

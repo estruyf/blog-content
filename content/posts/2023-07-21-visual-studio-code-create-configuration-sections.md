@@ -6,7 +6,7 @@ slug: /splitting-vscode-extension-settings-multiple-categories/
 description: Organize Visual Studio Code extension settings into multiple categories for a better overview and easier configuration with this guide.
 date: 2023-07-22T22:03:10.444Z
 lastmod: 2023-07-22T22:03:09.856Z
-preview: /social/fe6a7b8a-17e9-4089-8a17-651c4593adcd.png
+preview: /social/700e8874-44a2-4580-941d-7d7cbb35540c.png
 draft: false
 comments: true
 tags:

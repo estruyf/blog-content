@@ -6,7 +6,7 @@ slug: "/dev-proxy-github-actions-workflow-macos/"
 description: "Learn how to use Dev Proxy in a GitHub Actions workflow on macOS hosted VM for intercepting and inspecting your API calls"
 date: "2024-03-26T08:15:17.760Z"
 lastmod: "2024-03-26T08:15:18.374Z"
-preview: "/social/00c21f36-38b0-42d3-a838-9ae6fc4ae65b.png"
+preview: "/social/bdb07aff-431c-4587-a94b-88cf5b061dad.png"
 draft: false
 comments: true
 tags:

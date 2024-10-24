@@ -1,20 +1,20 @@
 ---
-title: End-to-End Test Microsoft 365 Solutions with Playwright
+title: "End-to-End Test Microsoft 365 Solutions with Playwright"
 longTitle: ""
 customField: ""
-slug: /test-microsoft-365-solutions-playwright/
-description: This article explains how you can make use of Playwright to end-to-end test your Microsoft 365 (SharePoint & Microsoft Teams) solutions.
-date: 2023-08-24T14:13:30.235Z
-lastmod: 2023-08-24T14:13:30.693Z
-preview: /social/f3ffc004-6dea-4e3b-9ba7-96e3fccedec7.png
+slug: "/test-microsoft-365-solutions-playwright/"
+description: "This article explains how you can make use of Playwright to end-to-end test your Microsoft 365 (SharePoint & Microsoft Teams) solutions."
+date: "2023-08-24T14:13:30.235Z"
+lastmod: "2023-08-24T14:13:30.693Z"
+preview: "/social/b52a2991-8723-4b74-88ac-59bb8ecf56a9.png"
 draft: false
 comments: true
 tags:
-  - E2E
-  - Microsoft 365
-  - Playwright
-  - Testing
-type: post
+  - "E2E"
+  - "Microsoft 365"
+  - "Playwright"
+  - "Testing"
+type: "post"
 ---
 
 In the past, I have written a couple of articles about end-to-end (E2E) testing your SharePoint/Microsoft Teams solutions with Cypress, Puppeteer, and Playwright. I was a big fan of Cypress, but I must admit that Playwright caught up and became my favorite tool for E2E testing.

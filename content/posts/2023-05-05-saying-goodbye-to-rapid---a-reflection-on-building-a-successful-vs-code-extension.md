@@ -6,7 +6,7 @@ slug: /goodbye-rapid-reflection-building-successful-code-extension/
 description: This blog post reflects on the author's experience at Rapid and building a successful VS Code extension. It's a heartfelt goodbye and a reminder to keep smiling
 date: 2023-05-05T13:46:01.806Z
 lastmod: 2023-05-05T13:46:01.806Z
-preview: /social/768038f8-cde9-4fe7-92a9-7d7edbbe009d.png
+preview: /social/032ffd60-82a8-4562-be81-6d7ff154c79d.png
 draft: false
 comments: true
 tags:

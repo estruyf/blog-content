@@ -1,21 +1,21 @@
 ---
-title: "Automating M365 login with MFA in Playwright tests"
-longTitle: "Automating Microsoft 365 login with multi-factor authentication in Playwright tests"
+title: Automating M365 login with MFA in Playwright tests
+longTitle: Automating Microsoft 365 login with multi-factor authentication in Playwright tests
 customField: ""
-slug: "/automating-microsoft-365-login-mfa-playwright-tests/"
-description: "Learn how to automate the login process for Microsoft 365 with multi-factor authentication (MFA) using Playwright in this informative blog post."
-date: "2024-07-24T10:13:18.887Z"
-lastmod: "2024-07-24T10:13:19.398Z"
-preview: "/social/88ad9d27-c47e-44dc-92ab-8db7adfe7f48.png"
+slug: /automating-microsoft-365-login-mfa-playwright-tests/
+description: Learn how to automate the login process for Microsoft 365 with multi-factor authentication (MFA) using Playwright in this informative blog post.
+date: 2024-07-24T10:13:18.887Z
+lastmod: 2024-07-24T10:13:19.398Z
+preview: /social/19f939a2-8267-4581-8627-008644750eb1.png
 draft: false
 comments: true
 tags:
-  - "Automation"
-  - "M365"
-  - "MFA"
-  - "Playwright"
-type: "post"
-fmContentType: "post"
+  - Automation
+  - M365
+  - MFA
+  - Playwright
+type: post
+fmContentType: post
 ---
 
 I have been using Playwright to automate my tests for a long time, but one thing I struggled with was automating the login flow for Microsoft 365 with a multi-factor authentication (MFA) account. When using an MFA-enabled account, you must provide an additional manual step to complete the login process.

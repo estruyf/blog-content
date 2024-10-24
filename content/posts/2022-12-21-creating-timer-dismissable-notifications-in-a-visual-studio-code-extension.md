@@ -2,11 +2,10 @@
 title: Creating timer dismissable notifications in VS Code
 longTitle: Creating timer dismissable notifications in a Visual Studio Code extension
 slug: /creating-timer-dismissable-notifications-visual-studio-code-extension/
-description: In this article, Elio explains how you can create timer dismissable
-  notifications for your Visual Studio Code extensions.
+description: In this article, Elio explains how you can create timer dismissable notifications for your Visual Studio Code extensions.
 date: 2022-12-21T10:07:13.055Z
 lastmod: 2022-12-21T10:07:13.055Z
-preview: /social/f549894b-f138-46af-9fc1-c69a47da9c32.png
+preview: /social/69f31014-02a8-46a7-a85a-bbfdc0cadd4c.png
 draft: false
 comments: true
 tags:

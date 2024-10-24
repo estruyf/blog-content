@@ -1,21 +1,20 @@
 ---
-title: Create an Authentication Provider for Visual Studio Code
-description: In this article, Elio explains how you can build your own authentication
-  provider to be used in a Visual Studio Code extension.
-date: 2022-04-28T13:36:48.709Z
-lastmod: 2022-04-28T13:36:49.242Z
-preview: /social/9a6a5e2e-c8d8-413c-a81d-34ede943195f.png
+title: "Create an Authentication Provider for Visual Studio Code"
+description: "In this article, Elio explains how you can build your own authentication provider to be used in a Visual Studio Code extension."
+date: "2022-04-28T13:36:48.709Z"
+lastmod: "2022-04-28T13:36:49.242Z"
+preview: "/social/69a1c7c5-3122-47df-a087-e8679d68e6c0.png"
 draft: false
 comments: true
 tags:
-  - Authentication
-  - Development
-  - VSCode
-  - OAuth
-  - Auth0
-type: post
+  - "Authentication"
+  - "Development"
+  - "VSCode"
+  - "OAuth"
+  - "Auth0"
+type: "post"
 longTitle: ""
-slug: /create-authentication-provider-visual-studio-code/
+slug: "/create-authentication-provider-visual-studio-code/"
 ---
 
 Previously I wrote how you could use the Microsoft Authentication Provider in your Visual Studio Code extension to custom Azure AD applications. In this article, we go a step further and create our authentication provider from scratch. As 

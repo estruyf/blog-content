@@ -1,11 +1,10 @@
 ---
 title: Opening folders in Visual Studio Code from an extension
 longTitle: ""
-description: In this article, Elio explains how you can open a project folder or workspace
-  from your extension' code for macOS, Linux, and Windows.
+description: In this article, Elio explains how you can open a project folder or workspace from your extension' code for macOS, Linux, and Windows.
 date: 2022-06-02T10:18:41.146Z
 lastmod: 2022-06-02T10:18:41.513Z
-preview: /social/b64751c9-abda-4a48-b9c3-c793d86f1d32.png
+preview: /social/f55a353a-9720-4181-83f1-c1db56724071.png
 draft: false
 comments: true
 tags:

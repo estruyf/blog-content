@@ -6,7 +6,7 @@ slug: /leveraging-astro-react-app-performance-boost/
 description: "Boost React app performance using Astro: Learn how to split datasets, leverage Astro's routing mechanism, and optimize page sizes for faster performance."
 date: 2023-07-13T09:23:46.654Z
 lastmod: 2023-07-13T09:23:46.654Z
-preview: /social/485365ae-b860-4a90-a3ef-3f6c0c39b7a2.png
+preview: /social/b9390ec4-e893-4633-b28e-3712471b69e5.png
 draft: false
 comments: true
 tags:

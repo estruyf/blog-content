@@ -1,18 +1,18 @@
 ---
-title: Microsoft Graph Essentials extension released for VSCode
-slug: /microsoft-graph-essentials-extension-released-vscode/
-author: Elio Struyf
-type: post
-date: 2021-03-31T19:00:06.555Z
+title: "Microsoft Graph Essentials extension released for VSCode"
+slug: "/microsoft-graph-essentials-extension-released-vscode/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-03-31T19:00:06.555Z"
 draft: false
 tags:
-  - Extensions
-  - Microsoft Graph
-  - VSCode
-  - Microsoft Graph Toolkit
+  - "Extensions"
+  - "Microsoft Graph"
+  - "VSCode"
+  - "Microsoft Graph Toolkit"
 categories: []
 comments: true
-preview: "/social/423972d9-0fe4-4646-8b09-2f7f2259735e.png"
+preview: "/social/14588c27-98ad-449f-a238-694184aadecb.png"
 ---
 
 Recently I started working more and more with the Microsoft Graph again and the related toolkit. While I began to use a couple of the Microsoft Graph Toolkit (MGT) components, I wanted to change the styling a bit and add some custom templates. I noticed that there was not yet a Visual Studio Code extension that helps you with building apps with MGT.

@@ -4,8 +4,8 @@ slug: /demystify-microsoft-viva-connections-extensibility-model/
 description: Are testing out the extensibility model of Viva Connections but are a bit confused about all the components? Read this article to get a better understanding.
 author: Elio Struyf
 type: post
-date: '2021-08-20T11:47:29.549Z'
-lastmod: '2021-08-20T11:47:29.549Z'
+date: 2021-08-20T11:47:29.549Z
+lastmod: 2021-08-20T11:47:29.549Z
 draft: false
 tags:
   - SharePoint Framework
@@ -14,7 +14,7 @@ tags:
   - Development
 categories: []
 comments: true
-preview: /social/ecda9477-7ebb-476a-b3e2-a885a234daab.png
+preview: /social/d1c61df0-c2bc-4328-ae82-5a794f171def.png
 keywords:
   - Viva Connections
 ---

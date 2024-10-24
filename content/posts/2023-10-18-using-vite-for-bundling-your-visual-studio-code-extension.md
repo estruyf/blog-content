@@ -1,21 +1,21 @@
 ---
-title: Using Vite for bundling your Visual Studio Code extension
+title: "Using Vite for bundling your Visual Studio Code extension"
 longTitle: ""
 customField: ""
-slug: /vite-bundling-visual-studio-code-extension/
-description: Learn how you can use Vite to generate a bundle for your Visual Studio Code extension.
-date: 2023-10-18T09:25:27.699Z
-lastmod: 2023-10-18T09:25:28.749Z
-preview: /social/6fc66731-3850-4241-b28b-fec6636a430a.png
+slug: "/vite-bundling-visual-studio-code-extension/"
+description: "Learn how you can use Vite to generate a bundle for your Visual Studio Code extension."
+date: "2023-10-18T09:25:27.699Z"
+lastmod: "2023-10-18T09:25:28.749Z"
+preview: "/social/4b98a7fc-176b-416d-aef3-55a97f3373cb.png"
 draft: false
 comments: true
 tags:
-  - Bundling
-  - Development
-  - Extensions
-  - Visual Studio Code
-  - Vite
-type: post
+  - "Bundling"
+  - "Development"
+  - "Extensions"
+  - "Visual Studio Code"
+  - "Vite"
+type: "post"
 ---
 
 {{< blockquote type="important" text="The `CJS` build of Vite’s Node API is no longer supported and will be removed in version 6. As Visual Studio Code extensions do not support ESM, my recommendation is use an alternative bundler such as `webpack`, `tsup`, or `esbuild` instead of Vite." >}}

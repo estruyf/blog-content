@@ -1,18 +1,17 @@
 ---
-title: How to callback to your extension from outside VS Code
-longTitle: How to callback to your extension from outside Visual Studio Code
-description: In this article, Elio explains how you can create a callback URL that triggers
-  your extension. This allows you to process files, open web pages, and more
-date: 2022-05-05T09:36:14.505Z
-lastmod: 2022-05-05T09:36:14.892Z
-preview: /social/fec04b61-b30f-4d75-bd41-9b999d3dbddb.png
+title: "How to callback to your extension from outside VS Code"
+longTitle: "How to callback to your extension from outside Visual Studio Code"
+description: "In this article, Elio explains how you can create a callback URL that triggers your extension. This allows you to process files, open web pages, and more"
+date: "2022-05-05T09:36:14.505Z"
+lastmod: "2022-05-05T09:36:14.892Z"
+preview: "/social/6a58f044-2e48-4b84-9c34-a34d7effd423.png"
 draft: false
 comments: true
 tags:
-  - Development
-  - VSCode
-type: post
-slug: /callback-extension-vscode/
+  - "Development"
+  - "VSCode"
+type: "post"
+slug: "/callback-extension-vscode/"
 ---
 
 While creating the authentication provider, I discovered a helpful handler in the Visual Studio Code API, which allows you to handle system-wide URIs and callback into your extension.

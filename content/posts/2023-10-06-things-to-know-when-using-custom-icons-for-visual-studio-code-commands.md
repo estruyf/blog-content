@@ -1,20 +1,20 @@
 ---
-title: Things to know when using custom icons for VSCode commands
-longTitle: Things to know when using custom icons for Visual Studio Code commands
+title: "Things to know when using custom icons for VSCode commands"
+longTitle: "Things to know when using custom icons for Visual Studio Code commands"
 customField: ""
-slug: /custom-icons-visual-studio-code-commands/
-description: Learn the basics of using custom icons for VSCode commands and an important change in VSCode since version 1.83.0 how they are rendered.
-date: 2023-10-06T09:42:14.660Z
-lastmod: 2023-10-06T09:42:15.060Z
-preview: /social/2b57b02b-1767-4611-94b3-7ae620a4ae02.png
+slug: "/custom-icons-visual-studio-code-commands/"
+description: "Learn the basics of using custom icons for VSCode commands and an important change in VSCode since version 1.83.0 how they are rendered."
+date: "2023-10-06T09:42:14.660Z"
+lastmod: "2023-10-06T09:42:15.060Z"
+preview: "/social/52fe80ec-c2bb-4aa7-a2e6-d2685a131a13.png"
 draft: false
 comments: true
 tags:
-  - Development
-  - Icons
-  - VSCode
-  - Extensions
-type: post
+  - "Development"
+  - "Icons"
+  - "VSCode"
+  - "Extensions"
+type: "post"
 ---
 
 You can specify an icon when adding commands to your Visual Studio Code extension. These icons are rendered when you register the commands, such as the explorer title bar, document title bar, and more.

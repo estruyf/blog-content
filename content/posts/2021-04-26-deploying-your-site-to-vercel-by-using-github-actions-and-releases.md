@@ -11,7 +11,7 @@ tags:
   - Vercel
 categories: []
 comments: true
-preview: /social/0f7a26c0-8c91-465e-903c-dcb90b80befa.png
+preview: /social/c6808fb9-aeae-4886-8545-27ed8f31bee5.png
 ---
 
 One of my favorite hosting companies is [Vercel](https://vercel.com/) as they can provide simplicity and flexibility at the same time. I wanted to control my site's deployment process on Vercel entirely for a new product I am building.

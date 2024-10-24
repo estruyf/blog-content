@@ -6,7 +6,7 @@ slug: "/fix-admin-consent-sp-token-retrieval-flows-spfx/"
 description: "Learn how to fix admin consent issues with the  00000003-0000-0ff1-ce00-000000000000 SharePoint Entra App."
 date: "2024-04-22T11:23:02.324Z"
 lastmod: "2024-04-22T11:23:02.905Z"
-preview: "/social/ca540c88-fa1b-4afd-bd6d-a72fe04ff952.png"
+preview: "/social/d9a3aa96-35ef-4f9b-95e2-0d699ffac14b.png"
 draft: false
 comments: true
 tags:

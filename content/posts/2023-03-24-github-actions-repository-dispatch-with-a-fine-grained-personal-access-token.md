@@ -1,18 +1,18 @@
 ---
-title: Dispatch a GitHub Action via a fine-grained PAT
-longTitle: Dispatch a GitHub Action via a fine-grained Personal Access Token
-customField: ""
-slug: /dispatch-github-action-fine-grained-personal-access-token/
-description: In this article, Elio shows how to trigger a GitHub Action flow by using a fine-grained Personal Access Token and the repository dispatch trigger.
-date: 2023-03-24T13:21:56.269Z
-lastmod: 2023-03-24T13:21:56.269Z
-preview: /social/fd576af2-6e3b-4044-8416-4e094e62dd60.png
+title: "Dispatch a GitHub Action via a fine-grained PAT"
+slug: "/dispatch-github-action-fine-grained-personal-access-token/"
+description: "In this article, Elio shows how to trigger a GitHub Action flow by using a fine-grained Personal Access Token and the repository dispatch trigger."
+date: "2023-03-24T13:21:56.269Z"
+lastmod: "2023-03-24T13:21:56.269Z"
+preview: "/social/5f45c3c0-05a2-42a1-b63c-956bebc505e9.png"
 draft: false
 comments: true
 tags:
-  - GitHub
-  - GitHub Actions
-type: post
+  - "GitHub"
+  - "GitHub Actions"
+type: "post"
+longTitle: "Dispatch a GitHub Action via a fine-grained Personal Access Token"
+customField: ""
 ---
 
 Finally, I made a move with my blog to start using two repositories in production. One repository holds all the markdown content and assets, and another contains the content of my website. 

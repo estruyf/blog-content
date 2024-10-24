@@ -1,19 +1,19 @@
 ---
-title: "Using GitHub Copilot's LLM in your VS Code extension"
-longTitle: "Using GitHub Copilot's LLM in your Visual Studio Code extension"
+title: Using GitHub Copilot's LLM in your VS Code extension
+longTitle: Using GitHub Copilot's LLM in your Visual Studio Code extension
 customField: ""
-slug: "/github-copilot-llm-code-extension/"
-description: "Explore the integration of GitHub Copilot's LLM API in your VS Code extension to revolutionize your development workflow with AI."
-date: "2024-06-27T10:54:51.149Z"
-lastmod: "2024-06-27T10:54:51.149Z"
-preview: "/social/c7604590-df43-4780-89e9-38164c21a1ed.png"
+slug: /github-copilot-llm-code-extension/
+description: Explore the integration of GitHub Copilot's LLM API in your VS Code extension to revolutionize your development workflow with AI.
+date: 2024-06-27T10:54:51.149Z
+lastmod: 2024-06-27T10:54:51.149Z
+preview: /social/c3fea54f-fdb0-4ee5-8612-36d4c5a514a0.png
 draft: false
 comments: true
 tags:
-  - "API"
-  - "GitHub Copilot"
-  - "Visual Studio Code"
-type: "post"
+  - API
+  - GitHub Copilot
+  - Visual Studio Code
+type: post
 ---
 
 In the July 2024 release of Visual Studio Code, extension developers will be able to use GitHub Copilot's Language Model API (LLM) to their advantage by using the Language Model API. This new Language Model API (LLM) allows you to retrieve the available LLMs in Visual Studio Code and make requests.

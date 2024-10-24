@@ -1,22 +1,22 @@
 ---
-title: "Fix Azure Function Node.js GitHub Actions Windows workflow"
-longTitle: "Fix the Azure Function Node.js GitHub Actions Windows workflow"
+title: Fix Azure Function Node.js GitHub Actions Windows workflow
+longTitle: Fix the Azure Function Node.js GitHub Actions Windows workflow
 customField: ""
-slug: "/fix-azure-function-node-js-github-actions-windows-workflow/"
-description: "Fixing the Azure Function Node.js GitHub Actions Windows workflow to deploy only production dependencies and exclude the node_modules folder from the artifact."
-date: "2024-09-09T10:15:49.612Z"
-lastmod: "2024-09-09T10:15:49.613Z"
-preview: "/social/45802881-be4d-4f26-852d-0f917b9d4db0.png"
+slug: /fix-azure-function-node-js-github-actions-windows-workflow/
+description: Fixing the Azure Function Node.js GitHub Actions Windows workflow to deploy only production dependencies and exclude the node_modules folder from the artifact.
+date: 2024-09-09T10:15:49.612Z
+lastmod: 2024-09-09T10:15:49.613Z
+preview: /social/ca540f66-61df-4012-87ab-91f096283945.png
 draft: false
 comments: true
 tags:
-  - "Azure Functions"
-  - "CI/CD"
-  - "Deployment"
-  - "GitHub Actions"
-  - "Node.js"
-type: "post"
-fmContentType: "post"
+  - Azure Functions
+  - CI/CD
+  - Deployment
+  - GitHub Actions
+  - Node.js
+type: post
+fmContentType: post
 ---
 
 When deploying Node.js-based Azure Functions using GitHub Actions, you might face an issue with the Windows workflow. In the latest template, there is an issue in the build step where the `actions/upload-artifact` action fails to upload the artifact due to too many files. The problem is caused by the `node_modules` folder, which contains many files (even for a starter Azure Function project).

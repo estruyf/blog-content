@@ -1,20 +1,18 @@
 ---
-title: Handle links in the terminal from your VSCode extension
-longTitle: Handle links in the terminal from your Visual Studio Code extension
-description: In this article, Elio explains how you can handle links in the terminal by
-  your extension to allow these to be handled by your code instead of
-  navigating..
-date: 2022-06-16T14:35:37.026Z
-lastmod: 2022-06-16T14:35:37.577Z
-preview: /social/a2e6cac4-94c5-4fb3-bef1-6f14fe6ee40c.png
+title: "Handle links in the terminal from your VSCode extension"
+longTitle: "Handle links in the terminal from your Visual Studio Code extension"
+description: "In this article, Elio explains how you can handle links in the terminal by your extension to allow these to be handled by your code instead of navigating.."
+date: "2022-06-16T14:35:37.026Z"
+lastmod: "2022-06-16T14:35:37.577Z"
+preview: "/social/d90e3fe3-4d9f-4257-910f-4065b5b7fd4b.png"
 draft: false
 comments: true
 tags:
-  - Extensions
-  - VSCode
-  - Development
-type: post
-slug: /handle-links-in-the-terminal-from-your-vscode-extension/
+  - "Extensions"
+  - "VSCode"
+  - "Development"
+type: "post"
+slug: "/handle-links-in-the-terminal-from-your-vscode-extension/"
 ---
 
 For a while now, I have been thinking about a way to handle links shown in the Visual Studio Code terminal. By default, when you control/command + click on a link, you navigate to them, but in my case, I wanted to be able to handle the link in the extension.

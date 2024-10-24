@@ -1,21 +1,21 @@
 ---
-title: Managing my Hugo website with a content and asset submodule
+title: "Managing my Hugo website with a content and asset submodule"
 longTitle: ""
 customField: ""
-slug: /managing-hugo-website-content-asset-submodule/
-description: In this article, Elio shows you how he manages his Hugo website's content and assets by separating them into a submodule.
-date: 2023-03-29T07:30:56.835Z
-lastmod: 2023-03-29T07:30:57.377Z
-preview: /social/23da18ae-8755-44b4-bbe5-1c13a2426482.png
+slug: "/managing-hugo-website-content-asset-submodule/"
+description: "In this article, Elio shows you how he manages his Hugo website's content and assets by separating them into a submodule."
+date: "2023-03-29T07:30:56.835Z"
+lastmod: "2023-03-29T07:30:57.377Z"
+preview: "/social/3ca61152-439f-4ff8-80c2-23083e0d147f.png"
 draft: false
 comments: true
 tags:
-  - Assets
-  - Content Management
-  - git
-  - Hugo
-  - Submodule
-type: post
+  - "Assets"
+  - "Content Management"
+  - "git"
+  - "Hugo"
+  - "Submodule"
+type: "post"
 ---
 
 <iframe width="843" height="474" style="max-width:100%" src="https://www.youtube.com/embed/mO-JFM1wmjA" title="Managing my Hugo website with a content and asset submodule" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

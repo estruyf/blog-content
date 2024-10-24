@@ -5,7 +5,7 @@ slug: /creating-reusable-auth-provider-visual-studio-code/
 description: In this article, Elio explains how you can create a reusable authentication provider extension that you can leverage in all your extensions.
 date: 2022-09-12T13:54:20.792Z
 lastmod: 2022-09-12T13:54:21.287Z
-preview: /social/73f2d78a-2f2d-4d2e-882a-6ac398a9ce76.png
+preview: /social/25889665-20f5-4f91-b201-440206eccaf0.png
 draft: false
 comments: true
 tags:

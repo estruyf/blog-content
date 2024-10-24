@@ -1,5 +1,5 @@
 ---
-title: '#DevHack: Using Raycast to speed up my productivity'
+title: "#DevHack: Using Raycast to speed up my productivity"
 slug: /devhack-raycast-speed-productivity/
 author: Elio Struyf
 type: post
@@ -11,7 +11,7 @@ tags:
   - Raycast
 categories: []
 comments: true
-preview: "/social/d1986bd4-a5e8-4da9-98ed-a8f2e9875f61.png"
+preview: /social/ca3e5f46-273f-4aa2-84ff-81e4300e6292.png
 ---
 
 It does not happen often I write an article about a tool, but this time, I felt this tool deserved some extra attention.

@@ -1,5 +1,5 @@
 ---
-title: '#DevHack: Get the shared file info with Microsoft Graph'
+title: "#DevHack: Get the shared file info with Microsoft Graph"
 slug: /devhack-shared-file-info-microsoft-graph/
 author: Elio Struyf
 type: post
@@ -10,7 +10,7 @@ tags:
   - Sharing
 categories: []
 comments: true
-preview: "/social/fb75789e-3bd1-4d8b-98d8-6dcec3012c0e.png"
+preview: /social/90ae905f-66bb-4f1e-9250-4f34e32a5c0a.png
 ---
 
 When you copy and share links from files, it creates a URL from which you cannot determine which file it is. For Squarl, I wanted to find out which file was behind a shared link to show the information about the file.

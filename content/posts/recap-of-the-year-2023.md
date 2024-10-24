@@ -5,7 +5,7 @@ slug: "/ups-downs-recap-2023/"
 description: "Reflect on the highs and lows of 2023! In this article, Elio looks back at 2023 on his personal and work-related achievements and progress."
 date: "2023-12-21T11:03:44.571Z"
 lastmod: "2023-12-21T11:03:45.149Z"
-preview: "/social/bcca1165-c288-4f84-ba75-fb02a4e6d6cd.png"
+preview: "/social/525af1b4-9495-418f-b3ef-8b9c1a332a9c.png"
 draft: false
 comments: true
 tags:

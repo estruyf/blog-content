@@ -6,7 +6,7 @@ slug: "/developing-custom-plugins-microsoft-dev-proxy/"
 description: "Learn how to develop custom plugins for Microsoft's Dev Proxy. Extend the tool's functionality by intercepting API calls, modifying requests, and responses."
 date: "2024-03-28T10:13:29.802Z"
 lastmod: "2024-03-28T10:13:30.347Z"
-preview: "/social/6756ad2a-6834-4957-ad2e-f45f67a18671.png"
+preview: "/social/fdd6c6ec-cf4f-4b28-aa05-ae042aaab14f.png"
 draft: false
 comments: true
 tags:

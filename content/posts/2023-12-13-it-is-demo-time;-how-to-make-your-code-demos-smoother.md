@@ -6,7 +6,7 @@ slug: "/demo-time-live-code-demos-smoother/"
 description: "Discover how to make your live coding demos smoother and more efficient with the new Visual Studio Code Extension - Demo Time."
 date: "2023-12-13T08:44:26.741Z"
 lastmod: "2023-12-13T08:44:26.741Z"
-preview: "/social/db589ba8-9096-4a5b-9470-e946fbba421d.png"
+preview: "/social/6274a327-78f3-487a-8f83-058f8e37a635.png"
 draft: false
 comments: true
 tags:

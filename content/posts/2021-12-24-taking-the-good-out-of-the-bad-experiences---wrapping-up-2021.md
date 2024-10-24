@@ -1,16 +1,16 @@
 ---
-title: 'Taking the good out of the bad experiences, wrapping up 2021'
+title: Taking the good out of the bad experiences, wrapping up 2021
 slug: /good-bad-experiences-wrapping-2021/
 author: Elio Struyf
 type: post
-date: '2021-12-24T13:31:44.821Z'
-lastmod: '2021-12-24T13:31:44.403Z'
+date: 2021-12-24T13:31:44.821Z
+lastmod: 2021-12-24T13:31:44.403Z
 draft: false
 tags: []
 categories: []
 comments: true
 description: Read more about my personal experiences in the year 2021. Merry Christmas and best wishes for 2022.
-preview: /social/c727e988-bec7-4adc-9465-73407c5b2030.png
+preview: /social/41986baf-97c9-4277-bdbf-b0e7ec4e01cc.png
 ---
 
 What!? It is already the end of 2021! All I can say about 2021 is that life takes you to unexpected places.

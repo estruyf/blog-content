@@ -1,20 +1,18 @@
 ---
-title: Simplify Visual Studio Code extension webview communication
+title: "Simplify Visual Studio Code extension webview communication"
 longTitle: ""
-slug: /simplify-communication-visual-studio-code-extension-webview/
-description: In this article, Elio explains how you can simplify the communication flow
-  from your Visual Studio Code extension and its webview to wait for its
-  response.
-date: 2022-10-06T12:18:02.376Z
-lastmod: 2022-10-06T12:18:03.116Z
-preview: /social/33c78da8-d89d-442b-b59b-e971cfd29725.png
+slug: "/simplify-communication-visual-studio-code-extension-webview/"
+description: "In this article, Elio explains how you can simplify the communication flow from your Visual Studio Code extension and its webview to wait for its response."
+date: "2022-10-06T12:18:02.376Z"
+lastmod: "2022-10-06T12:18:03.116Z"
+preview: "/social/5d1e6d20-f95a-4f9e-80e4-12df9556538f.png"
 draft: false
 comments: true
 tags:
-  - Development
-  - Visual Studio Code
-  - Webview
-type: post
+  - "Development"
+  - "Visual Studio Code"
+  - "Webview"
+type: "post"
 ---
 
 In Visual Studio Code extension webviews you probably need to get familiar with post-messaging communication. This post-messaging communication is used when you want to start a process, request information, etc.

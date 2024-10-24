@@ -1,10 +1,10 @@
 ---
-title: 'MacBook Air M2: a great device for developers on the go'
+title: "MacBook Air M2: a great device for developers on the go"
 slug: /macbook-air-m2-perfect-device-developers/
 description: As a developer, you need a reliable, powerful, and portable device. The MacBook Air M2 provides all of that and more. Discover why Elio likes this device....
-date: '2023-02-23T18:41:21.778Z'
-lastmod: '2023-02-23T18:41:21.778Z'
-preview: /social/35f5f1d0-50ab-4c46-be50-b903b76598a1.png
+date: 2023-02-23T18:41:21.778Z
+lastmod: 2023-02-23T18:41:21.778Z
+preview: /social/7891d27b-4b7c-4d6f-80e8-9afd6fc94667.png
 draft: false
 comments: true
 tags:

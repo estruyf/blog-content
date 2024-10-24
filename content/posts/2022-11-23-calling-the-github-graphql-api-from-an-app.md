@@ -1,18 +1,17 @@
 ---
-title: Calling the GitHub GraphQL API from an app
+title: "Calling the GitHub GraphQL API from an app"
 longTitle: ""
-slug: /calling-github-graphql-api-app/
-description: In this article, Elio explains how you can use a GitHub App to make queries
-  and mutations via the GraphQL API from GitHub.
-date: 2022-11-23T10:32:25.840Z
-lastmod: 2022-11-23T10:32:25.840Z
-preview: /social/8640bd0e-b4a2-47f7-a578-317c25d5944f.png
+slug: "/calling-github-graphql-api-app/"
+description: "In this article, Elio explains how you can use a GitHub App to make queries and mutations via the GraphQL API from GitHub."
+date: "2022-11-23T10:32:25.840Z"
+lastmod: "2022-11-23T10:32:25.840Z"
+preview: "/social/39f3799d-c029-44cc-8ccc-22ea54796954.png"
 draft: false
 comments: true
 tags:
-  - GraphQL
-  - GitHub
-type: post
+  - "GraphQL"
+  - "GitHub"
+type: "post"
 ---
 
 For a migration from Disqus over to GitHub Discussions, I created a script that processes all comments and replies. One thing I noticed is that I quickly reached the rate limit with my personal access token, which prevents me from using GitHub for a while. 

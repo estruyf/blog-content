@@ -6,7 +6,7 @@ slug: ""
 description: ""
 date: 2023-12-21T13:06:37.062Z
 lastmod: 2023-12-21T13:06:37.062Z
-preview:
+preview: /social/572260f2-0ae7-4dcf-aced-5d1f08c87814.png
 draft: true
 comments: true
 tags: []

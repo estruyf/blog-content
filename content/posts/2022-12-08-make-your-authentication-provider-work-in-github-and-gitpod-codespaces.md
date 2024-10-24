@@ -1,21 +1,19 @@
 ---
-title: Make your auth provider work in GitHub and Gitpod codespaces
-longTitle: Make your authentication provider work in GitHub and Gitpod codespaces
-slug: /authentication-provider-work-github-gitpod-codespaces/
-description: In this article, Elio explains how you can create an authentication provider
-  that works with a proxy to redirect you to the desktop, GitHub Codespaces,
-  Gitpod.
-date: 2022-12-08T08:32:01.320Z
-lastmod: 2022-12-08T08:32:01.321Z
-preview: /social/f2e000dd-2341-41bd-a262-901e2d4b5305.png
+title: "Make your auth provider work in GitHub and Gitpod codespaces"
+longTitle: "Make your authentication provider work in GitHub and Gitpod codespaces"
+slug: "/authentication-provider-work-github-gitpod-codespaces/"
+description: "In this article, Elio explains how you can create an authentication provider that works with a proxy to redirect you to the desktop, GitHub Codespaces, Gitpod."
+date: "2022-12-08T08:32:01.320Z"
+lastmod: "2022-12-08T08:32:01.321Z"
+preview: "/social/8342dd97-88e1-4005-bebb-3145ea951efb.png"
 draft: false
 comments: true
 tags:
-  - Authentication
-  - GitHub
-  - Gitpod
-  - VSCode
-type: post
+  - "Authentication"
+  - "GitHub"
+  - "Gitpod"
+  - "VSCode"
+type: "post"
 ---
 
 In the previous article, I explained how you could ensure your [URI handler works in GitHub codespaces and Gitpod](https://www.eliostruyf.com/devhack-vscode-uri-handler-codespaces/). Now it is time to explain more about making an authentication provider that works on GitHub codespaces and Gitpod.

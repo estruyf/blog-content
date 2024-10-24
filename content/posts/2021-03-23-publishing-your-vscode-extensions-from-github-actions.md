@@ -12,6 +12,7 @@ tags:
   - Extensions
 categories: []
 comments: true
+preview: /social/bff5be54-9547-4889-b012-eb9447d2de6d.png
 ---
 
 Automation is key! That is how I think anyway. I'm not too fond of repetition, but for some reason, I had not yet automated my Visual Studio Code extension publishing. I always did this manually from my terminal by running `vsce publish`.

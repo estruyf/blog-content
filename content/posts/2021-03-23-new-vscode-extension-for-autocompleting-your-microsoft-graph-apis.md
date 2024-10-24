@@ -11,6 +11,7 @@ tags:
   - Microsoft Graph
 categories: []
 comments: true
+preview: /social/91900308-3e3c-45cd-b148-41cda1d34336.png
 ---
 
 While working on a project which uses Microsoft Graph APIs, I found myself opening the Microsoft Graph Explorer a lot to check which paths/parameters were available. The Microsoft Graph Explorer is a great tool, but I love not to change context too much. 

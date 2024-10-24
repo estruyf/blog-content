@@ -2,18 +2,18 @@
 title: "#DevHack: Running a background service on GitHub Actions"
 longTitle: ""
 customField: ""
-slug: "/devhack-running-background-service-github-actions/"
-description: "Learn how to run a background service on GitHub Actions and use it in combination with other steps."
-date: "2024-03-25T09:05:07.256Z"
-lastmod: "2024-03-25T09:05:07.932Z"
-preview: "/social/e1f8e75c-44fc-480c-8df4-00d9b847ef78.png"
+slug: /devhack-running-background-service-github-actions/
+description: Learn how to run a background service on GitHub Actions and use it in combination with other steps.
+date: 2024-03-25T09:05:07.256Z
+lastmod: 2024-03-25T09:05:07.932Z
+preview: /social/368ec9ab-5d47-4436-81d5-b489b03b764e.png
 draft: false
 comments: true
 tags:
-  - "Automation"
-  - "CI/CD"
-  - "GitHub Actions"
-type: "post"
+  - Automation
+  - CI/CD
+  - GitHub Actions
+type: post
 ---
 
 Running background services on GitHub Actions can be helpful when you want to run some tests. For instance, start up the local server before running the tests. In my case, I was testing out [Dev Proxy](https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/overview) on GitHub Actions to see if I could use it in combination with Playwright to provide my mocks for my tests. Unfortunately, GitHub Actions does not support running multiple steps in parallel, so I had to find a workaround.

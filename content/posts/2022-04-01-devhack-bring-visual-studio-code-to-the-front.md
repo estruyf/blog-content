@@ -3,10 +3,9 @@ title: Extension tip to bring Visual Studio Code to the foreground
 date: 2022-04-01T13:20:18.077Z
 draft: false
 type: post
-description: In this article Elio explains how you can get Visual Studio Code to be brought
-  back to the foreground.
+description: In this article Elio explains how you can get Visual Studio Code to be brought back to the foreground.
 lastmod: 2022-04-01T13:20:18.792Z
-preview: /social/175690f7-ff14-42fd-8ea8-81500c37517c.png
+preview: /social/54073414-fb5b-4baa-811a-4b5cbbd31998.png
 comments: true
 tags:
   - Development

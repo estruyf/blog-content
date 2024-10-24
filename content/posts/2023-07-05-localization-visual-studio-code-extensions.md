@@ -6,7 +6,7 @@ slug: /localization-visual-studio-code-extensions/
 description: Learn how to localize your Visual Studio Code extensions! Explore localization of commands, settings, and strings in TypeScript files.
 date: 2023-07-05T14:34:07.134Z
 lastmod: 2023-07-05T14:34:07.681Z
-preview: /social/8e3e7cf0-47f6-40ea-8922-e3172c066247.png
+preview: /social/2bb04d86-37a1-4593-90ad-6c6a0171019f.png
 draft: false
 comments: true
 tags:

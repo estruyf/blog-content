@@ -1,19 +1,19 @@
 ---
-title: Localization of Webviews in Visual Studio Code Extensions
+title: "Localization of Webviews in Visual Studio Code Extensions"
 longTitle: ""
 customField: ""
-slug: /localization-webviews-visual-studio-code/
-description: Discover the process of localizing webviews in Visual Studio Code extensions. Learn how to provide multilingual support for your webview experiences.
-date: 2023-07-06T10:13:53.442Z
-lastmod: 2023-07-06T10:13:53.923Z
-preview: /social/cb0d3ba5-81ea-48c0-a625-9f6d40769574.png
+slug: "/localization-webviews-visual-studio-code/"
+description: "Discover the process of localizing webviews in Visual Studio Code extensions. Learn how to provide multilingual support for your webview experiences."
+date: "2023-07-06T10:13:53.442Z"
+lastmod: "2023-07-06T10:13:53.923Z"
+preview: "/social/1fd47e3b-ff18-44de-96fe-5c30cb6bfa04.png"
 draft: false
 comments: true
 tags:
-  - Localization
-  - Visual Studio Code
-  - Development
-type: post
+  - "Localization"
+  - "Visual Studio Code"
+  - "Development"
+type: "post"
 ---
 
 In the [previous post](/localization-visual-studio-code/), I showed how to localize the extension commands/settings and code. In this post, I want to show how to localize the webviews in Visual Studio Code extensions, as this is a bit more complicated and not yet documented.

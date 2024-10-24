@@ -1,21 +1,21 @@
 ---
-title: "Breaking changes in the GitHub upload-artifact action"
+title: Breaking changes in the GitHub upload-artifact action
 longTitle: ""
 customField: ""
-slug: "/breaking-github-upload-artifact-action/"
-description: "Learn about the recent GitHub `actions/upload-artifact` update that excludes hidden files by default, impacting workflows."
-date: "2024-09-05T13:51:03.139Z"
-lastmod: "2024-09-05T13:51:03.761Z"
+slug: /breaking-github-upload-artifact-action/
+description: Learn about the recent GitHub `actions/upload-artifact` update that excludes hidden files by default, impacting workflows.
+date: 2024-09-05T13:51:03.139Z
+lastmod: 2024-09-05T13:51:03.761Z
 draft: false
 comments: true
 tags:
-  - "CI/CD"
-  - "Deployment"
-  - "DevOps"
-  - "GitHub Actions"
-type: "post"
-fmContentType: "post"
-preview: "/social/01967921-0ea9-4aa5-b111-410b9b294973.png"
+  - CI/CD
+  - Deployment
+  - DevOps
+  - GitHub Actions
+type: post
+fmContentType: post
+preview: /social/9d1a2767-8355-49bb-83da-d511d425ecfe.png
 ---
 
 In August 2024, GitHub announced it would exclude hidden files by default in the `actions/upload-artifact` GitHub Action. If you are using this action in your workflow, you should be aware of this change, as it might break your workflow.

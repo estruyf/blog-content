@@ -1,11 +1,11 @@
 ---
-title: '#DevHack: Authenticate Azure Web PubSub with Azure Functions'
+title: "#DevHack: Authenticate Azure Web PubSub with Azure Functions"
 slug: /devhack-authentication-azure-web-pubsub-azure-functions/
 description: Get to know how you can use an Azure Function to retrieve an authentication token for your Azure Web PubSub service.
 author: Elio Struyf
 type: post
-date: '2021-07-26T07:42:21.610Z'
-lastmod: '2021-07-26T07:42:26.211Z'
+date: 2021-07-26T07:42:21.610Z
+lastmod: 2021-07-26T07:42:26.211Z
 draft: false
 tags:
   - Azure Functions
@@ -13,7 +13,7 @@ tags:
   - Azure Web PubSub
 categories: []
 comments: true
-preview: /social/89ebbc44-1e86-40ea-9546-679db6dd01bf.png
+preview: /social/3e49f8be-1a85-4c60-88bd-5e5b9e1e36e7.png
 keywords:
   - pubsub
   - azure

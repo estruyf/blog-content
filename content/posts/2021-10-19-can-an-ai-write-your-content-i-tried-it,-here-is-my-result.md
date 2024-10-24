@@ -1,20 +1,20 @@
 ---
-title: Can an AI be used as a ghostwriter for your articles?
-slug: /ai-ghostwriter-articles/
-author: Elio Struyf
-type: post
-date: '2021-10-19T08:29:19.367Z'
-lastmod: '2021-10-19T07:12:35.117Z'
+title: "Can an AI be used as a ghostwriter for your articles?"
+slug: "/ai-ghostwriter-articles/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-10-19T08:29:19.367Z"
+lastmod: "2021-10-19T07:12:35.117Z"
 draft: false
 tags:
-  - AI
-  - Blog
+  - "AI"
+  - "Blog"
 categories: []
 comments: true
 keywords:
-  - ai
-description: 'Is an AI able to write the contents of your article? Well, that was a question I had and wanted to find out. In this article I tell you all about it.'
-preview: /social/d7b21a04-dbf3-4030-8314-f190ca09f06c.png
+  - "ai"
+description: "Is an AI able to write the contents of your article? Well, that was a question I had and wanted to find out. In this article I tell you all about it."
+preview: "/social/6de144b9-3173-4e8a-9832-6cb533f1692b.png"
 ---
 
 The power of AI is rising everywhere. More and more, you see services popping up which will help you write code, content, understand code, and so much more.

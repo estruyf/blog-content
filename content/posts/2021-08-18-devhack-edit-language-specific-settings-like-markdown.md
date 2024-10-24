@@ -1,21 +1,21 @@
 ---
-title: '#DevHack: language-specific settings in a VSCode extension'
-slug: /devhack-language-specific-settings-vscode-extension/
-description: Get to know how you can set language-specific settings straight from within the code of your Visual Studio Code extension.
-author: Elio Struyf
-type: post
-date: '2021-08-18T08:11:02.464Z'
-lastmod: '2021-08-18T08:11:02.464Z'
+title: "#DevHack: language-specific settings in a VSCode extension"
+slug: "/devhack-language-specific-settings-vscode-extension/"
+description: "Get to know how you can set language-specific settings straight from within the code of your Visual Studio Code extension."
+author: "Elio Struyf"
+type: "post"
+date: "2021-08-18T08:11:02.464Z"
+lastmod: "2021-08-18T08:11:02.464Z"
 draft: false
 tags:
-  - Development
-  - VSCode
-  - Extensions
+  - "Development"
+  - "VSCode"
+  - "Extensions"
 categories: []
 comments: true
 keywords:
-  - language-specific
-preview: "/social/fea389e7-5a3d-4caa-bb3a-de09275cad18.png"
+  - "language-specific"
+preview: "/social/aa795adf-d874-45f8-bd3b-85a87a284d96.png"
 ---
 
 When working with Visual Studio Code and different types of languages, you might want to change some settings only for one specific language. 

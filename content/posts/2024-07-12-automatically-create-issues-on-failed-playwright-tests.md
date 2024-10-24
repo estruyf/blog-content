@@ -1,22 +1,22 @@
 ---
-title: "Create GitHub issues on failed Playwright tests"
-longTitle: "Automatically create GitHub issues on failed Playwright tests"
+title: Create GitHub issues on failed Playwright tests
+longTitle: Automatically create GitHub issues on failed Playwright tests
 customField: ""
-slug: "/create-github-issues-failed-playwright-tests/"
-description: "Learn how to automatically create GitHub issues for failed Playwright tests with the Playwright Issue Creator action, available on the GitHub Marketplace."
-date: "2024-07-12T14:32:18.125Z"
-lastmod: "2024-07-12T14:32:18.654Z"
-preview: "/social/631ab778-4525-4cc7-ace2-5eccc1146147.png"
+slug: /create-github-issues-failed-playwright-tests/
+description: Learn how to automatically create GitHub issues for failed Playwright tests with the Playwright Issue Creator action, available on the GitHub Marketplace.
+date: 2024-07-12T14:32:18.125Z
+lastmod: 2024-07-12T14:32:18.654Z
+preview: /social/0428eb91-497f-4876-9b47-5782cca9bfed.png
 draft: false
 comments: true
 tags:
-  - "Automation"
-  - "DevOps"
-  - "GitHub"
-  - "Playwright"
-  - "Testing"
-type: "post"
-fmContentType: "post"
+  - Automation
+  - DevOps
+  - GitHub
+  - Playwright
+  - Testing
+type: post
+fmContentType: post
 ---
 
 As various projects I maintain for customers include end-to-end (E2E) tests using Playwright, which run on a daily schedule and on every new release, I wanted to automate following up on failed tests. Instead of manually creating issues, I automated the process using GitHub Actions and the GitHub API. This worked great, but I thought to myself, why not share this with the world? So, I created a GitHub Action that does exactly that.

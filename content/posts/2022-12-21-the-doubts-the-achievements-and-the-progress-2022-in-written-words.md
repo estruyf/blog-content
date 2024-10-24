@@ -1,18 +1,17 @@
 ---
-title: The doubts, the achievements, and the progress. 2022 wrap-up
-longTitle: The doubts, the achievements, and the progress - 2022 in written words
-slug: /doubts-achievements-progress-2022-wrap/
-description: In this article, Elio looks back at 2022 on his personal and work-related
-  achievements and progress.
-date: 2022-12-21T09:46:56.333Z
-lastmod: 2022-12-21T09:46:56.333Z
-preview: /social/d2d14486-1bef-497b-8ede-1733a19f2cbe.png
+title: "The doubts, the achievements, and the progress. 2022 wrap-up"
+longTitle: "The doubts, the achievements, and the progress - 2022 in written words"
+slug: "/doubts-achievements-progress-2022-wrap/"
+description: "In this article, Elio looks back at 2022 on his personal and work-related achievements and progress."
+date: "2022-12-21T09:46:56.333Z"
+lastmod: "2022-12-21T09:46:56.333Z"
+preview: "/social/72c7d312-f3c1-4b27-9f41-73afea13876b.png"
 draft: false
 comments: true
 tags:
-  - recap
-  - Personal
-type: post
+  - "recap"
+  - "Personal"
+type: "post"
 ---
 
 Less than two weeks, and we are ending the year 2022. It was an intense year personally, but there was also a lot of progress and a couple of achievements, of which I am happy and proud.

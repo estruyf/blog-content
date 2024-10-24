@@ -6,7 +6,6 @@ slug: "/e2e-testing-mfa-environment-playwright-auth-session/"
 description: "Easily perform E2E testing in MFA environments using Playwright's authenticated session state. Learn how to automate your tests without logging in every time."
 date: "2024-10-23T10:05:24.847Z"
 lastmod: "2024-10-23T10:05:25.382Z"
-preview: "/social/670d898c-bd5a-4b8a-b858-c30365d56ef9.png"
 draft: false
 comments: true
 tags:
@@ -18,6 +17,7 @@ tags:
   - "GitHub Actions"
 type: "post"
 fmContentType: "post"
+preview: "/social/21f463f1-28da-4b16-b72d-e8012d9fbd94.png"
 ---
 
 A couple of months ago, I found a way to end-to-end test your solutions, which require you to log in on Microsoft with multifactor authentication enabled. The solution is to use a time-based one-time password (TOTP) that you can generate on the fly during your automated tests.

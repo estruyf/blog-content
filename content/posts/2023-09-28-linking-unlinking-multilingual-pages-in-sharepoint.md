@@ -1,18 +1,18 @@
 ---
-title: Linking and Unlinking Multilingual Pages in SharePoint
+title: "Linking and Unlinking Multilingual Pages in SharePoint"
 longTitle: ""
 customField: ""
-slug: /linking-unlinking-multilingual-pages-sharepoint/
-description: Learn how to link and unlink multilingual pages in SharePoint using the REST API.
-date: 2023-09-29T10:52:33.580Z
-lastmod: 2023-09-29T10:52:33.142Z
-preview: /social/75d9dfb1-9f31-4106-93bc-3aa9daad0423.png
+slug: "/linking-unlinking-multilingual-pages-sharepoint/"
+description: "Learn how to link and unlink multilingual pages in SharePoint using the REST API."
+date: "2023-09-29T10:52:33.580Z"
+lastmod: "2023-09-29T10:52:33.142Z"
+preview: "/social/86bf5a0d-c713-458a-aaa6-db11bcc929ce.png"
 draft: false
 comments: true
 tags:
-  - Multilingual
-  - SharePoint
-type: post
+  - "Multilingual"
+  - "SharePoint"
+type: "post"
 ---
 
 It has been a while since I wrote an article about SharePoint, but in the last couple of weeks, I got interested in linking and unlinking multilingual pages in SharePoint. This functionality is proper when you migrate pages from other sites to multilingual ones. Still, it can also be helpful to remap pages in case of some information architecture changes. Out-of-the-box SharePoint does not provide this functionality, but you can achieve it using the SharePoint REST API.
