@@ -2,6 +2,26 @@
     "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
     "title": "Test Automation with GitHub Actions and Playwright for Microsoft 365 solutions",
     "description": "GitHub Actions is a powerful tool for creating and running CI/CD pipelines. Playwright is a modern tool for end-to-end testing. In this session, you will learn how to combine these two tools to automate your testing process and improve the quality of your Microsoft 365 solutions. You will see how to set up GitHub Actions for running Playwright tests, handle test results and notifications, and follow best practices for test automation. By the end of this session, you will have the skills and confidence to implement test automation in your projects with GitHub Actions and Playwright.",
+    "startDate": "2025-05-26",
+    "endDate": "2025-05-28",
+    "location": "Dusseldorf (DE)",
+    "event": {
+      "name": "European Collaboration Summit",
+      "link": "https://collabsummit.eu/"
+    },
+    "links": [{
+      "title": "Link to the event",
+      "link": "https://collabsummit.eu/"
+    }],
+    "reporting": {
+      "gde": false,
+      "mvp": false,
+      "github": false
+    }
+  }, {
+    "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
+    "title": "Test Automation with GitHub Actions and Playwright for Microsoft 365 solutions",
+    "description": "GitHub Actions is a powerful tool for creating and running CI/CD pipelines. Playwright is a modern tool for end-to-end testing. In this session, you will learn how to combine these two tools to automate your testing process and improve the quality of your Microsoft 365 solutions. You will see how to set up GitHub Actions for running Playwright tests, handle test results and notifications, and follow best practices for test automation. By the end of this session, you will have the skills and confidence to implement test automation in your projects with GitHub Actions and Playwright.",
     "startDate": "2024-10-19",
     "endDate": "2024-10-19",
     "location": "BluePoint Brussels",
