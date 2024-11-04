@@ -26,7 +26,7 @@ tags:
 
 ## Picture
 
-{{< caption-new "/images/eliostruyf_2023.webp" "Link: <https://www.eliostruyf.com/images/eliostruyf_2023.jpg>" >}}
+{{< caption-new "/images/eliostruyf_2024.webp" "Link: <https://www.eliostruyf.com/images/eliostruyf_2024.jpg>" >}}
 
 ## Bio
 
