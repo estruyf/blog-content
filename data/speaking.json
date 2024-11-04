@@ -34,7 +34,7 @@
       "link": "https://www.collabdays.org/2024-belgium/"
     }],
     "reporting": {
-      "gde": false,
+      "gde": true,
       "mvp": false,
       "github": false
     }
@@ -95,7 +95,7 @@
       "link": "https://www.sharepointeurope.com/"
     }],
     "reporting": {
-      "gde": false,
+      "gde": true,
       "mvp": true,
       "github": true
     }
