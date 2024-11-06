@@ -113,7 +113,7 @@ await expect(publishedCanvas).toBeVisible();
 
 This code checks if the canvas is visible. If it is not, the test will fail.
 
-The app canvas is the main part of the Power App, where all the controls are placed. You want to test this part.
+The app canvas is the main part of Power Apps, it is an iframe in which all the controls are placed/loaded. Once you have the canvas, you can start interacting with the controls.
 
 In my example, I want to test whether the gallery is loaded and the items are shown. To do this, I have created the following test:
 
