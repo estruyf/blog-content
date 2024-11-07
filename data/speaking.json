@@ -1,5 +1,25 @@
 [{
     "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
+    "title": " Integrate Playwright tests for Power Apps into your DevOps process ",
+    "description": "Tired of Power Platform solutions that feel like being held together by duct tape and bubble gum? You're not alone. In this session, Luise and Elio will discuss why proper testing is often overlooked in Power Apps development and how we can change that game. We'll introduce you to Playwright, your new best friend for automated testing, and show you why it's a perfect match for Power Apps. We'll cover the essentials of making your apps test-friendly and walk you through some common tests to get you started. But we won't stop there. We'll show you how to take your testing to the next level by automating the process and seamlessly integrating it into your development pipeline. By the end of this session, you'll have a clear roadmap for releasing rock-solid Power Apps that'll make your users (and your sanity) thank you.",
+    "startDate": "2025-05-26",
+    "endDate": "2025-05-28",
+    "location": "Dusseldorf (DE)",
+    "event": {
+      "name": "European BizApps Summit 2025",
+      "link": "https://bizappssummit.eu/"
+    },
+    "links": [{
+      "title": "Link to the event",
+      "link": "https://bizappssummit.eu/"
+    }],
+    "reporting": {
+      "gde": false,
+      "mvp": false,
+      "github": true
+    }
+  }, {
+    "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
     "title": "Test Automation with GitHub Actions and Playwright for Microsoft 365 solutions",
     "description": "GitHub Actions is a powerful tool for creating and running CI/CD pipelines. Playwright is a modern tool for end-to-end testing. In this session, you will learn how to combine these two tools to automate your testing process and improve the quality of your Microsoft 365 solutions. You will see how to set up GitHub Actions for running Playwright tests, handle test results and notifications, and follow best practices for test automation. By the end of this session, you will have the skills and confidence to implement test automation in your projects with GitHub Actions and Playwright.",
     "startDate": "2025-05-26",
