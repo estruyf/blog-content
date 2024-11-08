@@ -1,14 +1,14 @@
 ---
-title: Speaking
-date: 2019-08-14T19:38:30.000Z
+title: "Speaking"
+date: "2019-08-14T19:38:30.000Z"
 draft: false
-type: speaking
-url: /speaking/
+type: "speaking"
+url: "/speaking/"
 menu:
   main:
     weight: 2
-preview: /social/ac28eeb0-c717-4292-8ecf-4e5d1553c68c.png
-description: Elio is a frequent Microsoft-related community event speaker, focusing on topics around M365, GitHub, E2E Testing, Azure, DevOps & more.
+preview: "/social/0313f6fd-966a-4f9b-b3c5-a993b2c790a1.png"
+description: "Elio is a frequent Microsoft-related community event speaker, focusing on topics around M365, GitHub, E2E Testing, Azure, DevOps & more."
 ---
 
 Elio is a frequent speaker at various Microsoft related community events and conferences. In his sessions, he focusses on development-related topics on Microsoft 365, GitHub, E2E Testing, Azure, DevOps, and more.

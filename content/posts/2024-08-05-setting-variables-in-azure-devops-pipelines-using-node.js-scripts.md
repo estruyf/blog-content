@@ -1,21 +1,21 @@
 ---
-title: Set Azure DevOps pipeline variables with Node.js scripts
-longTitle: Setting variables in Azure DevOps pipelines using Node.js scripts
+title: "Set Azure DevOps pipeline variables with Node.js scripts"
+longTitle: "Setting variables in Azure DevOps pipelines using Node.js scripts"
 customField: ""
-slug: /setting-variables-azure-devops-pipelines-node-js-scripts/
-description: Explore setting Azure DevOps pipeline variables effectively using Node.js, ensuring seamless task transitions in your CI/CD workflows.
-date: 2024-08-05T09:05:02.748Z
-lastmod: 2024-08-05T09:05:03.134Z
-preview: /social/70d35a63-f74b-4d9d-ad94-5b595b40a3bf.png
+slug: "/setting-variables-azure-devops-pipelines-node-js-scripts/"
+description: "Explore setting Azure DevOps pipeline variables effectively using Node.js, ensuring seamless task transitions in your CI/CD workflows."
+date: "2024-08-05T09:05:02.748Z"
+lastmod: "2024-08-05T09:05:03.134Z"
+preview: "/social/f935d2cf-8fd5-437f-bb4d-c16b6abe5500.png"
 draft: false
 comments: true
 tags:
-  - Azure DevOps
-  - CI/CD
-  - JavaScript
-  - Node.js
-type: post
-fmContentType: post
+  - "Azure DevOps"
+  - "CI/CD"
+  - "JavaScript"
+  - "Node.js"
+type: "post"
+fmContentType: "post"
 ---
 
 Last week, when looking into how to configure the [Microsoft Teams reporter for Playwright](https://www.npmjs.com/package/playwright-msteams-reporter) on Azure DevOps in combination with the [Playwright Azure Reporter](https://www.npmjs.com/package/@alex_neo/playwright-azure-reporter), I ran into a problem where a variable that set in the Node.js task was not available in the subsequent tasks.

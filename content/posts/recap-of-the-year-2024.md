@@ -4,13 +4,13 @@ longTitle: ""
 customField: ""
 slug: ""
 description: ""
-date: 2023-12-21T13:06:37.062Z
-lastmod: 2023-12-21T13:06:37.062Z
-preview: /social/572260f2-0ae7-4dcf-aced-5d1f08c87814.png
+date: "2023-12-21T13:06:37.062Z"
+lastmod: "2023-12-21T13:06:37.062Z"
+preview: "/social/3e2abfc4-c775-4a95-a16a-75c6765925c8.png"
 draft: true
 comments: true
 tags: []
-type: post
+type: "post"
 ---
 
 

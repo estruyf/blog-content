@@ -17,7 +17,7 @@ tags:
   - "GitHub Actions"
 type: "post"
 fmContentType: "post"
-preview: "/social/21f463f1-28da-4b16-b72d-e8012d9fbd94.png"
+preview: "/social/0f958aad-f9d1-4e24-b832-46c804185d0a.png"
 ---
 
 A couple of months ago, I found a way to end-to-end test your solutions, which require you to log in on Microsoft with multifactor authentication enabled. The solution is to use a time-based one-time password (TOTP) that you can generate on the fly during your automated tests.

@@ -1,20 +1,20 @@
 ---
-title: "Caching Dev Proxy in your GitHub Actions workflows"
+title: Caching Dev Proxy in your GitHub Actions workflows
 longTitle: ""
 customField: ""
-slug: "/caching-dev-proxy-github-actions-workflows/"
-description: "Learn how to cache the Dev Proxy in your GitHub Actions workflows. This allows you to reuse the Dev Proxy installation and speed up your workflow."
-date: "2024-03-28T07:16:59.209Z"
-lastmod: "2024-03-28T07:16:59.700Z"
-preview: "/social/27c6ec4f-18df-49d2-842d-f10ad7d61062.png"
+slug: /caching-dev-proxy-github-actions-workflows/
+description: Learn how to cache the Dev Proxy in your GitHub Actions workflows. This allows you to reuse the Dev Proxy installation and speed up your workflow.
+date: 2024-03-28T07:16:59.209Z
+lastmod: 2024-03-28T07:16:59.700Z
+preview: /social/a30f6e6f-b985-4c32-8899-726fc94a3c10.png
 draft: false
 comments: true
 tags:
-  - "caching"
-  - "Dev Proxy"
-  - "GitHub Actions"
-  - "GitHub"
-type: "post"
+  - caching
+  - Dev Proxy
+  - GitHub Actions
+  - GitHub
+type: post
 ---
 
 In the previous posts, I explained using the [Microsoft's Dev Proxy](https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/overview) in a GitHub Actions workflow on a macOS and Ubuntu virtual machine. One thing I noticed is that the Dev Proxy installation fails in some runs.

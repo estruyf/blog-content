@@ -6,7 +6,7 @@ slug: "/locally-verifying-github-actions-job-summaries/"
 description: "Learn how to locally verify and test your GitHub Actions Job Summaries with the help of @actions/core dependency. Save time by testing before pushing changes."
 date: "2024-03-11T09:46:31.518Z"
 lastmod: "2024-03-11T09:46:31.519Z"
-preview: "/social/c7b3bece-017c-4968-ae9e-90be9ab57642.png"
+preview: "/social/1aa1ed4d-ce4f-447b-9282-e8d71cf3290e.png"
 draft: false
 comments: true
 tags:

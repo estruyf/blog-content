@@ -1,19 +1,19 @@
 ---
-title: How to set the timezone for your GitHub Codespaces
+title: "How to set the timezone for your GitHub Codespaces"
 longTitle: ""
 customField: ""
-slug: /set-timezone-github-codespaces/
-description: Learn how to set the timezone for your GitHub Codespaces and avoid issues with dates.
-date: 2024-06-13T10:23:21.911Z
-lastmod: 2024-06-13T10:23:21.911Z
-preview: /social/fd61e672-7057-44f8-b338-e224fd76f272.png
+slug: "/set-timezone-github-codespaces/"
+description: "Learn how to set the timezone for your GitHub Codespaces and avoid issues with dates."
+date: "2024-06-13T10:23:21.911Z"
+lastmod: "2024-06-13T10:23:21.911Z"
+preview: "/social/d59b0135-26a4-4247-97d5-6ca8aa8be21b.png"
 draft: false
 comments: true
 tags:
-  - Azure
-  - Codespaces
-  - GitHub
-type: post
+  - "Azure"
+  - "Codespaces"
+  - "GitHub"
+type: "post"
 ---
 
 A couple of days ago, someone opened an issue for [Front Matter CMS](https://frontmatter.codes/) about the auto-update of the modified date in their articles that did not follow the date format. In the issue, they shared a video recording of the problem. I noticed that [GitHub Codespaces](https://github.com/features/codespaces) was used. GitHub Codespaces provides you with a cloud-based development environment for your repository.

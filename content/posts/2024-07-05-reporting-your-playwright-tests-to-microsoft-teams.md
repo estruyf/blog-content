@@ -1,20 +1,20 @@
 ---
-title: Reporting your Playwright tests to Microsoft Teams
+title: "Reporting your Playwright tests to Microsoft Teams"
 longTitle: ""
 customField: ""
-slug: /reporting-playwright-tests-microsoft-teams/
-description: Learn how to easily report your Playwright test results to a Microsoft Teams channel with the help of the playwright-msteams-reporter reporter.
-date: 2024-07-05T15:01:13.964Z
-lastmod: 2024-07-05T15:01:13.964Z
-preview: /social/f10eecfb-3dcc-4172-9e70-70f2d2158d79.png
+slug: "/reporting-playwright-tests-microsoft-teams/"
+description: "Learn how to easily report your Playwright test results to a Microsoft Teams channel with the help of the playwright-msteams-reporter reporter."
+date: "2024-07-05T15:01:13.964Z"
+lastmod: "2024-07-05T15:01:13.964Z"
+preview: "/social/e974f0d0-077a-462a-90b1-29eb01236e24.png"
 draft: false
 comments: true
 tags:
-  - Microsoft Teams
-  - Playwright
-  - Testing
-  - E2E
-type: post
+  - "Microsoft Teams"
+  - "Playwright"
+  - "Testing"
+  - "E2E"
+type: "post"
 ---
 
 When you work in a team that uses Microsoft Teams as its primary communication tool, it can be useful to report your test results directly to a Teams channel. This way, everyone on your team can quickly see the test results and act on them if needed.

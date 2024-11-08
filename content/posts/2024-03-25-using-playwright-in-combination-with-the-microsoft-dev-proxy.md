@@ -1,21 +1,21 @@
 ---
-title: Use Playwright with Microsoft Dev Proxy on GitHub Actions
-longTitle: Using Playwright in combination with the Microsoft Dev Proxy on GitHub Actions
+title: "Use Playwright with Microsoft Dev Proxy on GitHub Actions"
+longTitle: "Using Playwright in combination with the Microsoft Dev Proxy on GitHub Actions"
 customField: ""
-slug: /playwright-microsoft-dev-proxy-github-actions/
-description: Learn how to use Playwright with Microsoft Dev Proxy on GitHub Actions to easily test your solutions with the same mocked API responses as during development.
-date: 2024-03-29T09:50:00.420Z
-lastmod: 2024-03-29T09:50:01.145Z
-preview: /social/97a3a4da-9968-4e17-90d7-3520a7e64a57.png
+slug: "/playwright-microsoft-dev-proxy-github-actions/"
+description: "Learn how to use Playwright with Microsoft Dev Proxy on GitHub Actions to easily test your solutions with the same mocked API responses as during development."
+date: "2024-03-29T09:50:00.420Z"
+lastmod: "2024-03-29T09:50:01.145Z"
+preview: "/social/60c2b1cf-0d4e-4b7a-aaee-69503ae7c3db.png"
 draft: false
 comments: true
 tags:
-  - API
-  - GitHub Actions
-  - Playwright
-  - Testing
-  - Dev Proxy
-type: post
+  - "API"
+  - "GitHub Actions"
+  - "Playwright"
+  - "Testing"
+  - "Dev Proxy"
+type: "post"
 ---
 
 Part of the process of testing the [Microsoft Dev Proxy](https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/overview) on GitHub Actions, was to use it in combination with [Playwright](https://playwright.dev/). The advantage of this combination is that you can use the same mocked API responses which you use during development to test your solutions.

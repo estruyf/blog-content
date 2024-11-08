@@ -1,20 +1,20 @@
 ---
-title: "Developing custom plugins for the Microsoft's Dev Proxy"
+title: Developing custom plugins for the Microsoft's Dev Proxy
 longTitle: ""
 customField: ""
-slug: "/developing-custom-plugins-microsoft-dev-proxy/"
-description: "Learn how to develop custom plugins for Microsoft's Dev Proxy. Extend the tool's functionality by intercepting API calls, modifying requests, and responses."
-date: "2024-03-28T10:13:29.802Z"
-lastmod: "2024-03-28T10:13:30.347Z"
-preview: "/social/fdd6c6ec-cf4f-4b28-aa05-ae042aaab14f.png"
+slug: /developing-custom-plugins-microsoft-dev-proxy/
+description: Learn how to develop custom plugins for Microsoft's Dev Proxy. Extend the tool's functionality by intercepting API calls, modifying requests, and responses.
+date: 2024-03-28T10:13:29.802Z
+lastmod: 2024-03-28T10:13:30.347Z
+preview: /social/fa215cec-7da5-4813-aefc-1f761df918f6.png
 draft: false
 comments: true
 tags:
-  - "API"
-  - "Dev Proxy"
-  - "Microsoft"
-  - "Plugins"
-type: "post"
+  - API
+  - Dev Proxy
+  - Microsoft
+  - Plugins
+type: post
 ---
 
 For a training project I was working on, I needed to be able to intercept some API calls for some audit logging. To do this, I decided to use [Microsoft's Dev Proxy](https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/overview) tool, which you use to simulate, mock, and test APIs.

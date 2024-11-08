@@ -6,7 +6,7 @@ slug: /devhack-running-background-service-github-actions/
 description: Learn how to run a background service on GitHub Actions and use it in combination with other steps.
 date: 2024-03-25T09:05:07.256Z
 lastmod: 2024-03-25T09:05:07.932Z
-preview: /social/368ec9ab-5d47-4436-81d5-b489b03b764e.png
+preview: /social/e471cf63-a58e-4b7e-9436-11cd6ef3ae6d.png
 draft: false
 comments: true
 tags:

@@ -1,19 +1,19 @@
 ---
-title: Override SPFx context properties during Playwright E2E tests
+title: "Override SPFx context properties during Playwright E2E tests"
 longTitle: ""
 customField: ""
-slug: /override-spfx-context-properties-playwright-e2e-tests/
-description: Learn how to override SPFx context properties while running Playwright E2E tests. It allows you to perform tests with your mocked properties.
-date: 2024-07-08T13:34:57.735Z
-lastmod: 2024-07-08T13:34:58.265Z
-preview: /social/a30aac62-2473-49cb-ab38-e007bff624f9.png
+slug: "/override-spfx-context-properties-playwright-e2e-tests/"
+description: "Learn how to override SPFx context properties while running Playwright E2E tests. It allows you to perform tests with your mocked properties."
+date: "2024-07-08T13:34:57.735Z"
+lastmod: "2024-07-08T13:34:58.265Z"
+preview: "/social/45a8a242-1327-45b0-a2eb-0e48b207daa1.png"
 draft: false
 comments: true
 tags:
-  - Playwright
-  - SPFx
-  - E2E
-type: post
+  - "Playwright"
+  - "SPFx"
+  - "E2E"
+type: "post"
 ---
 
 While creating new E2E tests for a SharePoint Framework solution, I wanted to test the solution with different permission sets. Usually, when you run your tests, you start these up with a user with the required permissions to run the tests. Instead of creating a new user with different permissions or different sites/pages to perform the tests, I looked into the possibility of overriding the context properties of SPFx.

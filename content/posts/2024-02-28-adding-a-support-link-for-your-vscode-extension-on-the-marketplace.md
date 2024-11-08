@@ -6,7 +6,7 @@ slug: "/add-support-link-vscode-extension-marketplace/"
 description: "Learn how to add a support link for your VSCode extension on the marketplace to provide helpful resources and assistance to your users."
 date: "2024-02-28T14:19:19.562Z"
 lastmod: "2024-02-28T14:19:19.562Z"
-preview: "/social/d1417c1c-2fbd-4614-a55b-410417eb50da.png"
+preview: "/social/1d1686fc-171e-44e7-be5d-5c6298f5bb26.png"
 draft: false
 comments: true
 tags:

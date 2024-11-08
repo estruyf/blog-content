@@ -1,18 +1,18 @@
 ---
-title: Utilize command URIs for documentation access in VSCode
-longTitle: Utilize command URIs for efficient documentation access in Visual Studio Code
+title: "Utilize command URIs for documentation access in VSCode"
+longTitle: "Utilize command URIs for efficient documentation access in Visual Studio Code"
 customField: ""
-slug: /utilize-command-uris-documentation-access-vscode/
-description: Learn how to improve the accessibility of your Visual Studio Code extensions by utilizing command URIs to open the documentation directly in the editor.
-date: 2024-06-17T11:08:45.153Z
-lastmod: 2024-06-17T11:08:45.715Z
-preview: /social/0a65691f-bef6-457d-9f73-4bf34bfcef6f.png
+slug: "/utilize-command-uris-documentation-access-vscode/"
+description: "Learn how to improve the accessibility of your Visual Studio Code extensions by utilizing command URIs to open the documentation directly in the editor."
+date: "2024-06-17T11:08:45.153Z"
+lastmod: "2024-06-17T11:08:45.715Z"
+preview: "/social/58692959-e953-4be4-ba35-dbddc7d7724d.png"
 draft: false
 comments: true
 tags:
-  - Documentation
-  - VSCode
-type: post
+  - "Documentation"
+  - "VSCode"
+type: "post"
 ---
 
 One key benefit of using command URIs in your Visual Studio Code extensions is the ability to trigger commands from links in the editor. Those links can be added to various places in the extension, such as hover cards, notifications, webviews, and completion item details.

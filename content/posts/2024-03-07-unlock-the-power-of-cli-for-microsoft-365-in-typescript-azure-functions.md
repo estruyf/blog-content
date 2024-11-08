@@ -6,7 +6,7 @@ slug: /cli-microsoft-365-typescript-azure-functions/
 description: "Learn how to use the CLI for Microsoft 365 in TypeScript Azure Functions to automate tasks for Microsoft 365. "
 date: 2024-03-07T09:11:17.224Z
 lastmod: 2024-03-07T09:11:17.224Z
-preview: /social/ba212d73-5d19-41c8-b7c3-2a0d10f34201.png
+preview: /social/d0e61dbd-19ac-47f7-8297-c07ac32e67ef.png
 draft: false
 comments: true
 tags:

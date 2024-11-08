@@ -6,7 +6,7 @@ slug: /browser-refreshing-sharepoint-page/
 description: Learn how to fix your SharePoint page from going into an endless refreshing loop when third-party cookies are blocked.
 date: 2024-02-23T14:05:23.917Z
 lastmod: 2024-02-23T14:05:24.546Z
-preview: /social/eaf88734-f879-4e93-aaee-21e47dc6f67b.png
+preview: /social/6d66ef68-5495-4ba2-b85b-142b75074576.png
 draft: false
 comments: true
 tags:

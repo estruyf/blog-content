@@ -1,19 +1,19 @@
 ---
-title: Integrate your VS Code extension in SCM input
-longTitle: Integrate your Visual Studio Code extension in the Source Control Management input
+title: "Integrate your VS Code extension in SCM input"
+longTitle: "Integrate your Visual Studio Code extension in the Source Control Management input"
 customField: ""
-slug: /integrate-code-extension-scm-input/
-description: Integrate your VS Code extension into SCM input to provide additional logic for your commit messages.
-date: 2024-06-13T13:08:03.908Z
-lastmod: 2024-06-13T13:08:03.908Z
-preview: /social/f4e4d521-26d3-4d76-aa4d-68e30f01639a.png
+slug: "/integrate-code-extension-scm-input/"
+description: "Integrate your VS Code extension into SCM input to provide additional logic for your commit messages."
+date: "2024-06-13T13:08:03.908Z"
+lastmod: "2024-06-13T13:08:03.908Z"
+preview: "/social/002b98ae-77c5-4246-b68d-1c271df5ba81.png"
 draft: false
 comments: true
 tags:
-  - Extensions
-  - VSCode
-  - git
-type: post
+  - "Extensions"
+  - "VSCode"
+  - "git"
+type: "post"
 ---
 
 For a new Visual Studio Code extension called [CommitHelper](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-commit-helper), I wanted to integrate the extension in the Source Control Management (SCM) input. The extension should provide a list of predefined commit messages from which the user can select by using a slash `/` in the input field.

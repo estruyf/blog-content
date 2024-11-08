@@ -6,7 +6,7 @@ slug: "/dev-proxy-github-actions-workflow-ubuntu/"
 description: "Learn how to use Dev Proxy in a GitHub Actions workflow on an Ubuntu hosted VM for intercepting and inspecting your API calls"
 date: "2024-03-27T08:25:54.824Z"
 lastmod: "2024-03-27T08:25:55.495Z"
-preview: "/social/4b5ad901-280e-4823-ae25-30b828ae9dfa.png"
+preview: "/social/b4bb8bf8-7bb4-4406-aee8-8f081bcdfe89.png"
 draft: false
 comments: true
 tags:
