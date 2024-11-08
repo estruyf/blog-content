@@ -41,7 +41,8 @@
             "type": "string"
           },
           "description": {
-            "type": "string"
+            "type": "string",
+            "multiline": true
           },
           "startDate": {
             "type": "string"
