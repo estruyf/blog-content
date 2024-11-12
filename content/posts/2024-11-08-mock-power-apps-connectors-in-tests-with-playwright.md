@@ -4,8 +4,8 @@ longTitle: ""
 customField: ""
 slug: "/mock-power-apps-connectors-tests-playwright/"
 description: "Learn how to mock Power Apps connectors in tests using Playwright for a controlled testing environment and accurate results."
-date: "2024-11-12T09:36:45.141Z"
-lastmod: "2024-11-12T09:36:45.645Z"
+date: "2024-11-12T09:19:10.583Z"
+lastmod: "2024-11-12T09:19:11.230Z"
 preview: "/social/91e72890-23ed-4b32-8cdf-c5e720f01618.png"
 draft: false
 comments: true
