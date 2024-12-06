@@ -13,15 +13,16 @@ menu:
     name: Contact
 ---
 
-## Lets get in touch
+## Let's Get in Touch
 
-Hi! Do you want to ask me something? Great! Feel free to use the contact form or the good old email way. The form's contents send to an Azure Function, which validates it to see if it is not spam. To keep my inbox as clean as possible. 
+Hi there! Got a question for me? Awesome!
 
-**If you try to contact me, please keep the following in mind**:
+### Important Things to Keep in Mind
 
-- I do not accept any guest articles on my blog;
-- I am not interested in hiring someone to do changes to my blogs like hiring a developer, web designer, or SEO specialist;
-- I *might* do a product review if the product catches my interest. Please do not be offended when I say no;
-- **Very important**: Please ask your questions in English or Dutch.
+- I do **not** accept guest articles on my blog.  
+- I’m **not interested** in hiring someone to make changes to my blog (e.g., developers, web designers, or SEO specialists).  
+- I *might* consider doing a product review if the product genuinely catches my interest. Please don’t take offense if I decline.  
 
-Are you ok with this? Great, feel free to reach out via mail: [elio@struyfconsulting.be](mailto:elio@struyfconsulting.be).
+If you’re interested in hiring me for a project or coaching, feel free to reach out, and let’s discuss your needs.
+
+You can email me at: [elio@struyfconsulting.be](mailto:elio@struyfconsulting.be).
