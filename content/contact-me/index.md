@@ -13,11 +13,11 @@ menu:
     name: Contact
 ---
 
-## Let's Get in Touch
+## Let's get in touch
 
 Hi there! Got a question for me? Awesome!
 
-### Important Things to Keep in Mind
+### Important things to keep in mind
 
 - I do **not** accept guest articles on my blog.  
 - I’m **not interested** in hiring someone to make changes to my blog (e.g., developers, web designers, or SEO specialists).  
