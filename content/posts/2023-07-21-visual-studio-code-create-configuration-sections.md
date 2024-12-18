@@ -34,14 +34,12 @@ Here you can see an example of how it looks like for a single object:
         "properties": {
           "frontMatter.content.hideFm": {
             "type": "boolean",
-            "markdownDescription": "%setting.frontMatter.content.hideFm.markdownDescription%",
-            "scope": "Content"
+            "markdownDescription": "%setting.frontMatter.content.hideFm.markdownDescription%"
           },
           "frontMatter.content.hideFmMessage": {
             "type": "string",
             "default": "Use the editor panel to make front matter changes",
-            "markdownDescription": "%setting.frontMatter.content.hideFmMessage.markdownDescription%",
-            "scope": "Content"
+            "markdownDescription": "%setting.frontMatter.content.hideFmMessage.markdownDescription%"
           },
           "frontMatter.dashboard.content.pagination": {
             "type": [
@@ -49,8 +47,7 @@ Here you can see an example of how it looks like for a single object:
               "number"
             ],
             "default": true,
-            "markdownDescription": "%setting.frontMatter.dashboard.content.pagination.markdownDescription%",
-            "scope": "Dashboard"
+            "markdownDescription": "%setting.frontMatter.dashboard.content.pagination.markdownDescription%"
           }
         }
       }
@@ -72,14 +69,12 @@ To create multiple categories, all you need to do is change the `contributes.con
         "properties": {
           "frontMatter.content.hideFm": {
             "type": "boolean",
-            "markdownDescription": "%setting.frontMatter.content.hideFm.markdownDescription%",
-            "scope": "Content"
+            "markdownDescription": "%setting.frontMatter.content.hideFm.markdownDescription%"
           },
           "frontMatter.content.hideFmMessage": {
             "type": "string",
             "default": "Use the editor panel to make front matter changes",
-            "markdownDescription": "%setting.frontMatter.content.hideFmMessage.markdownDescription%",
-            "scope": "Content"
+            "markdownDescription": "%setting.frontMatter.content.hideFmMessage.markdownDescription%"
           }
         }
       },
@@ -92,8 +87,7 @@ To create multiple categories, all you need to do is change the `contributes.con
               "number"
             ],
             "default": true,
-            "markdownDescription": "%setting.frontMatter.dashboard.content.pagination.markdownDescription%",
-            "scope": "Dashboard"
+            "markdownDescription": "%setting.frontMatter.dashboard.content.pagination.markdownDescription%"
           }
         }
       }
