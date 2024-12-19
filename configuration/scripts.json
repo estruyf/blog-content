@@ -9,37 +9,37 @@
     {
       "title": "LQIP (macOS)",
       "script": "./scripts/lqip.mjs",
-      "command": "~/.nvm/versions/node/v18.17.1/bin/node",
+      "command": "~/.nvm/versions/node/v18.20.5/bin/node",
       "contentTypes": ["post"]
     },
     {
       "title": "Publish GitHub Stars profile",
       "script": "./scripts/github-stars.mjs",
-      "command": "~/.nvm/versions/node/v18.17.1/bin/node",
+      "command": "~/.nvm/versions/node/v18.20.5/bin/node",
       "contentTypes": ["post"]
     },
     {
       "title": "Optimize media",
       "script": "./scripts/media.js",
-      "command": "~/.nvm/versions/node/v16.19.0/bin/node",
+      "command": "~/.nvm/versions/node/v18.20.5/bin/node",
       "type": "mediaFile"
     },
     {
       "title": "Resize media",
       "script": "./scripts/resize.mjs",
-      "command": "~/.nvm/versions/node/v16.19.0/bin/node",
+      "command": "~/.nvm/versions/node/v18.20.5/bin/node",
       "type": "mediaFile"
     },
     {
       "title": "Convert to webp",
       "script": "./scripts/webp.mjs",
-      "command": "~/.nvm/versions/node/v18.17.1/bin/node",
+      "command": "~/.nvm/versions/node/v18.20.5/bin/node",
       "type": "mediaFile"
     },
     {
       "title": "Optimize images",
       "script": "./scripts/media-all.js",
-      "command": "~/.nvm/versions/node/v16.19.0/bin/node",
+      "command": "~/.nvm/versions/node/v18.20.5/bin/node",
       "type": "mediaFolder"
     },
     {
