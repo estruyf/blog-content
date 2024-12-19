@@ -1,5 +1,5 @@
 ---
-title: "A Look Back at 2024: A Year of Change"
+title: "Looking back in numbers for the year 2024"
 longTitle: ""
 customField: ""
 slug: ""
@@ -13,47 +13,47 @@ tags: []
 type: "post"
 ---
 
+## Blog
 
+34 blog posts
 
-## Highlights of 2024
+## Visitor Badge
 
-## The year in review
+🔵 2022 - 4M badges generated
+🔵 2023 - 11M badges generated
+🔵 2024 - >60M badges generated
 
-### January
+Talk about the pricing and the number per day
+Details about the function executions
 
+## VSCode 
 
-### February
+Two of my extension got featured on the marketplace
 
+### Front Matter
 
-### March
+Over 50K installations and >2000 GitHub stars
 
+### Demo Time
 
-### April
+https://demotime.elio.dev
 
+## MVP
 
-### May
+10 times
 
+## GitHub
 
-### June
+3 times GitHub Star
 
+## Sessions
 
-### July
+9.5 rating for ESPC
 
+## NPM
 
-### August
-
-
-### September
-
-
-### October
-
-
-### November
-
-
-### December
-
-
-## Conclusion
-
+https://www.npmjs.com/package/playwright-m365-helpers - slowly growing - October 2024
+https://www.npmjs.com/package/playwright-mail-reporter - 3155 downloads - July 2024
+https://www.npmjs.com/package/playwright-msteams-reporter - 80k downloads - July 2024
+https://www.npmjs.com/package/vscrui - 1.5k downloads - August 2024
+https://www.npmjs.com/package/@estruyf/github-actions-reporter - 1.6M downloads - December 2023, but a lot of new aditions in 2024
