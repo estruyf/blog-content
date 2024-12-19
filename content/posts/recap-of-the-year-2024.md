@@ -57,3 +57,7 @@ https://www.npmjs.com/package/playwright-mail-reporter - 3155 downloads - July 2
 https://www.npmjs.com/package/playwright-msteams-reporter - 80k downloads - July 2024
 https://www.npmjs.com/package/vscrui - 1.5k downloads - August 2024
 https://www.npmjs.com/package/@estruyf/github-actions-reporter - 1.6M downloads - December 2023, but a lot of new aditions in 2024
+
+## Personal goals
+
+12k cycling
