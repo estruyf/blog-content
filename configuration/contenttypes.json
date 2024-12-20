@@ -61,7 +61,7 @@
           "actions": [{
             "title": "Generate preview image",
             "script": "./scripts/fields/preview.mjs",
-            "command": "~/.nvm/versions/node/v20.11.1/bin/node"
+            "command": "~/.nvm/versions/node/v20.18.1/bin/node"
           }]
         },
         {
