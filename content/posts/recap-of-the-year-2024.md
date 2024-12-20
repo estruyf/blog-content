@@ -88,6 +88,8 @@ It’s been a breakthrough year for two projects.
 
 {{< blockquote type="info" text="Demo Time allows you to script your coding demos to perfection with this Visual Studio Code extension - no typos, no missteps, just flawless, stress-free presentations every time. Execute each demo step seamlessly, just like advancing through a presentation!" >}}
 
+{{< caption-new "/uploads/2024/12/demo-time-openai.webp" "Demo Time used in the OpenAI DevDays session by Mark Hudnall"  "data:image/jpeg;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoKAAUAAUAmJYwCdAEOjix4AAD+/qPhzixrHhSC0+46e21vOUpFNztSXed2HPW1/OAAAA==" "2500" >}}
+
 ## Visitor Badge’s phenomenal growth
 
 One of the most unexpected yet exciting achievements was the success of my Visitor Badge project. With over 60 million badges generated in 2024 alone, the total count has now exceeded 70 million. It’s incredible to see how this project has resonated with users worldwide.
