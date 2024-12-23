@@ -121,3 +121,8 @@ As helping other developers is one of my passions, I published some new NPM pack
 As I look ahead to 2025, I’m filled with anticipation and excitement for what’s to come. Reflecting on this year’s achievements reminds me of the importance of setting goals, embracing challenges, and staying connected to the communities that inspire us. Here’s to another year of growth, innovation, and adventure!
 
 If you’re looking for consultancy services, feel free to reach out via [Struyf Consulting](https://struyfconsulting.com).
+
+As we wrap up 2024, I want to take a moment to wish everyone a Merry Christmas and a Happy New Year! May your holidays be filled with joy, love, and laughter. Here's to a fantastic 2025, full of new opportunities, adventures, and success! 🎇
+
+Warm wishes,
+Elio
