@@ -62,6 +62,10 @@ To make it complete, my session on test automation with GitHub Actions and Playw
 
 {{< caption-new "/uploads/2024/12/espc-feedback.webp" "ESPC Feedback"  "data:image/jpeg;base64,UklGRigAAABXRUJQVlA4IBwAAAAwAQCdASoKAAIAAUAmJaQAA3AA/vyWK1kHdAAA" "874" >}}
 
+Meeting with the old Valo team members again at ESPC was especially lovely. It was a great reunion and a reminder of the fantastic time we had working together.
+
+{{< caption-new "/uploads/2024/12/valo-team.webp" "The old Valo team"  "data:image/jpeg;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoKAAgAAUAmJZwCdAELKUsJAAD+h+p+0BHJ7+HftkIXmqBjEu9TiYyaT8CJPR31WneDyEx+TUSQJtZqsRmMvSkYmKI4SqFERYqLRJwj5nkAVMKOAAA=" "1500" >}}
+
 ## Blogging
 
 This year, I published 34 blog articles, most of which centered around [Playwright](https://playwright.dev/) and [GitHub Actions](https://github.com). Blogging has always been a way for me to share knowledge, document my journey, and give back to the community. 
