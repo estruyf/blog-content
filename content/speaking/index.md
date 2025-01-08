@@ -86,7 +86,7 @@ Microsoft 365 PnP Weekly – Episode 211
 
 The novice: a journey to start developing VS Code extensions
 
-[Link to the event](https://gdg.community.dev/events/details/google-gdg-berlin-presents-gdg-april-meetup-html-and-vs-code/)
+[Link to the event](https://gdg.community.dev/events/details/google-gdg-berlin-presents-gdg-april-meetup-html-and-vs-code/) - [Link to the video](https://youtu.be/NZ-MKjPwb4A?si=CRYvfRkMIm5CPpQi)
 
 #### 2 March 2023 / James Q Quick - YouTube Live
 
