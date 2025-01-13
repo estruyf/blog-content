@@ -1,6 +1,26 @@
 [{
+  "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
+  "title": "Ensure quality in Power Apps by integrating automated testing with Playwright",
+  "description": "Low-code/no-code platforms like Power Apps have transformed how we build business applications, but they require robust testing like any other software. This session will explore how to use Playwright to automate testing for Power Apps solutions, ensuring reliability even in rapidly evolving environments. We will demonstrate how to create end-to-end tests for common Power Apps scenarios, mock connectors, and prepare for deployment. You will also learn best practices for building practical tests to catch bugs and regressions early. Expect to see some real code! By the end of this session, you will understand how to leverage Playwright to enhance the quality of your Power Apps solutions.",
+  "startDate": "2025-02-22",
+  "endDate": "2025-02-22",
+  "location": "Edegem (BE)",
+  "event": {
+    "name": "Global Power Platform Bootcamp 2025 - Belgium Edition",
+    "link": "https://www.powerplatformbootcamp.com/2025/location-detail/?id=b708fc52-8d96-ef11-95f5-6045bd5f73bf&city=Belgian+PowerAddicts"
+  },
+  "links": [{
+    "title": "Link to the event",
+    "link": "https://www.powerplatformbootcamp.com/2025/location-detail/?id=b708fc52-8d96-ef11-95f5-6045bd5f73bf&city=Belgian+PowerAddicts"
+  }],
+  "reporting": {
+    "gde": false,
+    "mvp": false,
+    "github": false
+  }
+}, {
     "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
-    "title": " Integrate Playwright tests for Power Apps into your DevOps process ",
+    "title": " Integrate Playwright tests for Power Apps into your DevOps process",
     "description": "Tired of Power Platform solutions that feel like being held together by duct tape and bubble gum? You're not alone. In this session, Luise and Elio will discuss why proper testing is often overlooked in Power Apps development and how we can change that game. We'll introduce you to Playwright, your new best friend for automated testing, and show you why it's a perfect match for Power Apps. We'll cover the essentials of making your apps test-friendly and walk you through some common tests to get you started. But we won't stop there. We'll show you how to take your testing to the next level by automating the process and seamlessly integrating it into your development pipeline. By the end of this session, you'll have a clear roadmap for releasing rock-solid Power Apps that'll make your users (and your sanity) thank you.",
     "startDate": "2025-05-26",
     "endDate": "2025-05-28",
