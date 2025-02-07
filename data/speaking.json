@@ -1,24 +1,51 @@
-[{
-  "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
-  "title": "Ensure quality in Power Apps by integrating automated testing with Playwright",
-  "description": "Low-code/no-code platforms like Power Apps have transformed how we build business applications, but they require robust testing like any other software. This session will explore how to use Playwright to automate testing for Power Apps solutions, ensuring reliability even in rapidly evolving environments. We will demonstrate how to create end-to-end tests for common Power Apps scenarios, mock connectors, and prepare for deployment. You will also learn best practices for building practical tests to catch bugs and regressions early. Expect to see some real code! By the end of this session, you will understand how to leverage Playwright to enhance the quality of your Power Apps solutions.",
-  "startDate": "2025-02-22",
-  "endDate": "2025-02-22",
-  "location": "Edegem (BE)",
-  "event": {
-    "name": "Global Power Platform Bootcamp 2025 - Belgium Edition",
-    "link": "https://www.powerplatformbootcamp.com/2025/location-detail/?id=b708fc52-8d96-ef11-95f5-6045bd5f73bf&city=Belgian+PowerAddicts"
+[
+  {
+    "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
+    "title": "Improve Your Presentation Skills by Scripting Your Live Coding Demos to Perfection",
+    "description": "Join Elio for a talk on mastering live coding demos. Learn to script your demos for seamless, error-free execution using Visual Studio Code and the Demo Time extension. Ideal for anyone performing live coding at conferences, webinars, or team meetings, this session will help transform your presentations from stressful to impressive.",
+    "startDate": "2025-06-13",
+    "endDate": "2025-06-17",
+    "location": "Amsterdam (NL)",
+    "event": {
+      "name": "React Summit",
+      "link": "https://reactsummit.com"
+    },
+    "links": [
+      {
+        "title": "Register",
+        "link": "https://gitnation.com/badges/react-summit-2025/elio_struyf"
+      }
+    ],
+    "reporting": {
+      "gde": false,
+      "mvp": false,
+      "github": false
+    }
   },
-  "links": [{
-    "title": "Link to the event",
-    "link": "https://www.powerplatformbootcamp.com/2025/location-detail/?id=b708fc52-8d96-ef11-95f5-6045bd5f73bf&city=Belgian+PowerAddicts"
-  }],
-  "reporting": {
-    "gde": false,
-    "mvp": false,
-    "github": false
-  }
-}, {
+  {
+    "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
+    "title": "Ensure quality in Power Apps by integrating automated testing with Playwright",
+    "description": "Low-code/no-code platforms like Power Apps have transformed how we build business applications, but they require robust testing like any other software. This session will explore how to use Playwright to automate testing for Power Apps solutions, ensuring reliability even in rapidly evolving environments. We will demonstrate how to create end-to-end tests for common Power Apps scenarios, mock connectors, and prepare for deployment. You will also learn best practices for building practical tests to catch bugs and regressions early. Expect to see some real code! By the end of this session, you will understand how to leverage Playwright to enhance the quality of your Power Apps solutions.",
+    "startDate": "2025-02-22",
+    "endDate": "2025-02-22",
+    "location": "Edegem (BE)",
+    "event": {
+      "name": "Global Power Platform Bootcamp 2025 - Belgium Edition",
+      "link": "https://www.powerplatformbootcamp.com/2025/location-detail/?id=b708fc52-8d96-ef11-95f5-6045bd5f73bf&city=Belgian+PowerAddicts"
+    },
+    "links": [
+      {
+        "title": "Link to the event",
+        "link": "https://www.powerplatformbootcamp.com/2025/location-detail/?id=b708fc52-8d96-ef11-95f5-6045bd5f73bf&city=Belgian+PowerAddicts"
+      }
+    ],
+    "reporting": {
+      "gde": false,
+      "mvp": false,
+      "github": false
+    }
+  },
+  {
     "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
     "title": " Integrate Playwright tests for Power Apps into your DevOps process",
     "description": "Tired of Power Platform solutions that feel like being held together by duct tape and bubble gum? You're not alone. In this session, Luise and Elio will discuss why proper testing is often overlooked in Power Apps development and how we can change that game. We'll introduce you to Playwright, your new best friend for automated testing, and show you why it's a perfect match for Power Apps. We'll cover the essentials of making your apps test-friendly and walk you through some common tests to get you started. But we won't stop there. We'll show you how to take your testing to the next level by automating the process and seamlessly integrating it into your development pipeline. By the end of this session, you'll have a clear roadmap for releasing rock-solid Power Apps that'll make your users (and your sanity) thank you.",
@@ -29,16 +56,19 @@
       "name": "European BizApps Summit 2025",
       "link": "https://bizappssummit.eu/"
     },
-    "links": [{
-      "title": "Link to the event",
-      "link": "https://bizappssummit.eu/"
-    }],
+    "links": [
+      {
+        "title": "Link to the event",
+        "link": "https://bizappssummit.eu/"
+      }
+    ],
     "reporting": {
       "gde": false,
       "mvp": false,
       "github": true
     }
-  }, {
+  },
+  {
     "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
     "title": "Test Automation with GitHub Actions and Playwright for Microsoft 365 solutions",
     "description": "GitHub Actions is a powerful tool for creating and running CI/CD pipelines. Playwright is a modern tool for end-to-end testing. In this session, you will learn how to combine these two tools to automate your testing process and improve the quality of your Microsoft 365 solutions. You will see how to set up GitHub Actions for running Playwright tests, handle test results and notifications, and follow best practices for test automation. By the end of this session, you will have the skills and confidence to implement test automation in your projects with GitHub Actions and Playwright.",
@@ -49,16 +79,19 @@
       "name": "European Collaboration Summit",
       "link": "https://collabsummit.eu/"
     },
-    "links": [{
-      "title": "Link to the event",
-      "link": "https://collabsummit.eu/"
-    }],
+    "links": [
+      {
+        "title": "Link to the event",
+        "link": "https://collabsummit.eu/"
+      }
+    ],
     "reporting": {
       "gde": false,
       "mvp": false,
       "github": true
     }
-  }, {
+  },
+  {
     "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
     "title": "Test Automation with GitHub Actions and Playwright for Microsoft 365 solutions",
     "description": "GitHub Actions is a powerful tool for creating and running CI/CD pipelines. Playwright is a modern tool for end-to-end testing. In this session, you will learn how to combine these two tools to automate your testing process and improve the quality of your Microsoft 365 solutions. You will see how to set up GitHub Actions for running Playwright tests, handle test results and notifications, and follow best practices for test automation. By the end of this session, you will have the skills and confidence to implement test automation in your projects with GitHub Actions and Playwright.",
@@ -69,16 +102,19 @@
       "name": "CollabDays BE",
       "link": "https://www.collabdays.org/2024-belgium/"
     },
-    "links": [{
-      "title": "Link to the event",
-      "link": "https://www.collabdays.org/2024-belgium/"
-    }],
+    "links": [
+      {
+        "title": "Link to the event",
+        "link": "https://www.collabdays.org/2024-belgium/"
+      }
+    ],
     "reporting": {
       "gde": true,
       "mvp": false,
       "github": true
     }
-  }, {
+  },
+  {
     "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
     "title": "From Code to Cloud: Automated Deployments with GitHub Actions",
     "description": "Let us dive into the world of GitHub Actions, an instrumental component in modern Continuous Integration and Continuous Deployment (CI/CD) practices. In this session, we'll explore how to harness GitHub Actions to streamline your deployment workflows, making the process of moving from code commits to live deployments seamless and efficient. We'll cover how to use variables, secrets, environment approvals, local testing, and more. If you want to automate your deployments, this session is for you!",
@@ -89,16 +125,19 @@
       "name": "VisugXL 2024",
       "link": "https://www.visug.be"
     },
-    "links": [{
-      "title": "Link to the event",
-      "link": "https://www.visug.be/Events/95"
-    }],
+    "links": [
+      {
+        "title": "Link to the event",
+        "link": "https://www.visug.be/Events/95"
+      }
+    ],
     "reporting": {
       "gde": false,
       "mvp": false,
       "github": true
     }
-  }, {
+  },
+  {
     "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
     "title": "MVP sharing session: get insights from Microsoft MVPs to become the next MVP",
     "description": "Community event from PowerAddicts",
@@ -109,10 +148,12 @@
       "name": "PowerAddicts",
       "link": "https://www.poweraddicts.be"
     },
-    "links": [{
-      "title": "Link to the event",
-      "link": "https://www.poweraddicts.be/summer-event-powerbbq-04-sept-2024/"
-    }],
+    "links": [
+      {
+        "title": "Link to the event",
+        "link": "https://www.poweraddicts.be/summer-event-powerbbq-04-sept-2024/"
+      }
+    ],
     "reporting": {
       "gde": false,
       "mvp": false,
@@ -130,10 +171,12 @@
       "name": "ESPC",
       "link": "https://www.sharepointeurope.com/"
     },
-    "links": [{
-      "title": "Link to the event",
-      "link": "https://www.sharepointeurope.com/"
-    }],
+    "links": [
+      {
+        "title": "Link to the event",
+        "link": "https://www.sharepointeurope.com/"
+      }
+    ],
     "reporting": {
       "gde": true,
       "mvp": true,
@@ -150,10 +193,12 @@
       "name": "CollabDays NL",
       "link": "https://www.collabdays.org/2024-nl/"
     },
-    "links": [{
-      "title": "Link to the event",
-      "link": "https://www.collabdays.org/2024-nl/"
-    }],
+    "links": [
+      {
+        "title": "Link to the event",
+        "link": "https://www.collabdays.org/2024-nl/"
+      }
+    ],
     "reporting": {
       "gde": true,
       "mvp": true,
@@ -170,7 +215,8 @@
       "name": "devs.gent",
       "link": "https://devs.gent/"
     },
-    "links": [{
+    "links": [
+      {
         "title": "Link to the event",
         "link": "https://www.meetup.com/devs-gent/events/298803280/"
       },
@@ -199,7 +245,8 @@
       "name": "Cloud Summit",
       "link": "https://cloudsummit.eu/"
     },
-    "links": [{
+    "links": [
+      {
         "title": "Link to the event",
         "link": "https://cloudsummit.eu/"
       },
