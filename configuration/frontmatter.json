@@ -64,7 +64,7 @@
     }
   ],
   "frontMatter.preview.host": "http://localhost:1313",
-  "frontMatter.content.publicFolder": ".frontmatter/static",
+  "frontMatter.content.publicFolder": "[[workspace]]/.frontmatter/static",
   "frontMatter.content.defaultSorting": "DateDesc",
   "frontMatter.dashboard.openOnStart": false,
   "frontMatter.taxonomy.slugPrefix": "/",

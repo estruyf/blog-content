@@ -1,0 +1,34 @@
+[
+  {
+    "start": "Sep 2013",
+    "end": "Present",
+    "role": "President",
+    "company": "BIWUG",
+    "location": "Belgium",
+    "description": "<a href='https://biwug.be' alt='BIWUG'>BIWUG</a> is the Belgian Information Worker User Group which I joined in 2013. Together with a team of eight people, we organize events related to Office 365 & SharePoint."
+  },
+  {
+    "start": "Aug 2019",
+    "end": "Present",
+    "role": "Maintainer",
+    "company": "Front Matter CMS",
+    "location": "Belgium",
+    "description": "<a href='https://frontmatter.codes' alt='Front Matter CMS'>Front Matter</a> is a CMS that runs within Visual Studio Code. It gives you the power and control of a full-blown CMS while also providing you the flexibility and speed of the static site generator of your choice like: Hugo, Jekyll, Docusaurus, NextJs, Gatsby, and many more..."
+  },
+  {
+    "start": "Apr 2020",
+    "end": "Present",
+    "role": "Owner",
+    "company": "PYOD - Pimp Your Own Device",
+    "location": "Belgium",
+    "description": "<a href='https://pimpyourowndevice.com' alt='Pimp Your Own Device'>Pimp Your Own Device</a> - such as laptops, notebooks, tablets with unique stickers by artists from within the tech community. Show your sticker love and make your device, even more, yours by sticking your favorite messages on them."
+  },
+  {
+    "start": "Dec 2023",
+    "end": "Present",
+    "role": "Maintainer",
+    "company": "Demo Time",
+    "location": "Belgium",
+    "description": "<a href='https://demotime.elio.dev' alt='Demo Time'>Demo Time</a> - Script your coding demos to perfection with this VS Code extension - no typos, no missteps, just flawless, stress-free presentations every time. Execute each demo step seamlessly, just like advancing through a slide presentation!"
+  }
+]

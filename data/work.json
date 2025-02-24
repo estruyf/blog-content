@@ -1,0 +1,74 @@
+[
+  {
+    "start": "Jan 2023",
+    "end": "Present",
+    "role": "Microsoft 365 Architect",
+    "company": "Involv Intranet",
+    "location": "Belgium (hybrid)",
+    "description": "As a Microsoft 365 Architect at Involv, I focus on driving innovation and efficiency through:<br><br>• Research & Development (R&D): Exploring and implementing cutting-edge solutions to enhance our Microsoft 365 offerings.<br>• End-to-End Test Automation: Ensuring quality control by developing automated tests that guarantee seamless performance and reliability.<br>• CI/CD with GitHub: Streamlining deployment pipelines to deliver continuous integration and delivery for robust and scalable solutions.<br><br>My work combines technical expertise with a passion for improving collaboration and productivity within Microsoft 365 environments."
+  },
+  {
+    "start": "Oct 2023",
+    "end": "Present",
+    "role": "Solutions Architect",
+    "company": "PointFire",
+    "location": "Belgium (remote) / Canada",
+    "description": "As a Solutions Architect at IceFire Studios/PointFire, I focus on the development and maintenance of the PointFire Translator Express product. My role includes integrating CI/CD pipelines on GitHub, implementing automated testing processes, and advancing innovation through Research and Development (R&D) initiatives involving OpenAI and Microsoft Graph.<br><br>By leveraging cutting-edge technologies and automation, I aim to deliver powerful and reliable tools that enhance multilingual collaboration and productivity."
+  },
+  {
+    "start": "Nov 2021",
+    "end": "May 2023",
+    "role": "Lead DevTools Engineer",
+    "company": "RapidAPI",
+    "location": "Belgium (hybrid) / US",
+    "description": "As the Lead DevTools Engineer at Rapid, I played a key role in advancing developer productivity and API integration. I led the implementation of the RapidAPI client for Visual Studio Code, which reached an impressive milestone of 500,000 installs worldwide.<br><br>In addition, I managed and guided a talented team of developers to create and deploy additional Visual Studio Code extensions, focusing on improving API quality, linting, and streamlining the development process. These efforts contributed to a more efficient and robust development ecosystem for API users globally."
+  },
+  {
+    "start": "May 2021",
+    "end": "Oct 2021",
+    "role": "Lead Architect for Microsoft 365",
+    "company": "Happeo",
+    "location": "Belgium (hybrid) / Finland",
+    "description": "As the Lead Architect at Happeo, I was responsible for defining the strategic vision for integrating Happeo with Microsoft 365. This involved extensive R&D, ensuring seamless interoperability, and developing new features to enhance the user experience within the Microsoft 365 ecosystem."
+  },
+  {
+    "start": "Dec 2017",
+    "end": "May 2021",
+    "role": "Engineering Lead",
+    "company": "Valo",
+    "location": "Belgium (hybrid) / Finland",
+    "description": "As an Engineering Lead, I was responsible for aligning global teams and driving innovation across Valo's product suite. I owned the Valo extensibility model, ensuring partners and clients could effectively customize the product while maintaining performance and reliability. Additionally, I collaborated closely with support and partner sales teams to provide technical assistance and streamline deployment processes."
+  },
+  {
+    "start": "Feb 2017",
+    "end": "Dec 2017",
+    "role": "Trainer",
+    "company": "U2U",
+    "location": "Belgium",
+    "description": "As a trainer at U2U, I designed and delivered comprehensive courses on Angular, TypeScript, Microsoft 365, and Azure. My role involved mentoring developers, creating hands-on labs, and ensuring participants gained practical expertise in these technologies."
+  },
+  {
+    "start": "Aug 2014",
+    "end": "Feb 2017",
+    "role": "Senior Office 365 Consultant & Office 365 MVP",
+    "company": "Ventigrate",
+    "location": "Belgium",
+    "description": "At Ventigrate, I led SharePoint development projects focused on document management, workflow automation, and intranet design. During the time at Ventigrate, I became an Office 365 MVP, I also contributed to the community through blogging, speaking engagements, and knowledge sharing."
+  },
+  {
+    "start": "Mar 2010",
+    "end": "Jul 2014",
+    "role": "Senior SharePoint Consultant",
+    "company": "Xylos",
+    "location": "Belgium",
+    "description": "I specialized in SharePoint 2007-2013 development, branding, intranet, and implementation projects. My role included designing scalable solutions, training end-users, and optimizing SharePoint environments for enterprise clients."
+  },
+  {
+    "start": "Jun 2008",
+    "end": "Mar 2010",
+    "role": "Junior System Engineer",
+    "company": "Electrabel (ECX)",
+    "location": "Belgium",
+    "description": "In my first year at Electrabel, I was responsible for installing and maintaining SharePoint environments, ensuring optimal performance and security. In my second year, I expanded my role by developing a planning system and issue management tools, streamlining internal processes and improving efficiency."
+  }
+]

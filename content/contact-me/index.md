@@ -9,7 +9,7 @@ aliases:
 
 menu:
   main:
-    weight: 7
+    weight: 8
     name: Contact
 ---
 
