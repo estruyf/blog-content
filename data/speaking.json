@@ -24,6 +24,29 @@
   },
   {
     "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
+    "title": "Building your own vscode extensions",
+    "description": "YouTube video on This is Tech Talks by Santosh Yadav and Sonu Kapoor",
+    "startDate": "2025-02-26",
+    "endDate": "2025-02-26",
+    "location": "Online (YouTube)",
+    "event": {
+      "name": "This is Tech Talks",
+      "link": "https://www.youtube.com/@ThisisTechTalks"
+    },
+    "links": [
+      {
+        "title": "Video",
+        "link": "https://www.youtube.com/watch?v=P0v2wvwDOU4"
+      }
+    ],
+    "reporting": {
+      "gde": false,
+      "mvp": false,
+      "github": false
+    }
+  },
+  {
+    "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
     "title": "Ensure quality in Power Apps by integrating automated testing with Playwright",
     "description": "Low-code/no-code platforms like Power Apps have transformed how we build business applications, but they require robust testing like any other software. This session will explore how to use Playwright to automate testing for Power Apps solutions, ensuring reliability even in rapidly evolving environments. We will demonstrate how to create end-to-end tests for common Power Apps scenarios, mock connectors, and prepare for deployment. You will also learn best practices for building practical tests to catch bugs and regressions early. Expect to see some real code! By the end of this session, you will understand how to leverage Playwright to enhance the quality of your Power Apps solutions.",
     "startDate": "2025-02-22",
