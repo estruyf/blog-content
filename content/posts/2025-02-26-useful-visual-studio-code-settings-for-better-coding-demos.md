@@ -80,8 +80,8 @@ To apply all these settings at once, add them to your `settings.json` file in VS
 
 A good coding demo is all about making things as clear as possible for your audience. These settings help by:
 
-✅ Making the cursor more visible
-✅ Reducing unnecessary distractions
-✅ Ensuring your code remains the focus
+- ✅ Making the cursor more visible
+- ✅ Reducing unnecessary distractions
+- ✅ Ensuring your code remains the focus
 
 Try these settings before your next demo and see the difference!
