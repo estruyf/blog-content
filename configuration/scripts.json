@@ -1,9 +1,10 @@
 {
   "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
-  "frontMatter.custom.scripts": [{
+  "frontMatter.custom.scripts": [
+    {
       "title": "Generate social image",
       "script": "./scripts/social-img.mjs",
-      "command": "node",
+      "command": "~/.nvm/versions/node/v18.20.5/bin/node",
       "contentTypes": ["post"]
     },
     {

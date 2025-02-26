@@ -1,7 +1,7 @@
 {
   "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
   "frontMatter.logging": "verbose",
-  "frontMatter.copilot.family": "gpt-4-turbo",
+  // "frontMatter.copilot.family": "gpt-4-turbo",
   "frontMatter.website.host": "https://www.eliostruyf.com",
   "frontMatter.framework.startCommand": "hugo server -D",
   "frontMatter.content.fmHighlight": true,
