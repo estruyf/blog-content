@@ -29,7 +29,7 @@ By default, Visual Studio Code uses a thin blinking cursor, which can be hard to
 "editor.cursorStyle": "block"
 ```
 
-{{< caption-new "/uploads/2025/02/block-cursor.webp" "Block cursor in Visual Studio Code" >}}
+{{< caption-new "/uploads/2025/02/block-cursor.webp" "Block cursor in Visual Studio Code"  "data:image/jpeg;base64,UklGRrAAAABXRUJQVlA4WAoAAAAQAAAACQAABgAAQUxQSDIAAAABN6CgjRQ2+OzlBROYIiICqzfxQAjZil4lEEIIB/EVvsL3pziGiP4HACupXpL5ne0GAFZQOCBYAAAAMAIAnQEqCgAHAAFAJiWcAA+E8Dz5u3l6tgAA/vQWkfnnv/0kXbr+Z2/Pz6+wiyufP9QDDgslJh/ZeH9+xGJFTj2Pm2I+TKpddVNe3BGMnIvTXDlwrAAAAA==" "200" >}}
 
 ## 2️⃣ Expand cursor instead of blink
 
@@ -39,7 +39,7 @@ Another way to make the cursor more noticeable is to expand it instead of a blin
 "editor.cursorBlinking": "expand"
 ```
 
-{{< caption-new "/uploads/2025/02/expand-cursor.webp" "Expand animation for the cursor" >}}
+{{< caption-new "/uploads/2025/02/expand-cursor.webp" "Expand animation for the cursor"  "data:image/jpeg;base64,UklGRqQAAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSDYAAAABP6CgbRToXqygBP+SsBERgd/ckFAQyUrFN8BrQARCvACkMIL2HwwR0f8JkF0kbQDkp+87LhtWUDggSAAAANABAJ0BKgoABgABQCYlpAAC60rjH3TQAP64Pq/gpufqu/IdVNhJIdQK+ilKUpjrOtnJH4JxO72AagAjW/78kycEuAAGfIAAAA==" "200" >}}
 
 ## 3️⃣ Disable editor hovers
 
@@ -59,7 +59,7 @@ A high-contrast cursor color ensures it's always easy to spot, even in different
 }
 ```
 
-{{< caption-new "/uploads/2025/02/high-contrast-cursor.webp" "Change color to a high-contrast version" >}}
+{{< caption-new "/uploads/2025/02/high-contrast-cursor.webp" "Change color to a high-contrast version"  "data:image/jpeg;base64,UklGRrgAAABXRUJQVlA4WAoAAAAQAAAACQAABgAAQUxQSDIAAAABN6Agkg06+p4/YZSQSkQE1m7ygRCyFb1KIIQQDuIrfIXvT3EMEf0PAFZSvSTzO9sNAFZQOCBgAAAAMAIAnQEqCgAHAAFAJiWUAuwGKebe2SsUa0gA/uiqgoyT3/6R+MYajZrvQZdqrD5V/8Yqlq1vf581T9WM/3QiSjjqfOT9pKHNA0P7r4wPgW13CO78c2PD9bc6Z0LYAAAA" "200" >}}
 
 ## Putting it all together
 
