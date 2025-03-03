@@ -139,23 +139,23 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
- - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
- - name: Setup Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: "npm"
 
- - name: Install dependencies
+      - name: Install dependencies
         run: |
- npm ci
- cd app && npm ci
+          npm ci
+          cd app && npm ci
 
- - name: Build
+      - name: Build
         run: npm run build
 
- - name: Deploy
+      - name: Deploy
         run: npx @azure/static-web-apps-cli deploy -d ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_<ID> }} --env production
 ```
 
