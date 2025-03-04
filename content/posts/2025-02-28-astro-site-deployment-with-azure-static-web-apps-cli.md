@@ -132,7 +132,7 @@ name: Deployment to Azure Static Web App
 on:
   push:
     branches:
- - main
+      - main
 
 jobs:
   build_and_deploy_job:
