@@ -52,7 +52,7 @@ func new --template "HTTP trigger" --name http_name
 
 You must update the file to make your SWA configuration aware of the Azure Functions project. You need to add the following configuration:
 
-```json {title="./swa-cli.config.json", hl_lines="7-11"}
+```json {title="./swa-cli.config.json", hl_lines="8-11"}
 {
   "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
   "configurations": {
