@@ -205,7 +205,7 @@ npm run dev
 
 Visit `http://localhost:4280`, click the login button, and manually enter user claims in the authentication simulator.
 
-{{< caption-new "/uploads/2025/02/swa-auth-local.webp" "Local authentication testing" >}}
+{{< caption-new "/uploads/2025/02/swa-auth-local.webp" "Local authentication testing"  "data:image/jpeg;base64,UklGRp4AAABXRUJQVlA4WAoAAAAQAAAACQAABgAAQUxQSC0AAAABL6CQbQTIH2oS47lHIyLivAYKIVmhbjL4AeTwJoAY8vcJIaL/MZLOgP6Vuy8AVlA4IEoAAADwAQCdASoKAAcAAUAmJZwC7AEQXMSR2IAA/vyk6CrteXz6LHIdJ4dcJ+4mqi+tN8Ofbl+SiI9yVciEchab4INVogCxEUjxDo8AAA==" "1252" >}}
 
 {{< blockquote type="alert" text="By default, the user gets the `anonymous` and `authenticated` roles. For this example, manually add the `admin` role, otherwise you would not be able to reach the `/success` page." >}}
 
@@ -227,7 +227,7 @@ When you completed the local testing, you can configure the user roles on Azure 
 5. Assign the **admin** role
 6. Click **Generate** and share the **invite link** with the user
 
-{{< caption-new "/uploads/2025/02/swa-role-assignment.webp" "Role assignment on the Azure Static Web App" >}}
+{{< caption-new "/uploads/2025/02/swa-role-assignment.webp" "Role assignment on the Azure Static Web App"  "data:image/jpeg;base64,UklGRrAAAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSDEAAAABL6CokRQ2eIWmiReaiIi42J6HokaSlAULa2H/pABOAfmXcxYi+h+Wmbzfe/qttZYAAFZQOCBYAAAAMAIAnQEqCgAGAAFAJiWkAA+EMIdtOsa5gAAA/vdw6e3/4/DwvsD4vjxbrzm2/lAFf8Cv7CCiny+f37edStrpDwu++x+p+F4aJaG28UV2OIbKrapN+aFAAA==" "658" >}}
 
 ## Step 6: Time for the deployment
 

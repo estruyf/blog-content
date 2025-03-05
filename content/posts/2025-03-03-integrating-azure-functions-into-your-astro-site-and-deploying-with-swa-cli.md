@@ -100,7 +100,7 @@ To run your Astro site and Azure Functions locally, you can use the following co
 npm run dev
 ```
 
-{{< caption-new "/uploads/2025/02/wait-for-funcs.webp" "SWA waits for Astro site and Azure Functions" >}}
+{{< caption-new "/uploads/2025/02/wait-for-funcs.webp" "SWA waits for Astro site and Azure Functions"  "data:image/jpeg;base64,UklGRoQAAABXRUJQVlA4WAoAAAAQAAAACQAAAwAAQUxQSCkAAAAAZqOjo6Ojo6OjZqH//////////6Gh//////////+haaioqKioqKioaQBWUDggNAAAANABAJ0BKgoABAABQCYlpAAC65YtmrYAAP70FwC//FYe61FtRpfmB/NEv0Jvgv62RuW8XAA=" "900" >}}
 
 {{< blockquote type="note" text="Notice that the Static Web Apps CLI proxy service waits for the Astro server and the Azure Functions server to start before starting the application." >}}
 
@@ -201,7 +201,7 @@ import { Hello } from "./Hello";
 <Hello client:load />
 ```
 
-{{< caption-new "/uploads/2025/02/calling-the-api.webp" "Calling the Azure Functions API from the Astro site" >}}
+{{< caption-new "/uploads/2025/02/calling-the-api.webp" "Calling the Azure Functions API from the Astro site"  "data:image/jpeg;base64,UklGRpQAAABXRUJQVlA4WAoAAAAQAAAACQAABQAAQUxQSC0AAAABL6CgbRQ4dy+CsIIPIiI+OzoYSNsGZuEGTh2cabiDz7+cW4jofzSgS7Lv2C4AVlA4IEAAAADQAQCdASoKAAYAAUAmJZwCw7EO/cHJAAD+uCfaf/UXOnG1iRHsd9SO5w3iz1O8qFplk174+wb1mkrPCNp3AAAA" "1020" >}}
 
 ## Step 7: Update the GitHub Actions workflow
 
