@@ -64,7 +64,7 @@
     ],
     "reporting": {
       "gde": false,
-      "mvp": false,
+      "mvp": true,
       "github": false
     }
   },
@@ -133,7 +133,7 @@
     ],
     "reporting": {
       "gde": true,
-      "mvp": false,
+      "mvp": true,
       "github": true
     }
   },
@@ -156,7 +156,7 @@
     ],
     "reporting": {
       "gde": false,
-      "mvp": false,
+      "mvp": true,
       "github": true
     }
   },
