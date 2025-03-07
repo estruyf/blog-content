@@ -13,7 +13,7 @@ menu:
 lastmod: '2022-01-22T09:02:15.928Z'
 ---
 
-{{< caption-new "/uploads/2022/07/eliostruyf_aboutme.png" "Elio Struyf on a cycling trip" >}}
+{{< caption-new "/uploads/2022/07/eliostruyf_aboutme.webp" "Elio Struyf on a cycling trip" >}}
 
 Elio Struyf has led a remarkable career as an award-winning Engineering Lead, a trusted information technology thought-leader, and an energizing public speaker with over a decade of experience facilitating events and conferences across Europe. Defined by his tenacity, expertise, and inspiring personal journey, Elio is driven to form authentic connections, share his specialist insights, and motivate professionals within the technology arena.
 
