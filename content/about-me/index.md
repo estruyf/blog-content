@@ -1,16 +1,17 @@
 ---
-title: About me
-date: 2019-08-14T19:38:55.000Z
+title: "About me"
+date: "2019-08-14T19:38:55.000Z"
 draft: false
-type: page
-url: /about/
+type: "page"
+url: "/about/"
 aliases:
-  - /about-me/
+  - "/about-me/"
 menu:
   main:
     weight: 6
-    name: About
-lastmod: '2022-01-22T09:02:15.928Z'
+    name: "About"
+lastmod: "2022-01-22T09:02:15.928Z"
+preview: "/social/7ab4c389-b7b4-45e3-ba09-8cacc6839527.png"
 ---
 
 {{< caption-new "/uploads/2022/07/eliostruyf_aboutme.webp" "Elio Struyf on a cycling trip" >}}
