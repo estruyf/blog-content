@@ -38,4 +38,3 @@ This page provides various details about your Static Web App, including a **Stor
 {{< caption-new "/uploads/2025/03/swa-storage-usage.webp" "Static Web App - Storage Usage" >}}
 
 I hope this helps you better understand and monitor the storage usage of your Azure Static Web App.
-

@@ -54,7 +54,6 @@ The first step is to configure your routes and authentication settings in the `s
 
 Start by creating a `staticwebapp.config.json` file in your project's root directory with the following contents:
 
-
 ```json {title="staticwebapp.config.json"}
 {
   "trailingSlash": "auto",
@@ -221,7 +220,7 @@ Visit `http://localhost:4280`, click the login button, and manually enter user c
 When you completed the local testing, you can configure the user roles on Azure Static Web Apps. Follow these steps:
 
 1. Open the [Azure portal](https://portal.azure.com/)
-2. Navigate to your** Azure Static Web App**
+2. Navigate to your **Azure Static Web App**
 3. Click **Role Management**
 4. Select **Invite** and enter the **user’s email**
 5. Assign the **admin** role
