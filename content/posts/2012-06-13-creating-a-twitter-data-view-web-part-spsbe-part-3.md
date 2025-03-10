@@ -1,5 +1,5 @@
 ---
-title: 'Creating a Twitter Data View Web Part: SPSBE Part 3'
+title: "Creating a Twitter Data View Web Part: SPSBE Part 3"
 author: Elio Struyf
 type: post
 date: 2012-06-13T06:59:06+00:00
@@ -28,9 +28,9 @@ The last XSLT demo I gave on SharePoint Saturday Belgium was about creating a Tw
 
 First of all you need to retrieve the Twitter search results as RSS feed. This can be done by navigating to the following URL: http://search.twitter.com/search.rss?q=YOUR-QUERY& rpp=TOTAL-RESULTS
 
-*   Change **YOUR-QUERY** by your search value;
-*   Change **TOTAL-RESULTS** by any number of results you want to retrieve.
-More information about this can be found [here](https://dev.twitter.com/docs/api/1/get/search).
+- Change **YOUR-QUERY** by your search value;
+- Change **TOTAL-RESULTS** by any number of results you want to retrieve.
+  More information about this can be found [here](https://dev.twitter.com/docs/api/1/get/search).
 
 ## Step 2
 
@@ -56,11 +56,11 @@ Select your Twitter Data Source.
 
 In the data source select the following fields to be added to the data view web part:
 
-*   Item/google:image_link;
-*   Item/author;
-*   Item/description;
-*   Item/pubDate.
-{{< caption-legacy "uploads/2012/05/051812_0726_CreatingaTw3.png" "Select Fields" >}}
+- Item/google:image_link;
+- Item/author;
+- Item/description;
+- Item/pubDate.
+  {{< caption-legacy "uploads/2012/05/051812_0726_CreatingaTw3.png" "Select Fields" >}}
 
 When the fields are selected, click **Insert Selected Fields as** and choose **Multiple item view**.
 
@@ -72,19 +72,15 @@ Click on the image link and switch to code view, this will bring you to the corr
 
 To make the image visible you need to change:
 
-
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:value-of select="google:image_link"/>
-{{< / highlight >}}
-
+```
 
 To this:
 
-
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 ![Twitter image]({google:image_link})
-{{< / highlight >}}
-
+```
 
 Notice the brackets { }, this can be used as short notation for selecting your data.
 
@@ -98,24 +94,20 @@ The users' full name will be used for the text to display.
 
 To do this you could change:
 
-
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:value-of select="author"/>
-{{< / highlight >}}
-
+```
 
 Into this:
 
-
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <a>
-  <xsl:attribute name="href">
-    http://twitter.com/<xsl:value-of select="substring-before(author, '@twitter')" />
-  </xsl:attribute>
-  <xsl:value-of select="substring-before(substring-after(author, '('), ')')" />
+<xsl:attribute name="href">
+http://twitter.com/<xsl:value-of select="substring-before(author, '@twitter')" />
+</xsl:attribute>
+<xsl:value-of select="substring-before(substring-after(author, '('), ')')" />
 </a>
-{{< / highlight >}}
-
+```
 
 ## Step 8
 
@@ -123,19 +115,15 @@ In this step you will change the output rendering of the description field so th
 
 To let the description be rendered as HTML you will need to change:
 
-
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:value-of select="description"/>
-{{< / highlight >}}
-
+```
 
 Into this:
 
-
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:value-of select="description" disable-output-escaping="yes"/>
-{{< / highlight >}}
-
+```
 
 The disable-output-escaping parameter indicates that HTML characters like "<" and ">", will be output as is. No is the default value and they will be converted "&lt;" and "&gt;".
 
@@ -145,19 +133,15 @@ The last step is to remove the +0000 value from the date. This can be easily don
 
 Change:
 
-
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:value-of select="pubDate"/>
-{{< / highlight >}}
-
+```
 
 Into this:
 
-
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:value-of select="substring-before(pubDate, '+0000')"/>
-{{< / highlight >}}
-
+```
 
 ## Result
 
