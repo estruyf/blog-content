@@ -1,0 +1,1390 @@
+[
+  {
+    "year": "2025",
+    "events": [
+      {
+        "session": "Integrate Playwright tests for Power Apps into your DevOps process",
+        "description": "Tired of Power Platform solutions that feel like being held together by duct tape and bubble gum? You're not alone. In this session, Luise and Elio will discuss why proper testing is often overlooked in Power Apps development and how we can change that game. We'll introduce you to Playwright, your new best friend for automated testing, and show you why it's a perfect match for Power Apps. We'll cover the essentials of making your apps test-friendly and walk you through some common tests to get you started. But we won't stop there. We'll show you how to take your testing to the next level by automating the process and seamlessly integrating it into your development pipeline. By the end of this session, you'll have a clear roadmap for releasing rock-solid Power Apps that'll make your users (and your sanity) thank you.",
+        "coSpeakers": [
+          {
+            "name": "Luise Freese",
+            "url": "https://www.linkedin.com/in/luisefreese/"
+          }
+        ],
+        "date": "2025-06-16",
+        "endDate": "2025-06-19",
+        "event": "European Power Platform Conference",
+        "location": "Vienna (AT)",
+        "link": "https://www.sharepointeurope.com/european-power-platform-conference/",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": true
+        }
+      },
+      {
+        "session": "Improve Your Presentation Skills by Scripting Your Live Coding Demos to Perfection",
+        "description": "Join Elio for a talk on mastering live coding demos. Learn to script your demos for seamless, error-free execution using Visual Studio Code and the Demo Time extension. Ideal for anyone performing live coding at conferences, webinars, or team meetings, this session will help transform your presentations from stressful to impressive.",
+        "date": "2025-06-13",
+        "endDate": "2025-06-17",
+        "event": "React Summit",
+        "location": "Amsterdam (NL)",
+        "link": "https://reactsummit.com",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
+        "session": "Integrate Playwright tests for Power Apps into your DevOps process",
+        "description": "Tired of Power Platform solutions that feel like being held together by duct tape and bubble gum? You're not alone. In this session, Luise and Elio will discuss why proper testing is often overlooked in Power Apps development and how we can change that game. We'll introduce you to Playwright, your new best friend for automated testing, and show you why it's a perfect match for Power Apps. We'll cover the essentials of making your apps test-friendly and walk you through some common tests to get you started. But we won't stop there. We'll show you how to take your testing to the next level by automating the process and seamlessly integrating it into your development pipeline. By the end of this session, you'll have a clear roadmap for releasing rock-solid Power Apps that'll make your users (and your sanity) thank you.",
+        "coSpeakers": [
+          {
+            "name": "Luise Freese",
+            "url": "https://www.linkedin.com/in/luisefreese/"
+          }
+        ],
+        "date": "2025-05-26",
+        "endDate": "2025-05-28",
+        "event": "European BizApps Summit 2025",
+        "location": "Dusseldorf (DE)",
+        "link": "https://bizappssummit.eu/",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": true
+        }
+      },
+      {
+        "session": "Test Automation with GitHub Actions and Playwright for Microsoft 365 solutions",
+        "description": "GitHub Actions is a powerful tool for creating and running CI/CD pipelines. Playwright is a modern tool for end-to-end testing. In this session, you will learn how to combine these two tools to automate your testing process and improve the quality of your Microsoft 365 solutions. You will see how to set up GitHub Actions for running Playwright tests, handle test results and notifications, and follow best practices for test automation. By the end of this session, you will have the skills and confidence to implement test automation in your projects with GitHub Actions and Playwright.",
+        "date": "2025-05-26",
+        "endDate": "2025-05-28",
+        "event": "European Collaboration Summit",
+        "location": "Dusseldorf (DE)",
+        "link": "https://collabsummit.eu/",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": true
+        }
+      },
+      {
+        "session": "Building your own vscode extensions",
+        "description": "YouTube video on This is Tech Talks by Santosh Yadav and Sonu Kapoor",
+        "date": "2025-02-26",
+        "endDate": "2025-02-26",
+        "event": "This is Tech Talks",
+        "location": "Online",
+        "link": "https://www.youtube.com/@ThisisTechTalks",
+        "video": "https://www.youtube.com/watch?v=P0v2wvwDOU4",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
+        "session": "Ensure quality in Power Apps by integrating automated testing with Playwright",
+        "description": "Low-code/no-code platforms like Power Apps have transformed how we build business applications, but they require robust testing like any other software. This session will explore how to use Playwright to automate testing for Power Apps solutions, ensuring reliability even in rapidly evolving environments. We will demonstrate how to create end-to-end tests for common Power Apps scenarios, mock connectors, and prepare for deployment. You will also learn best practices for building practical tests to catch bugs and regressions early. Expect to see some real code! By the end of this session, you will understand how to leverage Playwright to enhance the quality of your Power Apps solutions.",
+        "date": "2025-02-22",
+        "endDate": "2025-02-22",
+        "event": "Global Power Platform Bootcamp 2025 - Belgium Edition",
+        "location": "Edegem (BE)",
+        "link": "https://www.powerplatformbootcamp.com/2025/location-detail/?id=b708fc52-8d96-ef11-95f5-6045bd5f73bf&city=Belgian+PowerAddicts",
+        "reporting": {
+          "gde": false,
+          "mvp": true,
+          "github": false
+        }
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "events": [
+      {
+        "session": "Test Automation with GitHub Actions and Playwright for Microsoft 365 solutions",
+        "description": "GitHub Actions is a powerful tool for creating and running CI/CD pipelines. Playwright is a modern tool for end-to-end testing. In this session, you will learn how to combine these two tools to automate your testing process and improve the quality of your Microsoft 365 solutions. You will see how to set up GitHub Actions for running Playwright tests, handle test results and notifications, and follow best practices for test automation. By the end of this session, you will have the skills and confidence to implement test automation in your projects with GitHub Actions and Playwright.",
+        "date": "2024-12-02",
+        "endDate": "2024-12-05",
+        "event": "ESPC",
+        "location": "Stockholm (SE)",
+        "link": "https://www.sharepointeurope.com/",
+        "reporting": {
+          "gde": true,
+          "mvp": true,
+          "github": true
+        }
+      },
+      {
+        "session": "From Code to Cloud: Automated Deployments with GitHub Actions",
+        "description": "Let us dive into the world of GitHub Actions, an instrumental component in modern Continuous Integration and Continuous Deployment (CI/CD) practices. In this session, we'll explore how to harness GitHub Actions to streamline your deployment workflows, making the process of moving from code commits to live deployments seamless and efficient. We'll cover how to use variables, secrets, environment approvals, local testing, and more. If you want to automate your deployments, this session is for you!",
+        "date": "2024-11-20",
+        "event": "VisugXL 2024",
+        "location": "HOGENT Campus Schoonmeersen",
+        "link": "https://www.visug.be/Events/95",
+        "reporting": {
+          "gde": false,
+          "mvp": true,
+          "github": true
+        }
+      },
+      {
+        "session": "Test Automation with GitHub Actions and Playwright for Microsoft 365 solutions",
+        "description": "GitHub Actions is a powerful tool for creating and running CI/CD pipelines. Playwright is a modern tool for end-to-end testing. In this session, you will learn how to combine these two tools to automate your testing process and improve the quality of your Microsoft 365 solutions. You will see how to set up GitHub Actions for running Playwright tests, handle test results and notifications, and follow best practices for test automation. By the end of this session, you will have the skills and confidence to implement test automation in your projects with GitHub Actions and Playwright.",
+        "date": "2024-10-19",
+        "event": "CollabDays BE",
+        "location": "Brussels (BE)",
+        "link": "https://www.collabdays.org/2024-belgium/",
+        "reporting": {
+          "gde": true,
+          "mvp": true,
+          "github": true
+        }
+      },
+      {
+        "session": "MVP sharing session: get insights from Microsoft MVPs to become the next MVP",
+        "description": "Community event from PowerAddicts",
+        "date": "2024-09-04",
+        "event": "PowerAddicts",
+        "location": "Kontich (BE)",
+        "link": "https://www.poweraddicts.be/summer-event-powerbbq-04-sept-2024/",
+        "reporting": {
+          "gde": true,
+          "mvp": true,
+          "github": true
+        }
+      },
+      {
+        "session": "Automated Testing for Microsoft 365 with Playwright",
+        "description": "In this session, we will explore how to use Playwright to automate testing of Microsoft 365 applications. We will focus on how Playwright can be used to create end-to-end tests that verify the behavior of Microsoft 365 applications for Microsoft Teams, and SharePoint. We will discuss how Playwright can be integrated into a continuous integration and deployment (CI/CD) pipeline, and how it can be used to catch bugs and regressions before they reach production. Additionally, we will provide tips and best practices for creating effective tests that cover common scenarios in Microsoft 365 applications. By the end of this session, attendees will have a deeper understanding of how to use Playwright to improve the quality of their Microsoft 365 applications.",
+        "date": "2024-06-01",
+        "event": "CollabDays NL",
+        "location": "Vianen (NL)",
+        "link": "https://www.collabdays.org/2024-nl/",
+        "reporting": {
+          "gde": true,
+          "mvp": true,
+          "github": true
+        }
+      },
+      {
+        "session": "From Code to Cloud: Automated Deployments with GitHub Actions",
+        "description": "Let us dive into the world of GitHub Actions, an instrumental component in modern Continuous Integration and Continuous Deployment (CI/CD) practices. In this session, we'll explore how to harness GitHub Actions to streamline your deployment workflows, making the process of moving from code commits to live deployments seamless and efficient. We'll cover how to use variables, secrets, environment approvals, and more. If you want to automate your deployments, this session is for you!",
+        "date": "2024-05-29",
+        "event": "devs.gent",
+        "location": "Gent (BE)",
+        "link": "https://www.meetup.com/devs-gent/events/298803280/",
+        "slides": "https://slides.elio.dev/20240529-devsgent/",
+        "reporting": {
+          "gde": true,
+          "mvp": true,
+          "github": true
+        }
+      },
+      {
+        "session": "From Code to Cloud: Automated Deployments with GitHub Actions",
+        "date": "2024-05-06",
+        "endDate": "2024-05-08",
+        "event": "Cloud Summit",
+        "location": "Wiesbaden (DE)",
+        "link": "https://cloudsummit.eu/",
+        "slides": "https://slides.elio.dev/20240515-cloudsummit/",
+        "reporting": {
+          "gde": true,
+          "mvp": true,
+          "github": true
+        }
+      },
+      {
+        "session": "Automated Testing for Microsoft 365 with Playwright",
+        "date": "2024-05-06",
+        "endDate": "2024-05-08",
+        "event": "Techorama Belgium",
+        "location": "Belgium",
+        "link": "https://techorama.be/"
+      },
+      {
+        "session": "Automated Testing for Microsoft 365 with Playwright",
+        "date": "2024-02-01",
+        "event": "Cloud Technology Townhall Tallinn",
+        "location": "Tallinn (EE)",
+        "link": "https://cloudtechtallinn.com/"
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "events": [
+      {
+        "session": "Automated Testing for Microsoft 365 with Playwright",
+        "date": "2023-11-29",
+        "event": "ESPC",
+        "location": "Amsterdam (NL)",
+        "link": "https://www.sharepointeurope.com/"
+      },
+      {
+        "session": "Automated Testing for Microsoft 365 with Playwright",
+        "date": "2023-10-21",
+        "event": "Collabdays Belgium",
+        "location": "Brussels (BE)",
+        "link": "https://www.collabdays.org/2023-belgium/"
+      },
+      {
+        "session": "Manage your Hugo website with external content and assets",
+        "date": "2023-09-21",
+        "event": "Hugo Conf",
+        "location": "Online",
+        "link": "https://hugoconf.io",
+        "video": "https://youtu.be/OTclpTZq-S4?t=9416"
+      },
+      {
+        "session": "Using Front Matter CMS to manage your static site",
+        "date": "2023-09-06",
+        "event": "Code and Coffee show",
+        "location": "Online",
+        "video": "https://youtu.be/YX4HBXHojOA"
+      },
+      {
+        "session": "The future is APIs, and here is how you can benefit from it",
+        "date": "2023-06-10",
+        "event": "CollabDays Netherlands 2023",
+        "location": "Vianen (NL)",
+        "link": "https://www.collabdays.org/2023-nl/"
+      },
+      {
+        "session": "Microsoft 365 PnP Weekly - Episode 211",
+        "date": "2023-05-22",
+        "event": "Microsoft Community Learning",
+        "location": "Online",
+        "link": "https://pnp.github.io/blog/microsoft-365-pnp-weekly/episode-211/",
+        "video": "https://www.youtube.com/watch?v=3yC5YSpu6ok"
+      },
+      {
+        "session": "The novice: a journey to start developing VS Code extensions",
+        "date": "2023-04-19",
+        "event": "GDG April Meetup - HTML and VS code",
+        "location": "Berlin (DE)",
+        "link": "https://gdg.community.dev/events/details/google-gdg-berlin-presents-gdg-april-meetup-html-and-vs-code/",
+        "video": "https://youtu.be/NZ-MKjPwb4A?si=CRYvfRkMIm5CPpQi"
+      },
+      {
+        "session": "VS Code Extension for Working with Frontmatter",
+        "date": "2023-03-02",
+        "event": "James Q Quick - YouTube Live",
+        "location": "Online",
+        "video": "https://www.youtube.com/watch?v=aCkkEDsJgL0"
+      },
+      {
+        "session": "A Journey to Start Developing VS Code Extensions",
+        "date": "2023-03-01",
+        "event": "Belgian JavaScript Community",
+        "location": "Brussels (BE)",
+        "link": "https://beta.guild.host/events/meetupbejs24-a-journey-tr50sc"
+      },
+      {
+        "session": "Judge at the Arctic Cloud Developer Challenge",
+        "date": "2023-02-09",
+        "endDate": "2023-02-12",
+        "event": "Arctic Cloud Developer Challenge",
+        "location": "Oslo (NO)",
+        "link": "https://www.arcticclouddeveloperchallenge.net/"
+      }
+    ]
+  },
+  {
+    "year": "2022",
+    "events": [
+      {
+        "session": "The future is APIs, and here is how you can benefit from it",
+        "date": "2022-11-28",
+        "endDate": "2022-12-01",
+        "event": "ESPC",
+        "location": "Copenhagen (DK)",
+        "link": "https://www.sharepointeurope.com/"
+      },
+      {
+        "session": "Manage your static site with Front Matter CMS",
+        "date": "2022-09-08",
+        "event": "Azure Cologne Meetup",
+        "location": "Online",
+        "link": "https://www.meetup.com/azure-cologne-meetup/events/287202552/"
+      },
+      {
+        "session": "Introduction to Viva Connections Toolkit for Visual Studio Code",
+        "date": "2022-08-11",
+        "event": "Microsoft Community Learning",
+        "location": "Online",
+        "video": "https://youtu.be/lMmYhfqOspY?t=1951"
+      },
+      {
+        "session": "Get started with Front Matter CMS to manage your site",
+        "date": "2022-07-08",
+        "endDate": "2022-07-09",
+        "event": "Hugo Conf",
+        "location": "Online",
+        "link": "https://hugoconf.io/"
+      },
+      {
+        "session": "Microsoft 365 PnP Weekly - Episode 164",
+        "date": "2022-05-03",
+        "event": "Microsoft Community Learning",
+        "location": "Online",
+        "link": "https://pnp.github.io/blog/microsoft-365-pnp-weekly/episode-164/",
+        "video": "https://www.youtube.com/watch?v=h4pzXyF8cnc"
+      },
+      {
+        "session": "Tips on building products for Microsoft 365",
+        "date": "2022-02-24",
+        "event": "CollabDays Bletchley Park 2022",
+        "location": "Bletchley Park (UK)",
+        "link": "https://www.collabdays.org/2022-bletchleypark/"
+      }
+    ]
+  },
+  {
+    "year": "2021",
+    "events": [
+      {
+        "session": "Tips on building products for Microsoft 365",
+        "date": "2021-11-29",
+        "endDate": "2021-12-01",
+        "event": "European Collaboration Summit",
+        "location": "Dusseldorf (DE)",
+        "link": "https://www.collabsummit.eu/",
+        "slides": "https://1drv.ms/u/s!AukeddqwapKJhogUad6hCOOlWVSTOQ?e=VS98gp"
+      },
+      {
+        "sessions": [
+          "From class- to functional-components. Making sense of the latest functionality in React",
+          "Making dynamic sites with static site generators"
+        ],
+        "date": "2021-04-28",
+        "event": "Microsoft 365 Virtual Marathon 2021",
+        "location": "Online",
+        "link": "https://www.m365virtualmarathon.com/"
+      },
+      {
+        "session": "From class- to functional-components. Making sense of the latest functionality in React",
+        "date": "2021-03-23",
+        "event": "BIWUG Live",
+        "location": "Online",
+        "link": "https://www.biwug.live/"
+      },
+      {
+        "session": "From class- to functional-components. Making sense of the latest functionality in React",
+        "date": "2021-02-27",
+        "event": "Scottish Summit",
+        "location": "Online",
+        "link": "https://scottishsummit.com/"
+      },
+      {
+        "session": "Microsoft 365 PnP Weekly - Episode 111",
+        "date": "2021-01-26",
+        "event": "Microsoft Community Learning",
+        "location": "Online",
+        "link": "https://www.youtube.com/watch?v=IKRoKKCayWo"
+      }
+    ]
+  },
+  {
+    "year": "2020",
+    "events": [
+      {
+        "session": "Microsoft Reactor FusionDev story",
+        "coSpeakers": [
+          {
+            "name": "Luise Freese",
+            "url": "https://www.linkedin.com/in/luisefreese/"
+          }
+        ],
+        "date": "2020-12-17",
+        "event": "Microsoft Reactor",
+        "location": "Online",
+        "link": "https://www.meetup.com/en-AU/Microsoft-Reactor-Redmond/events/274677750/"
+      },
+      {
+        "session": "Making dynamic sites with static site generators",
+        "date": "2020-12-08",
+        "event": "Azure Developer Community Day 2020",
+        "location": "Online",
+        "link": "https://www.azuredev.org/"
+      },
+      {
+        "session": "Improving the performance of your SharePoint framework solutions",
+        "date": "2020-10-14",
+        "event": "European SharePoint Office 365 & Azure Conference",
+        "location": "Online",
+        "link": "https://www.sharepointeurope.com/",
+        "slides": "https://elst.es/espc20"
+      },
+      {
+        "session": "Power Apps Licensing QnA",
+        "coSpeakers": [
+          {
+            "name": "Ryan Cunningham",
+            "url": "https://twitter.com/rc_says"
+          },
+          {
+            "name": "Chris Huntingford",
+            "url": "https://twitter.com/TATTOOEDCRMGUY"
+          }
+        ],
+        "date": "2020-10-06",
+        "event": "Meetup",
+        "location": "Online",
+        "link": "https://www.meetup.com/en-AU/Sharing-Is-Caring-Learn-Microsoft-365-Power-Platform/events/273589561/"
+      },
+      {
+        "session": "CON134: Belgium Technology Extravaganza",
+        "date": "2020-09-23",
+        "event": "Microsoft Ignite",
+        "location": "Online",
+        "link": "https://myignite.microsoft.com/home",
+        "video": "https://myignite.microsoft.com/sessions/f31263a6-0456-4e47-8af2-fc9e8c4333eb"
+      },
+      {
+        "session": "CTRL+ALT+Azure Podcast - Episode 046: Azure Static Web Apps with Elio Struyf",
+        "date": "2020-09-09",
+        "event": "CTRL+ALT+Azure Podcast",
+        "location": "Podcast",
+        "link": "https://ctrlaltazure.com/episodes/046-azure-static-web-apps-with-elio-struyf",
+        "audio": "https://media.transistor.fm/bfd7824f.mp3?download=true"
+      },
+      {
+        "session": "Things I learned while building a product on SharePoint Modern",
+        "date": "2020-09-04",
+        "event": "SharePoint Saturday Cologne 2020",
+        "location": "Cologne (DE)",
+        "link": "http://spscgn.com/",
+        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+      },
+      {
+        "session": "Learn how you can start UI testing your solutions",
+        "date": "2020-09-01",
+        "event": "PnP Virtual Conference",
+        "location": "Online",
+        "link": "https://pnp.github.io/pnpconference",
+        "slides": "https://1drv.ms/b/s!AukeddqwapKJhoZVgOmJ8uhkn1585A?e=ELFsqx",
+        "video": "https://www.youtube.com/watch?v=wduRl1SYlpk&list=PLR9nK3mnD-OVtYPolswzDjun3g78jN8OE&index=14"
+      },
+      {
+        "session": "How to run a business on Microsoft 365 with PowerPlatform",
+        "coSpeakers": [
+          {
+            "name": "Luise Freese",
+            "url": "https://www.linkedin.com/in/luisefreese/"
+          }
+        ],
+        "date": "2020-06-25",
+        "event": "Valo Fest",
+        "location": "Online",
+        "link": "https://www.valointranet.com/valofest2020/"
+      },
+      {
+        "session": "Things I learned while building a product on SharePoint Modern",
+        "date": "2020-02-29",
+        "event": "Scottish Summit",
+        "location": "Glasgow (UK)",
+        "link": "https://scottishsummit.com/",
+        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+      },
+      {
+        "session": "How Pro Developers and Citizen Developers can team up - a #BetterTogether Story",
+        "coSpeakers": [
+          {
+            "name": "Luise Freese",
+            "url": "https://twitter.com/LuiseFreese"
+          }
+        ],
+        "date": "2020-01-25",
+        "event": "Power Platform Saturday Warsaw",
+        "location": "Warsaw (PL)",
+        "link": "https://ppswarsaw.org/",
+        "slides": "https://www.eliostruyf.com/speaking/pro-developers-citizen-developers-team-bettertogether-story/"
+      }
+    ]
+  },
+  {
+    "year": "2019",
+    "events": [
+      {
+        "session": "Sketchnotes and #FunctionalDrawing (not only) for Consultants and IT Pros",
+        "coSpeakers": [
+          {
+            "name": "Luise Freese",
+            "url": "https://www.linkedin.com/in/luisefreese/"
+          }
+        ],
+        "date": "2019-12-10",
+        "event": "Modern Workplace Conference Paris",
+        "location": "Paris (FR)",
+        "link": "https://modern-workplace.pro/",
+        "slides": "https://www.eliostruyf.com/speaking/sketchnotes-and-functional-drawing-not-only-for-consultants-and-it-pros/"
+      },
+      {
+        "session": "Things I've learned while building a product on SharePoint Modern",
+        "date": "2019-12-02",
+        "endDate": "2019-12-05",
+        "event": "European SharePoint, Office 365 & Azure Conference",
+        "location": "Prague (CZ)",
+        "link": "https://www.sharepointeurope.com/",
+        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+      },
+      {
+        "session": "Sharing code efficiently in your organisation by creating private packages",
+        "date": "2019-12-02",
+        "endDate": "2019-12-05",
+        "event": "European SharePoint, Office 365 & Azure Conference",
+        "location": "Prague (CZ)",
+        "link": "https://www.sharepointeurope.com/",
+        "slides": "https://www.eliostruyf.com/speaking/sharing-code-efficiently-sharepoint-framework-projects/"
+      },
+      {
+        "session": "Advanced Dev-Ops with the SharePoint Framework",
+        "coSpeakers": [
+          {
+            "name": "Vincent Biret",
+            "url": "https://www.linkedin.com/in/vincentbiret/"
+          }
+        ],
+        "date": "2019-12-02",
+        "endDate": "2019-12-05",
+        "event": "European SharePoint, Office 365 & Azure Conference",
+        "location": "Prague (CZ)",
+        "link": "https://www.sharepointeurope.com/",
+        "slides": "https://www.eliostruyf.com/speaking/advanced-devops-with-the-sharepoint-framework/"
+      },
+      {
+        "session": "Automated UI Test for SharePoint Solutions",
+        "coSpeakers": [
+          {
+            "name": "Melanie Culver",
+            "url": "https://www.linkedin.com/in/culvermelanie/"
+          }
+        ],
+        "date": "2019-12-02",
+        "endDate": "2019-12-05",
+        "event": "European SharePoint, Office 365 & Azure Conference",
+        "location": "Prague (CZ)",
+        "link": "https://www.sharepointeurope.com/",
+        "slides": "https://www.eliostruyf.com/speaking/automated-ui-test-for-sharepoint-solutions/"
+      },
+      {
+        "session": "Things I've learned while building a product on SharePoint Modern",
+        "date": "2019-11-30",
+        "event": "SharePoint Saturday Munich",
+        "location": "Munich (DE)",
+        "link": "http://www.spsevents.org/city/Munich/Munich2019",
+        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+      },
+      {
+        "session": "SharePoint Dev Weekly - Episode 56",
+        "date": "2019-10-22",
+        "event": "Microsoft Community Learning",
+        "location": "Online",
+        "video": "https://www.youtube.com/watch?v=kDKAnfHYrFk"
+      },
+      {
+        "session": "Things I've learned while building a product on SharePoint Modern",
+        "date": "2019-10-10",
+        "endDate": "2019-10-11",
+        "event": "Office365 & SharePoint Connect Community Edition",
+        "location": "Haarlem (NL)",
+        "link": "https://www.nccomms.com/conferences/office-365-and-sharepoint-connect/",
+        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+      },
+      {
+        "session": "Sharing code efficiently in your organisation by creating private packages",
+        "date": "2019-10-10",
+        "endDate": "2019-10-11",
+        "event": "Office365 & SharePoint Connect Community Edition",
+        "location": "Haarlem (NL)",
+        "link": "https://www.nccomms.com/conferences/office-365-and-sharepoint-connect/",
+        "slides": "https://www.eliostruyf.com/speaking/sharing-code-efficiently-sharepoint-framework-projects/"
+      },
+      {
+        "session": "Things I've learned while building a product on SharePoint Modern",
+        "date": "2019-09-28",
+        "event": "SharePoint Saturday Helsinki",
+        "location": "Helsinki (FI)",
+        "link": "http://www.spsevents.org/city/Helsinki/Helsinki2019",
+        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+      },
+      {
+        "session": "Getting started on using PnP SharePoint Framework reusable controls",
+        "date": "2019-08-29",
+        "event": "Microsoft Community Learning",
+        "location": "Online",
+        "video": "https://www.youtube.com/watch?v=jefLhMdHv50"
+      },
+      {
+        "session": "Things I've learned while building a product on SharePoint Modern",
+        "date": "2019-06-29",
+        "event": "SharePoint Saturday Netherlands",
+        "location": "Vianen (NL)",
+        "link": "http://www.spsevents.org/city/netherlands/netherlands2019",
+        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+      },
+      {
+        "session": "Setting up your SPFx continuous integration and delivery pipelines on Azure DevOps",
+        "date": "2019-05-27",
+        "endDate": "2019-05-29",
+        "event": "European Collaboration Summit",
+        "location": "Wiesbaden (DE)",
+        "link": "https://www.collabsummit.eu/",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJhfBp2dxP61Jt1YIAdQ"
+      },
+      {
+        "session": "Challenges while building a product on SharePoint modern",
+        "date": "2019-04-10",
+        "event": "Sharing & Sushi",
+        "location": "Portiva (NL",
+        "link": "https://www.portiva.nl/sharing-sushi-20190410/",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJhe0ola8iOpm24wHnpQ"
+      }
+    ]
+  },
+  {
+    "year": "2018",
+    "events": [
+      {
+        "session": "Developing SharePoint Framework solutions with React",
+        "date": "2018-12-18",
+        "event": "BIWUG",
+        "location": "Wommelgem (BE)",
+        "link": "https://www.eventbrite.com/e/biwug-20181218-tickets-53263850611"
+      },
+      {
+        "sessions": [
+          {
+            "title": "Making Sense of the SharePoint Framework for the Reluctant IT Pro",
+            "coSpeakers": [
+              {
+                "name": "Thomas Vochten",
+                "url": "https://bsky.app/profile/thomasvochten.com"
+              }
+            ]
+          },
+          "Learn How to be a Better JavaScript / TypeScript Developer"
+        ],
+        "date": "2018-11-26",
+        "endDate": "2018-11-29",
+        "event": "European SharePoint, Office 365 & Azure Conference",
+        "location": "Copenhagen (DK)",
+        "link": "https://www.sharepointeurope.com/conference/schedule/",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJhetBmMObM7s4mbUdjQ"
+      },
+      {
+        "session": "Organizing and session about SPFx Development in SharePoint Online",
+        "date": "2018-11-23",
+        "event": "Global Office 365 Bootcamp",
+        "location": "Brussels (BE)",
+        "link": "https://www.eventbrite.be/e/global-office-365-developer-bootcamp-tickets-48369653937"
+      },
+      {
+        "sessions": [
+          "Automate your tasks through Azure Functions",
+          "Accelerate your SharePoint Framework development by using the PnP reusable controls",
+          "Implementing automated UI testing for SharePoint solutions"
+        ],
+        "date": "2018-11-13",
+        "endDate": "2018-11-15",
+        "event": "Office 365 and SharePoint Connect",
+        "location": "Haarlem (NL)",
+        "link": "https://www.nccomms.com/office-365-and-sharepoint-connect-2018-agenda/",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJhes9vBjK-qAcbq0ysA"
+      },
+      {
+        "sessions": [
+          {
+            "title": "Workshop: Office 365 Mastering Development with SharePoint Framework",
+            "coSpeakers": [
+              {
+                "name": "Paolo Pialorsi",
+                "url": "https://bsky.app/profile/paolopia.bsky.social"
+              }
+            ]
+          },
+          {
+            "title": "Making Sense of the SharePoint Framework for the Reluctant IT Pro",
+            "coSpeakers": [
+              {
+                "name": "Thomas Vochten",
+                "url": "https://bsky.app/profile/thomasvochten.com"
+              }
+            ]
+          }
+        ],
+        "date": "2018-10-16",
+        "event": "Modern Workplace Conference Paris 2018",
+        "location": "Paris (FR)",
+        "link": "https://modern-workplace.pro/preconferences/",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJhesCuOrDZUYMkz0zfA"
+      },
+      {
+        "sessions": [
+          {
+            "title": "WKS02: Mastering Office 365 development with SharePoint Framework",
+            "coSpeakers": [
+              {
+                "name": "Paolo Pialorsi",
+                "url": "https://bsky.app/profile/paolopia.bsky.social"
+              }
+            ]
+          },
+          "DEV01: Implementing automated UI testing for SharePoint solutions"
+        ],
+        "date": "2018-10-05",
+        "endDate": "2018-10-06",
+        "event": "SharePoint Saturday Milan",
+        "location": "Milan (IT)",
+        "link": "http://www.spsevents.org/city/Milan/Milan2018",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJhepkfayErjvI3XyLIA"
+      },
+      {
+        "session": "SharePoint Dev Weekly - Episode 7",
+        "date": "2018-10-02",
+        "event": "Microsoft Community Learning",
+        "location": "Online",
+        "video": "https://www.youtube.com/watch?v=nNv3tEO8gpc"
+      },
+      {
+        "session": "BRK3316 - Kick-start your development with SharePoint Developer Community (PnP) open-source projects and assets",
+        "coSpeakers": [
+          {
+            "name": "Paolo Pialorsi",
+            "url": "https://bsky.app/profile/paolopia.bsky.social"
+          },
+          {
+            "name": "Vesa Juvonen",
+            "url": "https://bsky.app/profile/vesajuvonen.bsky.social"
+          }
+        ],
+        "date": "2018-09-24",
+        "endDate": "2018-09-28",
+        "event": "Microsoft Ignite",
+        "location": "Orlando (US)",
+        "link": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-development-platform-ignite-2018/"
+      },
+      {
+        "session": "Setting up your SPFx continuous integration and delivery pipelines on VSTS",
+        "date": "2018-09-01",
+        "event": "SharePoint Saturday Stockholm",
+        "location": "Stockholm",
+        "link": "http://www.spsevents.org/city/Stockholm/Stockholm2018/speakers",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJhepUQZnPsjAj1xIeVw"
+      },
+      {
+        "session": "SPFx for the reluctant ITPro",
+        "coSpeakers": [
+          {
+            "name": "Thomas Vochten",
+            "url": "https://bsky.app/profile/thomasvochten.com"
+          }
+        ],
+        "date": "2018-07-10",
+        "event": "SharePoint/Office 365 User Group UK",
+        "location": "London (UK)",
+        "link": "https://uk.communities.tech/events/sharepoint-office-365-user-group-uk-london/"
+      },
+      {
+        "session": "Create Productive Apps with Office 365",
+        "date": "2018-06-19",
+        "event": "Insider Dev Tour",
+        "location": "Zaventem (BE)",
+        "link": "https://insiderdevtour.com/Zaventem"
+      },
+      {
+        "sessions": [
+          {
+            "title": "Ultimate Modern SharePoint Development PowerClass (workshop)",
+            "coSpeakers": [
+              {
+                "name": "PnP Team",
+                "url": "https://pnp.github.io/"
+              }
+            ]
+          },
+          "Automate your tasks through Azure Functions",
+          {
+            "title": "Making sense of the SharePoint Framework for the reluctant IT Pro",
+            "coSpeakers": [
+              {
+                "name": "Thomas Vochten",
+                "url": "@ThomasVochten"
+              },
+              {
+                "name": "waldekm",
+                "url": "@waldekm"
+              }
+            ]
+          }
+        ],
+        "date": "2018-05-28",
+        "endDate": "2018-05-30",
+        "event": "European Collaboration Summit",
+        "location": "Mainz (DE)",
+        "link": "http://www.collabsummit.eu/",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJheo-x3trQu9wse4jfw"
+      },
+      {
+        "session": "Extending SharePoint Framework tasks to automate releases of your projects",
+        "date": "2018-05-22",
+        "endDate": "2018-05-24",
+        "event": "Techorama Belgium",
+        "location": "Antwerp (BE)",
+        "link": "https://techorama.be/",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJheo85JuyRaI_8ngqZg"
+      },
+      {
+        "session": "Latest open-source SharePoint Framework controls for increasing productivity",
+        "date": "2018-05-08",
+        "event": "Microsoft Community Learning",
+        "location": "Online",
+        "video": "https://www.youtube.com/watch?v=FlfKmwYl7kc"
+      },
+      {
+        "session": "Modern Valo under the hood",
+        "date": "2018-05-03",
+        "endDate": "2018-05-04",
+        "event": "Valo Summit",
+        "location": "Barcelona (ES)",
+        "link": "https://valosummit.com/"
+      },
+      {
+        "session": "Using Reusable PnP Controls in SPFx Projects",
+        "date": "2018-03-20",
+        "event": "Voitanos Webinar",
+        "location": "Online",
+        "video": "https://www.youtube.com/watch?v=IMkXUQoNW7E"
+      },
+      {
+        "session": "Automate your tasks via Azure Functions",
+        "date": "2018-03-15",
+        "event": "DQC DEV Summit",
+        "location": "Gothenburg (SE)",
+        "link": "https://www.eventbrite.com/e/dqc-dev-summit-registrering-42909335979",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJheo3aD2-0K8Z7p_evA"
+      },
+      {
+        "session": "Extending SharePoint Framework tasks to automate releases of your projects",
+        "date": "2018-01-27",
+        "event": "SharePoint Saturday Helsinki",
+        "location": "Helsinki (FI)",
+        "link": "http://www.spsevents.org/city/Helsinki/Helsinki2018/speakers",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJheoupXZe0unA2KV4hA"
+      },
+      {
+        "session": "Reusable controls for your SharePoint Framework solutions",
+        "date": "2018-01-02",
+        "event": "PnP Webcast",
+        "location": "Online",
+        "video": "https://www.youtube.com/watch?v=D0ZOgoSpy28"
+      }
+    ]
+  },
+  {
+    "year": "2017",
+    "events": [
+      {
+        "sessions": [
+          "A Walk Through the Web-stack Development Landscape",
+          "Getting up to speed with React",
+          {
+            "title": "Discover SharePoint Server 2016 Feature Pack 2 and Beyond",
+            "coSpeakers": [
+              {
+                "name": "Spencer Harbar",
+                "url": "https://bsky.app/profile/harbars.bsky.social"
+              },
+              {
+                "name": "Donald Hessing",
+                "url": "https://www.linkedin.com/in/donaldhessing"
+              },
+              {
+                "name": "Thomas Vochten",
+                "url": "https://bsky.app/profile/thomasvochten.com"
+              }
+            ]
+          }
+        ],
+        "date": "2017-11-15",
+        "event": "European SharePoint Conference",
+        "location": "Dublin (IE)",
+        "link": "https://www.sharepointeurope.com/",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJheoARLC24w3KSmxYYw"
+      },
+      {
+        "session": "Automate your tasks via Azure Functions",
+        "date": "2017-11-11",
+        "event": "SharePoint Saturday Oslo",
+        "location": "Oslo (NO)",
+        "link": "http://www.spsevents.org/city/oslo/oslo2017",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJhel-EhAOcJl1ZHK5Lw"
+      },
+      {
+        "sessions": [
+          "Getting Notified by SharePoint with the Webhook Functionality",
+          "Getting up to speed with React",
+          {
+            "title": "Making Sense of the SharePoint Framework for the Reluctant IT Pro",
+            "coSpeakers": [
+              {
+                "name": "Thomas Vochten",
+                "url": "https://bsky.app/profile/thomasvochten.com"
+              }
+            ]
+          },
+          {
+            "title": "TypeScript for SharePoint developers",
+            "coSpeakers": [
+              {
+                "name": "waldekm",
+                "url": "https://bsky.app/profile/wldk.nl"
+              }
+            ]
+          }
+        ],
+        "date": "2017-10-24",
+        "endDate": "2017-10-26",
+        "event": "SharePoint Unite",
+        "location": "Haarlem (NL)",
+        "link": "https://sharepointunite.com/",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJhel5Jz4tLXcWH69pFg"
+      },
+      {
+        "session": "Getting up to speed with TypeScript",
+        "date": "2017-10-14",
+        "event": "SharePoint Saturday Paris",
+        "location": "Paris (FR)",
+        "link": "http://www.spsevents.org/city/paris/paris2017",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJhel3ICmA_kZrX6EEJg"
+      },
+      {
+        "session": "Getting notified by the Microsoft Graph with webhooks",
+        "date": "2017-09-30",
+        "event": "SharePoint Saturday Milan",
+        "location": "Milan (IT)",
+        "link": "http://www.spsevents.org/city/Milan/Milan2017",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJhelmmjLsQZb9oHX-IA"
+      },
+      {
+        "sessions": [
+          "Getting up to speed with TypeScript",
+          "Getting notified by SharePoint webhooks"
+        ],
+        "date": "2017-09-09",
+        "event": "SPS SQL Saturday Cambridge",
+        "location": "Cambridge (UK)",
+        "link": "http://www.spsevents.org/city/Cambridge/Cambridge2017/sessions",
+        "slides": "https://1drv.ms/f/s!AukeddqwapKJhelfgc6IKEdKBjxFjg"
+      },
+      {
+        "session": "Getting notified by SharePoint with the webhook functionality",
+        "date": "2017-06-24",
+        "event": "SharePoint Saturday London",
+        "location": "London (UK)",
+        "link": "http://www.spsevents.org/city/London/London2017/sessions",
+        "slides": "https://www.slideshare.net/estruyf/getting-notified-by-sharepoint-with-the-webhook-functionality"
+      },
+      {
+        "session": "Community panel",
+        "date": "2017-06-19",
+        "endDate": "2017-06-22",
+        "event": "Office 365 Engage",
+        "location": "Haarlem (NL)",
+        "link": "https://office365engage.com/"
+      },
+      {
+        "session": "SharePoint PnP Webcast - VSTS Build and Release Pipelines for SharePoint Framework Solutions",
+        "date": "2017-06-19",
+        "event": "Microsoft Community Learning",
+        "location": "Online",
+        "video": "https://www.youtube.com/watch?v=0LysOXWbC2A"
+      },
+      {
+        "session": "SharePoint Framework - In Elio Struyf's Own Words",
+        "date": "2017-06-13",
+        "event": "Interview",
+        "location": "Antwerp (BE)",
+        "video": "https://www.youtube.com/watch?v=Zux-5cLvGII"
+      },
+      {
+        "session": "Getting notified by SharePoint with the webhook functionality",
+        "date": "2017-06-10",
+        "event": "SharePoint Saturday Netherlands",
+        "location": "Vianen (NL)",
+        "link": "http://www.spsevents.org/city/Netherlands/Netherlands2017/sessions"
+      },
+      {
+        "session": "Getting up to speed with TypeScript",
+        "date": "2017-05-29",
+        "endDate": "2017-05-31",
+        "event": "European Collaboration Summit 2017",
+        "location": "Zagreb (HR)",
+        "link": "http://www.collaborationsummit.rocks/",
+        "slides": "https://docs.com/eliostruyf/3040/getting-up-to-speed-with-typescript"
+      },
+      {
+        "sessions": [
+          "Getting notified by SharePoint with the webhook functionality",
+          {
+            "title": "Getting started with SharePoint development for the reluctant IT Pro",
+            "coSpeakers": [
+              {
+                "name": "Thomas Vochten",
+                "url": "@ThomasVochten"
+              }
+            ]
+          }
+        ],
+        "date": "2017-05-24",
+        "event": "Techorama Belgium",
+        "location": "Antwerp (BE)",
+        "link": "https://techorama2017.sched.com/"
+      },
+      {
+        "session": "Debugging SharePoint Framework solutions",
+        "date": "1/05/2017",
+        "event": "SharePoint PnP Webcast",
+        "location": "Online",
+        "video": "https://techcommunity.microsoft.com/discussions/sharepointdev/pnp-webcast-%e2%80%93-debugging-sharepoint-framework-solutions/183103"
+      },
+      {
+        "session": "A walk through the client-side developer landscape",
+        "date": "2017-03-28",
+        "event": "BIWUG",
+        "location": "Mechelen (BE)",
+        "link": "https://www.eventbrite.com/e/biwug-2803-tickets-32598087758?ref=ebapi",
+        "slides": "https://docs.com/eliostruyf/4462/a-walk-through-the-web-stack-developer-landscape"
+      },
+      {
+        "session": "A walk through the client-side developer landscape",
+        "date": "2017-03-25",
+        "event": "SharePoint Saturday Helsinki",
+        "location": "Helsinki (FI)",
+        "link": "http://www.spsevents.org/city/helsinki/helsinki2017",
+        "slides": "https://docs.com/eliostruyf/1512/a-walk-through-the-web-stack-developer-landscape"
+      }
+    ]
+  },
+  {
+    "year": "2016",
+    "events": [
+      {
+        "session": "SharePoint Search happy hour",
+        "coSpeakers": [
+          {
+            "name": "Thomas Vochten",
+            "url": "https://bsky.app/profile/thomasvochten.com"
+          }
+        ],
+        "date": "2016-12-05",
+        "event": "aOS Day Brussels",
+        "location": "Brussels (BE)",
+        "link": "http://www.meetup.com/Communaute-aOS-Azure-Office-365-SharePoint-Meetup/events/234688745/",
+        "slides": "https://docs.com/eliostruyf/9918/sharepoint-search-happy-hour"
+      },
+      {
+        "session": "A walk through the client-side developer landscape",
+        "date": "2016-12-03",
+        "event": "SharePoint Saturday Genèva",
+        "location": "Genèva (CH)",
+        "link": "http://www.spsevents.org/city/Geneva/Geneva2016",
+        "slides": "https://docs.com/eliostruyf/4397/a-walk-through-the-client-side-developer-landscape"
+      },
+      {
+        "session": "Unity Connect",
+        "sessions": [
+          "INNOVA: Getting Up to Speed with ReactJS",
+          "INNOVA: Getting Up to Speed with TypeScript"
+        ],
+        "date": "2016-11-18",
+        "event": "Unity Connect",
+        "location": "Haarlem (NL)",
+        "link": "https://www.unityconnect.com/2016"
+      },
+      {
+        "session": "Take your Display Template Skills to the Next Level",
+        "date": "2016-11-15",
+        "event": "European SharePoint Conference",
+        "location": "Vienna (AT)",
+        "link": "https://www.sharepointeurope.com/",
+        "slides": "https://docs.com/eliostruyf/8750/take-your-display-template-skills-to-the-next"
+      },
+      {
+        "session": "Building a sample search web part with SharePoint Framework using React",
+        "date": "2016-10-31",
+        "event": "SharePoint PnP Webcast",
+        "location": "Online",
+        "video": "https://youtu.be/aWP-N8t6qJw?si=Tj0iQy9ZzvW2lm5P"
+      },
+      {
+        "session": "An IT Pro and a developer walk into a bar - SharePoint Search happy hour",
+        "date": "2016-10-22",
+        "event": "SharePoint Saturday Oslo",
+        "coSpeakers": [
+          {
+            "name": "Thomas Vochten",
+            "url": "https://bsky.app/profile/thomasvochten.com"
+          }
+        ],
+        "location": "Oslo (NO)",
+        "link": "http://www.spsevents.org/city/oslo/oslo2016",
+        "slides": "https://docs.com/eliostruyf/5957/sharepoint-search-happy-hour"
+      },
+      {
+        "session": "An IT Pro and a developer walk into a bar – SharePoint Search happy hour",
+        "date": "9/07/2016",
+        "event": "SharePoint Saturday London",
+        "coSpeakers": [
+          {
+            "name": "Thomas Vochten",
+            "url": "https://bsky.app/profile/thomasvochten.com"
+          }
+        ],
+        "location": "London (UK)",
+        "link": "http://www.spsevents.org/city/london/london2016",
+        "slides": "https://docs.com/eliostruyf/7441/sharepoint-search-happy-hour"
+      },
+      {
+        "session": "Search display templates tips and tricks",
+        "date": "2016-06-11",
+        "event": "SharePoint Saturday Netherlands",
+        "location": "Vianen (NL)",
+        "link": "http://www.spsevents.org/city/netherlands/spsnl16",
+        "slides": "https://docs.com/eliostruyf/6704/search-display-templates-tips-and-tricks?c=6nyA1M"
+      },
+      {
+        "session": "Take your display template skills to the next level",
+        "date": "2016-05-31",
+        "event": "SPC Adriatics",
+        "location": "Zagreb (HR)",
+        "link": "http://www.spcadriatics.com/agenda/",
+        "slides": "https://docs.com/eliostruyf/7920/take-your-display-template-skills-to-the-next?c=6nyA1M"
+      },
+      {
+        "session": "Search display templates tips and tricks",
+        "date": "2016-05-28",
+        "event": "SharePoint Saturday Paris",
+        "location": "Paris (FR)",
+        "link": "http://www.spsevents.org/city/paris/paris2016",
+        "slides": "https://docs.com/eliostruyf/6938/search-display-templates-tips-and-trick-spsparis?c=6nyA1M"
+      },
+      {
+        "session": "An IT Pro and a developer walk into a bar – SharePoint Search happy hour",
+        "date": "2016-05-21",
+        "event": "SharePoint Saturday Stockholm",
+        "coSpeakers": [
+          {
+            "name": "Thomas Vochten",
+            "url": "https://bsky.app/profile/thomasvochten.com"
+          }
+        ],
+        "location": "Stockholm (SE)",
+        "link": "http://www.spsevents.org/city/stockholm/stockholm2016",
+        "slides": "https://docs.com/eliostruyf/2459/sharepoint-search-happy-hour"
+      },
+      {
+        "session": "Integrating Office UI fabric in your add-ins and applications",
+        "date": "7/04/2016",
+        "event": "BIWUG",
+        "location": "Mechelen (BE)",
+        "link": "http://www.eventbrite.com/e/biwug0704-tickets-23616687147",
+        "slides": "https://docs.com/eliostruyf/5556/integrating-office-ui-fabric-in-your-add-ins-and?c=tg1uHi"
+      },
+      {
+        "session": "An IT Pro and a developer walk into a bar – SharePoint Search happy hour",
+        "date": "2016-03-12",
+        "event": "Office 365 Saturday",
+        "coSpeakers": [
+          {
+            "name": "Thomas Vochten",
+            "url": "https://bsky.app/profile/thomasvochten.com"
+          }
+        ],
+        "location": "Copenhagen (DK)",
+        "link": "http://www.spsevents.org/city/copenhagen/copenhagen2016",
+        "slides": "https://docs.com/eliostruyf/1569/an-it-pro-and-a-developer-walk-into-a-bar"
+      },
+      {
+        "sessions": [
+          "Integrating Office UI fabric in your APPs",
+          "Search display templates tips and tricks"
+        ],
+        "date": "1/03/2016",
+        "endDate": "2/03/2016",
+        "event": "SharePoint Konferenz 2016",
+        "location": "Erding (DE)",
+        "link": "https://docs.com/eliostruyf/4081/search-display-template-tips-and-tricks",
+        "slides": "http://www.sharepointkonferenz.de/2016"
+      }
+    ]
+  },
+  {
+    "year": "2015",
+    "events": [
+      {
+        "session": "Improve your SharePoint search experience",
+        "date": "2015-10-17",
+        "event": "SharePoint Saturday Oslo",
+        "location": "Oslo (NO)",
+        "link": "http://www.spsevents.org/city/oslo/oslo2015",
+        "slides": "https://docs.com/eliostruyf/4043/take-your-display-template-skills-to-the-next"
+      },
+      {
+        "session": "An IT Pro and a developer walk into a bar - SharePoint Search happy hour",
+        "date": "2015-10-10",
+        "coSpeakers": [
+          {
+            "name": "Thomas Vochten",
+            "url": "https://bsky.app/profile/thomasvochten.com"
+          }
+        ],
+        "event": "SharePoint Saturday Munich",
+        "location": "Munich (DE)",
+        "link": "http://www.spsevents.org/city/Munich/Munich2015",
+        "slides": "https://docs.com/eliostruyf/8578/sharepoint-search-happy-hour-spsmuc"
+      },
+      {
+        "session": "Improve your SharePoint search experience",
+        "date": "2015-09-26",
+        "event": "SharePoint Saturday Barcelona",
+        "location": "Barcelona (ES)",
+        "link": "http://www.spsevents.org/city/barcelona/barcelona2015",
+        "slides": "https://docs.com/eliostruyf/7687/spsbcn15-eliostruyf-docs"
+      },
+      {
+        "session": "Search display templates tips and tricks",
+        "date": "2015-07-11",
+        "event": "SharePoint Saturday London",
+        "location": "London (UK)",
+        "link": "http://www.spsevents.org/city/London/London2015/",
+        "slides": "https://docs.com/en-US/d/elio-struyf-displaytemplates-tips-and-tricks_DZ2UZJTWIYRZRgAABhGgxlw~M4314013b-9b6c-83ae-61e0-87f228b5c855"
+      },
+      {
+        "session": "Improve your SharePoint search experience",
+        "date": "2015-05-30",
+        "event": "SharePoint Saturday Paris",
+        "location": "Paris (FR)",
+        "link": "http://www.spsevents.org/city/paris/paris2015",
+        "slides": "https://dd.docs.com/en-US/d/i06-implementing-a-better-search-experience_DhWcZJZVXmCg4IAAQBimENw~M4314013b-9b6c-83ae-61e0-87f228b5c855"
+      },
+      {
+        "session": "Improve your SharePoint search experience",
+        "date": "2015-04-18",
+        "event": "SharePoint Saturday Belgium",
+        "location": "Brussels (BE)",
+        "link": "http://www.spsevents.org/city/antwerp/antwerp2015",
+        "slides": "http://www.slideshare.net/estruyf/spsbe-improving-your-sharepoint-search-experience"
+      }
+    ]
+  },
+  {
+    "year": "2014",
+    "events": [
+      {
+        "session": "Take your display template skills to the next level",
+        "date": "2014-12-16",
+        "event": "BIWUG Meetup",
+        "location": "Brussels (BE)",
+        "link": "http://www.eventbrite.com/e/biwug1612-tickets-14694536755?aff=SRCH+title%3D"
+      },
+      {
+        "session": "Improve your SharePoint search experience",
+        "date": "2014-12-11",
+        "event": "Ventigrate",
+        "location": "Kontich (BE)"
+      },
+      {
+        "session": "Take your display template skills to the next level",
+        "date": "2014-11-29",
+        "event": "SharePoint Saturday UK",
+        "location": "Hinckley (UK)",
+        "link": "http://www.spsevents.org/city/UK/UK2014/home"
+      },
+      {
+        "sessions": [
+          "Building APPs for Office 365",
+          "Take your display template skills to the next level"
+        ],
+        "date": "7/11/2014",
+        "event": "Ventigrate Bootcamp",
+        "location": "Kontich (BE)",
+        "link": "http://ventigratebootcamp.azurewebsites.net/"
+      },
+      {
+        "session": "Building APPs for Office 365",
+        "date": "2014-10-30",
+        "event": "Technofolies",
+        "location": "Brussels (BE)",
+        "link": "http://www.technofolies.be/Office365Apps"
+      },
+      {
+        "session": "APP Development on Office 365",
+        "date": "2014-09-24",
+        "event": "Ventigrate Clients' event @ Microsoft BE",
+        "location": "Brussels (BE)"
+      },
+      {
+        "session": "Farewell XSL, Welcome Display Templates",
+        "date": "2014-05-24",
+        "event": "SharePoint Saturday Netherlands",
+        "location": "Vianen (NL)",
+        "link": "http://www.spsevents.org/city/netherlands/netherlands2014",
+        "slides": "http://www.slideshare.net/estruyf/farewell-xsl-welcome-display-templates-spsnl"
+      },
+      {
+        "session": "Sorry, something went wrong, and how to start debugging your Display Templates",
+        "date": "2014-04-26",
+        "event": "SharePoint Saturday Belgium",
+        "location": "Brussels (BE)",
+        "link": "http://www.spsevents.org/city/brussels/brussels2014"
+      },
+      {
+        "session": "Farewell XSL, Welcome Display Templates",
+        "date": "2014-04-16",
+        "event": "SP24 Conference",
+        "location": "Online",
+        "link": "http://sp24conf.com/",
+        "video": "https://www.youtube.com/watch?v=zqFHHRDo62I"
+      },
+      {
+        "session": "Farewell XSL, Welcome Display Templates",
+        "date": "2014-01-25",
+        "event": "SharePoint Saturday Stockholm",
+        "location": "Stockholm",
+        "link": "http://www.spsstockholm.com/2014/",
+        "slides": "http://www.slideshare.net/estruyf/farewelll-xsl-welcome-display-templates",
+        "video": "https://www.youtube.com/watch?v=46bEPsPH-Z8"
+      }
+    ]
+  },
+  {
+    "year": "2013",
+    "events": [
+      {
+        "session": "Farewell XSL, Welcome Display Templates",
+        "date": "2013-04-27",
+        "event": "SharePoint Saturday Belgium",
+        "location": "Brussels (BE)",
+        "slides": "http://www.slideshare.net/estruyf/biwug-presenationspsbe33"
+      }
+    ]
+  },
+  {
+    "year": "2012",
+    "events": [
+      {
+        "session": "An introduction to XSL in SharePoint",
+        "date": "2012-04-28",
+        "event": "SharePoint Saturday Belgium",
+        "location": "Brussels (BE)",
+        "slides": "http://www.slideshare.net/estruyf/introduction-to-xslt-spsbe07"
+      }
+    ]
+  }
+]

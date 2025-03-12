@@ -176,13 +176,13 @@ From class- to functional-components. Making sense of the latest functionality i
 
 Microsoft 365 PnP Weekly – Episode 111
 
-[Link to the article](https://developer.microsoft.com/en-us/microsoft-365/blogs/microsoft-365-pnp-weekly-episode-111/) - [Link to the video](https://www.youtube.com/watch?v=IKRoKKCayWo)
+[Link to the video](https://www.youtube.com/watch?v=IKRoKKCayWo)
 
 ### 2020
 
 #### 17 December 2020 - Microsoft Reactor FusionDev story
 
-FusionDev story together with [Luise Freese](https://twitter.com/LuiseFreese)
+FusionDev story together with [Luise Freese](https://www.linkedin.com/in/luisefreese/)
 
 [Link to the event](https://www.meetup.com/en-AU/Microsoft-Reactor-Redmond/events/274677750/) - [Link to the event](https://www.meetup.com/en-AU/Microsoft-Reactor-Redmond/events/274677750/)
 
@@ -200,7 +200,7 @@ Improving the performance of your SharePoint framework solutions
 
 #### 6 October 2020 - Meetup
 
-Power Apps Licensing QnA with [Ryan Cunningham](https://twitter.com/rc_says) and [Chris Huntingford](https://twitter.com/TATTOOEDCRMGUY) - Hosted by [Luise Freese](https://twitter.com/LuiseFreese) and myself.
+Power Apps Licensing QnA with [Ryan Cunningham](https://twitter.com/rc_says) and [Chris Huntingford](https://twitter.com/TATTOOEDCRMGUY) - Hosted by [Luise Freese](https://www.linkedin.com/in/luisefreese/) and myself.
 
 [Link to the event](https://www.meetup.com/en-AU/Sharing-Is-Caring-Learn-Microsoft-365-Power-Platform/events/273589561/)
 
@@ -230,7 +230,7 @@ Learn how you can start UI testing your solutions
 
 #### 25 June 2020 - Valo Fest
 
-How to run a business on Microsoft 365 with PowerPlatform. Together with [Luise Freese](https://twitter.com/LuiseFreese)
+How to run a business on Microsoft 365 with PowerPlatform. Together with [Luise Freese](https://www.linkedin.com/in/luisefreese/)
 
 [Link to the event](https://www.valointranet.com/valofest2020/)
 
@@ -242,7 +242,7 @@ Things I learned while building a product on SharePoint Modern
 
 #### 25 January 2020 - Power Platform Saturday Warsaw
 
-How Pro Developers and Citizen Developers can team up - a #BetterTogether Story. Together with [Luise Freese](https://twitter.com/LuiseFreese)
+How Pro Developers and Citizen Developers can team up - a #BetterTogether Story. Together with [Luise Freese](https://www.linkedin.com/in/luisefreese/)
 
 [Link to the event](https://ppswarsaw.org/) - [Session information](https://www.eliostruyf.com/speaking/pro-developers-citizen-developers-team-bettertogether-story/)
 
@@ -252,7 +252,7 @@ How Pro Developers and Citizen Developers can team up - a #BetterTogether Story.
 
 #### 10 December 2019 - Modern Workplace Conference Paris
 
-Sketchnotes and #FunctionalDrawing (not only) for Consultants and IT Pros. Together with [Luise Freese](https://twitter.com/LuiseFreese)
+Sketchnotes and #FunctionalDrawing (not only) for Consultants and IT Pros. Together with [Luise Freese](https://www.linkedin.com/in/luisefreese/)
 
 [Link to the event](https://modern-workplace.pro/) - [Session information](https://www.eliostruyf.com/speaking/sketchnotes-and-functional-drawing-not-only-for-consultants-and-it-pros/)
 
@@ -768,114 +768,114 @@ An introduction to XSL in SharePoint
 
 [Link to the slides][113]
 
- [2]: http://www.spsevents.org/city/Helsinki/Helsinki2019
- [3]: https://www.nccomms.com/conferences/office-365-and-sharepoint-connect/
- [4]: https://twitter.com/baywet
- [5]: https://twitter.com/CulverMelanie
- [6]: https://www.sharepointeurope.com
- [7]: http://www.spsevents.org/city/netherlands/netherlands2019
- [9]: https://www.collabsummit.eu
- [10]: https://1drv.ms/f/s!AukeddqwapKJhfBp2dxP61Jt1YIAdQ
- [11]: https://www.portiva.nl/sharing-sushi-20190410/
- [12]: https://1drv.ms/f/s!AukeddqwapKJhe0ola8iOpm24wHnpQ
- [13]: https://www.eventbrite.com/e/biwug-20181218-tickets-53263850611
- [14]: https://twitter.com/ThomasVochten
- [15]: https://www.sharepointeurope.com/conference/schedule/
- [16]: https://1drv.ms/f/s!AukeddqwapKJhetBmMObM7s4mbUdjQ
- [17]: https://www.eventbrite.com/e/global-office-365-developer-bootcamp-tickets-48369653937
- [18]: https://www.nccomms.com/office-365-and-sharepoint-connect-2018-agenda/
- [19]: https://1drv.ms/f/s!AukeddqwapKJhes9vBjK-qAcbq0ysA
- [20]: https://twitter.com/PaoloPia
- [21]: https://modern-workplace.pro/preconferences/
- [22]: https://1drv.ms/f/s!AukeddqwapKJhesCuOrDZUYMkz0zfA
- [23]: http://www.spsevents.org/city/Milan/Milan2018
- [24]: https://1drv.ms/f/s!AukeddqwapKJhepkfayErjvI3XyLIA
- [25]: https://developer.microsoft.com/en-us/sharepoint/blogs/sharepoint-dev-weekly-episode-7/
- [26]: https://twitter.com/vesajuvonen
- [27]: https://myignite.techcommunity.microsoft.com/sessions/65820
- [28]: http://www.spsevents.org/city/Stockholm/Stockholm2018/speakers
- [29]: https://1drv.ms/f/s!AukeddqwapKJhepUQZnPsjAj1xIeVw
- [30]: https://uk.communities.tech/events/sharepoint-office-365-user-group-uk-london/
- [31]: https://insiderdevtour.com/Zaventem
- [32]: https://twitter.com/officedevpnp
- [33]: https://twitter.com/waldekm
- [34]: http://www.collabsummit.eu/
- [35]: https://1drv.ms/f/s!AukeddqwapKJheo-x3trQu9wse4jfw
- [36]: https://techorama.be/
- [37]: https://1drv.ms/f/s!AukeddqwapKJheo85JuyRaI_8ngqZg
- [38]: https://www.youtube.com/watch?v=FlfKmwYl7kc
- [39]: https://valosummit.com
- [40]: https://www.voitanos.io/blog/webinar-using-reusable-pnp-controls-in-spfx-projects-with-mvp-elio-struyf
- [41]: https://www.eventbrite.com/e/dqc-dev-summit-registrering-42909335979
- [42]: https://1drv.ms/f/s!AukeddqwapKJheo3aD2-0K8Z7p_evA
- [43]: http://www.spsevents.org/city/Helsinki/Helsinki2018/speakers
- [44]: https://1drv.ms/f/s!AukeddqwapKJheoupXZe0unA2KV4hA
- [45]: https://dev.office.com/blogs/webcast-reusable-controls-for-your-sharepoint-framework-solutions
- [46]: https://twitter.com/harbars
- [47]: https://twitter.com/dhessing
- [48]: https://1drv.ms/f/s!AukeddqwapKJheoARLC24w3KSmxYYw
- [49]: http://www.spsevents.org/city/oslo/oslo2017
- [50]: https://1drv.ms/f/s!AukeddqwapKJhel-EhAOcJl1ZHK5Lw
- [51]: https://sharepointunite.com/
- [52]: https://1drv.ms/f/s!AukeddqwapKJhel5Jz4tLXcWH69pFg
- [53]: http://www.spsevents.org/city/paris/paris2017
- [54]: https://1drv.ms/f/s!AukeddqwapKJhel3ICmA_kZrX6EEJg
- [55]: http://www.spsevents.org/city/Milan/Milan2017
- [56]: https://1drv.ms/f/s!AukeddqwapKJhelmmjLsQZb9oHX-IA
- [57]: http://www.spsevents.org/city/Cambridge/Cambridge2017/sessions
- [58]: https://1drv.ms/f/s!AukeddqwapKJhelfgc6IKEdKBjxFjg
- [59]: http://www.spsevents.org/city/London/London2017/sessions
- [60]: https://www.slideshare.net/estruyf/getting-notified-by-sharepoint-with-the-webhook-functionality
- [61]: https://office365engage.com/
- [62]: https://dev.office.com/blogs/vsts-build-and-release-pipelines-for-sharepoint-framework-solutions
- [63]: https://www.voitanos.io/blog/sharepoint-framework-in-elio-struyf-s-own-words
- [64]: http://www.spsevents.org/city/Netherlands/Netherlands2017/sessions
- [65]: https://docs.com/eliostruyf/3040/getting-up-to-speed-with-typescript
- [66]: https://dev.office.com/blogs/debugging-sharepoint-framework-solutions
- [67]: https://www.eventbrite.com/e/biwug-2803-tickets-32598087758?ref=ebapi "SPS Geneva"
- [68]: https://docs.com/eliostruyf/4462/a-walk-through-the-web-stack-developer-landscape
- [69]: http://www.spsevents.org/city/helsinki/helsinki2017 "SPS Geneva"
- [70]: https://docs.com/eliostruyf/1512/a-walk-through-the-web-stack-developer-landscape
- [71]: http://www.meetup.com/Communaute-aOS-Azure-Office-365-SharePoint-Meetup/events/234688745/
- [72]: https://docs.com/eliostruyf/9918/sharepoint-search-happy-hour
- [73]: http://www.spsevents.org/city/Geneva/Geneva2016 "SPS Geneva"
- [74]: https://docs.com/eliostruyf/4397/a-walk-through-the-client-side-developer-landscape
- [75]: https://www.unityconnect.com/2016
- [76]: https://www.sharepointeurope.com/
- [77]: https://docs.com/eliostruyf/8750/take-your-display-template-skills-to-the-next
- [78]: https://dev.office.com/blogs/building-a-sample-search-web-part-with-spfx-using-react
- [79]: http://www.spsevents.org/city/oslo/oslo2016
- [80]: https://docs.com/eliostruyf/5957/sharepoint-search-happy-hour
- [81]: http://www.spsevents.org/city/london/london2016
- [82]: http://www.spsevents.org/city/netherlands/spsnl16
- [83]: https://docs.com/eliostruyf/6704/search-display-templates-tips-and-tricks?c=6nyA1M
- [84]: http://www.spcadriatics.com/agenda/ "BIWUG"
- [85]: http://www.spsevents.org/city/paris/paris2016
- [86]: https://docs.com/eliostruyf/6938/search-display-templates-tips-and-trick-spsparis?c=6nyA1M
- [87]: http://www.spsevents.org/city/stockholm/stockholm2016
- [88]: http://www.spsevents.org/city/copenhagen/copenhagen2016
- [89]: https://docs.com/eliostruyf/1569/an-it-pro-and-a-developer-walk-into-a-bar
- [90]: https://docs.com/eliostruyf/1091/integrating-office-ui-fabric-in-your-add-ins-or
- [91]: http://www.sharepointkonferenz.de/2016
- [92]: https://docs.com/eliostruyf/4081/search-display-template-tips-and-tricks
- [93]: http://www.spsevents.org/city/oslo/oslo2015
- [94]: https://docs.com/eliostruyf/4043/take-your-display-template-skills-to-the-next
- [95]: http://www.spsevents.org/city/Munich/Munich2015
- [96]: http://www.spsevents.org/city/barcelona/barcelona2015
- [97]: http://www.spsevents.org/city/London/London2015/
- [98]: https://docs.com/en-US/d/elio-struyf-displaytemplates-tips-and-tricks_DZ2UZJTWIYRZRgAABhGgxlw~M4314013b-9b6c-83ae-61e0-87f228b5c855
- [99]: http://www.spsevents.org/city/paris/paris2015 "SPSParis"
- [100]: http://www.spsevents.org/city/antwerp/antwerp2015 "SPSBE"
- [101]: http://www.slideshare.net/estruyf/spsbe-improving-your-sharepoint-search-experience "Slides"
- [102]: http://www.eventbrite.com/e/biwug1612-tickets-14694536755?aff=SRCH+title%3D "BIWUG"
- [103]: http://www.spsevents.org/city/UK/UK2014/home "SPSUK"
- [104]: http://ventigratebootcamp.azurewebsites.net/ "Ventigrate Bootcamp"
- [105]: http://www.technofolies.be/Office365Apps "Technofolies"
- [106]: http://www.spsevents.org/city/netherlands/netherlands2014 "SPSNL14"
- [107]: http://www.slideshare.net/estruyf/farewell-xsl-welcome-display-templates-spsnl "Slideshare"
- [108]: http://www.spsevents.org/city/brussels/brussels2014 "SPSBE14"
- [109]: http://sp24conf.com/ "SP24"
- [110]: http://www.spsstockholm.com/2014/ "SPSSTHLM"
- [111]: http://www.slideshare.net/estruyf/farewelll-xsl-welcome-display-templates "Slides"
- [112]: http://www.slideshare.net/estruyf/biwug-presenationspsbe33 "Slides"
- [113]: http://www.slideshare.net/estruyf/introduction-to-xslt-spsbe07 "Slides"
+[2]: http://www.spsevents.org/city/Helsinki/Helsinki2019
+[3]: https://www.nccomms.com/conferences/office-365-and-sharepoint-connect/
+[4]: https://twitter.com/baywet
+[5]: https://twitter.com/CulverMelanie
+[6]: https://www.sharepointeurope.com
+[7]: http://www.spsevents.org/city/netherlands/netherlands2019
+[9]: https://www.collabsummit.eu
+[10]: https://1drv.ms/f/s!AukeddqwapKJhfBp2dxP61Jt1YIAdQ
+[11]: https://www.portiva.nl/sharing-sushi-20190410/
+[12]: https://1drv.ms/f/s!AukeddqwapKJhe0ola8iOpm24wHnpQ
+[13]: https://www.eventbrite.com/e/biwug-20181218-tickets-53263850611
+[14]: https://twitter.com/ThomasVochten
+[15]: https://www.sharepointeurope.com/conference/schedule/
+[16]: https://1drv.ms/f/s!AukeddqwapKJhetBmMObM7s4mbUdjQ
+[17]: https://www.eventbrite.com/e/global-office-365-developer-bootcamp-tickets-48369653937
+[18]: https://www.nccomms.com/office-365-and-sharepoint-connect-2018-agenda/
+[19]: https://1drv.ms/f/s!AukeddqwapKJhes9vBjK-qAcbq0ysA
+[20]: https://twitter.com/PaoloPia
+[21]: https://modern-workplace.pro/preconferences/
+[22]: https://1drv.ms/f/s!AukeddqwapKJhesCuOrDZUYMkz0zfA
+[23]: http://www.spsevents.org/city/Milan/Milan2018
+[24]: https://1drv.ms/f/s!AukeddqwapKJhepkfayErjvI3XyLIA
+[25]: https://developer.microsoft.com/en-us/sharepoint/blogs/sharepoint-dev-weekly-episode-7/
+[26]: https://twitter.com/vesajuvonen
+[27]: https://myignite.techcommunity.microsoft.com/sessions/65820
+[28]: http://www.spsevents.org/city/Stockholm/Stockholm2018/speakers
+[29]: https://1drv.ms/f/s!AukeddqwapKJhepUQZnPsjAj1xIeVw
+[30]: https://uk.communities.tech/events/sharepoint-office-365-user-group-uk-london/
+[31]: https://insiderdevtour.com/Zaventem
+[32]: https://twitter.com/officedevpnp
+[33]: https://twitter.com/waldekm
+[34]: http://www.collabsummit.eu/
+[35]: https://1drv.ms/f/s!AukeddqwapKJheo-x3trQu9wse4jfw
+[36]: https://techorama.be/
+[37]: https://1drv.ms/f/s!AukeddqwapKJheo85JuyRaI_8ngqZg
+[38]: https://www.youtube.com/watch?v=FlfKmwYl7kc
+[39]: https://valosummit.com
+[40]: https://www.voitanos.io/blog/webinar-using-reusable-pnp-controls-in-spfx-projects-with-mvp-elio-struyf
+[41]: https://www.eventbrite.com/e/dqc-dev-summit-registrering-42909335979
+[42]: https://1drv.ms/f/s!AukeddqwapKJheo3aD2-0K8Z7p_evA
+[43]: http://www.spsevents.org/city/Helsinki/Helsinki2018/speakers
+[44]: https://1drv.ms/f/s!AukeddqwapKJheoupXZe0unA2KV4hA
+[45]: https://dev.office.com/blogs/webcast-reusable-controls-for-your-sharepoint-framework-solutions
+[46]: https://twitter.com/harbars
+[47]: https://twitter.com/dhessing
+[48]: https://1drv.ms/f/s!AukeddqwapKJheoARLC24w3KSmxYYw
+[49]: http://www.spsevents.org/city/oslo/oslo2017
+[50]: https://1drv.ms/f/s!AukeddqwapKJhel-EhAOcJl1ZHK5Lw
+[51]: https://sharepointunite.com/
+[52]: https://1drv.ms/f/s!AukeddqwapKJhel5Jz4tLXcWH69pFg
+[53]: http://www.spsevents.org/city/paris/paris2017
+[54]: https://1drv.ms/f/s!AukeddqwapKJhel3ICmA_kZrX6EEJg
+[55]: http://www.spsevents.org/city/Milan/Milan2017
+[56]: https://1drv.ms/f/s!AukeddqwapKJhelmmjLsQZb9oHX-IA
+[57]: http://www.spsevents.org/city/Cambridge/Cambridge2017/sessions
+[58]: https://1drv.ms/f/s!AukeddqwapKJhelfgc6IKEdKBjxFjg
+[59]: http://www.spsevents.org/city/London/London2017/sessions
+[60]: https://www.slideshare.net/estruyf/getting-notified-by-sharepoint-with-the-webhook-functionality
+[61]: https://office365engage.com/
+[62]: https://dev.office.com/blogs/vsts-build-and-release-pipelines-for-sharepoint-framework-solutions
+[63]: https://www.voitanos.io/blog/sharepoint-framework-in-elio-struyf-s-own-words
+[64]: http://www.spsevents.org/city/Netherlands/Netherlands2017/sessions
+[65]: https://docs.com/eliostruyf/3040/getting-up-to-speed-with-typescript
+[66]: https://dev.office.com/blogs/debugging-sharepoint-framework-solutions
+[67]: https://www.eventbrite.com/e/biwug-2803-tickets-32598087758?ref=ebapi "SPS Geneva"
+[68]: https://docs.com/eliostruyf/4462/a-walk-through-the-web-stack-developer-landscape
+[69]: http://www.spsevents.org/city/helsinki/helsinki2017 "SPS Geneva"
+[70]: https://docs.com/eliostruyf/1512/a-walk-through-the-web-stack-developer-landscape
+[71]: http://www.meetup.com/Communaute-aOS-Azure-Office-365-SharePoint-Meetup/events/234688745/
+[72]: https://docs.com/eliostruyf/9918/sharepoint-search-happy-hour
+[73]: http://www.spsevents.org/city/Geneva/Geneva2016 "SPS Geneva"
+[74]: https://docs.com/eliostruyf/4397/a-walk-through-the-client-side-developer-landscape
+[75]: https://www.unityconnect.com/2016
+[76]: https://www.sharepointeurope.com/
+[77]: https://docs.com/eliostruyf/8750/take-your-display-template-skills-to-the-next
+[78]: https://dev.office.com/blogs/building-a-sample-search-web-part-with-spfx-using-react
+[79]: http://www.spsevents.org/city/oslo/oslo2016
+[80]: https://docs.com/eliostruyf/5957/sharepoint-search-happy-hour
+[81]: http://www.spsevents.org/city/london/london2016
+[82]: http://www.spsevents.org/city/netherlands/spsnl16
+[83]: https://docs.com/eliostruyf/6704/search-display-templates-tips-and-tricks?c=6nyA1M
+[84]: http://www.spcadriatics.com/agenda/ "BIWUG"
+[85]: http://www.spsevents.org/city/paris/paris2016
+[86]: https://docs.com/eliostruyf/6938/search-display-templates-tips-and-trick-spsparis?c=6nyA1M
+[87]: http://www.spsevents.org/city/stockholm/stockholm2016
+[88]: http://www.spsevents.org/city/copenhagen/copenhagen2016
+[89]: https://docs.com/eliostruyf/1569/an-it-pro-and-a-developer-walk-into-a-bar
+[90]: https://docs.com/eliostruyf/1091/integrating-office-ui-fabric-in-your-add-ins-or
+[91]: http://www.sharepointkonferenz.de/2016
+[92]: https://docs.com/eliostruyf/4081/search-display-template-tips-and-tricks
+[93]: http://www.spsevents.org/city/oslo/oslo2015
+[94]: https://docs.com/eliostruyf/4043/take-your-display-template-skills-to-the-next
+[95]: http://www.spsevents.org/city/Munich/Munich2015
+[96]: http://www.spsevents.org/city/barcelona/barcelona2015
+[97]: http://www.spsevents.org/city/London/London2015/
+[98]: https://docs.com/en-US/d/elio-struyf-displaytemplates-tips-and-tricks_DZ2UZJTWIYRZRgAABhGgxlw~M4314013b-9b6c-83ae-61e0-87f228b5c855
+[99]: http://www.spsevents.org/city/paris/paris2015 "SPSParis"
+[100]: http://www.spsevents.org/city/antwerp/antwerp2015 "SPSBE"
+[101]: http://www.slideshare.net/estruyf/spsbe-improving-your-sharepoint-search-experience "Slides"
+[102]: http://www.eventbrite.com/e/biwug1612-tickets-14694536755?aff=SRCH+title%3D "BIWUG"
+[103]: http://www.spsevents.org/city/UK/UK2014/home "SPSUK"
+[104]: http://ventigratebootcamp.azurewebsites.net/ "Ventigrate Bootcamp"
+[105]: http://www.technofolies.be/Office365Apps "Technofolies"
+[106]: http://www.spsevents.org/city/netherlands/netherlands2014 "SPSNL14"
+[107]: http://www.slideshare.net/estruyf/farewell-xsl-welcome-display-templates-spsnl "Slideshare"
+[108]: http://www.spsevents.org/city/brussels/brussels2014 "SPSBE14"
+[109]: http://sp24conf.com/ "SP24"
+[110]: http://www.spsstockholm.com/2014/ "SPSSTHLM"
+[111]: http://www.slideshare.net/estruyf/farewelll-xsl-welcome-display-templates "Slides"
+[112]: http://www.slideshare.net/estruyf/biwug-presenationspsbe33 "Slides"
+[113]: http://www.slideshare.net/estruyf/introduction-to-xslt-spsbe07 "Slides"
