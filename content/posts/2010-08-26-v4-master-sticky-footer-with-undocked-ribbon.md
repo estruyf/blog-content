@@ -1,19 +1,20 @@
 ---
-title: V4.master Sticky Footer With Undocked Ribbon
-author: Elio Struyf
-type: post
-date: 2010-08-26T12:43:28.000Z
-slug: /v4-master-sticky-footer-with-undocked-ribbon/
+title: "V4.master Sticky Footer With Undocked Ribbon"
+author: "Elio Struyf"
+type: "post"
+date: "2010-08-26T12:43:28.000Z"
+slug: "/v4-master-sticky-footer-with-undocked-ribbon/"
 dsq_thread_id:
   - 3836444547
 categories:
-  - Branding
-  - Master Page
+  - "Branding"
+  - "Master Page"
 tags:
-  - Footer
-  - Ribbon
-  - v4.master
+  - "Footer"
+  - "Ribbon"
+  - "v4.master"
 comments: true
+preview: "<failed to process>"
 ---
 
 Hi,
