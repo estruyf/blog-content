@@ -32,7 +32,7 @@ Before you can start linking and unlinking multilingual pages, you will need to 
 
 You can retrieve the form digest value via the `/_api/contextinfo` API or use the `DigestCache` service in SPFx.
 
-```typescript {linenos=table,noclasses=false}
+```typescript 
 import { IDigestCache, DigestCache } from "@microsoft/sp-http";
 
 const digestCache: IDigestCache = context.serviceScope.consume(
@@ -45,7 +45,7 @@ const formDigest = await digestCache.fetchDigest(this.serverRelativeUrl);
 
 To link and unlink a page, you need to set/unset values in the `_SPIsTranslation`, `_SPTranslationLanguage`, and `_SPTranslationSourceItemId` fields. By default, they are set to read-only, so before an update, you will need to turn off the read-only flag and enable it after the update.
 
-```text {linenos=table,noclasses=false}
+```text 
 POST https://<tenant>.sharepoint.com/<site>/_api/web/GetList(@listUrl)/fields/getByInternalNameOrTitle('<internal name>')?@listUrl='<site>/SitePages'
 
 content-type: application/json;odata=verbose;
@@ -80,7 +80,7 @@ For example, the default language of my site is English (en-us), and I want to l
 
 You can link the Dutch page to the English page with these three things. You can do this with the following REST API call:
 
-```text {linenos=table,noclasses=false}
+```text 
 POST https://<tenant>.sharepoint.com/<site>/_api/web/GetList(@listUrl)/items(<item id>)?@listUrl='<site>/SitePages'
 
 content-type: application/json;odata=verbose;
@@ -110,7 +110,7 @@ Unlinking a multilingual page is similar to linking a page. You can use the acti
 
 The call to perform is similar to the page linking one, but now we need to unset the `_SPTranslationSourceItemId` field value.
 
-```text {linenos=table,noclasses=false}
+```text 
 POST https://<tenant>.sharepoint.com/<site>/_api/web/GetList(@listUrl)/items(<item id>)?@listUrl='<site>/SitePages'
 
 content-type: application/json;odata=verbose;

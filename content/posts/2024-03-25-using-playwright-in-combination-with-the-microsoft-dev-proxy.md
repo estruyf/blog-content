@@ -36,7 +36,7 @@ Best practice is to use the Dev Proxy for mocking APIs or simulating specific sc
 
 When you followed the [Playwright getting started](https://playwright.dev/docs/intro) guide, you should have a basic setup in place. When you want to use Playwright with the Dev Proxy, you can add the proxy configuration to the configuration. You can do this in your `playwright.config.ts` file by adding the following code:
 
-```typescript {title="playwright.config.ts"}
+```typescript 
 import { defineConfig } from '@playwright/test';
 export default defineConfig({
   use: {
@@ -55,7 +55,7 @@ Once the configuration is in place, you can start configuring your GitHub Action
 
 When using the macOS runner, you can start with the configuration found in the [Using Microsoft Dev Proxy in your GitHub Actions workflow on a macOS hosted VM](https://www.eliostruyf.com/dev-proxy-github-actions-workflow-macos/) article. The only thing you need to add is the dependency installation steps.
 
-```yaml {title="GitHub Actions workflow - macOS runner"}
+```yaml 
 name: macOS Dev Proxy with Playwright
 
 on:
@@ -158,7 +158,7 @@ When using Firefox with Playwright, it creates an in-memory profile, so you cann
 
 The simple approach is to ignore HTTPS errors by setting the `ignoreHTTPSErrors` to `true` in your Playwright configuration. You can do this for all browsers or for specific browsers. Here is an example of how you can do this:
 
-```typescript {title="playwright.config.ts"}
+```typescript 
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
@@ -188,7 +188,7 @@ If you are only using Chromium in your tests, you can add the certificate to the
 
 To add the certificate to the NSS Shared DB, you can use the following steps:
 
-```yaml {title="Add certificate to NSS Shared DB - GitHub Actions steps",hl_lines="13"}
+```yaml 
 - name: Install the Dev Proxy certificate for Chromium
   timeout-minutes: 1
   run: |
@@ -209,7 +209,7 @@ The highlighted line in the code snippet above shows how you can add the `dev-pr
 
 Here is the complete GitHub Actions workflow for Ubuntu:
 
-```yaml {title="GitHub Actions workflow - Ubuntu runner"}
+```yaml 
 name: ubuntu Dev Proxy
 
 on:

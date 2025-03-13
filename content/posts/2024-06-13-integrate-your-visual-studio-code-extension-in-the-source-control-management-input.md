@@ -34,7 +34,7 @@ The SCM input field also has a language identifier, which you can use to provide
 
 In case you want to add text completion to the SCM input field, you can do this by registering a completion item provider for the `scminput` language identifier like this:
 
-```typescript {title="Register the completion item provider"}
+```typescript 
 context.subscriptions.push(
   vscode.languages.registerCompletionItemProvider(
     "*", // All document types
@@ -46,7 +46,7 @@ context.subscriptions.push(
 
 The `MessageCompletionProvider` class looks like this:
 
-```typescript {title="MessageCompletionProvider class"}
+```typescript 
 import * as vscode from "vscode";
 
 export class MessageCompletionProvider implements vscode.CompletionItemProvider

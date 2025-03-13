@@ -27,7 +27,7 @@ Most of the steps are the same, except how you trust the root certificate.
 
 Like the macOS runner, you can install the bash script provided in the Dev Proxy documentation on the Ubuntu runner. To include this into your GitHub Actions workflow, you can use the following step:
 
-```yaml {title="Install and run the Dev Proxy - GitHub Actions steps"}
+```yaml 
 - name: Install Dev Proxy
   run: bash -c "$(curl -sL https://aka.ms/devproxy/setup.sh)"
 
@@ -43,7 +43,7 @@ Once the Dev Proxy is installed, you can run it, but you cannot yet intercept HT
 
 Similar to the macOS configuration, we must trust the self-signed certificate the Dev Proxy created. Here are the steps to achieve the certificate trust on an Ubuntu runner:
 
-```yaml {title="Run Dev Proxy - GitHub Actions step"}
+```yaml 
 - name: Install the Dev Proxy's certificate
   timeout-minutes: 1
   run: |
@@ -70,7 +70,7 @@ After running this step, you can start intercepting HTTPS traffic with the Dev P
 
 Below, you can find the complete GitHub Actions workflow file, which includes the installation of the Dev Proxy and the trust of the root certificate.
 
-```yaml {title="Complete GitHub Actions workflow"}
+```yaml 
 name: Ubuntu Dev Proxy
 
 on:

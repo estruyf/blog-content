@@ -50,7 +50,7 @@ It creates a `.demo` folder with a `demo.json` file, but you can rename it or ad
 
 In the `demo.json` file, you can add your demo steps:
 
-```json {linenos=table,noclasses=false}
+```json 
 {
   "$schema": "https://elio.dev/demo-time.schema.json",
   "title": "Playwright demo",

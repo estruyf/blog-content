@@ -22,7 +22,7 @@ When searching for ways to run background processes on Linux environments, I fou
 
 Using the ampersand starts the service in the background and allows you to continue with the following command.
 
-```bash {title="Start a process in the background"}
+```bash 
 npm start &
 ```
 
@@ -34,7 +34,7 @@ The same approach can be used in GitHub Actions. When you use the ampersand `&` 
 
 Here is an example of how to start a service in the background and then run your tests.
 
-```yaml {title="GitHub Actions Workflow"}
+```yaml 
 name: Run tests
 
 on:

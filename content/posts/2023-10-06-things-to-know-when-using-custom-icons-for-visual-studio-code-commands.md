@@ -35,7 +35,7 @@ This change in version `1.83.0` made me write this article, as it affected one o
 
 When you want to use an image file as an icon, you can specify the path to the image file in the `icon` property of the command. The path is relative to the extension root.
 
-```json {linenos=table,noclasses=false}
+```json 
 {
   "contributes": {
     "commands": [

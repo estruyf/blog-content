@@ -37,7 +37,7 @@ A nice feature from Playwright is the ability to mock API calls. This feature al
 
 To mock an API call, you need to use the `page.route` method. Here is an example of how you can mock an internal server error:
 
-```typescript {linenos=table,noclasses=false}
+```typescript 
 await page.route("**/_api/web/lists", async (route) => {
   await route.fulfill({
     status: 500,
@@ -49,7 +49,7 @@ await page.route("**/_api/web/lists", async (route) => {
 
 A complete test looks like this:
 
-```typescript {linenos=table,noclasses=false}
+```typescript 
 test("API failed - 500", async () => {
   await page.route("**/_api/web/lists", async (route) => {
     await route.fulfill({
@@ -70,7 +70,7 @@ test("API failed - 500", async () => {
 
 When using third party APIs, you might be throttled when you make too many calls. To test this scenario, you can use the following code:
 
-```typescript {linenos=table,noclasses=false}
+```typescript 
 await page.route("**/_api/web/lists", async (route) => {
   await route.fulfill({
     status: 429,
@@ -82,7 +82,7 @@ Now, this will always return a 429 error. In case of throttling, you might also 
 
 Here is an example of how you can do this:
 
-```typescript {linenos=table,noclasses=false}
+```typescript 
 test("API throttled (success) - 429", async () => {
   let nrOfCalls = 0;
 
@@ -119,7 +119,7 @@ Another scenario you can test is when the response's body is incorrect. For inst
 
 Here is an example of how you can mock this:
 
-```typescript {linenos=table,noclasses=false}
+```typescript 
 test("API result with wrong body", async () => {
   await page.route("**/_api/web/lists", async (route) => {
     await route.fulfill({

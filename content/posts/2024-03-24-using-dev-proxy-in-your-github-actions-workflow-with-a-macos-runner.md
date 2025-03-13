@@ -31,7 +31,7 @@ In this blog post, I will show you how to use the Dev Proxy in your GitHub Actio
 
 Let us start with installing the Dev Proxy on the macOS virtual machine. We can use the bash script provided in the Dev Proxy documentation for this. To include this into your GitHub Actions workflow, you can use the following step:
 
-```bash {title="Install Dev Proxy - GitHub Actions step"}
+```bash 
 - name: Install Dev Proxy
   run: bash -c "$(curl -sL https://aka.ms/devproxy/setup.sh)"
 ```
@@ -44,7 +44,7 @@ Once installed, you can run the Dev Proxy as a background service by adding an a
 
 Here is what the GitHub Actions step looks like:
 
-```yaml {title="Start Dev Proxy - GitHub Actions step"}
+```yaml 
 - name: Run Dev Proxy
   run: ./devproxy/devproxy &
 ```
@@ -73,7 +73,7 @@ After some research, I found an article about [Trusting Certificates in System K
 
 The script to trust the certificate in the system keychain looks as follows:
 
-```yaml {title="Trust certificate - GitHub Actions steps"}
+```yaml 
 - name: Install the Dev Proxy's certificate
   timeout-minutes: 1
   run: |
@@ -105,7 +105,7 @@ At the end of the script there are three exports which are all optional.
 
 Now that we have the certificate trust figured out, we can combine all the steps into a complete GitHub Actions workflow.
 
-```yaml {title="Complete GitHub Actions workflow"}
+```yaml 
 name: macOS Dev Proxy
 
 on:

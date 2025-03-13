@@ -43,7 +43,7 @@ You can include the JSON reporter in your Playwright config or use the `--report
 
 #### Using the JSON reporter in your Playwright config
 
-```javascript {title="JSON Reporter configuration"}
+```javascript 
 import { defineConfig } from "@playwright/test";
 
 export default defineConfig({
@@ -55,7 +55,7 @@ export default defineConfig({
 
 #### Using the `--reporter json` flag
 
-```bash {title="Run Playwright tests command with JSON reporter"}
+```bash 
 PLAYWRIGHT_JSON_OUTPUT_NAME=results.json npx playwright test --reporter=json
 ```
 
@@ -63,7 +63,7 @@ PLAYWRIGHT_JSON_OUTPUT_NAME=results.json npx playwright test --reporter=json
 
 Create a new GitHub Action workflow in your repository and add the following content:
 
-```yaml {title="GitHub Action workflow using the Playwright Issue Creator action"}
+```yaml 
 name: Playwright Tests
 
 on:

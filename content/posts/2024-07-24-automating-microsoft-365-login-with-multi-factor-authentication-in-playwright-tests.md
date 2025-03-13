@@ -68,7 +68,7 @@ To add a TOTP to your account, you need to go to your account's security setting
 
 If you want to use something other than an authenticator app to create the TOTP, the starter template also provides a script to generate the TOTP based on the secret key. You can run the following command to generate the TOTP:
 
-```bash {title="Generate TOTP"}
+```bash 
 # Replace `<secret key>` with the secret key you copied earlier.
 npm run generate:otp -- <secret key>
 ```
@@ -98,7 +98,7 @@ Once your account is configured with the TOTP, you can automate the login flow. 
 
 Here is what it looks like in the code:
 
-```typescript {title="The login flow in code"}
+```typescript 
 import { test as setup } from "@playwright/test";
 import * as OTPAuth from "otpauth";
 
@@ -163,7 +163,7 @@ setup("authenticate", async ({ page }) => {
 
 As you do not want to run the authentication flow before every test, it is configured as a separate login flow in the Playwright M365 starter template. It is defined as a dependency on other projects. You can find this configuration in the `playwright.config.ts` file:
 
-```typescript {title="The login flow as a dependency",hl_lines="20"}
+```typescript 
 const USE_MFA = process.env.M365_OTP_SECRET ? true : false;
 
 export default defineConfig({
@@ -199,7 +199,7 @@ To use the Playwright M365 starter template locally, you need to follow these st
 - Follow the **installation** steps in the README file
 - Configure the `.env` file with the following variables:
   
-```bash {title=".env file configuration"}
+```bash 
 # The URL you want to test (e.g., `https://<tenant>.sharepoint.com/`)
 M365_PAGE_URL=<the URL you want to test>
 M365_USERNAME=<your email address>
@@ -211,7 +211,7 @@ M365_OTP_SECRET=<the secret key you copied>
 
 - Run the tests using the following command:
 
-```bash {title="Run the tests"}
+```bash 
 npm test
 
 # Or if you want to run the tests in the UI mode

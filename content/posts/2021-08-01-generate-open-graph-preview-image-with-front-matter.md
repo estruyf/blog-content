@@ -38,7 +38,7 @@ My preview image looks as follows:
 
 The code of the script looks as follows:
 
-```typescript {linenos=table,noclasses=false}
+```typescript 
 //@ts-check
 import nodeHtmlToImage from "node-html-to-image";
 import * as uuid from "uuid";

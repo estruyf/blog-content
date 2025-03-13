@@ -18,7 +18,7 @@ type: post
 
 In version 9.2.0 of Front Matter CMS, I wanted to add a status bar item to the editor that shows the Front Matter icon. To achieve this, the Visual Studio Code documentation explains you to add your icon as an icon font to the `icon contribution point` in your `package.json` file.
 
-```json {linenos=table,noclasses=false}
+```json 
 {
   "contributes": {
     "icons": {
@@ -64,7 +64,7 @@ The next step is to add the icon font to your extension and configure the icon c
 - Open your `package.json` file
 - Add the `icons` contribution point with your icon font configuration
 
-```json {linenos=table,noclasses=false,hl_lines=[4,8]}
+```json  {4,8}
 {
   "contributes": {
     "icons": {
@@ -91,7 +91,7 @@ Once configured, it is time to use the icon in your extension.
 
 You can use your icon like any other themable icon from Visual Studio Code. For example, in the `StatusBarItem` text, you can use it as follows:
 
-```ts {linenos=table,noclasses=false,hl_lines=[5]}
+```ts  {5}
 const fmStatusBarItem = vscode.window.createStatusBarItem(
   'fm-statusBarItem',
   vscode.StatusBarAlignment.Right

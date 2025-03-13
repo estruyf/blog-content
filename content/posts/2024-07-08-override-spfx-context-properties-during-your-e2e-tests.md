@@ -28,7 +28,7 @@ There is a `moduleLoaderPromise` property on the `window` object, a promise that
 
 To gain access, you can use the following code:
 
-```typescript {title="Get access to the context object"}
+```typescript 
 // Wait until the `moduleLoaderPromise` is available
 await page.waitForFunction(() => (window as any).moduleLoaderPromise);
 
@@ -46,7 +46,7 @@ await page.evaluate(() => {
 
 With the `context` object, you can override the properties. For example, in my case, I want to override the permissions of the `web` object to mock a user with owner, member, or visitor permissions.
 
-```typescript {title="Override the permissions of the web object"}
+```typescript 
 const overridePermissions = async (page: Page, permission: "owner" | "member" | "visitor",) => {
   await page.waitForFunction(() => (window as any).moduleLoaderPromise);
 
@@ -75,7 +75,7 @@ const overridePermissions = async (page: Page, permission: "owner" | "member" | 
 
 With the overridden permissions, you can perform your tests against the same page. You can use the `overridePermissions` function to switch between permission sets.
 
-```typescript {title="Perform tests with different permissions"}
+```typescript 
 test.describe("Permissions", () => {
   test(`Full control`, async ({ page }) => {
     await page.goto(`<your url>`, {

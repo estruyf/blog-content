@@ -27,13 +27,13 @@ With this, you can quickly discern how many tests passed or failed. When used al
 
 To integrate the reporter into your workflow, start by adding it as a project dependency:
 
-```bash {linenos=table,noclasses=false}
+```bash 
 npm install @estruyf/github-actions-reporter
 ```
 
 Next, you need to add the reporter to your `playwright.config.js` configuration:
 
-```typescript {linenos=table,noclasses=false}
+```typescript 
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({

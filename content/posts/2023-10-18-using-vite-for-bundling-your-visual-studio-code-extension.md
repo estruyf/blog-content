@@ -40,7 +40,7 @@ Once the project is created, you can install Vite by running the `npm i vite -D`
 
 The next step is to configure Vite. Create a new file called `vite.config.ts` in the root of your project and add the following configuration:
 
-```typescript {linenos=table,noclasses=false}
+```typescript 
 import { defineConfig } from "vite";
 
 export default defineConfig({
@@ -66,7 +66,7 @@ This configuration will create a CommonJS bundle for the extension, like the cur
 
 In the `package.json` file we can update the `scripts` section to use Vite.
 
-```json {linenos=table,noclasses=false}
+```json 
 {
   "scripts": {
     "compile": "vite build",

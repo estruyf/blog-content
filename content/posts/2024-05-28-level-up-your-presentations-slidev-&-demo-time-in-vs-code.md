@@ -42,7 +42,7 @@ I love live coding but also want to avoid mistakes, so I use the [Demo Time](htt
 
 Typically, I create the demo first and then script the steps I want to show. For example, in the GitHub Actions, its first demo was to create a new workflow file. The steps I scripted were:
 
-```json {hl_lines="6-19"}
+```json 
 {
   "$schema": "https://elio.dev/demo-time.schema.json",
   "title": "1. Crafting",
@@ -86,7 +86,7 @@ The combination of Slidev and the Demo Time extension is powerful. You can scrip
 
 To start the presentation, I created a step that opens the slide and closes the sidebar and the panel.
 
-```json {hl_lines="8-20"}
+```json 
 {
   "$schema": "https://elio.dev/demo-time.schema.json",
   "title": "0. Defaults",

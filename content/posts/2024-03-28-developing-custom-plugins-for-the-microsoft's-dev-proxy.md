@@ -42,13 +42,13 @@ Once you install all the prerequisites, you can start setting up the project.
 
 - Start creating the new project by running the following command in your terminal:
 
-```bash {title="Create a new class library project"}
+```bash 
 dotnet new classlib -n DevProxyCustomPlugin
 ```
 
 - Next, navigate to the newly created project folder:
 
-```bash {title="Open the project folder"}
+```bash 
 cd DevProxyCustomPlugin
 ```
 
@@ -56,7 +56,7 @@ cd DevProxyCustomPlugin
 - Add the Dev Proxy Abstractions DLL to the project
 - Open the `DevProxyCustomPlugin.csproj` file and add the following lines in the project group:
 
-```xml {title="Add the Dev Proxy Abstractions DLL reference for the project"}
+```xml 
 <ItemGroup>
   <Reference Include="dev-proxy-abstractions">
     <HintPath>.\dev-proxy-abstractions.dll</HintPath>
@@ -70,7 +70,7 @@ cd DevProxyCustomPlugin
 
 - Add the required packages:
 
-```bash {title="Add the required packages"}
+```bash 
 dotnet add package Microsoft.Extensions.Configuration
 dotnet add package Microsoft.Extensions.Configuration.Binder
 dotnet add package Titanium.Web.Proxy
@@ -78,7 +78,7 @@ dotnet add package Titanium.Web.Proxy
 
 - Similar to the `dev-proxy-abstractions.dll` configuration, make sure to exclude the new packages' assets by adding the `ExcludeAssets` property to the `PackageReference` element in the `DevProxyCustomPlugin.csproj` file:
 
-```xml {title="Exclude the assets for the new packages"}
+```xml 
 <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0">
   <ExcludeAssets>runtime</ExcludeAssets>
 </PackageReference>
@@ -86,7 +86,7 @@ dotnet add package Titanium.Web.Proxy
 
 - Update the `Class1.cs` file with the name of your plugin class:
 
-```csharp {title="Starter code for the plugin class"}
+```csharp 
 using Microsoft.DevProxy.Abstractions;
 using Microsoft.Extensions.Configuration;
 
@@ -116,7 +116,7 @@ With this in place, you can start developing your custom plugin for the Dev Prox
 
 You can add a before-request event handler to the plugin to intercept the API calls. In the `Register` method, you can add the following code:
 
-```csharp {title="Add a before request event handler"}
+```csharp 
 public override void Register(IPluginEvents pluginEvents,
                               IProxyContext context,
                               ISet<UrlToWatch> urlsToWatch,
@@ -130,7 +130,7 @@ public override void Register(IPluginEvents pluginEvents,
 
 Create a new method, `OnBeforeRequest` to handle the event:
 
-```csharp {title="Add the OnBeforeRequest method"}
+```csharp 
 private void OnBeforeRequest(object sender, BeforeRequestEventArgs e)
 {
   if (_urlsToWatch is null ||
@@ -157,7 +157,7 @@ In this example, the `OnBeforeRequest` method checks if the request URL contains
 
 Once you have added the `OnBeforeRequest` method's code, you can build the plugin by running the following command in the terminal:
 
-```bash {title="Build the plugin"}
+```bash 
 dotnet build
 ```
 
@@ -165,7 +165,7 @@ dotnet build
 
 To test the plugin, add it to the Dev Proxy configuration. You can do this by adding the following lines to the `devproxyrc.json` file:
 
-```json {title="Add the plugin to the Dev Proxy configuration"}
+```json 
 {
   "$schema": "https://raw.githubusercontent.com/microsoft/dev-proxy/main/schemas/v0.16.0/rc.schema.json",
   "plugins": [{
@@ -187,7 +187,7 @@ To test the plugin, add it to the Dev Proxy configuration. You can do this by ad
 
 Start the Dev Proxy by running the following command in the terminal:
 
-```bash {title="Start the Dev Proxy"}
+```bash 
 devproxy
 ```
 
@@ -201,7 +201,7 @@ To make the plugin more flexible, you can add some configuration options. For in
 
 To do this, you can add the following configuration to the `devproxyrc.json` file:
 
-```json {title="Add the plugin configuration to the Dev Proxy configuration"}
+```json 
 {
   "$schema": "https://raw.githubusercontent.com/microsoft/dev-proxy/main/schemas/v0.15.0/rc.schema.json",
   "plugins": [{
@@ -229,7 +229,7 @@ In the `redirectCalls` section, I added the `fromUrl` and `toUrl` properties, wh
 
 To access the configuration in the plugin, you need to bind the configuration. The whole code for the plugin class should look like this:
 
-```csharp {title="Redirect Calls plugin class with configuration"}
+```csharp 
 using Microsoft.DevProxy.Abstractions;
 using Microsoft.Extensions.Configuration;
 
