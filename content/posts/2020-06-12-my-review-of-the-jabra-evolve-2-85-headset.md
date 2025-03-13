@@ -1,16 +1,17 @@
 ---
-title: My review of the Jabra Evolve2 85 headset
-slug: /my-review-of-the-jabra-evolve2-85-headset/
-author: Elio Struyf
-type: post
-date: 2020-06-12T19:42:19.710Z
+title: "My review of the Jabra Evolve2 85 headset"
+slug: "/my-review-of-the-jabra-evolve2-85-headset/"
+author: "Elio Struyf"
+type: "post"
+date: "2020-06-12T19:42:19.710Z"
 draft: false
 tags:
-  - Review
-  - Jabra
-  - Headset
+  - "Review"
+  - "Jabra"
+  - "Headset"
 categories: []
 comments: true
+preview: "<failed to process>"
 ---
 
 For three months, I have waited for the [Jabra Evolve2 85](https://www.jabra.com/business/office-headsets/jabra-evolve/jabra-evolve2-85) to show up. During the Corona crisis, I needed a new headset to filter out all the noise my kids make at home, so that I could 100% focus on my work. A colleague told me about this headset. When I ordered it, it was not even out yet but was soon to be released. Eventually, this became a bit longer than expected, but I am not blaming Jabra for this.
@@ -36,7 +37,7 @@ Here are my first impressions of the Jabra Evolve2 85:
 
 {{< caption-new "/uploads/2020/06/jabra4.jpg" "USB-C dongle"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AOC8VeN/Feg+NvAuk2Hhmz1Twh4o1LU9M8T65b3s8OoeH7uexmfRbg2S2jxT219cI8F5I1wg01IGniaeSaJZf8ZMBhcjxGRZ7OviMZQz/BRw1bKKEqdKeCxeGjXj9chKo5qtGtSg1UoRgkq7koTUIwlyf0fL6zHE4VQhSlhZe0WId5qtGTjam4K3I1J3U+ZtqKbi2e8RxWGxN1tcs2xdzRk+WzYGTH+5+4Tyv+zivkHiMVd/7Tho6v3Z3c15TtNLmW0rJK99D0eSP/Puq/OMXZ+nl28j/9k=" "700" >}}
 
-- All functionality is just a finger push away. The Jabra has five **buttons** on the right side (volume, playback, answer calls, muting, next and previous). On the left side, you have the power switch and ANC button. It is excellent to have so many buttons available. These buttons make it very easy to control your music or meetings. 
+- All functionality is just a finger push away. The Jabra has five **buttons** on the right side (volume, playback, answer calls, muting, next and previous). On the left side, you have the power switch and ANC button. It is excellent to have so many buttons available. These buttons make it very easy to control your music or meetings.
 - It has a **3.5mm audio jack** port connection available (and cable). The 3.5mm audio jack makes it a great travel companion, but it can also be useful when you want to connect without interference. This functionality is a big plus for me. Although I am not traveling anymore. Still, I hope to one day jump back on an airplane. When that day comes, I would be able to use the headset to plug it into the inflight entertainment system.
 - **Silence**, forgetting the world around you. That is how it first felt when I put the Jabra on my ears. I completely shut off from the world. All of a sudden, I did not hear my running kids anymore. I even asked my partner to talk to me to see if I could listen to her, but nothing. The noise cancellation on the Jabra is fantastic. Of course, with the price label, you expect it to be good.
 - Talking about noise cancellation. The Jabra has a button to switch between audio modes: **ACN** on / ACN off / hear through (It feels like you do not have a headset on).
@@ -69,53 +70,69 @@ In order to get a better understanding in the audio quality of the microphones, 
 
 No background noise:
 
-{{< audio "/2020/06/airpods.mp3" >}}
+<audio controls>
+  <source src="/uploads/2020/06/airpods.mp3" type="audio/mpeg">
+</audio>
 
 With background noise:
 
-{{< audio "/2020/06/airpods-noise.mp3" >}}
+<audio controls>
+  <source src="/uploads/2020/06/airpods-noise.mp3" type="audio/mpeg">
+</audio>
 
 #### Plantronics Savi W445-M
 
 No background noise:
 
-{{< audio "/2020/06/plantronics.mp3" >}}
+<audio controls>
+  <source src="/uploads/2020/06/plantronics.mp3" type="audio/mpeg">
+</audio>
 
 With background noise:
 
-{{< audio "/2020/06/plantronics-noise.mp3" >}}
+<audio controls>
+  <source src="/uploads/2020/06/plantronics-noise.mp3" type="audio/mpeg">
+</audio>
 
 #### Jabra Evolve2 85 - First version
 
 No background noise:
 
-{{< audio "/2020/06/jabra.mp3" >}}
+<audio controls>
+  <source src="/uploads/2020/06/jabra.mp3" type="audio/mpeg">
+</audio>
 
 With background noise:
 
-{{< audio "/2020/06/jabra-noise.mp3" >}}
+<audio controls>
+  <source src="/uploads/2020/06/jabra-noise.mp3" type="audio/mpeg">
+</audio>
 
 #### Jabra Evolve2 85 - samples after update to Jabra Link 1.6.6 and Headset 1.0.27
 
 Without using the dongle:
 
-{{< audio "/2020/08/jabra-no-dongle.mp3" >}}
+<audio controls>
+  <source src="/uploads/2020/08/jabra-no-dongle.mp3" type="audio/mpeg">
+</audio>
 
 Still not the best quality, but this gives no issues during calls.
 
 With using the dongle:
 
-{{< audio "/2020/08/jabra-with-dongle.mp3" >}}
+<audio controls>
+  <source src="/uploads/2020/08/jabra-with-dongle.mp3" type="audio/mpeg">
+</audio>
 
-After the 1.6.6 update, the sound waves seems to be happening less, but what happens more and more is these double words. This is not an issue with the recording. As many of my colleagues mentioned it during calls. 
+After the 1.6.6 update, the sound waves seems to be happening less, but what happens more and more is these double words. This is not an issue with the recording. As many of my colleagues mentioned it during calls.
 
 #### Jabra Evolve2 85 - Mircrosoft Teams edition {#evolve2-msversion}
 
-In September, I received a new Jabra device. Instead of the UC version, this time, I got the Microsoft Teams version. The difference is that Micorosft Teams recognizes it as a certified device and has better integration. At the moment, I have not found any significant differences. 
+In September, I received a new Jabra device. Instead of the UC version, this time, I got the Microsoft Teams version. The difference is that Micorosft Teams recognizes it as a certified device and has better integration. At the moment, I have not found any significant differences.
 
 {{< caption-new "/uploads/2020/09/jabra1.png" "MS Teams recognizing the devices as a certified device"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAADsSURBVHXBMU4CQRiA0W9mB7KNbLIWoBTSKCSYGO4gh5Cj4SWIjZRshR0FLh07NCYSiSTEuFPA/DIFDYnvqefhUPr9R4wxnIgIwcpablotsixD12oXbDZfuLIkeBmNsEXBYb9nschZWUuSJBiOdrsfQPOR5yyXBd/bLVeNOuPxK5NJxtNggOGo2bwmSRI6nTZKaXq9HpVqhdu7NmmaUliLmc1meO+JooiT6duUk8/1mvn8HXXf7UocxwQigtYRIp5ARAiccxjOlOUv55RSGBGPc47/RFEV7/do7wXvPYHSikBEEBFAU288EMeX/AGcmWbmxIC35gAAAABJRU5ErkJggg==" "775" >}}
 
-Except for the headphone *blurple* MS Teams light color and MS Teams logo on the headset.
+Except for the headphone _blurple_ MS Teams light color and MS Teams logo on the headset.
 
 {{< caption-new "/uploads/2020/09/jabra2.jpg" "Blurple color of MS Teams"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAoACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APzk8R/tOfHH4weJPAHjrwCuqaHrMevaJf8Ag/4cahAtxZaX4q0S8FleJrz2B07Wb67ub+HUre9eS6tbSDRJ5LGbTo1e/N3/AAXwT9FTw08OPDLizBcX0qOYZhjeGuJ6HFnFEZSo1KfDmKwuKnVoYCjiJV8HgqeAy2FHFwqyo1qlPNsPHHe2l9Xwiof0FxT4sZ/xPn2ArZQ54fBU8dl8sryqoozSzCnOEfa1qlJU61aVXEynS5eeEJYWfsfZRVSsp/0kQ3JkiikM8SF40cruY7Syglcnk4Jxk8nGTX+CM6CjOcVTqSSlJJ8i1SbV9FbXfTQ/qmOJ91XlG9lf3lvbXdX+/U8d+HHhPwtot/43l0fw1oGky3/hXwDd30mmaNp1hJe3VxqFlcXFzdva20TXFxPPFFPNNMXklmjjkdmdFYf6Wca8bcZ4z6NHi1HF8XcT4qMvGHPsmksRn+a11LJ6vENZ1Mqaq4uSeW1HKTngX/ss3KTlSd2fzpl+VZXT8RuElDLcvgo8MYfFrkweHjbFxy+mo4pWpq2Ij9msv3i6SO/bhiBwASABwAAcAADgADoK/wA60k0m0m2rtvqfuTbu9Xu+p//Z" "700" >}}
 
@@ -125,7 +142,9 @@ The issues I experienced with the previous version should not have anything to d
 
 Here is an audio sample (no changes were made in the Jabra Direct app):
 
-{{< audio "/2020/09/jabra-teams-with-dongle.mp3" >}}
+<audio controls>
+  <source src="/uploads/2020/09/abra-teams-with-dongle.mp3" type="audio/mpeg">
+</audio>
 
 <blockquote class="important">
 <p><strong>Important</strong>: I am not taking any conclusions yet, I just wanted to share the out of the box experience. I will now start fiddling around with the settings and keep you updated with the progress.</p>
@@ -133,7 +152,7 @@ Here is an audio sample (no changes were made in the Jabra Direct app):
 
 ### Test conclusions
 
-For a device with so many microphones, I would have expected much better quality. In my opinion, the quality of Apple AirPods and Plantronics is way better. The quality of the Plantronics microphone in my tests is the best. My voice is much warmer (I do not know if it is the same in real life) and feels more real. 
+For a device with so many microphones, I would have expected much better quality. In my opinion, the quality of Apple AirPods and Plantronics is way better. The quality of the Plantronics microphone in my tests is the best. My voice is much warmer (I do not know if it is the same in real life) and feels more real.
 
 The quality from the Apple Airpods is not so bad either. For a microphone that is not placed close to your mouth, its quality is still a bit better than the Jabra.
 
