@@ -2,8 +2,7 @@
 title: Improving the performance of your SharePoint framework solutions
 slug: /improving-performance-sharepoint-framework-solutions/
 date: 2020-08-31T14:42:42.649Z
-comments: true
-subtitle: Session
+fmContentType: session
 ---
 
 On this page, you can find some related references for the "Improving the performance of your SharePoint framework solutions" session.

@@ -2,8 +2,7 @@
 title: Things I've learned while building a product on SharePoint Modern
 slug: /building-product-sharepoint-modern/
 date: 2019-11-19 00:00:00
-comments: true
-subtitle: Session
+fmContentType: session
 ---
 
 On this page, you can find some related references for the "Things I've learned while building a product on SharePoint Modern" session.
@@ -14,9 +13,9 @@ If you want, you can provide feedback via the following form: [feedback form](ht
 
 ## Sketch by Luise Freese
 
-Special thanks to [Luise Freese](https://twitter.com/LuiseFreese) for sketchnoting my session at ESPC 19. 
+Special thanks to [Luise Freese](https://twitter.com/LuiseFreese) for sketchnoting my session at ESPC 19.
 
-{{< caption "/2019/12/ESPC19-elio.png" "Summary of my session at ESPC 19" >}}
+{{< caption-new "/uploads/2019/12/ESPC19-elio.png" "Summary of my session at ESPC 19" >}}
 
 ## Link to the slides of where the session was presented
 

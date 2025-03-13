@@ -2,10 +2,7 @@
 title: Sharing code efficiently in your SharePoint Framework projects
 slug: /sharing-code-efficiently-sharepoint-framework-projects/
 date: 2019-11-19T00:00:00.000Z
-comments: true
-subtitle: Session
-aliases:
-  - /speaking/sharing-code-efficiently-organisation-creating-private-packages/
+fmContentType: session
 ---
 
 On this page, you can find some related references for the "Sharing code efficiently in your SharePoint Framework projects" session.

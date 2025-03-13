@@ -2,8 +2,7 @@
 title: "Advanced Dev-Ops with the SharePoint Framework"
 slug: "/advanced-devops-with-the-sharepoint-framework/"
 date: 2019-11-19 00:00:00
-comments: true
-subtitle: Session
+fmContentType: session
 ---
 
 On this page, you can find some related references for the "Advanced Dev-Ops with the SharePoint Framework" session.

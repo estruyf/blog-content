@@ -459,7 +459,7 @@
         "event": "SharePoint Saturday Cologne 2020",
         "location": "Cologne (DE)",
         "link": "http://spscgn.com/",
-        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+        "slides": "https://www.eliostruyf.com/sessions/building-product-sharepoint-modern/"
       },
       {
         "session": "Learn how you can start UI testing your solutions",
@@ -489,7 +489,7 @@
         "event": "Scottish Summit",
         "location": "Glasgow (UK)",
         "link": "https://scottishsummit.com/",
-        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+        "slides": "https://www.eliostruyf.com/sessions/building-product-sharepoint-modern/"
       },
       {
         "session": "How Pro Developers and Citizen Developers can team up - a #BetterTogether Story",
@@ -503,7 +503,7 @@
         "event": "Power Platform Saturday Warsaw",
         "location": "Warsaw (PL)",
         "link": "https://ppswarsaw.org/",
-        "slides": "https://www.eliostruyf.com/speaking/pro-developers-citizen-developers-team-bettertogether-story/"
+        "slides": "https://www.eliostruyf.com/sessions/pro-developers-citizen-developers-team-bettertogether-story/"
       }
     ]
   },
@@ -522,7 +522,7 @@
         "event": "Modern Workplace Conference Paris",
         "location": "Paris (FR)",
         "link": "https://modern-workplace.pro/",
-        "slides": "https://www.eliostruyf.com/speaking/sketchnotes-and-functional-drawing-not-only-for-consultants-and-it-pros/"
+        "slides": "https://www.eliostruyf.com/sessions/sketchnotes-and-functional-drawing-not-only-for-consultants-and-it-pros/"
       },
       {
         "session": "Things I've learned while building a product on SharePoint Modern",
@@ -531,7 +531,7 @@
         "event": "European SharePoint, Office 365 & Azure Conference",
         "location": "Prague (CZ)",
         "link": "https://www.sharepointeurope.com/",
-        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+        "slides": "https://www.eliostruyf.com/sessions/building-product-sharepoint-modern/"
       },
       {
         "session": "Sharing code efficiently in your organisation by creating private packages",
@@ -540,7 +540,7 @@
         "event": "European SharePoint, Office 365 & Azure Conference",
         "location": "Prague (CZ)",
         "link": "https://www.sharepointeurope.com/",
-        "slides": "https://www.eliostruyf.com/speaking/sharing-code-efficiently-sharepoint-framework-projects/"
+        "slides": "https://www.eliostruyf.com/sessions/sharing-code-efficiently-sharepoint-framework-projects/"
       },
       {
         "session": "Advanced Dev-Ops with the SharePoint Framework",
@@ -555,7 +555,7 @@
         "event": "European SharePoint, Office 365 & Azure Conference",
         "location": "Prague (CZ)",
         "link": "https://www.sharepointeurope.com/",
-        "slides": "https://www.eliostruyf.com/speaking/advanced-devops-with-the-sharepoint-framework/"
+        "slides": "https://www.eliostruyf.com/sessions/advanced-devops-with-the-sharepoint-framework/"
       },
       {
         "session": "Automated UI Test for SharePoint Solutions",
@@ -570,7 +570,7 @@
         "event": "European SharePoint, Office 365 & Azure Conference",
         "location": "Prague (CZ)",
         "link": "https://www.sharepointeurope.com/",
-        "slides": "https://www.eliostruyf.com/speaking/automated-ui-test-for-sharepoint-solutions/"
+        "slides": "https://www.eliostruyf.com/sessions/automated-ui-test-for-sharepoint-solutions/"
       },
       {
         "session": "Things I've learned while building a product on SharePoint Modern",
@@ -578,7 +578,7 @@
         "event": "SharePoint Saturday Munich",
         "location": "Munich (DE)",
         "link": "http://www.spsevents.org/city/Munich/Munich2019",
-        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+        "slides": "https://www.eliostruyf.com/sessions/building-product-sharepoint-modern/"
       },
       {
         "session": "SharePoint Dev Weekly - Episode 56",
@@ -594,7 +594,7 @@
         "event": "Office365 & SharePoint Connect Community Edition",
         "location": "Haarlem (NL)",
         "link": "https://www.nccomms.com/conferences/office-365-and-sharepoint-connect/",
-        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+        "slides": "https://www.eliostruyf.com/sessions/building-product-sharepoint-modern/"
       },
       {
         "session": "Sharing code efficiently in your organisation by creating private packages",
@@ -603,7 +603,7 @@
         "event": "Office365 & SharePoint Connect Community Edition",
         "location": "Haarlem (NL)",
         "link": "https://www.nccomms.com/conferences/office-365-and-sharepoint-connect/",
-        "slides": "https://www.eliostruyf.com/speaking/sharing-code-efficiently-sharepoint-framework-projects/"
+        "slides": "https://www.eliostruyf.com/sessions/sharing-code-efficiently-sharepoint-framework-projects/"
       },
       {
         "session": "Things I've learned while building a product on SharePoint Modern",
@@ -611,7 +611,7 @@
         "event": "SharePoint Saturday Helsinki",
         "location": "Helsinki (FI)",
         "link": "http://www.spsevents.org/city/Helsinki/Helsinki2019",
-        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+        "slides": "https://www.eliostruyf.com/sessions/building-product-sharepoint-modern/"
       },
       {
         "session": "Getting started on using PnP SharePoint Framework reusable controls",
@@ -626,7 +626,7 @@
         "event": "SharePoint Saturday Netherlands",
         "location": "Vianen (NL)",
         "link": "http://www.spsevents.org/city/netherlands/netherlands2019",
-        "slides": "https://www.eliostruyf.com/speaking/building-product-sharepoint-modern/"
+        "slides": "https://www.eliostruyf.com/sessions/building-product-sharepoint-modern/"
       },
       {
         "session": "Setting up your SPFx continuous integration and delivery pipelines on Azure DevOps",

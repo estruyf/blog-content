@@ -2,8 +2,7 @@
 title: "Automated UI Test for SharePoint Solutions"
 slug: "/automated-ui-test-for-sharepoint-solutions/"
 date: 2019-11-19 00:00:00
-comments: true
-subtitle: Session
+fmContentType: session
 ---
 
 On this page, you can find some related references for the "Automated UI Test for SharePoint Solutions" session which Elio presented together with [Melanie Culver](https://twitter.com/CulverMelanie).
@@ -41,26 +40,26 @@ If you want, you can provide feedback via the following form: [feedback form](ht
 
 ### node-sp-auth authentication for Puppeteer
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
-import * as spauth from 'node-sp-auth';
+```typescript
+import * as spauth from "node-sp-auth";
 const data = await spauth.getAuth(pageUrl, {
   username: username,
-  password: password
+  password: password,
 });
-{{< / highlight >}}
+```
 
 ### Combining Puppeteer and Jest
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 test('Should load the page', async (done) => {
   if (page) {
     await page.goto(configObj.pageUrl, {
       waitUntil: 'networkidle0’
     });
-    expect(page).not.toBeNull();
+    expect(page).not.toBeNull();
     expect(await page.title()).not.toBeNull();
     expect(await page.title()).toBe("Automated UI Tests - Home");
-    done();
+    done();
   }
 }, 30000);
 
@@ -72,13 +71,12 @@ test('Check if caption element is present in the web part', async (done) => {
   expect(elm).not.toBeNull();
   done();
 }, 5000);
-{{< / highlight >}}
-
+```
 
 ## HTML sample for testing with custom attributes
 
-{{< highlight html "linenos=table,noclasses=false" >}}
-<div className={styles.caption} data-ui-test-id="caption">
+```html
+<div className="{styles.caption}" data-ui-test-id="caption">
   <p data-ui-test-id="caption-title">
     <b>{item.title}</b>
   </p>
@@ -86,16 +84,17 @@ test('Check if caption element is present in the web part', async (done) => {
     <i>{item.description}</i>
   </p>
 </div>
-{{< / highlight >}}
+```
 
 The test code:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 /**
  * Start of the other page tests
  */
 test('Check if caption element is present in the web part', async (done) => {
   const caption = await page.$('div[data-ui-test-id="caption"]’);
-  expect(caption).not.toBeNull();  done();
+  expect(caption).not.toBeNull();
+  done();
 }, 5000);
-{{< / highlight >}}
+```
