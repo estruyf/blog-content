@@ -40,7 +40,7 @@ Before you could start, you will need to add a reference to the AngularJS JavaSc
 
 Now that the AngularJS JavaScript file is referenced, the next step is to ensure that it is loaded, then we could start add our AngularJS magic. For that I will use the following piece of code:
 
-```JavaScript
+```javascript
 SP.SOD.executeFunc("angular", null, function() {
   // Write all Angular code inside this code block
 });
@@ -50,7 +50,7 @@ SP.SOD.executeFunc("angular", null, function() {
 
 The Angular module and controller needs to be created in the previous code bock, the code looks as follows:
 
-```JavaScript
+```javascript
 var app = angular.module('DisplayApp', []);
 app.controller('DisplayControl', function ($scope) {
   // Write all the control logic in this code block
@@ -59,7 +59,7 @@ app.controller('DisplayControl', function ($scope) {
 
 When working with display templates, the HTML that these templates render will be added to the page when the last result is completed rendering. This means that Angular could not automatically start the template binding. To solve this problem, we need to manually trigger it. Angular **bootstrap** function can be used to achieve this:
 
-```JavaScript
+```javascript
 angular.bootstrap(document, ['DisplayApp']);
 ```
 
@@ -68,13 +68,13 @@ angular.bootstrap(document, ['DisplayApp']);
 
 Next step is providing the search data for your template. The search data could be retrieved from the current context like this:
 
-```JavaScript
+```javascript
 ctx.ListData.ResultTables[0].ResultRows
 ```
 
 To bind it, you could do it like this:
 
-```JavaScript
+```javascript
 if (ctx.ListData.ResultTables[0] !== null) {
   $scope.ResultRows = ctx.ListData.ResultTables[0].ResultRows;
 }
@@ -135,7 +135,7 @@ This is because everything is loaded async. To solve this issue, you could hide 
 
 The following code needs to be added to the item template:
 
-```JavaScript
+```javascript
 var elm = angular.element('#' + ctx.ElementId);
 if (typeof elm !== "undefined") {
     elm.removeAttr('style');

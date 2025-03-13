@@ -20,7 +20,7 @@ Progressive Web Apps (PWA) are nothing new, but you see more and more websites i
 
 Before implementing the PWA functionality in the site, I took a look at the Microsoft Teams mobile experience. The advantage of using your app in Microsoft Teams is the whole authentication logic. When your app is using SSO, you do not need to do anything anymore. Only the mobile layout for your application is a requirement.
 
-{{< blockquote type="Important" text="There are cases where you need a real mobile app experience, but using the Microsoft Teams experience is an easy way to start." >}}
+{{< blockquote type="important" text="There are cases where you need a real mobile app experience, but using the Microsoft Teams experience is an easy way to start." >}}
 
 ## Why would you use the app in Microsoft Teams?
 
@@ -101,7 +101,7 @@ My manifest looks as follows:
 }
 ```
 
-{{< blockquote type="Important" text="Notice the `redirect` query string parameter in the `start_url` property. The website uses the `redirect` query string to know if your app needs to be redirected. You can also create another path if you want." >}}
+{{< blockquote type="important" text="Notice the `redirect` query string parameter in the `start_url` property. The website uses the `redirect` query string to know if your app needs to be redirected. You can also create another path if you want." >}}
 
 You need to add the manifest to your page with the following `link` element.
 

@@ -32,7 +32,7 @@ In my scenario, that means that my `main` branch links to `production`. My `dev`
 
 On Azure, it would mean that for each branch, I configure my environment variables separately. The documentation points out that you best prefix the variables when you want to use multiple staging environments.
 
-{{< blockquote type="Info" text="[Staging environment variables](https://vercel.com/knowledge/set-up-a-staging-environment-on-vercel#staging-environment-variables)" >}}
+{{< blockquote type="info" text="[Staging environment variables](https://vercel.com/knowledge/set-up-a-staging-environment-on-vercel#staging-environment-variables)" >}}
 
 To be honest, this is not optimal when you have to maintain various branches. For most sites, this will be more than sufficient.
 
@@ -40,7 +40,7 @@ To be honest, this is not optimal when you have to maintain various branches. Fo
 
 Within the recently released UI improvements, the system environment variables are more comfortable to configure. Before, you had to configure each of the variables you wanted to use manually. Now you can automatically expose them all, but not only that, but you can also choose them from the dropdown list. That way, you do not have to go to the documentation.
 
-{{< blockquote type="Info" text="[System environment variables](https://vercel.com/docs/platform/environment-variables#system-environment-variables)" >}}
+{{< blockquote type="info" text="[System environment variables](https://vercel.com/docs/platform/environment-variables#system-environment-variables)" >}}
 
 {{< caption-new "/uploads/2020/11/vercel5.jpg" "Adding environment variables"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP7ptE0y3012jsItMRXlzOIdHvcSuFZUlkaW8e3jk2x7S/lEcBV2DaoprqlJRbfLfXRPbmtFSa2bSWvRbCT6NpySXNbTX0u2k+ibfqzsg8Q48u1GOMeTBxjt9ztUjP8A/9k=" "1525" >}}
 
@@ -54,7 +54,7 @@ Once the domain is available, you can modify it to specify the Git branch.
 
 {{< caption-new "/uploads/2020/11/vercel3.jpg" "Specify the git branch for the domain"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP7q/A3iseJfDmm+JDpyWZ1OCYm2+0m5lhW1uprREN2YIRIpFvvwLaIAvjB25OGFxEcVhqVdU5U3U5nyuoqiXLOUN1The/LfbTbXc9jP8olkWc43KniY4tYSVKPt1QeHdR1aFKvf2ft6/Io+15Lc8r8vNdX5V1H9sg8/Zjzz/rz/APGhW545/9k=" "1531" >}}
 
-{{< blockquote type="Info" text="Once you do a new push to your branch, it will automatically start the CI/CD for that branch." >}}
+{{< blockquote type="info" text="Once you do a new push to your branch, it will automatically start the CI/CD for that branch." >}}
 
 ## How I used the environment variables
 

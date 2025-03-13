@@ -25,7 +25,7 @@ First of all, what is this `First Load JS` exactly? The documentation specifies 
 
 To make it simpler to understand, it is all the JS your website requires to start rendering your content. To get this first load JS number down, you have to write less code.
 
-{{< blockquote type="Info" text="`<===>`" >}}
+{{< blockquote type="info" text="`<===>`" >}}
 
 Ok, that is not entirely true and might be very hard to achieve, but you need to get the bundle/chunk sizes down.
 
@@ -45,7 +45,7 @@ The good thing about this approach is that it works both for React components fo
 
 When using React, you typically use `React.lazy`, but this will not work if you are using Server-Side Rendering with Next.js. Luckily, there is a Next.js dependency called `dynamic`, which does the same thing.
 
-{{< blockquote type="Info" text="[Dynamic import Next.js documentation](https://nextjs.org/docs/advanced-features/dynamic-import)" >}}
+{{< blockquote type="info" text="[Dynamic import Next.js documentation](https://nextjs.org/docs/advanced-features/dynamic-import)" >}}
 
 ```typescript
 import dynamic from 'next/dynamic';

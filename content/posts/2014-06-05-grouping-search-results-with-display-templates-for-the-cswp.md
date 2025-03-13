@@ -104,7 +104,7 @@ The **Grouping** property is the most important one, this is be used for configu
 
 The next step is the code:
 
-```JavaScript
+```javascript
 var line1 = $getItemValue(ctx, "Line 1");
 var grouping = $getItemValue(ctx, "Grouping");
 var linkURL = $getItemValue(ctx, "Link");

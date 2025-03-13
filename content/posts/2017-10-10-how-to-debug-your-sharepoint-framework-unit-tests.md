@@ -77,7 +77,7 @@ If you followed the article mentioned above, you should now have a custom **karm
 
 Config binding:
 
-```TypeScript
+```typescript
 const karmaTask = build.karma;
 if (karmaTask) {
   karmaTask.taskConfig.configPath = './config/karma.config.js';
@@ -86,7 +86,7 @@ if (karmaTask) {
 
 The reason why we want to add a custom Karma config to add source maps into the generated **tests.js** bundle. In order to get this, add the following code to your **karma.config.js** file:
 
-```TypeScript
+```typescript
 "use strict";
 const existingKarmaConfig = require('@microsoft/sp-build-web/lib/karma/karma.config');
 const sourcemap = require('karma-sourcemap-loader');

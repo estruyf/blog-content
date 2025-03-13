@@ -40,7 +40,7 @@ The same plugins can also be used to automate the solution package publication t
 
 The task that you need to add in your gulp file (gulpfile.js) looks like this:
 
-```JavaScript
+```javascript
 const spsync = require('gulp-spsync-creds').sync;
 
 build.task('upload-app-pkg', {
@@ -88,7 +88,7 @@ Currently, the **ship** flag for the new upload package task has no added functi
 
 This is what the updated task looks like to support the **ship** flag:
 
-```JavaScript
+```javascript
 const production = {
     "username": "<production-username>",
     "password": "<production-password>",

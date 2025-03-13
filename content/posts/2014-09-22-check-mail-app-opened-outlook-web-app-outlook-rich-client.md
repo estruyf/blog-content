@@ -34,7 +34,7 @@ The URL loaded in the rich client context looks like this:
 
 To translate this to code, we need to check if the querystring parameter **et** is present in the URL, if it is, we know that the app is opened in the browser. The code looks like this:
 
-```JavaScript
+```javascript
 $(function () {
   var querystring = document.location.search;
   if (querystring !== null && querystring !== "") {
@@ -58,7 +58,7 @@ The other option you have is checking the **OWAView** property. This property on
 
 The code looks like this:
 
-```JavaScript
+```javascript
 Office.initialize = function () {
   var context = Office.context;
   if (typeof context.mailbox.diagnostics.OWAView === "undefined") {

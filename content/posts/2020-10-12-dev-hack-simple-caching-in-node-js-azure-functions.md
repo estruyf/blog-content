@@ -17,7 +17,7 @@ Azure Functions do not have an out-of-the-box caching mechanism. For caching, th
 
 For Azure Function created with C#, you can use the good old [memory cache](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/memory?view=aspnetcore-3.1). When your function is already warmed up, and processed data once, you can return results much quicker.
 
-{{< blockquote type="Important" text="Memory cache is per instance, so when running on a consumption plan, and when it scales to multiple instances, the memory cache needs to rebuild itself. If you run on a massive scale, it's better to use a distributed caching system." >}}
+{{< blockquote type="important" text="Memory cache is per instance, so when running on a consumption plan, and when it scales to multiple instances, the memory cache needs to rebuild itself. If you run on a massive scale, it's better to use a distributed caching system." >}}
 
 ## But what with Node.js?
 

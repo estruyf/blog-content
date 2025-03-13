@@ -31,7 +31,7 @@ I quickly tested this and you do indeed need to include the file extension to th
 
 So the example code requires an updated:
 
-```JavaScript
+```javascript
 var mailbox;
 var attachmentURI = "https://webserver/picture.png";
 var attachmentID;

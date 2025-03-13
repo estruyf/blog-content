@@ -33,4 +33,4 @@ Our partner did some further investigation and found that the extension had been
 
 That was it, the Content-Type Hub. Adding an application customizer to the content type hub will automatically be added to each site after X minutes (basically waiting until the timer job has done the content type publishing to the site). So, be aware of where you activate your application customizers on your tenant, as it could spare you some time finding out why specific solutions are getting activated automatically.
 
-{{< blockquote type="Important" text="At the moment, I cannot tell you if this is a bug or by design." >}}
+{{< blockquote type="important" text="At the moment, I cannot tell you if this is a bug or by design." >}}

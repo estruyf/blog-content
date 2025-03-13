@@ -32,11 +32,11 @@ The value for this can refer to where the function app can find the ZIP package,
 
 When using `1` as the value, the function app will run the data from a local package. The ZIP package needs to be deployed to `d:\home\data\SitePackages` as this improves the cold-start.
 
-{{< blockquote type="Info" text="You can read more at: [run your Azure Functions from a package file](https://docs.microsoft.com/en-gb/azure/azure-functions/run-functions-from-deployment-package#adding-the-website_run_from_package-setting)" >}}
+{{< blockquote type="info" text="You can read more at: [run your Azure Functions from a package file](https://docs.microsoft.com/en-gb/azure/azure-functions/run-functions-from-deployment-package#adding-the-website_run_from_package-setting)" >}}
 
 ## How do you use it on GitHub Actions?
 
-{{< blockquote type="Important" text="Make sure to first set the `WEBSITE_RUN_FROM_PACKAGE` to `1` in the function app configuration." >}}
+{{< blockquote type="important" text="Make sure to first set the `WEBSITE_RUN_FROM_PACKAGE` to `1` in the function app configuration." >}}
 
 The steps which you need to perform to deploy your code to the functions app are the following:
 
@@ -86,4 +86,4 @@ Once this workflow ran. Your function app will now run from the package you depl
 
 {{< caption-new "/uploads/2021/05/package1.png" "The packages pushed to your Azure Function"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABTSURBVE3BYQqDMAyA0S82ie3ZBgMPOS8oc8aNVPaj4HvyWtd+RuDuZIeiipWJzOROH8+F471hbrTaGPbPzp+I0GpDOwI9IRM3Zfh9lYjA5xnTwgWFVRwGM4ViNwAAAABJRU5ErkJggg==" "1075" >}}
 
-{{< blockquote type="Info" text="The `packagename.txt` file contains the name of the ZIP package which needs to be used." >}}
+{{< blockquote type="info" text="The `packagename.txt` file contains the name of the ZIP package which needs to be used." >}}

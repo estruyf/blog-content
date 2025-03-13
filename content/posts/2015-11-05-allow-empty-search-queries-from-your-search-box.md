@@ -47,7 +47,7 @@ The fix for this is rather easy. There is a property that can be set on the sear
 
 Another way to approach it is via setting this property from within your display template. To update the property within the search box display template, you have to add the following lines of code:
 
-```JavaScript
+```javascript
 // Allow empty keyword searches
 if (!ctx.ClientControl.get_allowEmptySearch()) {
     ctx.ClientControl.set_allowEmptySearch(true);

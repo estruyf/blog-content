@@ -23,7 +23,7 @@ https://squarl.sharepoint.com/:x:/s/Squarl/<file-id>
 
 First, I thought it would be a combination of splitting the URL with the site name and ID, but apparently, it was not. When I was going through the documentation, I saw the `/shares/` endpoint. This endpoint seemed the one I needed to use to be able to get the file information.
 
-{{< blockquote type="Info" text="[Accessing shared DriveItems](https://docs.microsoft.com/en-us/graph/api/shares-get?view=graph-rest-1.0&tabs=http)" >}}
+{{< blockquote type="info" text="[Accessing shared DriveItems](https://docs.microsoft.com/en-us/graph/api/shares-get?view=graph-rest-1.0&tabs=http)" >}}
 
 To use the `shares` API, you need to use the share ID or the sharing URL. There is one more thing, and if you use the URL, you will need to base64 encode it.
 

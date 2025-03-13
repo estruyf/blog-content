@@ -47,7 +47,7 @@ During Ignite, [Luise Freese](https://twitter.com/LuiseFreese) and I were interv
 
 You can compare [Streamyard](https://streamyard.com/) to OBS running in the cloud, but a lot easier to configure and maintain. Plus, Streamyard allows you to stream to many sources like Youtube, Facebook, Twitch, and more.
 
-{{< blockquote type="Info" text="The only downside we found is that videos in Streamyard are limited to 5min and 100mb. Our sponsor videos were about 6min and 250mb in size. To overcome this, we split all videos into two parts. Next time, we could create a PowerPoint that we keep rotating before/after each session on a VM." >}}
+{{< blockquote type="info" text="The only downside we found is that videos in Streamyard are limited to 5min and 100mb. Our sponsor videos were about 6min and 250mb in size. To overcome this, we split all videos into two parts. Next time, we could create a PowerPoint that we keep rotating before/after each session on a VM." >}}
 
 To engage with our attendees and provide them a way to connect with the speakers and other attendees, we decided to use Discord. We went for Discord because it does not require you to have an account or application to start chatting.
 
@@ -65,7 +65,7 @@ To make it as easy as possible for our attendees, we chose to create a website. 
 - Code of conduct
 - And of course, it needed to be fast
 
-{{< blockquote type="Important" text="Our website for the CollabDays Benelux can be found here: [https://collabdaysbenelux.eu](https://collabdaysbenelux.eu)." >}}
+{{< blockquote type="important" text="Our website for the CollabDays Benelux can be found here: [https://collabdaysbenelux.eu](https://collabdaysbenelux.eu)." >}}
 
 {{< caption-new "/uploads/2020/10/collabdays4.png" "The website couple of minutes before going live"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAklEQVR4AewaftIAAAEYSURBVHXBSy8DURiA4fd855zvnOmgRN1CSSxE9GfY8Ks1YmXRWFiJSCTiEiYVQ3Wmc5HuWHgeM83ztrWW1ljqpqaoaoIq3goighjDnLscjRieD1Hv0Rjwqqj3iFNqLOOvgsXNPdz97Q1XF2d017ZY7vUopwVb/T5WPcYl0Lak3684bRrSdkJiSjoe8rtHlgZHJJ0U65WinBFjRD7Kkuy7YWkhwU7fSXsp8vnI1801KoYkBkQsLkkX6W/v0F1Z5SGb8vT8wlv2wf7hEbPXjMk4o7++jjs+OeVwMEBDIKrHmhaxHuc9opE6H2M14la6XbweIGJIo6Ih8MfmBnOuqhvyokIMRPX8x3WSwG7wzBkRZlVFVdckIfDbD7XjW8rgGJ2HAAAAAElFTkSuQmCC" "1387" >}}
 

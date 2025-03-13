@@ -29,7 +29,7 @@ When you write code, the first intent should be to write it so that everyone can
 
 By not writing comments, you make the assumption everyone else is on par with you. That would be so great, but this is far from the truth.
 
-{{< blockquote type="Important" text="Never assume anything" >}}
+{{< blockquote type="important" text="Never assume anything" >}}
 
 I still know when C# introduced Linq or Lambda expressions. It was very easy to refactor all your loops to use this new way of writing your code. Instead of 10 lines, you ended up with two lines. Incredible, you might think, but many developers did not even know what was happening. It was too new, and some developers were using tools to do the refactoring of this. At that time, in the company I was working in, we decided to educate everyone before refactoring all the code to use it. Once everyone understands how it works, we could think about starting to use it.
 

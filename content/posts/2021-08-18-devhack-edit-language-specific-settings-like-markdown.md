@@ -65,7 +65,7 @@ Once you have the `config` object and want to set a new setting value, you use t
 config.update("editor.fontSize", 14, false, true);
 ```
 
-{{< blockquote type="Important" text="The third parameter in the above code snippet is the most important one." >}}
+{{< blockquote type="important" text="The third parameter in the above code snippet is the most important one." >}}
 
 You can use the `get` method as you would normally use it:
 

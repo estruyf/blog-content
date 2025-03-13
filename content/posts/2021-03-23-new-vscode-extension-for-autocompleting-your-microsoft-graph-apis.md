@@ -24,7 +24,7 @@ The good news for me was that Microsoft Graph Explorer has an API for retrieving
 
 ## The extension
 
-{{< blockquote type="Info" text="The Visual Studio Code extension can be found on the marketplace: [MS Graph Completion](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-msgraph-autocomplete)." >}}
+{{< blockquote type="info" text="The Visual Studio Code extension can be found on the marketplace: [MS Graph Completion](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-msgraph-autocomplete)." >}}
 
 The initial version of the extension supports the `GET` API paths, query string parameters, and their values.
 

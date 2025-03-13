@@ -1,17 +1,16 @@
 ---
-title: "My review of the Jabra Evolve2 85 headset"
-slug: "/my-review-of-the-jabra-evolve2-85-headset/"
-author: "Elio Struyf"
-type: "post"
-date: "2020-06-12T19:42:19.710Z"
+title: My review of the Jabra Evolve2 85 headset
+slug: /my-review-of-the-jabra-evolve2-85-headset/
+author: Elio Struyf
+type: post
+date: 2020-06-12T19:42:19.710Z
 draft: false
 tags:
-  - "Review"
-  - "Jabra"
-  - "Headset"
+  - Review
+  - Jabra
+  - Headset
 categories: []
 comments: true
-preview: "<failed to process>"
 ---
 
 For three months, I have waited for the [Jabra Evolve2 85](https://www.jabra.com/business/office-headsets/jabra-evolve/jabra-evolve2-85) to show up. During the Corona crisis, I needed a new headset to filter out all the noise my kids make at home, so that I could 100% focus on my work. A colleague told me about this headset. When I ordered it, it was not even out yet but was soon to be released. Eventually, this became a bit longer than expected, but I am not blaming Jabra for this.
@@ -143,7 +142,7 @@ The issues I experienced with the previous version should not have anything to d
 Here is an audio sample (no changes were made in the Jabra Direct app):
 
 <audio controls>
-  <source src="/uploads/2020/09/abra-teams-with-dongle.mp3" type="audio/mpeg">
+  <source src="/uploads/2020/09/jabra-teams-with-dongle.mp3" type="audio/mpeg">
 </audio>
 
 <blockquote class="important">

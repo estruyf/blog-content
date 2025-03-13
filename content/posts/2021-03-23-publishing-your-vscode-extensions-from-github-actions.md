@@ -25,7 +25,7 @@ When publishing your Code extensions, you need to use the Visual Studio Code Ext
 
 In this case, we will do this on GitHub Actions instead, but before you can start, you need to create your **Personal Access Token** or also called PAT.
 
-{{< blockquote type="Important" text="[Get your personal access token to publish to the VS Code Marketplace](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token)" >}}
+{{< blockquote type="important" text="[Get your personal access token to publish to the VS Code Marketplace](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token)" >}}
 
 When you got this **PAT**, add it as a GitHub Secret to your project.
 
@@ -62,6 +62,6 @@ jobs:
         run: vsce publish -p ${{ secrets.VSCE_PAT }}
 ```
 
-{{< blockquote type="Info" text="The GitHub Actions workflow gets triggered whenever you create and publish a new release. In the last step, the **PAT** will be used to publish your extension." >}}
+{{< blockquote type="info" text="The GitHub Actions workflow gets triggered whenever you create and publish a new release. In the last step, the **PAT** will be used to publish your extension." >}}
 
-{{< blockquote type="Important" text="Make sure to set the `publisher` to your account in the `package.json` file. For me, this is `eliostruyf`." >}}
+{{< blockquote type="important" text="Make sure to set the `publisher` to your account in the `package.json` file. For me, this is `eliostruyf`." >}}

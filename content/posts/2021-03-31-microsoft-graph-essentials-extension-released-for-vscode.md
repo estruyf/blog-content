@@ -27,6 +27,6 @@ The Microsoft Graph Essentials extension comes with snippets, code completion fo
 
 If you are developing solutions with the Microsoft Graph, definitely check out the [Microsoft Graph Essentials - Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-msgraph-essentials) extension.
 
-{{< blockquote type="Info" text="Autocompletion and snippets are automatically generated from the toolkit sources." >}}
+{{< blockquote type="info" text="Autocompletion and snippets are automatically generated from the toolkit sources." >}}
 
 Feel free to provide feedback and/or ideas for improving the extension even more.

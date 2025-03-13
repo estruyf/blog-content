@@ -34,7 +34,7 @@ The easiest way to write a GitHub Actions summary is to use the [@actions/core](
 
 You can write the job summary using the `core.summary` methods. Once completed, you can call the `core.summary.write()` method to write the buffer to the Job Summary output on GitHub Actions.
 
-```typescript 
+```typescript title="generateSummary.mjs | Summary sample"
 import * as core from '@actions/core';
 
 const summary = core.summary;
@@ -55,7 +55,7 @@ To test your summary locally, you must set the `GITHUB_STEP_SUMMARY` environment
 
 Here is an example of how to set the `GITHUB_STEP_SUMMARY` environment variable when running your script locally.
 
-```typescript 
+```typescript title="generateSummary.mjs | Local job summary testing"
 import * as core from '@actions/core';
 import { join } from "path";
 import { existsSync, unlinkSync, writeFileSync } from "fs";
@@ -84,7 +84,7 @@ await summary.write();
 
 When you run your script locally, you will see that the `summary.html` file is created with the content of your summary output. The generated file contents look like this:
 
-```html 
+```html title="summary.html"
 <h1>My job summary heading</h1>
 <hr>
 <ol><li>item1</li><li>item2</li><li>item3</li></ol>

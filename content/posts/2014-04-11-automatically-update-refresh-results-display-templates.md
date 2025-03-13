@@ -20,7 +20,7 @@ During the creation process of a demo for my SharePoint Saturday Belgium session
 
 What you'll need to do is creating or modifying a Control Display Template for the CSWP. In this control template you'll only need to add the following lines of code:
 
-```JavaScript
+```javascript
 // Do a refresh of the current result set
 AddPostRenderCallback(ctx, function(){
   setTimeout(function () {
@@ -34,7 +34,7 @@ AddPostRenderCallback(ctx, function(){
 
 It can even be simpler, you could also use the following code:
 
-```JavaScript
+```javascript
 // Do a refresh of the current result set
 AddPostRenderCallback(ctx, function(){
   setTimeout(function () {

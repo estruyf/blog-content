@@ -55,7 +55,7 @@ When you do not have a `.devcontainer/devcontainer.json` file in your repository
 
 Once you have the `.devcontainer/devcontainer.json` file, you can set the `TZ` environment variable in the `remoteEnv` property.
 
-```json 
+```json title="Set the timezone in the devcontainer.json file"
 {
   "remoteEnv": {
     "TZ": "Europe/Brussels"

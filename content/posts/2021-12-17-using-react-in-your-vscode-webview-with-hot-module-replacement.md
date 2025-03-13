@@ -26,7 +26,7 @@ We are used to having Hot Module Replacement (HRM) for web projects, but unfortu
 
 To improve the experience when working with WebViews in VS Code, I tried to make HMR work for `create-react-app` and `webpack dev server`. In this article, I will share the steps I had to take to make it work for CRA, but you will have to do a similar configuration in both cases.
 
-{{< blockquote type="Info" text="In Front Matter, the React app is part of the solution and generates the bundle via a separate [webpack config](https://github.com/estruyf/vscode-front-matter/blob/dev/webpack/dashboard.config.js) and makes use of the webpack dev server." >}}
+{{< blockquote type="info" text="In Front Matter, the React app is part of the solution and generates the bundle via a separate [webpack config](https://github.com/estruyf/vscode-front-matter/blob/dev/webpack/dashboard.config.js) and makes use of the webpack dev server." >}}
 
 ## The approach
 

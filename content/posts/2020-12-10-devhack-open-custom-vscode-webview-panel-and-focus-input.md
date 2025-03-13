@@ -21,7 +21,7 @@ The idea I came up with to improve the experience is to use a custom view panel.
 
 {{< caption-new "/uploads/2020/12/vscode2.png" "New FrontMatter panel in VSCode"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAPCAYAAADd/14OAAAAAklEQVR4AewaftIAAAEcSURBVH3BSW7cMBBA0V9kkerJQ4I24CN4ES9y/22OkWUWDRvoCS2JUklkzAAB4qDt9+Tp+XtZLpeYGZfLhWtKAV2vN8QYAUE18BFNKbHdbokxknOmlIKZYWb8S8dxZLfbUYkIVSmF/2m4b/APkf1hj4gQNTLnwjTzplC5M2jnes5ND4/gnRBWC6IIx/ZEyfwRDNRPDtc7qiZEFi7gnMOGBeNkVDJnNLaeaJEqBOXudoVzwrRPNLOjGoYB9aoUoOs6quPpzDU6u0CzueX+5itd13GNDT2aHwambwmbDB08rITgleOPV+RQ+EspQAYvHvvZY78SlfCehhfHOnnaNmFt4iM6i2eYQRcbvqxu6NqWwns2jqilntM48qk88xughYOECZKEewAAAABJRU5ErkJggg==" "442" >}}
 
-{{< blockquote type="Info" text="You can find the extension on the VSCode marketplace: [Front Matter](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter)." >}}
+{{< blockquote type="info" text="You can find the extension on the VSCode marketplace: [Front Matter](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter)." >}}
 
 After releasing it, I got positive feedback and the question if I could make it possible to open the panel and focus on the tag/category input field.
 
@@ -42,7 +42,7 @@ let insertTags = vscode.commands.registerCommand('frontMatter.insertTags', async
 });
 ```
 
-{{< blockquote type="Info" text="Link to my extension file: [extension.ts](https://github.com/estruyf/vscode-front-matter/blob/681b09d79bd04f35569a3a2688097ef6a67cd56c/src%2Fextension.ts#L23)." >}}
+{{< blockquote type="info" text="Link to my extension file: [extension.ts](https://github.com/estruyf/vscode-front-matter/blob/681b09d79bd04f35569a3a2688097ef6a67cd56c/src%2Fextension.ts#L23)." >}}
 
 ## 2. Posting message to your panel
 

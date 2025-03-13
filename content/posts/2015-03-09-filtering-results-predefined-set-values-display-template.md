@@ -34,7 +34,7 @@ Start by creating a new control display template and add a link to the control d
 
 In the link element an **onclick** attribute is specified with a function call. Once you click on the link, the function executes a refinement query with the filter value that you clicked. In order to make it work, you need to add the following code block inside a script element in your template:
 
-```JavaScript
+```javascript
 Type.registerNamespace('search.refine');
 
 search.refine = function() {
@@ -103,7 +103,7 @@ The thing that remains is a link that allows you to remove the current filter th
 
 The corresponding function:
 
-```JavaScript
+```javascript
 all = function (cc) {
   var queryState = new Srch.QueryState();
   // Clear the refinement object

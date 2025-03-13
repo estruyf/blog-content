@@ -17,13 +17,13 @@ preview: "/social/9e514a26-1116-4961-bb72-b4fa471ba13c.png"
 
 This article continues the previous article about using the OAuth On-Behalf-Of flow in your Azure Functions. In the last article, the Azure Function only verifies the JWT Token, and if valid, uses it to request an access token and get data on your behalf.
 
-{{< blockquote type="Info" text="Link to the previous article about [Using OAuth On-Behalf-Of flow in a Node.js Azure Functions](https://www.eliostruyf.com/oauth-behalf-flow-node-js-azure-functions/)." >}}
+{{< blockquote type="info" text="Link to the previous article about [Using OAuth On-Behalf-Of flow in a Node.js Azure Functions](https://www.eliostruyf.com/oauth-behalf-flow-node-js-azure-functions/)." >}}
 
 Now you can make your Azure Function or App Services, in general, more secure by adding Azure AD Authentication. This way, users first need to log in before they can use the website or API. The configuration is "pretty easy," but the experience recently changed a bit. With this change, you could run into some issues. In this article, I want to highlight the steps for secure your existing Azure Function and the things you have to be aware of.
 
 ## Securing your Functions App
 
-{{< blockquote type="Important" text="Be sure you followed the previous article to get a good understanding of the configuration aspect. [Using OAuth On-Behalf-Of flow in a Node.js Azure Functions](https://www.eliostruyf.com/oauth-behalf-flow-node-js-azure-functions/)" >}}
+{{< blockquote type="important" text="Be sure you followed the previous article to get a good understanding of the configuration aspect. [Using OAuth On-Behalf-Of flow in a Node.js Azure Functions](https://www.eliostruyf.com/oauth-behalf-flow-node-js-azure-functions/)" >}}
 
 When you open your Function App on the [Azure Portal](https://portal.azure.com/), navigate to **Authentication**.
 
@@ -62,7 +62,7 @@ To call the secured Azure Function, you will have to perform the same steps as i
 
 If you used the previous article's app registration, you would notice that you cannot log in straight away to your Azure Function. It will tell you it cannot retrieve an ID token.
 
-{{< blockquote type="Info" text="You do not have to follow these steps if you are never going to go directly to the Azure Function. For an App Service, this makes sense to do so." >}}
+{{< blockquote type="info" text="You do not have to follow these steps if you are never going to go directly to the Azure Function. For an App Service, this makes sense to do so." >}}
 
 You can solve this issue by setting the `oauth2AllowIdTokenImplicitFlow` property in the Azure AD app manifest to `true`, but that is not the end. When you would try it again, it will tell you the reply URL is not defined.
 

@@ -124,7 +124,7 @@ The next step is to show the refiner values of the current search results. The a
 
 To visualize these refinement items you need to add two arrays (the selected one will be used in the next post), one array for the unselected refiners, and one for the selected refiners.
 
-```JavaScript
+```javascript
 // (un)selected filter arrays
 var unselectedFilters = new Array();
 var selectedFilters = new Array();
@@ -132,7 +132,7 @@ var selectedFilters = new Array();
 
 The following piece of code is used to fill the arrays with the values it retrieved.
 
-```JavaScript
+```javascript
 // Fill the arrays with refinement values
 for (var i = 0; i < listData.length; i++){
   var filter = listData[i];

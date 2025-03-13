@@ -37,7 +37,7 @@ This example works with a toggle, but you can also achieve this when you select 
 
 I achieved it with the following code:
 
-```JavaScript
+```javascript
 protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
   let templateProperty: any;
   if (this.properties.propertyToggle) {

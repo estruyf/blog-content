@@ -31,7 +31,7 @@ When building solutions only in SharePoint, this will not generate any impact wh
 
 {{< caption-new "/uploads/2020/09/chrome1.png" "Referrer header - origin URL"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA8SURBVDXBwQ3AIAwEwb3gSHTl/tvhaZAv4pEZZaYlUXuDTVXxG2NwzmGtxdPdRARvBN2NJCRxGbDNnJMPlf0Zmb2+crYAAAAASUVORK5CYII=" "398" >}}
 
-{{< blockquote type="Info" text="Read more about the new default referrer policy in Chrome on: [A new default Referrer-Policy for Chrome: strict-origin-when-cross-origin](https://developers.google.com/web/updates/2020/07/referrer-policy-new-chrome-default)" >}}
+{{< blockquote type="info" text="Read more about the new default referrer policy in Chrome on: [A new default Referrer-Policy for Chrome: strict-origin-when-cross-origin](https://developers.google.com/web/updates/2020/07/referrer-policy-new-chrome-default)" >}}
 
 ## What with other browsers?
 

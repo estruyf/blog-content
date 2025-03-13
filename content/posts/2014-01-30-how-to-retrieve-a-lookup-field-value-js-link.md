@@ -26,7 +26,7 @@ Retrieving the value from a lookup field is easier than it used to be when worki
 
 What you have to do is check if the object you retrieve contains data. Once you know that it contains data, you can obtained the value(s). Here is a code sample of how you could do it:
 
-```JavaScript
+```javascript
 var lookupSample = lookupSample '' {};
 
 lookupSample.CustomizeFieldRendering = function () {

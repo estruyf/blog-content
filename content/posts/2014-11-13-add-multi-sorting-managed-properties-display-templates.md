@@ -33,7 +33,7 @@ If you want to add sorting possibilities into your display templates, you first 
 
 The code for registering your sorts looks like this:
 
-```JavaScript
+```javascript
 var availableSorts = ctx.DataProvider.get_availableSorts();
 availableSorts.push({"name":"Created-ASC","sorts":[{"p":"Created","d":0}]});
 availableSorts.push({"name":"Created-DES","sorts":[{"p":"Created","d":1}]});
@@ -70,7 +70,7 @@ The reason for this behavior is because a new query gets executed behind the sce
 
 Here is a code snippet of what is happening behind the scenes in the Search.ClientControls.js file:
 
-```JavaScript
+```javascript
 // Get the available sorts on the data provider
 var sorts = dataProvider.get_availableSorts();
 if (!Srch.U.n(sorts) && sorts.length > 0) {
@@ -97,7 +97,7 @@ So if you want to include multi-sorting functionality to your display template, 
 
 Here is my function to enable multi-sorting:
 
-```JavaScript
+```javascript
 function sortProperty(sortName, clientControl) {
   if (Srch.U.e(sortName)) {
     return;
@@ -180,7 +180,7 @@ Now if you have multi-sorting enabled in your display template, it can be useful
 
 Here is a function I created to achieve the removal functionality:
 
-```JavaScript
+```javascript
 function removeSortProperty(property, clientControl) {
   if (Srch.U.e(property)) {
     return;

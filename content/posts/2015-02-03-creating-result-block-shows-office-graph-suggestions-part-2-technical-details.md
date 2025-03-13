@@ -24,9 +24,9 @@ In the previous blog post I showed you how to create a result block with Office 
 
 In this solution the three display templates that were created for this solution will get explained in more detail below.
 
-*   OfficeGraph_Results.html
-*   Item_OfficeGraph_Result.html
-*   Item_OfficeGraph_HoverPanel.html
+- OfficeGraph_Results.html
+- Item_OfficeGraph_Result.html
+- Item_OfficeGraph_HoverPanel.html
 
 > **Note**: the display templates can be downloaded from GitHub - [Office Graph Result Block Templates](https://github.com/SPCSR/DisplayTemplates/tree/master/Search%20Display%20Templates/Office%20Graph%20Result%20Block%20Templates "Office Graph Result Block Templates").
 
@@ -44,14 +44,14 @@ I will explain each aspect of this template in the next sections.
 
 When configuring a result block, you can choose the amount of items you want to show in the result block. Once you do a query, the result block will only be provided with the amount of items that you specified.
 
-In this scenario it works a bit different because the search results are retrieved by the REST call. That is also the reason why I specified to do a "*" star query for the result block. You need to make sure that at least one result item gets returned. Once a result item for the result block is retrieved, the OfficeGraph_Results.js display template will get loaded.
+In this scenario it works a bit different because the search results are retrieved by the REST call. That is also the reason why I specified to do a "\*" star query for the result block. You need to make sure that at least one result item gets returned. Once a result item for the result block is retrieved, the OfficeGraph_Results.js display template will get loaded.
 
 Now because we are calling a REST service, you need to be sure to limit the amount of results returned from your REST call.
 
 Luckily you have a property that you can check to see the maximum items the result block may have. This can be retrieved from the CurrentGroup property:
 
-```JavaScript
-ctx.CurrentGroup.RowCount
+```javascript
+ctx.CurrentGroup.RowCount;
 ```
 
 This property value will be appended to the REST query URL to set the **RowLimit** property.
@@ -64,7 +64,7 @@ Something else you need to take into account is the number of times you are goin
 
 To solve this problem, I added a processCount variable. This processCount variable will be incremented each time the template gets executed. Only the first time when the first result gets rendered, the REST call will be done. The other times it will not do anything. This is done by the following code:
 
-```JavaScript
+```javascript
 // Get number of items to show in the Result Block
 resultCount = currentCtx.CurrentGroup.RowCount;
 
@@ -74,7 +74,7 @@ if (processCount === 1) {
   keywords = currentCtx.DataProvider.get_currentQueryState().k;
 
   // Do the REST call to Office Graph
-  AddPostRenderCallback(currentCtx, function() {
+  AddPostRenderCallback(currentCtx, function () {
     get();
   });
 } else {
@@ -83,12 +83,11 @@ if (processCount === 1) {
 }
 ```
 
-
 ### Refine the Office Graph results
 
 Once you retrieved the result in your search center, it can be that you want to do some refining. To support this, the Office Graph query will need to take the refinement into account. This can be done with the following code:
 
-```JavaScript
+```javascript
 // Check if the results are refined
 if (!$isNull(currentCtx.DataProvider.get_currentQueryState().r)) {
   var refiners = currentCtx.DataProvider.get_currentQueryState().r;
@@ -96,7 +95,10 @@ if (!$isNull(currentCtx.DataProvider.get_currentQueryState().r)) {
   if (refiners.length === 1) {
     refinement = String.format("&refinementfilters='{0}'", refiners.toString());
   } else {
-    refinement = String.format("&refinementfilters='and({0})'", refiners.toString());
+    refinement = String.format(
+      "&refinementfilters='and({0})'",
+      refiners.toString()
+    );
   }
 } else {
   refinement = "";
@@ -108,13 +110,20 @@ The code first checks if there is already some refining done on your results. If
 ### Retrieving the Office Graph results
 
 There is nothing special about retrieving the Office Graph results. Retrieving the results is done via an Ajax call to the search REST API.
-```default
-var restUrl = String.format("{0}/_api/search/query?QueryText='({1}) AND (FileExtension:doc OR FileExtension:docx OR FileExtension:ppt OR FileExtension:pptx OR FileExtension:xls OR FileExtension:xlsx OR FileExtension:pdf)'&Properties='TitleBasedSummaries:true,GraphQuery:and(actor(me\\,action\\:1021)\\,actor(me\\,or(action\\:1021\\,action\\:1036\\,action\\:1037\\,action\\:1039))),GraphRankingModel:action\\:1021\\,weight\\:1\\,edgeFunc\\:weight\\,mergeFunc\\:max'&SelectProperties='Author,AuthorOwsUser,DocId,EditorOwsUser,FileExtension,FileType,HitHighlightedProperties,HitHighlightedSummary,LastModifiedTime,LikeCountLifetime,ListID,ListItemID,OriginalPath,Path,Rank,SPWebUrl,SiteTitle,Title,ViewCountLifetime,siteID,uniqueID,webID,SecondaryFileExtension'&hithighlightedproperties='Title,Path'&RankingModelId='0c77ded8-c3ef-466d-929d-905670ea1d72'&RowLimit={2}&StartRow=0&BypassResultTypes=true{3}&ClientType='OfficeGraphTemplate'", _spPageContextInfo.webAbsoluteUrl, keywords, resultCount, refinement);
+
+```javascript
+var restUrl = String.format(
+  "{0}/_api/search/query?QueryText='({1}) AND (FileExtension:doc OR FileExtension:docx OR FileExtension:ppt OR FileExtension:pptx OR FileExtension:xls OR FileExtension:xlsx OR FileExtension:pdf)'&Properties='TitleBasedSummaries:true,GraphQuery:and(actor(me\\,action\\:1021)\\,actor(me\\,or(action\\:1021\\,action\\:1036\\,action\\:1037\\,action\\:1039))),GraphRankingModel:action\\:1021\\,weight\\:1\\,edgeFunc\\:weight\\,mergeFunc\\:max'&SelectProperties='Author,AuthorOwsUser,DocId,EditorOwsUser,FileExtension,FileType,HitHighlightedProperties,HitHighlightedSummary,LastModifiedTime,LikeCountLifetime,ListID,ListItemID,OriginalPath,Path,Rank,SPWebUrl,SiteTitle,Title,ViewCountLifetime,siteID,uniqueID,webID,SecondaryFileExtension'&hithighlightedproperties='Title,Path'&RankingModelId='0c77ded8-c3ef-466d-929d-905670ea1d72'&RowLimit={2}&StartRow=0&BypassResultTypes=true{3}&ClientType='OfficeGraphTemplate'",
+  _spPageContextInfo.webAbsoluteUrl,
+  keywords,
+  resultCount,
+  refinement
+);
 ```
 
 Once the results are retrieved it gets interesting. If you ever did a REST call to the search API, you will know that the JSON object you retrieve is not the same as that of the default search query. You do not have a ctx.ListData object or such. All the results can be found in data.PrimaryQueryResult.RelevantResults.Table.Rows. So what I did is I create a CurrentItem object for each result that is retrieved. Doing it this way, I can make use of the default display template rendering and functions.
 
-```JavaScript
+```javascript
 // Create current item object
 var currentItem = {};
 currentItem = setFields(currentItem, result.Cells);
@@ -130,19 +139,19 @@ var setFields = function (item, cells) {
 };
 ```
 
-
 ### Rendering the result HTML output
 
 Now the fun part, rendering the Office Graph results onto your page. First I created a variable with my HTML mark-up and replaced the placeholders with the values I retrieved from search. This is one way of how that it can be approached, but as we are working in a search center, we can also use display templates to do the rendering.
 
 To be able to use a display template to render the HTLM mark-up for your results from within the template, you first need to load the display template JavaScript file. You can do this from within the display template with this code:
 
-```JavaScript
+```javascript
 // Load the display template for the Office Graph results
-var templateUrl = "~sitecollection/_catalogs/masterpage/OfficeGraph/Item_OfficeGraph_Result.js";
-RegisterSod('Item_OfficeGraph_Result.js', Srch.U.replaceUrlTokens(templateUrl));
+var templateUrl =
+  "~sitecollection/_catalogs/masterpage/OfficeGraph/Item_OfficeGraph_Result.js";
+RegisterSod("Item_OfficeGraph_Result.js", Srch.U.replaceUrlTokens(templateUrl));
 
-EnsureScriptFunc("Item_OfficeGraph_Result.js", null, function() {
+EnsureScriptFunc("Item_OfficeGraph_Result.js", null, function () {
   templateFunc = Srch.U.getRenderTemplateByName(templateUrl, null);
 });
 ```
@@ -153,7 +162,7 @@ The code registers and loads the template. Once the template is loaded, the disp
 
 Once the display template function is retrieved, you can make use of it to render the HTML mark-up like this:
 
-```JavaScript
+```javascript
 // Set the current item to the context
 currentCtx["CurrentItem"] = currentItem;
 // Call the display template function to render the current item

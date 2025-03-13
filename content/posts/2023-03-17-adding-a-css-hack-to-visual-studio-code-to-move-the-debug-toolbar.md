@@ -58,7 +58,7 @@ EOF
 
 This CSS snippet modifies the Debug Toolbar's appearance and positions it within the titlebar. The `background` property sets the toolbar color, `top` adjusts the position, and `box-shadow` and `border` remove any extraneous styling.
 
-{{< blockquote type="edit" text="Updated the CSS to set the debug toolbar not as draggable, otherwise the buttons are not clickable since the latest update on the title bar." >}}
+{{< blockquote type="note" text="Updated the CSS to set the debug toolbar not as draggable, otherwise the buttons are not clickable since the latest update on the title bar." >}}
 
 ## Step 3: Copy the modified file
 

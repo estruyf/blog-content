@@ -138,7 +138,7 @@ These changes makes Azure Static Web Apps a strong competitor against Vercel and
 
 ### Wishes
 
-{{< blockquote type="Important" text="These were written when the service was in preview." >}}
+{{< blockquote type="important" text="These were written when the service was in preview." >}}
 
 As it is a preview, I am not talking about the disadvantages as things will likely change or get improved. Instead, this is my wishlist for the service:
 
@@ -146,7 +146,7 @@ As it is a preview, I am not talking about the disadvantages as things will like
 - At the moment, the Azure Static Web App has hidden away from all the standard functionalities which an Azure Web App or Azure Functions has. For instance domain management, or more details on the Azure Functions. I would love to get full control of the functions, but this might be what you have to deal with when choosing this service.
 - Full Azure Active Directory integration or bring your Azure AD App. If you can link your Azure AD App to the site, it would mean that you can get full control over the authentication and authorization process.
 
-{{< blockquote type="Important" text="It is great to see that two of my wishes became reality. The simplicity is still similar to what it was before. That is where Vercel and Netlify score a lot of points." >}}
+{{< blockquote type="important" text="It is great to see that two of my wishes became reality. The simplicity is still similar to what it was before. That is where Vercel and Netlify score a lot of points." >}}
 
 ## Conclusion
 

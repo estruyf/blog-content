@@ -46,7 +46,7 @@ To create an authenticated session state, you need to follow these steps:
 
 - Run the Playwright's codegen command with the `--save-storage=<auth file path>` argument.
   
-  ```bash 
+  ```bash title="Create the authenticated session state"
   npx playwright codegen <url> --save-storage=<auth file path>
 
   # example
@@ -66,7 +66,7 @@ To create an authenticated session state, you need to follow these steps:
 
 Once you have the authenticated session state, you can use it in your tests. You define this in your `playwright.config.ts` file.
 
-```typescript 
+```typescript title="playwright.config.ts"
 import { defineConfig } from "@playwright/test";
 
 export default defineConfig({
@@ -106,7 +106,7 @@ When you update the authenticated session state file, you can store it in a GitH
 
 To use the authenticated session state in your GitHub Actions workflow, you must create the file before running your tests. Here is an example of how you can do this:
 
-```yaml 
+```yaml title=".github/workflows/e2e-testing.yml"
 - uses: actions/github-script@v7
   with:
     script: |
@@ -124,7 +124,7 @@ To use the authenticated session state in your GitHub Actions workflow, you must
 
 When you have the authenticated session state file in place, you can run your tests by providing only the URL you want to start them (depending on the configuration).
 
-```bash 
+```bash title=".github/workflows/e2e-testing.yml"
 - name: Run Playwright tests
   run: npx playwright test
   env:
@@ -151,7 +151,7 @@ To be able to do this, you will have to implement a couple of things:
 
 To refresh the authenticated session state, I am using the project teardown functionality, which runs after all dependent projects have finished.
 
-```typescript 
+```typescript title="playwright.config.ts"
 import { defineConfig } from "@playwright/test";
 
 export default defineConfig({
@@ -177,7 +177,7 @@ export default defineConfig({
 
 In the `refresh.auth.ts` file, you can implement the logic to refresh the authenticated session state.
 
-```typescript 
+```typescript title="refresh.auth.ts"
 import { test as teardown } from '@playwright/test';
 import { readFile, writeFile } from 'fs/promises';
 
@@ -215,7 +215,7 @@ Create a new secret in your repository which holds the PAT.
 
 To update the authenticated session state secret, you can make use of the following GitHub Actions workflow step:
 
-```yaml 
+```yaml title=".github/workflows/e2e-testing.yml"
 - name: Update the auth session
   if: ${{ !cancelled() }}
   working-directory: ./e2e
@@ -233,7 +233,7 @@ To update the authenticated session state secret, you can make use of the follow
 
 The complete GitHub Actions workflow includes creating the authenticated session state file, running the tests, and updating the authenticated session state secret.
 
-```yaml 
+```yaml title=".github/workflows/e2e-testing.yml"
 name: Release
 
 on:

@@ -160,7 +160,7 @@ This problem also occurs on the default blog template in SharePoint 2013 and Off
 
 I created a solution by overwriting a JavaScript function call. This is not a clean solution, but it will get you going until it hopefully gets fixed in one of the next updates.
 
-```JavaScript
+```javascript
 EnsureScriptFunc('mQuery.js', 'm$', function() {
   // Update the button functions
   var publishBtns = m$('.ms-formtoolbar input[value="Publish"]');
@@ -212,7 +212,7 @@ I added this code on the **NewPost.aspx** and **EditPost.aspx** pages via a scri
 
 If you are going to click on the **Save as draft** or **Publish** button, you'll see that the **_ModerationStatus** gets added to the request.
 
-```JavaScript
+```javascript
 // Save as draft
 "_ObjectType_":"SP.ListItemFormUpdateValue","ErrorMessage":null,"FieldName":"_ModerationStatus","FieldValue":"3","HasException":false
 

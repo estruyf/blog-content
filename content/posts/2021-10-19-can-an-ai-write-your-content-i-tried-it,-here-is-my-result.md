@@ -25,7 +25,7 @@ Last week I woke up and asked myself if an AI would already write the content I 
 
 The article I wrote by using these services is one about the features and benefits of Front Matter CMS.
 
-{{< blockquote type="Info" text="[A look at the features and benefits of the Front Matter CMS](https://www.eliostruyf.com/features-benefits-front-matter-cms/)" >}}
+{{< blockquote type="info" text="[A look at the features and benefits of the Front Matter CMS](https://www.eliostruyf.com/features-benefits-front-matter-cms/)" >}}
 
 The article contains 90% of the content that AI services provided me and 10% of the content I wrote or adapted myself.
 
@@ -53,7 +53,7 @@ Peppertype.ai and Rytr allow you to generate an outline for the blog you want to
 
 For the article, I used a combination of Peppertype.ai, Rytr, and the sections I wanted to include.
 
-{{< blockquote type="PRO" text="Outlining the article by an AI is a pretty easy way to get you started. If you need inspiration, let an AI do the work for you." >}}
+{{< blockquote type="note" text="Outlining the article by an AI is a pretty easy way to get you started. If you need inspiration, let an AI do the work for you." >}}
 
 ### Writing the content
 
@@ -67,9 +67,9 @@ Sometimes the AI is a bit opinionated, so you need to do some trial and error. I
 
 ### Rewriting
 
-After I made the services write the content, I combined it all in one Markdown file and started reading and rewriting. GitHub Copilot was a great assistant. Although it is meant to help you write code, the content suggestions it provides are, in some cases, straight on—bonus points for GitHub Copilot. 
+After I made the services write the content, I combined it all in one Markdown file and started reading and rewriting. GitHub Copilot was a great assistant. Although it is meant to help you write code, the content suggestions it provides are, in some cases, straight on—bonus points for GitHub Copilot.
 
-{{< blockquote type="Funny" text="Also watch out for typos coming from the AI. Maybe they do this on purpose to make it seem like it was a human that wrote it." >}}
+{{< blockquote type="note" text="Also watch out for typos coming from the AI. Maybe they do this on purpose to make it seem like it was a human that wrote it." >}}
 
 ## Conclusion
 

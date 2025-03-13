@@ -45,7 +45,7 @@ Via a CURL command execution, you can receive this information.
     echo 'EOF' >> $GITHUB_ENV
 ```
 
-{{< blockquote type="Info" text="The notation you can see here is to store the CURL response in an environment variable called **PROJECT_DATA**. You can find more information about setting environment variables in the [GitHub documentation](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#multiline-strings)." >}}
+{{< blockquote type="info" text="The notation you can see here is to store the CURL response in an environment variable called **PROJECT_DATA**. You can find more information about setting environment variables in the [GitHub documentation](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#multiline-strings)." >}}
 
 Once you have the name, all you need is to use the [Simple Issue Labeler](https://github.com/marketplace/actions/simple-issue-labeler) action to add or remove your project labels.
 

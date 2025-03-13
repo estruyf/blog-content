@@ -1,5 +1,5 @@
 ---
-title: 'Order List Items Like in a Meeting Workspace: Part 1'
+title: "Order List Items Like in a Meeting Workspace: Part 1"
 author: Elio Struyf
 type: post
 date: 2012-01-03T17:36:32+00:00
@@ -26,7 +26,6 @@ In this blog post I show you how you can enable this reorder functionality on ot
 
 First of all you need to make the **Order** field visible inside your list. To make this field visible, you can use the following PowerShell script.
 
-
 ```powershell
 $url = "Web_URL"
 $site = Get-SPSite($url)
@@ -42,7 +41,6 @@ $orderField.Update()
 $web.Dispose()
 $site.Dispose()
 ```
-
 
 **Note: before you execute this script, change the Web_URL and List_Name in the PowerShell script.**
 
@@ -60,10 +58,9 @@ From this moment on, each time you create a new item, the order field automatica
 
 You can change the order by navigating to the following URL:
 
-```url
+```bash
 SiteURL/_layouts/Reorder.aspx?List={ListId}
 ```
-
 
 {{< caption-new "/uploads/2011/12/120811_1736_OrderListIt6.png" "Change Item Order Page" >}}
 

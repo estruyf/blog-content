@@ -18,7 +18,7 @@ comments: true
 
 During the Corona crisis, [Luise Freese](https://twitter.com/LuiseFreese) and I was chatting about conferences and stickers. Nobody can get stickers these days, as all conferences are now virtual. That brought us to the crazy idea of opening our sticker store on which we want to sell stickers created for IT/Tech/DEV people.
 
-{{< blockquote type="Info" text="the store is called Pimp Your Own Device and is available at: [http://pimpyourowndevice.com/](http://pimpyourowndevice.com/)" >}}
+{{< blockquote type="info" text="the store is called Pimp Your Own Device and is available at: [http://pimpyourowndevice.com/](http://pimpyourowndevice.com/)" >}}
 
 The name itself is a pun, as Bring Your Own Device (BYOD) policies in companies are ubiquitous these days. That is why we went for PYOD.
 
@@ -32,7 +32,7 @@ These forms were a huge success, and because of that, we wanted to professionali
 
 That is how PYOD was born. At first, we wanted to keep it simple and just a side project. Today we take this sticker business very seriously.
 
-{{< blockquote type="Info" text="Our mission is to highlight your uniqueness and technical expertise. Make *you* stand out." >}}
+{{< blockquote type="info" text="Our mission is to highlight your uniqueness and technical expertise. Make *you* stand out." >}}
 
 ## The technologies we used
 
@@ -58,7 +58,7 @@ For PYOD, we made the content more dynamic by building the pages on the fly by u
 
 All our data is stored in SharePoint, I know that a lot would run away from this approach, but both are very familiar with it. Also, as we both work remotely, we need to collaborate efficiently. SharePoint offers these capabilities to us.
 
-{{< blockquote type="Info" text="We tried the Common-Data Service (CDS) path, but that was too complicated for our use case." >}}
+{{< blockquote type="info" text="We tried the Common-Data Service (CDS) path, but that was too complicated for our use case." >}}
 
 By using SharePoint, we can easily trigger PowerAutomate to initiate a flow to tell inventory updates happened. These PowerAutomate flows are what we use to provide the triggers on stickers' orders using webhooks.
 

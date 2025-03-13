@@ -35,7 +35,7 @@ The first step is to create an Azure Functions API. You can do this using the [A
 
 For this example, I used the Azure Functions Core Tools with the following command:
 
-```bash 
+```bash title="Create an Azure Functions API"
 # Create a new Azure Functions project
 func init api --worker-runtime typescript --model V4
 
@@ -52,7 +52,7 @@ func new --template "HTTP trigger" --name http_name
 
 You must update the file to make your SWA configuration aware of the Azure Functions project. You need to add the following configuration:
 
-```json 
+```json title="./swa-cli.config.json" 8-11
 {
   "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
   "configurations": {
@@ -75,7 +75,7 @@ You must update the file to make your SWA configuration aware of the Azure Funct
 
 Update your `package.json` scripts on the root to include the Azure Functions build and dev commands.
 
-```json 
+```json title="./package.json"
 {
   "scripts": {
     "build": "npm run build:app && npm run build:api",
@@ -96,7 +96,7 @@ Update your `package.json` scripts on the root to include the Azure Functions bu
 
 To run your Astro site and Azure Functions locally, you can use the following command:
 
-```bash 
+```bash title="Run your Astro site and Azure Functions"
 npm run dev
 ```
 
@@ -110,7 +110,7 @@ Now, you can test the Azure Functions API on the `http://localhost:4280/api/name
 
 You can now make changes to the Azure Functions, and the development server will automatically pick up on them.
 
-```ts 
+```ts title="./api/src/functions/http_name.ts"
 import {
   app,
   HttpRequest,
@@ -144,7 +144,7 @@ To call the API, I'll use React to interact with the Azure Functions.
 
 {{< blockquote type="info" text="Follow the following steps to add React support to your Astro site: [Add React to Astro](https://docs.astro.build/en/guides/integrations-guide/react/)" >}}
 
-```tsx 
+```tsx title="./app/src/components/Hello.tsx"
 import * as React from "react";
 
 export interface IHelloProps {}
@@ -193,7 +193,7 @@ export const Hello: React.FunctionComponent<IHelloProps> = (
 
 You can now use the `Hello` component to display the name fetched from the Azure Functions in the Astro component.
 
-```tsx 
+```tsx title="./app/src/pages/index.astro"
 ---
 import { Hello } from "./Hello";
 ---

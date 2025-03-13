@@ -17,6 +17,8 @@ categories: []
 comments: true
 ---
 
+How to use Cypress to test your SharePoint solution with an Azure AD-secured API
+
 In January 2020, I explained my approach to how you can make use of Cypress to test out your SharePoint solutions. Cypress is great to use and simple to configure. I like the capability of running individual tests on your local machine to verify if the solution is still working as expected once you implemented changes, and do full runs after nightly builds.
 
 > **Info**: Related article: [Using Cypress for end to end testing your SharePoint solutions](https://www.eliostruyf.com/cypress-testing-sharepoint-solutions/)
@@ -32,6 +34,7 @@ The reason why it does not work is because of a limitation in Cypress (web secur
 {{< caption-new "/uploads/2020/04/cypress2.png" "Failing Cypress tests due to missing access token" >}}
 
 Currently, when requesting access to an Azure AD-secured API. You first need to get an access token. If you are using the default SharePoint Framework approach for it, it will request it via an ADAL flow. The ADAL flow will use a hidden iframe that performs a cross-origin call to `login.microsoftonline.com`. This cross-origin call will not work as Cypress will prevent it.
+
 
 {{< caption-new "/uploads/2020/04/cypress3.png" "ADAL hidden iframe on the page" >}}
 
@@ -74,7 +77,7 @@ Once you have the username, password, tenant, client ID, and client secret, you 
 
 {{< gist estruyf ad69ff9001887351ee595ca6c8efc4db >}}
 
-What you can see in the above code, is that Cypress will first authenticate and get an access token from Azure AD for the provided resource.
+What you can see in the above code, is that Cypress will first authenticate and get an access token from Azure AD for the provided resource. 
 
 > **Info**: I provided these parameter values as in the Cypress config file.
 
@@ -92,4 +95,4 @@ Once everything is in place, all you have to do when writing your test is use `c
 
 I have adapted the example project to include this scenario for you to check out the code. You can find the project here: [https://github.com/estruyf/cypress-sharepoint-sample](https://github.com/estruyf/cypress-sharepoint-sample).
 
-_Happy testing_
+*Happy testing*

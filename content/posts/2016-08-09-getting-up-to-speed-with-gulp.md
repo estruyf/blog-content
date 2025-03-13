@@ -98,7 +98,7 @@ Now Gulp tells you that it did not find a **gulpfile**. In the gulpfile you defi
 *   Open the file in the editor of your choice;
 *   Add the following code to the file:
 
-```JavaScript
+```javascript
 'use strict';
 
 // The script requires gulp to be loaded
@@ -127,7 +127,7 @@ That was a simple example of a Gulp task. Let's create another one which is goin
 *   Create a file called **script.ts** in the TS folder;
 *   Add the following contents to the script.ts file:
 
-```JavaScript
+```javascript
 class Greeter {
     greeting: string;
     constructor(message: string) {
@@ -162,14 +162,14 @@ $ npm install gulp-typescript --save-dev
 *   Once the TypeScript plugin is installed, open the gulpfile.js in your editor;
 *   Load the gulp-typescript plugin in the gulpfile with the following line:
 
-```JavaScript
+```javascript
 let ts = require('gulp-typescript');
 ```
 
 
 *   Add the transpile task to the gulpfile:
 
-```JavaScript
+```javascript
 // This is the "transpile" task which transpiles all TypeScript files to JavaScript
 gulp.task('transpile', () => {
     return gulp.src('ts/*.ts')
@@ -218,7 +218,7 @@ Once you run the **watch()** function, it will watch for changes made to your fi
 
 The best way to show you this is via a new task:
 
-```JavaScript
+```javascript
 // This is the "watch" task, every time you change the TS file, it will call the "transpile" task
 gulp.task('watch', () => {
     gulp.watch('ts/*.ts', ['transpile']);
@@ -261,7 +261,7 @@ In that display templates Gulp file, you can see various tasks:
 
 The default task looks like this:
 
-```JavaScript
+```javascript
 gulp.task('default', function() {   
     return gulp.src(folder).pipe(
         sp.sync(settings.get())
@@ -277,7 +277,7 @@ First, the task retrieves all the files from the specified folder and passes the
 
 The code of the watch task looks like this:
 
-```JavaScript
+```javascript
 gulp.task("watch", function() {
     var crntSettings = settings.get();
     crntSettings["cache"] = true;

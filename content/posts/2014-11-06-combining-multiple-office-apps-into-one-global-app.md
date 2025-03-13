@@ -82,7 +82,7 @@ By adding a query string parameter the landing page stays the same in the two ma
 
 The first thing to do in code is to check if the query string parameter is in place, and if that is true, store that in a session. By storing it in a session, you can easily check it in a later step of your code in which context your app is running.
 
-```JavaScript
+```javascript
 if (office !== null)
 {
   Session["Office"] = true;
@@ -91,7 +91,7 @@ if (office !== null)
 
 The redirection can be achieved by checking if the office variable is stored in the session.
 
-```JavaScript
+```javascript
 var officeClient = Session["Office"];
 return RedirectToAction(officeClient != null ? "Office" : "Mail");
 ```

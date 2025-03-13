@@ -52,7 +52,7 @@ So in my first example, my files need to be loaded in the following order:
 
 This is the code that needs to be added:
 
-```JavaScript
+```javascript
 RegisterSod('script1.js', Srch.U.replaceUrlTokens("~sitecollection/_catalogs/masterpage/tests/script1.js"));
 RegisterSod('script2.js', Srch.U.replaceUrlTokens("~sitecollection/_catalogs/masterpage/tests/script2.js"));
 RegisterSod('script3.js', Srch.U.replaceUrlTokens("~sitecollection/_catalogs/masterpage/tests/script3.js"));
@@ -65,7 +65,7 @@ This will register the scripts, but they are not yet loaded if you go to your pa
 
 If you are going to use the ensure script function three times, it will look like this:
 
-```JavaScript
+```javascript
 EnsureScriptFunc("script1.js", null, function() {
   EnsureScriptFunc("script2.js", null, function() {
     EnsureScriptFunc("script3.js", null, function() {
@@ -79,7 +79,7 @@ EnsureScriptFunc("script1.js", null, function() {
 
 Now by defining the script dependencies, it looks like this:
 
-```JavaScript
+```javascript
 RegisterSodDep('script2.js', 'script1.js');
 RegisterSodDep('script3.js', 'script2.js');
 
@@ -104,7 +104,7 @@ In the EnsureScriptFunc there are some checks in place to see if the script is l
 
 In the screenshot above you can see that the script has a state equal to 1 which corresponds to a missing state:
 
-```JavaScript
+```javascript
 Sods = {
   missing: 1,
   loading: 2,
@@ -123,7 +123,7 @@ As you can see the script reference is not missing anymore because it is already
 
 The solution to this is very easy. You have to specify the function name which you want to call as the second parameter in the **EnsureScriptFunc** function.
 
-```JavaScript
+```javascript
 EnsureScriptFunc("script3.js", 'Script3', function() {
   Script3("Template");
 });
@@ -135,7 +135,7 @@ The EnsureScriptFunc function will check if the parameter is not undefined or nu
 
 For **jQuery** you will have something like this:
 
-```JavaScript
+```javascript
 RegisterSod('jquery-1.11.2.min.js', 'http://code.jquery.com/jquery-1.11.2.min.js')
 EnsureScriptFunc('jquery-1.11.2.min.js', 'jQuery', function () {
   // Replace the next line with a function call
@@ -145,7 +145,7 @@ EnsureScriptFunc('jquery-1.11.2.min.js', 'jQuery', function () {
 
 It could be that jQuery is already referenced in the master page or page layout. What you can do is checking if jQuery is loaded before registering your file:
 
-```JavaScript
+```javascript
 if (typeof jQuery === "undefined") {
   RegisterSod('jquery-1.11.2.min.js', 'http://code.jquery.com/jquery-1.11.2.min.js')
   EnsureScriptFunc('jquery-1.11.2.min.js', 'jQuery', function () {
@@ -172,7 +172,7 @@ Let me show you what happens if you are going to implement your script with the 
 
 For testing purposes, I added some demo functions in the script files to show log messages. Here is an example of the code from script1.js:
 
-```JavaScript
+```javascript
 console.log('Script 1 loaded');
 
 function Script1 (script) {
@@ -182,7 +182,7 @@ function Script1 (script) {
 
 In script2.js I do a call to the **Script1** function. In script3.js a call will be made to **Script1** and **Script2**. I also added an **AddPostRenderCallback** function to the template which will call the **Script3** function.
 
-```JavaScript
+```javascript
 AddPostRenderCallback(ctx, function () {
   Script3("Template");
 });

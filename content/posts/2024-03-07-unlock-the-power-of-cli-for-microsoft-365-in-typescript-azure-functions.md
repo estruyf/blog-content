@@ -149,7 +149,7 @@ The previous configuration was required to start building our Azure Functions pr
 
 I created a new Azure Functions project using the following command:
 
-```bash 
+```bash title="Initialize the Azure Functions project"
 func init cli-m365-azurefunctions-sample --typescript
 ```
 
@@ -157,7 +157,7 @@ func init cli-m365-azurefunctions-sample --typescript
 
 Next, navigate to the created project and install the required packages:
 
-```bash 
+```bash title="Install dependencies"
 npm i @azure/identity @azure/keyvault-secrets @pnp/cli-microsoft365
 ```
 
@@ -176,7 +176,7 @@ Open the project in Visual Studio Code and navigate to the `local.settings.json`
 
 The settings should look similar to this:
 
-```json 
+```json title="local.settings.json"
 {
   "IsEncrypted": false,
   "Values": {
@@ -207,7 +207,7 @@ As the latest version of CLI for Microsoft 365 uses ESM modules, we need to conf
 
 In the `package.json` file, add the following line:
 
-```json 
+```json title="package.json"
 {
   "type": "module"
 }
@@ -215,7 +215,7 @@ In the `package.json` file, add the following line:
 
 Update the `tsconfig.json` file to the following:
 
-```json 
+```json title="tsconfig.json"
 {
   "compilerOptions": {
     "module": "ESNext",
@@ -233,7 +233,7 @@ Update the `tsconfig.json` file to the following:
 
 I created a new Azure Function using the following command:
 
-```bash 
+```bash title="Create a new Azure Function"
 func new --name getSiteTitle --template "HTTP trigger"
 ```
 
@@ -241,7 +241,7 @@ func new --name getSiteTitle --template "HTTP trigger"
 
 Open the `./src/functions/getSiteTitle.ts` file and replace the content with the following code:
 
-```typescript 
+```typescript title="./src/functions/getSiteTitle.ts" 19-23
 import { app, HttpRequest, HttpResponseInit, InvocationContext } from "@azure/functions";
 import { AzureCliCredential, ChainedTokenCredential, DefaultAzureCredential, TokenCredential } from "@azure/identity";
 import { SecretClient } from "@azure/keyvault-secrets";
@@ -324,7 +324,7 @@ In the above sample, you can see the following credentials:
 
 To run the Azure Function locally, you first have to sign in to the Azure CLI:
 
-```bash 
+```bash title="Sign in to the Azure CLI"
 az login
 ```
 
@@ -332,7 +332,7 @@ az login
 
 Once logged in, you can run the Azure Function using the following command or press `F5` in Visual Studio Code:
 
-```bash 
+```bash title="Build and run the Azure Function"
 npm run build && func start
 ```
 

@@ -18,7 +18,7 @@ For a Mailchimp webhook, I had to parse the `application/x-www-form-urlencoded` 
 
 To make it easier next time, I wanted to share the code snippet with the rest of you. As you will notice, there isn't a lot of code required.
 
-```TypeScript
+```typescript
 import { AzureFunction, Context, HttpRequest } from "@azure/functions";
 import { parse, ParsedQs } from 'qs';
 

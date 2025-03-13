@@ -31,7 +31,7 @@ If you open the webview its developer tools in VS code, you can spot all these C
 
 Webviews can access all the theme colors. 
 
-{{< blockquote type="Info" text="You can find an overview of all the color references in the [VS Code theme color documentation](https://code.visualstudio.com/api/references/theme-color)." >}}
+{{< blockquote type="info" text="You can find an overview of all the color references in the [VS Code theme color documentation](https://code.visualstudio.com/api/references/theme-color)." >}}
 
 The notation of these variables is as follows; all use the `--vscode-` prefix, followed by the variable name. The dot (`.`) gets replaced by a dash (`-`).
 
@@ -47,7 +47,7 @@ The notation of these variables is as follows; all use the `--vscode-` prefix, f
 ...
 ```
 
-{{< blockquote type="Info" text="Here is a list of all the VS Code theme variables: [theme variables - gist](https://gist.github.com/estruyf/ba49203e1a7d6868e9320a4ea480c27a#file-vscode-theme-variables-css)" >}}
+{{< blockquote type="info" text="Here is a list of all the VS Code theme variables: [theme variables - gist](https://gist.github.com/estruyf/ba49203e1a7d6868e9320a4ea480c27a#file-vscode-theme-variables-css)" >}}
 
 In your extension CSS file, you can use these variables as follows:
 
@@ -130,6 +130,6 @@ updateCssVariables();
 mutationObserver.observe(document.body, { childList: false, attributes: true })
 ```
 
-{{< blockquote type="Info" text="In the `updateCssVariables` method, you can define the same logic from above." >}}
+{{< blockquote type="info" text="In the `updateCssVariables` method, you can define the same logic from above." >}}
 
 *Happy theming your extensions*

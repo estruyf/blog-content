@@ -66,7 +66,7 @@ When you want to add refinement to the results, you have a couple of options:
 
 These methods can be used on the refinement control. To test them, you can open up your browser developer tools (F12) and retrieve the refiner control like this:
 
-```JavaScript
+```javascript
 // Get the refiner control - the ID needs to be retrieved from your control
 var refiner = $getClientControl(document.getElementById("ID of the search refiner"))
 ```
@@ -75,7 +75,7 @@ I'll show you how to use these refiner methods with a simple example.
 
 ### addRefinementFilter
 
-```JavaScript
+```javascript
 refiner.addRefinementFilter('FileType', 'html')
 {"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,"m":null}]}
 ```
@@ -86,7 +86,7 @@ URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,
 
 With a single value:
 
-```JavaScript
+```javascript
 var refinerValue = {'FileType':['html']}
 refiner.addRefinementFilters(refinerValue)
 {"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,"m":null}]}
@@ -96,7 +96,7 @@ URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,
 
 With a multi-value:
 
-```JavaScript
+```javascript
 var refinerValue = {'FileType':['html','txt']}
 refiner.addRefinementFilters(refinerValue)
 {"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"and","k":false,"m":null}]}
@@ -106,7 +106,7 @@ URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"and","k":
 
 ### addRefinementFiltersWithOp
 
-```JavaScript
+```javascript
 var refinerValue = {'FileType':['html','txt']}
 refiner.addRefinementFiltersWithOp(refinerValue, 'or')
 {"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"or","k":false,"m":null}]}
@@ -114,7 +114,7 @@ refiner.addRefinementFiltersWithOp(refinerValue, 'or')
 
 URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"or","k":false,"m":null}]}`
 
-```JavaScript
+```javascript
 refiner.addRefinementFiltersWithOp(refinerValue, 'and')
 {"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"and","k":false,"m":null}]}
 ```
@@ -125,7 +125,7 @@ URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"and","k":
 
 With a multi-value:
 
-```JavaScript
+```javascript
 refiner.addRefinementFiltersJSON('{"FileType":["html"]}')
 {"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,"m":null}]}
 ```
@@ -136,7 +136,7 @@ URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"and","k":
 
 With a multi-value:
 
-```JavaScript
+```javascript
 refiner.addRefinementFiltersJSONWithOr('{"FileType":["html","txt"]}')
 {"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"or","k":false,"m":null}]}
 ```
@@ -145,7 +145,7 @@ URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"or","k":f
 
 ### updateRefiners
 
-```JavaScript
+```javascript
 var refinerValue = {'FileType':['html']};
 refiner.updateRefiners(refinerValue);
 ```
@@ -154,7 +154,7 @@ URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,
 
 ### updateRefinersJSON
 
-```JavaScript
+```javascript
 refiner.updateRefinersJSON('{"FileType":["html"]}')
 {"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,"m":null}]}
 ```
@@ -170,7 +170,7 @@ When you want to update your refiner with another value, you can make use of the
 
 ### updateRefiners
 
-```JavaScript
+```javascript
 var refinerValue = {'FileType':['txt']}
 refiner.updateRefiners(refinerValue)
 ```
@@ -179,7 +179,7 @@ URL outcome: `{"k":"test","r":[{"n":"FileType","t":[" txt"],"o":"and","k":false,
 
 ### updateRefinersJSON
 
-```JavaScript
+```javascript
 refiner.updateRefinersJSON('{"FileType":["txt"]}')
 ```
 
@@ -211,14 +211,14 @@ When you want to remove the whole refinement (first and second author), it is ea
 
 ### removeRefinementFilter
 
-```JavaScript
+```javascript
 refiner.removeRefinementFilter('FileType', 'html')
 ```
 
 ### removeRefinementFiltersJSON
 
 
-```JavaScript
+```javascript
 refiner.removeRefinementFiltersJSON('{"FileType":["html"]}')
 ```
 
@@ -227,14 +227,14 @@ refiner.removeRefinementFiltersJSON('{"FileType":["html"]}')
 
 Single value:
 
-```JavaScript
+```javascript
 var refinerValue = {'FileType':['txt']}
 refiner.removeRefinementFilters(refinerValue)
 ```
 
 Multi-value:
 
-```JavaScript
+```javascript
 var refinerValue = {'FileType':['html','txt']}
 refiner.removeRefinementFilters(refinerValue)
 ```
@@ -243,7 +243,7 @@ refiner.removeRefinementFilters(refinerValue)
 ### updateRefiners
 
 
-```JavaScript
+```javascript
 var refinerValue = {'FileType':null}
 refiner.updateRefiners(refinerValue)
 ```
@@ -252,7 +252,7 @@ refiner.updateRefiners(refinerValue)
 ### updateRefinersJSON
 
 
-```JavaScript
+```javascript
 refiner.updateRefinersJSON('{"FileType":null}')
 ```
 

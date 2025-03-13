@@ -61,7 +61,7 @@ Here are some screenshots of the CoercionType object from the various applicatio
 
 There are a couple of ways to achieve this, here is my approach:
 
-```JavaScript
+```javascript
 if (Office.CoercionType.Ooxml) {
   // Opened in Word
   $('#content-header').css('background-color', '#2B579A');
@@ -84,7 +84,7 @@ The code checks which CoercionType is available to use, and sets the background 
 *   **Matrix** is available in Excel and Word, but if the APP was opened in Word, the first statement was already true;
 *   **Text** this is available in every rich client application, but the last one that remains is Project.
 
-```JavaScript
+```javascript
 // The initialize function must be run each time a new page is loaded
 Office.initialize = function (reason) {
   $(document).ready(function () {

@@ -24,7 +24,7 @@ I host the documentation on Vercel. Vercel manages its build processes. You can 
 
 When I was working on the documentation, I thought it would be useless to go through a complete workflow run when only the documentation was touched. I thought this does not have to happen, so why not skip these actions/jobs on specific commits. That is why I specified to skip all jobs when my commit contains `#docs` in the commit message.
 
-{{< blockquote type="Info" text="You can use any text value that makes sense to you." >}}
+{{< blockquote type="info" text="You can use any text value that makes sense to you." >}}
 
 ## Skipping when commits contain a text value
 
@@ -40,10 +40,10 @@ jobs:
     if: ${{ !contains(github.event.head_commit.message, '#docs') }}
 ```
 
-{{< blockquote type="Important" text="Good thing to note is that the `contains` function is not case sensitive for the value to check." >}}
+{{< blockquote type="important" text="Good thing to note is that the `contains` function is not case sensitive for the value to check." >}}
 
 {{< caption-new "/uploads/2021/03/skip1.png" "Skipping all GitHub Actions when commit message contains `#docs`"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABVSURBVE3BQQ7CMAxFwedvV5HKCbrohvtfr9CQxGaFxIwd57PmnMiMMQaVSVbxLyKQu0MV2xZIsD923I1wwwVS8elv4nVdrLVorSGJ3m/WnGQufiTxBYY9IlQJe80IAAAAAElFTkSuQmCC" "1903" >}}
 
-{{< blockquote type="Info" text="You can read more about the GitHub Actions expression syntax at [context and expression syntax for GitHub Actions](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#about-contexts-and-expressions)." >}}
+{{< blockquote type="info" text="You can read more about the GitHub Actions expression syntax at [context and expression syntax for GitHub Actions](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#about-contexts-and-expressions)." >}}
 
 *Happy automating*

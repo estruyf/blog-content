@@ -16,7 +16,7 @@ comments: true
 
 In the previous post, I told you why we moved to Cloudflare CDN to serve our Azure Storage files instead of Azure CDN. During the testing of Cloudflare, I found out that CORS headers were not present for the files. Usually, this is not needed if you only retrieve one file, but if you want to retrieve another file, for instance, a template from your site, these cross-origin resource sharing headers are required.
 
-{{< blockquote type="Info" text="Read more about the move to Cloudflare here: [Use Cloudflare CDN for your Azure Storage caching](https://www.eliostruyf.com/devhack-cloudflare-cdn-azure-storage-caching/)." >}}
+{{< blockquote type="info" text="Read more about the move to Cloudflare here: [Use Cloudflare CDN for your Azure Storage caching](https://www.eliostruyf.com/devhack-cloudflare-cdn-azure-storage-caching/)." >}}
 
 On the Azure CDN, I configured the CORS as an extra header to send with the response, but on Cloudflare, you cannot configure it easily on the portal. Luckily there are two ways to provide CORS headers via Cloudflare:
 

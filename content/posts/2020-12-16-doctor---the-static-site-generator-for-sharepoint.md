@@ -37,11 +37,11 @@ After that meeting, I did a quick proof of concept with the CLI for Microsoft 36
 
 After some fiddling around, and some tests, it would work. All I had to do was create a new CLI for Microsoft 365 command, which allows updating the contents/properties of a web part.
 
-{{< blockquote type="Info" text="The required command to create was [spo page control set](https://pnp.github.io/cli-microsoft365/cmd/spo/page/page-control-set/)." >}}
+{{< blockquote type="info" text="The required command to create was [spo page control set](https://pnp.github.io/cli-microsoft365/cmd/spo/page/page-control-set/)." >}}
 
 Once I created `control set` command, my next task was to build an internal tool we could use during a CI/CD. As I saw value for others and as Valo, we want to help others in the community. I made this an open-source project.
 
-{{< blockquote type="Info" text="The reason for using the CLI for Microsoft is because it is feature-rich, and I do not want to reinvent the wheel. Using the CLI allows the tool to open many more possibilities in the future and build upon the shoulder of giants." >}}
+{{< blockquote type="info" text="The reason for using the CLI for Microsoft is because it is feature-rich, and I do not want to reinvent the wheel. Using the CLI allows the tool to open many more possibilities in the future and build upon the shoulder of giants." >}}
 
 ## What makes Doctor great?
 
@@ -57,7 +57,7 @@ The tool itself will keep the pages up to date on SharePoint. During this proces
 
 The process is straightforward but so powerful.
 
-{{< blockquote type="Info" text="Right now, the tool does only create and update. It will not remove any content. I have already added this as an enhancement to the issue list: [Specify if you allow pages to be removed on publish #7](https://github.com/estruyf/doctor/issues/7)." >}}
+{{< blockquote type="info" text="Right now, the tool does only create and update. It will not remove any content. I have already added this as an enhancement to the issue list: [Specify if you allow pages to be removed on publish #7](https://github.com/estruyf/doctor/issues/7)." >}}
 
 ## What makes it great to move your documentation with Doctor to SharePoint?
 

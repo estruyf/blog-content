@@ -27,7 +27,7 @@ This time I had the requirement to only add an action for a specific file type.
 
 The solution is rather simple. Here is the code from my previous post:
 
-```JavaScript
+```javascript
 SP.SOD.executeFunc("callout.js", "Callout", function () {
   var itemCtx = {};
   itemCtx.Templates = {};
@@ -72,13 +72,13 @@ With this piece of code you can add a custom callout action for all documents, s
 
 The file type can be retrieved like this:
 
-```JavaScript
+```javascript
 renderCtx.CurrentItem.File_x0020_Type
 ```
 
 Once you know the file type, you could implement the check like this:
 
-```JavaScript
+```javascript
 SP.SOD.executeFunc("callout.js", "Callout", function () {
   var itemCtx = {};
   itemCtx.Templates = {};

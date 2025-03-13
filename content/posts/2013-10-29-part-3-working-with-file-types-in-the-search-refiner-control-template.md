@@ -37,7 +37,7 @@ The first thing you'll notice is that the names of the file types are different.
 
 This comes from the fact that the default template has a function that does this remapping:
 
-```JavaScript
+```javascript
 function mapResultType(listData)
 {
   var map = { };
@@ -211,7 +211,7 @@ Another thing you'll can see, is that different refinement titles are shown. For
 
 The following code is used to combine these data types together:
 
-```JavaScript
+```javascript
 if (ctx.RefinementControl.propertyName === "FileType") {
   if (!$isNull(ctx.DataProvider.get_refinementInfo())) {
     if (!$isNull(ctx.DataProvider.get_refinementInfo()["contentclass"]))
@@ -235,7 +235,7 @@ if (ctx.RefinementControl.propertyName === "FileType") {
 
 When you adding this code to your display template, a modification is required to the loop that populates the selected and unselected arrays. The token mapping is already achieved with the remapping function, so it isn't needed anymore for the file type. The code needs to be changed to this:
 
-```JavaScript
+```javascript
 // Token mapping is already done for the FileType data
 if (ctx.RefinementControl.propertyName !== "FileType") {
   filter.RefinementTokens = [filter.RefinementToken];
@@ -255,7 +255,7 @@ When doing a refinement right now, you'll end up with no results. To solve this 
 
 For the file types an **OR** operation is required (because a file has only one file type). The **ShowRefiner** function call in the **unselected** loop looks like this:
 
-```JavaScript
+```javascript
 var addMethod = ctx.RefinementControl.propertyName === "FileType" ? "addRefinementFiltersJSONWithOr" : "addRefinementFiltersJSON";
 ShowRefiner(filter.RefinementName, filter.RefinementCount, refiners, addMethod);
 ```
@@ -272,7 +272,7 @@ Completely at the end of the URL you can see the **OR** operation.
 
 At the moment, the **Remove refinement** link is partly working. For some refiners it works, for some it doesn't. This is caused by the mapping with the **contentclass**, **ContentTypeId**, and **WebTemplate** data. At this moment the **Remove refinement** hyperlink removes the refinement for the current search data type (file type). When refining on one of the other data types, you'll need to remove the refinement for that data type. What you need to do is creating a link that removes the refinement for all data types that it can have:
 
-```JavaScript
+```javascript
 refinerRemoval[ctx.RefinementControl.propertyName] = null;
 if (ctx.RefinementControl.propertyName == "FileType")
 {
@@ -288,7 +288,7 @@ ShowRefiner('Remove refinement', null, refinerRemoval, 'updateRefinersJSON');
 
 Maybe you noticed it or not, but in the first screenshot XML and TXT file type are shown. Once I implemented the remapping function, it wasn't shown anymore. Inside the remapping function, there isn't a mapping for the XML or TXT file types, but you can add your own file types to the list like this:
 
-```JavaScript
+```javascript
 map["XML File"] = {
   "RefinerName": "FileType",
   "RefinementValues": ["xml"]

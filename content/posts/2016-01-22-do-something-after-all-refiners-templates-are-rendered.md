@@ -26,13 +26,13 @@ Now when you are creating your own refiner display templates and want to do some
 
 When you are using a search result web part, you have a **control**, **group** and **item** display template which will be used to render your results on the page. The control template is going to call the group template to render the group HTML with the following piece of code:
 
-```JavaScript
+```javascript
 ctx.RenderGroups(ctx)
 ```
 
 The group template starts rendering the items with the following piece of code:
 
-```JavaScript
+```javascript
 ctx.RenderItems(ctx)
 ```
 
@@ -50,7 +50,7 @@ Once the refinement panel is added to the page, the SharePoint JavaScript render
 
 All this is achieved by the **Srch.Refinement.prototype.render()** function. The code of the render function looks like this:
 
-```JavaScript
+```javascript
 render: function Srch_Refinement$render() {
     this.$4q_4();
     // Render the refinement control panel
@@ -92,7 +92,7 @@ The first approach would require a lot of changes to your default refiner templa
 
 Here is the code that can be added to your refinement control template:
 
-```JavaScript
+```javascript
 if (typeof Srch.Refinement !== "undefined") {
     Srch.Refinement.prototype.originalRender = Srch.Refinement.prototype.render;
     Srch.Refinement.prototype.render = function() {

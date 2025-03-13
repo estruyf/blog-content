@@ -36,7 +36,7 @@ In this article I give you an overview of the approaches on how to add CSS code 
 
 Using the $includeCSS function in your display templates is the easiest way to load required CSS files for styling your results. Be aware that could be a small delay for loading the CSS files (when the CSS files are cached by the browser, the delay is negligible), if the delay does not matter you could make use of this function like this:
 
-```JavaScript
+```javascript
 $includeCSS(this.url, "~sitecollection/_catalogs/masterpage/Project/carousel.css");
 ```
 
@@ -56,7 +56,7 @@ In a display template you are allowed to have one main DIV element (in which you
 
 Here is the required code that you have to add in the **script block** of your display template:
 
-```JavaScript
+```javascript
 Type.registerNamespace('loadCssDT');
 loadCssDT = function () {
     var added = false;

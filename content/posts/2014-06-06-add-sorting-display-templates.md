@@ -29,7 +29,7 @@ First of all, what you need to do if you want to add sorting to your display tem
 
 For this post I'll use the creation date, which is linked to the **Created** managed property.
 
-```JavaScript
+```javascript
 var availableSorts = ctx.DataProvider.get_availableSorts();
 availableSorts.push({"name":"Created-ASC","sorts":[{"p":"Created","d":0}]});
 availableSorts.push({"name":"Created-DES","sorts":[{"p":"Created","d":1}]});

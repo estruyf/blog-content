@@ -66,7 +66,7 @@ When Node.js is installed on your machine, you can start making use of it. The e
 
 In your folder, create a new JS file "hello.js" and paste the following content in the newly created file:
 
-```JavaScript
+```javascript
 console.log("Hello, I'm executed by Node.js.");
 ```
 
@@ -82,7 +82,7 @@ Running this command results in the following output:
 
 This is a very simple example of just logging something to the command prompt. The next step would be to try and run something in the browser. To do this, create a new file called "web.js" and insert the following contents:
 
-```JavaScript
+```javascript
 const http = require('http');
 
 const server = http.createServer((req, res) => {
@@ -174,7 +174,7 @@ Once executed, all the required modules for this package are downloaded into the
 
 Create a new file called "express.js" and insert the following content:
 
-```JavaScript
+```javascript
 const express = require('express')
 var app = express()
 

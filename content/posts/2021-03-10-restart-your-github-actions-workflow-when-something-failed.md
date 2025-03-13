@@ -23,17 +23,17 @@ This process is something [doctor](https://getdoctor.io) supports. The only thin
 
 Restarting the GitHub Actions workflow can be achieved by using the `workflow_dispatch` event trigger.
 
-{{< blockquote type="Info" text="[Events that trigger workflows](https://docs.github.com/en/actions/reference/events-that-trigger-workflows)" >}}
+{{< blockquote type="info" text="[Events that trigger workflows](https://docs.github.com/en/actions/reference/events-that-trigger-workflows)" >}}
 
 First of all, you need to add the `workflow_dispatch` event trigger to your GitHub Actions workflow.
 
-{{< blockquote type="Info" text="Check out the `doctor` flow here: [release.yml on GitHub](https://github.com/estruyf/doctor/blob/main/.github/workflows/release.yml)." >}}
+{{< blockquote type="info" text="Check out the `doctor` flow here: [release.yml on GitHub](https://github.com/estruyf/doctor/blob/main/.github/workflows/release.yml)." >}}
 
 When that trigger is in place, all you need is to implement the job to run when a failure happens that restart your flow. The job itself is nothing more than an API call to the GitHub API, which triggers the workflow. 
 
 The API URL is: `https://api.github.com/repos/{user}/{repo}/actions/workflows/{workflow-id}/dispatches`.
 
-{{< blockquote type="Important" text="You can find the workflow its ID by navigating to the following URL `https://api.github.com/repos/estruyf/doctor/actions/workflows`." >}}
+{{< blockquote type="important" text="You can find the workflow its ID by navigating to the following URL `https://api.github.com/repos/estruyf/doctor/actions/workflows`." >}}
 
 {{< caption-new "/uploads/2021/03/restart2.png" "Get the workflow ID"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAC0SURBVH3BwU6EMBRA0Vv6oC1QQB0S///PjOtBIExsIOUpOzMLzzHrumrOmWEY+I9Ya5mmiXme8d4TQqDve56JMQbnHDln9n3nOA5SSlxUFREhhICwfMHnB+b1RvvyRl3XeO95Jmfs+b69c3nc7yzLQtM0XFQVESHGiFhriTFSFAXOOaqqQkT4yxiDnOfJtm3knCmKgrZt6boOVeViraUsS+QX4ziSc0ZVUVVSSlxUFVUlxsgPXARKXxyQX1QAAAAASUVORK5CYII=" "771" >}}
 
@@ -59,7 +59,7 @@ restart_when_failed:
         -d '{"ref": "${{ github.ref }}" }'
 ```
 
-{{< blockquote type="Info" text="By checking for the `schedule` event type, I can make sure it does not go in an endless loop of restarting the workflow." >}}
+{{< blockquote type="info" text="By checking for the `schedule` event type, I can make sure it does not go in an endless loop of restarting the workflow." >}}
 
 In the code block, there are two variables in use. One is the branch ref from on which it was running. You need this value for restarting the flow on the right branch. 
 

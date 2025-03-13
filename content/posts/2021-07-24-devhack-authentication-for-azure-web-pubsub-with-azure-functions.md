@@ -21,7 +21,7 @@ keywords:
 
 This week, I tested out the Azure Web PubSub service, which is still in preview when writing this article. The Web PubSub service is a real-time messaging service that allows you to use the WebSockets APIs and the publish-subscribe pattern. It is excellent for collaborative applications.
 
-{{< blockquote type="Documentation" text="You can find the developer documentation at [Azure Web PubSub Service - Github](https://azure.github.io/azure-webpubsub/)." >}}
+{{< blockquote type="info text="You can find the developer documentation at [Azure Web PubSub Service - Github](https://azure.github.io/azure-webpubsub/)." >}}
 
 ## What can do service do?
 
@@ -39,6 +39,6 @@ For the Web PubSub service, I created an `authenticate` function. Before calling
 
 Inside the function, the OAuth token is retrieved from the request headers, decoded, and validated. 
 
-{{< blockquote type="Info" text="You can find a sample version of the function on my sample repository [Azure auth function for Web PubSub](https://github.com/estruyf/azure-samples/tree/main/azure-pubsub-azurefunctions)." >}}
+{{< blockquote type="info" text="You can find a sample version of the function on my sample repository [Azure auth function for Web PubSub](https://github.com/estruyf/azure-samples/tree/main/azure-pubsub-azurefunctions)." >}}
 
 The function's code decodes the OAuth token and uses the user's object ID to request an Authentication Token URL from the Web PubSub service. When a URL is retrieved, it gets returned. This URL can be used within your client-side application to open the WebSocket.

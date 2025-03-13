@@ -12,8 +12,7 @@ categories: []
 comments: true
 ---
 
-
-For the last 3,5 years, I have been working at Valo. I started as a developer and eventually became the Engineering Lead. Every single day I enjoyed working at Valo. It has been an exciting ride. 
+For the last 3,5 years, I have been working at Valo. I started as a developer and eventually became the Engineering Lead. Every single day I enjoyed working at Valo. It has been an exciting ride.
 
 Oh, and we all change over the years. That is what you can see in the following pictures.
 
@@ -29,7 +28,7 @@ Before I sign out from Teams, I will first tell you more about how my story at V
 
 It all started with a chat with [Sébastien Levert](https://twitter.com/sebastienlevert). He had a question for me (again), and I said: "if you have one for me, I have one for you as well this time." His question was technology-related. Where my question was: "do you have an opening in the Valo team for me?"
 
-I asked the question at the right time. The conversations with Valo started, and I got in just before the end of 2017. 
+I asked the question at the right time. The conversations with Valo started, and I got in just before the end of 2017.
 
 {{< caption-new "/uploads/2021/03/valo2.jpg" "Seb and I on a trip from Norway to Finland"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAA0ACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP0x/wCCnn/BQUeNPCet/Dv4d634+0Tw5ba/Bb6/448AePIfBXifXb61h1i3t9Mgm0vWLHxWPC9pcLeajeSWEVrpMM9lYtctf2uvPPq/5RluW5vxLjsVjMdVwn1qnhvb08HjIudLD04ulKm3H2Nemq1nGlRo+yUKaqTi/YtOR+gYXDZfw9SwOJzfB4p5djY16VCrhZR56lXklea/fRmlGX7ycqk1UqS9nUtUpo+J9P8AH3/BPm/sLG+u/DV5qd1e2dtd3Opa34r+JV3rWoXFzCk019q91pPxEstKudUu5HafULjTLO00+a7klksrWC2aOJO+WW8QQlKEaVTljJxj7Klh/ZWi7L2fNi4S9nZe5zRi+W14p6LNZvklleTTsrqVuZO32rUJLm72lJX+09z+ZD9of48/FPRviZa+OYPGGr3el6DrmvLp/g/UJYJtMjhvb5U1eNrmC2tpHfUxZ28sjvbssF3GLqKPzHmEv39WNOjjsbiaFKlQq4icY1506cIzrKmn7N1XGMVOUE2lJxv0vZJHwlDMMbjMHg8vxmJr4rDYKM5YSnWrVakMN7ZU3VjRjOc/ZxnyxvFPlTje12znZ/2h9SuJ5p/+EO8Mr50sk21oQ7L5jl9rOIUDkbsFgiBjztXOByfXan8lP/wFf5HasNCy96ey+1L/ADP/2Q==" "2316" >}}
 
@@ -79,7 +78,7 @@ The last year at Valo, I worked as the engineering lead. This role is something 
 
 {{< caption-new "/uploads/2021/03/valo6.jpg" "The Valo team in Lisbon"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APCNS/Z71Twz4/uvh98OtC8S+KPDHha404adr2lat8N/C+oahB4p0nxHd2fiK4/4SfS725tdYh1GZNLuvDv2W68HSCe21K20ezlXV5r78Rp8PcOQw9OGJhHG1OSpKc6lGo1OvTdJ4dyk3GqlH2alpOfJKVSMUozSp/QUJYenGEZ0Kc5UqsZxnUvKo3eCqVG5RrLmSulC8YW2hHWM/wBEU/4Jtfs9XqreXnxh+Othd3ai5urGy1vRIrOzuZwJZ7S0jj8FyRx21vK7QwJHJIiRIiq7KAx+Sl4f5E22qz1beuGpyer6ylTcm/OTbe7bepm1ResauIjH7MYVLRiukYpwuopaJdFY/wD/2Q==" "1600" >}}
 
-Honestly, the last year was a rollercoaster. There were so many things that happened. The first months of 2020 were great, but then came COVID-19. If that was not enough, the father of Valo, Jari Pullinen, passed away. This moment was a big emotional time at Valo. Luckily we managed to get stability. 
+Honestly, the last year was a rollercoaster. There were so many things that happened. The first months of 2020 were great, but then came COVID-19. If that was not enough, the father of Valo, Jari Pullinen, passed away. This moment was a big emotional time at Valo. Luckily we managed to get stability.
 
 ## Afterword: Thanks to all colleagues
 
@@ -97,7 +96,7 @@ For now, I want to end it with huge thanks to Valo for all the great memories an
 
 {{< caption-new "/uploads/2021/03/valo14.jpg" "The Polaroid pictures that were hanging in the Helsinki office"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APk/w/8ACz4ha7Jd+OLeHxTY6bcDSNJXwxe+HLvSWsLuSKVLw6tPommavfzTaJqH2TT5te02ykso9MR3udNtr5dSv9A/M8NjMio1atOcsFP9/UnGMZYetXhGdSdaXs51kpwpVJOfLKcFKDjUjGCiopfpOPwGPqU/bRjV5ZYKE3Uk4woVHRpOlFqnSqOnOt7ql7KlOSmp0pRqOMve94h/ZZ+J6xRA+J/DshEaAyJ4w+KUaOQoBdY9P1RbBFY8qliq2aghbYCEIK+ojVyCpFVGshvNKb9rhsFKreS5n7SSr2lU199rRyu1ofnFT+1YVKkYwz1RjOUYqlW5aSSk0lTjKk5RppL3IyfMo2T1P//Z" "4032" >}}
 
-{{< blockquote type="Funny fact" text="This is what happens if you give me a camera at a Christmas party." >}}
+{{< blockquote type="note" text="This is what happens if you give me a camera at a Christmas party." >}}
 
 Now it is time that I `sign out`.
 
@@ -105,4 +104,4 @@ Now it is time that I `sign out`.
 
 **Elio**
 
-PS: you can still hire me as a meeting entertainer. 
+PS: you can still hire me as a meeting entertainer.

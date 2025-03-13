@@ -28,7 +28,7 @@ Suddenly, I noticed the builds were failing because some files were missing. One
 
 While unaware of this change, I looked into the issue and quickly discovered that it was due to the change in the `actions/upload-artifact` action. To fix this, I had to add the `include-hidden-files` input to the action.
 
-```yaml 
+```yaml  3
 - uses: actions/upload-artifact@v4
   with:
     include-hidden-files: true

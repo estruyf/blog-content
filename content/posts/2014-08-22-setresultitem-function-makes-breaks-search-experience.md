@@ -23,7 +23,7 @@ A couple of days ago I was talking with [Mikael Svenson](http://techmikael.blogs
 
 The function is only used in the search item display templates (search result web part). If you open for example the **Item_Default.html** template, you will find the following function call:
 
-```JavaScript
+```javascript
 $setResultItem(itemId, ctx.CurrentItem);
 ```
 

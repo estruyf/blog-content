@@ -17,7 +17,7 @@ Last week, just went I took my bike for a ride. I got an idea. What if I create 
 
 The store's idea would be that clients would create their own personalized sticker with their name and logo. I decided to go and make a website with React.
 
-{{< blockquote type="Info" text="I do not limit it to only bikes, but just because I love cycling, this is my main focus." >}}
+{{< blockquote type="info" text="I do not limit it to only bikes, but just because I love cycling, this is my main focus." >}}
 
 The result is this website - [https://pimpyourownbike.com]()
 
@@ -45,7 +45,7 @@ The documentation is very detailed and provided all the information which I requ
 
 Inside the documentation of their [built-in CSS support](https://nextjs.org/docs/basic-features/built-in-css-support) I found a reference to a GitHub sample project which shows how to use Tailwind CSS. 
 
-{{< blockquote type="Info" text="the related project can be found here:  [https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss](https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss)." >}}
+{{< blockquote type="info" text="the related project can be found here:  [https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss](https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss)." >}}
 
 What I like about this approach is that it does not require any difficult configuration changes. Just used the typical way of using Tailwind in your project with PostCSS.
 
@@ -57,7 +57,7 @@ Also, automated bundling and chuck creation is a pretty nice feature. Bonus poin
 
 {{< caption-new "/uploads/2020/11/nextjs3.png" "My Next.js config file"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAABySURBVH3BQQrCMBCG0e8fU2isuBMEwRN4/wu5cicI2iaTjOQA+p6myy28VvZ5RiamKVFKJecZd8dr4/1ZSdE7w+E0g8S6dZZjxsygifJKLDkwyRgUoAgsYKegN6duTvOGopMgGB73J78UwCRjuJ4T/3wBjkYvYqBPNlMAAAAASUVORK5CYII=" "243" >}}
 
-{{< blockquote type="Important" text="Even the scripts in `package.json` file kept unchanged." >}}
+{{< blockquote type="important" text="Even the scripts in `package.json` file kept unchanged." >}}
 
 ## The magic of `getStaticProps`
 
@@ -67,7 +67,7 @@ When I was reading the documentation, I found the `getStaticProps` static genera
 
 In my scenario, while building the project, the API will get called, and the retrieved data will be provided to the component. Dynamically create static sites.
 
-{{< blockquote type="Info" text="read more about the method: [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation)" >}}
+{{< blockquote type="info" text="read more about the method: [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation)" >}}
 
 ## APIs/APIs/APIs
 

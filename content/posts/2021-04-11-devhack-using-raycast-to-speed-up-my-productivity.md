@@ -20,7 +20,7 @@ It does not happen often I write an article about a tool, but this time, I felt 
 
 Many people use Alfred, and I have been using Alfred since I had my first Macbook. The biggest advantage of these applications is that you can quickly search your apps or execute tasks. What differentiates Raycast is that it is free, and it is straightforward to add custom scripts. You can write these scripts in `bash`, `python`, `nodejs`, and more.
 
-{{< blockquote type="Important" text="They listen to feedback. I submitted feedback about the font size. In my opinion, it was a bit too small. In less than a week, the Raycast team released an update with this functionality implemented. Not only that, the team even sent an email thanking me for the feedback. ❤️" >}}
+{{< blockquote type="important" text="They listen to feedback. I submitted feedback about the font size. In my opinion, it was a bit too small. In less than a week, the Raycast team released an update with this functionality implemented. Not only that, the team even sent an email thanking me for the feedback. ❤️" >}}
 
 ## How I got interested
 
@@ -32,7 +32,7 @@ We talked a bit, and I saw she was working at Raycast, so I asked what it was. T
 
 Apart from searching your applications, the most significant productivity boost it will give you is the custom scripts you can add. For sure, you will have many manual tasks you have to do daily to start your work.
 
-{{< blockquote type="Info" text="Follow the steps in the following repository to get started with custom script creation for Raycast: [Raycast Script Commands](https://github.com/raycast/script-commands)." >}}
+{{< blockquote type="info" text="Follow the steps in the following repository to get started with custom script creation for Raycast: [Raycast Script Commands](https://github.com/raycast/script-commands)." >}}
 
 For instance, what I do frequently is open the Azure Portal. As I have various accounts, I always need to open the correct browser with the right profile.
 
@@ -62,7 +62,7 @@ else
 fi
 ```
 
-{{< blockquote type="Info" text="The script is simple. In my case, I check my hostname to know where I am running the script as I work on two machines." >}}
+{{< blockquote type="info" text="The script is simple. In my case, I check my hostname to know where I am running the script as I work on two machines." >}}
 
 {{< caption-new "/uploads/2021/04/raycast2.png" "Run the open Azure Portal script"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABASURBVDXBMQ6AMAwEwbVCqvBF/78kBQIpyvmomInM9DUnP+1Naw1JqApsxjg57uclgIhAErZZa1FV2Kb3jrT5AHRgJLx7oSb+AAAAAElFTkSuQmCC" "789" >}}
 
@@ -134,6 +134,6 @@ open $monthDir
 
 {{< caption-new "/uploads/2021/04/raycast3.png" "Quickly open the blog images folder"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA6SURBVGXBQQ6AMAhFwYdpY29p759wAAj0G9fO2LO33J0fiT6Hy4x7LUZEYmYg0d1Ioqr4SGLMSUbyAi/bHcqPxv+8AAAAAElFTkSuQmCC" "790" >}}
 
-{{< blockquote type="Tip" text="For the icon, you can add a base64 encoded image. That way, you do not have to link it to a local or online file." >}}
+{{< blockquote type="tip" text="For the icon, you can add a base64 encoded image. That way, you do not have to link it to a local or online file." >}}
 
 *I hope [Raycast](https://raycast.com/) will improve your flow as well*

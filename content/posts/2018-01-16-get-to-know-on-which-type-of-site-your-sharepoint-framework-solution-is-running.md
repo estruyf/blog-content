@@ -21,7 +21,7 @@ In classic SharePoint, we could retrieve this information from the _**spPageCont
 
 The site type can be retrieved as follows:
 
-```JavaScript
+```javascript
 this.context.pageContext.web.templateName
 ```
 

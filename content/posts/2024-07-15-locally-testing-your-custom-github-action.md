@@ -35,7 +35,7 @@ If you don't have one yet, you can use the [JavaScript Action Template](https://
 
 To use the `@github/local-action` command-line tool, you need to install it first or use the `npx` command to run it without installing it.
 
-```bash 
+```bash title="Install the @github/local-action command-line tool"
 npm install -g @github/local-action
 
 # or
@@ -54,7 +54,7 @@ To use the command-line tool, you need to create an environment file to define t
 
 Your GitHub Action might require some input variables to run. You can define these variables in the environment file by adding the `INPUT_` prefix to the variable name.
 
-```bash 
+```bash title="Adding input variables"
 INPUT_<action-variable-name>=<VALUE>
 
 # Example for the Playwright Issue Creator action
@@ -72,7 +72,7 @@ You can also define the GitHub variables in the environment file. These variable
 
 In my case, I need to set the `GITHUB_REPOSITORY` variable to get the `repo` from the `@actions/github` its `context` object.
 
-```bash 
+```bash title="Adding GitHub variables"
 GITHUB_REPOSITORY=estruyf/github-actions-testing
 ```
 
@@ -80,7 +80,7 @@ GITHUB_REPOSITORY=estruyf/github-actions-testing
 
 You can enable debugging by setting the `ACTIONS_STEP_DEBUG` variable to `true`.
 
-```bash 
+```bash title="Enable debugging"
 ACTIONS_STEP_DEBUG=true
 ```
 
@@ -91,7 +91,7 @@ When your action writes a job summary, you must do the following configuration t
 - Create a new file to write the job summary. For example: `summary.md`.
 - Add the `GITHUB_STEP_SUMMARY` with the path to your summary file.
 
-```bash 
+```bash title="Link the summary file to enable writing to the job summary"
 GITHUB_STEP_SUMMARY=summary.md
 ```
 
@@ -101,7 +101,7 @@ GITHUB_STEP_SUMMARY=summary.md
 
 Once you have installed the command-line tool and created the `.env` file, you can run the following command to test your custom GitHub Action locally.
 
-```bash 
+```bash title="Execute the local-action command"
 # If you have the command-line tool installed
 local-action <path-to-your-action> <path-to-your-entrypoint> <path-to-environment-file>
 

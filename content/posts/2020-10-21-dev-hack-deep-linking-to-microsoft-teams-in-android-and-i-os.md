@@ -15,7 +15,7 @@ comments: true
 
 This week #DevHack is about opening Microsoft Teams deep links from your solution/app. For a new proof of concept, I wanted to open a chat/app from my PWA app quickly. Luckily Microsoft Teams supports this with their `deep links` functionality.
 
-{{< blockquote type="Info" text="Read more about Microsoft Teams deep links here: [deep links documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/deep-links)" >}}
+{{< blockquote type="info" text="Read more about Microsoft Teams deep links here: [deep links documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/deep-links)" >}}
 
 In the documentation, it states that you must use the `https://teams.microsoft.com/l/...` URL. The URL point to `chats`, `meetings`, `apps`, and more. In your browser, this works fine. For instance, if you use this URL in an anchor element: `https://teams.microsoft.com/l/chat/0/0?users=<email>`. It will automatically open Microsoft Teams chat for the specified user.
 

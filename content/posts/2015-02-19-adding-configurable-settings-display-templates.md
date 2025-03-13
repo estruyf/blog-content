@@ -75,7 +75,7 @@ The next thing to do is retrieving the values that or either set by default or i
 
 Retrieving the settings with $getItemValue is similar as retrieving managed property value:
 
-```JavaScript
+```javascript
 // Retrieve the setting
 var setting1 = $getItemValue(ctx, "setting_Value1");
 // Retrieve the setting value
@@ -86,7 +86,7 @@ var setting1_value = setting1.propertyMappings.toString();
 
 Another approach is to retrieve the settings from the DisplayTemplateData object on your context in your display template. The DisplayTemplateData object gets created at the top in each display template, but in the item display template an extra property gets added to the object that contains the managed property mappings for the template. The code for retrieving the property mappings looks like this:
 
-```JavaScript
+```javascript
 var properties = "";
 // Retrieve the properties from the display template data variable
 var dtd = ctx['DisplayTemplateData'];
@@ -97,7 +97,7 @@ if (!Srch.U.n(dtd) && !Srch.U.n(dtd['ManagedPropertyMapping'])) {
 
 Now if a user customizes the property mappings in the web part settings, this will not be change in the template of course, these changes are added to the web part. That means that they need to be retrieved from the client control object. So the next step to do is checking if there are some mappings set on the client control, if that is the case the properties variable will get overwritten with the client control mappings.
 
-```JavaScript
+```javascript
 // Retrieve the properties from the client control
 var cc = ctx['ClientControl'];
 if (!Srch.U.n(cc)) {
@@ -112,7 +112,7 @@ if (!Srch.U.n(cc)) {
 
 Now that the properties are retrieved, you are able to retrieve the settings from the properties object like this:
 
-```JavaScript
+```javascript
 var setting1 = properties["setting_Value1"];
 var setting2 = properties["setting_Value2"];
 ```

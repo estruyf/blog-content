@@ -65,7 +65,7 @@ When you want to built-in this functionality into your SharePoint Framework proj
 
 **Default gulpfile.js contents**
 
-```JavaScript
+```javascript
 'use strict';
 
 const gulp = require('gulp');
@@ -76,7 +76,7 @@ build.initialize(gulp);
 
 **Gulpfile.js contents when using the _gulp-spsync-creds_ plugin**
 
-```JavaScript
+```javascript
 'use strict';
 
 const gulp = require('gulp');
@@ -106,7 +106,7 @@ build.initialize(gulp);
 
 **Gulpfile.js contents when using the _gulp-spsync_ plugin**
 
-```JavaScript
+```javascript
 'use strict';
 
 const gulp = require('gulp');

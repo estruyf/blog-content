@@ -49,7 +49,7 @@ Once you have modified these properties, it is time to change the template a bit
 
 To start you will need to update your template URLs in the display template because the reference will be set to the old file.
 
-```JavaScript
+```javascript
 ctx['DisplayTemplateData']['TemplateUrl']='~sitecollection\u002f_catalogs\u002fmasterpage\u002fDisplay Templates\u002fContent Web Parts\u002fItem_TwoLines_Custom.js';
 
 Srch.U.registerRenderTemplateByName("~sitecollection\u002f_catalogs\u002fmasterpage\u002fDisplay Templates\u002fContent Web Parts\u002fItem_TwoLines_Custom.js", DisplayTemplate_dee7d9226aa44ed7b709d342fec837ee);

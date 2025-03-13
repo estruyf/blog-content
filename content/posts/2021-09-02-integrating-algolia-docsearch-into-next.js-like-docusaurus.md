@@ -27,11 +27,11 @@ The first time that I noticed Algolia was on the  [Docusaurus](https://docusauru
 
 It happens to be that Algolia also provides a search implementation for documentation site via [DocSearch](https://docsearch.algolia.com/). They will crawl your content, and you need to implement the controls on your website.
 
-{{< blockquote type="Important" text="They do this only for documentation, and the website needs to be publically available. Besides that, you need to apply, and this can take a while." >}}
+{{< blockquote type="important" text="They do this only for documentation, and the website needs to be publically available. Besides that, you need to apply, and this can take a while." >}}
 
 While waiting to have the Front Matter site approved, I found that you can run the services yourself. 
 
-{{< blockquote type="Info" text="[Run DocSearch by yourself](https://docsearch.algolia.com/docs/run-your-own)" >}}
+{{< blockquote type="info" text="[Run DocSearch by yourself](https://docsearch.algolia.com/docs/run-your-own)" >}}
 
 In this article, I will explain what I did to make it all work.
 
@@ -68,7 +68,7 @@ export const Searchbox: React.FunctionComponent<{}> = ({}: React.PropsWithChildr
 };
 ```
 
-{{< blockquote type="Important" text="As you can see, the variables will be used in the `DocSearch` component." >}}
+{{< blockquote type="important" text="As you can see, the variables will be used in the `DocSearch` component." >}}
 
 Once integrated, you need to add one final thing, the CSS. Otherwise, the components from DocSearch would not be styled.
 
@@ -88,4 +88,4 @@ The final step is to get your data crawled and push the records to Algolia. If y
 
 {{< caption-new "/uploads/2021/09/docsearch3.png" "DocSearch search suggestions on Front Matter"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAYAAABGbhwYAAAAAklEQVR4AewaftIAAADZSURBVHXBTU7DQAyA0c9jNyT9UVsVdlyBNfe/C0sCAjXTpDOOUYW6gMJ78vj0HA+bNa/9G8K3AEQgAkSEpIoVr7z0PYwj/0mSMN57Gk1AkIdMdee3RdNighARIIK7I9za73dYWTRY2xDjhKjxF1XDtBYWo0PAGZgjuBGB2WpJimAshW6zRhHyMFC9chWAuc+gilYn58yViHIlKWGRB9yUWWC1bLmICC6maaKUgteCze2SGkEMR85z8FMi2R0fn0ds23SUeiZtD8xzQUSZphPVna7ruD8cyKeRL9KWbiHJukjLAAAAAElFTkSuQmCC" "577" >}}
 
-{{< blockquote type="Info" text="In my case, I run the crawler on my Synology NAS every hour." >}}
+{{< blockquote type="info" text="In my case, I run the crawler on my Synology NAS every hour." >}}

@@ -30,7 +30,7 @@ This dependency allows you to run multiple commands sequentially or in parallel.
 
 Here is my default configuration:
 
-```JSON
+```json
 "scripts": {
   "start": "npm-run-all --parallel start:*",
   "start:dev": "react-scripts start",

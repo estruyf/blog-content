@@ -31,7 +31,7 @@ With this new theming engine, Microsoft makes use of JavaScript to let SharePoin
 
 Here is an example of the JavaScript registration code on the page:
 
-```JavaScript
+```javascript
 SPThemeUtils.RegisterCssReferences([{
   "Url": "\u002f_layouts\u002f15\u002f1033\u002fstyles\u002fThemable\u002fcorev15.css?rev=3SPC0\u00252BvXtHg59ywd1lIxqg\u00253D\u00253DTAG154",
   "OriginalUrl": "\u002f_layouts\u002f15\u002f1033\u002fstyles\u002fThemable\u002fcorev15.css?rev=3SPC0\u00252BvXtHg59ywd1lIxqg\u00253D\u00253DTAG154",
@@ -74,7 +74,7 @@ The new theming engine introduces a new object called **SPThemeUtils** and is av
 
 If you want to know if your site is currently using the new theming engine, you could use the **UseClientSideTheming** method in your browser console (developer tools).
 
-```JavaScript
+```javascript
 SPThemeUtils.UseClientSideTheming()
 ```
 
@@ -94,7 +94,7 @@ If you want to make use of this new theming engine with your custom stylesheets,
 
 Here is some sample code of how you can approach it via JavaScript:
 
-```JavaScript
+```javascript
 var styleUrl = 'Link-to-your-stylesheet';
 // Add the stylesheet to the page
 var head = document.head;

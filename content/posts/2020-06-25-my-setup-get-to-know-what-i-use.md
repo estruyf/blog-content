@@ -18,7 +18,7 @@ preview: "/social/0a66552c-9276-45a1-8c22-7e4d9cc5ce98.png"
 
 In this article, I will tell you more about what I use during my daily work. Feel free to let me know what you are using or what you recommend. 
 
-{{< blockquote type="Important" text="Updated the article in July 2021 with the new office setup." >}}
+{{< blockquote type="important" text="Updated the article in July 2021 with the new office setup." >}}
 
 ## The 2021 setup
 

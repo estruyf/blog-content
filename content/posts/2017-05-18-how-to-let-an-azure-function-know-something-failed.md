@@ -26,7 +26,7 @@ While I was reading through the Azure Functions Node.js reference documentation,
 
 Here is an example of how you can use it:
 
-```JavaScript
+```javascript
 module.exports = function (context, myQueueItem) {
   context.log(`Start with the following message: "${myQueueItem}"`);
   context.log(`Dequeue count: ${context.bindingData.dequeueCount}`);

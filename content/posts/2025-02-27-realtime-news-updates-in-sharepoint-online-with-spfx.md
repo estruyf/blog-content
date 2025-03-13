@@ -34,7 +34,7 @@ The provided code sample demonstrates how to create a React functional component
 
 The `fetchPages` function retrieves the latest pages from the SharePoint site's sitepages library using the SPHttpClient.
 
-```typescript 
+```typescript title="Fetching SharePoint Pages"
 const fetchPages = React.useCallback(async () => {
   const apiUrl = `${context.pageContext.web.absoluteUrl}/_api/sitepages/pages?$select=Title,Description,AbsoluteUrl&$top=5&$orderby=Modified desc`;
   const response = await context.spHttpClient.get(apiUrl, SPHttpClient.configurations.v1);
@@ -52,7 +52,7 @@ const fetchPages = React.useCallback(async () => {
 
 The `fetchNotificationUrl` function constructs the API URL to retrieve the `notificationUrl` for the specific list. This URL is essential for establishing a WebSocket connection.
 
-```typescript 
+```typescript title="Fetch the notification URL from SharePoint"
 const fetchNotificationUrl = React.useCallback(async () => {
   const listId = context.pageContext.list?.id;
   if (!listId) {
@@ -88,7 +88,7 @@ npm install socket.io-client
 
 Then, you can establish the WebSocket connection as shown below:
 
-```typescript 
+```typescript title="Establishing a WebSocket connection"
 React.useEffect(() => {
   if (!notificationUrl) {
     return;
@@ -118,7 +118,7 @@ React.useEffect(() => {
 
 The `useEffect` hook ensures that the component fetches the initial set of pages and the notification URL when it mounts.
 
-```typescript 
+```typescript title="Initializing the data fetching"
 React.useEffect(() => {
   fetchPages();
   fetchNotificationUrl();
@@ -129,7 +129,7 @@ React.useEffect(() => {
 
 Finally, the component renders the list of pages and displays a loading indicator while fetching data.
 
-```html 
+```html title="Rendering the UI"
 <div>
   <h3>Real-Time News</h3>
   <p>Status: {listening ? 'Listening for changes...' : 'Not connected'}</p>
@@ -151,7 +151,7 @@ The outcome of this implementation looks like this:
 
 Here is the complete React functional component that implements real-time news updates in SharePoint Online using SPFx:
 
-```typescript 
+```typescript title="Real-time news component"
 import { WebPartContext } from '@microsoft/sp-webpart-base';
 import * as React from 'react';
 import { io } from 'socket.io-client';
@@ -246,7 +246,7 @@ While your current implementation avoids the need for additional permissions by 
 
 To use Microsoft Graph for real-time notifications, you would need to request permissions such as `Sites.Read.All` and `Files.Read`. These permissions must be declared in your solution's `package-solution.json` file under the `webApiPermissionRequests` property:
 
-```json 
+```json title="package-solution.json"
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {

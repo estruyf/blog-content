@@ -57,7 +57,7 @@ To install these two dependencies, execute the following command: `npm install e
 
 Now you are ready to write some tests. Override the contents of the test file, with the following code:
 
-```JavaScript
+```javascript
 /// <reference types="mocha" />
 /// <reference types="sinon" />
 
@@ -96,7 +96,7 @@ You can also do something before and after each test by writing **beforeEach** a
 
 Tests are written by **it()** (it should do something) functions. Here are a couple of examples:
 
-```JavaScript
+```javascript
 it('<HelloWorld /> should render something', () => {
     // Check if the component contains a paragraph element
     expect(renderedElement.find('p')).to.be.exist;

@@ -38,7 +38,7 @@ But how can you get full coverage for this? Luckily there are some plugins for K
 
 In order to extend the Karma configuration in your SPFx solution, you first have to create a new **karma.config.js** file. The basic configuration looks as follows:
 
-```TypeScript
+```typescript
 "use strict";
 const existingKarmaConfig = require('@microsoft/sp-build-web/lib/karma/karma.config');
 const gulp_core_build = require("@microsoft/gulp-core-build");
@@ -53,7 +53,7 @@ module.exports = function (config) {
 
 To allow the Karma process to pick up your configuration file, you will have to update the **gulpfile.js** content to this:
 
-```TypeScript
+```typescript
 'use strict';
 
 const gulp = require('gulp');
@@ -80,13 +80,13 @@ First, you will have to install this to your project with the following command:
 
 Once installed, open your **karma.config.js** file, and include this plugin to the file:
 
-```TypeScript
+```typescript
 const remapCoverageReporter = require('karma-remap-coverage');
 ```
 
 The next step is to add the configuration for this plugin. After the **existingKarmaConfig(config);** line, add the following code:
 
-```TypeScript
+```typescript
 // Add the remap-coverage - code coverage for the original files
 config.reporters.push('remap-coverage');
 config.coverageReporter = {
@@ -120,13 +120,13 @@ In order to get the Karma HTML reporter, you first have to install it via: `npm 
 
 Add the following to the **karma.config.js** file:
 
-```TypeScript
+```typescript
 const htmlReporter = require('karma-html-reporter');
 ```
 
 This is the required configuration:
 
-```TypeScript
+```typescript
 // Add the HTML reporter
 config.reporters.push('html');
 config.htmlReporter = {

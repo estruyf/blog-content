@@ -27,7 +27,7 @@ Another issue I spotted is that if the build step is successful, the deployment 
 
 To fix the issue, you must exclude the `node_modules` folder from the artifact upload and install an npm during the deployment. You can do this using the ignore pattern in the `actions/upload-artifact` action.
 
-```yaml 
+```yaml title="Updates to the actions/upload-artifact action"
 - name: Upload artifact for deployment job
   uses: actions/upload-artifact@v4
   with:
@@ -44,7 +44,7 @@ To fix the issue, you must exclude the `node_modules` folder from the artifact u
 
 To fix the deployment dependencies issue, you must install only the production dependencies during the deployment. You can use the `--omit=dev` flag in the `npm install` command. Add the following step to the deployment job after the `actions/download-artifact` action to install the production dependencies.
 
-```yaml 
+```yaml title="Install the production dependencies during deployment"
 - name: "Install production dependencies"
   shell: pwsh
   run: |
@@ -57,7 +57,7 @@ To fix the deployment dependencies issue, you must install only the production d
 
 Here is the complete updated workflow with the above fixes.
 
-```yaml 
+```yaml title="Updated azure-functions.yml"
 name: Build and deploy Node.js project to Azure Function App
 
 on:

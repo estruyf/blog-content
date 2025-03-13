@@ -15,7 +15,7 @@ comments: true
 
 Doctor is a tool that you can use to write your documentation in markdown and push it to your SharePoint. That way, you have one location to use and share the documentation in your company. In this article, I want to tell you more about how you can set up GitHub Actions to do automated documentation deployments.
 
-{{< blockquote type="Info" text="I will use the [doctor sample](https://github.com/estruyf/doctor-sample) as the blueprint for this article." >}}
+{{< blockquote type="info" text="I will use the [doctor sample](https://github.com/estruyf/doctor-sample) as the blueprint for this article." >}}
 
 ## The credentials
 
@@ -29,7 +29,7 @@ In GitHub Actions, you can only make use of the first two. Technically, the thir
 
 Both of the options require similar steps. For certificate authentication, you will need to do some configuration first.
 
-{{< blockquote type="Important" text="Things to do before you can use certificate authentication: [prerequisites for certificate authentication](https://github.com/estruyf/doctor#certificate-authentication)." >}}
+{{< blockquote type="important" text="Things to do before you can use certificate authentication: [prerequisites for certificate authentication](https://github.com/estruyf/doctor#certificate-authentication)." >}}
 
 ## Creating the workflow
 
@@ -78,7 +78,7 @@ As you can see, there is not a lot required to publish your documentation on Sha
 
 The workflow `run` task checks if the flow is running for the `main` branch. If that is the case, it will set some extra flags to specify to first do a clean-up on the site before publishing. Otherwise, it will just do page updates and not remove any pages.
 
-{{< blockquote type="Important" text="If you want to make use of `certificate` authentication, you will need to `--auth` argument to `certificate`, remove the `--username [username]` argument, and add the `--certificateBase64Encoded [certificateBase64Encoded]` base64 string you created in the prerequisites for security authentication." >}}
+{{< blockquote type="important" text="If you want to make use of `certificate` authentication, you will need to `--auth` argument to `certificate`, remove the `--username [username]` argument, and add the `--certificateBase64Encoded [certificateBase64Encoded]` base64 string you created in the prerequisites for security authentication." >}}
 
 ## Configuring the secrets
 

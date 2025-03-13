@@ -31,7 +31,7 @@ Another significant part of Viva Connections is the extensibility. Viva Connecti
 
 SharePoint Framework provides the extensibility model for Viva Connections. 
 
-{{< blockquote type="Important" text="While writing this article, the extensibility story is only available in beta version 13 of SPFx. More info at [SharePoint Framework v1.13](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/release-1.13)." >}}
+{{< blockquote type="important" text="While writing this article, the extensibility story is only available in beta version 13 of SPFx. More info at [SharePoint Framework v1.13](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/release-1.13)." >}}
 
 When you read the developer documentation of Viva Connections extensibility, you will notice they talk about SharePoint Adaptive Cards Extensions, but it might start to confuse you.
 
@@ -57,7 +57,7 @@ To "develop" these cards, you need to provide the data, and here is the thing. B
 
 You, as a developer, do not have any control over the template. You can only provide the data, render buttons, and invoke actions when the card is selected.
 
-{{< blockquote type="Info" text="Microsoft provides the AC template, you provide the data for the AC." >}}
+{{< blockquote type="info" text="Microsoft provides the AC template, you provide the data for the AC." >}}
 
 Sadly, you cannot add your template, which would make it easier to create reusable experiences, but why do they call it Adaptive Card Extensions? Well, that is because of the next part, the `Quick View`.
 

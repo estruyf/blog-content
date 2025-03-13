@@ -48,7 +48,7 @@ Once you made your copy, make changes in your version of the display template. T
 
 The way that this can be achieved is by overriding the property value in which the default hover panel actions display template is stored. Here is the code how you can achieve this:
 
-```JavaScript
+```javascript
 if (typeof HP === "undefined") {
   SP.SOD.executeFunc("searchui.js", "HP_initialize", function () {
     HP.CommonActions = "~sitecollection/_catalogs/masterpage/SearchDT/Item_CommonHoverPanel_Actions.js";
@@ -87,7 +87,7 @@ The first thing to do is changing the title of the template in the **Item_Word.h
 
 The next thing to change is the location of the copied hover panel display template. This reference is stored in a variable named **hoverUrl**. Find it in your item display template and update it to the location of your version. For example:
 
-```JavaScript
+```javascript
 // Old value
 var hoverUrl = "~sitecollection/_catalogs/masterpage/Display Templates/Search/Item_Word_HoverPanel.js";
 
@@ -197,7 +197,7 @@ The code contains two functions: **init** and **get**. The **init** function wil
 
 The init function can be called like this in the item display template:
 
-```JavaScript
+```javascript
 search.hoverpanel.init();
 ```
 
@@ -250,7 +250,7 @@ The JavaScript code that was added in the script block needs to be moved to an e
 
 The call to the **init** function needs to be changed to this:
 
-```JavaScript
+```javascript
 search.hoverpanel.init();
 ```
 

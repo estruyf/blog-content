@@ -24,7 +24,7 @@ In my [previous post](https://www.eliostruyf.com/how-to-add-angularjs-to-your-di
 
 To create our own dataset, we will loop over the results that were retrieved from the search query.
 
-```JavaScript
+```javascript
 $scope.ResultRows = [];
 angular.forEach(ctx.ListData.ResultTables[0].ResultRows, function(row) {
   // Modify the data
@@ -35,7 +35,7 @@ As you can see in the code I pass through the current row to process. This is ne
 
 The complete code block for this looks like this:
 
-```JavaScript
+```javascript
 angular.forEach(ctx.ListData.ResultTables[0].ResultRows, function(row) {
   // Set the display template property mappings
   ctx['DisplayTemplateData'] = new Object();

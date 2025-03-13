@@ -29,7 +29,7 @@ Luckily VSCode provides you a couple of options to cache data for your extension
 
 Both of these states are a `Memento` object, which allows you to `get` and `update` a value.
 
-{{< blockquote type="Info" text="There is also a `SecretStorage` which can be used to set/retrieve/delete secrets." >}}
+{{< blockquote type="info" text="There is also a `SecretStorage` which can be used to set/retrieve/delete secrets." >}}
 
 ## Using the VSCode state
 
@@ -71,4 +71,4 @@ const clear = () => {
 }
 ```
 
-{{< blockquote type="Info" text="You can find a complete example of using the VSCode state here: [CacheProvider.ts](https://github.com/estruyf/vscode-msgraph-autocomplete/blob/main/src/providers/CacheProvider.ts)." >}}
+{{< blockquote type="info" text="You can find a complete example of using the VSCode state here: [CacheProvider.ts](https://github.com/estruyf/vscode-msgraph-autocomplete/blob/main/src/providers/CacheProvider.ts)." >}}

@@ -54,7 +54,7 @@ The first step is to configure your routes and authentication settings in the `s
 
 Start by creating a `staticwebapp.config.json` file in your project's root directory with the following contents:
 
-```json 
+```json title="staticwebapp.config.json"
 {
   "trailingSlash": "auto",
   "navigationFallback": {
@@ -102,7 +102,7 @@ The `staticwebapp.config.json` needs to be copied to the output directory of the
 
 Create a new file: `./app/utils/swaConfigIntegration.ts` with the following content:
 
-```ts 
+```ts title="./app/utils/swaConfigIntegration.ts"
 import type { AstroIntegration } from "astro";
 import { promises as fs } from "fs";
 import { join } from "path";
@@ -133,7 +133,7 @@ export default {
 
 With the SWA Config integration hook in place, you can update the `astro.config.mjs` file to include it to the build process:
 
-```js 
+```js title="./app/astro.config.mjs"
 // @ts-check
 import { defineConfig } from "astro/config";
 
@@ -160,7 +160,7 @@ Now that we have the configuration in place, we can continue by creating and upd
 
 On the root, we want to add a login button, that way, users can log in to the application. Update the `./app/src/pages/index.astro` file with the following content:
 
-```tsx 
+```tsx title="./app/src/pages/index.astro"
 ---
 import Layout from "../layouts/Layout.astro";
 ---
@@ -181,7 +181,7 @@ import Layout from "../layouts/Layout.astro";
 
 In the routes above, when the user signs in, they will get redirected to a `/success` page. Create a success page `./app/src/pages/success.astro` that users will see after logging in:
 
-```tsx 
+```tsx title="./app/src/pages/success.astro"
 ---
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
@@ -196,7 +196,7 @@ import Layout from "../layouts/Layout.astro";
 
 To test the authentication locally, you can use the Static Web Apps CLI. Run the following command in your terminal:
 
-```bash 
+```bash title="Run your Astro site and Azure Functions"
 npm run dev
 ```
 

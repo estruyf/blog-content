@@ -85,7 +85,7 @@ For this a function call is needed in the ngShow directive.
 
 The function looks like this:
 
-```JavaScript
+```javascript
 // Grouping function to check if the heading changed
 $scope.currentGroupHeader = '';
 $scope.CreateGroupHeader = function (value) {

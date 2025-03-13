@@ -116,7 +116,7 @@ Webpack can also make use of a configuration file to simplify the process. In th
 
 Start by creating a **webpack.config.js** file in your project with the following contents:
 
-```JavaScript
+```javascript
 const path = require('path');
 
 module.exports = {
@@ -147,7 +147,7 @@ $ node bundle.js
 
 The current configuration requires that you manually run the webpack command to generate a bundle update. Of course, this process can be automated. You do this by adding the watch property to the configuration file:
 
-```JavaScript
+```javascript
 const path = require('path');
 
 module.exports = {
@@ -181,7 +181,7 @@ As an example we will add a **style.css** file to the project folder with the fo
 
 In the **index.js,** add the require statement for including your **style.css** file like this:
 
-```JavaScript
+```javascript
 var testing = require('./app');
 
 require('./style.css');
@@ -208,7 +208,7 @@ $ npm install style-loader css-loader --save-dev
 
 Once installed, replace the module property in the configuration file, with the following code:
 
-```JavaScript
+```javascript
 const path = require('path');
 
 module.exports = {
@@ -247,7 +247,7 @@ As an example, we will test the **UglifyJsPlugin** plugin which minimizes the ou
 
 Add the following line at the top of your **webpack.config.js** file:
 
-```JavaScript
+```javascript
 const webpack = require('webpack');
 ```
 
@@ -256,7 +256,7 @@ const webpack = require('webpack');
 
 In configuration, add a new plugins property:
 
-```JavaScript
+```javascript
 const path = require('path');
 const webpack = require('webpack');
 

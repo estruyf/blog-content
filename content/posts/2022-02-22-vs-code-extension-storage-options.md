@@ -11,7 +11,7 @@ tags:
   - "Storage"
   - "VSCode"
   - "Extensions"
-categories: ""
+categories: []
 slug: "/devhack-code-extension-storage-options/"
 comments: true
 ---
@@ -34,7 +34,7 @@ Settings can be set and changed on various levels:
 -	Workspace folder level
 -	Language-specific settings
 
-{{< blockquote type="Important" text="Only use settings for what they are intended for." >}} 
+{{< blockquote type="important" text="Only use settings for what they are intended for." >}} 
 
 ## State storage
 
@@ -56,7 +56,7 @@ await context.globalstate.get(`key`)
 await context.workspaceState.get(`key`)
 ```
 
-{{< blockquote type="Info" text="Behind the scenes, VS Code uses an SQLite database to store these key/value pairs." >}}
+{{< blockquote type="info" text="Behind the scenes, VS Code uses an SQLite database to store these key/value pairs." >}}
 
 ## Secret storage
 
@@ -80,4 +80,4 @@ Files still give you full flexibility as you won’t be limited to what the VS C
 
 In order to work with files (read/write), you can use the `workspace.fs` API. The workspace file system API exposes the editors’ built-in file system provider.
 
-{{< blockquote type="Info" text="Use it whenever you work with complex data like for instance search indexes, databases, or complex JSON data. Be aware, if you store files to the workspace/solution, the users might be able to edit these. If this is not something, you want it might be best to use one of the above options." >}}
+{{< blockquote type="info" text="Use it whenever you work with complex data like for instance search indexes, databases, or complex JSON data. Be aware, if you store files to the workspace/solution, the users might be able to edit these. If this is not something, you want it might be best to use one of the above options." >}}

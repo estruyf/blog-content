@@ -39,7 +39,7 @@ Can you hear me? Sorry, your voice is cracking. You sound like a robot.
 
 Those are probably things you heard or said before, at least I have. When you want to go into this online presentation scene, please consider investing in a good microphone.
 
-{{< blockquote type="Info" text="I am using the Elgato Wave:3" >}}
+{{< blockquote type="info" text="I am using the Elgato Wave:3" >}}
 
 In a couple of conferences, I had a couple of speakers using a Bluetooth microphone. In many cases, it might not be an issue, but there is a lot of interference from time to time, and your voice is not clear anymore. Although it is probably not your fault, attendees might still get a bit frustrated from it. 
 
@@ -55,7 +55,7 @@ Looking into your camera is not an easy one. A trick I use when I have to presen
 
 It is essential to have your webcam in the middle of the screen you use to present. During demos, you are forgiven for not looking into your camera as you need to focus on what you want to show. Also, your audience will have more focus on what you are delivering to them at that moment.
 
-{{< blockquote type="Info" text="A good webcam is never a bad thing. Webcams are good, but there are other devices these days you could use for better quality. You could use a mirrorless camera or even a GoPro." >}}
+{{< blockquote type="info" text="A good webcam is never a bad thing. Webcams are good, but there are other devices these days you could use for better quality. You could use a mirrorless camera or even a GoPro." >}}
 
 {{< caption-new "/uploads/2020/12/gopro.png" "Logitech C920 vs GoPro 7"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAADtSURBVAXBz0rCcADA8e/W1iKXMalTEhVBBBWx3qFOvVPHLr1Aj9FRqewvJHmIFHI/UqeW28ycmuacbX0+0vnZaRzLCfTkInEs4X7YJKVX7vLvzKoy40lAKmWgHB6btBoR318BO6aJJXIUnrLsba+S0FVWlptMEkco9XJEq2gRhhpZL8dPr82msUH1t4s6CLi47aKnr5Cb3oSH5xdG/SnCEqztHtDxhxTfbIRwGPTnqDU8lEzmGqf9RyqtcpN32dr/5LFQolwfc+9E6PMG007ITNXRTyI5olixqTR9kkvr1MqXlEQPTRvh+gHD6QL/EvByytbcPKEAAAAASUVORK5CYII=" "1280" >}}
 
@@ -65,7 +65,7 @@ The dark days are here again in Europe, which means that your room/office might 
 
 I went for two Elgato Key Lights. Two because of some research I did for people wearing glasses. I first wanted to have a ring light. Luckily, when I was about to purchase it, I saw a review that mentioned: "DO NOT BUY IF YOU WEAR GLASSES". So that triggered me to do more research. When wearing glasses, you want the light not to come from in front of you but from the sides. That way, you do not have a light reflection on your glasses.
 
-{{< blockquote type="Info" text="Another tip is to point the lights towards the wall instead of your face. This will help to have less glare and reflection. If you in a darker room, or during late evening talks, you might want to point them towards your face." >}}
+{{< blockquote type="info" text="Another tip is to point the lights towards the wall instead of your face. This will help to have less glare and reflection. If you in a darker room, or during late evening talks, you might want to point them towards your face." >}}
 
 ### 5. Just do what you love to do
 

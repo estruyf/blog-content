@@ -16,7 +16,7 @@ comments: true
 
 This weekend I discovered a cool new tool from Microsoft called **Clarity**. The tool allows you to understand how users interact with your website. It can do this by using Google Analytics integration and features like session replays and heatmaps.
 
-{{< blockquote type="Info" text="[https://clarity.microsoft.com/](https://clarity.microsoft.com/)" >}}
+{{< blockquote type="info" text="[https://clarity.microsoft.com/](https://clarity.microsoft.com/)" >}}
 
 I was not looking for such a tool. I just bumped into it. As I run a [online sticker store](https://pimpyourowndevice.com) these days, I thought to give it a try.
 
@@ -60,4 +60,4 @@ This service is free to use. You only require a Microsoft account to get started
 
 The service does exactly what its name suggests. It gives *clarity* over your usage analytics.
 
-{{< blockquote type="Important" text="At the moment of writing this #DevHack, I only used it for two days. I Will see how it evolves, but this looks promising." >}}
+{{< blockquote type="important" text="At the moment of writing this #DevHack, I only used it for two days. I Will see how it evolves, but this looks promising." >}}

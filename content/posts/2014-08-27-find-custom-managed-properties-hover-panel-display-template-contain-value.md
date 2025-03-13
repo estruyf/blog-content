@@ -40,7 +40,7 @@ That is of course good to know, but why do they need to be added in the item dis
 
 The reason why is very simple, in my previous post I talked about a function called **$setResultItem** ([$setResultItem a function that makes or breaks your search experience](https://www.eliostruyf.com/setresultitem-function-makes-breaks-search-experience/)). That function is going to store each of the results in memory. When the hover panel render function **Srch.U.getShowHoverPanelCallback** gets called (which has a reference set to the hover panel template), it will do another call to the **$getResultItem** when rendering the panel. This function **$getResultItem** retrieves the associated result from memory and that result will be set as the current item in the context.
 
-```JavaScript
+```javascript
 renderCtx = {
   ResolveTemplate: resolve,
   CurrentItem: item,

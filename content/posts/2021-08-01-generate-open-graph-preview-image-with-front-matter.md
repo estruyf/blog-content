@@ -116,7 +116,7 @@ if (contentScriptArgs) {
 
 To make the script available as an action in the Front Matter side panel, you will first have to add a file with the script's code to your project.
 
-{{< blockquote type="Info" text="I use a `scripts` folder in my project, where I created the `social-img.mjs` file." >}}
+{{< blockquote type="info" text="I use a `scripts` folder in my project, where I created the `social-img.mjs` file." >}}
 
 Once you added the file, make sure to install the dependencies: `npm i node-html-to-image uuid date-fns @frontmatter/extensibility -D`.
 
@@ -130,7 +130,7 @@ After that, it is time for the final step, registering the command. You can regi
   }]
 ```
 
-{{< blockquote type="Info" text="The node location needs to be provided as I want to make sure it uses the correct node.js version to run the script. When using `nvm` this is a requirement to set the `nodeBin` property." >}}
+{{< blockquote type="info" text="The node location needs to be provided as I want to make sure it uses the correct node.js version to run the script. When using `nvm` this is a requirement to set the `nodeBin` property." >}}
 
 Open the Front Matter side panel, and the new button should show up. When you click on the new button, it will start generating the image. When the script completes, it will show a notification with the path of the image.
 

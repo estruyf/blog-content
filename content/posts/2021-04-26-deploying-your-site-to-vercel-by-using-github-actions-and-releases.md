@@ -26,7 +26,7 @@ Another approach is to make use of the Vercel CLI and the combination of GitHub 
 
 Before you start, you need to know your **project ID** and **org ID** from Vercel. The simplest way to get this is to link your project to Vercel. You can do this by using `npx vercel link`.
 
-{{< blockquote type="Info" text="You read more about the CLI here: [Vercel CLI](https://vercel.com/docs/cli). When you have not used it yet, it will first ask you to sign in." >}}
+{{< blockquote type="info" text="You read more about the CLI here: [Vercel CLI](https://vercel.com/docs/cli). When you have not used it yet, it will first ask you to sign in." >}}
 
 When you ran the command, it will create a `.vercel` folder in your project with a `project.json` file. In that file, you will find the `projectId` and `orgId`, which you can use later in your GitHub Actions workflow.
 
@@ -99,7 +99,7 @@ jobs:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
 ```
 
-{{< blockquote type="Info" text="When the action runs for any other branch than my `main` branch, it will not deploy to production." >}}
+{{< blockquote type="info" text="When the action runs for any other branch than my `main` branch, it will not deploy to production." >}}
 
 As you can see from the above workflow, the GitHub Actions workflow only gets triggered when there is a release, push to `dev` or manual trigger on the workflow.
 

@@ -17,7 +17,7 @@ comments: true
 
 GitHub Actions is hot these days, but still, Azure DevOps is being used in many companies, and I do as well. Doctor a tool for publishing your markdown documentation on SharePoint, works nicely on Azure DevOps as well. 
 
-{{< blockquote type="Info" text="I will use the [doctor sample](https://github.com/estruyf/doctor-sample) as the blueprint for this article." >}}
+{{< blockquote type="info" text="I will use the [doctor sample](https://github.com/estruyf/doctor-sample) as the blueprint for this article." >}}
 
 ## The credentials
 
@@ -29,13 +29,13 @@ To start, you need to choose how you will publish your documentation to SharePoi
 
 The third option is only preferred when using it on your local machine. When you want to use certificate authentication, you need to do some steps before making use of it.
 
-{{< blockquote type="Important" text="Things to do before you can use certificate authentication: [prerequisites for certificate authentication](https://github.com/estruyf/doctor#certificate-authentication)." >}}
+{{< blockquote type="important" text="Things to do before you can use certificate authentication: [prerequisites for certificate authentication](https://github.com/estruyf/doctor#certificate-authentication)." >}}
 
 ## Using the credentials
 
 On Azure DevOps, I recommend you make use of a `variable group` to connect to an `Azure Key Vault`. That way, all your secrets are secure and easy to be changed from one place. 
 
-{{< blockquote type="Info" text="Tobias Zimmergren wrote an excellent article about this: [using Azure Key Vault Secrets from your Azure DevOps pipelines](https://zimmergren.net/using-azure-key-vault-secrets-from-azure-devops-pipeline/)" >}}
+{{< blockquote type="info" text="Tobias Zimmergren wrote an excellent article about this: [using Azure Key Vault Secrets from your Azure DevOps pipelines](https://zimmergren.net/using-azure-key-vault-secrets-from-azure-devops-pipeline/)" >}}
 
 Using a variable group is always a good idea; you do not need to manage your variables in your pipelines. 
 

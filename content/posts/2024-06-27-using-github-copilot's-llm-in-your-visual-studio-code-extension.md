@@ -38,7 +38,7 @@ To retrieve the available LLMs in Visual Studio Code, use the `vscode.lm.selectC
 
 {{< blockquote type="info" text="At the moment of writing this article, there were three models available `gpt-3.5-turbo`, `gpt-4`, and `gpt-4-turbo` for GitHub Copilot." >}}
 
-```typescript 
+```typescript title="Retrieving the model"
 // Retrieving all models
 const models = await vscode.lm.selectChatModels();
 
@@ -55,7 +55,7 @@ Once you know the model is available, we can create a prompt to interact with th
 
 {{< blockquote type="tip" text="For more advanced prompt creation, Visual Studio Code team is building the [@vscode/prompt-tsx](https://www.npmjs.com/package/@vscode/prompt-tsx) dependency." >}}
 
-```typescript 
+```typescript title="Creating a prompt"
 const title = await vscode.window.showInputBox({
   placeHolder: "Enter the topic",
   prompt: "Enter the topic of the blog post",
@@ -76,7 +76,7 @@ const messages = [
 
 Once the prompt is created, you can send it to the LLM using the `model.sendRequest` method.
 
-```typescript 
+```typescript title="Sending the prompt"
 let chatResponse: vscode.LanguageModelChatResponse | undefined;
 
 try {

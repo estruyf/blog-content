@@ -62,7 +62,7 @@ The sample project contains one Azure Functions `profile-get`, which will use th
 
 To use the sample, all you need to do is pass the `client id` and `client secret` to the `config` object in the `index.ts` file of the function.
 
-{{< blockquote type="Important" text="The config object is added in the code to simplify the process. When you would use this in production, it is recommended to put these kinds of IDs and Secrets in Azure Key Vault. Read more on using the Key Vault in your Azure Functions on [Use Key Vault references for App Service and Azure Functions](https://docs.microsoft.com/en-us/azure/app-service/app-service-key-vault-references)." >}}
+{{< blockquote type="important" text="The config object is added in the code to simplify the process. When you would use this in production, it is recommended to put these kinds of IDs and Secrets in Azure Key Vault. Read more on using the Key Vault in your Azure Functions on [Use Key Vault references for App Service and Azure Functions](https://docs.microsoft.com/en-us/azure/app-service/app-service-key-vault-references)." >}}
 
 ## The flow
 
@@ -74,4 +74,4 @@ With the retrieved token, you can call the Azure Function. Pass it as the `autho
 
 When the Azure Function retrieves the call, it will first validate the JWT token to make sure it comes from known audiences. In this case, it is the Application ID URI `api://<client-id>`. If it is a valid token, that will be used to get an access token to call the Microsoft Graph on your behalf.
 
-{{< blockquote type="Info" text="In the sample, you will find an `app` folder. This folder contains a sample express app that you can use combined with the Azure Function to test the flow." >}}
+{{< blockquote type="info" text="In the sample, you will find an `app` folder. This folder contains a sample express app that you can use combined with the Azure Function to test the flow." >}}

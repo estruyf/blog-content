@@ -15,7 +15,7 @@ comments: true
 
 We all want to be the fastest. We all want to make sure our apps outperform others, but what do you need to do for it? In this article, I will explain what the best approach is to cache your solutions.
 
-{{< blockquote type="Important" text="When building on top of a platform like SharePoint, you will always have to deal with the fact that you cannot be faster than the platform itself. First-party gets priority over third-party." >}}
+{{< blockquote type="important" text="When building on top of a platform like SharePoint, you will always have to deal with the fact that you cannot be faster than the platform itself. First-party gets priority over third-party." >}}
 
 ## All client-side
 
@@ -59,7 +59,7 @@ On SharePoint, you are, for sure, not the only one. Besides all the first-party 
 
 When building solutions that will run on top of a platform you do not own, I would recommend using `IndexedDB`. With IndexedDB, you will avoid running into the space limit as its limit is the user's disk space.
 
-{{< blockquote type="Important" text="There is a downside using `IndexedDB`. The downside is that the APIs feel like they were invented in 1999. They feel outdated and too complicated to use. Funny enough, this is something they are aware of. On the Mozilla Developers documentation [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) they even recommend using a library to make it easier." >}}
+{{< blockquote type="important" text="There is a downside using `IndexedDB`. The downside is that the APIs feel like they were invented in 1999. They feel outdated and too complicated to use. Funny enough, this is something they are aware of. On the Mozilla Developers documentation [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) they even recommend using a library to make it easier." >}}
 
 ## Would IndexedDB not just be overkill?
 
@@ -123,7 +123,7 @@ remainingStorage: 2316080
 remainingStorage (in MB): 2.2087860107421875
 ```
 
-{{< blockquote type="Info" text="Here are only the ones logged that take the most space. When starting to search and navigating through the environment, this number goes up quickly as you can see at the end of the log, only 2MB available out of the 5MB." >}}
+{{< blockquote type="info" text="Here are only the ones logged that take the most space. When starting to search and navigating through the environment, this number goes up quickly as you can see at the end of the log, only 2MB available out of the 5MB." >}}
 
 ## Making your life easier
 

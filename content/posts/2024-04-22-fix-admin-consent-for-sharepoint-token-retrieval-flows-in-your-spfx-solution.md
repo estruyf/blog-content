@@ -30,7 +30,7 @@ When looking into the issue, I saw failing calls to `/_api/Microsoft.SharePoint.
 
 The error message that was returned was the following:
 
-```json 
+```json title="Token retrieval error"
 {
   "odata.error": {
     "code": "10001",
@@ -48,7 +48,7 @@ What was weird is that the error message mentioned the `00000003-0000-0ff1-ce00-
 
 When the page got redirected to the `/_forms/spfxsinglesignon.aspx` page, the following message was returned in the query string:
 
-```text 
+```text title="Token retrieval error"
 AADSTS650057 Invalid resource. The client has requested access to a resource that is not listed in the requested permissions in the client's application registration. Client app ID 08e18876-6177-487e-b8b5-cf950c1e598c (SharePoint Online Web Client Extensibility). Resource value from request 72b90cbc-8519-4213-8c4a-1f3527b9f5f8.
 ```
 

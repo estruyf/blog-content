@@ -11,7 +11,7 @@ tags:
   - Development
   - Visual Studio Code
   - Devhack
-categories: ""
+categories: []
 slug: /trick-bring-visual-studio-code-foreground-extension/
 ---
 

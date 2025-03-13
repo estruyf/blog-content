@@ -16,7 +16,7 @@ comments: true
 
 Currently, I am developing my first "real" Microsoft Teams app with SharePoint Framework. In this app, I am making use of the new messaging extension capability.
 
-{{< blockquote type="Info" text="[what are messaging extensions?](https://docs.microsoft.com/en-us/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions)" >}}
+{{< blockquote type="info" text="[what are messaging extensions?](https://docs.microsoft.com/en-us/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions)" >}}
 
 While developing a form in my extension, I wanted to cancel and submit a button. When I started implementing the cancel button, its `onClick` event, I was lost in how to close the dialog. 
 

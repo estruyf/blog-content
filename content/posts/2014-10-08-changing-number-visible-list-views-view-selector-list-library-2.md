@@ -28,7 +28,7 @@ Now by changing this property, for example to **6** in my example, all my list v
 
 The code to achieve this fairly simple:
 
-```JavaScript
+```javascript
 // With MDS enabled
 ExecuteOrDelayUntilScriptLoaded(function () {
   if (typeof ClientPivotControl.prototype.SurfacedPivotCount !== "undefined") {

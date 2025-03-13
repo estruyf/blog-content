@@ -15,7 +15,7 @@ comments: true
 
 One of the Doctor's objectives, a documentation tool that converts markdown to SharePoint pages, was to make it usable cross-platform. Initially, I created this as an internal tool for Valo and would only be used on Azure DevOps or GitHub Actions. In the first release, I focussed on making the tool available to others like you and seeing if there was any interest in it.
 
-{{< blockquote type="Info" text="[Doctor - the static site generator for SharePoint](https://www.eliostruyf.com/doctor-static-site-generator-sharepoint/)" >}}
+{{< blockquote type="info" text="[Doctor - the static site generator for SharePoint](https://www.eliostruyf.com/doctor-static-site-generator-sharepoint/)" >}}
 
 Once the first version was released, one of the first tasks was to get this cross-platform support in place. Each OS has its challenges, but Windows was the worst of all. As Doctor uses the CLI for Microsoft 365, the JSON data provided to the commands had to be formatted correctly. Where on macOS and Linux, it is relatively easy. On Windows, it took some time to get it right. For instance, the string replacement looks like for getting JSON within a JSON object to work.
 

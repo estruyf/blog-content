@@ -32,7 +32,7 @@ While looking for a solution, I found Microsoft's [azure-pipelines-task-lib](htt
 
 To use the package, you need to install it as a dependency in your project:
 
-```bash 
+```bash title="Install the azure-pipelines-task-lib package"
 npm install azure-pipelines-task-lib
 ```
 
@@ -40,7 +40,7 @@ npm install azure-pipelines-task-lib
 
 After installing the package, you can use it in your Node.js script/tasks:
 
-```javascript 
+```javascript title="Set a variable in an Azure DevOps pipeline using Node.js"
 import { setVariable } from "azure-pipelines-task-lib";
 
 // Set the variable for future tasks
@@ -51,7 +51,7 @@ With this script, you can set the variable `VARIABLE_NAME` which is available in
 
 In your Azure DevOps YAML pipeline, you can use the script like this:
 
-```yaml 
+```yaml title="azure-pipelines.yml"
 trigger:
   - main
 
@@ -76,7 +76,7 @@ steps:
 
 The difference between setting a variable and an output variable is that the output variable is available for the future jobs in the pipeline.
 
-```javascript 
+```javascript title="Set an output variable in an Azure DevOps pipeline using Node.js"
 import { setVariable } from "azure-pipelines-task-lib";
 
 // Set the output variable for future jobs
@@ -85,7 +85,7 @@ setVariable("VARIABLE_NAME", "value", false, true);
 
 In the YAML pipeline, you can use the output variable like this:
 
-```yaml 
+```yaml title="azure-pipelines.yml"
 trigger:
   - main
 

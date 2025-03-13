@@ -61,7 +61,7 @@ To create a webhook with Power Automate, you can follow these steps:
 
 To install the `playwright-msteams-reporter` dependency, run the following command in your Playwright project:
 
-```bash 
+```bash title="Install the reporter"
 npm install playwright-msteams-reporter
 ```
 
@@ -69,7 +69,7 @@ npm install playwright-msteams-reporter
 
 Once you installed the reporter, it is time to configure it. In your `playwright.config.js` configuration file, you can add the following configuration to enable the reporter:
 
-```typescript 
+```typescript title="Configure the reporter"
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
@@ -92,7 +92,7 @@ Add your **webhook URL** to the `<webhookUrl>` property. You can also specify th
 
 The `playwright-msteams-reporter` also supports mentioning users in the message when a test fails. To enable this feature, you can add the `mentionOnFailure` property to the configuration:
 
-```typescript 
+```typescript title="Configure the reporter with user mentions"
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
@@ -117,7 +117,7 @@ export default defineConfig({
 
 If you are running your Playwright tests in a GitHub Actions workflow, you can add a link to the workflow run. To enable this feature, you can add the `linkToResultsUrl` property to the configuration:
 
-```typescript 
+```typescript title="Configure the reporter with workflow URL"
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({

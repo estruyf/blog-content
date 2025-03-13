@@ -30,7 +30,7 @@ Jamstack is a term used to describe a website built using a combination of diffe
 
 There are many services available on which you can host your Jamstack website. In the past, I wrote a post about comparing Netlify, Vercel, and Azure. As I am interested to see how many others are doing it, I wanted to see how the experience at Cloudflare Pages is.
 
-{{< blockquote type="Info" text="[Which service? Netlify vs Vercel vs Azure Static Web App](https://www.eliostruyf.com/netlify-vs-vercel-vs-azure-static-web-app/)" >}}
+{{< blockquote type="info" text="[Which service? Netlify vs Vercel vs Azure Static Web App](https://www.eliostruyf.com/netlify-vs-vercel-vs-azure-static-web-app/)" >}}
 
 As Jamstack websites are so popular, Cloudflare jumped on it as well, and now help you get your website up and running in a few minutes.
 

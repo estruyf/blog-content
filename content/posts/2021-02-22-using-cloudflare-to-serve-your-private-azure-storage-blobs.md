@@ -15,11 +15,11 @@ comments: true
 
 Recently I wrote about how to use Cloudflare as a CDN for your Azure Storage Containers/Blobs. The process for setting up Cloudflare for Azure Storage is straightforward. 
 
-{{< blockquote type="Info" text="[Use Cloudflare CDN for your Azure Storage caching](https://www.eliostruyf.com/devhack-cloudflare-cdn-azure-storage-caching/)" >}}
+{{< blockquote type="info" text="[Use Cloudflare CDN for your Azure Storage caching](https://www.eliostruyf.com/devhack-cloudflare-cdn-azure-storage-caching/)" >}}
 
 Now to make this work, you need to configure the Azure Storage to be anonymously accessible. This setting is the default when creating a new storage account. When you go to the Azure Security Advisor, you might see a message saying: **Storage account public access should be disallowed**.
 
-{{< blockquote type="Important" text="Do not do these steps immediately in production!" >}}
+{{< blockquote type="important" text="Do not do these steps immediately in production!" >}}
 
 You can disable it on the Storage Account under **Configuration** -> **Allow blob public access** -> set to **disabled**.
 
@@ -35,7 +35,7 @@ Now Azure Storage prevents you from publically accessing your blobs/files. Chang
 
 To fetch the blobs/files, you will need to make use of a Shared Access Signature (SAS). These SAS allow you to restrict access to particular services and actions you want to allow (read, write, delete, ...) when using them.
 
-{{< blockquote type="Info" text="[Using Azure CDN with SAS](https://docs.microsoft.com/en-us/azure/cdn/cdn-sas-storage-support)" >}}
+{{< blockquote type="info" text="[Using Azure CDN with SAS](https://docs.microsoft.com/en-us/azure/cdn/cdn-sas-storage-support)" >}}
 
 In this case, we need to access our files from Azure Storage, a SAS that is only allowed to use it for **Blob** service and only allow **Read** permission. 
 
@@ -43,7 +43,7 @@ You can create such a SAS key by going to your Azure Storage Account -> **Shared
 
 {{< caption-new "/uploads/2021/02/cloudflare3.png" "Creating your SAS Token for the CDN"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAACRSURBVG3BQU4EMQxE0W+7WiD6AHP/07Fi2YyUxJVRCyE2vBfX93OrkjEnwY+IYO+NJCKCzERrTeyi25znB6riP1IJMlljgDe9m8gkAtwmK7lp9UQUbjPG5JCgza1tqpObqg4ii+PN6EgiA0ncDv5k26y1+Px6cl2DjMA2trGNbbobBRvt5nHCexnbEMEvu7E3L76GVNOti7AsAAAAAElFTkSuQmCC" "1538" >}}
 
-{{< blockquote type="Important" text="Be sure to make a record/reminder of this expiration date. Once it reaches the end date, you need to pass a new SAS for your service." >}}
+{{< blockquote type="important" text="Be sure to make a record/reminder of this expiration date. Once it reaches the end date, you need to pass a new SAS for your service." >}}
 
 Click the **Generate** button and copy the `SAS Token` (query string params).
 
@@ -55,7 +55,7 @@ Once you have that SAS token, you can test it out by adapting it to your CDN or 
 
 On Cloudflare, there is not a quick way to adapt your SAS token to the URLs. You will have to use a worker who adds the query string parameters to each request (if not cached).
 
-{{< blockquote type="Info" text="Cloudflare workers allow you to run services that can modify the HTTP requests and responses." >}}
+{{< blockquote type="info" text="Cloudflare workers allow you to run services that can modify the HTTP requests and responses." >}}
 
 On Cloudflare, select your domain, go to **Workers**, and click **manage workers**. When you have not created one yet, you will need to create an endpoint. Once Cloudflare created the endpoint. You will be able to configure the worker script on the website directly.
 

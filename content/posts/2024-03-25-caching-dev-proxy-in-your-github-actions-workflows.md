@@ -29,7 +29,7 @@ This blog post shows how to cache the Dev Proxy in your GitHub Actions workflows
 
 We must first fetch the latest version number to cache the Dev Proxy. That way, we only retrieve the latest version if it is not cached. For this, we can use the GitHub release API:
 
-```bash 
+```bash title="Get the latest Dev Proxy released version number"
 - name: Store Dev Proxy's Version
   run: |
     DEVPROXY_VERSION=$(curl -s https://api.github.com/repos/microsoft/dev-proxy/releases/latest | jq .tag_name -r)
@@ -43,7 +43,7 @@ In the above step, we use `curl` to fetch the latest release information from th
 
 Next, we use the [actions/cache](https://github.com/marketplace/actions/cache) action to cache the Dev Proxy. We can use the following step to cache the Dev Proxy:
 
-```yaml 
+```yaml title="Cache Dev Proxy - GitHub Actions step"
 - name: Cache Dev Proxy
   id: cache-devproxy
   uses: actions/cache@v4
@@ -60,7 +60,7 @@ The cache action outputs a `cache-hit` boolean to indicate whether the Dev Proxy
 
 After the cache action, we can use the following step to install the Dev Proxy only when needed:
 
-```yaml 
+```yaml title="Install Dev Proxy - GitHub Actions step"
 - name: Install Dev Proxy
   if: steps.cache-devproxy.outputs.cache-hit != 'true'
   run: bash -c "$(curl -sL https://aka.ms/devproxy/setup.sh)"
@@ -76,7 +76,7 @@ Using this approach, you can cache the Dev Proxy in your GitHub Actions workflow
 
 Here is the complete GitHub Actions workflow that caches the Dev Proxy:
 
-```yaml 
+```yaml title="Complete GitHub Actions workflow"
 name: ubuntu Dev Proxy
 
 on:

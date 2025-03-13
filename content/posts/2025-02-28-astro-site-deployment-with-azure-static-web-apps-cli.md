@@ -37,7 +37,7 @@ npm create astro@latest
 
 The Azure Static Web Apps CLI is a command-line tool that allows you to create, manage, and deploy Azure Static Web Apps directly from your terminal. To install the CLI, run the following command:
 
-```bash title="Install the Azure Static Web Apps CLI" showLineNumbers
+```bash title="Install the Azure Static Web Apps CLI"
 npm install -g @azure/static-web-apps-cli
 ```
 
@@ -112,7 +112,7 @@ When you connect the GitHub repository, it automatically creates a GitHub Action
 
 ## Step 7: Update the GitHub Actions workflow
 
-Once the Static Web App is created, you can pull the repository changes. In the` .github/workflows' folder, you will see a new GitHub Actions workflow.
+Once the Static Web App is created, you can pull the repository changes. In the` .github/workflows' folder, you will see a new GitHub Actions workflow. 
 
 In my case, my first run failed due to the package size issues.
 
@@ -122,7 +122,7 @@ Another thing I noticed was the warning about the `npm install --production` com
 
 {{< caption-new "/uploads/2025/02/npm-install-prod.webp" "npm install --production"  "data:image/jpeg;base64,UklGRloAAABXRUJQVlA4WAoAAAAQAAAACQAAAQAAQUxQSBUAAAAAE0NDQ0NDQ0NDExdOTk5OTk5OThcAVlA4IB4AAAAwAQCdASoKAAIAAUAmJaQAA3AA/v0UlpC6NrfFAAA=" "497" >}}
 
-To address these issues and gain more control over the whole workflow, I decided to create a new GitHub Actions workflow and deploy the site using the Azure Static Web Apps CLI.
+To address these issues and gain more control over the whole workflow, I decided to create a new GitHub Actions workflow and deploy the site using the Azure Static Web Apps CLI. 
 
 Change the GitHub Actions workflow filename to `deploy.yml` and update the contents to the following:
 

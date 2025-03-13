@@ -35,7 +35,7 @@ An idea I to load these templates was to create a template which I call the "rou
 
 As mentioned the routing template is just an item template which contains a couple of checks. These checks all start with an array in which you define the managed property value and the matching template to load.
 
-```JavaScript
+```javascript
 var defaultLayout = 'Item_BodyOnly.js';
 var layouts = { 
     'PageFromDocLayout.aspx' : 'Item_BodyOnly.js',
@@ -48,7 +48,7 @@ Next, you write the code to retrieve the display template that needs to get load
 
 > **Important**: you need to add the managed property you want to check to the ManagedPropertyMapping attribute. In this example PublishingPageLayoutOWSURLH is used. This managed property holds the page layout URL that got used for the article.
 
-```JavaScript
+```javascript
 var pageUrl = $getItemValue(ctx, 'PublishingPageLayoutOWSURLH');
 if (!pageUrl.isEmpty) {
     // Get the page name 
@@ -81,7 +81,7 @@ If the managed property value did not exist in the array (in this example it wou
 
 Once you know the filename of the display template to load, you have to write the code to get the display template loaded. Loading the display template can be done with the following code:
 
-```JavaScript
+```javascript
 // Load the display template for the corresponding page layout
 var dtUrl = '~sitecollection/_catalogs/masterpage/Tests/';
 var dtFullUrl = dtUrl + dtName;
@@ -103,7 +103,7 @@ RegisterSod(dtName, Srch.U.replaceUrlTokens(dtFullUrl));
 
 On the second line you define the location where your display templates can be found. Once the display template is loaded, the **CoreRender** function gets called which will render the item mark-up. This mark-up needs to be added to the DIV element defined in the routing template, this is done by calling the **render** function on line 15.
 
-```JavaScript
+```javascript
 var render = function (markup, id) {
     var elm = document.getElementById(id);
     if (!$isNull(elm)) {

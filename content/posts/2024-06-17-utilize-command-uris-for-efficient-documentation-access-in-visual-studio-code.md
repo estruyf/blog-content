@@ -25,7 +25,7 @@ For instance, when you have an extension with various settings and a documentati
 
 Here's an example of how you can add a link to the documentation page in the description of a setting:
 
-```json 
+```json title="Example setting with a link to the docs" 10
 {
   "contributes": {
     "configuration": [
@@ -54,7 +54,7 @@ To open the simple browser, use the following command: `simpleBrowser.show`. Add
 
 Here's an example of how you can open the documentation page in the simple browser:
 
-```markdown 
+```markdown title="Open the documentation page in the simple browser"
 [View in VS Code](command:simpleBrowser.show?%5B%22https://frontmatter.codes/docs/settings/overview%23frontmatter.projects%22%5D)
 ```
 
@@ -62,7 +62,7 @@ Here's an example of how you can open the documentation page in the simple brows
 
 Combining this with the above sample looks like this:
 
-```json 
+```json title="Example setting with a link to the docs in VS Code" 10
 {
   "contributes": {
     "configuration": [

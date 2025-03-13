@@ -28,7 +28,7 @@ To call the synchronous Azure translation API, you need to send a POST request t
 
 Here is an example of how you can call the synchronous Azure translation API in Node.js:
 
-```javascript 
+```javascript title="Example of calling the synchronous Azure translation API"
 import { readFile } from 'node:fs/promises';
 import { blob } from 'node:stream/consumers';
 

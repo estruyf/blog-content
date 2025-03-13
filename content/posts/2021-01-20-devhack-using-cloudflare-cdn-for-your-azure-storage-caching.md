@@ -29,7 +29,7 @@ Go to Cloudflare, and register your domain. If you already have a registered dom
 - Name: `cdn` (or anything you want)
 - Target: `<azure-storage-account>.blob.core.windows.net`
 
-{{< blockquote type="Important" text="In the target, you need to add your name from the Azure Storage account." >}}
+{{< blockquote type="important" text="In the target, you need to add your name from the Azure Storage account." >}}
 
 Once you configured this record, you can set up this custom domain on your Azure Storage Account.
 
@@ -41,6 +41,6 @@ On the Azure Storage portal, open your Azure Storage Account. Under **Blob servi
 
 Once you filled in your domain name, you are all set in my case `cdn.eliostruyf.com`.
 
-{{< blockquote type="Important" text="It can take some time before the record is available, so go and grab a coffee first." >}}
+{{< blockquote type="important" text="It can take some time before the record is available, so go and grab a coffee first." >}}
 
 That is all you need to do to configure Cloudflare CDN to use it for your Azure Storage Account.

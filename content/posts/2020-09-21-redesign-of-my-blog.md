@@ -40,7 +40,7 @@ Here are a couple of screenshots of the history of the theme on my blog.
 
 {{< caption-new "/uploads/2020/09/redesign-2011-2.png" "Blog design in 2011 - card view"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAYAAABGbhwYAAAAAklEQVR4AewaftIAAAEaSURBVG3BwWrbQBCA4X8mq8qpTbFUBCn4Tfz+75BeDMkhAUMUy661K612puiQW75PjsejN02DmXE+nzEzVqqKmdF1He5OCOKs6rqmbVtyzqxUlZQSKSXGcSTc54XYf6JWUFXmeWa12f6kaIBiuDs6xQRl4e39nRgjfd9TVRUfH5/gxpJn3B0dxzt/n59JMXI6nUjTxMvrK49B+LWp2D7WVEEJu92O/X5P3/ccDgeGYaDrOq7DhSkvlJxxM8Lt353rcEFUud5uqCqXYeDpzxOLPIAUiguhbfb8bhtEBBHBzFCB7XZHvdkwqeDuKN9whGJGzplVKQV1d764Oyt3p5SCuzNNE6tQ9IG6/kHKC7Jk3J1VjJFxHHFVVJT/ESqsfROD0K4AAAAASUVORK5CYII=" "800" >}}
 
-{{< blockquote type="Info" text="Funny to see that I was already using a card view at that time." >}}
+{{< blockquote type="info" text="Funny to see that I was already using a card view at that time." >}}
 
 ### 2013
 
@@ -88,7 +88,7 @@ Tailwind is a utility-first CSS framework. Which allows you to write less CSS, b
 
 The most significant difference is that the framework does not have any predesigned components like most other frameworks. Using this framework means you have total freedom and control over your design and might make it harder to start. 
 
-{{< blockquote type="Info" text="The Tailwind team is currently working on a Tailwind UI website (in beta) to find sample UI elements." >}}
+{{< blockquote type="info" text="The Tailwind team is currently working on a Tailwind UI website (in beta) to find sample UI elements." >}}
 
 My first experiences were good, but the HTML tags can quickly get overloaded with CSS class names. Luckily you can also add CSS the regular way and reuse the CSS from Tailwind with `@apply` and specifying the class name.
 

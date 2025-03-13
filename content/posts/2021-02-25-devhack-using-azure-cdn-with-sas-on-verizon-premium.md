@@ -15,11 +15,11 @@ comments: true
 
 In the previous article, I explained how you could use the Shared Access Signature (SAS) in Cloudflare. The reason that I use this approach is to make sure the Azure Storage cannot be publicly accessed. Only via a SAS token blobs can be retrieved or updated. If you want to do this for Azure CDN, I pointed to the documentation to configure this, but it seems that it has changed a bit over time.
 
-{{< blockquote type="Info" text="[Using Cloudflare to serve your private Azure Storage Blobs](https://www.eliostruyf.com/cloudflare-serve-private-azure-storage-blobs/)" >}}
+{{< blockquote type="info" text="[Using Cloudflare to serve your private Azure Storage Blobs](https://www.eliostruyf.com/cloudflare-serve-private-azure-storage-blobs/)" >}}
 
 The article I used to configure it on the Verizon CDN was this one which tells you how to [hide CDN SAS token using a rewrite rule](https://docs.microsoft.com/en-us/azure/cdn/cdn-sas-storage-support#option-2-hidden-cdn-sas-token-using-a-rewrite-rule). You can accomplish this via the Verizon its **Rules Engine**, which has been updated to version 4 a long time ago. The interface and configuration are a bit different.
 
-{{< blockquote type="Important" text="Before setting your Azure Storage Account not publicly accessible, be sure to configure the rules first and wait until they are provisioned. It can take 4 hours before your rules are provisioned. After the provisioning, you can safely switch the Azure Storage its public access." >}}
+{{< blockquote type="important" text="Before setting your Azure Storage Account not publicly accessible, be sure to configure the rules first and wait until they are provisioned. It can take 4 hours before your rules are provisioned. After the provisioning, you can safely switch the Azure Storage its public access." >}}
 
 ## Configuring the rewrite rule
 
@@ -43,11 +43,11 @@ Set the select category dropdown to **General**, and the select match dropdown t
 
 In the source input field, add your CDN its internal relative path: `/<cdn-ID>/<CDN-name>/(.*)`.
 
-{{< blockquote type="Info" text="Note the regex at the end. This regex will retrieve everything that comes after the CDN name, and we can use it for the destination input." >}}
+{{< blockquote type="info" text="Note the regex at the end. This regex will retrieve everything that comes after the CDN name, and we can use it for the destination input." >}}
 
 In the destination input, add the following: `/<cdn-ID>/<CDN-name>/$1?sv=2020-02-10&ss=b&srt=o&sp=r&se=2021-02-23T17:24:39Z&st=2021-02-23T09:24:39Z&spr=https&sig=<token>`. Replace everything after `$1` with your own SAS token from the Azure Storage Account.
 
-{{< blockquote type="Info" text="The `$1` placeholder will be replaced automatically by the CDN with the value from the regex in the source URL." >}}
+{{< blockquote type="info" text="The `$1` placeholder will be replaced automatically by the CDN with the value from the regex in the source URL." >}}
 
 {{< caption-new "/uploads/2021/02/azurecdn4.png" "Source and destination configuration for rewrite"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACGSURBVF3BwWqEQBBF0VuvSlFcGLII+f/fm2RcCM4wbXeFXghhzrFt2zIiGKcZN3B3LqUUOncnBhmtVl7PB8uycKm1Ionz9wZywmJgkJBEKYV39vHJef8hTnNmF5IwM8yMLjMxM7r4+kbT6Lg7XWbSWqPb953jOOgkEbTEwpDEf+u6cslM/gAVEC4+A36hbAAAAABJRU5ErkJggg==" "1292" >}}
 
@@ -59,4 +59,4 @@ Now the CDN will start the deployment and will notify if it succeeded.
 
 {{< caption-new "/uploads/2021/02/azurecdn6.png" "Waiting on deployment"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABfSURBVF3BQQ6DQAwEwfaMcQ78/6EQKSLaBUd7TVUcx9ERQdaLzSIiWGwz52SRROZWLKKJCMYYSGJ5ngfbdDdKi3sOIoLuJjORxLxvPteXxTZZVVQV/9zN+zy5LPZ95wcW8yMbrI/xrAAAAABJRU5ErkJggg==" "1300" >}}
 
-{{< blockquote type="Important" text="Once this process is completed, make sure you wait a couple of hours before the new policy/rule is implemented on all nodes. Documentation tells you that this process can take up to 4 hours." >}}
+{{< blockquote type="important" text="Once this process is completed, make sure you wait a couple of hours before the new policy/rule is implemented on all nodes. Documentation tells you that this process can take up to 4 hours." >}}

@@ -16,11 +16,11 @@ Going back a year in time, I created a post about building my Busy Light, which 
 
 {{< caption-new "/uploads/2021/03/slack3.jpg" "Busy light controlled by Slack presence"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAA0ACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APLfj98Urrwr+xF8bvBmkyaB/ZWs/Cfx7o9j4f07wzY+GL630yyu722ukg1KPVLfRrkx2FnNfNavbHUdbjjvZ7VTLA6y/H4LNstzDhaCzjKuFfa5VPDQweYUOfDZv9bWOwmXUK1LDUsTThicRHF4yisRShh8TXjR+sY6qlRw9aS5OPc2peH3ETzWrm/HtLJs1zrJMmxWFlhJ5zkFOrxNXqYPA061ehlOKxeBwUsdLCYaOMqYnC4HD18Zg8HOrCVWLX8XephJNS1CRchXvrt1HHAaeQj9DXr0pv2VPb+HD/0leZ79R/vJ6L45d/5n5n9u/wC0v8LPhZ4R/wCCcup+OLTwRZav4y+NPwW8N+LNZ8QeJLp9Zm0G71rTLPxPLD4asZYYtL0prW58Ta1ZW2pWdjb6tLYX00Go3t/ncPzqdGlldbL50ozqV8wxNSEqtSpJKjTk/bzjThGyk3ZU4ym5ckV7iWqP1jEwWZ5dmFeqoU1g8voP2dKCiqzpyioe0d/+fl61RqN6tR3m7pNfxT6haxG/vjjreXPYf89nr9Dpfw6f+CH/AKSj8ln8c/8AFL82f//Z" "3024" >}}
 
-{{< blockquote type="Info" text="The related article: [Building a busy light to show your Microsoft Teams presence](https://www.eliostruyf.com/diy-building-busy-light-show-microsoft-teams-presence/)" >}}
+{{< blockquote type="info" text="The related article: [Building a busy light to show your Microsoft Teams presence](https://www.eliostruyf.com/diy-building-busy-light-show-microsoft-teams-presence/)" >}}
 
 The busy light has been running without issues since I hang it at my office until earlier this week. It did not break. It was because I stopped using Microsoft Teams and switched to Slack.
 
-{{< blockquote type="Reason" text="I moved to another company." >}}
+{{< blockquote type="note text="I moved to another company." >}}
 
 ## Getting my busy light working again
 
@@ -36,7 +36,7 @@ Like the Google Calendar app, some apps can automatically change your status whe
 
 To make Slack's presence work with my busy light. I started by creating a fork of the [Homebridge Presence switch connected to Microsoft Graph](https://github.com/estruyf/homebridge-presence-switch-msgraph), and removed all the authentication and Microsoft Graph logic.
 
-{{< blockquote type="Info" text="[Homebridge presence switch connected to Slack](https://github.com/estruyf/homebridge-presence-switch-slack)" >}}
+{{< blockquote type="info" text="[Homebridge presence switch connected to Slack](https://github.com/estruyf/homebridge-presence-switch-slack)" >}}
 
 The logic of calling the Microsoft Graph got replaced by calling the profile-, presence-, and dnd-API from Slack.
 
@@ -50,7 +50,7 @@ By calling these three APIs, the Homebridge plugin can provide you the following
 
 You can find more information about the plugin and the installation process on the [Homebridge presence switch connected to Slack](https://github.com/estruyf/homebridge-presence-switch-slack) repository.
 
-{{< blockquote type="Important" text="The Homebridge plugin also creates additional switches for each of the presence states. These switches allow you to automate your home even more. Like for instance, when I go to a meeting, my speaker will automatically stop playing." >}}
+{{< blockquote type="important" text="The Homebridge plugin also creates additional switches for each of the presence states. These switches allow you to automate your home even more. Like for instance, when I go to a meeting, my speaker will automatically stop playing." >}}
 
 {{< caption-new "/uploads/2021/03/slack4.jpg" "Presence switch"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAoACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP7A/hPrHw1tNR0bwVqPwmu9R+26X4TsbXVbrwF8O4fDOlv/AGVvurx9Xm146te290jfaZ5ZtLbUD9kkne3eW6jR/AyvKcr/ALNwDeXYCTeCwjblg8M3d4ene79lzSbd5NycpOUm29kvpM5znOFnGbf8K2ZaZljVFfXcQowUcRUioQUaiUYq2i2je0bRUYr4d+J/hDwta/Ev4h2troemWttbeOfFsFva2tultbW0EOv6hHDBb28OyGCCGNVjihiRI4o1VI1VVAH4rm+CwUM2zSEKFGEIZjjYxhCKhGEY4mqoxjGNoxjFJJRSSSSSSSP6EyPMMfUyTJ6k8TWqTnleXznUm3Oc5SwlFynOck5TlJtuUpNyk2222z2X4X+IvEFx8O/Bz3Gu6xO8nhjw8JGm1O9laQW+mxi3Ds87FhAJZRCGJ8oSSBNods/SZRmOYf2Xl/8At2M0weHS/wBqr7KnFJfHskrLsj5riLKcrWd5rbLcvV8wxbdsHh9W60m2/wB3q22231bbPz28Za9rlz4v8VXNzrWrXFxceJNcnnnn1G8lmnml1O6klmmlkmZ5JZHZnkkdmd3YsxJJNfleOxOInjsZKVetKUsViJSlKrNylJ1ptyk3Jttt3bererP2LLcJhYZdgIQw2HhCGCwsYQjRpxjGMaFNRjGKilGMUkkkkklZaH//2Q==" "379" >}}
 
