@@ -36,7 +36,7 @@ That is how PYOD was born. At first, we wanted to keep it simple and just a side
 
 ## The technologies we used
 
-{{< caption "/2020/09/pyod-architecture.png" "Overview of the architecture and technologies behind PYOD"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACMSURBVCXBQU7DQBBE0V89PbbibaSsuP/xWKBECHu6CyLe0/P1dFfjJbpMZECI5Wbvb+Lrk358EH0ZlwDjfXHZeDRWU4K6P3hLz+ZcJ00jBUGTBDNOoHAbjUmqISsYDLTMJVEky8Fai2PwR6QQ0SAb24xj8oMwohBsO9ikRjCOnTfx72ZTArZE1wlz4xdFqk08VVj5BQAAAABJRU5ErkJggg==" "2395" >}}
+{{< caption-new "/uploads/2020/09/pyod-architecture.png" "Overview of the architecture and technologies behind PYOD"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACMSURBVCXBQU7DQBBE0V89PbbibaSsuP/xWKBECHu6CyLe0/P1dFfjJbpMZECI5Wbvb+Lrk358EH0ZlwDjfXHZeDRWU4K6P3hLz+ZcJ00jBUGTBDNOoHAbjUmqISsYDLTMJVEky8Fai2PwR6QQ0SAb24xj8oMwohBsO9ikRjCOnTfx72ZTArZE1wlz4xdFqk08VVj5BQAAAABJRU5ErkJggg==" "2395" >}}
 
 The above mindmap shows an overview of all the technologies and services we use. You see, this is what I meant with not the typical approach.
 

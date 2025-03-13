@@ -17,7 +17,7 @@ comments: true
 
 In one of my previous post I created a task manager with ECMAscript. In this post I will go a step further and create a to-do list. This to-do list that enables you to add new items, delete items and mark them as completed.
 
-{{< caption-legacy "uploads/2011/02/022411_1409_CreatingaTo4.png" "To-do list final result" >}}
+{{< caption-new "/uploads/2011/02/022411_1409_CreatingaTo4.png" "To-do list final result" >}}
 
 [Download the solution package](/uploads/2011/02/To-do_List.zip)
 
@@ -33,7 +33,7 @@ First of all we need some markup to work with.
 
 ### HTML
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div id="todo_list">
   <div class="todo_header">
     <h3>To-do list</h3>
@@ -54,11 +54,11 @@ First of all we need some markup to work with.
     </ul>
   </div>
 </div>
-{{< / highlight >}}
+```
 
 ### CSS
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 #todo_list {
   border: 1px solid #0072BB;
   width: 400px;
@@ -97,7 +97,7 @@ First of all we need some markup to work with.
 
 #todo_items ul li a { margin-right: 10px; }
 #todo_items ul li a img { height: 9px; }
-{{< / highlight >}}
+```
 
 ## Opening a modal dialog with custom HTML code
 
@@ -105,7 +105,7 @@ Opening a modal dialog in SharePoint is very easy. You can specify if you want t
 
 I have already placed an anchor tag in the HTML markup that when clicked, calls the &#8220;openDialog&#8221; function. The &#8220;openDialog()&#8221; function would look like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function openDialog() {	
   //Create todo item input form
   var htmlContent = document.createElement("div");
@@ -130,13 +130,13 @@ function openDialog() {
   //Open dialog window
   dlg = SP.UI.ModalDialog.showModalDialog(options);
 }
-{{< / highlight >}}
+```
 
 I have chosen to create my own HTML object in this example, but you can also open the &#8220;New Form&#8221; page (`~site/lists/<Task List>/NewForm.aspx`) from the task list by specifying the &#8220;url&#8221; option.
 
 The result of this function is:
 
-{{< caption-legacy "uploads/2011/02/022411_1409_CreatingaTo2.png" "Modal dialog with custom HTML" >}}
+{{< caption-new "/uploads/2011/02/022411_1409_CreatingaTo2.png" "Modal dialog with custom HTML" >}}
 
 ## Creating a to-do item from the modal dialog
 
@@ -144,7 +144,7 @@ In the previous section you have created a function that opens a modal dialog wi
 
 When the submit button gets clicked, the unimplemented &#8220;AddToDoItem&#8221; function is called. The function looks like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function AddToDoItem() {
   // Retrieve the input values
   var itemTitle = $("#todo_Title").val();
@@ -175,29 +175,29 @@ function AddToDoItem() {
     alert("Fill in the title field");
   }
 }
-{{< / highlight >}}
+```
 
 Items that are added to the task list will get the &#8220;In Progress&#8221; status. You can change this by whatever status you want it to be.
 
 When the item is successfully added, the &#8220;onQuerySucceeded&#8221; function is called. This function will close the modal dialog and set the returned value to &#8220;To-do Item Created&#8221;.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function onQuerySucceeded() {
   SP.UI.ModalDialog.commonModalDialogClose(SP.UI.DialogResult.OK,'To-do Item Created');
 }
-{{< / highlight >}}
+```
 
 When the items insertion failed, the &#8220;onQueryFailed&#8221; function will be called. This will also close the modal dialog and returns the error message.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function onQueryFailed(sender, args) {
 	SP.UI.ModalDialog.commonModalDialogClose(SP.UI.DialogResult.cancel, 'To-do Item Creation Failed: ' + args.get_message());
 }
-{{< / highlight >}}
+```
 
 To handle the result messages we can uses the modal dialog &#8220;dialogReturnValueCallback&#8221; option. The code looks like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function DialogCallback(result, returnedMessage) {
   // Check if the message length is larger than zero
   if(returnedMessage.length > 0 && returnedMessage != null) {
@@ -206,11 +206,11 @@ function DialogCallback(result, returnedMessage) {
     Initialize();
   }
 }
-{{< / highlight >}}
+```
 
 When the item is added, it will close the modal dialog and that will create a callback to the &#8220;DialogCallBack&#8221; function. The &#8220;returnedMessage&#8221; variable can be used to display a message in the notification box from SharePoint.
 
-{{< caption-legacy "uploads/2011/02/022411_1409_CreatingaTo3.png" "Notification message" >}}
+{{< caption-new "/uploads/2011/02/022411_1409_CreatingaTo3.png" "Notification message" >}}
 
 ## Fill the HTML lists
 
@@ -218,15 +218,15 @@ Currently you are only able to add new items to the to-do list, but still there 
 
 First a call to the &#8220;ExecuteOrDelayUntilScriptLoaded&#8221; function needs to be created.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 ExecuteOrDelayUntilScriptLoaded(Initialize, "sp.js");
-{{< / highlight >}}
+```
 
 The JavaScript function &#8220;Initialize&#8221; inside the &#8220;ExecuteOrDelayUntilScriptLoaded&#8221; function is delayed until the SharePoint &#8220;sp.js&#8221; file is loaded.
 
 The &#8220;Initialize&#8221; function looks like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function Initialize() {
   //Get the current SP context
   clientContext = new SP.ClientContext.get_current();
@@ -254,13 +254,13 @@ function Initialize() {
   //Execute the listitem query
   clientContext.executeQueryAsync(Function.createDelegate(this, this.onListItemsLoadSuccess), Function.createDelegate(this, this.onListItemsLoadFailed));
 }
-{{< / highlight >}}
+```
 
 Inside this function two query calls are created to the task list. One call to retrieve all the &#8220;In Progress&#8221; items and the other to retrieve the last five completed to-do items.
 
 The &#8220;onListItemsLoadSuccess&#8221; will add the returned list items to the correct HTML lists. The looks like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function onListItemsLoadSuccess(sender, args) {
   //Add the "In Progress" list items
   //Remove current list items 
@@ -290,25 +290,25 @@ function onListItemsLoadSuccess(sender, args) {
     $("#todo_completed ul").append("<li ref='" + oListItem.get_item('ID') + "'>" + oListItem.get_item('Title') + "</li>");
   }
 }
-{{< / highlight >}}
+```
 
 The &#8220;onListItemsLoadFailed&#8221; function will show a message in the SharePoint notification box.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function onListItemsLoadFailed(sender, args) {
   SP.UI.Notify.addNotification("List items load failed: " + args.get_message(), false);
 }
-{{< / highlight >}}
+```
 
 The result looks like this:
 
-{{< caption-legacy "uploads/2011/02/022411_1409_CreatingaTo1.png" "Result until now" >}}
+{{< caption-new "/uploads/2011/02/022411_1409_CreatingaTo1.png" "Result until now" >}}
 
 ## Mark the items as completed
 
 The next function that needs to be created is the &#8220;MarkAsComplete&#8221; function. This function retrieves the item and updates its status to &#8220;Completed&#8221;.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function MarkAsComplete(itemID) {
   clientContext = new SP.ClientContext.get_current();
   web = clientContext.get_web();
@@ -324,30 +324,30 @@ function MarkAsComplete(itemID) {
   //Execute the query
   clientContext.executeQueryAsync(Function.createDelegate(this, this.onUpdateSucceeded), Function.createDelegate(this, this.onUpdateFailed));
 }
-{{< / highlight >}}
+```
 
 When the update succeeded the &#8220;onUpdateSucceeded&#8221; function is called. It will add a notification message and recall the &#8220;Initialize&#8221; function to update the HTML lists.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function onUpdateSucceeded() {
   SP.UI.Notify.addNotification("To-do Item Updated", false);
   Initialize();
 }
-{{< / highlight >}}
+```
 
 The &#8220;onUpdateFailed&#8221; function shows a notification message.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function onUpdateFailed() {
   SP.UI.Notify.addNotification("To-do Item Updated Failed: " + args.get_message(), false);
 }
-{{< / highlight >}}
+```
 
 ## Delete an item from the list
 
 The last function that needs to be created is the &#8220;DeleteItem&#8221; function. The delete item function retrieves the current item and deletes it from the task list. The delegate functions that are being used are the same as from the &#8220;MarkAsComplete&#8221; function.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function DeleteItem(itemID) {
   clientContext = new SP.ClientContext.get_current();
   web = clientContext.get_web();
@@ -358,7 +358,7 @@ function DeleteItem(itemID) {
 
   clientContext.executeQueryAsync(Function.createDelegate(this, this.onUpdateSucceeded), Function.createDelegate(this, this.onUpdateFailed));
 }
-{{< / highlight >}}
+```
 
 ## Download
 

@@ -19,7 +19,7 @@ I had configured the search query in the Query Builder of the Search Web Part to
 
 Here you can see the sorting configuration:
 
-{{< caption-legacy "uploads/2013/04/042613_1520_SortingNotW1.png" "Query Builder Sort Options" >}}
+{{< caption-new "/uploads/2013/04/042613_1520_SortingNotW1.png" "Query Builder Sort Options" >}}
 
 Storing the settings was not giving me the correct result. Whatever I configured in the sorting settings, the web part ignored the settings.
 
@@ -31,15 +31,15 @@ _Note: [here](http://technet.microsoft.com/en-us/library/jj683115.aspx) you can 
 
 For the result source I used the same configuration and sorting settings as in the search results web part.
 
-{{< caption-legacy "uploads/2013/04/042613_1520_SortingNotW2.png" "Result Source Sorting" >}}
+{{< caption-new "/uploads/2013/04/042613_1520_SortingNotW2.png" "Result Source Sorting" >}}
 
 The nice thing about this results sources is that they can be used in the Query Builder.
 
-{{< caption-legacy "uploads/2013/04/042613_1520_SortingNotW3.png" "Sorted Result Source" >}}
+{{< caption-new "/uploads/2013/04/042613_1520_SortingNotW3.png" "Sorted Result Source" >}}
 
 After the creation of the result source I configured the search results query builder and specified my result source as the query that needs to be used.
 
-{{< caption-legacy "uploads/2013/04/042613_1520_SortingNotW4.png" "Use the created result source as query" >}}
+{{< caption-new "/uploads/2013/04/042613_1520_SortingNotW4.png" "Use the created result source as query" >}}
 
 **Note**: the query text may remain empty.
 

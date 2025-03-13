@@ -37,7 +37,7 @@ The notation of these variables is as follows; all use the `--vscode-` prefix, f
 
 **Examples**:
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 --vscode-font-weight: normal;
 --vscode-font-size: 13px;
 --vscode-editor-font-family: &quot;Cascadia Code&quot;;
@@ -45,18 +45,18 @@ The notation of these variables is as follows; all use the `--vscode-` prefix, f
 --vscode-editor-font-size: 15px;
 --vscode-foreground: #f3eff5;
 ...
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="Here is a list of all the VS Code theme variables: [theme variables - gist](https://gist.github.com/estruyf/ba49203e1a7d6868e9320a4ea480c27a#file-vscode-theme-variables-css)" >}}
 
 In your extension CSS file, you can use these variables as follows:
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 .body {
 	background-color: var(--vscode-editor-background);
 	color: var(--vscode-editor-foreground);
 }
-{{< / highlight >}}
+```
 
 ## Cool, but what with CSS in JS, theme providers, ...?
 
@@ -70,14 +70,14 @@ As mentioned above, all the CSS variables get defined on the HTML style element.
 
 One way is to get the values one by one as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const styles = getComputedStyle(document.querySelector('html'));
 const editorBackground = styles.getPropertyValue('--vscode-editor-background')
-{{< / highlight >}}
+```
 
 The above approach might be good if you only need to get a couple of values; the next one might be better if you need more CSS variables or want them all.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const htmlStyle = document.querySelector('html')?.getAttribute('style');
 if (!htmlStyle) {
   return;
@@ -104,7 +104,7 @@ const toStyleObject = (str: string) => {
     [property]: value
   };
 };
-{{< / highlight >}}
+```
 
 The above code will give you key/value (property/value) pairs and allows you to make use of them in your code. To do so, you can use `codeStyles.editorBackground` and get the color value.
 
@@ -120,7 +120,7 @@ When using the code-driven approach, you will have to observe theme changes. You
 
 An example of the observer looks as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const mutationObserver = new MutationObserver((mutationsList, observer) => {
   updateCssVariables();
 });
@@ -128,7 +128,7 @@ const mutationObserver = new MutationObserver((mutationsList, observer) => {
 updateCssVariables();
 
 mutationObserver.observe(document.body, { childList: false, attributes: true })
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="In the `updateCssVariables` method, you can define the same logic from above." >}}
 

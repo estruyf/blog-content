@@ -30,7 +30,7 @@ For this approach a **control** and **item** display template needs to be create
 
 This is the code which is in the DIV container of the control template:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <script>
   Type.registerNamespace('search.Grouping');
 
@@ -88,7 +88,7 @@ _#-->
     _#= ctx.RenderGroups(ctx) =#_
   </div>
 </div>
-{{< / highlight >}}
+```
 
 The **currentCtx.Grouping** object will be filled with data from the item template with the HTML code of the result and the corresponding group value. In the estruyf.Grouping.init method, you find the **AddPostRenderCallback** method which will call the estruyf.Grouping.show method to visualize the HTML content.
 
@@ -96,15 +96,15 @@ The **currentCtx.Grouping** object will be filled with data from the item templa
 
 First of all for the item template I configured the following **ManagedPropertyMapping**:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:ManagedPropertyMapping msdt:dt="string">'Link':'Path','Line 1'{Line 1}:'Title','Grouping':'SiteTitle'</mso:ManagedPropertyMapping>
-{{< / highlight >}}
+```
 
 The **Grouping** property is the most important one, this is be used for configuring on which field the grouping needs to be set. The reason I went for this approach is that you can easily configure the field to set up the grouping on (in the next section **how to use it**, I'll describe how to use the templates, and how to set up another field to group on).
 
 The next step is the code:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var line1 = $getItemValue(ctx, "Line 1");
 var grouping = $getItemValue(ctx, "Grouping");
 var linkURL = $getItemValue(ctx, "Link");
@@ -114,7 +114,7 @@ var content = String.format('<div class="cbs-Item"><a class="cbs-Line1Link ms-no
 
 // Push the content to the grouping object
 search.Grouping.push(grouping, content);
-{{< / highlight >}}
+```
 
 As you can see, there isn't any is HTML written, everything done in JavaScript and will be visualized in the control template.
 
@@ -122,19 +122,19 @@ As you can see, there isn't any is HTML written, everything done in JavaScript a
 
 When you place the control and item display templates in the master page gallery of your site (the link to the files is at the bottom of the page), the following two templates become available in your Content Search Web Part:
 
-{{< caption-legacy "uploads/2014/06/060514_0936_Groupingsea1.png" "Grouping templates" >}}
+{{< caption-new "/uploads/2014/06/060514_0936_Groupingsea1.png" "Grouping templates" >}}
 
 By default, it will sort everything on the Site Title managed property. This looks like this:
 
-{{< caption-legacy "uploads/2014/06/060514_0936_Groupingsea2.png" "Grouping Results" >}}
+{{< caption-new "/uploads/2014/06/060514_0936_Groupingsea2.png" "Grouping Results" >}}
 
 You could also change the grouping property if you want. This can be done by overwriting the property mappings in the web part properties:
 
-{{< caption-legacy "uploads/2014/06/060514_0936_Groupingsea3.png" "Group field mapping" >}}
+{{< caption-new "/uploads/2014/06/060514_0936_Groupingsea3.png" "Group field mapping" >}}
 
 The result will look a bit different now:
 
-{{< caption-legacy "uploads/2014/06/060514_0936_Groupingsea4.png" "Results grouped on contentclass" >}}
+{{< caption-new "/uploads/2014/06/060514_0936_Groupingsea4.png" "Results grouped on contentclass" >}}
 
 ## How to change the HTML output
 

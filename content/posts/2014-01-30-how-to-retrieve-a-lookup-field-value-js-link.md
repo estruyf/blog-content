@@ -26,7 +26,7 @@ Retrieving the value from a lookup field is easier than it used to be when worki
 
 What you have to do is check if the object you retrieve contains data. Once you know that it contains data, you can obtained the value(s). Here is a code sample of how you could do it:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var lookupSample = lookupSample '' {};
 
 lookupSample.CustomizeFieldRendering = function () {
@@ -81,7 +81,7 @@ lookupSample.multiLookupValue = function (ctx) {
 }
 
 lookupSample.CustomizeFieldRendering();
-{{< / highlight >}}
+```
 
 In the code I showed you two examples:
 
@@ -89,4 +89,4 @@ In the code I showed you two examples:
 *   The second one **multiLookupSample** can be used when you're working with multi lookup values.
 The result of the rendering looks like this:
 
-{{< caption-legacy "uploads/2014/01/013014_1055_HowtouseaLo1.png" "Lookup Value Example" >}}
+{{< caption-new "/uploads/2014/01/013014_1055_HowtouseaLo1.png" "Lookup Value Example" >}}

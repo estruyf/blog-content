@@ -23,23 +23,23 @@ If you are building your own custom Gulp tasks for your SharePoint Framework pro
 
 By default, if you create a new Gulp task for SPFx, you start with the following code:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 build.task('upload-to-sharepoint', {
   execute: (config) => {
     // Your task code
   }
 });
-{{< / highlight >}}
+```
 
 The config object has a property **args** that contains all your provided arguments. So if you called the following command for example: `gulp upload-to-sharepoint --username elio`. You could retrieve the username argument like this in the Gulp task:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 build.task('upload-to-sharepoint', {
   execute: (config) => {
     const username = config.args['username'];
     // The rest of your task code
   }
 });
-{{< / highlight >}}
+```
 
 Hope this helps you extending your SharePoint Projects.

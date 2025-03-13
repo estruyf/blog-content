@@ -25,7 +25,7 @@ As mentioned, I have always used the `contributes.configuration` property as a s
 Here you can see an example of how it looks like for a single object:
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"json"},{"name":"selection","value":""}]} -->
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "contributes": {
     "configuration": [
@@ -54,13 +54,13 @@ Here you can see an example of how it looks like for a single object:
     ]
   }
 }
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 To create multiple categories, all you need to do is change the `contributes.configuration` to an array, and each object you add needs to contain the `title` (used as the category title) and `properties` (used for the settings in the category) properties. When we group the settings of the above example into two categories, it looks as follows:
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"json"},{"name":"selection","value":""}]} -->
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "contributes": {
     "configuration": [
@@ -94,7 +94,7 @@ To create multiple categories, all you need to do is change the `contributes.con
     ]
   }
 }
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 This results in the following outcome:

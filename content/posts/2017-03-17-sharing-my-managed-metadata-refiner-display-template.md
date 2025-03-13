@@ -22,11 +22,11 @@ These are probably two of the most asked questions I received the last couple of
 
 The template that is shared renders the following output:
 
-{{< caption-legacy "uploads/2017/03/Screenshot-2017-03-17-13.09.41.png" "Refiner output example" >}}
+{{< caption-new "/uploads/2017/03/Screenshot-2017-03-17-13.09.41.png" "Refiner output example" >}}
 
 This corresponds to the exact same hierarchy of the term set:
 
-{{< caption-legacy "uploads/2017/03/Screenshot-2017-03-17-13.13.08.png" "Term set hierarchy" >}}
+{{< caption-new "/uploads/2017/03/Screenshot-2017-03-17-13.13.08.png" "Term set hierarchy" >}}
 
 The template only applies a simple styling to indent the children but does nothing more. If you want, you are free to style it to your needs.
 
@@ -47,6 +47,6 @@ There are a couple of things you need to know before you can start using this te
 
 I just added a third template with which you can refine based on the parent terms. Here is an example:
 
-{{< caption-legacy "uploads/2017/03/refiner-template-parent.png" "Parent terms are refinable" >}}
+{{< caption-new "/uploads/2017/03/refiner-template-parent.png" "Parent terms are refinable" >}}
 
 If you compare this one, to the first image at the top. You will notice that **Europe** is now refinable. When you click on it, it will return all its children, so this allows you to go deeper into the hierarchy.

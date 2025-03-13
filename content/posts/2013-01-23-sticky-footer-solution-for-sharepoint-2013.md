@@ -29,19 +29,19 @@ If you used my solution from 2010, you will see that not much has changed.
 *   Do a search for the **s4-workspace** DIV, and add a new wrapper DIV underneath it;
 
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!-- =Wrapper -->
 <div class="wrapper">
-{{< / highlight >}}
+```
 
 
-{{< caption-legacy "uploads/2013/01/012313_1253_StickyFoote1.png" "Wrapper DIV location" >}}
+{{< caption-new "/uploads/2013/01/012313_1253_StickyFoote1.png" "Wrapper DIV location" >}}
 
 *   Go straight to the bottom of the HTML file and find the last DIV closing tag;
 *   Replace the DIV's closing tag with the following code:
 
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
     <!-- =Push is needed for the footer to be correctly placed on the page. ms-dialogHidden used to hide it in the dialogs. -->
     <div class="push ms-dialogHidden"></div>
   </div>
@@ -50,10 +50,10 @@ If you used my solution from 2010, you will see that not much has changed.
     <span>This is my SharePoint 2013 Footer</span>
   </div>
 </div>
-{{< / highlight >}}
+```
 
 
-{{< caption-legacy "uploads/2013/01/012313_1253_StickyFoote2.png" "Footer HTML location" >}}
+{{< caption-new "/uploads/2013/01/012313_1253_StickyFoote2.png" "Footer HTML location" >}}
 
 *   Save the file
 
@@ -63,7 +63,7 @@ Now that you've added your HTML markup to the master page HTML file, we only nee
 
 The CSS markup looks like this:
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -87,7 +87,7 @@ The CSS markup looks like this:
 body #s4-workspace {
   margin-bottom: -30px;
 }
-{{< / highlight >}}
+```
 
 I paced this CSS code for testing purposes in the following location: `/_layouts/15/images/tests/footer.css`.
 
@@ -95,9 +95,9 @@ I paced this CSS code for testing purposes in the following location: `/_layouts
 
 The result looks like this:
 
-{{< caption-legacy "uploads/2013/01/012313_1253_StickyFoote3.png" "SharePoint 2013 Footer" >}}
+{{< caption-new "/uploads/2013/01/012313_1253_StickyFoote3.png" "SharePoint 2013 Footer" >}}
 
-{{< caption-legacy "uploads/2013/01/012313_1253_StickyFoote4.png" "SharePoint 2013 Footer Scrolling" >}}
+{{< caption-new "/uploads/2013/01/012313_1253_StickyFoote4.png" "SharePoint 2013 Footer Scrolling" >}}
 
 ### JavaScript Solution
 

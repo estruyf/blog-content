@@ -49,7 +49,7 @@ The steps which you need to perform to deploy your code to the functions app are
 
 My GitHub Actions workflow looks as follows:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 deploy_az:
   runs-on: windows-latest
   name: "Deploy back-end"
@@ -80,10 +80,10 @@ deploy_az:
         app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
         publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE_DEV }}
         package: ./backend.zip
-{{< / highlight >}}
+```
 
 Once this workflow ran. Your function app will now run from the package you deployed. You can verify this if you take a look in the `wwwroot` directory. This directory should now contain the files from the package. Be aware; this directory is now read-only.
 
-{{< caption "/2021/05/package1.png" "The packages pushed to your Azure Function"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABTSURBVE3BYQqDMAyA0S82ie3ZBgMPOS8oc8aNVPaj4HvyWtd+RuDuZIeiipWJzOROH8+F471hbrTaGPbPzp+I0GpDOwI9IRM3Zfh9lYjA5xnTwgWFVRwGM4ViNwAAAABJRU5ErkJggg==" "1075" >}}
+{{< caption-new "/uploads/2021/05/package1.png" "The packages pushed to your Azure Function"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABTSURBVE3BYQqDMAyA0S82ie3ZBgMPOS8oc8aNVPaj4HvyWtd+RuDuZIeiipWJzOROH8+F471hbrTaGPbPzp+I0GpDOwI9IRM3Zfh9lYjA5xnTwgWFVRwGM4ViNwAAAABJRU5ErkJggg==" "1075" >}}
 
 {{< blockquote type="Info" text="The `packagename.txt` file contains the name of the ZIP package which needs to be used." >}}

@@ -47,7 +47,7 @@ As the name describes, this is a database in your browser. It allows you to do S
 
 Before I tell you what to use, you need to know that local- and sessionStorage have a limit of 5MB data storage. For storing API requests, this is a lot of space you can use.
 
-{{< caption "/2020/10/size-matters.jpg" "Size matters for caching data"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APvbxTqH7V0fiHU7bwZ4a/Z+l8KqZJNE1TxP4k+IEOtXEUs94LaO/wBN0rw7PaQ3NtbRWf29Ibx4JpLkyWd5iKS1X9wrQz94mo8PiMop4XRUo1sNjKtVrVt1HTxNGKkrKKcbxak24JxSl/M9GeQRwtOOIw+bVMW3J1Z0MThKNGOyiqcamHrSnF+9KSmoSTUVGclJ8vutn/aBs7U6ibRdQNtAb5bLzWs1vDEv2lbRpwszWwm3iBplWUxbDIofIr1483LHncXPlXM4pxi5W95xi3JqLd7Jyk0tG3ueRLl5pcikocz5VJqUlG/uqUlGKlJKybUYpvVRWx//2Q==" "1950" >}}
+{{< caption-new "/uploads/2020/10/size-matters.jpg" "Size matters for caching data"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APvbxTqH7V0fiHU7bwZ4a/Z+l8KqZJNE1TxP4k+IEOtXEUs94LaO/wBN0rw7PaQ3NtbRWf29Ibx4JpLkyWd5iKS1X9wrQz94mo8PiMop4XRUo1sNjKtVrVt1HTxNGKkrKKcbxak24JxSl/M9GeQRwtOOIw+bVMW3J1Z0MThKNGOyiqcamHrSnF+9KSmoSTUVGclJ8vutn/aBs7U6ibRdQNtAb5bLzWs1vDEv2lbRpwszWwm3iBplWUxbDIofIr1483LHncXPlXM4pxi5W95xi3JqLd7Jyk0tG3ueRLl5pcikocz5VJqUlG/uqUlGKlJKybUYpvVRWx//2Q==" "1950" >}}
 
 ### Are you the only one using it?
 
@@ -65,7 +65,7 @@ When building solutions that will run on top of a platform you do not own, I wou
 
 Initially, I would have said yes to this question, but times changed, SharePoint became a lot more popular. SharePoint Framework itself became more popular, so everyone starts to cache. Here is an example of an OOTB team site in my environment (no customizations).
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 -------------------------
 spfx-ndsi-1602769746742-197: 183987 Bytes => 0.17546367645263672 MB
 spfx-ndsi-1602751398844-478: 256225 Bytes => 0.2443552017211914 MB
@@ -121,7 +121,7 @@ Total Length (in MB): 0.9160432815551758
 
 remainingStorage: 2316080
 remainingStorage (in MB): 2.2087860107421875
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="Here are only the ones logged that take the most space. When starting to search and navigating through the environment, this number goes up quickly as you can see at the end of the log, only 2MB available out of the 5MB." >}}
 

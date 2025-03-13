@@ -20,7 +20,7 @@ comments: true
 
 This week a client mentioned an issue when they want to add new apps to their sites. The issue is that they do not see the **Apps you can add** zone on the app creation page (your-site/_layouts/15/addanapp.aspx). They only see the **Noteworthy** apps:
 
-{{< caption-legacy "uploads/2014/01/011614_1122_MissingtheA1.png" "Noteworthy Apps" >}}
+{{< caption-new "/uploads/2014/01/011614_1122_MissingtheA1.png" "Noteworthy Apps" >}}
 
 The sites on which this problem occurs have custom branding applied. On the standard OOTB master pages, the problem doesn't occur. This means that it would be a problem with the custom branding itself that I implemented.
 
@@ -35,11 +35,11 @@ A quick look to the HTML of the page showed me that it wasn't a CSS related prob
 
 The second thing I did was setting the **Visible** property of all the content placeholders to **True** that were hidden. This way you can quickly see if it's a content placeholder problem.
 
-{{< caption-legacy "uploads/2014/01/011614_1122_MissingtheA2.png" "Content Placeholders" >}}
+{{< caption-new "/uploads/2014/01/011614_1122_MissingtheA2.png" "Content Placeholders" >}}
 
 After a page refresh, the **Apps you can add** zone became visible:
 
-{{< caption-legacy "uploads/2014/01/011614_1122_MissingtheA3.png" "Apps you can add" >}}
+{{< caption-new "/uploads/2014/01/011614_1122_MissingtheA3.png" "Apps you can add" >}}
 
 Next thing to do is finding which content placeholder is causing this problem. Eventually it turned out that the problem occurred by the content placeholder **PlaceHolderPageTitleInTitleArea** that was hidden. What doesn't make sense at first, because the **Apps you can add** zone is not added via this content placeholder.
 
@@ -47,14 +47,14 @@ I debugged the **sp.storefront.debug.js** file, and in that file I saw that **Ap
 
 Here is the code snippet from the **sp.storefront.debug.js** file:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 get_$57_3: function SP_Storefront_ManagementView$get_$57_3() {
     if (SP.ScriptUtility.isNullOrUndefined(this.$32_3)) {
         this.$32_3 = $get('ms-pageTitleCurrentNode');
     }
     return this.$32_3;
 }
-{{< / highlight >}}
+```
 
 
 ## Solution
@@ -66,8 +66,8 @@ So you have two options:
 1.  Set the **Visible** property for the **PlaceHolderPageTitleInTitleArea** content placeholder to **False**;
 2.  Add some extra HTML mark-up to your master page like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <span id="ms-pageTitleCurrentNode" style="display:none;"></span>
-{{< / highlight >}}
+```
 
 I went for the last option, because I didn't need the other mark-up in my page.

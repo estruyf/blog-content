@@ -43,25 +43,25 @@ Here are some screenshots of the CoercionType object from the various applicatio
 
 ## Word
 
-{{< caption-legacy "uploads/2014/10/101414_1319_Findoutinwh1.png" "CoercionType Object of Word" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh1.png" "CoercionType Object of Word" >}}
 
 ## Excel
 
-{{< caption-legacy "uploads/2014/10/101414_1319_Findoutinwh2.png" "CoercionType Object of Excel" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh2.png" "CoercionType Object of Excel" >}}
 
 ## PowerPoint
 
-{{< caption-legacy "uploads/2014/10/101414_1319_Findoutinwh3.png" "CoercionType Object of PowerPoint" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh3.png" "CoercionType Object of PowerPoint" >}}
 
 ## Project
 
-{{< caption-legacy "uploads/2014/10/101414_1319_Findoutinwh4.png" "CoercionType Object of Project" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh4.png" "CoercionType Object of Project" >}}
 
 ## The code
 
 There are a couple of ways to achieve this, here is my approach:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 if (Office.CoercionType.Ooxml) {
   // Opened in Word
   $('#content-header').css('background-color', '#2B579A');
@@ -75,7 +75,7 @@ if (Office.CoercionType.Ooxml) {
   // Opened in Project
   $('#content-header').css('background-color', '#31752F');
 }
-{{< / highlight >}}
+```
 
 The code checks which CoercionType is available to use, and sets the background color of the container (you could also do other things, like storing the application name in a variable).
 
@@ -84,7 +84,7 @@ The code checks which CoercionType is available to use, and sets the background 
 *   **Matrix** is available in Excel and Word, but if the APP was opened in Word, the first statement was already true;
 *   **Text** this is available in every rich client application, but the last one that remains is Project.
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // The initialize function must be run each time a new page is loaded
 Office.initialize = function (reason) {
   $(document).ready(function () {
@@ -107,22 +107,22 @@ Office.initialize = function (reason) {
     }
   });
 };
-{{< / highlight >}}
+```
 
 If you add this code inside your Office.initialize, you get the following outputs:
 
 ### APP opened in Word
 
-{{< caption-legacy "uploads/2014/10/101414_1319_Findoutinwh5.png" "APP opened in Word" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh5.png" "APP opened in Word" >}}
 
 ### APP opened in Excel
 
-{{< caption-legacy "uploads/2014/10/101414_1319_Findoutinwh6.png" "APP opened in Excel" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh6.png" "APP opened in Excel" >}}
 
 ### APP opened in PowerPoint
 
-{{< caption-legacy "uploads/2014/10/101414_1319_Findoutinwh7.png" "APP opened in PowerPoint" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh7.png" "APP opened in PowerPoint" >}}
 
 ### APP opened in Project
 
-{{< caption-legacy "uploads/2014/10/101414_1319_Findoutinwh8.png" "APP opened in Project" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh8.png" "APP opened in Project" >}}

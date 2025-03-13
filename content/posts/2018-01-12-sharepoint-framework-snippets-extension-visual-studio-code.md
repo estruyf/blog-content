@@ -19,7 +19,7 @@ Today I published a new Visual Studio Code extension that gives you some handy S
 
 > VSCode extension: [SPFx snippets](https://marketplace.visualstudio.com/items?itemName=eliostruyf.spfx-snippets)
 
-{{< caption-legacy "uploads/2018/01/spfx-snippet-demo.gif" "SPFx snippets demo" >}}
+{{< caption-new "/uploads/2018/01/spfx-snippet-demo.gif" "SPFx snippets demo" >}}
 
 Try it out and let me know if you like it.
 

@@ -52,6 +52,6 @@ I will explain you how to change the default search box image.
 
 The results should look like this:
 
-{{< caption-legacy "uploads/2013/01/011413_1344_Brandingthe1.png" "SharePoint 2013 Search Box witch Custom Image" >}}
+{{< caption-new "/uploads/2013/01/011413_1344_Brandingthe1.png" "SharePoint 2013 Search Box witch Custom Image" >}}
 
 As you can see with this new template functionality possibilities are endless. Making customizations is easier, but it involves replacing the default search box. Once you replaced the default search box you have full control and you can make up your own HTML markup.

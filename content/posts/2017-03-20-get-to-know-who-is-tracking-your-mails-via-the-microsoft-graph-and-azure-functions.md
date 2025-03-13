@@ -22,7 +22,7 @@ Of course, this is useful information if you are sending out mail campaigns or t
 
 When webhooks in the Microsoft Graph was announced last year, this was the opportunity to automate this process. I choose to give the emails which are tracked a tracking category and the name of the used tracker. This does not change anything to the mail itself, but still, gives you a highlight of the tracked emails.
 
-{{< caption-legacy "uploads/2017/03/031717_1442_Gettoknowwh1.png" "Example of tracking categories" >}}
+{{< caption-new "/uploads/2017/03/031717_1442_Gettoknowwh1.png" "Example of tracking categories" >}}
 
 Last week I have made this solution available on GitHub: [mail tracking via Microsoft Graph](https://github.com/estruyf/Mail-Tracking-Microsoft-Graph). So feel free to explore and test it out.
 
@@ -37,22 +37,22 @@ The solution I created is based upon an Azure Function in combination with the M
 
 <span style="color: black;">Here you see an example of Mailchimp:</span>
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "name": "MailChimp",
   "url": "/track/open.php?u="
 }
-{{< / highlight >}}
+```
 
 When you configured the Azure Function and created a new webhook subscription. The function will be called every time you receive a new mail. Once the function gets alerted, it retrieves the mail body and checks it for the known trackers from the list. If it found one of the URL patterns in the body, it will update the mail categories. It does not override the categories which may already be applied on your mail, these could be coming from a mail rule.
 
 Here is an example how it works:
 
-{{< caption-legacy "uploads/2017/03/tracking-category-ex.gif" "Example how it changes the category" >}}
+{{< caption-new "/uploads/2017/03/tracking-category-ex.gif" "Example how it changes the category" >}}
 
 
 When you open the mail, you will see the following categories:
 
-{{< caption-legacy "uploads/2017/03/031717_1442_Gettoknowwh3.png" "Tracking categories after webhook call" >}}
+{{< caption-new "/uploads/2017/03/031717_1442_Gettoknowwh3.png" "Tracking categories after webhook call" >}}
 
 Feel free to test out the code and provide feedback if you like it.

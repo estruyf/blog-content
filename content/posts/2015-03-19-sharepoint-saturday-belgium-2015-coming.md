@@ -13,7 +13,7 @@ tags:
 comments: true
 ---
 
-{{< caption-legacy "uploads/2015/01/spsbe15-logo-small.png" "SharePoint Saturday Belgium" >}}
+{{< caption-new "/uploads/2015/01/spsbe15-logo-small.png" "SharePoint Saturday Belgium" >}}
 
 The BIWUG board is proud to announce the **fifth** edition of SharePoint Saturday Belgium.
 

@@ -30,7 +30,7 @@ Most of the problems were related to the SharePoint Dialog window. In Firefox it
 
 Here is my HTML starters code.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -68,11 +68,11 @@ Here is my HTML starters code.
   </div>
 </body>
 </html>
-{{< / highlight >}}
+```
 
 After the changes the CSS looks like this.
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 html, body {
   height: 100%;
 }
@@ -113,15 +113,15 @@ body #s4-workspace {
   overflow-y: visible;
   height: 100% !important;
 }
-{{< / highlight >}}
+```
 
 Here are a few screenshots of the sticky footer in action.
 
-{{< caption-legacy "uploads/2010/08/footer1.jpg" "Footer on a OOTB Team Site" >}}
+{{< caption-new "/uploads/2010/08/footer1.jpg" "Footer on a OOTB Team Site" >}}
 
-{{< caption-legacy "uploads/2010/08/footer2.jpg" "Footer on the bottom of a long page" >}}
+{{< caption-new "/uploads/2010/08/footer2.jpg" "Footer on the bottom of a long page" >}}
 
-{{< caption-legacy "uploads/2010/08/footer3.jpg" "The footer is not shown in the dialog windows" >}}
+{{< caption-new "/uploads/2010/08/footer3.jpg" "The footer is not shown in the dialog windows" >}}
 
 Here is the masterpage zip file: 
 

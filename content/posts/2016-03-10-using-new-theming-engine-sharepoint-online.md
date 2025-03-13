@@ -31,7 +31,7 @@ With this new theming engine, Microsoft makes use of JavaScript to let SharePoin
 
 Here is an example of the JavaScript registration code on the page:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 SPThemeUtils.RegisterCssReferences([{
   "Url": "\u002f_layouts\u002f15\u002f1033\u002fstyles\u002fThemable\u002fcorev15.css?rev=3SPC0\u00252BvXtHg59ywd1lIxqg\u00253D\u00253DTAG154",
   "OriginalUrl": "\u002f_layouts\u002f15\u002f1033\u002fstyles\u002fThemable\u002fcorev15.css?rev=3SPC0\u00252BvXtHg59ywd1lIxqg\u00253D\u00253DTAG154",
@@ -40,9 +40,9 @@ SPThemeUtils.RegisterCssReferences([{
   "After": "",
   "RevealToNonIE": "false"
 }])
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2016/03/031016_1833_Usingthenew1.png" "Stylesheet and theming style block" >}}
+{{< caption-new "/uploads/2016/03/031016_1833_Usingthenew1.png" "Stylesheet and theming style block" >}}
 
 What you can see in this screen shot is at the top the style block which contains all the theme CSS changes. Underneath the style block, the initial stylesheet reference can be found.
 
@@ -74,11 +74,11 @@ The new theming engine introduces a new object called **SPThemeUtils** and is av
 
 If you want to know if your site is currently using the new theming engine, you could use the **UseClientSideTheming** method in your browser console (developer tools).
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 SPThemeUtils.UseClientSideTheming()
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2016/03/031016_1833_Usingthenew2.png" "Check if your site uses the new theming engine" >}}
+{{< caption-new "/uploads/2016/03/031016_1833_Usingthenew2.png" "Check if your site uses the new theming engine" >}}
 
 > **Info**: If the function returns false, that means that the site does not use the new client side theming engine. It could also return undefined, that means that it is not yet available on your tenant.
 
@@ -94,7 +94,7 @@ If you want to make use of this new theming engine with your custom stylesheets,
 
 Here is some sample code of how you can approach it via JavaScript:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var styleUrl = 'Link-to-your-stylesheet';
 // Add the stylesheet to the page
 var head = document.head;
@@ -111,12 +111,12 @@ var themeFile = {
 	OriginalUrl: styleUrl
 }
 SPThemeUtils.RegisterCssReferences([themeFile]);
-{{< / highlight >}}
+```
 
 > **Info**: An approach code be to apply your JavaScript code to your page via a custom action.
 Here is my example CSS code:
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 #s4-workspace {
 	/* [ReplaceColor(themeColor:"AccentText",opacity:"0.4")] */ background-color:#efefef;
 }
@@ -124,14 +124,14 @@ Here is my example CSS code:
 .ms-core-pageTitle, .ms-core-pageTitle a {
 	/* [ReplaceColor(themeColor:"Hyperlink")] */ color:#262626;
 }
-{{< / highlight >}}
+```
 
 This results in the following output (when a theme is applied on the site):
 
 **Before**
 
-{{< caption-legacy "uploads/2016/03/031016_1833_Usingthenew3.png" "Before the custom stylesheet got applied" >}}
+{{< caption-new "/uploads/2016/03/031016_1833_Usingthenew3.png" "Before the custom stylesheet got applied" >}}
 
 **After**
 
-{{< caption-legacy "uploads/2016/03/031016_1833_Usingthenew4.png" "Once the stylesheet got applied via JavaScript" >}}
+{{< caption-new "/uploads/2016/03/031016_1833_Usingthenew4.png" "Once the stylesheet got applied via JavaScript" >}}

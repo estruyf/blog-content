@@ -26,7 +26,7 @@ When you would use the default **console.log**, **console.warn**,**
 
 They will just log as follows:
 
-{{< caption-legacy "uploads/2019/02/021219_0828_Loggingincu1.png" "Console logging" >}}
+{{< caption-new "/uploads/2019/02/021219_0828_Loggingincu1.png" "Console logging" >}}
 
 More importantly, the SharePoint build system isn't even aware of any issues. So, you will have to let the build engine know that something failed in your task.
 
@@ -43,6 +43,6 @@ Here is an example of the updated gulp task that uses these logging methods avai
 
 Running this task results in the following output:
 
-{{< caption-legacy "uploads/2019/02/021219_0828_Loggingincu2.png" "SPFx logging methods output" >}}
+{{< caption-new "/uploads/2019/02/021219_0828_Loggingincu2.png" "SPFx logging methods output" >}}
 
 The good thing about this is that the build system is now aware of the warnings and errors which occurred in your custom tasks.

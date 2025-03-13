@@ -55,11 +55,11 @@ As this is a very commonly asked question by clients to add search synonyms to t
 
 The synonym solution we created makes use of nothing more than a SharePoint list. This makes it very easy to manage all your synonyms.
 
-{{< caption-legacy "uploads/2016/06/061416_0803_Abetterwayf1.png" "Synonym list" >}}
+{{< caption-new "/uploads/2016/06/061416_0803_Abetterwayf1.png" "Synonym list" >}}
 
 > **Important**: go to the [GitHub repo](https://github.com/SPCSR/HelperFunctions/tree/master/SPO-Search-Improvements) to see how you can configure this in your environment.
 
-{{< caption-legacy "uploads/2016/06/061416_0803_Abetterwayf2.png" "Synonym result (highlighted properties)" >}}
+{{< caption-new "/uploads/2016/06/061416_0803_Abetterwayf2.png" "Synonym result (highlighted properties)" >}}
 
 ## Wait, there is more in it for you
 

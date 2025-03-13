@@ -23,11 +23,11 @@ Last Friday there was a discussion on Twitter about a problem with the Slider wi
 
 When you would use a custom date and time managed property, you get the following output:
 
-{{< caption-legacy "uploads/2015/01/012615_1525_Fixingthede1.png" "Custom date and time managed property" >}}
+{{< caption-new "/uploads/2015/01/012615_1525_Fixingthede1.png" "Custom date and time managed property" >}}
 
 If you compare this with an OOTB managed property, the date formatting you would expect a rendering like this:
 
-{{< caption-legacy "uploads/2015/01/012615_1525_Fixingthede2.png" "OOTB managed property" >}}
+{{< caption-new "/uploads/2015/01/012615_1525_Fixingthede2.png" "OOTB managed property" >}}
 
 As you can see, the labels underneath the graph are different.
 
@@ -61,7 +61,7 @@ Another solution to solve this issue is to trick the code into thinking that it 
 
 So what this code does is it retrieves the property name and checks if the OWSDATE suffix is in place. If it does not exist, the code appends the OWSDATE suffix and retrieves the labels for the graph. When the labels are retrieved, the property name gets reset to the original name, and the rest of the code gets executed.
 
-{{< caption-legacy "uploads/2015/01/012615_1525_Fixingthede3.png" "Custom managed property rendered correctly" >}}
+{{< caption-new "/uploads/2015/01/012615_1525_Fixingthede3.png" "Custom managed property rendered correctly" >}}
 
 ## Using the predefined managed properties
 

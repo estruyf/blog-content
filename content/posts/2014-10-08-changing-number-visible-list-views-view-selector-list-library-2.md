@@ -18,17 +18,17 @@ For a colleague I did some checks on how the view selector rendering is achieved
 
 The default property value is **3**, which you can also check in all your lists and libraries. You always receive three view links, the other views can be accessed underneath in the list view menu (...):
 
-{{< caption-legacy "uploads/2014/10/100714_2010_Changingthe11.png" "Default list view selector" >}}
+{{< caption-new "/uploads/2014/10/100714_2010_Changingthe11.png" "Default list view selector" >}}
 
-{{< caption-legacy "uploads/2014/10/100714_2010_Changingthe21.png" "List view selector menu" >}}
+{{< caption-new "/uploads/2014/10/100714_2010_Changingthe21.png" "List view selector menu" >}}
 
 Now by changing this property, for example to **6** in my example, all my list views become available:
 
-{{< caption-legacy "uploads/2014/10/100714_2010_Changingthe31.png" "List view selector with 6 available views" >}}
+{{< caption-new "/uploads/2014/10/100714_2010_Changingthe31.png" "List view selector with 6 available views" >}}
 
 The code to achieve this fairly simple:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // With MDS enabled
 ExecuteOrDelayUntilScriptLoaded(function () {
   if (typeof ClientPivotControl.prototype.SurfacedPivotCount !== "undefined") {
@@ -40,7 +40,7 @@ ExecuteOrDelayUntilScriptLoaded(function () {
 if (typeof ClientPivotControl.prototype.SurfacedPivotCount !== "undefined") {
   ClientPivotControl.prototype.SurfacedPivotCount = 6;
 }
-{{< / highlight >}}
+```
 
 
 ## Video

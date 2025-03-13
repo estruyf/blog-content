@@ -43,7 +43,7 @@ In the following component, this got implemented, check lines 20 - 35.
 
 Here is a sample of what you can expect from the component:
 
-{{< caption-legacy "uploads/2018/02/check-page-mode.gif" "Page mode checker" >}}
+{{< caption-new "/uploads/2018/02/check-page-mode.gif" "Page mode checker" >}}
 
 ## Updates
 

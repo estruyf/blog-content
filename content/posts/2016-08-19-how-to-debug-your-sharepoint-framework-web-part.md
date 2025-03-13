@@ -30,17 +30,17 @@ The SharePoint Framework makes use of a tool called webpack. Webpack is just gre
 
 If you want to set a breakpoint to debug your code, it takes some time before you found the right line. An easier way is by setting a debugger statement in your source file.
 
-{{< caption-legacy "uploads/2016/08/081916_1232_Debuggingyo1.png" "Debugger statement in your code" >}}
+{{< caption-new "/uploads/2016/08/081916_1232_Debuggingyo1.png" "Debugger statement in your code" >}}
 
 Save this change and open your browser developer tools (or refresh the page with the dev tools open). Once the page gets reloaded, your developer tools will stop on the debugger statement.
 
-{{< caption-legacy "uploads/2016/08/081916_1232_Debuggingyo2.png" "Debugging your code with the debugger statement" >}}
+{{< caption-new "/uploads/2016/08/081916_1232_Debuggingyo2.png" "Debugging your code with the debugger statement" >}}
 
 ## Debugging the TypeScript files
 
 As mentioned, the SharePoint Framework bundles everything in one large JavaScript file.
 
-{{< caption-legacy "uploads/2016/08/081916_1232_Debuggingyo3.png" "SPFx bundle file" >}}
+{{< caption-new "/uploads/2016/08/081916_1232_Debuggingyo3.png" "SPFx bundle file" >}}
 
 Debugging this large JS file is a hell of a job and it is JavaScript. Your source files are written in TypeScript, so the code you are going to debug is not the same.
 
@@ -48,23 +48,23 @@ Luckily there is something called source maps. Source maps is not something new,
 
 When you are writing TypeScript and transpiling the code to JavaScript. You have the option to include a source map reference at the bottom of the file. The SharePoint Framework will automatically do this, so you do not have to worry about it.
 
-{{< caption-legacy "uploads/2016/08/081916_1232_Debuggingyo4.png" "Source map reference" >}}
+{{< caption-new "/uploads/2016/08/081916_1232_Debuggingyo4.png" "Source map reference" >}}
 
 The great thing about these source maps is that your browser can read them and load the original code. If you take a look in the sources, you will see a webpack:// reference:
 
-{{< caption-legacy "uploads/2016/08/081916_1232_Debuggingyo5.png" "Webpack" >}}
+{{< caption-new "/uploads/2016/08/081916_1232_Debuggingyo5.png" "Webpack" >}}
 
 If you open this, you will see that all the original files are loaded and you can navigate to your original web part TypeScript files:
 
-{{< caption-legacy "uploads/2016/08/081916_1232_Debuggingyo6.png" "All the original files" >}}
+{{< caption-new "/uploads/2016/08/081916_1232_Debuggingyo6.png" "All the original files" >}}
 
 > **Important**: check that you have enabled JavaScript source maps in your browser settings.
 
-{{< caption-legacy "uploads/2016/08/081916_1232_Debuggingyo7.png" "Enable JavaScript source maps" >}}
+{{< caption-new "/uploads/2016/08/081916_1232_Debuggingyo7.png" "Enable JavaScript source maps" >}}
 
 Once you found the file you were looking for, you can set a breakpoint in it and start debugging:
 
-{{< caption-legacy "uploads/2016/08/081916_1232_Debuggingyo8.png" "Debugging the original files in Chrome" >}}
+{{< caption-new "/uploads/2016/08/081916_1232_Debuggingyo8.png" "Debugging the original files in Chrome" >}}
 
 > **Info**: Andrew Connell wrote a great article about debugging and sourcemaps last week: [Debugging Node.js projects with TypeScript and VS Code - Digging into Sourcemaps](http://www.andrewconnell.com/blog/debugging-node-js-projects-with-typescript-and-vs-code-digging-into-sourcemaps)
 
@@ -73,7 +73,7 @@ Once you found the file you were looking for, you can set a breakpoint in it and
 
 You can also use Visual Studio Code to debug your web part. To do this, you will have to install an extension called **VS Code - Debugger for Chrome**. The extension can be found here: [Chrome debugger extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome).
 
-{{< caption-legacy "uploads/2016/08/081916_1232_Debuggingyo9.png" "VS Code - Debugger for Chrome" >}}
+{{< caption-new "/uploads/2016/08/081916_1232_Debuggingyo9.png" "VS Code - Debugger for Chrome" >}}
 
 > **Info**: there are other ways of debugging in Visual Studio Code, but this requires the least configuration.
 
@@ -85,7 +85,7 @@ Once you have installed it, you have to do the following configuration: [extensi
 
 **Before drop 6**
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "version": "0.2.0",
   "configurations": [
@@ -100,11 +100,11 @@ Once you have installed it, you have to do the following configuration: [extensi
   ]
 }
 
-{{< / highlight >}}
+```
 
 **Drop 6**
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "version": "0.2.0",
   "configurations": [
@@ -122,11 +122,11 @@ Once you have installed it, you have to do the following configuration: [extensi
   ]
 }
 
-{{< / highlight >}}
+```
 
 **As of Drop RC0 and onwards**
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "version": "0.2.0",
   "configurations": [{
@@ -163,15 +163,15 @@ Once you have installed it, you have to do the following configuration: [extensi
     }
   ]
 }
-{{< / highlight >}}
+```
 
 
 *   Press F5 to start a new debugging session;
 *   Another way to open Chrome with the debugging port is via the command prompt and specifying the remote debugging port argument: `--remote-debugging-port=9222`
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222
-{{< / highlight >}}
+```
 
 
 > **Important**: it might occur that the Visual Studio Code debugger mentions that it cannot attach. Best is to close all the Chrome sessions (check in your task manager) and start Chrome again with the remote debugging port.
@@ -180,9 +180,9 @@ $ "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --remote-debuggi
 *   Now you can press **F5** in Visual Studio Code and you are ready to debug your code;
 *   Place a breakpoint somewhere in your web part and add it to the workbench. You will see that Chrome will pause and tells you that you can debug it in Visual Studio Code.
 
-{{< caption-legacy "uploads/2016/08/081916_1232_Debuggingyo10.png" "Chrome paused for VSCode debugging" >}}
+{{< caption-new "/uploads/2016/08/081916_1232_Debuggingyo10.png" "Chrome paused for VSCode debugging" >}}
 
-{{< caption-legacy "uploads/2016/08/081916_1232_Debuggingyo11.png" "VSCode debugging" >}}
+{{< caption-new "/uploads/2016/08/081916_1232_Debuggingyo11.png" "VSCode debugging" >}}
 
 Happy coding with the SharePoint Framework.
 

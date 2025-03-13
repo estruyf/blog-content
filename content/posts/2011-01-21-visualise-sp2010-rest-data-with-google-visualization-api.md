@@ -24,9 +24,9 @@ My intention was to create a pie chart to visualise the task statuses. The data 
 
 With jQuery it is very simple to retrieve the results from the REST service. All you need to do is to create a call to the URL of the REST service with the getJSON method.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 $.getJSON(url, function(data))
-{{< / highlight >}}
+```
 
 The URL to the REST service is the following: `http://YOUR SITE/_vti_bin/ListData.svc`. In my case the full url to the task list is: `http://your site/_vti_bin/ListData.svc/Tasks?$orderby=Status asc`. As you can see it will retrieve all my tasks and order them by the status value. This result can than be used to create a pie chart.
 
@@ -34,7 +34,7 @@ On the [Google Visualization site](http://code.google.com/intl/us-en/apis/chartt
 
 Here is my code, feel free to make some code optimisation.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <script src="jquery.min.js" type="text/javascript"></script>
 
 <script type="text/javascript" src="jsapi"></script>
@@ -104,14 +104,14 @@ Here is my code, feel free to make some code optimisation.
 </script>	
 
 <div id="chart_div"></div>
-{{< / highlight >}}
+```
 
 You can place this code in a HTML Form Web Part. The end result will be the following.
 
-{{< caption-legacy "uploads/2011/01/task4.png" "Task list with four tasks" >}}
+{{< caption-new "/uploads/2011/01/task4.png" "Task list with four tasks" >}}
 
-{{< caption-legacy "uploads/2011/01/pie4.png" "Pie chart with four tasks" >}}
+{{< caption-new "/uploads/2011/01/pie4.png" "Pie chart with four tasks" >}}
 
-{{< caption-legacy "uploads/2011/01/task10.png" "Task list with 10 tasks" >}}
+{{< caption-new "/uploads/2011/01/task10.png" "Task list with 10 tasks" >}}
 
-{{< caption-legacy "uploads/2011/01/pie10.png" "Pie chart from 10 tasks" >}}
+{{< caption-new "/uploads/2011/01/pie10.png" "Pie chart from 10 tasks" >}}

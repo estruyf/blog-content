@@ -60,25 +60,25 @@ If you want to make use of the templates or want to modify them. You need to be 
 
 **Item template config**
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var config = {
     template: 'item_minimal.js',
     propertyMappings: { 'Path':null, 'Title':['Title'] }
 };
-{{< / highlight >}}
+```
 
 **Control template config**
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var config = {
     template: 'control_minimal.js'
 };
-{{< / highlight >}}
+```
 
 
 *   At the bottom of the template, there is some required JavaScript code to retrieve your JavaScript file and to register it.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 /* DO NOT REMOVE THE FOLLOWING LINES OF CODE */
 // MDS needs to start on the head
 // Retrieve all the loaded scripts
@@ -109,7 +109,7 @@ if (scriptUrl !== null) {
         RegisterModuleInit(Srch.U.replaceUrlTokens(templateUrl), register);
     }
 }
-{{< / highlight >}}
+```
 
 
 > **Important**: Leave this code in place, or adapt it to your needs if you know what you are doing.
@@ -141,13 +141,13 @@ For the item template you have to specify the metadata as follows:
 *   Target control type: **Content Web Parts** and **SearchResults **(depends on which type of web part you are creating the template)
 *   Template level: **Item**
 *   Managed property mappings: 'Path','Title':'Title'
-{{< caption-legacy "uploads/2016/04/041316_1714_JavaScripts1.png" "Managed property mappings" >}}
+{{< caption-new "/uploads/2016/04/041316_1714_JavaScripts1.png" "Managed property mappings" >}}
 
 ### Sandboxed solution - Module
 
 If you are going to provision the templates via a sandboxed solution. You can create a module with the template files and the elements file will contain the following information:
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="Templates" Path="Templates" Url="_catalogs/masterpage/CustomTemplates">
@@ -174,7 +174,7 @@ If you are going to provision the templates via a sandboxed solution. You can cr
     </File>
   </Module>
 </Elements>
-{{< / highlight >}}
+```
 
 
 ## Download the templates

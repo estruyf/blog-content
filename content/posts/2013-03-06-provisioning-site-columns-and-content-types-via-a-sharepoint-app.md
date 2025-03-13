@@ -25,18 +25,18 @@ The first thing to do is creating a new **App for SharePoint 2013** project (I s
 When you've created your project, set the **Permission**
 **requests** settings in the **AppManifest.xml** file to **Web - Manage**.
 
-{{< caption-legacy "uploads/2013/03/030613_1228_Provisionin1.png" "App Permissions" >}}
+{{< caption-new "/uploads/2013/03/030613_1228_Provisionin1.png" "App Permissions" >}}
 
 If you don't set this permissions or set the permission to a lower level (read or write), you will eventually end up with the following message when your code gets executed:
 
-{{< caption-legacy "uploads/2013/03/030613_1228_Provisionin2.png" "Permission Message" >}}
+{{< caption-new "/uploads/2013/03/030613_1228_Provisionin2.png" "Permission Message" >}}
 
 ## App Page Content
 
 The HTML markup for the **PlaceHolderMain** section of the **Default.aspx** page, looks like this:
 
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div>
   <p><a href="#" id="CreateSiteColumn">Create Site Column</a></p>
   <p><a href="#" id="CreateContentType">Create Content Type</a></p>
@@ -44,7 +44,7 @@ The HTML markup for the **PlaceHolderMain** section of the **Default.aspx** page
 
   <p id="message"></p>
 </div>
-{{< / highlight >}}
+```
 
 
 As you can see, three links will be shown, this way it is easier to test each step separately. You can also combine them if you want.
@@ -56,10 +56,10 @@ The coding will be done in the **App.js** file. The default App.js content may b
 **Important**: you need to get the context of the SharePoint site for which you want to provision the content types. This will not be the current context, because that is the app site context. To get the context of the site collection, you can use this piece of code:
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 clientContext = new SP.ClientContext("/");
 web = clientContext.get_web();
-{{< / highlight >}}
+```
 
 
 I already told you that I split up everything in separately steps. For that I created three functions:
@@ -70,7 +70,7 @@ I already told you that I split up everything in separately steps. For that I cr
 
 The **CreateSiteColumns** function looks like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Create Site Column
 function CreateSiteColumns() {
   SiteColumnsCollection = web.get_fields();
@@ -82,13 +82,13 @@ function CreateSiteColumns() {
   clientContext.load(SiteColumnsCollection);
   clientContext.executeQueryAsync(onCreationSuccess, onCreationFail);
 }
-{{< / highlight >}}
+```
 
 
 The **CreateContentType** function looks like this:
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Create Site Content Type
 function CreateContentType() {
   ContentTypeCollection = web.get_contentTypes();
@@ -102,13 +102,13 @@ function CreateContentType() {
   clientContext.load(ContentTypeCollection);
   clientContext.executeQueryAsync(onCreationSuccess, onCreationFail);
 }
-{{< / highlight >}}
+```
 
 
 The **LinkFieldToContentType** function looks like this:
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function LinkFieldToContentType() {
   // Retrieve all content types
   ContentTypeCollection = web.get_contentTypes();
@@ -144,13 +144,13 @@ function onQuerySuccess() {
     clientContext.executeQueryAsync(onCreationSuccess, onCreationFail);
   }
 }
-{{< / highlight >}}
+```
 
 
 The only thing that rests is to set some event handlers for the links on the Default.aspx page. I have done this with the following piece of code:
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 $(document).ready(function () {
   clientContext = new SP.ClientContext("/");
   web = clientContext.get_web();
@@ -173,7 +173,7 @@ $(document).ready(function () {
     return false;
   });
 });
-{{< / highlight >}}
+```
 
 
 Here you can download the whole script here: [App.js](/uploads/2013/03/App-Provision-CT.js)
@@ -182,18 +182,18 @@ Here you can download the whole script here: [App.js](/uploads/2013/03/App-Provi
 
 When you installed the app on your SharePoint site, you should have the following app page:
 
-{{< caption-legacy "uploads/2013/03/030613_1228_Provisionin3.png" "Provisioning Actions" >}}
+{{< caption-new "/uploads/2013/03/030613_1228_Provisionin3.png" "Provisioning Actions" >}}
 
 Clicking the links, should give the following results:
 
 **Site Column**
 
-{{< caption-legacy "uploads/2013/03/030613_1228_Provisionin4.png" "Site Column" >}}
+{{< caption-new "/uploads/2013/03/030613_1228_Provisionin4.png" "Site Column" >}}
 
 **Site Content Type**
 
-{{< caption-legacy "uploads/2013/03/030613_1228_Provisionin5.png" "Site Content Type" >}}
+{{< caption-new "/uploads/2013/03/030613_1228_Provisionin5.png" "Site Content Type" >}}
 
 **Linked Field in Content Type**
 
-{{< caption-legacy "uploads/2013/03/030613_1228_Provisionin6.png" "Linked Field in Content Type" >}}
+{{< caption-new "/uploads/2013/03/030613_1228_Provisionin6.png" "Linked Field in Content Type" >}}

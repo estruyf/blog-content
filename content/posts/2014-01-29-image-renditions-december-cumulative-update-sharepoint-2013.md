@@ -22,7 +22,7 @@ The problem occurs if you provisioned your image renditions to the site collecti
 
 If for instance you didn't specify a height or width for a specific dimension, it worked perfectly fine before the Cumulative Update of December 2013. Once you've installed this update, the dimension may not have empty values anymore.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!-- This won't work -->
 <ImageRendition>
     <Height></Height>
@@ -40,11 +40,11 @@ If for instance you didn't specify a height or width for a specific dimension, i
     <Version>1</Version>
     <Width></Width>
 </ImageRendition>
-{{< / highlight >}}
+```
 
 If you want that a dimension doesn't need to have a specific height or width, you should set the value to **-1** instead of leaving it empty. Once you have updated the incorrect dimension in the PublishingImageRenditions.xml file, the error messages will be gone, and the image renditions will work again.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!-- This works -->
 <ImageRendition>
     <Height>-1</Height>
@@ -62,4 +62,4 @@ If you want that a dimension doesn't need to have a specific height or width, yo
     <Version>1</Version>
     <Width>-1</Width>
 </ImageRendition>
-{{< / highlight >}}
+```

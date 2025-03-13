@@ -26,6 +26,6 @@ To test out the functionality myself. I created a sample Node.js application whi
 
 With this sample application, you can spin up a local server and start creating / updating / deleting webhook subscriptions. When you created a webhook subscription to a library. Try making some changes in it and watch the **Webhook changes** section.
 
-{{< caption-legacy "uploads/2016/10/homepage-view.png" "Webhook application" >}}
+{{< caption-new "/uploads/2016/10/homepage-view.png" "Webhook application" >}}
 
 If you want to test out this sample application, get the code from the SharePoint developer samples repository and follow the instructions on how you can try it out on your environment.

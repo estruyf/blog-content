@@ -34,7 +34,7 @@ This approach worked fine on iOS and Windows/macOS, but we noticed a different b
 
 The only working solution for dynamically generated manifests is to make use of an API. My POC created as an Azure Static Web App can handle this by adding an Azure Function.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import { AzureFunction, Context, HttpRequest } from "@azure/functions"
 
 const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
@@ -78,14 +78,14 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
 };
 
 export default httpTrigger;
-{{< / highlight >}}
+```
 
 In my React application, I call the Azure Function with the following logic:
 
-{{< highlight react "linenos=table,noclasses=false" >}}
+```react
 <Helmet>
   <link id="teams_manifest" rel="manifest" href={`/api/manifest.webmanifest?${QS_APP_ID}=${encodeURIComponent(appId)}&${QS_ENTITY_ID}=${encodeURIComponent(enityId)}&${QS_NAME}=${appName}`} />
 </Helmet>
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="using [react-helmet-async](https://www.npmjs.com/package/react-helmet-async) to do changes to the document head." >}}

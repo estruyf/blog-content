@@ -22,7 +22,7 @@ This article is an addition to my previous one about how to automate the publica
 
 Not long after I had published my previous article, I got the following question on Twitter:
 
-{{< caption-legacy "uploads/2017/02/020317_1441_AutomateSha1.png" "Question on Twitter" >}}
+{{< caption-new "/uploads/2017/02/020317_1441_AutomateSha1.png" "Question on Twitter" >}}
 
 Let's split this up into the following questions:
 
@@ -40,7 +40,7 @@ The same plugins can also be used to automate the solution package publication t
 
 The task that you need to add in your gulp file (gulpfile.js) looks like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 const spsync = require('gulp-spsync-creds').sync;
 
 build.task('upload-app-pkg', {
@@ -61,13 +61,13 @@ build.task('upload-app-pkg', {
         });
     }
 });
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2017/02/020317_1441_AutomateSha2.png" "Upload app package task" >}}
+{{< caption-new "/uploads/2017/02/020317_1441_AutomateSha2.png" "Upload app package task" >}}
 
 Once you added this task in the gulp file, first run the command to package the solution: `gulp package-solution` (test) or `gulp package-solution --ship` (production). After the solution package is created, you can now run the new upload package command: `gulp upload-app-pkg` or `gulp upload-app-pkg --ship`.
 
-{{< caption-legacy "uploads/2017/02/020317_1441_AutomateSha3.png" "Output of the upload task" >}}
+{{< caption-new "/uploads/2017/02/020317_1441_AutomateSha3.png" "Output of the upload task" >}}
 
 ## One required manual action
 
@@ -76,7 +76,7 @@ As I mentioned, there is one manual action which you should execute. That manual
 *   Go to your app catalog site
 *   Open the apps for SharePoint list
 
-{{< caption-legacy "uploads/2017/02/020317_1441_AutomateSha4.png" "Apps for SharePoint" >}}
+{{< caption-new "/uploads/2017/02/020317_1441_AutomateSha4.png" "Apps for SharePoint" >}}
 
 *   Select the solution package
 *   In the ribbon, select **files** -> **Deploy** and click on deploy
@@ -88,7 +88,7 @@ Currently, the **ship** flag for the new upload package task has no added functi
 
 This is what the updated task looks like to support the **ship** flag:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 const production = {
     "username": "<production-username>",
     "password": "<production-password>",
@@ -121,7 +121,7 @@ build.task('upload-app-pkg', {
         });
     }
 });
-{{< / highlight >}}
+```
 
 If you now run the following command: `gulp upload-app-pkg`, it will upload it to your test tenant. With `gulp upload-app-pkg --ship` you can upload it to your production environment.
 

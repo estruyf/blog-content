@@ -27,9 +27,9 @@ This article explains how you can use the **Microsoft Authentication Provider** 
 
 If you want to use one of the standard authentication providers, all you need to do is get the current session.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 await vscode.authentication.getSession(providerId, scopes, options)
-{{< / highlight >}}
+```
 
 - **providerId**: `github`, `github-enterprise`, or `microsoft`;
 - **scopes**: The permissions scopes to request an access token;
@@ -50,14 +50,14 @@ Apparently, you have two "special" tokens you can define in the scopes array:
 
 Here is an example of how I use it:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const session = await vscode.authentication.getSession('microsoft', [
   "VSCODE_CLIENT_ID:f3164c21-b4ca-416c-915c-299458eba95b", // Replace by your client id
   "VSCODE_TENANT:common", // Replace with the tenant ID or common if multi-tenant
   "offline_access", // Required for the refresh token.
   "https://graph.microsoft.com/User.Read"
 ], { createIfNone: false });
-{{< / highlight >}}
+```
 
 {{< blockquote type="important" text="The **offline_access** scope is very important. You will not get a refresh token if you do not define this. The authentication provider will log you out when reloading your VS Code instance." >}}
 

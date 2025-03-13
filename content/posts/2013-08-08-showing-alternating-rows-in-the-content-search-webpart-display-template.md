@@ -26,42 +26,42 @@ What do you need to create an alternating row class functionality? The only thin
 
 Luckily this index number can be retrieved from the current context:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 var currentItemIdx = ctx.CurrentItemIdx + 1;
-{{< / highlight >}}
+```
 
 > **Note**: the +1 isn't necessary, but I'll use it in a later step to check the last item.
 
 When you retrieved the index number, the next step is to check if it's an even or odd number. This can be done by checking if the number is divisible by 2 (even numbers), if the condition is met, you can set the class name to a variable.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 var altClass = "";
 if (currentItemIdx % 2 === 0) {
   altClass = "alternative";
 }
-{{< / highlight >}}
+```
 
 This variable can be used to be added to the class property of your HTML element like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div class="cbs-Item _#= altClass =#_" id="_#= containerId =#_" data-displaytemplate="Item2Lines">
-{{< / highlight >}}
+```
 
 Now that you added the alternating class to the item row, you'll need to do the styling in your CSS file.
 
-{{< caption-legacy "uploads/2013/08/080813_1419_ShowingAlte1.png" "Alternating rows" >}}
+{{< caption-new "/uploads/2013/08/080813_1419_ShowingAlte1.png" "Alternating rows" >}}
 
 ## Extra Information
 
 Another useful property is the RowCount, so you can check if the last item is processed:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 ctx.CurrentGroup.RowCount
-{{< / highlight >}}
+```
 
 Here is an example how to use it:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--#_
 if(currentItemIdx === ctx.CurrentGroup.RowCount) {
 _#-->
@@ -73,6 +73,6 @@ _#-->
 <!--#_
 }
 _#-->
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2013/08/080813_1419_ShowingAlte2.png" "First row - Last row" >}}
+{{< caption-new "/uploads/2013/08/080813_1419_ShowingAlte2.png" "First row - Last row" >}}

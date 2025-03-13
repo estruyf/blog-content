@@ -26,7 +26,7 @@ A couple of versions ago, I added the ability to integrate your custom scripts. 
 
 One of the scripts I use for new articles is generating a preview image for open graph and Twitter.
 
-{{< caption "/2021/08/generate1.png" "Generate social image action"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAAB3SURBVHXBMQ/BUBiG0eeLz1Sqq0msQtJJxM+X2Bv+gFiMzW2rSy8vHW5icY4ty6MmRcGz7/krBHzYlcTDHudLoCYAhi1yEp3OOL/0BncQIIEZiefVlex2J5nPMgyj6TqStq7xZr2i3W4YaYg8XhEEuGNTZ6TqwgdEeyocQzINaAAAAABJRU5ErkJggg==" "459" >}}
+{{< caption-new "/uploads/2021/08/generate1.png" "Generate social image action"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAAB3SURBVHXBMQ/BUBiG0eeLz1Sqq0msQtJJxM+X2Bv+gFiMzW2rSy8vHW5icY4ty6MmRcGz7/krBHzYlcTDHudLoCYAhi1yEp3OOL/0BncQIIEZiefVlex2J5nPMgyj6TqStq7xZr2i3W4YaYg8XhEEuGNTZ6TqwgdEeyocQzINaAAAAABJRU5ErkJggg==" "459" >}}
 
 ## The script
 
@@ -34,7 +34,7 @@ The script uses `node-html-to-image` dependency, which, as the name suggests, co
 
 My preview image looks as follows:
 
-{{< caption "/2021/08/b7930c1a-0823-48e4-a2ef-133e56cd1f42.png" "Preview image"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAAB0SURBVF3BywqDMBBA0TtOYkTow03//7+6bhdVCk1WkkkiXQjiOfJ8vVs1o7WGCNRSUVUQoZihqnTe4y7jyON25S/nTEqJUirTdEdVERE+v4jjwHuP73ukFJxzHHWcpBj5LgtnbjVjjoldDQMhDMwxsVvN2ADT0DBC4iFqBgAAAABJRU5ErkJggg==" "1128" >}}
+{{< caption-new "/uploads/2021/08/b7930c1a-0823-48e4-a2ef-133e56cd1f42.png" "Preview image"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAAB0SURBVF3BywqDMBBA0TtOYkTow03//7+6bhdVCk1WkkkiXQjiOfJ8vVs1o7WGCNRSUVUQoZihqnTe4y7jyON25S/nTEqJUirTdEdVERE+v4jjwHuP73ukFJxzHHWcpBj5LgtnbjVjjoldDQMhDMwxsVvN2ADT0DBC4iFqBgAAAABJRU5ErkJggg==" "1128" >}}
 
 The code of the script looks as follows:
 
@@ -122,29 +122,29 @@ Once you added the file, make sure to install the dependencies: `npm i node-html
 
 After that, it is time for the final step, registering the command. You can register the script in your `.vscode/settings.json` file with the following code:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 "frontMatter.custom.scripts": [{
     "title": "Generate social image",
     "script": "./scripts/social-img.mjs",
     "nodeBin": "~/.nvm/versions/node/v18.17.1/bin/node"
   }]
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="The node location needs to be provided as I want to make sure it uses the correct node.js version to run the script. When using `nvm` this is a requirement to set the `nodeBin` property." >}}
 
 Open the Front Matter side panel, and the new button should show up. When you click on the new button, it will start generating the image. When the script completes, it will show a notification with the path of the image.
 
-{{< caption "/2021/08/generate2.png" "The output of the script in a VSCode notification"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABnSURBVB3BQQrCMBRF0fuSH4uD4shO3YF1/wuQLkPnKpZK0JL8CD1Hw2ls+y5BA0m4V0IMuEOthVIq7gXrdom+PyCJIPF4vsjfH5vhCJczut+wvMzkz4xFI1pEEik6zRu2vPHpCuvKH1H/KNSugEs9AAAAAElFTkSuQmCC" "469" >}} 
+{{< caption-new "/uploads/2021/08/generate2.png" "The output of the script in a VSCode notification"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABnSURBVB3BQQrCMBRF0fuSH4uD4shO3YF1/wuQLkPnKpZK0JL8CD1Hw2ls+y5BA0m4V0IMuEOthVIq7gXrdom+PyCJIPF4vsjfH5vhCJczut+wvMzkz4xFI1pEEik6zRu2vPHpCuvKH1H/KNSugEs9AAAAAElFTkSuQmCC" "469" >}} 
 
 ## Running this in WSL
 
 I encountered an issue when trying to run the script in WSL. It had to do with some missing dependencies.
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 # Related GitHub issue: https://github.com/puppeteer/puppeteer/issues/1837
 
 sudo apt install ca-certificates fonts-liberation gconf-service libappindicator1 libasound2 libatk-bridge2.0-0 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgbm1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libnss3 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 lsb-release wget xdg-utils -y 
-{{< / highlight >}}
+```
 
 ## Update
 

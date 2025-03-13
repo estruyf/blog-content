@@ -34,14 +34,14 @@ Something else you need to configure is to disable GitHub for your project on Ve
 
 To disable GitHub, you create a `vercel.json` file in the root of your project (if it does not yet exist), and add the following contents to it:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "github": {
     "enabled": false,
     "silent": true
   }
 }
-{{< / highlight >}}
+```
 
 *One more thing*, a `token` is required to use the CLI on GitHub Actions. 
 
@@ -55,13 +55,13 @@ In your GitHub project, go to settings and add the following secrets:
 - **VERCEL_PROJECT_ID**: Value is the `projectId` from the JSON file created with the `vercel link` command.
 - **VERCEL_TOKEN**: Value is the token you created previously.
 
-{{< caption "/2021/04/github1.png" "GitHub Secrets"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAACkSURBVI3BMU4DMRBA0T/LjCHrQJGC5P6XoqZdsIhAaxvsZNAWlqhQ3pOnw8m5gdqs2E6xaIQYyKnweIyUc2V9L7Tc2GjLnZY7pMqwLplBRNiou3MLDdGwnWLRCDGQU2F/nOmlU79+0Ps7zq+faMudljukyrAumb9EBHV3RAR35z8aoqEPStgbIQbWt0x8nuHqLC+JQXu50MuF+vHNUFJlM00Twy/v9UsgtQCtGQAAAABJRU5ErkJggg==" "217" >}}
+{{< caption-new "/uploads/2021/04/github1.png" "GitHub Secrets"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAACkSURBVI3BMU4DMRBA0T/LjCHrQJGC5P6XoqZdsIhAaxvsZNAWlqhQ3pOnw8m5gdqs2E6xaIQYyKnweIyUc2V9L7Tc2GjLnZY7pMqwLplBRNiou3MLDdGwnWLRCDGQU2F/nOmlU79+0Ps7zq+faMudljukyrAumb9EBHV3RAR35z8aoqEPStgbIQbWt0x8nuHqLC+JQXu50MuF+vHNUFJlM00Twy/v9UsgtQCtGQAAAABJRU5ErkJggg==" "217" >}}
 
 ## The GitHub Workflow
 
 The last step is to add the job to your GitHub workflow. Here is an example of how you could do this:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 name: "Deploy"
 
 on:
@@ -97,7 +97,7 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="When the action runs for any other branch than my `main` branch, it will not deploy to production." >}}
 

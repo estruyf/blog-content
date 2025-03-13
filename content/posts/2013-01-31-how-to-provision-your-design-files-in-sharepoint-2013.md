@@ -21,7 +21,7 @@ When upgrading my clients' page layouts from SharePoint 2010 to 2013, I stumbled
 
 To provision a Page Layout in SharePoint 2010 to the master page gallery, I used this kind of markup:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="PageLayouts" Url="_catalogs/masterpage">
     <File Path="PageLayouts\My-Article-Page.aspx" Url="My-Article-Page.aspx" Type="GhostableInLibrary">
@@ -32,13 +32,13 @@ To provision a Page Layout in SharePoint 2010 to the master page gallery, I used
     </File>  
   </Module>
 </Elements>
-{{< / highlight >}}
+```
 
 _Note: Spaces have been added to the PublishingAssociatedContentType to better fit on the screen_
 
 In SharePoint 2013 a couple of things have changed. The new markup that SharePoint itself uses for provisioning a page layout file looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <File Path="PageLayouts\My-Article-Page.aspx" Url="My-Article-Page.aspx" Type="GhostableInLibrary" Level="Draft">
   <Property Name="ContentTypeId" Value="0x01010007FF3E05 7FA8AB4AA42FCB67B453FFC100 E214EEE741181F4E9F7ACC43278EE811003A22BFC19B81124C923710F952434E5E" />
   <Property Name="FileLeafRef" Value="My-Article-Page.aspx" />
@@ -53,7 +53,7 @@ In SharePoint 2013 a couple of things have changed. The new markup that SharePoi
   <Property Name="FileDirRef" Value="_catalogs/masterpage" />
   <Property Name="FSObjType" Value="0" />
 </File>
-{{< / highlight >}}
+```
 
 _Note: you can check this by creating a design package via the new Design Manager, and check the content that has been generated.
 _
@@ -66,21 +66,21 @@ It seems that there is a new attribute that can be set when provisioning files t
 
 The **ReplaceContent** attribute needs to be used in the **File** element like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <File Path="PageLayouts\My-Article-Page.aspx" Url="My-Article-Page.aspx" Type="GhostableInLibrary" Level="Draft" ReplaceContent="true">
 ...
 </File>
-{{< / highlight >}}
+```
 
 
 ## Provision a Published Version
 
 But the ReplaceContent is not the only useful attribute that has been introduced in SharePoint 2013. You now have a **Level** attribute which specifies if the file is provisioned as draft or published version.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <File Path="PageLayouts\My-Article-Page.aspx" Url="My-Article-Page.aspx" Type="GhostableInLibrary" Level="Draft">
 <File Path="PageLayouts\My-Article-Page.aspx" Url="My-Article-Page.aspx" Type="GhostableInLibrary" Level="Published">
-{{< / highlight >}}
+```
 
 
 ## Wrap-up
@@ -91,7 +91,7 @@ So if you want to provision your design files to SharePoint, it is best to use t
 
 For provision master pages, the same approach as discussed above can be used. The only difference will be the properties you're going to provide. The properties that I use in my elements file the following:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <File Url="your-master-page.master" Type="GhostableInLibrary" Level="Published" ReplaceContent="true">
   <Property Name="ContentTypeId" Value="0x01010500BF544AFE46ACEF42B8DA22C9CE89526E" />
   <Property Name="UIVersion" Value="15" />
@@ -100,7 +100,7 @@ For provision master pages, the same approach as discussed above can be used. Th
   <Property Name="_ModerationStatus" Value="0" />
   <Property Name="FSObjType" Value="0" />
 </File>
-{{< / highlight >}}
+```
 
 
 ## Updates

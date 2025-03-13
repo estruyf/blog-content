@@ -23,7 +23,7 @@ When you want to create a rollup from all discussion board (or a specific one) i
 
 Every out of the box style from the Content Query Web Part returns the following result.
 
-{{< caption-legacy "uploads/2012/03/031112_1911_DiscussionB1.png" "Content Query - Discussion Board Items" >}}
+{{< caption-new "/uploads/2012/03/031112_1911_DiscussionB1.png" "Content Query - Discussion Board Items" >}}
 
 As you can see in the image above, the content query web part returns **(Blank)** messages. These **(Blank)** messages are the replies users have made.
 
@@ -35,30 +35,30 @@ As you may or may not know, the discussion board contains two content types.
 2.  Message.
 Message can only be used when you do a reply on a discussion (which creates folders), and they do not contain a Title/Subject field (this is hidden by default).
 
-{{< caption-legacy "uploads/2012/03/031112_1911_DiscussionB2.png" "Subject (Title) Field is hidden" >}}
+{{< caption-new "/uploads/2012/03/031112_1911_DiscussionB2.png" "Subject (Title) Field is hidden" >}}
 
-{{< caption-legacy "uploads/2012/03/031112_1911_DiscussionB3.png" "Reply on a discussion" >}}
+{{< caption-new "/uploads/2012/03/031112_1911_DiscussionB3.png" "Reply on a discussion" >}}
 
 Because you do not need to add the subject in your reply, the title/subject field automatically gets **(Blank)** as field value.
 
-{{< caption-legacy "uploads/2012/03/031112_1911_DiscussionB4.png" "Subject (Title) field gets blank values" >}}
+{{< caption-new "/uploads/2012/03/031112_1911_DiscussionB4.png" "Subject (Title) field gets blank values" >}}
 
 ## Discussion Board Content Query Web Part Style
 
 The result of the Discussion Board Style will be the following:
 
-{{< caption-legacy "uploads/2012/03/031112_1911_DiscussionB5.png" "Discussion Board Style Result" >}}
+{{< caption-new "/uploads/2012/03/031112_1911_DiscussionB5.png" "Discussion Board Style Result" >}}
 
 As you can see the (Blank) messages are replaced with the discussion subject. To do this, you can retrieve the subject from the **LinkUrl** of the message.
 
-{{< caption-legacy "uploads/2012/03/031112_1911_DiscussionB6.png" "Discussion subject can be retrieved from the URL" >}}
+{{< caption-new "/uploads/2012/03/031112_1911_DiscussionB6.png" "Discussion subject can be retrieved from the URL" >}}
 
 The subject of the discussion exists in the LinkUrl, because when a discussion is started, it creates a folder with the subject as folder value.
 
 The XSL style looks like this:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <!-- Discussion Style -->
 <xsl:template name="DiscussionStyling" match="Row[@Style='DiscussionStyling']" mode="itemstyle">
   <!-- Retrieve the content type: 'Content Type' -->
@@ -113,7 +113,7 @@ The XSL style looks like this:
       </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
-{{< / highlight >}}
+```
 
 
 For the messages the ID (12_.000) will be removed from the LinkUrl, otherwise you will end up on a page that does not exist.
@@ -122,8 +122,8 @@ The XSL style can be added to the **ItemStyle.xsl**, which can be found at the f
 
 When you add the content query to you page, change the **Styles** and **Fields** settings to match as in the following image.
 
-{{< caption-legacy "uploads/2012/03/031112_1911_DiscussionB7.png" "Content Query Web Part - Settings" >}}
+{{< caption-new "/uploads/2012/03/031112_1911_DiscussionB7.png" "Content Query Web Part - Settings" >}}
 
 When you save these settings, the result should be like this:
 
-{{< caption-legacy "uploads/2012/03/031112_1911_DiscussionB5.png" "Discussion Board Style Result" >}}
+{{< caption-new "/uploads/2012/03/031112_1911_DiscussionB5.png" "Discussion Board Style Result" >}}

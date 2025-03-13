@@ -26,7 +26,7 @@ This post shows you how to move all the code from the item display template to t
 
 As said in the introduction, the item template is still needed for the property mappings, but the rest of the code can be removed. That means everything within the first **DIV** element may be removed completely.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
 <head>
   <title>AngularJS Part3</title>
@@ -47,14 +47,14 @@ As said in the introduction, the item template is still needed for the property 
   </div>
 </body>
 </html>
-{{< / highlight >}}
+```
 
 
 ## Control template
 
 In the control template we will insert the code that was previously written in the item template.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 SP.SOD.executeFunc("angular", null, function() {
   var elm = angular.element('#' + ctx.ElementId);
   if (typeof elm !== "undefined") {
@@ -82,13 +82,13 @@ SP.SOD.executeFunc("angular", null, function() {
   });
   angular.bootstrap(document, ['DisplayApp']);
 });
-{{< / highlight >}}
+```
 
 This will not work right now. If you test it, you are going to retrieve empty values for all properties. The reason for this is that the **ManagedPropertyMapping** cannot be set in the control display template. The item template is needs to be loaded one time to retrieve the configuration. For this I have a neat little trick, you could check what the item display template is for the current item and trigger it to load once.
 
 The full code for this looks like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Check if the DisplayTemplateData exists
 if (typeof ctx['DisplayTemplateData'] === "undefined") {
   ctx['DisplayTemplateData'] = new Object();
@@ -101,13 +101,13 @@ if (typeof this.DisplayTemplateData.ManagedPropertyMapping === "undefined") {
   // Set the display template property mappings
   ctx['DisplayTemplateData']['ManagedPropertyMapping'] = this.DisplayTemplateData.ManagedPropertyMapping;
 }
-{{< / highlight >}}
+```
 
 So what it does is: with the **Srch.U.resolveRenderTemplate(ctx, row, "Item")** function you retrieve the item template for the current item. Because this is the same for every item in case you are using a Content Search Web Part, it is only needed to load it only one time. Once you have the template, it needs to be called in order to retrieve the managed property mappings. This is done with the **CoreRender** function.
 
 The end result will looks the same as the previous part, but without custom JavaScript or HTML in the item display template.
 
-{{< caption-legacy "uploads/2014/08/080614_1930_Movingallyo1.png" "AngularJS template result" >}}
+{{< caption-new "/uploads/2014/08/080614_1930_Movingallyo1.png" "AngularJS template result" >}}
 
 ## Download
 

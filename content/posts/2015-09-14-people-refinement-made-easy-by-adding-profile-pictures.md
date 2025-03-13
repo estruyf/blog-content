@@ -25,7 +25,7 @@ The author refiner for example can simply be more useful by adding the user his 
 
 To include the user profile picture next to the refiner name, you have to add or create a new refiner display template. Here is an example output of the templates I have created:
 
-{{< caption-legacy "uploads/2015/09/091415_1430_Peoplerefin1.png" "User refiner" >}}
+{{< caption-new "/uploads/2015/09/091415_1430_Peoplerefin1.png" "User refiner" >}}
 
 ## Two types of user values, which one to use?
 
@@ -46,9 +46,9 @@ From this value you can extract the user its email address, full name, accountna
 
 The profile picture is show by making use of the **AccountName** of each user. Once you have the user its account name, you have to create an image element with the src attribute set to:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 String.format("/_layouts/15/userphoto.aspx?size=S&accountname={0}", username);
-{{< / highlight >}}
+```
 
 
 ## Download the templates

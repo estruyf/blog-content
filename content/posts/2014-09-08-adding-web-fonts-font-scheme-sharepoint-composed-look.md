@@ -27,7 +27,7 @@ In this post I will cover how you could add your own web fonts to a font scheme.
 
 When you go to the page to change the **change the look** page, you have the following default font schemes available.
 
-{{< caption-legacy "uploads/2014/09/090814_1225_Addingyourw1.png" "Default font schemes" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw1.png" "Default font schemes" >}}
 
 SharePoint already uses a couple of custom web fonts. Like for example: Typewriter, Century Gothic, Rockwell, ...
 
@@ -48,9 +48,9 @@ The small and large images are just screenshots of what the font looks like. Sha
 
 Here is how SharePoint does it for the default font schemes:
 
-{{< caption-legacy "uploads/2014/09/090814_1225_Addingyourw2.png" "Font large image" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw2.png" "Font large image" >}}
 
-{{< caption-legacy "uploads/2014/09/090814_1225_Addingyourw3.png" "Font with no images in place (font-family is used)" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw3.png" "Font with no images in place (font-family is used)" >}}
 
 As you can see, the difference between the first and the second is that Typewriter is a custom web font with a small and large image applied on it, so it uses the image file to visualise it in the list. In the second one, you can see that there the font-family style is set to Georgia.
 
@@ -59,7 +59,7 @@ But why two images?
 *   The large version is used for preview slot one (top);
 *   The small version is used for preview slot two (bottom).
 
-{{< caption-legacy "uploads/2014/09/090814_1225_Addingyourw4.png" "Preview slots 1 (top - large image) and 2 (bottom - small image)" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw4.png" "Preview slots 1 (top - large image) and 2 (bottom - small image)" >}}
 
 The next step is to add the file references in the font scheme, they need to be added with the following properties:
 
@@ -76,7 +76,7 @@ The file references need to be added only in the **s:latin** element. In that **
 
 Here are two examples:
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <s:fontScheme name="EStruyf" previewSlot1="title" previewSlot2="body" xmlns:s="http://schemas.microsoft.com/sharepoint/">
   <s:fontSlots>
@@ -117,15 +117,15 @@ Here are two examples:
     </s:fontSlot>
   </s:fontSlots>
 </s:fontScheme>
-{{< / highlight >}}
+```
 
 This gives the following output in the dropdown:
 
-{{< caption-legacy "uploads/2014/09/090814_1225_Addingyourw5.png" "Font scheme with custom web font" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw5.png" "Font scheme with custom web font" >}}
 
 Here is an example with preview slot 1 and 2 set:
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <s:fontScheme name="EStruyf" previewSlot1="title" previewSlot2="body" xmlns:s="http://schemas.microsoft.com/sharepoint/">
   <s:fontSlots>
@@ -166,30 +166,30 @@ Here is an example with preview slot 1 and 2 set:
     </s:fontSlot>
   </s:fontSlots>
 </s:fontScheme>
-{{< / highlight >}}
+```
 
 This gives the following output in the dropdown:
 
-{{< caption-legacy "uploads/2014/09/090814_1225_Addingyourw6.png" "Font scheme with custom web fonts" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw6.png" "Font scheme with custom web fonts" >}}
 
 If you leave the image references blank, it renders with the font-family style property instead of the image:
 
-{{< caption-legacy "uploads/2014/09/090814_1225_Addingyourw7.png" "Preview slot where the large and small image attribute have an empty value" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw7.png" "Preview slot where the large and small image attribute have an empty value" >}}
 
-{{< caption-legacy "uploads/2014/09/090814_1225_Addingyourw8.png" "Rendering when no image reference is set" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw8.png" "Rendering when no image reference is set" >}}
 
 ## Activating the composed look
 
 Once you select the new font scheme, the preview image should render with the font scheme in place:
 
-{{< caption-legacy "uploads/2014/09/090814_1225_Addingyourw9.png" "Preview with custom web font" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw9.png" "Preview with custom web font" >}}
 
 When the composed look is applied, the site should render with the font scheme in place.
 
-{{< caption-legacy "uploads/2014/09/090814_1225_Addingyourw10.png" "Site with custom web font applied" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw10.png" "Site with custom web font applied" >}}
 
 In the themed version of the corev15.css file, you will find the following web font references:
 
-{{< caption-legacy "uploads/2014/09/090814_1225_Addingyourw11.png" "Web font references in the corev15 css file" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw11.png" "Web font references in the corev15 css file" >}}
 
 In the next post I talk about how you could achieve it for Google web fonts.

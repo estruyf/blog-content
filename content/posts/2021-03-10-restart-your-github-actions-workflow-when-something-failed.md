@@ -35,11 +35,11 @@ The API URL is: `https://api.github.com/repos/{user}/{repo}/actions/workflows/{w
 
 {{< blockquote type="Important" text="You can find the workflow its ID by navigating to the following URL `https://api.github.com/repos/estruyf/doctor/actions/workflows`." >}}
 
-{{< caption "/2021/03/restart2.png" "Get the workflow ID"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAC0SURBVH3BwU6EMBRA0Vv6oC1QQB0S///PjOtBIExsIOUpOzMLzzHrumrOmWEY+I9Ya5mmiXme8d4TQqDve56JMQbnHDln9n3nOA5SSlxUFREhhICwfMHnB+b1RvvyRl3XeO95Jmfs+b69c3nc7yzLQtM0XFQVESHGiFhriTFSFAXOOaqqQkT4yxiDnOfJtm3knCmKgrZt6boOVeViraUsS+QX4ziSc0ZVUVVSSlxUFVUlxsgPXARKXxyQX1QAAAAASUVORK5CYII=" "771" >}}
+{{< caption-new "/uploads/2021/03/restart2.png" "Get the workflow ID"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAC0SURBVH3BwU6EMBRA0Vv6oC1QQB0S///PjOtBIExsIOUpOzMLzzHrumrOmWEY+I9Ya5mmiXme8d4TQqDve56JMQbnHDln9n3nOA5SSlxUFREhhICwfMHnB+b1RvvyRl3XeO95Jmfs+b69c3nc7yzLQtM0XFQVESHGiFhriTFSFAXOOaqqQkT4yxiDnOfJtm3knCmKgrZt6boOVeViraUsS+QX4ziSc0ZVUVVSSlxUFVUlxsgPXARKXxyQX1QAAAAASUVORK5CYII=" "771" >}}
 
 For the restart process itself, I use a job that only gets triggered when the workflow ran via its schedule, and it failed on one of my builds.
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 ##################################
 ### Run when a schedule failed ###
 ##################################
@@ -57,7 +57,7 @@ restart_when_failed:
         -H "Authorization: token ${{ secrets.ACTIONS_PAT }}" \
         https://api.github.com/repos/estruyf/doctor/actions/workflows/6155745/dispatches \
         -d '{"ref": "${{ github.ref }}" }'
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="By checking for the `schedule` event type, I can make sure it does not go in an endless loop of restarting the workflow." >}}
 
@@ -65,10 +65,10 @@ In the code block, there are two variables in use. One is the branch ref from on
 
 The other one is the `secrets.ACTIONS_PAT`. This secret is a personal access token with the `workflow` scope.
 
-{{< caption "/2021/03/restart1.png" "PAT - workflow scope"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAnSURBVGOUV1L/z8TEzPD58yeGP3/+MIAABwcnAwz8Z/jPwPD/PwMA8p0LUeXWQVIAAAAASUVORK5CYII=" "425" >}}
+{{< caption-new "/uploads/2021/03/restart1.png" "PAT - workflow scope"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAnSURBVGOUV1L/z8TEzPD58yeGP3/+MIAABwcnAwz8Z/jPwPD/PwMA8p0LUeXWQVIAAAAASUVORK5CYII=" "425" >}}
 
 Configure the `PAT` in your project secrets. Once set, your flow can now automatically restart itself.
 
-{{< caption "/2021/03/restart3.png" "Restart workflow from job"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABrSURBVDXBUQ7CIBBF0cswWFP3oD/uf2cmJmqxdOAZPjwnXW937RFIAomIIKWEJMYYSGLygbBk1O9GKYXWdtwdCXoP/hwzPEHOmcu64qXQIzgtC3XbMDP66Pjn9UYSk58XsMyzPpiOoxERTD9+KTn6PunfnQAAAABJRU5ErkJggg==" "1362" >}}
+{{< caption-new "/uploads/2021/03/restart3.png" "Restart workflow from job"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABrSURBVDXBUQ7CIBBF0cswWFP3oD/uf2cmJmqxdOAZPjwnXW937RFIAomIIKWEJMYYSGLygbBk1O9GKYXWdtwdCXoP/hwzPEHOmcu64qXQIzgtC3XbMDP66Pjn9UYSk58XsMyzPpiOoxERTD9+KTn6PunfnQAAAABJRU5ErkJggg==" "1362" >}}
 
 I hope this helps you fully automate your processes.

@@ -24,7 +24,7 @@ In your SharePoint Framework web parts, you have the option to load resources dy
 
 The issue with dynamically loading resources/controls for the property pane is the user experience. When you open the property pane for the first time, all these resources need to be loaded, and during that time, you get to see just an empty white panel.
 
-{{< caption "/2020/03/spinner1.gif" "Empty property pane while loading resources" >}}
+{{< caption-new "/uploads/2020/03/spinner1.gif" "Empty property pane while loading resources" >}}
 
 ## What can you do?
 
@@ -36,7 +36,7 @@ To make it work, you have to implement this property pane spinner as follows:
 
 Once this is implemented, you and your users will see the following experience.
 
-{{< caption "/2020/03/spinner2.gif" "Showing a spinner while loading the property pane" >}}
+{{< caption-new "/uploads/2020/03/spinner2.gif" "Showing a spinner while loading the property pane" >}}
 
 > **Info**: You can find the documentation of the helper here: [PropertyPaneHelpers](https://sharepoint.github.io/sp-dev-fx-property-controls/helpers/PropertyPaneHelpers/).
 

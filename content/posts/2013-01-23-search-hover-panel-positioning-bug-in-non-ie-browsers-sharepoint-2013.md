@@ -27,11 +27,11 @@ One of these new functionalities with which I had trouble branding, were the sea
 
 When I was testing my design, everything was working fine in Internet Explorer:
 
-{{< caption-legacy "uploads/2013/01/012313_0821_SearchHover1.png" "Search Results in Internet Explorer" >}}
+{{< caption-new "/uploads/2013/01/012313_0821_SearchHover1.png" "Search Results in Internet Explorer" >}}
 
 But when I opened the site in a non IE browser, the following happened:
 
-{{< caption-legacy "uploads/2013/01/012313_0821_SearchHover2.png" "Search Results in firefox" >}}
+{{< caption-new "/uploads/2013/01/012313_0821_SearchHover2.png" "Search Results in firefox" >}}
 
 _Note: these screenshots are just created for proving my point. Of course this was not the design I was working on, but the same thing happened._
 
@@ -50,7 +50,7 @@ The function that is used to show the hover panel is **showPopup**, and this fun
 The getAbsolutePosition function looks like this:
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function getAbsolutePosition(targetElement, position) {
   var tempY = 0, tempX = 0;
 
@@ -67,7 +67,7 @@ function getAbsolutePosition(targetElement, position) {
 
   return (position === "Left") ? tempX : tempY;
 }
-{{< / highlight >}}
+```
 
 
 _Note: this function loops over each [offset parent](http://help.dottoro.com/ljetdvkl.php) element until it finds an absolute positioned parent. If no absolute positioned element is available, it will stop when there is not offset parent anymore.
@@ -84,19 +84,19 @@ The same "IF" statement is also used in the **isInAbsoluteContainer** function.
 The solution is to append the following code to the getAbsolutePosition and isInAbsoluteContainer functions:
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 if (window.getComputedStyle) {
   if (window.getComputedStyle(targetElement, "")["position"].toLowerCase() === "absolute") {
     break;
   }
 }
-{{< / highlight >}}
+```
 
 
 The updated code for the getAbsolutePosition looks like this:
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function getAbsolutePosition(targetElement, position) {
   var tempY = 0, tempX = 0;
 
@@ -118,13 +118,13 @@ function getAbsolutePosition(targetElement, position) {
 
   return (position === "Left") ? tempX : tempY;
 }
-{{< / highlight >}}
+```
 
 
 The updated code for the isInAbsoluteContainer looks like this:
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function isInAbsoluteContainer(targetElement){
   while (targetElement != null) {
     if (window.getComputedStyle) {
@@ -139,15 +139,15 @@ function isInAbsoluteContainer(targetElement){
   }  
   return false;
 }
-{{< / highlight >}}
+```
 
 
 The best approach is to create a copy of the searchUI.debug.js file and make the changes is the copied file. Upload this file to the master page gallery of the site, and reference the script in the master page like this:
 
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <Sharepoint:ScriptLink ID="searchui" language="javascript" name="~SiteCollection/_catalogs/masterpage/updatedSearchUI.js" Defer="true" runat="server"/>
-{{< / highlight >}}
+```
 
 
 The end result should be the same as in IE.

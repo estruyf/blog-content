@@ -35,11 +35,11 @@ Both of the options require similar steps. For certificate authentication, you w
 
 In the project where you want to add the documentation, create the following directories: `.github/workflows`.
 
-{{< caption "/2021/02/github1.png" "GitHub Actions workflow folder"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABuSURBVGXBQQ6CMBBA0d/puDARjTG64wje/0TowhigxUgrTmFDYuJ7bltfS3U8YV9DRHDO4VWJfccQAysZUyZ2LfX5wPh+MeVE+3wwxMAvYZFSIoQe9UL+ZCj8URaqGy6VkScPuz2lFMyM+61hNQO2LDFZdNVB3gAAAABJRU5ErkJggg==" "217" >}}
+{{< caption-new "/uploads/2021/02/github1.png" "GitHub Actions workflow folder"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABuSURBVGXBQQ6CMBBA0d/puDARjTG64wje/0TowhigxUgrTmFDYuJ7bltfS3U8YV9DRHDO4VWJfccQAysZUyZ2LfX5wPh+MeVE+3wwxMAvYZFSIoQe9UL+ZCj8URaqGy6VkScPuz2lFMyM+61hNQO2LDFZdNVB3gAAAABJRU5ErkJggg==" "217" >}}
 
 In the `workflows` folder, add a file named `publish.yml` (you can give it another name as well if you want). The file contents look as follows:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 name: Publish your documentation
 
 on:
@@ -72,7 +72,7 @@ jobs:
 
         # Start doctor publish
         doctor publish --auth password --username "${{ secrets.USERNAME }}" --password "${{ secrets.PASSWORD }}" -u "${{ secrets.SITEURL }}" $startClean
-{{< / highlight >}}
+```
 
 As you can see, there is not a lot required to publish your documentation on SharePoint. The workflow automatically starts when you push your code to either the `dev` or `main` branch.
 
@@ -90,12 +90,12 @@ You do this by going to your project on GitHub:
 - Click on **Secrets**
 - Add for using `password` authentication, you need the `USERNAME`, `PASSWORD`, and `SITEURL` secrets.
 
-{{< caption "/2021/02/github2.png" "The required GitHub secrets"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAAA9SURBVG3BuRGAQBADwdE+R/6pAtatIVyoolvndVsRrF78MyAqGjqTVcnb3sPMYMyhoCqbUGDzIUF3Y0wgHiu5ESCBhKb8AAAAAElFTkSuQmCC" "923" >}}
+{{< caption-new "/uploads/2021/02/github2.png" "The required GitHub secrets"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAAA9SURBVG3BuRGAQBADwdE+R/6pAtatIVyoolvndVsRrF78MyAqGjqTVcnb3sPMYMyhoCqbUGDzIUF3Y0wgHiu5ESCBhKb8AAAAAElFTkSuQmCC" "923" >}}
 
 ## Running your GitHub Actions workflow
 
 Suppose the workflow and its secrets are in place. It is time to push your code. Once you did that, the Github Actions workflow will automatically start.
 
-{{< caption "/2021/02/github3.png" "Publish your documentation flow in action"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABmSURBVE3BQQ7CMAxFwefEoFiQy7FgwenbQ2AV0fygLioxY5/tPXP7UmvFqyOJzCSiYWacXLNyv11xdw7LsvJ4vshMJHEqICbGPsQ+xNBEEr13IgIz4+CtBf9KMdwLLQL3C5oTSfwAOFQs+deGpB4AAAAASUVORK5CYII=" "771" >}}
+{{< caption-new "/uploads/2021/02/github3.png" "Publish your documentation flow in action"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABmSURBVE3BQQ7CMAxFwefEoFiQy7FgwenbQ2AV0fygLioxY5/tPXP7UmvFqyOJzCSiYWacXLNyv11xdw7LsvJ4vshMJHEqICbGPsQ+xNBEEr13IgIz4+CtBf9KMdwLLQL3C5oTSfwAOFQs+deGpB4AAAAASUVORK5CYII=" "771" >}}
 
 *Happy documenting*

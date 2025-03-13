@@ -27,7 +27,7 @@ In this blog post, I'll walk you through deploying an Astro site to Azure Static
 
 In my scenario, I created a new folder and the Astro site in a subfolder named `app`. I wanted to keep the root folder as clean as possible, and I will add an API folder with Azure Functions later.
 
-```bash {title= "Create an Astro site"}
+```bash title="Create an Astro site"
 npm create astro@latest
 ```
 
@@ -37,7 +37,7 @@ npm create astro@latest
 
 The Azure Static Web Apps CLI is a command-line tool that allows you to create, manage, and deploy Azure Static Web Apps directly from your terminal. To install the CLI, run the following command:
 
-```bash {title= "Install the Azure Static Web Apps CLI"}
+```bash title="Install the Azure Static Web Apps CLI" showLineNumbers
 npm install -g @azure/static-web-apps-cli
 ```
 
@@ -47,7 +47,7 @@ npm install -g @azure/static-web-apps-cli
 
 Next, initialize the Azure Static Web App in the project root:
 
-```bash {title= "Initialize the Azure Static Web Apps project"}
+```bash title="Initialize the Azure Static Web Apps project"
 swa init
 ```
 
@@ -57,7 +57,7 @@ It will provide you with a default config. You should not accept it and provide 
 
 The `swa-cli.config.json` file contents it creates should look similar to this:
 
-```json {title="swa-cli.config.json"}
+```json title="swa-cli.config.json"
 {
   "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
   "configurations": {
@@ -74,7 +74,7 @@ The `swa-cli.config.json` file contents it creates should look similar to this:
 
 On the root, I installed the `npm-run-all` package to run the build and dev scripts in parallel and configured the `build` and `dev` scripts in the `package.json` file:
 
-```json {title="package.json"}
+```json title="package.json"
 {
   "scripts": {
     "build": "npm run build:app && npm run build:api",
@@ -90,7 +90,7 @@ On the root, I installed the `npm-run-all` package to run the build and dev scri
 
 With the above configuration, you should be able to start the local development server from Astro and the Azure Static Web Apps CLI:
 
-```bash {title= "Start the local development server"}
+```bash title="Start the local development server"
 npm run dev
 ```
 
@@ -112,7 +112,7 @@ When you connect the GitHub repository, it automatically creates a GitHub Action
 
 ## Step 7: Update the GitHub Actions workflow
 
-Once the Static Web App is created, you can pull the repository changes. In the` .github/workflows' folder, you will see a new GitHub Actions workflow. 
+Once the Static Web App is created, you can pull the repository changes. In the` .github/workflows' folder, you will see a new GitHub Actions workflow.
 
 In my case, my first run failed due to the package size issues.
 
@@ -122,11 +122,11 @@ Another thing I noticed was the warning about the `npm install --production` com
 
 {{< caption-new "/uploads/2025/02/npm-install-prod.webp" "npm install --production"  "data:image/jpeg;base64,UklGRloAAABXRUJQVlA4WAoAAAAQAAAACQAAAQAAQUxQSBUAAAAAE0NDQ0NDQ0NDExdOTk5OTk5OThcAVlA4IB4AAAAwAQCdASoKAAIAAUAmJaQAA3AA/v0UlpC6NrfFAAA=" "497" >}}
 
-To address these issues and gain more control over the whole workflow, I decided to create a new GitHub Actions workflow and deploy the site using the Azure Static Web Apps CLI. 
+To address these issues and gain more control over the whole workflow, I decided to create a new GitHub Actions workflow and deploy the site using the Azure Static Web Apps CLI.
 
 Change the GitHub Actions workflow filename to `deploy.yml` and update the contents to the following:
 
-```yaml {title=".github/workflows/deploy.yml"}
+```yaml title=".github/workflows/deploy.yml"
 name: Deployment to Azure Static Web App
 
 on:

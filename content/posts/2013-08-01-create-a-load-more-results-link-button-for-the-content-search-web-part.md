@@ -27,9 +27,9 @@ The first thing to do is to create a reference to jQuery in your Control Display
 
 The jQuery reference can be referenced in the control like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 $includeScript("", "http://code.jquery.com/jquery-1.10.1.min.js");
-{{< / highlight >}}
+```
 
 When you want to retrieve more results, you can make use of a function called **page**. This function is available on the Client Control of the context (ctx.ClientContext.page()). When this function gets called, it's going to load the next set of results.
 
@@ -56,7 +56,7 @@ What we need is the following:
 
 After some testing, I found that the best way is to place the set of results in an element outside the render area of the Control Display Template. To do this, you need to create a new element outside the WebPart body. The element that contains the original set of results will be hidden.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var hiddenElm = $('#'+controlId);
 var visibleElm = hiddenElm.parents('.ms-WPBody:eq(0)').parent().children('#Show-Items');
 // Hide the original set of results
@@ -75,23 +75,23 @@ if (visibleElm.length <= 0) {
     visibleElm = hiddenElm.parents('.ms-WPBody:eq(0)').parent().children('#Show-Items');
   }
 }
-{{< / highlight >}}
+```
 
 The next step is to append all the items from your result set to the new element. This can be done like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Append all the hidden items to the visible items element
 hiddenElm.children().each(function () {
   // Append the items to the visible div
   $(this).appendTo(visibleElm);
 });
-{{< / highlight >}}
+```
 
 ## Adding the Show More Link
 
 Most of the code comes from the **Control_ListWithPaging.html** Display Template. In that control you have two buttons, a previous and a next button. I only copied the code that was needed for the next button.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Get the paging information
 var pagingInfo = ctx.ClientControl.get_pagingInfo();
 var lastPage = pagingInfo[pagingInfo.length -1];
@@ -99,43 +99,43 @@ var lastPage = pagingInfo[pagingInfo.length -1];
 if (typeof lastPage !== 'undefined' && typeof lastPage.pageNumber !== 'undefined') {
   var hasNextPage = lastPage.pageNumber == -2;
 }
-{{< / highlight >}}
+```
 
 The last line in the code block is a special one. It checks if the value of **lastPage.pageNumber is equal to minus two**, and when this condition is met, it means that there are more results that can be loaded.
 
 So by checking the **hasNextPage**, you can append a **Show More Results** link after the hidden element, when the value condition is true.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Append the show more link if a next page is available
 if(hasNextPage) {
   hiddenElm.after('<a href="#" id="'+controlId+'showmore">Show More Results</a>');
 }
-{{< / highlight >}}
+```
 
 The last thing is to create and event handler which listens to the click event of the **Show More Results** link.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 // When clicked on the show more link, the new set of results needs to be retrieved
 $('#'+controlId+'showmore').click(function () {
   // Load the next set of results
   ctx.ClientControl.page(lastPage.startItem);
   return false;
 });
-{{< / highlight >}}
+```
 
 All of this code needs to be executed when the rendering of the results is completed. This can be done with the **AddPostRenderCallback** method.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 AddPostRenderCallback(ctx, function() {
   // Place the code here
 });
-{{< / highlight >}}
+```
 
 ## Final Result
 
 Here is the whole script:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var hiddenElmId = $htmlEncode(ctx.ClientControl.get_nextUniqueId() + "_Results_");
 AddPostRenderCallback(ctx, function() {
   var hiddenElm = $('#'+hiddenElmId);
@@ -183,26 +183,26 @@ AddPostRenderCallback(ctx, function() {
       return false;
   });
 });
-{{< / highlight >}}
+```
 
 The list HTML looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <ul id="_#=hiddenElmId=#_" class="cbs-List">
   _#= ctx.RenderGroups(ctx) =#_
 </ul>
-{{< / highlight >}}
+```
 
 **Note**: you can also place the code from inside the ctx.OnPostRender method in a separate JavaScript file, and reference the file the same way as the jQuery file.
 
 
 **Note 2**: I made the code as generic as possible so that this can be used by multiple CSWP on the same page.
 
-{{< caption-legacy "uploads/2013/07/073113_1906_CreateaLoad1.png" "First Result Set" >}}
+{{< caption-new "/uploads/2013/07/073113_1906_CreateaLoad1.png" "First Result Set" >}}
 
-{{< caption-legacy "uploads/2013/07/073113_1906_CreateaLoad2.png" "Extra results loaded" >}}
+{{< caption-new "/uploads/2013/07/073113_1906_CreateaLoad2.png" "Extra results loaded" >}}
 
-{{< caption-legacy "uploads/2013/07/073113_1906_CreateaLoad3.png" "Two web parts with a Show More Results link" >}}
+{{< caption-new "/uploads/2013/07/073113_1906_CreateaLoad3.png" "Two web parts with a Show More Results link" >}}
 
 ## Download
 

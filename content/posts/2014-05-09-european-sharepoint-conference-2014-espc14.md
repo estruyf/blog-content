@@ -35,6 +35,6 @@ During the ESPC14 I tried to take some pictures on each day, check them down her
 
 These Twitter analytics were aggregated with [Plus One Social](http://www.plusonesocial.com/ "Plus One  Social").
 
-{{< caption-legacy "uploads/2014/05/Screenshot-2014-05-09-17.38.50.png" "Tweet Statistics" >}}
+{{< caption-new "/uploads/2014/05/Screenshot-2014-05-09-17.38.50.png" "Tweet Statistics" >}}
 
-{{< caption-legacy "uploads/2014/05/Screenshot-2014-05-09-17.39.51.png" "Tweet Statistics" >}}
+{{< caption-new "/uploads/2014/05/Screenshot-2014-05-09-17.39.51.png" "Tweet Statistics" >}}

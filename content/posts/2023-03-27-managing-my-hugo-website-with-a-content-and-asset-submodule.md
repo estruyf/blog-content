@@ -46,11 +46,11 @@ A git submodule is a git repository that is nested in another git repository. It
 
 To get started adding the content as a git submodule, you will have to open your Hugo (or other types of website) project in your terminal and run the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 git submodule add -b main <your repository> <submodule_folder>
 
 git config -f .gitmodules submodule.<submodule_folder>.update merge
-{{< / highlight >}}
+```
 
 This command adds the submodule and tracks its changes to the `main` branch. If you run: `git submodule add` without defining the branch argument, it will run in a **detached HEAD** state where you might lose changes.
 
@@ -58,14 +58,14 @@ This command adds the submodule and tracks its changes to the `main` branch. If 
 
 When you run in a detached HEAD state, you can run the following commands to configure it correctly:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 cd <submodule_folder>
 git checkout main
 
 cd ..
 git config -f .gitmodules submodule.<submodule_folder>.branch main
 git config -f .gitmodules submodule.<submodule_folder>.update merge
-{{< / highlight >}}
+```
 
 {{< blockquote type="info" text="When you run these commands, the `.gitmodules` its content will be updated with the branch and update strategy." >}}
 
@@ -75,14 +75,14 @@ Previously, I wrote an article on how to [symlink your folders for Astro](https:
 
 In the `config.yml` configuration file, all you have to do is add the following:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 module:
   mounts:
     - source: <submodule_folder>/content
       target: content
     - source: <submodule_folder>/static
       target: static
-{{< / highlight >}}
+```
 
 This configuration lets Hugo know the location of the content and asset files.
 
@@ -96,12 +96,12 @@ First, I was using the `actions/checkout` with the `submodules: true` argument. 
 
 To make sure to get the latest changes from the submodule, I removed the `submodules: true` argument and added the following to my website's workflow:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 - name: Checkout submodules main branch
   run: |
     git config --global --add url.https://github.com/.insteadOf git@github.com:
     git submodule update --init --recursive --remote
-{{< / highlight >}}
+```
 
 As my content is hosted on a public repository, I do not need authentication. That is why I added the first line to rewrite the SSH URL to the HTTPS URL. That way, I can fetch it without needing to provide the SSH key.
 
@@ -113,7 +113,7 @@ Finally, you can set up GitHub Actions to trigger your website to rebuild whenev
 
 Inside the content repository project, I created the following workflow:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 name: Trigger blog to build
 
 on:
@@ -132,7 +132,7 @@ jobs:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: estruyf/web-eliostruyf-hugo
           event-type: update
-{{< / highlight >}}
+```
 
 {{< blockquote type="info" text="More information about how to call it can be found here in the [Dispatch a GitHub Action via a fine-grained Personal Access Token](https://www.eliostruyf.com/dispatch-github-action-fine-grained-personal-access-token/) article." >}}
 
@@ -144,9 +144,9 @@ One last thing, how do you get the latest changes downloaded locally?
 
 Well, you need to use the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 git submodule update --remote
-{{< / highlight >}}
+```
 
 This command updates the contents of the submodule to the latest commit on the branch specified in the .gitmodules file (in this case, `main`) and then pulls those changes into your local repository. If the submodule has any new commits since the last time you updated it, those changes will be downloaded and merged into your local copy of the submodule.
 
@@ -156,7 +156,7 @@ Note that if you have made changes to the submodule locally and want to pull in 
 
 As a submodule is "just" another git repository, pushing new changes requires you to run the following commands:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 cd <submodule_folder>
 git checkout main
 git add .
@@ -166,7 +166,7 @@ cd ..
 git add <submodule_folder>
 git commit -m "Updated submodule"
 git push
-{{< / highlight >}}
+```
 
 Once you have pushed the changes to the submodule's remote repository, you can navigate back to the root directory of your website repository and commit and push the changes made to the submodule reference in your website repository.
 
@@ -176,9 +176,9 @@ One of the nice features of Visual Studio Code is that it notices that you are w
 
 When you clone your repository, you will notice that the submodule is not initialized. To initialize the submodule, you need to run the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 git submodule update --init --recursive --remote
-{{< / highlight >}}
+```
 
 - The `--init` flag tells git to initialize the submodule. 
 - The `--recursive` flag tells git to initialize all submodules within the submodule.
@@ -186,9 +186,9 @@ git submodule update --init --recursive --remote
 
 This command fetches the latest commit of the submodule but is not yet checked out to the correct branch. To do that, you need to run the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 git submodule foreach git checkout main
-{{< / highlight >}}
+```
 
 ## Front Matter CMS configuration changes
 
@@ -202,7 +202,7 @@ To make this work, I had to make a few changes.
 
 In my `frontmatter.json` file, I had to update the `frontMatter.content.pageFolders` and `frontMatter.content.publicFolder` settings to include the `.frontmatter` folder. In my configuration, it looks as follows:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "frontMatter.content.pageFolders": [
     {
@@ -221,18 +221,18 @@ In my `frontmatter.json` file, I had to update the `frontMatter.content.pageFold
   ],
   "frontMatter.content.publicFolder": ".frontmatter/static"
 }
-{{< / highlight >}}
+```
 
 ### Update the root frontmatter.json file
 
 One more change is needed to make this work. The root `frontmatter.json` file needs to know that it can use the configuration found in the `.frontmatter/frontmatter.json` file. To so, you can use the `frontMatter.extends` setting. In my case, it looks as follows:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "frontMatter.extends": [
     ".frontmatter/frontmatter.json"
   ]
 }
-{{< / highlight >}}
+```
 
 That was the last change in order to make it all work. I hope you learned something from this approach and want to try it for your blog/website.

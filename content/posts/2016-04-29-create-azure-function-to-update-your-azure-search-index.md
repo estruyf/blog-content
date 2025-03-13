@@ -45,19 +45,19 @@ I choose to write the Azure Function with Node.js as this is very easy to create
 
 When you are going to create your first function, you will notice that there are a number of templates available for you to choose from. This is great to get started. In my case, I choose to start with the **HttpTrigger - Node** template. This means that the function will run when it receives a HTTP request.
 
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA1.jpg" "HttpTrigger - Node template" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA1.jpg" "HttpTrigger - Node template" >}}
 
 Once you clicked on the **HttpTrigger - Node** template, you will end up in the development view where you also receive the **function URL** which can be used to trigger the function to run.
 
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA2.png" "Azure function developer view" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA2.png" "Azure function developer view" >}}
 
 Of course, I am not going to manually call the URL every time I publish a new article. For this, I make use of an IFTTT recipes which checks for new RSS items.
 
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA3.png" "IFTTT recipe" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA3.png" "IFTTT recipe" >}}
 
 The whole recipe looks like this:
 
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA4.png" "IFTTT recipe configuration" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA4.png" "IFTTT recipe configuration" >}}
 
 ### What about the code, what does it do?
 
@@ -68,7 +68,7 @@ The code itself in the index.js file does the following things:
 *   Retrieve the last article via the Wordpress JSON API. For this, you have to enable the JSON API functionality in the Jetpack plugin. This allows you to make calls to _https://public-api.wordpress.com_. More information about the API endpoints can be found here: [Wordpress REST API Resources](https://developer.wordpress.com/docs/api/). There are also other plugins which enable API endpoints on the local site itself;
 *   Once the latest article is retrieved, the object to index gets created. In my case, I make use of the following fields in my search index: postId, title, author, URL, content, date, excerpt, slug, tags, updated;
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Article body
 var articleBody = {
     "value": [
@@ -87,7 +87,7 @@ var articleBody = {
         }
     ]
 };
-{{< / highlight >}}
+```
 
 
 *   The next step is to do a POST request to the Azure Search index endpoint to add the article to the index. This is the endpoint which is used for this: _https://<search-name>.search.windows.net/indexes/<index-name>/docs/index?api-version=2015-02-28_;
@@ -110,18 +110,18 @@ In order to be able to run the code, there are a number of app settings required
 
 These settings can be set in the **App settings** of the Azure Functions service.
 
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA5.png" "App Settings" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA5.png" "App Settings" >}}
 
 You can find this app settings page by navigating as follows:
 
 *   Azure Functions app -> Function app settings
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA6.png" "Function app settings" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA6.png" "Function app settings" >}}
 
 *   Go to App Service Settings
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA7.png" "App service settings" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA7.png" "App service settings" >}}
 
 *   Settings -> Application Settings
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA8.png" "Application settings" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA8.png" "Application settings" >}}
 
 ## Making use of the code
 
@@ -135,35 +135,35 @@ If you want to make use of the code, the easiest way to do so goes as follows:
 *   Click on **Go to app service settings**;
 *   Click on **tools;**
 
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA9.png" "Tools" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA9.png" "Tools" >}}
 
 *   Click on **Kudu**;
 
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA10.png" "Kudu" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA10.png" "Kudu" >}}
 
 *   Click **Go**;
 *   Click on **Debug console** -> **CMD**;
 *   Navigate to Site -> wwwroot -> function name;
 
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA11.png" "Azure function file view" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA11.png" "Azure function file view" >}}
 
 *   Drag and drop the files from the GitHub repo on to the existing files;
 
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA12.png" "Drag and drop files" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA12.png" "Drag and drop files" >}}
 
 *   Run **npm install**;
 
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA13.png" "Run npm install" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA13.png" "Run npm install" >}}
 
 *   Once this is done, you can start using the Azure Function. If you go back to Azure Function in the app, you can click on run to test out the function itself.
 
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA14.png" "Do a test run" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA14.png" "Do a test run" >}}
 
 ## Result
 
 Once the function executed, a notification will be sent to the mail address you configured in the app settings:
 
-{{< caption-legacy "uploads/2016/04/042916_1851_CreatinganA15.png" "Mail notification" >}}
+{{< caption-new "/uploads/2016/04/042916_1851_CreatinganA15.png" "Mail notification" >}}
 
 ## Resources
 

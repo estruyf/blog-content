@@ -39,13 +39,13 @@ On Azure DevOps, I recommend you make use of a `variable group` to connect to an
 
 Using a variable group is always a good idea; you do not need to manage your variables in your pipelines. 
 
-{{< caption "/2021/02/devops1.png" "Azure DevOps variable group"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAYAAABbayygAAAAAklEQVR4AewaftIAAADRSURBVH3BsW3DMBRF0fs+P6m4sKtUGSFV9p8hU2QAl5JhUXyJDAhwE5+j6/XqUgoRAQpaq0giS0ESh4xstFZ5mxqv5Oh3ln6n1eSVvFwuSOIV2+T3z8znOw+1ViKCzCQieJZfH42dVWhZkHiwzcE2ua4rSChghIkoSOJgG9vkNE3YptbKf7ZtI5ZlYds2JLHrvSOJMQa9d+Z5JiKI8/nMuq6MMdhlJra53W7Y5nQ6UUohJBERjDGQhCQkUWullEJEIIngzzRNZCbPeu+MMbDN7hdWqlXtTKx/OwAAAABJRU5ErkJggg==" "759" >}}
+{{< caption-new "/uploads/2021/02/devops1.png" "Azure DevOps variable group"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAYAAABbayygAAAAAklEQVR4AewaftIAAADRSURBVH3BsW3DMBRF0fs+P6m4sKtUGSFV9p8hU2QAl5JhUXyJDAhwE5+j6/XqUgoRAQpaq0giS0ESh4xstFZ5mxqv5Oh3ln6n1eSVvFwuSOIV2+T3z8znOw+1ViKCzCQieJZfH42dVWhZkHiwzcE2ua4rSChghIkoSOJgG9vkNE3YptbKf7ZtI5ZlYds2JLHrvSOJMQa9d+Z5JiKI8/nMuq6MMdhlJra53W7Y5nQ6UUohJBERjDGQhCQkUWullEJEIIngzzRNZCbPeu+MMbDN7hdWqlXtTKx/OwAAAABJRU5ErkJggg==" "759" >}}
 
 ## The pipeline
 
 The pipeline itself is relatively straightforward — the `azure-pipelines.yml` file contents look like this:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 trigger:
 - main
 - dev
@@ -76,7 +76,7 @@ stages:
           sudo npm i @estruyf/doctor@next -g
           doctor publish --auth certificate --certificateBase64Encoded $(CERTBASE64) --password $(CERTPASSWORD) --appId $(APPID) --tenant $(TENANT) --url $(URL) $cleanStart $debug
         displayName: 'Publish via Doctor'
-{{< / highlight >}}
+```
 
 Under the variables property, the variable group called `doctor-sharepoint` in my case gets retrieved, which includes all the required environment variables.
 
@@ -86,4 +86,4 @@ The pipeline will get triggered whenever there is a push to the `main` or `dev` 
 
 Running the pipeline on Azure DevOps will give you the following result:
 
-{{< caption "/2021/02/devops2.png" "Azure DevOps - Publish pipeline"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACDSURBVE3BWw6DIBRF0Y2CoS9n3HRodUjWxCJw5TT8dS23bZtKKUzTxPP1ZFneHOkgH5l/vprRhRDQ2RgYmB8P9mFEEp2Z4UMIlJzJOYNzDH7ibI3rfUYSTY3vvuNTTpzFiDGCYL5daBLOOTozAzP8LV6pY8V7T7d+VtTENyVqrUii+wFbzk8ry2LoJAAAAABJRU5ErkJggg==" "1134" >}}
+{{< caption-new "/uploads/2021/02/devops2.png" "Azure DevOps - Publish pipeline"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACDSURBVE3BWw6DIBRF0Y2CoS9n3HRodUjWxCJw5TT8dS23bZtKKUzTxPP1ZFneHOkgH5l/vprRhRDQ2RgYmB8P9mFEEp2Z4UMIlJzJOYNzDH7ibI3rfUYSTY3vvuNTTpzFiDGCYL5daBLOOTozAzP8LV6pY8V7T7d+VtTENyVqrUii+wFbzk8ry2LoJAAAAABJRU5ErkJggg==" "1134" >}}

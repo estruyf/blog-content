@@ -22,7 +22,7 @@ When SharePoint 2013 got released there was something missing in the UI. There w
 
 > **Info**: read more about it - [Transform the "SharePoint" Suite Bar Text into a Breadcrumb with PowerShell](https://www.eliostruyf.com/transform-the-sharepoint-suite-bar-text-into-a-breadcrumb-via-powershell/).
 
-{{< caption-legacy "uploads/2013/03/031113_1118_Transformth1.png" "Suite bar breadcrumb" >}}
+{{< caption-new "/uploads/2013/03/031113_1118_Transformth1.png" "Suite bar breadcrumb" >}}
 
 The downside was that this script only worked for on-premises environments because this functionality was not available on SharePoint Online.
 
@@ -32,7 +32,7 @@ Now with the new era of SharePoint development with SharePoint Framework and the
 
 > **Info**: be aware that the SharePoint Framework extensions are currently in developer preview.
 
-{{< caption-legacy "uploads/2017/08/Screenshot-2017-08-09-09.56.46-1.png" "Modern UI Breadcrumb" >}}
+{{< caption-new "/uploads/2017/08/Screenshot-2017-08-09-09.56.46-1.png" "Modern UI Breadcrumb" >}}
 
 One of the available extensions is the application customizer. This one allows developers to add scripts / HTML to specifically provided placeholders. Like for example a header and footer placeholder. By making use of this extension model and the header placeholder, I created a breadcrumb sample project which is available in the SharePoint [sp-dev-fx-extensions](https://github.com/sharepoint/sp-dev-fx-extensions) GitHub repository.
 
@@ -41,6 +41,6 @@ One of the available extensions is the application customizer. This one allows d
 
 Here is another screenshot of the breadcrumb output:
 
-{{< caption-legacy "uploads/2017/08/Screenshot-2017-08-09-09.55.22-1.png" "Modern UI Breadcrumb sample output" >}}
+{{< caption-new "/uploads/2017/08/Screenshot-2017-08-09-09.55.22-1.png" "Modern UI Breadcrumb sample output" >}}
 
 Feel free to contribute and make it better.

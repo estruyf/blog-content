@@ -31,7 +31,7 @@ So what I wanted to achieve in my search center is to be able to add an actor ID
 
 Here is my code which you can add in a script editor web part on the search page.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <input type="text" name="delve-actor" id="actorText" placeholder="ME or Actor ID">
 
 <select name="delve-action" id="actionText">
@@ -79,11 +79,11 @@ Here is my code which you can add in a script editor web part on the search page
     };
   }
 </script>
-{{< / highlight >}}
+```
 
 The code gives you the following output:
 
-{{< caption-legacy "uploads/2014/10/100114_1407_Officegraph1.png" "Code output" >}}
+{{< caption-new "/uploads/2014/10/100114_1407_Officegraph1.png" "Code output" >}}
 
 > **Note**: you can add the code in a script editor web part that you can place above the search box web part.
 _
@@ -92,8 +92,8 @@ The textbox can be used to include the actor ID. If you leave it empty, it uses 
 
 ## Results
 
-{{< caption-legacy "uploads/2014/10/100114_1407_Officegraph2.png" "Default Office Graph query: ACTOR(ME)" >}}
+{{< caption-new "/uploads/2014/10/100114_1407_Officegraph2.png" "Default Office Graph query: ACTOR(ME)" >}}
 
-{{< caption-legacy "uploads/2014/10/100114_1407_Officegraph3.png" "Office Graph query: ACTOR(ME, action:1020)" >}}
+{{< caption-new "/uploads/2014/10/100114_1407_Officegraph3.png" "Office Graph query: ACTOR(ME, action:1020)" >}}
 
 > **Important**: refiners are not working, no refinement data gets returned.

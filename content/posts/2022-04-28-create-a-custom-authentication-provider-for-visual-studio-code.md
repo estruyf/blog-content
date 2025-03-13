@@ -41,7 +41,7 @@ The authentication provider requires the following methods to implement:
 
 The blueprint for this class looks as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import { authentication, AuthenticationProvider, AuthenticationProviderAuthenticationSessionsChangeEvent, AuthenticationSession, Disposable, EventEmitter, ExtensionContext } from "vscode";
 
 export const AUTH_TYPE = `auth0`;
@@ -94,7 +94,7 @@ export class Auth0AuthenticationProvider implements AuthenticationProvider, Disp
     this._disposable.dispose();
   }
 }
-{{< / highlight >}}
+```
 
 ## Creating a session
 
@@ -104,7 +104,7 @@ In the case of Auth0, we first log in, get the token, fetch the user information
 
 The `createSession` method looks as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const AUTH_TYPE = `auth0`;
 const AUTH_NAME = `Auth0`;
 const SESSIONS_SECRET_KEY = `${AUTH_TYPE}.sessions`
@@ -143,7 +143,7 @@ export class Auth0AuthenticationProvider implements AuthenticationProvider, Disp
     }
   }
 }
-{{< / highlight >}}
+```
 
 The authentication session is stored in the VS Code's secrets store and later used by the `getSessions` and `removeSession` methods.
 
@@ -151,7 +151,7 @@ The authentication session is stored in the VS Code's secrets store and later us
 
 All the logic can be found within the `login` method:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const AUTH_TYPE = `auth0`;
 const AUTH_NAME = `Auth0`;
 const CLIENT_ID = `3GUryQ7ldAeKEuD2obYnppsnmj58eP5u`;
@@ -215,7 +215,7 @@ export class Auth0AuthenticationProvider implements AuthenticationProvider, Disp
     });
   }
 }
-{{< / highlight >}}
+```
 
 #### What is happening within the login method?
 
@@ -233,14 +233,14 @@ To ensure your extension can receive a code/token, you will have to either use a
 
 The URI format looks as follows:
 
-{{< highlight text "linenos=table,noclasses=false" >}}
+```text
 vscode://<publisher>.<extension-name>
 vscode-insider://<publisher>.<extension-name>
-{{< / highlight >}}
+```
 
 The code to implement the URI Handler looks as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 class UriEventHandler extends EventEmitter<Uri> implements UriHandler {
   public handleUri(uri: Uri) {
     this.fire(uri);
@@ -287,7 +287,7 @@ export class Auth0AuthenticationProvider implements AuthenticationProvider, Disp
     resolve(access_token);
   }
 }
-{{< / highlight >}}
+```
 
 How you handle the redirect depends on the authentication provider you are using. In the case of Auth0, the token and additional information like the **state** are provided as URI fragments. 
 
@@ -301,7 +301,7 @@ Now that creating a session is in place, it is time to complete the `getSessions
 
 VS Code calls this method when an extension uses the `authentication.getSession`. What we need to do here, is get the session data from the secret store and return the session if one exists.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const AUTH_TYPE = `auth0`;
 const SESSIONS_SECRET_KEY = `${AUTH_TYPE}.sessions`
 
@@ -325,13 +325,13 @@ export class Auth0AuthenticationProvider implements AuthenticationProvider, Disp
     return [];
   }
 }
-{{< / highlight >}}
+```
 
 ## Removing a session
 
 The `removeSession` method gets called when you sign out of the service for your extension. It will pass the `sessionId` to remove from your authenticated sessions.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const AUTH_TYPE = `auth0`;
 const SESSIONS_SECRET_KEY = `${AUTH_TYPE}.sessions`
 
@@ -359,7 +359,7 @@ export class Auth0AuthenticationProvider implements AuthenticationProvider, Disp
     }
   }
 }
-{{< / highlight >}}
+```
 
 > **Info**: You can find the complete sample here: [auth0AuthenticationProvider - github](https://github.com/estruyf/vscode-auth-sample/blob/main/src/auth0AuthenticationProvider.ts)
 
@@ -367,7 +367,7 @@ export class Auth0AuthenticationProvider implements AuthenticationProvider, Disp
 
 Once the authentication provider is implemented, you need to register it to VS Code. You can do this as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 export async function activate(context: ExtensionContext) {
 
 	context.subscriptions.push(
@@ -375,16 +375,16 @@ export async function activate(context: ExtensionContext) {
 	);
   
 }
-{{< / highlight >}}
+```
 
 All we need to do to use the authentication provider is add the following code to our extension:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const session = await vscode.authentication.getSession("auth0", [], { createIfNone: false });
 if (session) {
   vscode.window.showInformationMessage(`Welcome back ${session.account.label}`)
 }
-{{< / highlight >}}
+```
 
 The result looks as follows:
 

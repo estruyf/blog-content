@@ -37,11 +37,11 @@ There are some prerequisite:
 
 Open Visual Studio 2010 and start by creating a "Empty SharePoint Project".
 
-{{< caption-legacy "uploads/2011/03/030311_1309_CreatingaSa1.png" "Create an empty SharePoint Project" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa1.png" "Create an empty SharePoint Project" >}}
 
 In the next window enter your SharePoint Site URL and check if the option "Deploy as a sandboxed solution" is checked.
 
-{{< caption-legacy "uploads/2011/03/030311_1309_CreatingaSa2.png" "Deploy as a sandboxed solution" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa2.png" "Deploy as a sandboxed solution" >}}
 
 ### Add a Sandboxed Visual Web Part to the project
 
@@ -49,17 +49,17 @@ If you installed the SharePoint Power Tools, you are now able to add a sandboxed
 
 Right click on your project name and choose: "Add" --> "New Item...".
 
-{{< caption-legacy "uploads/2011/03/030311_1309_CreatingaSa3.png" "Add a "New Item"" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa3.png" "Add a "New Item"" >}}
 
 In the "Add New Item" window select "Visual Web Part (Sandboxed)" and add this to your project.
 
-{{< caption-legacy "uploads/2011/03/030311_1309_CreatingaSa4.png" "Sandboxed Visual Web Part" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa4.png" "Sandboxed Visual Web Part" >}}
 
 ### Add the HTML and JavaScript to the User Control
 
 Now that you have created the visual web part it is time to add the HTML and JavaScript code from the [to-do list blog post](/uploads/2011/02/To-do_List.zip) to the User Control.
 
-{{< caption-legacy "uploads/2011/03/030311_1309_CreatingaSa5.png" "Add the HTML to the User Control" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa5.png" "Add the HTML to the User Control" >}}
 
 If you do not have the Visual Studio SP1 Beta installed, the User Control's designer file (.ascx.g.cs) gets removed because of a bug in VS 2010 with User Control's.
 
@@ -67,7 +67,7 @@ If you do not have the Visual Studio SP1 Beta installed, the User Control's desi
 
 When you deploy the web part, it will look like this:
 
-{{< caption-legacy "uploads/2011/03/030311_1309_CreatingaSa6.png" "Current Result" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa6.png" "Current Result" >}}
 
 Right now you have a working to-do list, but you cannot choose which task list you want to use. In the next section I will show you how to create a custom tool part, so you can set the preferred task list.
 
@@ -83,7 +83,7 @@ The Sandboxed Visual Web Part inherits from "System.Web.UI.WebControls.WebParts.
 
 The code that you need to add to the code behind file looks like this:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 #region Custom ASP.NET web part property
 public override object WebBrowsableObject
 {
@@ -171,11 +171,11 @@ private class CustomProperty : EditorPart
 	}
 }
 #endregion
-{{< / highlight >}}
+```
 
 When you deploy this solution, the web part will contain a new toolpart section.
 
-{{< caption-legacy "uploads/2011/03/030311_1309_CreatingaSa7.png" "Custom toolpart" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa7.png" "Custom toolpart" >}}
 
 The last step is to make use of the inserted value by the JavaScript.
 
@@ -183,17 +183,17 @@ The last step is to make use of the inserted value by the JavaScript.
 
 The easiest method is to use the ASP.NET binding expression "<%= %>". The only thing that needs to be changed is list name variable in JavaScript and that needs to be set to:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var ListName = '<%=taskList%>';
-{{< / highlight >}}
+```
 
 This will work perfectly, but if you do not want to retrieve an error message when you haven't inserted a list name value. You need to write the following if statement.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 if (ListName != null && ListName != "") {
   ExecuteOrDelayUntilScriptLoaded(Initialize, "sp.js");
 }
-{{< / highlight >}}
+```
 
 ## Files
 

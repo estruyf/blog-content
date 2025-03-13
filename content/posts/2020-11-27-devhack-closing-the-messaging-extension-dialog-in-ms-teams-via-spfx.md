@@ -24,11 +24,11 @@ While going through the documentation, I found that you can do this by calling `
 
 In your SharePoint Framework code, it looks as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 if (this.context.sdks.microsoftTeams) {
   // Close the current dialog
   this.context.sdks.microsoftTeams.teamsJs.tasks.submitTask();
 }
-{{< / highlight >}}
+```
 
 *Happy MS Teams development*

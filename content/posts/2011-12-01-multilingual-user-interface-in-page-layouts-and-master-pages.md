@@ -35,21 +35,21 @@ This means that the control checks the language in which the site has initially 
 To use this SharePoint Control, the following assembly needs to be registered on your master page or page layout (this is referenced by default).
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-{{< / highlight >}}
+```
 
 
 The next step is to create your language specific content, this can be done as follows.
 
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <SharePoint:LanguageSpecificContent runat="server" Languages="LCID">
   <ContentTemplate>
     ...
   </ContentTemplate>
 </SharePoint:LanguageSpecificContent>
-{{< / highlight >}}
+```
 
 
 In the **Languages** attribute you could specify the language code (locale identifier: [LCID](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.splocale.lcid.aspx)). You can insert your language specific content between the **ContentTemplate** tags.
@@ -57,7 +57,7 @@ In the **Languages** attribute you could specify the language code (locale ident
 ## Example
 
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <SharePoint:LanguageSpecificContent runat="server" Languages="1033">
   <ContentTemplate>
     [EN] Text
@@ -68,13 +68,13 @@ In the **Languages** attribute you could specify the language code (locale ident
     [NL] Tekst
   </ContentTemplate>
 </SharePoint:LanguageSpecificContent>
-{{< / highlight >}}
+```
 
 
 On an English site you get this:
 
-{{< caption-legacy "uploads/2011/12/120111_1839_Multilingua1.png" "English Specific Content" >}}
+{{< caption-new "/uploads/2011/12/120111_1839_Multilingua1.png" "English Specific Content" >}}
 
 On a Dutch site you get this:
 
-{{< caption-legacy "uploads/2011/12/120111_1839_Multilingua2.png" "Dutch Specific Content" >}}
+{{< caption-new "/uploads/2011/12/120111_1839_Multilingua2.png" "Dutch Specific Content" >}}

@@ -24,9 +24,9 @@ Developing an Azure function has to be done in the Azure Portal itself. There is
 
 > **Info**: You can find this option in the App Service Settings:
 
-{{< caption-legacy "uploads/2016/09/092916_1036_Developinga1.png" "App Service Editor" >}}
+{{< caption-new "/uploads/2016/09/092916_1036_Developinga1.png" "App Service Editor" >}}
 
-{{< caption-legacy "uploads/2016/09/092916_1036_Developinga2.png" "App Service Editor - UI" >}}
+{{< caption-new "/uploads/2016/09/092916_1036_Developinga2.png" "App Service Editor - UI" >}}
 
 It is good that you can develop it directly on Azure itself. I like that approach for doing quick and small code changes, but for larger ones, I want to be in control. So I always start my development on my local machine, so that I can easily debug and test them. This not only gives me more control, but it also allows me to write them in TypeScript. Once they are completed, I add the JavaScript code to the function on Azure.
 
@@ -71,7 +71,7 @@ As you can see, when running it in a production environment (Azure in this case)
 
 Here is an example of the debug output:
 
-{{< caption-legacy "uploads/2016/09/092916_1036_Developinga3.png" "Debugging output" >}}
+{{< caption-new "/uploads/2016/09/092916_1036_Developinga3.png" "Debugging output" >}}
 
 Here is a direct link to the sample: [HttpTriggerNodeJS1](https://github.com/estruyf/Azure-Sample-Functions/tree/master/HttpTriggerNodeJS1).
 

@@ -28,15 +28,15 @@ The solution I tried, which also worked, was detaching the page layout from the 
 
 You can easily test this by opening your site in the good "old" SharePoint Designer, navigate to the library, and right click on the page that's causing the problem. There you'll find the option to detach the page layout: **Detach from Page Layout**.
 
-{{< caption-legacy "uploads/2013/11/112613_1245_ThePageCann1.png" "Detach from Page Layout" >}}
+{{< caption-new "/uploads/2013/11/112613_1245_ThePageCann1.png" "Detach from Page Layout" >}}
 
 After that the option will be switched to **Reattach to Page Layout**:
 
-{{< caption-legacy "uploads/2013/11/112613_1245_ThePageCann2.png" "Reattach from Page Layout" >}}
+{{< caption-new "/uploads/2013/11/112613_1245_ThePageCann2.png" "Reattach from Page Layout" >}}
 
 In my case I had to do this on a lot of sites and pages. So I created a PowerShell script for it to fix it.
 
-{{< highlight powershell "linenos=table,noclasses=false" >}}
+```powershell
 $spInstalled = Get-PSSnapin ' Select-String Sharepoint
 if (!$spInstalled)
 {
@@ -92,7 +92,7 @@ foreach($web in $site.AllWebs) {
 }
 $site.Dispose();
 write-host "Script completed" -ForegroundColor Green
-{{< / highlight >}}
+```
 
 
 > **Note**: change the site and page layout references to that of your environment.

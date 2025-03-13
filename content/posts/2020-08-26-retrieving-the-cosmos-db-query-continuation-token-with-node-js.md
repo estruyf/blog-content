@@ -31,29 +31,29 @@ That said, I started developing. First, I pushed over my content from Azure Tabl
 
 When you follow the Node.js documentation, they show the following code snippet to retrieve all items:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const querySpec = { query: "SELECT * from c" }; 
 const { resources: items } = await container.items.query(querySpec).fetchAll();
-{{< / highlight >}}
+```
 
 Instead of using `fetchAll()`, you also got `fetchNext()`. This method retrieves the next batch from the feed. As an option, you can provide the `continuationToken`. Problem is that this token is always `null`. If you check the response headers, you only get the following:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const querySpec = { query: "SELECT * from c" }; 
 const resources = await container.items.query(querySpec).fetchNext();
-{{< / highlight >}}
+```
 
-{{< caption "/2020/08/cosmos1.png" "Headers from Cosmos DB query"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABASURBVBXBQQoAIQwEwc4QkMH/v9ODBxE0LlsVY4w356S1hm3OOdhm701VUVX03smI4LfW4t7Lew9JSMI2kshMPpwgG//ptG3GAAAAAElFTkSuQmCC" "356" >}}
+{{< caption-new "/uploads/2020/08/cosmos1.png" "Headers from Cosmos DB query"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABASURBVBXBQQoAIQwEwc4QkMH/v9ODBxE0LlsVY4w356S1hm3OOdhm701VUVX03smI4LfW4t7Lew9JSMI2kshMPpwgG//ptG3GAAAAAElFTkSuQmCC" "356" >}}
 
 When I fiddled around with the query options, I noticed that if you provide the `PartitionKey` to the query options, you get many more headers back.
 
-{{< caption "/2020/08/cosmos2.png" "Returned continuation token"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAklEQVR4AewaftIAAADbSURBVF3BQU7DMBCG0e8fT2I7KT4B4v7nAjZdt8JCjjPQXdX3dL1eQxK1Vo7jQBL7vuPuPDNJ9N653+9EBJKYc/LK+TfGoPeOJLZtI+eMmZFzZt93JOHx/cn4/iKlhLvze55YrTxMd36ArRRc7x/Y/gYSI4LWGqUU3J2IYFkWIgI3M8yMlBK1VtydWivujiQigpQSPudkjMFxHEQErTUigjknEYEkzAyPCB7mnKzryu12o/fOuq5I4jxPJOFmhruzLAs5Z1prtNZ45WbG5XIhpUQpBTPjPE/MjGd/+3pYoRlTUUYAAAAASUVORK5CYII=" "583" >}}
+{{< caption-new "/uploads/2020/08/cosmos2.png" "Returned continuation token"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAklEQVR4AewaftIAAADbSURBVF3BQU7DMBCG0e8fT2I7KT4B4v7nAjZdt8JCjjPQXdX3dL1eQxK1Vo7jQBL7vuPuPDNJ9N653+9EBJKYc/LK+TfGoPeOJLZtI+eMmZFzZt93JOHx/cn4/iKlhLvze55YrTxMd36ArRRc7x/Y/gYSI4LWGqUU3J2IYFkWIgI3M8yMlBK1VtydWivujiQigpQSPudkjMFxHEQErTUigjknEYEkzAyPCB7mnKzryu12o/fOuq5I4jxPJOFmhruzLAs5Z1prtNZ45WbG5XIhpUQpBTPjPE/MjGd/+3pYoRlTUUYAAAAASUVORK5CYII=" "583" >}}
 
 You will also find the `x-ms-continuation` header with the `continuationToken` value in the headers.
 
 Here is how you can use it in your code:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const results = await container.items.query(querySpec, {
   maxItemCount: 20,
   partitionKey: "category",
@@ -64,4 +64,4 @@ return {
   items: results.resources,
   nextPageToken: results.continuationToken
 };
-{{< / highlight >}}
+```

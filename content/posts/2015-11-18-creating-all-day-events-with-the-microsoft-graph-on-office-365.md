@@ -41,7 +41,7 @@ The problem I struggled with was creating the event with the right time zone in 
 
 My model before the change looked like this:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 public class EventModel
 {
     public string Id { get; set; }
@@ -53,11 +53,11 @@ public class EventModel
     public EventBody Body { get; set; }
     public bool IsReminderOn { get; set; }
 }
-{{< / highlight >}}
+```
 
 I had to change the start and end properties in order to include the time zone.
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 public class EventModel
 {
     public string Id { get; set; }
@@ -75,7 +75,7 @@ public class DateTimeTimeZone
     public DateTime DateTime { get; set; }
     public string TimeZone { get; set; }
 }
-{{< / highlight >}}
+```
 
 Once I made this change to my event model, I start experiencing two problems:
 
@@ -86,15 +86,15 @@ Once I made this change to my event model, I start experiencing two problems:
 
 As the first problem itself describes, you have to set the start and end properties of the event to midnight. So first of all you need to be sure that the DateTime object is correctly set:
 
-{{< caption-legacy "uploads/2015/11/image_thumb.png" "DateTime object" >}}
+{{< caption-new "/uploads/2015/11/image_thumb.png" "DateTime object" >}}
 
 Now this was not enough, I kept receiving the error. When I checked my serialized JSON object, I saw that it had taken the time zone into account, although it was not specified on the DateTime object.
 
-{{< caption-legacy "uploads/2015/11/image_thumb1.png" "Serialized DateTime object" >}}
+{{< caption-new "/uploads/2015/11/image_thumb1.png" "Serialized DateTime object" >}}
 
 What I noticed was that RestSharp always serialized the DateTime object to UTC format (indicated by the "Z" suffix) and took the current time zone into account. To solve this I switched to make use of the [Newton serializer](https://www.nuget.org/packages/newtonsoft.json/).  By making use of the Newton serializer the DateTime objects were serialized correctly:
 
-{{< caption-legacy "uploads/2015/11/image_thumb2.png" "Correct serialized DateTime object" >}}
+{{< caption-new "/uploads/2015/11/image_thumb2.png" "Correct serialized DateTime object" >}}
 
 So be aware that your start and end properties contain the right values the API expects.
 
@@ -106,7 +106,7 @@ This had to do with the time zone in which the event gets created. You need to b
 
 Here is the code I used to create the all day events:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 var localZone = TimeZone.CurrentTimeZone;
 var timezone = localZone.StandardName;
 var newEvent = new EventModel
@@ -120,11 +120,11 @@ var newEvent = new EventModel
     IsReminderOn = false
 };
 var result = CreateAppointment(accessToken, newEvent);
-{{< / highlight >}}
+```
 
 This is what the create function does:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 public static bool CreateAppointment(string accessToken, EventModel appointment)
 {
     var client = new RestClient("https://graph.microsoft.com/v1.0/");
@@ -135,11 +135,11 @@ public static bool CreateAppointment(string accessToken, EventModel appointment)
     var response = client.Execute(request);
     return response.StatusCode == HttpStatusCode.Created;
 }
-{{< / highlight >}}
+```
 
 The JSON object looks like this:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {  
    "Id":null,
    "Subject":"My event",
@@ -159,11 +159,11 @@ The JSON object looks like this:
    },
    "IsReminderOn":false
 }
-{{< / highlight >}}
+```
 
 The same can be done when you are creating these events via JavaScript:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 var req = new XMLHttpRequest();
 req.open("POST", "https://graph.microsoft.com/v1.0/me/events");
 req.setRequestHeader("authorization", "Bearer " + accessToken);
@@ -180,4 +180,4 @@ req.onerror = function (e) {
     // Catching errors
 };
 req.send(jsonData);
-{{< / highlight >}}
+```

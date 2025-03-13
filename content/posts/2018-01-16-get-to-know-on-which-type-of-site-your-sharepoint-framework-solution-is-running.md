@@ -21,9 +21,9 @@ In classic SharePoint, we could retrieve this information from the _**spPageCont
 
 The site type can be retrieved as follows:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 this.context.pageContext.web.templateName
-{{< / highlight >}}
+```
 
 
 > **Info**: **templateName** returns the string representing the numeric identifier for the site definition or site template that was used to create the site.

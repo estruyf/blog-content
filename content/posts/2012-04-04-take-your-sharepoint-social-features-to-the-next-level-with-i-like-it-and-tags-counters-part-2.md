@@ -26,15 +26,15 @@ In this part I show you a way to retrieve the all the tags for a specific locati
 
 My first step was to check the SocialTagManager class to see the code of the GetTags methods. The SocialTagManager class can be found in the **Microsoft.Office.Server.UserProfiles.dll**.
 
-{{< caption-legacy "uploads/2012/03/032712_0950_TakeyourSha1.png" "SocialTagManager" >}}
+{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha1.png" "SocialTagManager" >}}
 
 The SocialTagManager class contains 13 GetTags methods, and only four of them are public.
 
-{{< caption-legacy "uploads/2012/03/032712_0950_TakeyourSha2.png" "GetTags Methods" >}}
+{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha2.png" "GetTags Methods" >}}
 
 The method that could retrieve all the tags (a maximum of 1000) is the following **GetTags(Uri url, Int32 maximumItemsToReturn, SocialItemPrivacy socialItemPrivacy)**.
 
-{{< caption-legacy "uploads/2012/03/032712_0950_TakeyourSha3.png" "Internal GetTags Method" >}}
+{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha3.png" "Internal GetTags Method" >}}
 
 It seems that this method does not use the current user of a specific user to filter the tags. The only problem is that this is an internal method.
 
@@ -46,35 +46,35 @@ More information about reflection can be found [here](http://msdn.microsoft.com/
 
 The first thing you need to do is retrieving all the nonpublic methods of your SocialTagManager class. This can be done as follows:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 // Retrieve the type of the SocialTagManager
 var type = typeof(SocialTagManager);
 // Get the nonpublic methods
 MethodInfo[] methods = type.GetMethods(BindingFlags.NonPublic ' BindingFlags.Instance ' BindingFlags.DeclaredOnly);
-{{< / highlight >}}
+```
 
 Now that you got all the nonpublic methods, you can retrieve the GetTags method. I used the following statement to do this:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 MethodInfo method = methods.First(m => m.ToString() == "Microsoft.Office.Server.SocialData.SocialTag[] GetTags(System.Uri, Int32, Microsoft.Office.Server.SocialData.SocialItemPrivacy)");
 if (method != null)
 {
 }
-{{< / highlight >}}
+```
 
 The only thing that rests is to invoke the retrieved GetTags method. This can be done like this:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 var itemTags = (SocialTag[])method.Invoke(stm, new object[] { uri, 1000, SocialItemPrivacy.PublicOnly });
-{{< / highlight >}}
+```
 
 When you use these code snippets in the console application from part 1, you should now get other results for the items (if you have enough tags, and likes).
 
-{{< caption-legacy "uploads/2012/03/032712_0950_TakeyourSha4.png" "Reflection GetTags Method Result" >}}
+{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha4.png" "Reflection GetTags Method Result" >}}
 
 When you compare this result with the first part, you can see that "How To Use This Library" has 2 likes more than in the first part.
 
-{{< caption-legacy "uploads/2012/03/032712_0950_TakeyourSha5.png" "Social Tags" >}}
+{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha5.png" "Social Tags" >}}
 
 ## Complete Source Code
 

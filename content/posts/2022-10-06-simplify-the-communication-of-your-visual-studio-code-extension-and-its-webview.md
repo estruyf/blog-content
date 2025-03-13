@@ -41,7 +41,7 @@ In the extension/webview communication, you send a message, but you won't get a 
 
 Creating this flow in code, it would look as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 // 1. send message to the extension
 vscode.postMessage({ command: 'GET_DATA' });
 
@@ -64,7 +64,7 @@ window.addEventListener('message', event => {
     // do something with the data
   }
 });
-{{< / highlight >}}
+```
 
 This disconnection between messages sending from the webview to the extension and back made me wonder how to simplify it. 
 
@@ -80,7 +80,7 @@ When requesting data with the message handler, it creates a callback function th
 
 See here a snippet of the class:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 public request<T>(message: string, payload?: any): Promise<T> {
   const requestId = v4();
 
@@ -100,7 +100,7 @@ public request<T>(message: string, payload?: any): Promise<T> {
     Messenger.sendWithReqId(message, requestId, payload);
   });
 }
-{{< / highlight >}}
+```
 
 {{< blockquote type="info" text="The above code uses the `@estruyf/vscode` npm dependency, of which you can find the whole implementation here: [MessageHandler.ts](https://github.com/estruyf/vscode-helpers/blob/dev/src/client/webview/MessageHandler.ts)" >}}
 
@@ -112,19 +112,19 @@ When a message with the same request ID is received, the callback function gets 
 
 With the message handler, sending or requesting data from the webview is straightforward.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 messageHandler.send('<command id>', { msg: 'Hello from the webview' });
 
 messageHandler.request<string>('<command id>').then((msg) => {
   setMessage(msg);
 });
-{{< / highlight >}}
+```
 
 ### Changes on the extension level
 
 On the extension level, you do not have to change much. All you need to do is add the **requestId** property with the ID that was passed with the message and post the new message.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 panel.webview.onDidReceiveMessage(message => {
   const { command, requestId, payload } = message;
   
@@ -139,11 +139,11 @@ panel.webview.onDidReceiveMessage(message => {
     } as MessageHandlerData<string>);
   }
 }, undefined, context.subscriptions);
-{{< / highlight >}}
+```
 
 The **requestId** property is what the message handler uses as the identifier returning the response data.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 Messenger.listen((message: MessageEvent<MessageHandlerData<any>>) => {
   const { requestId, payload, error } = message.data;
 
@@ -151,7 +151,7 @@ Messenger.listen((message: MessageEvent<MessageHandlerData<any>>) => {
     MessageHandler.listeners[requestId](payload, error);
   }
 });
-{{< / highlight >}}
+```
 
 ## Sample project
 

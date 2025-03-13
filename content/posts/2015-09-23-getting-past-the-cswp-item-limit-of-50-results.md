@@ -34,7 +34,7 @@ To get past this item limit, I wrote some code in the control display template t
 
 The first batch of results gets retrieved when the web part / page gets loaded. To retrieve the next batch(es) of results, you have to implement some checks to see if there are more results to load. This can be achieved by adding an **AddPostRenderCallback** block with the following code in the control template:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 AddPostRenderCallback(ctx, function() {
     // Get the DataProvider
     var dp = ctx.DataProvider;
@@ -58,7 +58,7 @@ AddPostRenderCallback(ctx, function() {
         delete properties.StartRow;
     }
 });
-{{< / highlight >}}
+```
 
 As you can see in the code above, the **totalRows** (total results for the query) and **rowCount** (total retrieved results: max. 50) properties from the **DataProvider** object are used for the checks. There is a third check in place that is used to see if the total number of items in the array do not exceed the **maxItems** number.
 
@@ -68,19 +68,19 @@ If each check is passed, a new search query gets issued with the **StartRow** pr
 
 For each new batch of results, the **StartRow** property has to be incremented with the number of items that the web part should retrieve. In this template I make use of the number of items to show property which can be defined in the web part.
 
-{{< caption-legacy "uploads/2015/09/092215_1818_Gettingpast1.png" "Search batches" >}}
+{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast1.png" "Search batches" >}}
 
 ### Storing the item rendering in your array
 
 As mentioned, all the rendered items are stored in an array. To add these items to the array, you can "hijack" the **ListRenderRenderWrapper** function. This ListRenderRenderWrapper function adds by default an opening and closing list element to the array. The advantage to use this function is that it gets called for each item that has been rendered. This makes it the perfect function to use to push the rendered item to your array. The code looks like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var ListRenderRenderWrapper = function(itemRenderResult, inCtx, tpl) {
     // Add each search result item to the array
     search.retrieval.add(itemRenderResult);
     return '';
 }
-{{< / highlight >}}
+```
 
 > **Note**: add_item is a function in which the rendered item gets pushed to the array.
 
@@ -88,7 +88,7 @@ var ListRenderRenderWrapper = function(itemRenderResult, inCtx, tpl) {
 
 Rendering the items on the page is very simple. In the first code snippet you can see a **render** function that gets called once there are no more items which need to be retrieved. In this render function the main DIV element gets retrieved and the rendered items get appended:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 render = function () {
     var elm = document.getElementById(elmId);
     if (!$isNull(elm)) {
@@ -101,13 +101,13 @@ render = function () {
     }
 }
 
-{{< / highlight >}}
+```
 
 > **Note**: an extra check is in place to not show more than the maximum item number that is specified in the control template.
 
 Because it can take a couple of seconds to retrieve all results (depending on the amount and number of batches it needs to retrieve), I added a loaded text that will be replaced by the search result items.
 
-{{< caption-legacy "uploads/2015/09/092215_1818_Gettingpast2.png" "Loading text" >}}
+{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast2.png" "Loading text" >}}
 
 ## Examples
 
@@ -115,11 +115,11 @@ Here are a couple of examples that show the number of items that are rendered, a
 
 > **Note**: this is removed from the final control template.
 
-{{< caption-legacy "uploads/2015/09/092215_1818_Gettingpast3.png" "Retrieving 10 results" >}}
+{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast3.png" "Retrieving 10 results" >}}
 
-{{< caption-legacy "uploads/2015/09/092215_1818_Gettingpast4.png" "Retrieving 175 results" >}}
+{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast4.png" "Retrieving 175 results" >}}
 
-{{< caption-legacy "uploads/2015/09/092215_1818_Gettingpast5.png" "Retrieving 600 results" >}}
+{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast5.png" "Retrieving 600 results" >}}
 
 ## Download the control template
 

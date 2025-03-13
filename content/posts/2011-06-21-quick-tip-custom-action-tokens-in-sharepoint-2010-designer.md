@@ -18,11 +18,11 @@ comments: true
 
 SharePoint 2010 Designer allows you to create custom actions for the SharePoint ribbon or the item context menu.
 
-{{< caption-legacy "uploads/2011/06/062111_1631_QuickTipCus1.png" "Custom Actions in SharePoint Designer" >}}
+{{< caption-new "/uploads/2011/06/062111_1631_QuickTipCus1.png" "Custom Actions in SharePoint Designer" >}}
 
 These custom actions can be used to start a workflow, navigate to a form, and navigate to a custom URL.
 
-{{< caption-legacy "uploads/2011/06/062111_1631_QuickTipCus2.png" "Action Types" >}}
+{{< caption-new "/uploads/2011/06/062111_1631_QuickTipCus2.png" "Action Types" >}}
 
 For the last option you can make use of "Tokens". These tokens enable you to create a variable URL's.
 
@@ -67,7 +67,7 @@ The tokens that could be used are the following:
 ## Examples
 
 
-{{< highlight text "linenos=table,noclasses=false" >}}
+```text
 ~site/ = /demo/CustomAction/SubSite/
 ~sitecollection/ = /demo/CustomAction/
 {ItemId} = 2
@@ -75,6 +75,6 @@ The tokens that could be used are the following:
 {SiteUrl} = http://jtb-sp2010elst2/demo/CustomAction
 {ListId} = {59e393f7-3fc3-4408-86f9-6819bbdf6886}
 {RecurrenceId} = Not tested
-{{< / highlight >}}
+```
 
 More information about the RecurrenceId can be found [here](http://gvaro.wordpress.com/2009/03/17/recurrenceid-attribute-of-the-customaction-element/).

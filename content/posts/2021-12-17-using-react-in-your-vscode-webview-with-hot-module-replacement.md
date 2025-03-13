@@ -38,7 +38,7 @@ As a starting point, I took the [WebView documenation](https://code.visualstudio
 
 In the sample, a `getWebviewContent` method in which the HTML is defined. To make React work in the WebView you have to change the code as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const getWebviewContent = (context: ExtensionContext) => {
 	const jsFile = "vscode.js";
 	const cssFile = "vscode.css";
@@ -69,7 +69,7 @@ const getWebviewContent = (context: ExtensionContext) => {
 	</body>
 	</html>`;
 }
-{{< / highlight >}}
+```
 
 In the method, a couple of things have changed:
 
@@ -84,7 +84,7 @@ To simplify the JS and CSS references, I made some webpack changes. If you are u
 
 My `config-overrides.js` looks as follows:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 module.exports = function override(config, env) {
   // Define our own filename
   config.output.filename = 'vscode.js';
@@ -110,7 +110,7 @@ module.exports = function override(config, env) {
 
   return config;
 }
-{{< / highlight >}}
+```
 
 The most important line here is the `config.output.publicPath`, set to your local server. We need to provide it to make sure absolute paths are used for referencing files to load. As the code runs in the WebView, there is no actual HTML page, and the location of your webpage will be the VS Code instance: `vscode-webview://`.
 

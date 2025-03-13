@@ -26,7 +26,7 @@ So for JavaScript files it is important that you know when they are loaded or in
 
 In the article I wrote that loading files asynchronously does not really matter for CSS files. Last week I was working on an environment where I saw some strange behaviour on page loads. When you opened the page for the first time, all the elements were placed on the page and after a second or two, they were rearranged and received their right style. This styling delay came from the use of the **$includeCSS** function in the display templates. As multiple display templates used this functionality, all these additional CSS files have to be loaded by your browser and once loaded the results are styled. So it could occur that the rendering of the results is quicker then loading the CSS files.
 
-{{< caption-legacy "uploads/2016/02/022216_1026_LoadingCSSf1.png" "Page load experiece" >}}
+{{< caption-new "/uploads/2016/02/022216_1026_LoadingCSSf1.png" "Page load experiece" >}}
 
 As I mentioned, the $include function load the resources asynchronously and that's why this behaviour could occur. If these are small CSS changes to your HTML elements, this would not be a big issue. But if you are creating carousels, graphs, or more advanced things, it may be of higher importance to have the CSS ready when the results are rendered on the page.
 
@@ -36,9 +36,9 @@ In this article I give you an overview of the approaches on how to add CSS code 
 
 Using the $includeCSS function in your display templates is the easiest way to load required CSS files for styling your results. Be aware that could be a small delay for loading the CSS files (when the CSS files are cached by the browser, the delay is negligible), if the delay does not matter you could make use of this function like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 $includeCSS(this.url, "~sitecollection/_catalogs/masterpage/Project/carousel.css");
-{{< / highlight >}}
+```
 
 > **Note**: this function call can best be added in the script block of the display template.
 
@@ -56,7 +56,7 @@ In a display template you are allowed to have one main DIV element (in which you
 
 Here is the required code that you have to add in the **script block** of your display template:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 Type.registerNamespace('loadCssDT');
 loadCssDT = function () {
     var added = false;
@@ -89,7 +89,7 @@ loadCssDT = function () {
     };
 }();
 loadCssDT.init();
-{{< / highlight >}}
+```
 
 > **Note**: the code in the script block will be executed first when the display template gets loaded. That means that the CSS gets added before the results get rendered.
 >  

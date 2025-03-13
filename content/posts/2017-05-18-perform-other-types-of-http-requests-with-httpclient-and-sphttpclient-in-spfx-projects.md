@@ -21,7 +21,7 @@ If you need to make calls with other HTTP methods, you can make use of the **fet
 
 Here is an example of how you can make use of the **fetch** method and specifying the request method to perform:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 this.props.context.spHttpClient.fetch(restUrl, SPHttpClient.configurations.v1, {
   method: "PATCH",
   body: JSON.stringify({
@@ -30,14 +30,14 @@ this.props.context.spHttpClient.fetch(restUrl, SPHttpClient.configurations.v1, {
 }).then((response: SPHttpClientResponse) => { 
   // Do your thing
 });
-{{< / highlight >}}
+```
 
 Here is an example with the HttpClient, but you will notice that is not that different to use:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 this.props.context.httpClient.fetch(restUrl, HttpClient.configurations.v1, {
   method: "DELETE"
 }).then((response: HttpClientResponse) => { 
   // Do your thing
 });
-{{< / highlight >}}
+```

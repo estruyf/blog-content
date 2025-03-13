@@ -34,7 +34,7 @@ The first step is to create the custom gulp tasks that will be used by the relea
 
 The first task which I added to the gulpfile.js file is one to update the manifest JSON file. This file holds the CDN location to where you will upload your project files.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 build.task('update-manifest', {
   execute: (config) => {
     return new Promise((resolve, reject) => {
@@ -46,7 +46,7 @@ build.task('update-manifest', {
     });
   }
 });
-{{< / highlight >}}
+```
 
 The task makes use of an argument **cdnpath **which you can pass as a command line argument. To call this gulp tasks, run: `gulp update-manifest --cdnpath https://<your-cdn-location>`.
 
@@ -61,7 +61,7 @@ Here is are the steps to follow
 1.  Install **gulp-spsync-creds** and **node-sppkg-deploy** as a developer dependency to your project: `npm install gulp-spsync-creds node-sppkg-deploy --save-dev --save-exact`
 2.  Add the updated gulp upload tasks:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 const environmentInfo = {
   "username": "<production-username>",
   "password": "<production-password>",
@@ -148,7 +148,7 @@ build.task('deploy-sppkg', {
     }
   }
 });
-{{< / highlight >}}
+```
 
 
 > **Info**: whole content of my [gulpfile.js](https://gist.github.com/estruyf/60b4228dcbc6a8ca79bf648753bc4532). I also allowed you to specify these configuration parameters from within the gulpfile. So you can test things out publishing files to your development environment.
@@ -170,11 +170,11 @@ Once these tasks are in place, the tasks can be executed with the following comm
 
 In your source control project on Visual Studio Team Services, go to the **build & release** section. There you will have the option to create a new build definition. When you create a new definition, you will be presented with a couple of templates. In the template option, you should have the **NodeJS with Gulp** template. This gives you a good start.
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab1.png" "NodeJS with Gulp template" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab1.png" "NodeJS with Gulp template" >}}
 
 To the template, you should add two additional gulp tasks, which you can do by clicking on the add task link.
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab2.png" "All build definition tasks" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab2.png" "All build definition tasks" >}}
 
 For the build definition, you should only have to configure the gulp tasks, all other tasks can be like they are configured by default.
 
@@ -185,7 +185,7 @@ The CDN update task needs to be configured as follows:
 *   **Gulp task**: update-manifest
 *   **Arguments**: --cdnpath your-cdn-location
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab3.png" "Manifest task configuration" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab3.png" "Manifest task configuration" >}}
 
 **Bundle the project - task configuration**
 
@@ -194,7 +194,7 @@ The project bundling tasks needs to be configured as follows:
 *   **Gulp task**: bundle
 *   **Arguments**: --ship
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab4.png" "Bundle task configuration" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab4.png" "Bundle task configuration" >}}
 
 **Package solution -**** task configuration**
 
@@ -203,7 +203,7 @@ The last task in your build definition is the package solution task. This one ne
 *   **Gulp task**: package-solution
 *   **Arguments**: --ship
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab5.png" "Package solution task configuration" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab5.png" "Package solution task configuration" >}}
 
 Save this configuration, but it is not done yet.
 
@@ -211,13 +211,13 @@ Save this configuration, but it is not done yet.
 
 To automatically trigger the build process when you do a push to the master branch source control system, you should configure this under the **triggers** tab:
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab6.png" "Automate continuous integration by enabling the trigger" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab6.png" "Automate continuous integration by enabling the trigger" >}}
 
 On the trigger page, just enable the **continuous integration trigger**. Once this is done, should do one more check.
 
 Underneath the options tab, check that the **default agent queue** is set to **hosted**. If this is not the case, it might happen that the agent which is going to run the build process, does not support npm and gulp and eventually, the process will fail. When you selected the gulp template, this should already be configured correctly.
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab7.png" "Hosted agent queue" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab7.png" "Hosted agent queue" >}}
 
 If not, change it and finally save these settings and your build definition should now be completed. If you want, you can test it out by pushing a new commit to your master branch. This should automatically trigger the build process to start up.
 
@@ -230,16 +230,16 @@ Once the build definition is set up, the last step is to configure your release 
 The first step is to go to the **releases** tab, which you can find under the **Build & Release** tab, and create a new release definition.
 
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab8.png" "Create a release definition" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab8.png" "Create a release definition" >}}
 
 Best is to start with an **empty** template and click next. On the next page, you should choose the newly configured build definition as the **source** for to be used for the release definition. Also, check the **continuous deployment** option and click create.
 
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab9.png" "Release definition configuration" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab9.png" "Release definition configuration" >}}
 
 Once the release definition is created, click on the environment menu and choose to **configure variables**.
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab10.png" "Configure variables" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab10.png" "Configure variables" >}}
 
 By setting up variables for the release, it makes your commands easier as you can easily change them for all your environments. These are the variables you must create:
 
@@ -250,7 +250,7 @@ By setting up variables for the release, it makes your commands easier as you ca
 *   **catalogsite**: relative path to your APP catalog site;
 *   **cdnsite**: relative path to the site on which you CDN library is located. If it is the root site, you do not have to specify this.
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab11.png" "Variables to configure" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab11.png" "Variables to configure" >}}
 
 **Configure the extract files task**
 
@@ -259,7 +259,7 @@ The first task you must add to the definition is the **extract files** task. Con
 *   **Archive file patterns**: **/*.zip
 *   **Destination folder**: $(System.DefaultWorkingDirectory)/build/release
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab12.png" "Extract files task configuration" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab12.png" "Extract files task configuration" >}}
 
 This task will extract the contents of the generated build package to a release folder. This is also the location we have to link to in the gulp tasks.
 
@@ -271,7 +271,7 @@ Add a gulp task to your release definition and configure the task as follows:
 *   **Gulp tasks(s)**: upload-to-sharepoint
 *   **Arguments**: --ship --username $(username) --password $(password) --tenant $(tenant) --cdnsite $(cdnsite) --cdnlib $(cdnlib)
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab13.png" "Upload to SharePoint document library task configuration" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab13.png" "Upload to SharePoint document library task configuration" >}}
 
 **Upload app package to SharePoint**
 
@@ -280,7 +280,7 @@ Add the task to upload the app package to the SharePoint app catalog site. For t
 *   **Gulp file path**: $(System.DefaultWorkingDirectory)/build/release/s/gulpfile.js
 *   **Gulp tasks(s)**: upload-app-pkg
 *   **Arguments**: --ship --username $(username) --password $(password) --tenant $(tenant) --catalogsite $(catalogsite)
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab14.png" "Upload app package to SharePoint task configuration" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab14.png" "Upload app package to SharePoint task configuration" >}}
 
 **Deploy the solution package**
 
@@ -296,11 +296,11 @@ Right now, you did all the task configuration that is required for this release 
 
 Go to **Artifacts** and check the default created source and edit it and rename the source alias to **build**.
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab15.png" "Set the source alias to build" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab15.png" "Set the source alias to build" >}}
 
 Go to the **Triggers** tab and set the branch in your continuous deployment trigger to your master branch (or any other if you are configuring it for other environments).
 
-{{< caption-legacy "uploads/2017/05/051517_0930_Configureab16.png" "Set the trigger to the master branch" >}}
+{{< caption-new "/uploads/2017/05/051517_0930_Configureab16.png" "Set the trigger to the master branch" >}}
 
 That was it, now your release definition is completed. After this step, it is time for you to test it out by pushing a new release to git and check that the build and release process get automatically triggered.
 

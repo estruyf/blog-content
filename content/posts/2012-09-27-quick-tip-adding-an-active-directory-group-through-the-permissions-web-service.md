@@ -27,7 +27,7 @@ The trick to add Active Directory group permissions, is by adding them as an use
 Here is an example of a SOAP message to add an Active Directory group to the site:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
     <soap:Body>
@@ -40,7 +40,7 @@ Here is an example of a SOAP message to add an Active Directory group to the sit
         </AddPermission>
     </soap:Body>
 </soap:Envelope>
-{{< / highlight >}}
+```
 
 
 Two things are important:

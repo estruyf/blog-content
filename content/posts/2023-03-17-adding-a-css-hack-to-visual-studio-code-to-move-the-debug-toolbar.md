@@ -32,17 +32,17 @@ In this blog post, I'll share the CSS hack I created to integrate the Debug Tool
 
 Before we modify any files, it's important to create backups. Open a terminal and run the following commands to copy the original workbench.desktop.main.css file and create a backup:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 VSCODE_PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench"
 cp -f "$VSCODE_PATH/workbench.desktop.main.css" "./workbench.desktop.main.css"
 cp -f "$VSCODE_PATH/workbench.desktop.main.css" "./workbench.desktop.main.backup.css"
-{{< / highlight >}}
+```
 
 ## Step 2: Apply the CSS
 
 Now that we have backups, it's time to modify the `workbench.desktop.main.css` file. Run the following command to append the necessary CSS changes:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 cat << EOF >> "./workbench.desktop.main.css"
 /* START - DEBUG TOOLBAR */
 .debug-toolbar {
@@ -54,7 +54,7 @@ cat << EOF >> "./workbench.desktop.main.css"
 }
 "/* END - DEBUG TOOLBAR */"
 EOF
-{{< / highlight >}}
+```
 
 This CSS snippet modifies the Debug Toolbar's appearance and positions it within the titlebar. The `background` property sets the toolbar color, `top` adjusts the position, and `box-shadow` and `border` remove any extraneous styling.
 
@@ -64,9 +64,9 @@ This CSS snippet modifies the Debug Toolbar's appearance and positions it within
 
 Finally, we need to copy our modified `workbench.desktop.main.css` file back to the Visual Studio Code application folder. Run the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 cp -f "./workbench.desktop.main.css" "$VSCODE_PATH/workbench.desktop.main.css"
-{{< / highlight >}}
+```
 
 ## Step 4: Restart Visual Studio Code
 

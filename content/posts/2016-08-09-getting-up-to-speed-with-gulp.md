@@ -16,7 +16,7 @@ comments: true
 
 This is the next article of my getting up to speed series. This article is completely devoted to Gulp. In the [previous article](https://www.eliostruyf.com/getting-up-to-speed-with-node-js-and-npm/) I explained Node.js and NPM, but I also mentioned Gulp a couple of time. As you get in this world of JavaScript focussed development, you will see that Gulp (or Grunt - depending on the developers' preference) often used for various kind of things.
 
-{{< caption-legacy "uploads/2016/08/080916_1124_Gettingupto1.png" "Gulp logo" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto1.png" "Gulp logo" >}}
 
 So what is Gulp exactly?
 
@@ -43,9 +43,9 @@ The first thing you need to do is globally install Gulp. The reason why Gulp nee
 Execute the following code to install Gulp:
 
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm install -g gulp-cli
-{{< / highlight >}}
+```
 
 
 > **Info**: The -g flag is used to tell npm it needs to install Gulp globally. You can also use --global instead of -g.
@@ -53,15 +53,15 @@ $ npm install -g gulp-cli
 After the command ran, you can try out the following command to check which version of Gulp is installed on your machine:
 
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ gulp -v
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2016/08/080916_1124_Gettingupto2.png" "Output of the gulp -v command" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto2.png" "Output of the gulp -v command" >}}
 
 When Gulp is installed, you still have some work to do. Running Gulp without any parameters results in the following output:
 
-{{< caption-legacy "uploads/2016/08/080916_1124_Gettingupto3.png" "No local gulp found message" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto3.png" "No local gulp found message" >}}
 
 When you executed the **gulp** command without parameters, you will see that it tells you that it did not find a local installation in the current project. When you want to run gulp tasks it will use the local instance to execute the tasks that you created.
 
@@ -75,22 +75,22 @@ When you executed the **gulp** command without parameters, you will see that it 
 
 Once you globally installed Gulp, you will also have to locally install it in your project. To install a local version, you have to run:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm install gulp
-{{< / highlight >}}
+```
 
 But a better way would be to install it as a development or devDependencies to your project:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm install gulp --save-dev
-{{< / highlight >}}
+```
 
 
 > **Important**: You will need to have a **package.json** inside your project. To quickly create this, you can execute **npm init** and answer the questions. More information can be found in the previous post: [getting up to speed with Node.js and npm](https://www.eliostruyf.com/getting-up-to-speed-with-node-js-and-npm/).
 
 Once this is done, try running gulp again. You will get the following output:
 
-{{< caption-legacy "uploads/2016/08/080916_1124_Gettingupto4.png" "No gulpfile found" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto4.png" "No gulpfile found" >}}
 
 Now Gulp tells you that it did not find a **gulpfile**. In the gulpfile you define all your development tasks. So the next step is to create such a file in your project **root** folder:
 
@@ -98,7 +98,7 @@ Now Gulp tells you that it did not find a **gulpfile**. In the gulpfile you defi
 *   Open the file in the editor of your choice;
 *   Add the following code to the file:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 'use strict';
 
 // The script requires gulp to be loaded
@@ -108,11 +108,11 @@ let gulp = require('gulp');
 gulp.task('default', () => {
     console.log('Hello, from your first gulp task.');
 });
-{{< / highlight >}}
+```
 
 The code itself does not do anything special, right now it outputs the following text to the console: "Hello, from your first gulp task.". You can try it yourself via executing **gulp** again in your console:
 
-{{< caption-legacy "uploads/2016/08/080916_1124_Gettingupto5.png" "Default task output" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto5.png" "Default task output" >}}
 
 As you can see, you even get statistics about the task that started and when it ended.
 
@@ -127,7 +127,7 @@ That was a simple example of a Gulp task. Let's create another one which is goin
 *   Create a file called **script.ts** in the TS folder;
 *   Add the following contents to the script.ts file:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 class Greeter {
     greeting: string;
     constructor(message: string) {
@@ -147,36 +147,36 @@ button.onclick = function() {
 }
 
 document.body.appendChild(button);
-{{< / highlight >}}
+```
 
 
 > **Info**: this is a sample from the TypeScript site: [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
 
 To be able to transpile TypeScript to JavaScript, you can make use of a Gulp plugin called: gulp-typescript. Plugins for Gulp can be installed via npm as follows:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm install gulp-typescript --save-dev
-{{< / highlight >}}
+```
 
 
 *   Once the TypeScript plugin is installed, open the gulpfile.js in your editor;
 *   Load the gulp-typescript plugin in the gulpfile with the following line:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 let ts = require('gulp-typescript');
-{{< / highlight >}}
+```
 
 
 *   Add the transpile task to the gulpfile:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // This is the "transpile" task which transpiles all TypeScript files to JavaScript
 gulp.task('transpile', () => {
     return gulp.src('ts/*.ts')
                .pipe(ts())
                .pipe(gulp.dest('js'));
 });
-{{< / highlight >}}
+```
 
 You can see a couple of new function being used in this code: gulp.src(), gulp.pipe(), gulp.dest().
 
@@ -198,15 +198,15 @@ With the **dest()** function, you specify where the passed data stream needs to 
 
 You can run your task with the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ gulp transpile
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2016/08/080916_1124_Gettingupto6.png" "Output of the transpile task" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto6.png" "Output of the transpile task" >}}
 
 Now if you go and check in your project folder there should be a new JS folder with a **script.js** file in it.
 
-{{< caption-legacy "uploads/2016/08/080916_1124_Gettingupto7.png" "JS file created" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto7.png" "JS file created" >}}
 
 ## Watching files
 
@@ -218,24 +218,24 @@ Once you run the **watch()** function, it will watch for changes made to your fi
 
 The best way to show you this is via a new task:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // This is the "watch" task, every time you change the TS file, it will call the "transpile" task
 gulp.task('watch', () => {
     gulp.watch('ts/*.ts', ['transpile']);
 });
-{{< / highlight >}}
+```
 
 With the following command you can start the watch task:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ gulp watch
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2016/08/080916_1124_Gettingupto8.png" "Gulp watch output" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto8.png" "Gulp watch output" >}}
 
 Notice that the execution does not really ends. Instead it is in a watch state and waits for you to do file changes. So try to do a file change to the TypeScript file and notice what happens:
 
-{{< caption-legacy "uploads/2016/08/080916_1124_Gettingupto9.png" "Gulp watch output when files are changed" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto9.png" "Gulp watch output when files are changed" >}}
 
 In this example I did two file changes (saved the file two times). The Gulp task automatically picks up the change and starts the "transpile" task.
 
@@ -243,7 +243,7 @@ In this example I did two file changes (saved the file two times). The Gulp task
 
 You can even specify multiple tasks in the watch:
 
-{{< caption-legacy "uploads/2016/08/080916_1124_Gettingupto10.png" "Multiple tasks in a watch task" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto10.png" "Multiple tasks in a watch task" >}}
 
 ## How Gulp is used in the Yeoman display templates generator
 
@@ -261,13 +261,13 @@ In that display templates Gulp file, you can see various tasks:
 
 The default task looks like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 gulp.task('default', function() {   
     return gulp.src(folder).pipe(
         sp.sync(settings.get())
     );
 });
-{{< / highlight >}}
+```
 
 First, the task retrieves all the files from the specified folder and passes the stream of data to the pipe. In the pipe the **gulp-spsync-creds** plugin is used to upload the file stream to your SharePoint site.
 
@@ -277,7 +277,7 @@ First, the task retrieves all the files from the specified folder and passes the
 
 The code of the watch task looks like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 gulp.task("watch", function() {
     var crntSettings = settings.get();
     crntSettings["cache"] = true;
@@ -290,7 +290,7 @@ gulp.task("watch", function() {
             .pipe(sp.sync(crntSettings));
     });
 });
-{{< / highlight >}}
+```
 
 This watch task is special. Instead of specifying a task name a function is defined. The reason is that we only need to upload the file that has been changed. As you can see in the **src** the path of the event is retrieved (this is the path to the file that got changed). Only that file will be passed to the gulp-spsync-creds plugin to get uploaded.
 

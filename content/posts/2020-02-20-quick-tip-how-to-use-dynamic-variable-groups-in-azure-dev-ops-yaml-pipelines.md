@@ -22,7 +22,7 @@ In the YAML pipelines, the best way would be to make use of variable groups, but
 
 A way to support these different environments per branch would be by creating a variable group per branch/environment.
 
-{{< caption "/2020/02/dynamic-1.png" "Variable groups"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAACjSURBVHXBQYqEMBBA0V+m7Bg1SIv3P6DiQnAhY1UcezcM7Xtynue1LAshBIZhIMbIN8ptmiZEBBHhiXKb5xkzo2kaPvq+x90xM0op5JxRbpreiDs/7ogIBSWlF6UUqqpCKkH3feclF/mdUVWeaNu2hBD4cHee6LquqCrujojQdR193/Of5pxJKSEiXNeFiPCNmhnbtmFm1HXNcRyM40iMkb9+ATXiPBOaYTA2AAAAAElFTkSuQmCC" "231" >}}
+{{< caption-new "/uploads/2020/02/dynamic-1.png" "Variable groups"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAACjSURBVHXBQYqEMBBA0V+m7Bg1SIv3P6DiQnAhY1UcezcM7Xtynue1LAshBIZhIMbIN8ptmiZEBBHhiXKb5xkzo2kaPvq+x90xM0op5JxRbpreiDs/7ogIBSWlF6UUqqpCKkH3feclF/mdUVWeaNu2hBD4cHee6LquqCrujojQdR193/Of5pxJKSEiXNeFiPCNmhnbtmFm1HXNcRyM40iMkb9+ATXiPBOaYTA2AAAAAElFTkSuQmCC" "231" >}}
 
 ## Using dynamic variable groups
 
@@ -32,13 +32,13 @@ The solution to use dynamic variable groups is by using expressions.
 
 Here you can see an example:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 variables:
 - ${{ if eq(variables['build.SourceBranchName'], 'master') }}:
   - group: <name>-master
 - ${{ if ne(variables['build.SourceBranchName'], 'master') }}:
   - group: <name>-dev
-{{< / highlight >}}
+```
 
 The funny side note, yesterday [Sebastien Levert](https://twitter.com/sebastienlevert) and I were figuring out how we could make this work. One critical thing we forgot was the `-` in front of the expression. Once we found the solution, Sebastien said that he was going to blog, as he has not done it, and I needed the same approach today, it is time to share it.
 
@@ -48,7 +48,7 @@ Another approach would be to make use of a new feature called **runtime paramete
 
 > **Info**: You can find more information about the **Runtime Parameters** here: [https://docs.microsoft.com/en-us/azure/devops/pipelines/process/runtime-parameters?view=azure-devops](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/runtime-parameters?view=azure-devops)
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 parameters:
 - name: groupSelection
   displayName: Group Selection
@@ -60,6 +60,6 @@ parameters:
 
 variables:
  - group: ${{ parameters.groupSelection }}
-{{< / highlight >}}
+```
 
 *Thanks to Sven Saatkamp for providing this alternative solution*

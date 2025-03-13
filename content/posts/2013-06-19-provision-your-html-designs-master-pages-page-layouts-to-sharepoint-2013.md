@@ -28,7 +28,7 @@ The same approach can also be used when you want to provision your HTML design f
 
 When you create a new HTML master page in SharePoint 2013, it will automatically get all the required properties set in the file itself (if created with the design manager).
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--[if gte mso 9]><xml>
   <mso:CustomDocumentProperties>
     <mso:ContentType msdt:dt="string">Design File</mso:ContentType>
@@ -39,20 +39,20 @@ When you create a new HTML master page in SharePoint 2013, it will automatically
     <mso:HtmlDesignStatusAndPreview msdt:dt="string">http://sp2013app/brand/import/_catalogs/masterpage/custom-master.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
   </mso:CustomDocumentProperties>
 </xml><![endif]-->
-{{< / highlight >}}
+```
 
 **Note**: If you created a copy from the Seattle or Oslo master page, the **ContentTypeId** property is not specified. You don't really have to specify the ID, the **ContentType** property is enough.
 
 Provisioning the HTML Master Page is really easy, because you do not have to specify the properties anymore. Here is an example of the module elements file:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="_catalogs" Url="_catalogs/masterpage" Path="_catalogs">
     <File Url="custom-master.html" Type="GhostableInLibrary" Level="Draft" ReplaceContent="true" />
   </Module>
 </Elements>
-{{< / highlight >}}
+```
 
 Important is that the property **ReplaceContent** for the file is set to true. Otherwise the content of the HTML file doesn't get updated if you create a new version of your branding package.
 
@@ -60,7 +60,7 @@ Important is that the property **ReplaceContent** for the file is set to true. O
 
 HTML page layouts can be provisioned just the same way as the HTML master pages. The properties are also added to the file when it gets created:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--[if gte mso 9]><xml>
   <mso:CustomDocumentProperties>
   <mso:ContentPlaceHolderHashPlaceHolderPageTitleInTitleArea msdt:dt="string">1</mso:ContentPlaceHolderHashPlaceHolderPageTitleInTitleArea>
@@ -92,18 +92,18 @@ HTML page layouts can be provisioned just the same way as the HTML master pages.
   </mso:CustomDocumentProperties>
 </xml>
 <![endif]-->
-{{< / highlight >}}
+```
 
 The module elements file looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="_catalogs" Url="_catalogs/masterpage" Path="_catalogs">
     <File Url="HTML Page Layout.html" Type="GhostableInLibrary" Level="Draft" ReplaceContent="true" />
   </Module>
 </Elements>
-{{< / highlight >}}
+```
 
 
 ## What to do next?
@@ -112,7 +112,7 @@ When these design files get provisioned, one thing you'll notice is that at this
 
 This trigger can be just an item update without really changing anything to the item itself. Here is an example of the method I'm using:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 public static void EditAndCheckingAndApprove(SPFile file)
 {
   try
@@ -150,7 +150,7 @@ private static void UpdateHtmlPageLayoutProperty(SPFile file)
   var Hyperlink = new SPFieldUrlValue { Url = string.Format("{0}/_catalogs/masterpage/Seattle.html", file.Web.Url) };
   file.Item["HtmlDesignFromMaster"] = Hyperlink;
 }
-{{< / highlight >}}
+```
 
 > **Important:** the hyperlink of the **HtmlDesignFromMaster** property needs to match to your master page. Please update the hyperlink on **line 35** in your project.
 

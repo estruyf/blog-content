@@ -32,7 +32,7 @@ In this solution the three display templates that were created for this solution
 
 The end result of these display templates looks like this:
 
-{{< caption-legacy "uploads/2015/01/office-delve-result-block2.jpg" "Office Graph result block" >}}
+{{< caption-new "/uploads/2015/01/office-delve-result-block2.jpg" "Office Graph result block" >}}
 
 ## OfficeGraph_Results.html - main template
 
@@ -50,9 +50,9 @@ Now because we are calling a REST service, you need to be sure to limit the amou
 
 Luckily you have a property that you can check to see the maximum items the result block may have. This can be retrieved from the CurrentGroup property:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 ctx.CurrentGroup.RowCount
-{{< / highlight >}}
+```
 
 This property value will be appended to the REST query URL to set the **RowLimit** property.
 
@@ -64,7 +64,7 @@ Something else you need to take into account is the number of times you are goin
 
 To solve this problem, I added a processCount variable. This processCount variable will be incremented each time the template gets executed. Only the first time when the first result gets rendered, the REST call will be done. The other times it will not do anything. This is done by the following code:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Get number of items to show in the Result Block
 resultCount = currentCtx.CurrentGroup.RowCount;
 
@@ -81,14 +81,14 @@ if (processCount === 1) {
   // Reset the process count when the last item is loaded
   processCount = processCount === resultCount ? 0 : processCount;
 }
-{{< / highlight >}}
+```
 
 
 ### Refine the Office Graph results
 
 Once you retrieved the result in your search center, it can be that you want to do some refining. To support this, the Office Graph query will need to take the refinement into account. This can be done with the following code:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Check if the results are refined
 if (!$isNull(currentCtx.DataProvider.get_currentQueryState().r)) {
   var refiners = currentCtx.DataProvider.get_currentQueryState().r;
@@ -101,20 +101,20 @@ if (!$isNull(currentCtx.DataProvider.get_currentQueryState().r)) {
 } else {
   refinement = "";
 }
-{{< / highlight >}}
+```
 
 The code first checks if there is already some refining done on your results. If this is the case, the refiner's length will be checked. This check is required to allow multiple refinement on the result block (example: refine on file type and author). When there are multiple refiners in use, an **and** property should get added in order to make it work.
 
 ### Retrieving the Office Graph results
 
 There is nothing special about retrieving the Office Graph results. Retrieving the results is done via an Ajax call to the search REST API.
-{{< highlight default "linenos=table,noclasses=false" >}}
+```default
 var restUrl = String.format("{0}/_api/search/query?QueryText='({1}) AND (FileExtension:doc OR FileExtension:docx OR FileExtension:ppt OR FileExtension:pptx OR FileExtension:xls OR FileExtension:xlsx OR FileExtension:pdf)'&Properties='TitleBasedSummaries:true,GraphQuery:and(actor(me\\,action\\:1021)\\,actor(me\\,or(action\\:1021\\,action\\:1036\\,action\\:1037\\,action\\:1039))),GraphRankingModel:action\\:1021\\,weight\\:1\\,edgeFunc\\:weight\\,mergeFunc\\:max'&SelectProperties='Author,AuthorOwsUser,DocId,EditorOwsUser,FileExtension,FileType,HitHighlightedProperties,HitHighlightedSummary,LastModifiedTime,LikeCountLifetime,ListID,ListItemID,OriginalPath,Path,Rank,SPWebUrl,SiteTitle,Title,ViewCountLifetime,siteID,uniqueID,webID,SecondaryFileExtension'&hithighlightedproperties='Title,Path'&RankingModelId='0c77ded8-c3ef-466d-929d-905670ea1d72'&RowLimit={2}&StartRow=0&BypassResultTypes=true{3}&ClientType='OfficeGraphTemplate'", _spPageContextInfo.webAbsoluteUrl, keywords, resultCount, refinement);
-{{< / highlight >}}
+```
 
 Once the results are retrieved it gets interesting. If you ever did a REST call to the search API, you will know that the JSON object you retrieve is not the same as that of the default search query. You do not have a ctx.ListData object or such. All the results can be found in data.PrimaryQueryResult.RelevantResults.Table.Rows. So what I did is I create a CurrentItem object for each result that is retrieved. Doing it this way, I can make use of the default display template rendering and functions.
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Create current item object
 var currentItem = {};
 currentItem = setFields(currentItem, result.Cells);
@@ -128,7 +128,7 @@ var setFields = function (item, cells) {
   }
   return item;
 };
-{{< / highlight >}}
+```
 
 
 ### Rendering the result HTML output
@@ -137,7 +137,7 @@ Now the fun part, rendering the Office Graph results onto your page. First I cre
 
 To be able to use a display template to render the HTLM mark-up for your results from within the template, you first need to load the display template JavaScript file. You can do this from within the display template with this code:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Load the display template for the Office Graph results
 var templateUrl = "~sitecollection/_catalogs/masterpage/OfficeGraph/Item_OfficeGraph_Result.js";
 RegisterSod('Item_OfficeGraph_Result.js', Srch.U.replaceUrlTokens(templateUrl));
@@ -145,7 +145,7 @@ RegisterSod('Item_OfficeGraph_Result.js', Srch.U.replaceUrlTokens(templateUrl));
 EnsureScriptFunc("Item_OfficeGraph_Result.js", null, function() {
   templateFunc = Srch.U.getRenderTemplateByName(templateUrl, null);
 });
-{{< / highlight >}}
+```
 
 The code registers and loads the template. Once the template is loaded, the display template function gets retrieved (Srch.U.getRenderTemplateByName). The approach is similar to how the default display templates get loaded. The function needs to be retrieved like this because the function names get automatically generated by SharePoint and contains a GUID in the name. Example: DisplayTemplate_82488fbf09274510b5e6618debdf3b80.
 
@@ -153,12 +153,12 @@ The code registers and loads the template. Once the template is loaded, the disp
 
 Once the display template function is retrieved, you can make use of it to render the HTML mark-up like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Set the current item to the context
 currentCtx["CurrentItem"] = currentItem;
 // Call the display template function to render the current item
 resultsMarkup.unshift(CoreRender(templateFunc, currentCtx));
-{{< / highlight >}}
+```
 
 When all the HTML for the results are retrieved it gets added on the page.
 

@@ -18,11 +18,11 @@ comments: true
 
 Normally subsites are displayed in a dropdown menu when the site collection publishing feature is activated.
 
-{{< caption-legacy "uploads/2011/02/021711_1526_AddingaSubs1.png" "Subsite navigation dropdown" >}}
+{{< caption-new "/uploads/2011/02/021711_1526_AddingaSubs1.png" "Subsite navigation dropdown" >}}
 
 In this post I will show you how to display these subsites on their own navigation row. The end result is shown in the picture below.
 
-{{< caption-legacy "uploads/2011/02/021711_1526_AddingaSubs2.png" "Final result" >}}
+{{< caption-new "/uploads/2011/02/021711_1526_AddingaSubs2.png" "Final result" >}}
 
 ## Hide the subsites dropdown menu
 
@@ -32,20 +32,20 @@ First you need to hide the subsites dropdown menu from the global navigation.
 *   Do a search on "TopNavigationMenuV4". This is the standard global navigation menu.
 *   Set the "MaximumDynamicDisplayLevels" attribute to "0";
 
-{{< caption-legacy "uploads/2011/02/021711_1526_AddingaSubs3.png" "Global Navigation code" >}}
+{{< caption-new "/uploads/2011/02/021711_1526_AddingaSubs3.png" "Global Navigation code" >}}
 
 ## Add the a new sitemap data source
 
 The new sitemap data source is used to retrieve the subsites from the parent site. The following code can be added after global navigation menu.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <asp:SiteMapDataSource
 	ShowStartingNode="False"
 	SiteMapProvider="GlobalNavSiteMapProvider"
 	id="topSiteMap2"
 	runat="server"
 	StartingNodeOffset="1"/>
-{{< / highlight >}}
+```
 
 The most important attribute in the code is "StartingNodeOffset". This attribute needs to be set to "1" to show the underlying subsites. If set to zero, the parent sites will be displayed.
 
@@ -53,7 +53,7 @@ The most important attribute in the code is "StartingNodeOffset". This attribute
 
 This menu will use the newly created sitemap datasource.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <SharePoint:AspMenu
 	ID="TopNavigationMenu2"
 	Runat="server"
@@ -67,13 +67,13 @@ This menu will use the newly created sitemap datasource.
 	MaximumDynamicDisplayLevels="1"
 	SkipLinkText=""
 	CssClass="s4-tn subSites"/>
-{{< / highlight >}}
+```
 
 The code needs to be added **after** the global navigation menu.
 
 ## Add some styling to the navigation row
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 .subSites {
   background: #CCEBFF;
   width: 100%;
@@ -95,13 +95,13 @@ The code needs to be added **after** the global navigation menu.
   border:0;
   font-weight: bold;
 }
-{{< / highlight >}}
+```
 
 ## Result
 
 That is all, so you see it is fairly simple to add a new navigation level to your master page. The cool part about it, is that the subsite navigation will only be show if the parent site contains subsites.
 
-{{< caption-legacy "uploads/2011/02/021711_1526_AddingaSubs4.png" "Subsite navigation level final result" >}}
+{{< caption-new "/uploads/2011/02/021711_1526_AddingaSubs4.png" "Subsite navigation level final result" >}}
 
 [Download v4](/uploads/2011/02/Subsite-Navigation-level.master.txt)
 

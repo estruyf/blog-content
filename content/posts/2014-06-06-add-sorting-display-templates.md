@@ -29,12 +29,12 @@ First of all, what you need to do if you want to add sorting to your display tem
 
 For this post I'll use the creation date, which is linked to the **Created** managed property.
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var availableSorts = ctx.DataProvider.get_availableSorts();
 availableSorts.push({"name":"Created-ASC","sorts":[{"p":"Created","d":0}]});
 availableSorts.push({"name":"Created-DES","sorts":[{"p":"Created","d":1}]});
 ctx.DataProvider.set_availableSorts(availableSorts);
-{{< / highlight >}}
+```
 
 In the code above I added two sorting options, ascending sorting and descending sorting for the creation date. As you can see in the push method is a JSON string value which contains two attributes:
 
@@ -45,14 +45,14 @@ Once you add these sorting options to the array, they need to be registered in t
 
 Now that the sorting options are set to the data provider object, it is time to visualize these sorting options. The visualization can be done with the following piece of HTML code:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <a href="#" title="Created ASC" onclick="$getClientControl(this).sortOrRank('Created-ASC');return false;">
   <img alt="Ascending" src="/_layouts/15/images/sortaz.gif">
 </a>
 <a href="#" title="Created DES" onclick="$getClientControl(this).sortOrRank('Created-DES');return false;">
   <img alt="Descending" src="/_layouts/15/images/sortza.gif">
 </a>
-{{< / highlight >}}
+```
 
 In this piece of HTML code, you'll find two links that trigger the sorting once they get clicked. This is done in the **onclick** attribute of the anchor element, and it uses the current control which executes the **sortOrRank** method (the **sort** method can also be used). This **sortOrRank** method requires one of the **name** (sort property name) values which you have set in the piece of JavaScript above.
 
@@ -60,19 +60,19 @@ In this piece of HTML code, you'll find two links that trigger the sorting once 
 
 > **Important**: sorting could only work if you set the query builder to build the query in advanced mode. Once in advanced mode, the sorting tab becomes available. If you'll use the predefined queries, the sorting won't do anything to the set of results.
 
-{{< caption-legacy "uploads/2014/06/060514_1439_Howtoaddsor1.png" "Sorting tab in advanced mode" >}}
+{{< caption-new "/uploads/2014/06/060514_1439_Howtoaddsor1.png" "Sorting tab in advanced mode" >}}
 
 This is the result if you added this to your control template:
 
-{{< caption-legacy "uploads/2014/06/060514_1439_Howtoaddsor2.png" "Default set of results" >}}
+{{< caption-new "/uploads/2014/06/060514_1439_Howtoaddsor2.png" "Default set of results" >}}
 
 ### Results in ascending order
 
-{{< caption-legacy "uploads/2014/06/060514_1439_Howtoaddsor3.png" "Results in ascending order" >}}
+{{< caption-new "/uploads/2014/06/060514_1439_Howtoaddsor3.png" "Results in ascending order" >}}
 
 ### Results in descending order
 
-{{< caption-legacy "uploads/2014/06/060514_1439_Howtoaddsor4.png" "Results in descending order" >}}
+{{< caption-new "/uploads/2014/06/060514_1439_Howtoaddsor4.png" "Results in descending order" >}}
 
 ## Download
 

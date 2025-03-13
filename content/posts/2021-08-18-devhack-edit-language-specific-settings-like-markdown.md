@@ -26,11 +26,11 @@ In my case, this was what I wanted to achieve for Markdown. VSCode is my primary
 
 You can add Language-specific settings in VSCode, by opening your `settings.json` file and specifying a language property name. You do this by using the square brackets `[]` and writing the language ID you want to target.
 
-{{< caption "/2021/08/markdown.png" "Language-specific setting property"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAYAAABbayygAAAAAklEQVR4AewaftIAAAEBSURBVH3B2U7CUBRA0X2H01YIqIgoBhMfDP//TzhEccK2dLz3KDEkhAfXMtP5vY5H8PEZ+I8/GTrKKjC7XZA6g6qSiBBixACKYozBN73QtzW2Ddwtl3jnUKAoSpq2pW076rrG2zSDKqcoS9Zv7yQirB6fEfGEEOm6jm1V4UOI7IQY2FYVL69r8qLkmI0xshdCZDwesbiZk2Uph6yIsGOtRcSTJgnGGKaTCZfTC/a8iKcFjDF45xgOB6wenvjafHPIGv6oKgpUVU0IgWM+FjkGEDxN09J3PXlRcsyqKjsNAVXFe8f11Yzzs1MO+V8o4JIMyQYY7yg2BduyxEoCMYK1/ACKs3pB0ZKl4gAAAABJRU5ErkJggg==" "323" >}}
+{{< caption-new "/uploads/2021/08/markdown.png" "Language-specific setting property"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAYAAABbayygAAAAAklEQVR4AewaftIAAAEBSURBVH3B2U7CUBRA0X2H01YIqIgoBhMfDP//TzhEccK2dLz3KDEkhAfXMtP5vY5H8PEZ+I8/GTrKKjC7XZA6g6qSiBBixACKYozBN73QtzW2Ddwtl3jnUKAoSpq2pW076rrG2zSDKqcoS9Zv7yQirB6fEfGEEOm6jm1V4UOI7IQY2FYVL69r8qLkmI0xshdCZDwesbiZk2Uph6yIsGOtRcSTJgnGGKaTCZfTC/a8iKcFjDF45xgOB6wenvjafHPIGv6oKgpUVU0IgWM+FjkGEDxN09J3PXlRcsyqKjsNAVXFe8f11Yzzs1MO+V8o4JIMyQYY7yg2BduyxEoCMYK1/ACKs3pB0ZKl4gAAAABJRU5ErkJggg==" "323" >}}
 
 In my case, I went for the following settings for my Markdown-specific project settings:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "[markdown]": {
     "editor.fontFamily": "iA Writer Duo S, monospace",
@@ -43,19 +43,19 @@ In my case, I went for the following settings for my Markdown-specific project s
     "editor.minimap.enabled": false
   }
 }
-{{< / highlight >}}
+```
 
 ## The extension approach
 
 To achieve the same from within your extension, you will have to use the `getConfiguration` method. You usually use the `getConfiguration` method to retrieve the config settings of your extension by specifying the `section` name. When you want to do a language-specific setting, you need to set an empty string for the `section` name and specify the `languageId`. The looks as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const config = vscode.workspace.getConfiguration("", { languageId: "markdown" });
-{{< / highlight >}}
+```
 
 Once you have the `config` object and want to set a new setting value, you use the `update` method as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 /**
  * @param section Configuration name.
  * @param value The new value.
@@ -63,12 +63,12 @@ Once you have the `config` object and want to set a new setting value, you use t
  * @param overrideInLanguage Specify if you want to update a language-specific setting
  */
 config.update("editor.fontSize", 14, false, true);
-{{< / highlight >}}
+```
 
 {{< blockquote type="Important" text="The third parameter in the above code snippet is the most important one." >}}
 
 You can use the `get` method as you would normally use it:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const fontSize = config.get("editor.fontSize");
-{{< / highlight >}}
+```

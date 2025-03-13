@@ -24,11 +24,11 @@ When you do this in SharePoint Framework, it has the side effect that it fully r
 
 Here is a sample of a full page reload on navigating to a new page:
 
-{{< caption-legacy "uploads/2019/02/full-page-reload-1.gif" "A sample of fully reloading the page  " >}}
+{{< caption-new "/uploads/2019/02/full-page-reload-1.gif" "A sample of fully reloading the page  " >}}
 
 Here is a sample of partially reloading the page on navigation:
 
-{{< caption-legacy "uploads/2019/02/partially-page-reload.gif" "A sample of partially reloading the page" >}}
+{{< caption-new "/uploads/2019/02/partially-page-reload.gif" "A sample of partially reloading the page" >}}
 
 ## Why is this important?
 

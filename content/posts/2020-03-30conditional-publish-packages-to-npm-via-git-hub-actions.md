@@ -47,7 +47,7 @@ A runtime variable to define for which branch it runs. In my case, this is the `
 
 The complete YAML flow looks like this:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 name: Publish to NPM
 
 on:
@@ -88,6 +88,6 @@ jobs:
       if: github.ref == 'refs/heads/dev'
       env:
         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-{{< / highlight >}}
+```
 
 *Have fun automating*

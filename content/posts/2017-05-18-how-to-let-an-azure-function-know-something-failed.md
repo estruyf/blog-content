@@ -26,16 +26,16 @@ While I was reading through the Azure Functions Node.js reference documentation,
 
 Here is an example of how you can use it:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 module.exports = function (context, myQueueItem) {
   context.log(`Start with the following message: "${myQueueItem}"`);
   context.log(`Dequeue count: ${context.bindingData.dequeueCount}`);
   context.done("Something failed");
 };
-{{< / highlight >}}
+```
 
 This is the output of the function:
 
-{{< caption-legacy "uploads/2017/05/051817_1421_HowtoletanA1.png" "Log output of the sample code" >}}
+{{< caption-new "/uploads/2017/05/051817_1421_HowtoletanA1.png" "Log output of the sample code" >}}
 
 As you can see in the above screenshot, the function gets triggered 5 times before it gets sent to a poison queue. When you would remove the error parameter, it will only be processed once. Throwing errors also result in the same outcome (one time processed).

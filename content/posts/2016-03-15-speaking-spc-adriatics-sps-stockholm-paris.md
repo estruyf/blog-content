@@ -36,7 +36,7 @@ I am very honoured that I speak again for the second time in Stockholm. SPS Stoc
 
 This year the second SharePoint Saturday Paris is organized in May again, and I am very happy to be part of it again. Last year I talked about how you can improve your search experience. This year I will be talking about display templates.
 
-{{< caption-legacy "uploads/2016/03/CdS_SLzW4AEq588.jpg" "SPSParis Display Template Session" >}}
+{{< caption-new "/uploads/2016/03/CdS_SLzW4AEq588.jpg" "SPSParis Display Template Session" >}}
 
 > **Search display templates tips and tricks** (Dev - lvl 300)
 > 
@@ -46,7 +46,7 @@ This year the second SharePoint Saturday Paris is organized in May again, and I 
 
 The last event for me in May is SPC Adriatics. Also, at this event I will be talking about display templates.
 
-{{< caption-legacy "uploads/2016/03/SPCADRIATICS_iamspeakingat.png" "Speaking at SPCAdriatics" >}}
+{{< caption-new "/uploads/2016/03/SPCADRIATICS_iamspeakingat.png" "Speaking at SPCAdriatics" >}}
 
 > **Take your display template skills to the next level** (Dev - lvl 300)
 >

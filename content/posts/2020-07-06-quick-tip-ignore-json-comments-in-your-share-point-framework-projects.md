@@ -15,11 +15,11 @@ comments: true
 
 Something that bothers me for a long time is the comments in the SharePoint Framework component JSON manifest files. As you may know, JSON does not allow you to add comments to its content. Visual Studio Code will show some errors for it as well.
 
-{{< caption "/2020/07/comments1.png" "VSCode comment errors in JSON"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABsSURBVEXBQQ4CIRBFwQf0mJCYqCvXHsH7X8sJMND9zSyMVen6eqvWyjGd3hrbZkQEp7UW7kHOGTt65/m4Y7fK8oUV47PveATHMZhzQcqYJHxO0nZBEqHArODDaa3Tx+CUBUj8CSQgJUop/HwBI0k9FGJ1WUgAAAAASUVORK5CYII=" "580" >}}
+{{< caption-new "/uploads/2020/07/comments1.png" "VSCode comment errors in JSON"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABsSURBVEXBQQ4CIRBFwQf0mJCYqCvXHsH7X8sJMND9zSyMVen6eqvWyjGd3hrbZkQEp7UW7kHOGTt65/m4Y7fK8oUV47PveATHMZhzQcqYJHxO0nZBEqHArODDaa3Tx+CUBUj8CSQgJUop/HwBI0k9FGJ1WUgAAAAASUVORK5CYII=" "580" >}}
 
 I understand that comments are needed. These comments make it easier for developers to understand what the properties/attributes/values mean. 
 
-{{< caption "/2020/07/comments2.png" "VSCode comment errors in JSON"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABQSURBVDXBwQ2DQAxFwbeyEQEkakgH9N9YENjrDznsTPt8D23Tgpdxxkn0RBKDEHcG3qrReVlSWZQSBF2iVzH4ZMa+LlgUgRM+M1x584uLvwcCDSotRNpzgwAAAABJRU5ErkJggg==" "1254" >}}
+{{< caption-new "/uploads/2020/07/comments2.png" "VSCode comment errors in JSON"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABQSURBVDXBwQ2DQAxFwbeyEQEkakgH9N9YENjrDznsTPt8D23Tgpdxxkn0RBKDEHcG3qrReVlSWZQSBF2iVzH4ZMa+LlgUgRM+M1x584uLvwcCDSotRNpzgwAAAABJRU5ErkJggg==" "1254" >}}
 
 Providing these comments in the JSON file itself is more natural than pointing to a website/documentation page. That is also why they created the `JSONC` file format, which allows you to add comments in JSON files. As SharePoint Framework projects are still using JSON files instead of JSONC, I wanted to find a quick fix.
 
@@ -33,30 +33,30 @@ Did you know you could tell Visual Studio Code to treat your JSON files as JSONC
 
 My default `files.associations` the setting looked like this:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 "files.associations": {
   "*.master": "html"
 }
-{{< / highlight >}}
+```
 
 To tell VSCode to treat JSON as JSONC, all you need to do is add this line:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 "files.associations": {
   "*.master": "html",
   "*.json": "jsonc"
 }
-{{< / highlight >}}
+```
 
 One downside is that now all JSON files are treated as JSONC files. It could be that some of your pipelines might fail if you have to do JSON validation. To overcome this, you can be a bit more specific and add `*.manifest.json` as the file association. That way, it will only ignore the errors for the component manifest files.
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 "files.associations": {
   "*.master": "html",
     "*.manifest.json": "jsonc"
 }
-{{< / highlight >}}
+```
 
-{{< caption "/2020/07/comments3.png" "VSCode ignoring the comments - this is much more relaxing"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABMSURBVE3BQQ5AQBBE0T8xCwnXcAL3PxQ7qruLWUi819Zt98JMRHCHUIq/slGKHgqOPJGCoTXAUDa2+fQXfZ5YVFwZZCXQsI1tMovhAcsrMQLK/I4MAAAAAElFTkSuQmCC" "1208" >}}
+{{< caption-new "/uploads/2020/07/comments3.png" "VSCode ignoring the comments - this is much more relaxing"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABMSURBVE3BQQ5AQBBE0T8xCwnXcAL3PxQ7qruLWUi819Zt98JMRHCHUIq/slGKHgqOPJGCoTXAUDa2+fQXfZ5YVFwZZCXQsI1tMovhAcsrMQLK/I4MAAAAAElFTkSuQmCC" "1208" >}}
 
 *Happy coding*

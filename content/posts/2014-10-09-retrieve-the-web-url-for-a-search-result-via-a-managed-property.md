@@ -21,16 +21,16 @@ These days a lot of my work is done in Office 365, but I have customers that are
 
 This week I wanted to implement a link which goes directly to the site on which the search result item is located. On Office 365 (SharePoint Online) used a managed property called **SPWebURL** to achieve this.
 
-{{< caption-legacy "uploads/2014/10/100914_1437_Retrievethe1.png" "SharePoint Online - SPWebUrl property" >}}
+{{< caption-new "/uploads/2014/10/100914_1437_Retrievethe1.png" "SharePoint Online - SPWebUrl property" >}}
 
 But when I wanted to use the managed property on the client its on-premises environment, I noticed that this managed property is not available.
 
 Now the good news is that the **ows_taxId_SPLocationSite** crawled property is available on-premises, but it is not yet mapped to a managed property. So what you can do is create a new managed property and map it with the **ows_taxId_SPLocationSite** crawled property, that way you can easily retrieve the web URL of the item.
 
-{{< caption-legacy "uploads/2014/10/100914_1437_Retrievethe2.png" "SharePoint 2013 - Crawled property" >}}
+{{< caption-new "/uploads/2014/10/100914_1437_Retrievethe2.png" "SharePoint 2013 - Crawled property" >}}
 
-{{< caption-legacy "uploads/2014/10/100914_1437_Retrievethe3.png" "SharePoint 2013 - SPWebUrl managed property" >}}
+{{< caption-new "/uploads/2014/10/100914_1437_Retrievethe3.png" "SharePoint 2013 - SPWebUrl managed property" >}}
 
 ## Result
 
-{{< caption-legacy "uploads/2014/10/100914_1437_Retrievethe4.png" "SPWebUrl compared to the SPSiteUrl" >}}
+{{< caption-new "/uploads/2014/10/100914_1437_Retrievethe4.png" "SPWebUrl compared to the SPSiteUrl" >}}

@@ -37,13 +37,13 @@ The **project name** is a bit trickier as it is not passed as an environment var
 
 Via a CURL command execution, you can receive this information. 
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 - name: Fetch project data
   run: |
     echo 'PROJECT_DATA<<EOF' >> $GITHUB_ENV
     curl --request GET --url '${{ github.event.project_card.project_url }}' --header 'Authorization: token ${{ secrets.GITHUB_TOKEN }}' >> $GITHUB_ENV
     echo 'EOF' >> $GITHUB_ENV
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="The notation you can see here is to store the CURL response in an environment variable called **PROJECT_DATA**. You can find more information about setting environment variables in the [GitHub documentation](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#multiline-strings)." >}}
 
@@ -51,7 +51,7 @@ Once you have the name, all you need is to use the [Simple Issue Labeler](https:
 
 Here you can see the whole GitHub workflow:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 name: Project labelling
 
 on:
@@ -79,7 +79,7 @@ jobs:
         if: ${{ contains(github.event.action, 'deleted') }}
         with:
           remove-labels: "Project: ${{ fromJSON(env.PROJECT_DATA).name }}"
-{{< / highlight >}}
+```
 
 When you add or remove your issues to a project, the labels will now be automatically added or removed.
 

@@ -37,31 +37,31 @@ Now we are talking about build timings. Let us take two benchmarks from my [PnP 
 
 Before the performance optimization from Sergei:
 
-{{< caption "/2019/09/build1.png" "Windows without improvements"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABESURBVBXBwRGAIBAEwTkO9OPfRAzH/BNQQYqCVbptP05pGMkTpQ0CRjShKkrPvN2YIr/ghq/OtgR6u7hz5WnOkAFi+gB53RpqNu/S/gAAAABJRU5ErkJggg==" "627" >}}
+{{< caption-new "/uploads/2019/09/build1.png" "Windows without improvements"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABESURBVBXBwRGAIBAEwTkO9OPfRAzH/BNQQYqCVbptP05pGMkTpQ0CRjShKkrPvN2YIr/ghq/OtgR6u7hz5WnOkAFi+gB53RpqNu/S/gAAAABJRU5ErkJggg==" "627" >}}
 
 After the performance optimization (3. source-map-loader optimizations and 4. css-loader optimizations) from Sergei:
 
-{{< caption "/2019/09/build2.png" "Windows with improvements"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABESURBVBXBsRWAIAxAwZ/Aw4IFHMRx3L+0oeBJQlDu5Lzu5QFHKvQRqAiZhdnk9c6Yypb5qQqpJGpRwhpPM8yFWAIE2wd5Jxpl0scsTgAAAABJRU5ErkJggg==" "629" >}}
+{{< caption-new "/uploads/2019/09/build2.png" "Windows with improvements"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABESURBVBXBsRWAIAxAwZ/Aw4IFHMRx3L+0oeBJQlDu5Lzu5QFHKvQRqAiZhdnk9c6Yypb5qQqpJGpRwhpPM8yFWAIE2wd5Jxpl0scsTgAAAABJRU5ErkJggg==" "629" >}}
 
 ## Installing the insiders build
 
 Follow these instructions: [Installation Instructions for WSL 2](https://docs.microsoft.com/en-us/windows/wsl/wsl2-install). 
 
-{{< caption "/2019/09/build5.png" "Insiders build"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACCSURBVE3BQQqEMBBFwffTIigNOYAb8f73CriWSJR0hlkMTJVKKeO+b77meSYieJ4HM2Pfd36mnDPLsuDuSGKMgSTGGPybSilc14W7U2tFEhGBJI7jYF1XvqZt24gIUkpEBJKQxPu+mBmtNVJKTOd5UmvF3Wmt4e703sk5ExH03jEzPjpPPcKbsD8bAAAAAElFTkSuQmCC" "478" >}}
+{{< caption-new "/uploads/2019/09/build5.png" "Insiders build"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACCSURBVE3BQQqEMBBFwffTIigNOYAb8f73CriWSJR0hlkMTJVKKeO+b77meSYieJ4HM2Pfd36mnDPLsuDuSGKMgSTGGPybSilc14W7U2tFEhGBJI7jYF1XvqZt24gIUkpEBJKQxPu+mBmtNVJKTOd5UmvF3Wmt4e703sk5ExH03jEzPjpPPcKbsD8bAAAAAElFTkSuQmCC" "478" >}}
 
 Once you have executed these steps, you can install the Linux distro of your choice from the Windows Store. I went for Ubuntu 18.04. On Ubuntu I installed NVM via the following commands:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-{{< / highlight >}}
+```
 
 Once NVM is installed on your machine, run the following command to get it set up for bash:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-{{< / highlight >}}
+```
 
 > **Info**: You could run into an issue that NVM does not want to install or that npm cannot install dependencies. Most likely this is because you already have node and npm installed on Windows. In order to fix this, you can overwrite the `$PATH` in your WSL by running: `export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bash_completion`.
 
@@ -79,11 +79,11 @@ I cloned the PnP Starter Kit project on the Linux file system, and these are the
 
 Before the performance optimization from Sergei:
 
-{{< caption "/2019/09/build3.png" "WSL 2 without improvements"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABBSURBVBXBsQ2AMBAEwT1sE1AVOTH9F4GQJfD/gWe0H6exaKXR32BqQIzkyc5IYaDy0yLqWtiqIG+uPgiLMFhm+gAjIxm3XIuTogAAAABJRU5ErkJggg==" "715" >}}
+{{< caption-new "/uploads/2019/09/build3.png" "WSL 2 without improvements"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABBSURBVBXBsQ2AMBAEwT1sE1AVOTH9F4GQJfD/gWe0H6exaKXR32BqQIzkyc5IYaDy0yLqWtiqIG+uPgiLMFhm+gAjIxm3XIuTogAAAABJRU5ErkJggg==" "715" >}}
 
 After the performance optimization (3. source-map-loader optimizations and 4. css-loader optimizations) from Sergei:
 
-{{< caption "/2019/09/build4.png" "WSL 2 with improvements"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABBSURBVBXB2xVAMBRFwX2SSOpSgG/995DFwn1gRuu2Z3jQa+d6HCQaYBbccWAufi0BFVFHZSwFfDJPw1N48ElQ8gKwIhu0zLOHbgAAAABJRU5ErkJggg==" "717" >}}
+{{< caption-new "/uploads/2019/09/build4.png" "WSL 2 with improvements"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABBSURBVBXB2xVAMBRFwX2SSOpSgG/995DFwn1gRuu2Z3jQa+d6HCQaYBbccWAufi0BFVFHZSwFfDJPw1N48ElQ8gKwIhu0zLOHbgAAAABJRU5ErkJggg==" "717" >}}
 
 This is a great improvement!
 
@@ -104,7 +104,7 @@ This is a great improvement!
 
 You might ask yourself, what with the `gulp serve` and the localhost? This is covered by WSL 2 as well. 
 
-{{< caption "/2019/09/build6.png" "Serving on localhost"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAACISURBVB3Bvw7BUBiH4fdrj1EaCeICxI1gdAXujtHSxCCMbkAsjZAQi40jqaHS9vz8eR6bpWvhb1gcUwagjjAzJOEajna3wy474KaTEZd7wfVZsd+uWM5TCCB+xDsq8UWO4+vsSzbHF1FeIeNPJoIFMBDCgTHsNxkPEhZpwqnXAkFAyERNRf2AD4OMOsZVjMzWAAAAAElFTkSuQmCC" "2004" >}}
+{{< caption-new "/uploads/2019/09/build6.png" "Serving on localhost"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAACISURBVB3Bvw7BUBiH4fdrj1EaCeICxI1gdAXujtHSxCCMbkAsjZAQi40jqaHS9vz8eR6bpWvhb1gcUwagjjAzJOEajna3wy474KaTEZd7wfVZsd+uWM5TCCB+xDsq8UWO4+vsSzbHF1FeIeNPJoIFMBDCgTHsNxkPEhZpwqnXAkFAyERNRf2AD4OMOsZVjMzWAAAAAElFTkSuQmCC" "2004" >}}
 
 > **Related article**: [Use localhost to connect to your Linux applications from Windows](https://devblogs.microsoft.com/commandline/whats-new-for-wsl-in-insiders-preview-build-18945/)
 
@@ -114,7 +114,7 @@ When you run `code .` and have the [Remote - WSL](https://marketplace.visualstud
 
 Here is the gulp file which I am using. One special thing I added is the extra check for verifying if it is a debug build. If that is the case, the performance improvements will be used. Otherwise, they will be skipped.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 'use strict';
 
 const gulp = require('gulp');
@@ -150,7 +150,7 @@ const envCheck = build.subTask('environmentCheck', (gulp, config, done) => {
 build.rig.addPreBuildTask(envCheck);
 
 build.initialize(gulp);
-{{< / highlight >}}
+```
 
 **Let me know how it affects the performance on your machine** 
 

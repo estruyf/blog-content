@@ -35,4 +35,4 @@ Here is the code that is used in the bookmarklet: SPFx Debugging
 
 ## How it works
 
-{{< caption-legacy "uploads/2019/06/bookmarklet.gif" "How to use the bookmarklet" >}}
+{{< caption-new "/uploads/2019/06/bookmarklet.gif" "How to use the bookmarklet" >}}

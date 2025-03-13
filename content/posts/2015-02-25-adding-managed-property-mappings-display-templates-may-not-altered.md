@@ -20,7 +20,7 @@ comments: true
 
 One of the interesting things about display templates is that you can add managed property mappings that can be managed in the SharePoint UI. This allows users to define which properties they want to use in their templates.
 
-{{< caption-legacy "uploads/2015/02/022515_0954_Addingmanag1.png" "Property mappings" >}}
+{{< caption-new "/uploads/2015/02/022515_0954_Addingmanag1.png" "Property mappings" >}}
 
 Now as a display template creator, it could be that you want to be in control so that the end user cannot make changes to certain properties in the UI. For example: you want to make sure that the users cannot modify the property mapping that corresponds to the path of the document or item.
 
@@ -43,21 +43,21 @@ There is another way of adding properties to your template and this is by just d
 
 Here is an example of one of the OOTB templates:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:ManagedPropertyMapping msdt:dt="string">'Link URL'{Link URL}:'Path','Line 1'{Line 1}:'Title','Line 2'{Line 2}:'','FileExtension','SecondaryFileExtension'</mso:ManagedPropertyMapping>
-{{< / highlight >}}
+```
 
 In this managed property mappings attribute **FileExtension** and **SecondaryFileExtension** are available to use in the template, but cannot be modified in the UI:
 
-{{< caption-legacy "uploads/2015/02/022515_0954_Addingmanag2.png" "Two lines property mappings" >}}
+{{< caption-new "/uploads/2015/02/022515_0954_Addingmanag2.png" "Two lines property mappings" >}}
 
 When you want to make sure that users cannot change the Link URL property, you will need to remove the text that is highlighted in yellow: <span style="background-color: yellow;">'Link URL'{Link URL}:</span>'Path' from the **ManagedPropertyMapping** tag.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:ManagedPropertyMapping msdt:dt="string">'Path','Line 1'{Line 1}:'Title','Line 2'{Line 2}:'','FileExtension','SecondaryFileExtension'</mso:ManagedPropertyMapping>
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2015/02/022515_0954_Addingmanag3.png" "Property mappings without link URL" >}}
+{{< caption-new "/uploads/2015/02/022515_0954_Addingmanag3.png" "Property mappings without link URL" >}}
 
 ## How can I retrieve these "private" property values?
 

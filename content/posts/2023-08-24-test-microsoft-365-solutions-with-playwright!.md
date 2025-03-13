@@ -42,7 +42,7 @@ To be able to run your tests for any of your Microsoft 365 solutions, you first 
 
 For the Microsoft 365 authentication, a `login.setup.ts` file has been created with the following steps:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import { test as setup } from "@playwright/test";
 import { AuthFile } from "../constants/AuthFile";
 
@@ -71,7 +71,7 @@ setup("authenticate", async ({ page }) => {
 
   await page.context().storageState({ path: AuthFile });
 });
-{{< / highlight >}}
+```
 
 {{< blockquote type="important" text="Make sure to use a test account which does not require MFA." >}}
 
@@ -81,7 +81,7 @@ The login has been added as a dependency for the other tests, meaning that when 
 
 You can check this out in the `playwright.config.ts` file:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 export default defineConfig({
   ...
   projects: [
@@ -103,7 +103,7 @@ export default defineConfig({
     },
   ],
 });
-{{< / highlight >}}
+```
 
 ## Writing some tests
 
@@ -111,7 +111,7 @@ With the login configuration in place, you only need to write some tests.
 
 Here is an example:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import { test, expect, Page } from "@playwright/test";
 
 test.describe("Page load", () => {
@@ -140,7 +140,7 @@ test.describe("Page load", () => {
     await expect(page).toHaveScreenshot();
   });
 });
-{{< / highlight >}}
+```
 
 In the above test, I used the logic to [reuse a single page](https://playwright.dev/docs/test-retries#reuse-single-page-between-tests) between all your tests. With this logic, the page will not be closed between each test; instead, it gets reused. It will speed up your tests SharePoint and MS Teams can be slow to load on the first time.
 
@@ -158,11 +158,11 @@ The result of such a visual comparison can be seen in the following screenshot:
 
 To add a visual comparison to your test, all you need is the following code:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 test("Check screenshot", async () => {
   await expect(page).toHaveScreenshot();
 });
-{{< / highlight >}}
+```
 
 {{< blockquote type="important" text="The first time you run this, it creates the screenshot. Next time you run the test, it will use the screenshot (snapshot) for its comparison." >}}
 

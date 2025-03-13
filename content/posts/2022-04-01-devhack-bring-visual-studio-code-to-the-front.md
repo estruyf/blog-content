@@ -21,7 +21,7 @@ When you can control the full authentication flow, you typically redirect the us
 
 In my case, I do not own the authentication flow but still wanted to give a similar experience to the developer, so I came up with the following trick:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import { exec } from 'child_process'; 
 
 function getWorkspaceFolder(): Promise<WorkspaceFolder | undefined> {
@@ -43,7 +43,7 @@ function getWorkspaceFolder(): Promise<WorkspaceFolder | undefined> {
 
 const wsFolder = await getWorkspaceFolder();
 exec(`code .`, { cwd: wsFolder?.uri.fsPath });
-{{< / highlight >}}
+```
 
 All the above code does is open the project again in Visual Studio Code. As the project/solution is already opened, it would not get reloaded. All it does is bring your Visual Studio Code instance to the front, which we needed.
 

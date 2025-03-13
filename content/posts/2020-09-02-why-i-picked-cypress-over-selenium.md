@@ -49,7 +49,7 @@ For me, one of the most significant advantages is the test runner, which you can
   - It is easy for testers to validate if a certain functionality works without having to run any hard to remember commands.
 2. The UI gives you a good overview of how tests run and give you snapshots to go back in time.
 
-{{< caption "/2020/09/cypress1.png" "Screenshot of Cypress during the PnP session"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACiSURBVBXB0WrCMBSA4f8kqTZMF0ERX2JX+v6PMXAIu9mmFTUl2lWwJ9n8Pjld2uK9pznsyYMS25ZSMvVohJaCEWFQxYmACITZDGcty9WSvuvwr4HHMPC4XflpGpwxDhHDuLIYI6gqKSUK0Hcdu48tMZ5xvh6TS0E1Y4zlaRoCfjLFWsvbekOKZxz/VJXf/k6oXnj63r2Tq5rP4xf3FFlUc/4ANnxJzzh29yMAAAAASUVORK5CYII=" "3028" >}}
+{{< caption-new "/uploads/2020/09/cypress1.png" "Screenshot of Cypress during the PnP session"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACiSURBVBXB0WrCMBSA4f8kqTZMF0ERX2JX+v6PMXAIu9mmFTUl2lWwJ9n8Pjld2uK9pznsyYMS25ZSMvVohJaCEWFQxYmACITZDGcty9WSvuvwr4HHMPC4XflpGpwxDhHDuLIYI6gqKSUK0Hcdu48tMZ5xvh6TS0E1Y4zlaRoCfjLFWsvbekOKZxz/VJXf/k6oXnj63r2Tq5rP4xf3FFlUc/4ANnxJzzh29yMAAAAASUVORK5CYII=" "3028" >}}
 
 This UI makes a huge difference to any other tool. When running the tool on your automation pipelines, this does not matter. As there, you might just run all tests at the same time.
 

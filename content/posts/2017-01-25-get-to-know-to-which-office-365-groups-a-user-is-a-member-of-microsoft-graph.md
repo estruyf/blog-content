@@ -25,15 +25,15 @@ The way to retrieve the groups is already documented in the Microsoft Graph docu
 
 If you want to know the groups you are a member of. You can call the following API:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 https://graph.microsoft.com/v1.0/me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a eq 'unified')
-{{< / highlight >}}
+```
 
 Based on the following article: [Office 365 Groups REST API](https://dev.office.com/blogs/GroupsRESTAPI). There is an easier way to get the groups where you are a member of:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 https://graph.microsoft.com/v1.0/me/joinedGroups
-{{< / highlight >}}
+```
 
 
 > **Info**: At the moment, I have not found any reference to this endpoint in the documentation (only on the relationships list of the user: [relationships](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user)) and it seems that it is already available on v1.0.
@@ -43,6 +43,6 @@ https://graph.microsoft.com/v1.0/me/joinedGroups
 
 If you want to know to which groups a user is a member of, you can only make use of the **memberOf** endpoint. The endpoint to call is:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 https://graph.microsoft.com/v1.0/users/<user-id>/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a eq 'unified')
-{{< / highlight >}}
+```

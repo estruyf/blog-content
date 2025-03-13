@@ -38,15 +38,15 @@ The code for this gulp task can be found here:
 
 If you want to test out this gulp task, you first must install two new developer dependencies called: **uuid** and **decomment**. This module is being used to generate the new IDs for your different environments.
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm install uuid decomment --save-dev --save-exact
-{{< / highlight >}}
+```
 
 Once it is installed, create a new file and call it **gulp-change-packaging-settings.json**. In the **gulpfile.js** file, add the following line of code before the **build.initialize(gulp);** line.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 require('./gulpfile-change-packaging-settings');
-{{< / highlight >}}
+```
 
 
 ## Using this gulp task
@@ -57,20 +57,20 @@ Once everything is in place, you can use the task as follows:
 
 *   This is the basic task run and can be used the very first time to create a backup of your default settings. All the settings are stored in a **package-solution-env-settings.json** file.
 
-{{< caption-legacy "uploads/2017/06/062017_1947_Gulptasktoc1.png" "gulp change-pkg-settings" >}}
+{{< caption-new "/uploads/2017/06/062017_1947_Gulptasktoc1.png" "gulp change-pkg-settings" >}}
 
 `gulp change-pkg-settings --env test --cdnpath https://tenant.sharepoint.com/testassets`
 
 *   With the **env** argument, you can specify the name of the build/environment
 *   With the **cdnpath** argument (optional) you can specify the location of the JS files. Best is to make use of different libraries/locations per build/environment you are adding. That way you will not accidentally override a production asset.
 
-{{< caption-legacy "uploads/2017/06/062017_1947_Gulptasktoc2.png" "gulp change-pgk-settings --env --cdnpath output" >}}
+{{< caption-new "/uploads/2017/06/062017_1947_Gulptasktoc2.png" "gulp change-pgk-settings --env --cdnpath output" >}}
 
 `gulp change-pkg-settings --check`
 
 *   By using the check flag, you can see which environments are already defined. Plus, you can also see the environment which is currently in use.
 
-{{< caption-legacy "uploads/2017/06/062017_1947_Gulptasktoc3.png" "gulp change-pgk-settings --check output" >}}
+{{< caption-new "/uploads/2017/06/062017_1947_Gulptasktoc3.png" "gulp change-pgk-settings --check output" >}}
 
 `gulp change-pkg-settings --env test`
 
@@ -82,7 +82,7 @@ Every time you run the command, it will store the settings to a new file which c
 
 Here is an example of its contents:
 
-{{< caption-legacy "uploads/2017/06/062017_1947_Gulptasktoc4.png" "Example output of the stored settings" >}}
+{{< caption-new "/uploads/2017/06/062017_1947_Gulptasktoc4.png" "Example output of the stored settings" >}}
 
 ## SharePoint Framework Extensions
 

@@ -26,15 +26,15 @@ Now, I thought, there must be an easier way, so I started to look around at the 
 
 On the vscode, its `workspace` namespace, you can access the `fs` or file system via: `vscode.workspace.fs`. The `fs` instance delivers you a couple of valuable methods you could use, like `rename`.
 
-{{< caption "/2021/08/fs-methods.png" "workspace.fs methods"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACZSURBVDXBTW7CMBCA0a+OJzhWpQI7hIQ4Avc/TVdlgUQqNXHin8kgFn3v43S92RA6Oi+8xSHymQPWKg83kZaEmeE3Ay8RVUVEmFNmrBMpLVzPFw77I8/xF3/Yf9GLYLaxrBkzo5TKW98LdSs45/C5FErJqDacE0Q8XedoDZ7jyFpXpmnGh11PHALaGn/zgmojDgFtys/9m38v8MNP3BKpekcAAAAASUVORK5CYII=" "593" >}}
+{{< caption-new "/uploads/2021/08/fs-methods.png" "workspace.fs methods"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACZSURBVDXBTW7CMBCA0a+OJzhWpQI7hIQ4Avc/TVdlgUQqNXHin8kgFn3v43S92RA6Oi+8xSHymQPWKg83kZaEmeE3Ay8RVUVEmFNmrBMpLVzPFw77I8/xF3/Yf9GLYLaxrBkzo5TKW98LdSs45/C5FErJqDacE0Q8XedoDZ7jyFpXpmnGh11PHALaGn/zgmojDgFtys/9m38v8MNP3BKpekcAAAAASUVORK5CYII=" "593" >}}
 
 If you want to rename a file, you just need to use the `rename` method as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const editor = vscode.window.activeTextEditor;
 if (editor) {
   await vscode.workspace.fs.rename(editor.document.uri, vscode.Uri.file(newPath), {
     overwrite: false
   });
 }
-{{< / highlight >}}
+```

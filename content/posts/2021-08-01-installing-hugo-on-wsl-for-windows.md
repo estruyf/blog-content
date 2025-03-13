@@ -45,17 +45,17 @@ The steps I had to take:
 - Go to the [Homebrew site](https://brew.sh/), and copy the install script. Run the script in your WSL terminal instance.
 - Once Homebrew is installed, you need to run a couple of extra commands to make it available (these can be found here: [Homebrew on Linux](https://docs.brew.sh/Homebrew-on-Linux#install)):
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
 
 test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 test -r ~/.profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
-{{< / highlight >}}
+```
 
 - Now that the `brew` command is available, you can run `brew install hugo`.
 - Once completed, you will have access to the `hugo` command, generate a new site, or build/serve an existing one.
 
 {{< blockquote type="Important" text="Hugo will only be available in your WSL environment this way. This is not an issue on my end, as WSL is my primary terminal instance." >}}
 
-{{< caption "/2021/08/hugo-in-wsl.png" "Hugo running in WSL"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAAB5SURBVF3BWw6CQBREwdNX4iMIC/Db/a8NY0YHR/sqHxpilU6nc861chh7thG0TeC58SMREt2uH9gPI7dyo6WZHxXb/IvjsSciaM/GvVZs80+IrlwL11Kwk00ISygTO1nrpukCgiQJFkLiI1nrXmkyk4URwhgQ4ksSb/JUOvfs5jv0AAAAAElFTkSuQmCC" "1115" >}}
+{{< caption-new "/uploads/2021/08/hugo-in-wsl.png" "Hugo running in WSL"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAAB5SURBVF3BWw6CQBREwdNX4iMIC/Db/a8NY0YHR/sqHxpilU6nc861chh7thG0TeC58SMREt2uH9gPI7dyo6WZHxXb/IvjsSciaM/GvVZs80+IrlwL11Kwk00ISygTO1nrpukCgiQJFkLiI1nrXmkyk4URwhgQ4ksSb/JUOvfs5jv0AAAAAElFTkSuQmCC" "1115" >}}

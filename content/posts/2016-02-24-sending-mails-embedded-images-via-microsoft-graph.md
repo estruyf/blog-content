@@ -32,7 +32,7 @@ It all starts with the model of your mail message. All the properties that you c
 
 On the documentation page you see a JSON sample object with its properties. Of course you do not to include all these properties when you want to send a mail. Also the sample shows you how to send an attachment, but not how to embed an image. The answer for this can be found in the **fileAttachment resource type** documentation. Here are the essential properties you will need in your mail model:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 using Newtonsoft.Json;
 
 namespace ES.SendMail.Models
@@ -80,7 +80,7 @@ namespace ES.SendMail.Models
         public string name { get; set; }
     }
 }
-{{< / highlight >}}
+```
 
 The most important part about the mail model is the **Attachment** class. This contains all the required properties for successfully including images to the mail.
 
@@ -92,15 +92,15 @@ If you already developed an application in the past where you were required to e
 
 First of all, you create the mail mark-up like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 var mailMarkup = @"<h1>A mail with an embedded image <img src='cid:thumbsUp' alt='Thumbs up' /></h1>";
-{{< / highlight >}}
+```
 
 > **Note**: as the image source I specified **CID:thumbsUp**. You will have to specify this CID reference when you add the attachment to the mail message.
 
 Here is a sample of how you can build the mail message with the model specified above and the embedded image:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 var mail = new Mail
 {
     message = new Message
@@ -137,7 +137,7 @@ var mail = new Mail
     },
     saveToSentItems = true
 };
-{{< / highlight >}}
+```
 
 > **Important**: in attachment I specify contentBytes and contentType of the image. ContentBytes is the binary contents of the file, also known as Base64. ContentType is the image type like **image/png** or **image/jpeg**.
 
@@ -145,7 +145,7 @@ var mail = new Mail
 
 Now you only need to send out the mail message. This can be done like this:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 // Send the mail
 var client = new RestClient(Resourse);
 var request = new RestRequest($"/v1.0/users/{email}/microsoft.graph.sendMail", Method.POST);
@@ -158,13 +158,13 @@ var jsonBody = JsonConvert.SerializeObject(mail, Formatting.None, new JsonSerial
 });
 request.AddParameter("application/json", jsonBody, ParameterType.RequestBody);
 var response = client.Execute(request);
-{{< / highlight >}}
+```
 
 > **Note**: this code makes use of a NuGet package called **RestSharp** which makes it easier to do rest calls from C#. You are free to use whatever you want.
 
 When you run this code, it would give you the following result:
 
-{{< caption-legacy "uploads/2016/02/022416_1612_Sendingmail1.png" "Mail message with an embedded image" >}}
+{{< caption-new "/uploads/2016/02/022416_1612_Sendingmail1.png" "Mail message with an embedded image" >}}
 
 ## Sample application
 

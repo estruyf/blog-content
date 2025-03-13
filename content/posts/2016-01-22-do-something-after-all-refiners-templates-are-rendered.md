@@ -26,19 +26,19 @@ Now when you are creating your own refiner display templates and want to do some
 
 When you are using a search result web part, you have a **control**, **group** and **item** display template which will be used to render your results on the page. The control template is going to call the group template to render the group HTML with the following piece of code:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 ctx.RenderGroups(ctx)
-{{< / highlight >}}
+```
 
 The group template starts rendering the items with the following piece of code:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 ctx.RenderItems(ctx)
-{{< / highlight >}}
+```
 
 The item template passes the item HTML mark-up back to the group template, which on its turn passes it back to the control template.
 
-{{< caption-legacy "uploads/2016/01/012116_2011_Dosomething1.png" "Display template rendering flow" >}}
+{{< caption-new "/uploads/2016/01/012116_2011_Dosomething1.png" "Display template rendering flow" >}}
 
 So if you use the AddPostRenderCallback function in the control template, this will get executed once the group and item templates are completed rendering.
 
@@ -50,7 +50,7 @@ Once the refinement panel is added to the page, the SharePoint JavaScript render
 
 All this is achieved by the **Srch.Refinement.prototype.render()** function. The code of the render function looks like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 render: function Srch_Refinement$render() {
     this.$4q_4();
     // Render the refinement control panel
@@ -73,7 +73,7 @@ render: function Srch_Refinement$render() {
     this.updateDisplayControlWithNewMessages();
     this.raiseResultRenderedEvent(new Srch.ResultEventArgs(this.$B_3));
 }
-{{< / highlight >}}
+```
 
 > **Note**: line 4 renders the refinement control panel on the page, line 7 - 9 is going to render each refiner to the page.
 
@@ -92,7 +92,7 @@ The first approach would require a lot of changes to your default refiner templa
 
 Here is the code that can be added to your refinement control template:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 if (typeof Srch.Refinement !== "undefined") {
     Srch.Refinement.prototype.originalRender = Srch.Refinement.prototype.render;
     Srch.Refinement.prototype.render = function() {
@@ -106,7 +106,7 @@ if (typeof Srch.Refinement !== "undefined") {
         console.log('This is logged when rendering is completed');
     };      
 }
-{{< / highlight >}}
+```
 
 
 ## Download

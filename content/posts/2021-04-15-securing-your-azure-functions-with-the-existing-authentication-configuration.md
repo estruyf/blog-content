@@ -27,7 +27,7 @@ Now you can make your Azure Function or App Services, in general, more secure by
 
 When you open your Function App on the [Azure Portal](https://portal.azure.com/), navigate to **Authentication**.
 
-{{< caption "/2021/04/secure1.png" "Secure the App Service or Function App"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABSSURBVF3BwQrCQAxF0ZukScGl2/7/95VRBJEZX+lioHqO7Y+n1lxYq3B3TpIwM668IqhM3J2ptYYkrhzjxxiD17d4fzqSmJbRO8pkigi2+41/B5FmHBJAfacpAAAAAElFTkSuQmCC" "1917" >}}
+{{< caption-new "/uploads/2021/04/secure1.png" "Secure the App Service or Function App"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABSSURBVF3BwQrCQAxF0ZukScGl2/7/95VRBJEZX+lioHqO7Y+n1lxYq3B3TpIwM668IqhM3J2ptYYkrhzjxxiD17d4fzqSmJbRO8pkigi2+41/B5FmHBJAfacpAAAAAElFTkSuQmCC" "1917" >}}
 
 - Click on the **add identity provider**. 
 - On the next screen, you can choose between creating a new application or using an existing one. In my case, I will use the **Provide the details of an existing app registration**. This way, I can use an app registered in another tenant. Not only that, but it will also show you what it uses.
@@ -36,13 +36,13 @@ When you open your Function App on the [Azure Portal](https://portal.azure.com/)
 - Leave the issuer URL blank and also the allowed token audiences.
 - Click on save.
 
-{{< caption "/2021/04/secure2.png" "Using an existing app registration"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAYAAABbayygAAAAAklEQVR4AewaftIAAADvSURBVG3BjUoDMRCF0W8mN8m6XaHv/5SFqt02P2NXEKR4jl0ulxhjcHB3zucz/xGWyNnZto2YwWN/oJz5KyKQMWmtse87M8ACxhwQEIAZpJTQE2aGUuIxoT92xhgsy0Jyp9bKQU+4O5IYLdj3xuGzffG2LMhEGKj3jiTMHXknl0IpBTPj0MfgoBjBbb8xysDdqaXwI4JfPSYKC/ps9HtnXVdqrbwqZqj3zkESn7c71+uVwFlPG0UQAZLQ6bQyxiTnTBvB/fZBBCSbzGnUWnF35J6QMmZGzMY9eAoOZkAEc07UWkMSkvjoxvu2Ye68+gYtVXe/WIfHVAAAAABJRU5ErkJggg==" "735" >}}
+{{< caption-new "/uploads/2021/04/secure2.png" "Using an existing app registration"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAYAAABbayygAAAAAklEQVR4AewaftIAAADvSURBVG3BjUoDMRCF0W8mN8m6XaHv/5SFqt02P2NXEKR4jl0ulxhjcHB3zucz/xGWyNnZto2YwWN/oJz5KyKQMWmtse87M8ACxhwQEIAZpJTQE2aGUuIxoT92xhgsy0Jyp9bKQU+4O5IYLdj3xuGzffG2LMhEGKj3jiTMHXknl0IpBTPj0MfgoBjBbb8xysDdqaXwI4JfPSYKC/ps9HtnXVdqrbwqZqj3zkESn7c71+uVwFlPG0UQAZLQ6bQyxiTnTBvB/fZBBCSbzGnUWnF35J6QMmZGzMY9eAoOZkAEc07UWkMSkvjoxvu2Ye68+gYtVXe/WIfHVAAAAABJRU5ErkJggg==" "735" >}}
 
 ## Allowed Token Audiences
 
 In the previous section, I told you to leave the **allowed token audiences** blank. You should provide a URI or GUID of the application identifier. Now recently, Azure AD automatically gives you the `api://<client id>` as the identifier. The problem is that this identifier cannot be used for the allowed token audience.
 
-{{< caption "/2021/04/secure3.png" "`api://<client id>` is not a valid URI"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAACmSURBVG3BQW7DMAxFwfcpWWIL5P7nDFonDmmBjRfZdUY/+7NM4NNB/EtAf4Rx5oH2pPcNSSAQoqqoKr58o7sdjNvA3YkIMpPWGhJUFZcxhL2RmVQVl7UWEUFEcKkqqoreWsPMkIRax8Y3l2bCR+Ojn+dJ7521FiuTx/3OmJMTyMOYcyKJHvvO7+vFnBNJ3NyRBGZcKpMA+nRHAkls26CA4s3Eh28bf8iES0kg0XWvAAAAAElFTkSuQmCC" "730" >}}
+{{< caption-new "/uploads/2021/04/secure3.png" "`api://<client id>` is not a valid URI"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAACmSURBVG3BQW7DMAxFwfcpWWIL5P7nDFonDmmBjRfZdUY/+7NM4NNB/EtAf4Rx5oH2pPcNSSAQoqqoKr58o7sdjNvA3YkIMpPWGhJUFZcxhL2RmVQVl7UWEUFEcKkqqoreWsPMkIRax8Y3l2bCR+Ojn+dJ7521FiuTx/3OmJMTyMOYcyKJHvvO7+vFnBNJ3NyRBGZcKpMA+nRHAkls26CA4s3Eh28bf8iES0kg0XWvAAAAAElFTkSuQmCC" "730" >}}
 
 To avoid this issue, you can either specify a URL when setting your Azure AD App - Application ID URI or update the existing one. 
 
@@ -52,11 +52,11 @@ You can verify your custom domain on the **branding** section under **published 
 
 Once you updated this ID, you can add the same ID on the Function App, its identity provider.
 
-{{< caption "/2021/04/secure4.png" "Providing a valid audience URI"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAACdSURBVG3BQW7DMAxFwfdFMrKR+P7X9M6VbImNCwToIjPa9z3HGAh4bRsRwTduseCR1FqRxJh85T99cvWDo52YGZngbgiRJJlJuOOvRdhzIyIYY3CeJyJB/MmEx6Pg13XRe8fMyExaa3wsy8JtzolLopRCZpKIMwu3IhhjUGvl5ryZGZIwkmd1IgJJ/OeSOI6D1hpmxrquSLwlHzPFL7SuRX/Z0pOoAAAAAElFTkSuQmCC" "723" >}}
+{{< caption-new "/uploads/2021/04/secure4.png" "Providing a valid audience URI"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAACdSURBVG3BQW7DMAxFwfdFMrKR+P7X9M6VbImNCwToIjPa9z3HGAh4bRsRwTduseCR1FqRxJh85T99cvWDo52YGZngbgiRJJlJuOOvRdhzIyIYY3CeJyJB/MmEx6Pg13XRe8fMyExaa3wsy8JtzolLopRCZpKIMwu3IhhjUGvl5ryZGZIwkmd1IgJJ/OeSOI6D1hpmxrquSLwlHzPFL7SuRX/Z0pOoAAAAAElFTkSuQmCC" "723" >}}
 
 To call the secured Azure Function, you will have to perform the same steps as in the previous article. First, get a token, and pass that in the authorization header to your Azure Function call.
 
-{{< caption "/2021/04/secure5.png" "Calling a secured Azure Function"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAACcSURBVG3B62qDQBCA0W9ua7Rgyfu/oyCNFLrrTOuPQCg5R/Z9r8ykqnB3IgJV5T9vrZF5oiJEm7hkJu7OK9+2jXVdsXDGGFyO4yAzWZYFM6Oq8PM8qSpeuTutNUSEi4jgyzyjqmQmqkpEYGZkJk8ign/e7/TjG20NCvpZVAnhganw5Pzpjy9+ylg/Jpor72hVYbeZyYQ+kj6Sd34BBBFCrKmCUnQAAAAASUVORK5CYII=" "993" >}}
+{{< caption-new "/uploads/2021/04/secure5.png" "Calling a secured Azure Function"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAACcSURBVG3B62qDQBCA0W9ua7Rgyfu/oyCNFLrrTOuPQCg5R/Z9r8ykqnB3IgJV5T9vrZF5oiJEm7hkJu7OK9+2jXVdsXDGGFyO4yAzWZYFM6Oq8PM8qSpeuTutNUSEi4jgyzyjqmQmqkpEYGZkJk8ign/e7/TjG20NCvpZVAnhganw5Pzpjy9+ylg/Jpor72hVYbeZyYQ+kj6Sd34BBBFCrKmCUnQAAAAASUVORK5CYII=" "993" >}}
 
 ## Issues logging in
 

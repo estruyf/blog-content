@@ -35,20 +35,20 @@ An idea I to load these templates was to create a template which I call the "rou
 
 As mentioned the routing template is just an item template which contains a couple of checks. These checks all start with an array in which you define the managed property value and the matching template to load.
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var defaultLayout = 'Item_BodyOnly.js';
 var layouts = { 
     'PageFromDocLayout.aspx' : 'Item_BodyOnly.js',
     'ArticleLeft.aspx' : 'Item_ImageLeft.js',
     'ArticleRight.aspx' : 'Item_ImageRight.js',
 };
-{{< / highlight >}}
+```
 
 Next, you write the code to retrieve the display template that needs to get loaded from the array.
 
 > **Important**: you need to add the managed property you want to check to the ManagedPropertyMapping attribute. In this example PublishingPageLayoutOWSURLH is used. This managed property holds the page layout URL that got used for the article.
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var pageUrl = $getItemValue(ctx, 'PublishingPageLayoutOWSURLH');
 if (!pageUrl.isEmpty) {
     // Get the page name 
@@ -67,7 +67,7 @@ if (!pageUrl.isEmpty) {
         /* NEXT CODE SNIPPET */
     }
 }
-{{< / highlight >}}
+```
 
 On line 4, the page layout value is retrieved and looks like this:
 
@@ -81,7 +81,7 @@ If the managed property value did not exist in the array (in this example it wou
 
 Once you know the filename of the display template to load, you have to write the code to get the display template loaded. Loading the display template can be done with the following code:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Load the display template for the corresponding page layout
 var dtUrl = '~sitecollection/_catalogs/masterpage/Tests/';
 var dtFullUrl = dtUrl + dtName;
@@ -99,28 +99,28 @@ RegisterSod(dtName, Srch.U.replaceUrlTokens(dtFullUrl));
         render(markup, id);
     });
 })(id);
-{{< / highlight >}}
+```
 
 On the second line you define the location where your display templates can be found. Once the display template is loaded, the **CoreRender** function gets called which will render the item mark-up. This mark-up needs to be added to the DIV element defined in the routing template, this is done by calling the **render** function on line 15.
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var render = function (markup, id) {
     var elm = document.getElementById(id);
     if (!$isNull(elm)) {
         elm.innerHTML += markup;
     }
 };
-{{< / highlight >}}
+```
 
 The render function is nothing special, it retrieves the DIV element of the current item and appends the item display template mark-up to it.
 
 Once the code is in place, you configure the CSWP to use routing template as the item display template.
 
-{{< caption-legacy "uploads/2015/05/051315_1319_Renderingre1.png" "Configure to load the routing template" >}}
+{{< caption-new "/uploads/2015/05/051315_1319_Renderingre1.png" "Configure to load the routing template" >}}
 
 Here you can see a simple result output:
 
-{{< caption-legacy "uploads/2015/05/051315_1319_Renderingre2.png" "Routing template loaded and rendered three other templates" >}}
+{{< caption-new "/uploads/2015/05/051315_1319_Renderingre2.png" "Routing template loaded and rendered three other templates" >}}
 
 Here I have three different item display templates: Item_BodyOnly.js, Item_ImageLeft.js, Item_ImageRight.js. In these display templates I defined a block with a different background color, the display template filename and page title.
 
@@ -134,27 +134,27 @@ Once the routing template is loaded, this template passes the current processed 
 
 For example if you map the author managed property in the Item_ImageLeft.html display template like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 /* BEFORE */
 <mso:ManagedPropertyMapping msdt:dt="string">'Path','Title':'Title'</mso:ManagedPropertyMapping>
 
 /* AFTER */
 <mso:ManagedPropertyMapping msdt:dt="string">'Path','Title':'Title','Author':'Author'</mso:ManagedPropertyMapping>
-{{< / highlight >}}
+```
 
 You will also have to add this 'Author': 'Author' mapping in the Item_Routing.html display template:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 /* BEFORE */
 <mso:ManagedPropertyMapping msdt:dt="string">'PublishingPageLayoutOWSURLH','Path','Title':'Title'</mso:ManagedPropertyMapping>
 
 /* AFTER */
 <mso:ManagedPropertyMapping msdt:dt="string">'PublishingPageLayoutOWSURLH','Path','Title':'Title','Author':'Author'</mso:ManagedPropertyMapping>
-{{< / highlight >}}
+```
 
 Once you have done this and you refresh the page the Item_ImageLeft results should now include the author name.
 
-{{< caption-legacy "uploads/2015/05/051315_1319_Renderingre3.png" "Updated Item_ImageLeft.js template" >}}
+{{< caption-new "/uploads/2015/05/051315_1319_Renderingre3.png" "Updated Item_ImageLeft.js template" >}}
 
 ## Download and using the templates
 

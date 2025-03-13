@@ -22,11 +22,11 @@ A colleague discovered a layout problem when he was using the **People Search Bo
 
 When you add the **People Search Box Web Part** to your page, the layout looks fine.
 
-{{< caption-legacy "uploads/2011/07/070811_1434_FixPeopleSe1.png" "People Search Box" >}}
+{{< caption-new "/uploads/2011/07/070811_1434_FixPeopleSe1.png" "People Search Box" >}}
 
 The problem arises when you click on the **Search Options** link.
 
-{{< caption-legacy "uploads/2011/07/070811_1434_FixPeopleSe2.png" "People Search Box Layout Problem" >}}
+{{< caption-new "/uploads/2011/07/070811_1434_FixPeopleSe2.png" "People Search Box Layout Problem" >}}
 
 As you can see, the property box is shown with a transparent background and the labels are almost unreadable.
 
@@ -35,16 +35,16 @@ As you can see, the property box is shown with a transparent background and the 
 To solve this problem, you could add the following CSS styles to your custom stylesheet or inside the master page itself.
 
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 .psrch-OptionsContainer {
   font-size: 8pt;
   height: 130px;
   margin-top: 20px;
   width: 355px;
 }
-{{< / highlight >}}
+```
 
 
 ## Result
 
-{{< caption-legacy "uploads/2011/07/070811_1434_FixPeopleSe3.png" "People Search Box With CSS Fix" >}}
+{{< caption-new "/uploads/2011/07/070811_1434_FixPeopleSe3.png" "People Search Box With CSS Fix" >}}

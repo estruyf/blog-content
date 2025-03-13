@@ -28,7 +28,7 @@ But how do you get to the welcome experience when you close the start page? Well
 
 Start by creating a new command for your extension:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   ...,
   "contributes": {
@@ -41,17 +41,17 @@ Start by creating a new command for your extension:
     ]
   }
 }
-{{< / highlight >}}
+```
 
 In your extension code, register the command and use the `workbench.action.openWalkthrough` command to open the walkthrough of your choice. 
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 vscode.subscriptions.push(
   vscode.commands.registerCommand("frontMatter.welcome", () => {
     vscode.commands.executeCommand(`workbench.action.openWalkthrough`, `eliostruyf.vscode-front-matter#frontmatter.welcome`, false);
   })
 );
-{{< / highlight >}}
+```
 
 The second argument is the walkthrough to open. You do this by specifying: `<publisher>.<extension name>#<Walkthrough ID>`.
 The third argument is a boolean that defines if you want to open it in the same view (`false`) or split view (`true`).

@@ -31,11 +31,11 @@ What I want to achieve is the following:
 
 The first thing I needed to do was add the trigger on my **Repository 1** containing the website's sources.
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 on:
   repository_dispatch:
     types: update
-{{< / highlight >}}
+```
 
 Once you add this to the build flow, you can call a webhook on the repository to trigger the build.
 
@@ -54,7 +54,7 @@ To be able to call the webhook, you will need to add a token with the following 
 
 Once you have the token, add it to the secrets of your repository, and configure the following workflow to trigger the build:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 name: Trigger blog to build
 
 on:
@@ -73,4 +73,4 @@ jobs:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: <username>/<repository>
           event-type: update
-{{< / highlight >}}
+```

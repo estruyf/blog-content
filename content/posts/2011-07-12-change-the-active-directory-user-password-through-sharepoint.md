@@ -33,7 +33,7 @@ When working with claims-based authentication (which is standard when form based
 
 The first thing you will do in your code, is retrieving the current logged on users its username. When working with claims-based authentication your usernames will look something like this: **i:0#.f'admembership'user**. Before you can search the corresponding user in your Active Directory environment, you will need to decode the claim prefix from the username. This can be done with the **DecodeClaim** method from the **Microsoft.SharePoint.Administration.Claims** class.
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 // Claims-based authentication
 // - Decode the claims-based authentication name
 string username = "";
@@ -43,29 +43,29 @@ if (mgr != null)
 {
   username = mgr.DecodeClaim(SPContext.Current.Web.CurrentUser.LoginName).Value;
 }
-{{< / highlight >}}
+```
 
 When you retrieved the username without the claims prefix, the corresponding Active Directory user can be searched. This can be done by the following code:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 // Get the domain context
 using (PrincipalContext ctx = new PrincipalContext(ContextType.Domain))
 {
   UserPrincipal user = new UserPrincipal(ctx);
   user = UserPrincipal.FindByIdentity(ctx, username);
 }
-{{< / highlight >}}
+```
 
 The only thing that is left, is to write the code for the password change.
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 user.ChangePassword("OLD_PASSWORD", "NEW_PASSWORD");
 user.Save();
-{{< / highlight >}}
+```
 
 To whole block looks like this:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 // Claims-based authentication
 // - Decode the claims-based authentication name
 string username = "";
@@ -88,7 +88,7 @@ using (PrincipalContext ctx = new PrincipalContext(ContextType.Domain))
     user.Save();
   }
 }
-{{< / highlight >}}
+```
 
 As you can see there is not much code to be written so that the user can change their password.
 

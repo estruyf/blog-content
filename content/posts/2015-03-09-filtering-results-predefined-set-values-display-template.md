@@ -27,14 +27,14 @@ As I mentioned in the title of this article, the filtering of the search result 
 
 Start by creating a new control display template and add a link to the control display template like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <a href="#" onclick="search.refine.click($getClientControl(this), 'Filter value 1');return false;" title="Refine on 'Filter value 1'">Refine on 'Filter value 1'</a> - 
 <a href="#" onclick="search.refine.click($getClientControl(this), 'Filter value 2');return false;" title="Refine on 'Filter value 2'">Refine on 'Filter value 2'</a>
-{{< / highlight >}}
+```
 
 In the link element an **onclick** attribute is specified with a function call. Once you click on the link, the function executes a refinement query with the filter value that you clicked. In order to make it work, you need to add the following code block inside a script element in your template:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 Type.registerNamespace('search.refine');
 
 search.refine = function() {
@@ -83,27 +83,27 @@ search.refine = function() {
       click: click
   };
 }();
-{{< / highlight >}}
+```
 
 In the code above you can find two functions: **click** and **checkRefinement**. In the **click** function a new QueryState object is created in which the selected refinement value gets defined. The **checkRefinement** function is required to see if there is already another refinement in place.
 
 At the moment the template output looks like this:
 
-{{< caption-legacy "uploads/2015/03/030915_1341_Filteringre1.png" "Display template with filter links" >}}
+{{< caption-new "/uploads/2015/03/030915_1341_Filteringre1.png" "Display template with filter links" >}}
 
 When clicking on the **Refine on 'docx'** link you only retrieve **docx** documents.
 
-{{< caption-legacy "uploads/2015/03/030915_1341_Filteringre2.png" "Search results filtered on docx file extension" >}}
+{{< caption-new "/uploads/2015/03/030915_1341_Filteringre2.png" "Search results filtered on docx file extension" >}}
 
 The thing that remains is a link that allows you to remove the current filter that is in place. As like in the first step, you need to add a new link and a function to the template.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <a href="#" style='display:_#= $htmlEncode(displayStyle) =#_' onclick="search.refine.all($getClientControl(this));return false;" title="Refine results">All results</a>
-{{< / highlight >}}
+```
 
 The corresponding function:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 all = function (cc) {
   var queryState = new Srch.QueryState();
   // Clear the refinement object
@@ -112,11 +112,11 @@ all = function (cc) {
   var queryEventArgs = new Srch.QueryEventArgs(queryState);
   cc.raiseQueryReadyEvent(queryEventArgs);
 }
-{{< / highlight >}}
+```
 
 In the **all** function the refinement gets removed by creating a new QueryState in which you do not specify any query parameters or properties. This QueryState triggers the web part to perform the original (query you specified in the query builder) search query.
 
-{{< caption-legacy "uploads/2015/03/030915_1341_Filteringre3.png" "All results link" >}}
+{{< caption-new "/uploads/2015/03/030915_1341_Filteringre3.png" "All results link" >}}
 
 ## Making the filtering values customizable
 
@@ -124,6 +124,6 @@ The downside of working with predefined values is that the template can only be 
 
 In one of my previous articles, I explained how you can add configurable settings into your display template: [Adding configurable settings to your display templates](https://www.eliostruyf.com/adding-configurable-settings-display-templates/). You can apply that approach by adding two setting properties into your item display template that allow you to define the managed property name and the corresponding filter values. If you want to use the template for another kind of content, you just need to modify the display template setting properties in the web part.
 
-{{< caption-legacy "uploads/2015/03/030915_1341_Filteringre4.png" "Filter settings in the property mappings section" >}}
+{{< caption-new "/uploads/2015/03/030915_1341_Filteringre4.png" "Filter settings in the property mappings section" >}}
 
 You can find the final versions of the item and control template on GitHub: [Result refinement display templates (CSWP)](https://github.com/SPCSR/DisplayTemplates/tree/master/Search%20Display%20Templates/Result%20refinement%20display%20templates%20(CSWP) "Result refinement display templates - CSWP").

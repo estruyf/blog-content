@@ -24,7 +24,7 @@ A couple of thing have been changed:
 *   Our name is one of the biggest changes. We are now called **Belgian Information Worker User Group** instead of Belux Information Worker User Group;
 *   The BIWUG colors have slightly changed, we made them a bit brighter:
 
-{{< caption-legacy "uploads/2014/09/biwug-colors.jpg" "BIWUG Colors Old vs New" >}}
+{{< caption-new "/uploads/2014/09/biwug-colors.jpg" "BIWUG Colors Old vs New" >}}
 
 *   The website is created with bootstrap, this makes it easy to get the website responsive;
 *   All our sponsors rotate on every page;
@@ -35,8 +35,8 @@ Feel free to send feedback.
 
 ## Desktop layout
 
-{{< caption-legacy "uploads/2014/09/090514_2018_ThenewBIWUG1.png" "BIWUG Desktop" >}}
+{{< caption-new "/uploads/2014/09/090514_2018_ThenewBIWUG1.png" "BIWUG Desktop" >}}
 
 ## Mobile layout
 
-{{< caption-legacy "uploads/2014/09/090514_2018_ThenewBIWUG2.png" "BIWUG Mobile" >}}
+{{< caption-new "/uploads/2014/09/090514_2018_ThenewBIWUG2.png" "BIWUG Mobile" >}}

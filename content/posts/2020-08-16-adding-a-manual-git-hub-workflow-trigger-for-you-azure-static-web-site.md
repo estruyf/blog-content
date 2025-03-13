@@ -38,7 +38,7 @@ In the default static web app setup, you will only have one workflow, so the `re
 
 Go to your static web app project, and open the `<workflow>.yml` file. On the top, you will find an `on` section. This section defines how the workflow can start-up. Here you can add the `repository_dispatch` trigger.
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 on:
   push:
     branches:
@@ -48,11 +48,11 @@ on:
     branches:
       - master
   repository_dispatch:
-{{< / highlight >}}
+```
 
 If you want, you can also specify types of events for the `repository_dispatch` event:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 on:
   push:
     branches:
@@ -63,11 +63,11 @@ on:
       - master
   repository_dispatch:
     types: [backend_automation]
-{{< / highlight >}}
+```
 
 This change will now allow the workflow to be able to be started from an HTTP trigger. In case you want to start it from the UI, you will need to configure the `workflow_dispatch` event.
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 on:
   push:
     branches:
@@ -77,17 +77,17 @@ on:
     branches:
       - master
   workflow_dispatch:
-{{< / highlight >}}
+```
 
 Another change you have to do to the workflow file is the `build_and_deploy_job` condition on which it should start. By default, this is only on a push and pull request event and will not yet begin when you do a manual trigger.
 
 To change this, change the if condition to the following:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed') || github.event_name == 'repository_dispatch' || github.event_name == 'workflow_dispatch'
-{{< / highlight >}}
+```
 
 > **Info**: I have added both the `repository_dispatch` and `workflow_dispatch` events to the condition. Feel free to change it to what you will be using.
 
@@ -101,39 +101,39 @@ The scopes you need to set for the PAT are: `public_repo` and `workflow`. Once y
 
 The request for the `repository_dispatch` job looks as follows:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 curl \
 -X POST \
 -H "Accept: application/vnd.github.v3+json" \
 -H "Authorization: token <your-PAT>" \
 https://api.github.com/repos/:user/:repo/dispatches \
 -d '{"event_type":"<your-event-type>"}'
-{{< / highlight >}}
+```
 
 > **Info**: In the request, you can specify the event type which you configured in your workflow file.
 
 The `workflow_dispatch` request looks similar, but you need to provide other parameters and the workflow of its ID.
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 curl \
 -X POST \
 -H "Accept: application/vnd.github.v3+json" \
 -H "Authorization: token <your-PAT>" \
 https://api.github.com/repos/:user/:repo/actions/workflows/:id/dispatches \
 -d '{"ref": "refs/heads/master"}'
-{{< / highlight >}}
+```
 
 You can find the workflow its ID by making the following request:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 # Get the list of workflows
 curl \
 -H "Accept: application/vnd.github.v3+json" \
 https://api.github.com/repos/:user/:repo/actions/workflows
-{{< / highlight >}}
+```
 
-{{< caption "/2020/08/staticsite.png" "Get the workflow ID"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA7SURBVE3BMQ6AMAwEwT1fGgP//yJ0tJGRDErHjO7rfJFwbmQmiyRs8zfGflBVPHPS3UQEiyRsY5uI4ANR+A0RBQywdgAAAABJRU5ErkJggg==" "1160" >}}
+{{< caption-new "/uploads/2020/08/staticsite.png" "Get the workflow ID"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA7SURBVE3BMQ6AMAwEwT1fGgP//yJ0tJGRDErHjO7rfJFwbmQmiyRs8zfGflBVPHPS3UQEiyRsY5uI4ANR+A0RBQywdgAAAABJRU5ErkJggg==" "1160" >}}
 
 That is all. Now it is up to you how you integrate this HTTP request into your external system.
 
-{{< caption "/2020/08/staticsite2.png" "GitHub Actions triggerd by HTTP request"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABRSURBVE3BMRKDQAwEwZGKE/hC8/8vmsBFdtp1kbk7PtflXo1tzvNNZvJPEpLYxijmLCJgtaDFo1sY88gIEsx9f1EvApMBNTZeRzGPnbDYa/ADDKUkNc7Cg+8AAAAASUVORK5CYII=" "933" >}}
+{{< caption-new "/uploads/2020/08/staticsite2.png" "GitHub Actions triggerd by HTTP request"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABRSURBVE3BMRKDQAwEwZGKE/hC8/8vmsBFdtp1kbk7PtflXo1tzvNNZvJPEpLYxijmLCJgtaDFo1sY88gIEsx9f1EvApMBNTZeRzGPnbDYa/ADDKUkNc7Cg+8AAAAASUVORK5CYII=" "933" >}}

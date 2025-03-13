@@ -21,7 +21,7 @@ The extension is powered by the same APIs of the [SharePoint Framework Script Ch
 
 > Check out the VSCode extension: [SPFx Script Check](https://marketplace.visualstudio.com/items?itemName=eliostruyf.spfx-script-check)
 
-{{< caption-legacy "https://github.com/rencore/vscode-spfx-script-checker/blob/master/assets/script-global.gif?raw=true" "Extension demo" >}}
+{{< caption-new "/https://github.com/rencore/vscode-spfx-script-checker/blob/master/assets/script-global.gif?raw=true" "Extension demo" >}}
 
 ## Feedback and issues
 

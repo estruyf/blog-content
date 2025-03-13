@@ -43,23 +43,23 @@ Open the page were you want to put your chart in edit mode.
 
 Insert an Empty Data View by selecting the **Insert Tab** and click on **Data View** -> **Empty Data View**.
 
-{{< caption-legacy "uploads/2012/02/022012_1905_CreateaGoog1.png" "Empty Data View" >}}
+{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog1.png" "Empty Data View" >}}
 
 ### Step 4.
 
 Click on the **Click here to select a data source** link and select the task list you want to use.
 
-{{< caption-legacy "uploads/2012/02/022012_1905_CreateaGoog2.png" "Select your task list" >}}
+{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog2.png" "Select your task list" >}}
 
 ### Step 5.
 
 Now that you have selected the list, the data source connection can be made by selecting some fields (Title and Status) and adding them as **Multiple Item View** to the data view.
 
-{{< caption-legacy "uploads/2012/02/022012_1905_CreateaGoog3.png" "Add items to view" >}}
+{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog3.png" "Add items to view" >}}
 
 The result of your added fields should look something like this (based on which items are in your list).
 
-{{< caption-legacy "uploads/2012/02/022012_1905_CreateaGoog4.png" "Data view result" >}}
+{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog4.png" "Data view result" >}}
 
 ### Step 6.
 
@@ -67,7 +67,7 @@ Now we are going to start by building the chart in XSLT.
 
 Replace the content of the XSLT template with **match="/"** with the following content:
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <!-- Google Chart JavaScript Reference -->
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
@@ -76,7 +76,7 @@ Replace the content of the XSLT template with **match="/"** with the following c
 
 <!-- Create the chart div -->
 <div id="chart_div"></div>
-{{< / highlight >}}
+```
 
 
 ### Step 7.
@@ -84,7 +84,7 @@ Replace the content of the XSLT template with **match="/"** with the following c
 Replace the content of the XSLT template with **name="dvt_1"** with the following content:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:variable name="Rows" select="/dsQueryResponse/Rows/Row"/>
 <xsl:variable name="RowCount" select="count($Rows)"/>
 
@@ -120,7 +120,7 @@ Replace the content of the XSLT template with **name="dvt_1"** with the followin
     }  
   </script>
 ]]></xsl:text>
-{{< / highlight >}}
+```
 
 
 Important in this code are the **<![CDATA[ ]]** sections. These enable you to add/create JavaScript code to the page. More information about the use of **CDATA** can be found [here](http://www.w3schools.com/xml/xml_cdata.asp).
@@ -132,7 +132,7 @@ The code in the previous step creates a call to the **dvt1.body** template. The 
 The content of the **dvt1.body** template needs to be replaced by the following code:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:param name="Rows"/>
 <xsl:param name="FirstRow" />
 <xsl:param name="LastRow" />
@@ -190,7 +190,7 @@ The content of the **dvt1.body** template needs to be replaced by the following 
     </xsl:call-template>
   </xsl:if>
 </xsl:for-each>
-{{< / highlight >}}
+```
 
 
 ### Step 9.
@@ -207,7 +207,7 @@ All other default templates may be removed because they will not be used. Normal
 The last thing that needs to be added is the **GoogleDateRow** template.
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <!-- GoogleDataRow template -->
 <xsl:template name="GoogleDataRow">
   <xsl:param name="fieldvalue" />  
@@ -224,7 +224,7 @@ The last thing that needs to be added is the **GoogleDateRow** template.
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
-{{< / highlight >}}
+```
 
 
 This template adds the data row to the generated JavaScript code.
@@ -233,17 +233,17 @@ This template adds the data row to the generated JavaScript code.
 
 Someone mentioned that only the first ten items are retrieved. This can be change by doing a search for **Name="MaximumRows"**, this will give you the following parameter: 
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <asp:Parameter DefaultValue="10" Name="MaximumRows"></asp:Parameter>
-{{< / highlight >}} 
+``` 
 
 Remove this parameter and you will retrieve all the items.
 
 ## Result
 
-{{< caption-legacy "uploads/2012/02/022012_1905_CreateaGoog5.png" "Pie Chart Result 1" >}}
+{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog5.png" "Pie Chart Result 1" >}}
 
-{{< caption-legacy "uploads/2012/02/022012_1905_CreateaGoog6.png" "Pie Chart Result 2" >}}
+{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog6.png" "Pie Chart Result 2" >}}
 
 ## Download
 

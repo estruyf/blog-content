@@ -32,7 +32,7 @@ The Search Results WebPart is the best option. The Search Results WebPart does t
 
 Indeed there are differences between the Search Results WebPart and the CSWP. The CSWP is made to visualize dynamic data, that makes it's easier to manage the display templates and allows you to change the property mappings.
 
-{{< caption-legacy "uploads/2013/07/072913_1948_Howtousethe1.png" "Property Mappings in the CSWP" >}}
+{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe1.png" "Property Mappings in the CSWP" >}}
 
 > **Note**: to be honest, I never change these property mapping, the only time I do this, is when I'm using the diagnostic display template.
 
@@ -50,7 +50,7 @@ What you wouldn't need is:
 *   Paging
 *   Footer information (preference link, alert me)
 
-{{< caption-legacy "uploads/2013/07/072913_1948_Howtousethe2.png" "Search Results Footer Section" >}}
+{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe2.png" "Search Results Footer Section" >}}
 
 These things can also be hidden by turning of the specific properties in the Search Results. Best is to create a new Control Display Template for the Search Results WebPart, because you will need to add some extra markup in a later step.
 
@@ -58,7 +58,7 @@ These things can also be hidden by turning of the specific properties in the Sea
 
 This is how my cleaned-up Control Display Template looks like:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
 <head>
 <title>Clean Search Results Control</title>
@@ -89,7 +89,7 @@ _#-->
     </div>
 </body>
 </html>
-{{< / highlight >}}
+```
 
 
 ## Item Display Template
@@ -98,7 +98,7 @@ The next step is to create a new Item Display Template. The Item Display Templat
 
 Here is how a cleaned-up version of an Item Display Template looks like:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
 <head>
 <title>Clean Search Results Item</title>
@@ -134,18 +134,18 @@ _#-->
     </div>
 </body>
 </html>
-{{< / highlight >}}
+```
 
 
 ## Are we finished?
 
 Not yet, if you are going to apply these two display templates. The results will look ok, but behind the scenes there is still some unnecessary HTML markup you need to get rid of.
 
-{{< caption-legacy "uploads/2013/07/072913_1948_Howtousethe3.png" "Search Results" >}}
+{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe3.png" "Search Results" >}}
 
 Here is a screenshot of the HTML markup. The unnecessary HTML markup is highlighted in green.
 
-{{< caption-legacy "uploads/2013/07/072913_1948_Howtousethe4.png" "Unnecessary HTML Markup" >}}
+{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe4.png" "Unnecessary HTML Markup" >}}
 
 ## Where does this HTML markup come from?
 
@@ -166,7 +166,7 @@ The one from the Search Results WebPart does the following things:
 
 A cleaned-up version of the Group Template looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
 <head>
 <title>Clean Search Results Group</title>
@@ -196,7 +196,7 @@ _#-->
     </div>
 </body>
 </html>
-{{< / highlight >}}
+```
 
 
 ## How to call another Group Display Template?
@@ -207,7 +207,7 @@ You can easily do this by letting the Search Results WebPart know the new Group 
 
 The final Control Template look like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
 <head>
 <title>Clean Search Results Control</title>
@@ -242,11 +242,11 @@ _#-->
     </div>
 </body>
 </html>
-{{< / highlight >}}
+```
 
 The HTML markup that it renders looks like this:
 
-{{< caption-legacy "uploads/2013/07/072913_1948_Howtousethe5.png" "Clean HTML rendered by the Search Results WP" >}}
+{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe5.png" "Clean HTML rendered by the Search Results WP" >}}
 
 As you see, the unnecessary HTML markup is removed.
 
@@ -258,7 +258,7 @@ To make use of your display templates in the Search Results WebPart, you need to
 *   Select **Use single template to display items**
 *   Item Display Template: your custom item template
 
-{{< caption-legacy "uploads/2013/07/072913_1948_Howtousethe6.png" "Search Result WP property settings" >}}
+{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe6.png" "Search Result WP property settings" >}}
 
 That is all, I hope these cleaned-up version help you with creating your own templates.
 

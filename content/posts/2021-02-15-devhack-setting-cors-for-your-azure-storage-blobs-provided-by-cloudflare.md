@@ -29,6 +29,6 @@ All you need to do to set the CORS headers is to open your Azure Storage Account
 
 For each of the services, you can define the CORS setting individually. In my case, I am only interested in the `blob service`. You can define for which kind of actions you want to pass the CORS headers on this settings page.
 
-{{< caption "/2021/02/cors.png" "CORS Config on Azure Storage"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA3SURBVDXBMRKAIBAEwZlbc/z/JyVGEYvAbq/eVxIEkvBTqSo2leNsjWdO7jHYkiBgFSrrXVjyARdYDRgGlmG2AAAAAElFTkSuQmCC" "1577" >}}
+{{< caption-new "/uploads/2021/02/cors.png" "CORS Config on Azure Storage"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA3SURBVDXBMRKAIBAEwZlbc/z/JyVGEYvAbq/eVxIEkvBTqSo2leNsjWdO7jHYkiBgFSrrXVjyARdYDRgGlmG2AAAAAElFTkSuQmCC" "1577" >}}
 
 Once you set your preferred settings, go back to Cloudflare and purge your cache to see an effect on all the files immediately.

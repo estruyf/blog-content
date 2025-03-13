@@ -48,13 +48,13 @@ Once you made your copy, make changes in your version of the display template. T
 
 The way that this can be achieved is by overriding the property value in which the default hover panel actions display template is stored. Here is the code how you can achieve this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 if (typeof HP === "undefined") {
   SP.SOD.executeFunc("searchui.js", "HP_initialize", function () {
     HP.CommonActions = "~sitecollection/_catalogs/masterpage/SearchDT/Item_CommonHoverPanel_Actions.js";
   });
 }
-{{< / highlight >}}
+```
 
 **HP.CommonActions** is the property that contains the reference to the actions display template. If you override this property with the reference to your display template, it will load your version instead of the default one.
 
@@ -62,7 +62,7 @@ This piece of code can be added in a script editor web part on the page, in a cu
 
 Once you refresh your page, you should see the change to your search hover panel actions:
 
-{{< caption-legacy "uploads/2014/12/121914_0942_Addingandcu1.png" "Modified custom action" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu1.png" "Modified custom action" >}}
 
 In this example I have changed the send action text to **send link**.
 
@@ -83,31 +83,31 @@ In this example I am going to copy the search templates for a Word file:
 
 The first thing to do is changing the title of the template in the **Item_Word.html** file.
 
-{{< caption-legacy "uploads/2014/12/121914_0942_Addingandcu2.png" "Change the title of the item display template" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu2.png" "Change the title of the item display template" >}}
 
 The next thing to change is the location of the copied hover panel display template. This reference is stored in a variable named **hoverUrl**. Find it in your item display template and update it to the location of your version. For example:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Old value
 var hoverUrl = "~sitecollection/_catalogs/masterpage/Display Templates/Search/Item_Word_HoverPanel.js";
 
 // New value
 var hoverUrl = "~sitecollection/_catalogs/masterpage/SearchDT/Item_Word_HoverPanel.js";
-{{< / highlight >}}
+```
 
 Now the item display template is finished, and the custom action can be added to the hover panel template.
 
 In the hover panel display template, you will find an element with the following class: **ms-srch-hover-actions**. The content of element looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div id="_#= $htmlEncode(id + HP.ids.actions) =#_" class="ms-srch-hover-actions">
 	_#= ctx.RenderFooter(ctx) =#_
 </div>
-{{< / highlight >}}
+```
 
 All you need to do is to add your own custom action by adding some additional markup. This can either be added before or after the **ctx.RenderFooter(ctx)** function call. Here is an example of how to add it in front of the default actions:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div id="_#= $htmlEncode(id + HP.ids.actions) =#_" class="ms-srch-hover-actions">
     <div class="ms-srch-hover-action">
         <a href="#" title="Custom action" class="ms-calloutLink ms-uppercase">Custom action</a>
@@ -115,21 +115,21 @@ All you need to do is to add your own custom action by adding some additional ma
 
     _#= ctx.RenderFooter(ctx) =#_
 </div>
-{{< / highlight >}}
+```
 
 The final step is to make a copy of the **result type** (in my example the one for Microsoft Word) and link your display template. This step is necessary in order to make sure that your templates get loaded instead of the default ones.
 
 The copy can be made by going to **Site settings** > **Search Result Types**. Click on **Microsoft Word** (or the result type you want to copy) and click on the copy action:
 
-{{< caption-legacy "uploads/2014/12/121914_0942_Addingandcu3.png" "Copy the result type" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu3.png" "Copy the result type" >}}
 
 A page will open on which you specify your copy of the result type. What you need to change on this page is the template that needs to be used in **Actions** dropdown. In my example this needs to be changed from** Word Item** to **Word Item Modified** (this was the change I made to the title of the item display template).
 
-{{< caption-legacy "uploads/2014/12/121914_0942_Addingandcu4.png" "Change the display template that needs to get loaded" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu4.png" "Change the display template that needs to get loaded" >}}
 
 Once done, you can save your result type. If you go back to your results page, the Word documents results should now have the custom action in place.
 
-{{< caption-legacy "uploads/2014/12/121914_0942_Addingandcu5.png" "Custom action added to the hover panel" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu5.png" "Custom action added to the hover panel" >}}
 
 ### Approach evaluation
 
@@ -151,7 +151,7 @@ You will also need to create a copy of the hover panel actions display template:
 
 The registration part is completely different than the first approach. In this approach I only want to ensure that the hover panel actions display template gets used for my specific item display templates. The approach that I am using is the same as how the default display templates internally are getting loaded onto your page. Here is the code that I am using:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <script>
 Type.registerNamespace('search.hoverpanel');
 
@@ -189,7 +189,7 @@ search.hoverpanel = function () {
   };
 }();
 </script>
-{{< / highlight >}}
+```
 
 This code needs to be added to your item display template inside a script block.
 
@@ -197,28 +197,28 @@ The code contains two functions: **init** and **get**. The **init** function wil
 
 The init function can be called like this in the item display template:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 search.hoverpanel.init();
-{{< / highlight >}}
+```
 
 Once that is in place, you can open the hover panel display template and at the bottom you should find the following HTML markup:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div id="_#= $htmlEncode(id + HP.ids.actions) =#_" class="ms-srch-hover-actions">
   _#= ctx.RenderFooter(ctx) =#_
 </div>
-{{< / highlight >}}
+```
 
 This needs to be changed to the following:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--#_
 var renderFooter = search.hoverpanel.get();
 _#-->
 <div id="_#= $htmlEncode(id + HP.ids.actions) =#_" class="ms-srch-hover-actions">
   _#= renderFooter(ctx) =#_
 </div>
-{{< / highlight >}}
+```
 
 On the second line you are retrieving the display template function from your hover panel actions template (this is needed because the functions in the JavaScript version of the display templates are automatically generated and contain a guid).
 
@@ -226,7 +226,7 @@ To allow that your templates are used in the search center, you need to create a
 
 If you do a new search, you should see your added or modified actions in the hover panel.
 
-{{< caption-legacy "uploads/2014/12/121914_0942_Addingandcu6.png" "Custom action added and modified to the hover panel" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu6.png" "Custom action added and modified to the hover panel" >}}
 
 In my example I added a custom action and updated the send action text.
 
@@ -242,28 +242,28 @@ If you want that your hover panel actions display template is used for various r
 
 The JavaScript code that was added in the script block needs to be moved to an external JavaScript file, and gets replaced by a reference to that file:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <script>
   $includeScript(this.url, "~sitecollection/_catalogs/masterpage/SearchDT/search_hoverpanel.js");
 </script>
-{{< / highlight >}}
+```
 
 The call to the **init** function needs to be changed to this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 search.hoverpanel.init();
-{{< / highlight >}}
+```
 
 The call to the **get** function needs to be changed to this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--#_
 var renderFooter = search.hoverpanel.get();
 _#-->
 <div id="_#= $htmlEncode(id + HP.ids.actions) =#_" class="ms-srch-hover-actions">
     _#= renderFooter(ctx) =#_
 </div>
-{{< / highlight >}}
+```
 
 Once these things have been changed, you should get the same output as from the previous approach. If you want to add these actions to other hover panel templates, the following three actions need to be made:
 
@@ -273,7 +273,7 @@ Once these things have been changed, you should get the same output as from the 
 
 Here is an example of how it looks like when added to the PowerPoint display templates:
 
-{{< caption-legacy "uploads/2014/12/121914_0942_Addingandcu7.png" "Custom action added and modified to the hover panel" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu7.png" "Custom action added and modified to the hover panel" >}}
 
 ## Wrap-up
 

@@ -25,49 +25,49 @@ Another possibility is working with the "If the file type is ..." action, but th
 
 In the following steps I am going to explain you how to create a SPD custom activity. The end result will be:
 
-{{< caption-legacy "uploads/2011/03/033011_1445_Developinga1.png" "New SharePoint Designer Action" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga1.png" "New SharePoint Designer Action" >}}
 
-{{< caption-legacy "uploads/2011/03/033011_1445_Developinga2.png" "Extract File Extension Action" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga2.png" "Extract File Extension Action" >}}
 
-{{< caption-legacy "uploads/2011/03/outcome.png" "Workflow history" >}}
+{{< caption-new "/uploads/2011/03/outcome.png" "Workflow history" >}}
 
 ### Prepare the project
 
 1. Start by creating a new Empty SharePoint Project. I named my project: "estruyf.SPDActivity.GetFileExtension";
-{{< caption-legacy "uploads/2011/03/033011_1445_Developinga3.png" "Create an Empty SharePoint Project" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga3.png" "Create an Empty SharePoint Project" >}}
 2.  Link it to the corresponding SharePoint site, and deploy it as a farm solution;
-{{< caption-legacy "uploads/2011/03/033011_1445_Developinga4.png" "Link the Project to Your SharePoint Site" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga4.png" "Link the Project to Your SharePoint Site" >}}
 3.  Add the following references to your project:
-{{< caption-legacy "uploads/2011/03/033011_1445_Developinga5.png" "Insert the Following References" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga5.png" "Insert the Following References" >}}
 
 ### Start coding
 
 1.  Create a new class and call it "GetFileExtension";
-{{< caption-legacy "uploads/2011/03/033011_1445_Developinga6.png" "Create a New Class" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga6.png" "Create a New Class" >}}
 2.  Make it the class "public" (when this class is not set to public, SharePoint Designer gives an error that the: <classname> is inaccessible due to the protection level);
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 public class GetFileExtension
 {
 
 }
-{{< / highlight >}}
+```
 
 3.  Let your class inherit from the "System.Workflow.ComponentModel.Activity" class;
-{{< caption-legacy "uploads/2011/03/033011_1445_Developinga8.png" "Inherit from the \"System.Workflow.ComponentModel.Activity\" Class" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga8.png" "Inherit from the \"System.Workflow.ComponentModel.Activity\" Class" >}}
 4.  Define the workflow fields that will be used in the SharePoint activity.;
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 // Fields
 public static DependencyProperty __ContextProperty = DependencyProperty.Register("__Context", typeof(WorkflowContext), typeof(GetFileExtension));
 public static DependencyProperty StringValProperty = DependencyProperty.Register("StringVal", typeof(string), typeof(GetFileExtension));
 public static DependencyProperty SubstringVariableProperty = DependencyProperty.Register("SubstringVariable", typeof(string), typeof(GetFileExtension));
-{{< / highlight >}}
+```
 
 The "StringValProperty" will be used as an input value for the document name property. The "SubstringVariableProperty" will be used as an output value that is stored in a workflow variable.
 5.  The next step is to override the "Execute" method;
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 // Methods
  protected override ActivityExecutionStatus Execute(ActivityExecutionContext executionContext)
 {
@@ -89,11 +89,11 @@ The "StringValProperty" will be used as an input value for the document name pro
         }
         return ActivityExecutionStatus.Closed;
 }
-{{< / highlight >}}
+```
 
 6.  The only thing that needs to be added to the code, are the properties that are part of the Activity class.
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 // Properties
 [ValidationOption(ValidationOption.Optional)]
 public WorkflowContext __Context
@@ -133,7 +133,7 @@ public string SubstringVariable
                 base.SetValue(SubstringVariableProperty, value);
         }
 }
-{{< / highlight >}}
+```
 
 
 ### Create the workflow action xml
@@ -143,11 +143,11 @@ When your code file is created, you need to register the action to SharePoint. T
 SharePoint will automatically read the new file and add the custom action into the memory.
 
 1.  Create a mapped folder to the following location: "SharePoint Root/TEMPLATE/Language Code/Workflow";
-{{< caption-legacy "uploads/2011/03/033011_1445_Developinga9.png" "Mapped Folder" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga9.png" "Mapped Folder" >}}
 2.  Add a new XML file to the folder and name it: "GetFileExtension.actions";
 3.  Place the next code block into the Actions file;
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <WorkflowInfo>
     <Actions Sequential="then" Parallel="and">
         <Action Name="Extract the file extension"
@@ -167,7 +167,7 @@ SharePoint will automatically read the new file and add the custom action into t
         </Action>
     </Actions>
 </WorkflowInfo>
-{{< / highlight >}}
+```
 
 If needed change the "Classname" and "Assembly" attributes to your settings.
 Check if the Parameter names are the same as defined in the code file.
@@ -179,11 +179,11 @@ When you deploy your project, you will notice that the custom activity cannot be
 To make this process a little more user friendly, you can create a web application feature event receiver that adds this "web.config" "authorizedType" entry.
 
 1.  Add a new feature to your project;
-{{< caption-legacy "uploads/2011/03/033011_1445_Developinga10.png" "Web Application Feature" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga10.png" "Web Application Feature" >}}
 2.  Add an event receiver to the feature;
 3.  Add the following code block to the "FeatureActivated" method.
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 public override void FeatureActivated(SPFeatureReceiverProperties properties)
 {
         SPWebApplication wappCurrent = (SPWebApplication)properties.Feature.Parent;
@@ -196,7 +196,7 @@ public override void FeatureActivated(SPFeatureReceiverProperties properties)
         wappCurrent.WebConfigModifications.Add(modAuthorizedType);
         wappCurrent.WebService.ApplyWebConfigModifications();
 }
-{{< / highlight >}}
+```
 
 After this step you can deploy your project to SharePoint.
 

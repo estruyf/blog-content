@@ -27,7 +27,7 @@ The library provides a simple caching module that allows you to `get`, `set`, an
 
 **Example**:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import { AzureFunction, Context, HttpRequest } from "@azure/functions";
 import * as NodeCache from 'node-cache';
 
@@ -56,6 +56,6 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
 };
 
 export default httpTrigger;
-{{< / highlight >}}
+```
 
 The code snippet is just a simple example, but this can be very useful. For example, when you want to fetch data and pass this to the function caller. Instead of calling the API each time the function gets invoked, you can now return cached data. It also allows you to specify on a global level or local/key level what the expiration time is. This expiration time is handy to keep your data fresh, but still do not have too many calls.

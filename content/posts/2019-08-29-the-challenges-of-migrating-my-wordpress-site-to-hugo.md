@@ -78,12 +78,12 @@ During my migration, I used the [wordpress-to-hugo-exporter](https://github.com/
 
 Example:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <figure id="attachment_8" aria-describedby="caption-attachment-8" style="width: 300px" class="wp-caption aligncenter">
   [<img class="size-medium wp-image-8" title="SharePoint Sticky Footer Example Image" src="https://www.eliostruyf.com/wp-content/uploads/2010/08/footer1-300x218.jpg" alt="SharePoint Sticky Footer Example Image" width="300" height="218" />][1]
   <figcaption id="caption-attachment-8" class="wp-caption-text">Footer on a OOTB Team Site</figcaption>
 </figure>
-{{< / highlight >}}
+```
 
 In each figure, I had to remove the `[]`, and create the file link myself. As this was to much work for 323 posts, I looked for another solution.
 
@@ -91,19 +91,19 @@ The solution I found was a [Wordpress to Markdown script](https://github.com/yte
 
 Example of the same exported image:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 [caption id="attachment_8" align="aligncenter" width="300" caption="Footer on a OOTB Team Site"]
   [![SharePoint Sticky Footer Example Image]
   (https://www.eliostruyf.com/wp-content/uploads/2010/08/footer1-300x218.jpg "SharePoint Sticky Footer Example Image")]
   (https://www.eliostruyf.com/wp-content/uploads/2010/08/footer1.jpg)
 [/caption]
-{{< / highlight >}}
+```
 
 In my Hugo theme I created a shortcode which only needs the image URL and alt description to render the actual figure HTML output. This is what it looks like:
 
-{{< highlight go "linenos=table,noclasses=false" >}}
+```go
 < caption "uploads/2010/08/footer1.jpg" "Footer on a OOTB Team Site" >
-{{< / highlight >}}
+```
 
 Besides the images, all the code blocks had to be updated to use the Hugo code block syntax. These changes had to be done for all 323 posts. 
 
@@ -120,7 +120,7 @@ This VSCode extension saved me a lot of time. What took me first 5 minutes per p
 
 Another thing which helped me during the theme migration was an element which I added at the top of my post to navigate to the next page and the original page on Wordpress. This way I could easily compare both pages.
 
-{{< caption "/2019/08/migrate-to-hugo1.png" "Example of the next and original page navigation"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA7SURBVF3BSw5AUBBFwdOvPy9i/2s0YygR7TJWZdt+iE+GY2ZIwsfgkUAgREUQV99kJmc3SxXrnPy5GS8DPRMJfcGqOQAAAABJRU5ErkJggg==" "782" >}}
+{{< caption-new "/uploads/2019/08/migrate-to-hugo1.png" "Example of the next and original page navigation"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA7SURBVF3BSw5AUBBFwdOvPy9i/2s0YygR7TJWZdt+iE+GY2ZIwsfgkUAgREUQV99kJmc3SxXrnPy5GS8DPRMJfcGqOQAAAABJRU5ErkJggg==" "782" >}}
 
 ### Comments
 
@@ -144,25 +144,25 @@ Once the new indexer was created, all I had to do was copy my old AngularJS scri
 
 Once I had everything in place, it was time to go live. I created an Azure Storage Account, pushed my files (via Azure DevOps), created my CDN with a custom domain and the waiting game could begin.
 
-{{< caption "/2019/08/migrate-to-hugo2.png" "Waiting for the SSL provisioning on the CDN"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABVSURBVH3BMQ4CMQxFwfdXdhyLivtfMKKhitLZKwo6xIzWWp2ZuDuZyS/v88Iigr0313VRVUhCEnNOvrqfWETg7nxIoqqQxDmH7kYSDw9MEmbGGIN/blcIGDwzeBtmAAAAAElFTkSuQmCC" "681" >}}
+{{< caption-new "/uploads/2019/08/migrate-to-hugo2.png" "Waiting for the SSL provisioning on the CDN"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABVSURBVH3BMQ4CMQxFwfdXdhyLivtfMKKhitLZKwo6xIzWWp2ZuDuZyS/v88Iigr0313VRVUhCEnNOvrqfWETg7nxIoqqQxDmH7kYSDw9MEmbGGIN/blcIGDwzeBtmAAAAAElFTkSuQmCC" "681" >}}
 
 This process takes between 6-8 hours. All you can do during these hours is ... waiting ... and pressing `f5`. Once the SSL certificate is deployed, the waiting game is over and you can finally check out your site. 
 
 Which unfortunately didn't render as expected for everyone.
 
-{{< caption "/2019/08/migrate-to-hugo4.png" "No styles loaded"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAOCAYAAAAWo42rAAAAAklEQVR4AewaftIAAADaSURBVI3BwU6DQBRA0fseE8CQoYkmJJ0uXNCf6P8v+g+uMI02XRgxTYvA9KFuTaWeI89PB0MQ5xKWj/eICFdMrnzIxWxCBIZhIMsyrhB9/3jj/Hmk8HfMcSEE0jRFRJijMUZEhFuUf9Ku6zAzblHvPcf2zDhG5miMkZfXkd2uY45+QxJl6A2zib+4PM9ZLh2Xy4QZqHKV2263/CjLkqbpiTHS9z3ee5Ik4XQ6UVUVulqtaNuWLMswM0SEEAIiQlEUbDYb6rrG7ff7qa5raZqGxWKBqrJer/ll+gKcCVJ5DW7M4AAAAABJRU5ErkJggg==" "352" >}}
+{{< caption-new "/uploads/2019/08/migrate-to-hugo4.png" "No styles loaded"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAOCAYAAAAWo42rAAAAAklEQVR4AewaftIAAADaSURBVI3BwU6DQBRA0fseE8CQoYkmJJ0uXNCf6P8v+g+uMI02XRgxTYvA9KFuTaWeI89PB0MQ5xKWj/eICFdMrnzIxWxCBIZhIMsyrhB9/3jj/Hmk8HfMcSEE0jRFRJijMUZEhFuUf9Ku6zAzblHvPcf2zDhG5miMkZfXkd2uY45+QxJl6A2zib+4PM9ZLh2Xy4QZqHKV2263/CjLkqbpiTHS9z3ee5Ik4XQ6UVUVulqtaNuWLMswM0SEEAIiQlEUbDYb6rrG7ff7qa5raZqGxWKBqrJer/ll+gKcCVJ5DW7M4AAAAABJRU5ErkJggg==" "352" >}}
 
 I checked it myself via various browsers, VPN connections, Azure VMs, ... Until I saw this appearing:
 
-{{< caption "/2019/08/migrate-to-hugo5.png" "The account being accessed does not support HTTP"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA6SURBVD3BwQGAIAwEwSUEPOm/TkHiP750pqx1ZzxBAaQTq0ZmUs3I5OfSwZwX7k7EpveOJFprjDH4vOh7EfEhQ9AFAAAAAElFTkSuQmCC" "569" >}}
+{{< caption-new "/uploads/2019/08/migrate-to-hugo5.png" "The account being accessed does not support HTTP"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA6SURBVD3BwQGAIAwEwSUEPOm/TkHiP750pqx1ZzxBAaQTq0ZmUs3I5OfSwZwX7k7EpveOJFprjDH4vOh7EfEhQ9AFAAAAAElFTkSuQmCC" "569" >}}
 
 Searching the www the only thing I found was that there is an issue on Azure CDN with custom domains and SSL if you used the Akamai tier. That was, of course, the one I was using, so to give it a try, I removed my CDN, and created another one for which I used Verizon this time.
 
-{{< caption "/2019/08/migrate-to-hugo3.png" "Again the waiting game started..."  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAnSURBVGN88+bNf15eXgZWVlYGGPj+/TsDBwcHAwh8//6dgZmZmQEA5PQJ5pVQ3sYAAAAASUVORK5CYII=" "1046" >}}
+{{< caption-new "/uploads/2019/08/migrate-to-hugo3.png" "Again the waiting game started..."  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAnSURBVGN88+bNf15eXgZWVlYGGPj+/TsDBwcHAwh8//6dgZmZmQEA5PQJ5pVQ3sYAAAAASUVORK5CYII=" "1046" >}}
 
 The next day, the site was live, but still, the same issue appeared. After fiddling with a lot of settings, I suddenly thought of the CDN caching options of Cloudflare (which I use for my DNS).
 
-{{< caption "/2019/08/migrate-to-hugo6.png" "Cloudflare caching"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABfSURBVDXBMQ7CMAxA0W87lpKxUxlYEZyg6v0nrsDUtUiZmDIEFzL0Pam1HqUU3B1RJZlx+kYwCJD+aK3Re0dEcHcGM+P52tneHx7XiZRzJiIwM1SVk6qy3i8st5kD+AFBuxeqNvtPkQAAAABJRU5ErkJggg==" "1037" >}}
+{{< caption-new "/uploads/2019/08/migrate-to-hugo6.png" "Cloudflare caching"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABfSURBVDXBMQ7CMAxA0W87lpKxUxlYEZyg6v0nrsDUtUiZmDIEFzL0Pam1HqUU3B1RJZlx+kYwCJD+aK3Re0dEcHcGM+P52tneHx7XiZRzJiIwM1SVk6qy3i8st5kD+AFBuxeqNvtPkQAAAABJRU5ErkJggg==" "1037" >}}
 
 Once I purged the cache from Cloudflare all was working correctly, so it appeared that it had already cached responses from when the SSL provisioning was going on. During that time, my site was not available. So if you go through the same process, don't forget to push this purging button before you yell that your site has been moved.
 

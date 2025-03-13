@@ -27,7 +27,7 @@ The first thing you'll need to do, is creating a new HTML file in the Master Pag
 
 The content to start with looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
 <head>
 <title>Custom Refinement</title>
@@ -49,13 +49,13 @@ The content to start with looks like this:
     </div>
 </body>
 </html>
-{{< / highlight >}}
+```
 
 Once you save this template the JavaScript file gets created and the template will be visible in refinement configuration panel.
 
 For this post I set my refinement panel to use my custom template with the **Brand** result type, but you can use the result type you like.
 
-{{< caption-legacy "uploads/2013/10/102013_1616_Part1Create1.png" "Refiner Settings" >}}
+{{< caption-new "/uploads/2013/10/102013_1616_Part1Create1.png" "Refiner Settings" >}}
 
 ## Important Display Template Property
 
@@ -71,10 +71,10 @@ The values that can be applied are the following:
 
 The values need the following prefix and suffix: ";#". Examples:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:CompatibleSearchDataTypes msdt:dt="string">;#Text;#</mso:CompatibleSearchDataTypes>
 <mso:CompatibleSearchDataTypes msdt:dt="string">;#Text;#Integer;#Decimal;#DateTime;#YesNo;#</mso:CompatibleSearchDataTypes>
-{{< / highlight >}}
+```
 
 
 ### Show the Refiner Title
@@ -83,7 +83,7 @@ At the moment, the custom refiner control template won't show anything. This is 
 
 To show the refiner title, you need to add some JavaScript and HTML mark-up to the template. The mark-up that you need to add looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--#_
   // Needed objects
   var listData = ctx.ListData;
@@ -108,13 +108,13 @@ _#-->
     }
   }
 _#-->
-{{< / highlight >}}
+```
 
 The mark-up can be added inside the **DropdownRefinement** block. The mark-up contains some objects like **ctx.ListData** which contains all the refiners for the current results.
 
 The **Srch.U.collapsibleRefinerTitle** function is used to display the collapsible refiner title.
 
-{{< caption-legacy "uploads/2013/10/102013_1616_Part1Create2.png" "Refiner Title" >}}
+{{< caption-new "/uploads/2013/10/102013_1616_Part1Create2.png" "Refiner Title" >}}
 
 If you don't want to have this, you can remove the function call and display the refinement name instead: **refinerCatTitle**.
 
@@ -124,15 +124,15 @@ The next step is to show the refiner values of the current search results. The a
 
 To visualize these refinement items you need to add two arrays (the selected one will be used in the next post), one array for the unselected refiners, and one for the selected refiners.
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // (un)selected filter arrays
 var unselectedFilters = new Array();
 var selectedFilters = new Array();
-{{< / highlight >}}
+```
 
 The following piece of code is used to fill the arrays with the values it retrieved.
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Fill the arrays with refinement values
 for (var i = 0; i < listData.length; i++){
   var filter = listData[i];
@@ -148,11 +148,11 @@ for (var i = 0; i < listData.length; i++){
     }
   }
 }
-{{< / highlight >}}
+```
 
 Currently only the unselected items array will be used. To visualize the refinement items from the unselected array, you can add an unselected section block to the **Container** element. In this unselected block a loop need to be created that enumerates all refinement items. The refinement items will be visualized by calling another function **ShowRefiner**.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div id='UnselectedSection' class='ms-ref-unselSec' style='display:_#= $htmlEncode(displayStyle) =#_'>
 <!--#_
   for (var i = 0; i < unselectedFilters.length; i++) {
@@ -165,11 +165,11 @@ Currently only the unselected items array will be used. To visualize the refinem
   }
 _#--> 
 </div>
-{{< / highlight >}}
+```
 
 The **ShowRefiner** function looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--#_
   function ShowRefiner(refinementName, refinementCount) {
     // Check if the refinement contains results
@@ -180,17 +180,17 @@ _#-->
     }
   }
 _#-->
-{{< / highlight >}}
+```
 
 The end result of this part is just an enumeration of all the refinement values.
 
-{{< caption-legacy "uploads/2013/10/refiner2.png" "Refiner values" >}}
+{{< caption-new "/uploads/2013/10/refiner2.png" "Refiner values" >}}
 
 ## Adding Total Items per Refinement Value
 
 If you want to add the total of items per refiner, you can modify the **ShowRefiner** function by adding the **refinementCount** variable to the output.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--#_
   function ShowRefiner(refinementName, refinementCount) {
     // Check if the refinement contains results
@@ -201,9 +201,9 @@ _#-->
     }
   }
 _#-->
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2013/10/refiners.png" "Refiner values with total items per refiner" >}}
+{{< caption-new "/uploads/2013/10/refiners.png" "Refiner values with total items per refiner" >}}
 
 ## Part 2
 

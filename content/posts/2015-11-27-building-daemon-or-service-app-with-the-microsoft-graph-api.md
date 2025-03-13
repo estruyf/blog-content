@@ -30,23 +30,23 @@ To create a self-signed certificate you can make use of the **makecert.exe** too
 *   Locate the **makecert.exe** tool on your computer. If you have Visual Studio installed, you can run it from the Visual Studio command prompt. Or if you have Fiddler installed, you find it in the Fiddler program folder. When you have neither of these installed, you can get it from the Windows SDK: [MakeCert](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386968(v=vs.85).aspx "MakeCert");
 *   Once you have located the makecert tool, execute the following command:
 
-{{< highlight default "linenos=table,noclasses=false" >}}
+```default
 makecert -r -pe -n "CN=CompanyName AppName Cert" -b 11/25/2015 -e 11/25/2017 -ss my -len 2048
-{{< / highlight >}}
+```
 
 *   Once the certificate is created, you have to open the Microsoft Management Console. Easiest way is with the **mmc.exe** command;
 *   Open the Current User's certificate folder via: File > Add/Remove snap-in > Click on certificates > choose **My user account** and click Finish > click OK;
 
-{{< caption-legacy "uploads/2015/11/image_thumb3.png" "My user account certificates" >}}
+{{< caption-new "/uploads/2015/11/image_thumb3.png" "My user account certificates" >}}
 
 *   Find the certificate you created in the list;
 
-{{< caption-legacy "uploads/2015/11/snip_20151126090355_thumb.png" "The certificate I created" >}}
+{{< caption-new "/uploads/2015/11/snip_20151126090355_thumb.png" "The certificate I created" >}}
 
 *   Export the certificate as **PFX** and **CER** by right clicking on the certificate > All Tasks > Export;
 *   Go through the export wizard and choose **Yes, export the private key** > Next > Check the password checkbox and fill in a password for the PFX;
 
-{{< caption-legacy "uploads/2015/11/snip_20151126090910_thumb.png" "Insert a password for your certificate" >}}
+{{< caption-new "/uploads/2015/11/snip_20151126090910_thumb.png" "Insert a password for your certificate" >}}
 
 *   Choose the location to store the PFX file and click finish;
 *   Repeat the same steps, but choose in the export wizard **No, do not export the private key **and complete the wizard;
@@ -64,15 +64,15 @@ Follow the next steps to create a new Azure AD application:
 *   On the **Applications** tab, click on the **ADD** button;
 *   In the dialog window choose to **Add an application my organization is developing**;
 
-{{< caption-legacy "uploads/2015/11/snip_20151126093137_thumb.png" "Add a new application" >}}
+{{< caption-new "/uploads/2015/11/snip_20151126093137_thumb.png" "Add a new application" >}}
 
 *   Give your application a name;
 
-{{< caption-legacy "uploads/2015/11/snip_20151126093352_thumb.png" "Application name" >}}
+{{< caption-new "/uploads/2015/11/snip_20151126093352_thumb.png" "Application name" >}}
 
 *   Specify the sign-on URL and APP ID URI;
 
-{{< caption-legacy "uploads/2015/11/snip_20151126114150_thumb.png" "Sign-on URL and APP ID URI" >}}
+{{< caption-new "/uploads/2015/11/snip_20151126114150_thumb.png" "Sign-on URL and APP ID URI" >}}
 
 > **Note**: The sign-on URL does not matter in this case, because you will use a certificate to get the access token. I entered  the Azure Web App URL where the WebJob is going to run.
 
@@ -85,15 +85,15 @@ Now that the Azure AD application is created, it is time to set the application 
 *   Click on the **Configure** tab of your application;
 *   Scroll to the bottom of the page and click on the **Add application**;
 
-{{< caption-legacy "uploads/2015/11/snip_20151126152137_thumb.png" "Permissions to other applications" >}}
+{{< caption-new "/uploads/2015/11/snip_20151126152137_thumb.png" "Permissions to other applications" >}}
 
 *   Add the **Microsoft Graph **by clicking on the plus button and store this configuration;
 
-{{< caption-legacy "uploads/2015/11/snip_20151126152213_thumb.png" "Add Microsoft Graph to the permissions list" >}}
+{{< caption-new "/uploads/2015/11/snip_20151126152213_thumb.png" "Add Microsoft Graph to the permissions list" >}}
 
 *   Once the Microsoft Graph has been added to the list of permissions to other applications. Click on the **application permissions** dropdown and select your required set of permissions for your application;
 
-{{< caption-legacy "uploads/2015/11/snip_20151126152528_thumb.png" "Give the required set of permissions" >}}
+{{< caption-new "/uploads/2015/11/snip_20151126152528_thumb.png" "Give the required set of permissions" >}}
 
 *   Click on the **save** button at the bottom of the page to store your configuration.
 
@@ -101,7 +101,7 @@ Now that the Azure AD application is created, it is time to set the application 
 
 The next step is to configure your certificate public key in the Azure AD manifest. First of all you need to retrieve the keys. [Richard diZerega](https://twitter.com/richdizz "Richard diZerega") created a PowerShell script for this on his blog:
 
-{{< highlight default "linenos=table,noclasses=false" >}}
+```default
 $certPath = Read-Host "Enter certificate path (.cer)"
 $cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
 $cert.Import($certPath)
@@ -113,15 +113,15 @@ $KeyId = [System.Guid]::NewGuid().ToString()
 Write-Host "base64Cert:" $base64Cert
 Write-Host "base64CertHash:" $base64CertHash
 Write-Host "KeyId:" $KeyId
-{{< / highlight >}}
+```
 
 Once you have the **base64Cert**, **base64CertHash** and **KeyId** value, go back to your Azure AD application and download the manifest file:
 
-{{< caption-legacy "uploads/2015/11/snip_20151126160723_thumb.png" "Download Manifest file" >}}
+{{< caption-new "/uploads/2015/11/snip_20151126160723_thumb.png" "Download Manifest file" >}}
 
 Open the manifest file, and replace the **keyCredentials** property with the following value:
 
-{{< highlight default "linenos=table,noclasses=false" >}}
+```default
 "keyCredentials": [
     {
         "customKeyIdentifier": "base64CertHash",
@@ -131,7 +131,7 @@ Open the manifest file, and replace the **keyCredentials** property with the fol
         "value":  "base64Cert"
     }
 ],
-{{< / highlight >}}
+```
 
 > **Important**: update the **base64Cert**, **base64CertHash** and **KeyId** value in this JSON string.
 When you updated the manifest file, upload it to the Azure AD application. Now you can almost start building your application.
@@ -142,7 +142,7 @@ I created the service application as a Azure WebJob, this makes scheduling of th
 
 To configure a certificate on an Azure Web App, it should be scaled to the basic or standard tier.
 
-{{< caption-legacy "uploads/2015/11/snip_20151127115443_thumb.png" "Switching to basic tier" >}}
+{{< caption-new "/uploads/2015/11/snip_20151127115443_thumb.png" "Switching to basic tier" >}}
 
 > **Note**: the whole certificate configuration process is explained on the following Azure documentation page: [Using Certificates in Azure Websites Applications](https://azure.microsoft.com/en-us/blog/using-certificates-in-azure-websites-applications/ "Using Certificates in Azure Websites Applications").
 
@@ -150,11 +150,11 @@ To configure a certificate on an Azure Web App, it should be scaled to the basic
 
 Once you uploaded the certificate to your Azure Web App, it should look like this:
 
-{{< caption-legacy "uploads/2015/11/snip_20151127115912_thumb.png" "Uploading your certificate" >}}
+{{< caption-new "/uploads/2015/11/snip_20151127115912_thumb.png" "Uploading your certificate" >}}
 
 > **Important**: Now there is one thing before you can start building your app. In order to be able to retrieve the certificate for your application, you have to make it accessible by adding an app setting: **WEBSITE_LOAD_CERTIFICATES** with the certificate **Thumbprint** value (you could also use "*").
 
-{{< caption-legacy "uploads/2015/11/snip_20151127120442_thumb.png" "WEBSITE_LOAD_CERTIFICATES setting" >}}
+{{< caption-new "/uploads/2015/11/snip_20151127120442_thumb.png" "WEBSITE_LOAD_CERTIFICATES setting" >}}
 
 Once this is added, you are ready to start developing.
 
@@ -162,11 +162,11 @@ Once this is added, you are ready to start developing.
 
 If you already have a Visual Studio web project, you can add the Azure WebJob project when you right-click on your web project > **New Azure WebJob Project**.
 
-{{< caption-legacy "uploads/2015/11/image_thumb4.png" "New Azure WebJob project" >}}
+{{< caption-new "/uploads/2015/11/image_thumb4.png" "New Azure WebJob project" >}}
 
 Another way to start is by creating a console application. Once you are finished you can publish it by right-clicking on the project > **Publish as Azure WebJob**. This is the method I used for this blog post.
 
-{{< caption-legacy "uploads/2015/11/snip_20151127121350_thumb.png" "Publish a application as an Azure WebJob" >}}
+{{< caption-new "/uploads/2015/11/snip_20151127121350_thumb.png" "Publish a application as an Azure WebJob" >}}
 
 > **Note**: more information about this can be found here: [Deploy WebJobs using Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/websites-dotnet-deploy-webjobs/ "Deploy WebJobs using Visual Studio").
 
@@ -174,7 +174,7 @@ Another way to start is by creating a console application. Once you are finished
 
 The first thing you need when you start building your application is to retrieve the certificate. This can be done as follows:
 
-{{< highlight default "linenos=table,noclasses=false" >}}
+```default
 private static X509Certificate2 GetCertificate()
 {
     X509Certificate2 certificate = null;
@@ -189,7 +189,7 @@ private static X509Certificate2 GetCertificate()
     certStore.Close();
     return certificate;
 }
-{{< / highlight >}}
+```
 
 > **Note**: this piece of code requires the **Thumbprint** of your certificate in order to find it.
 
@@ -197,7 +197,7 @@ private static X509Certificate2 GetCertificate()
 
 Once you acquired the certificate in by code. Your next step is to retrieve an access token to call the Microsoft Graph API. Here is the code to retrieve an access token:
 
-{{< highlight default "linenos=table,noclasses=false" >}}
+```default
 private static async Task<string> GetAccessToken(X509Certificate2 certificate)
 {
     var authenticationContext = new AuthenticationContext(Authority, false);
@@ -205,7 +205,7 @@ private static async Task<string> GetAccessToken(X509Certificate2 certificate)
     var authenticationResult = await authenticationContext.AcquireTokenAsync(GraphUrl, cac);
     return authenticationResult.AccessToken;
 }
-{{< / highlight >}}
+```
 
 > **Note 1**: this code requires the following NuGet package to be installed to your project: Microsoft.IdentityModel.Clients.ActiveDirectory.
 
@@ -215,7 +215,7 @@ private static async Task<string> GetAccessToken(X509Certificate2 certificate)
 
 Now that we have an access token, you are finally able to do calls against the Microsoft Graph API. Here is an example of how you can retrieve events:
 
-{{< highlight default "linenos=table,noclasses=false" >}}
+```default
 var client = new RestClient(GraphUrl);
 var request = new RestRequest("/v1.0/users/{UserId or UserPrincipleName}/Events", Method.GET);
 request.AddHeader("Authorization", "Bearer " + token.Result);
@@ -224,14 +224,14 @@ request.AddHeader("Accept", "application/json");
 
 var response = client.Execute(request);
 var content = response.Content;
-{{< / highlight >}}
+```
 
 > **Note 1**: this code is created with the **RestSharp** client, which can be installed from NuGet.
 
 > **Note 2**: you have to specify the user's ID or Principle Name in order to retrieve the events.
 Once you have this, you can start adding your own calls and logic. The last thing that remains is publishing WebJob project to Azure and you are done.
 
-{{< caption-legacy "uploads/2015/11/snip_20151127130142_thumb.png" "WebJob result in Azure" >}}
+{{< caption-new "/uploads/2015/11/snip_20151127130142_thumb.png" "WebJob result in Azure" >}}
 
 ## Demo application code
 

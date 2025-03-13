@@ -19,7 +19,7 @@ During the Corona crisis, most of us had to work from home. One of the devices I
 
 These actions can be different things like switching scenes, cameras, hotkeys/shortcuts, and many more.
 
-{{< caption "/2020/05/elgato1.jpg" "Stream Deck buttons configured for my daily work"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APy1/aV+Jngnwt8TPGNh40srfxA2k+N/Htpreizy/tA3via61HZPp1rc6sbAnwvb6hY6qJluYtNv7ZY2ivYZYFgdIZ/2irPh6vleAwuU4XCZfnPJOWMzfiZZpWyPkjhsI6ap0eHZ180dSpUp4xUWsLUhHEV8JKtbDxruGUsnWGyVY7C8W5DiczxFdVHk2MwmerEYKEp0PaUJVYZLh8BKMKU6qpeyx1eXtKNVzqVISoup4npHgn9qHxBpOl694b+CfxZfw9renWWr6C8Vj41ETaLqVtFeaW0YdWYRtYzQFAzMwUgFicmvzermmPpValJSdZUqk6arYaVaOGqqEnH2mHWIprEKhO3NSVdKsqbiqqU+ZExy6DjF1Pqzm4pzcab5XNq8nHmalyt3tzJSturn/9k=" "700" >}}
+{{< caption-new "/uploads/2020/05/elgato1.jpg" "Stream Deck buttons configured for my daily work"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APy1/aV+Jngnwt8TPGNh40srfxA2k+N/Htpreizy/tA3via61HZPp1rc6sbAnwvb6hY6qJluYtNv7ZY2ivYZYFgdIZ/2irPh6vleAwuU4XCZfnPJOWMzfiZZpWyPkjhsI6ap0eHZ180dSpUp4xUWsLUhHEV8JKtbDxruGUsnWGyVY7C8W5DiczxFdVHk2MwmerEYKEp0PaUJVYZLh8BKMKU6qpeyx1eXtKNVzqVISoup4npHgn9qHxBpOl694b+CfxZfw9renWWr6C8Vj41ETaLqVtFeaW0YdWYRtYzQFAzMwUgFicmvzermmPpValJSdZUqk6arYaVaOGqqEnH2mHWIprEKhO3NSVdKsqbiqqU+ZExy6DjF1Pqzm4pzcab5XNq8nHmalyt3tzJSturn/9k=" "700" >}}
 
 Before I bought it, I read and saw a couple of reviews. As I am not a gamer/streamer, I wanted to make sure it would be a useful device to put on my desk. Many of these reviews focus on the device its primary intention and are maybe a bit too positive. That is why I wanted to make a review myself from a none streaming background and using it on macOS.
 
@@ -27,15 +27,15 @@ Before I bought it, I read and saw a couple of reviews. As I am not a gamer/stre
 
 One of the best things is the device its customizability. You can specify what each of these buttons is doing via the Stream Deck application.
 
-{{< caption "/2020/05/elgato2.png" "Stream Deck application interface"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAACySURBVG3BMUoDQRiG4fff749ICpFsCsUmkBPkGIIn8XZWXsHCwksEVkR2C5nZYSYZHY1g4fPYzfXV/apf385zopELA8rhgGFYZ4zj+Oh02vlicddvNgQJq0eIMz4MuDtNCGHo+FJKYVnXXIYL4vkH8yrS1FqRROOcbN/29GdLXt7F6xwpAjMj50zjnDzFASI/xDd3J+dM0/GHJCTxK5Ujkiil4NM0PcQY9/yj1ookUkrPn52VR6C4ZKHYAAAAAElFTkSuQmCC" "1269" >}}
+{{< caption-new "/uploads/2020/05/elgato2.png" "Stream Deck application interface"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAACySURBVG3BMUoDQRiG4fff749ICpFsCsUmkBPkGIIn8XZWXsHCwksEVkR2C5nZYSYZHY1g4fPYzfXV/apf385zopELA8rhgGFYZ4zj+Oh02vlicddvNgQJq0eIMz4MuDtNCGHo+FJKYVnXXIYL4vkH8yrS1FqRROOcbN/29GdLXt7F6xwpAjMj50zjnDzFASI/xDd3J+dM0/GHJCTxK5Ujkiil4NM0PcQY9/yj1ookUkrPn52VR6C4ZKHYAAAAAElFTkSuQmCC" "1269" >}}
 
 The application allows other products/applications to integrate their actions, such as OBS Studio and many others.
 
-{{< caption "/2020/05/elgato3.png" "External application integrations"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAADgSURBVHXBPU4CURSG4ffcnJk7gwJ29kBhrYtwBa7A5bkMY+kS7CRWoAYkOfNzPzMFiY3PY1fz+f1svniQhJmxWC7oogMDFTHZ7XdPXrft7WazfjydTnRdR0qJJmfOcs4cj4e3NJu1rDYrSilIYhIRRAQRQUQgCR++vvl5fiEtl7g7dV1jZkjCzDAzJOFj23JYr4ntlokkIoKzqqqYeOk62H9iZkjCzGiaBkmUUkgpYWb4RRHXgg8z+r5nGAb+yjkzScfKeV9cMo4j7o6785ck3B1z95uqqu74R0qJvu9ffwHr/2hZSe9PiQAAAABJRU5ErkJggg==" "952" >}}
+{{< caption-new "/uploads/2020/05/elgato3.png" "External application integrations"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAADgSURBVHXBPU4CURSG4ffcnJk7gwJ29kBhrYtwBa7A5bkMY+kS7CRWoAYkOfNzPzMFiY3PY1fz+f1svniQhJmxWC7oogMDFTHZ7XdPXrft7WazfjydTnRdR0qJJmfOcs4cj4e3NJu1rDYrSilIYhIRRAQRQUQgCR++vvl5fiEtl7g7dV1jZkjCzDAzJOFj23JYr4ntlokkIoKzqqqYeOk62H9iZkjCzGiaBkmUUkgpYWb4RRHXgg8z+r5nGAb+yjkzScfKeV9cMo4j7o6785ck3B1z95uqqu74R0qJvu9ffwHr/2hZSe9PiQAAAABJRU5ErkJggg==" "952" >}}
 
 Another great functionality is the ability to create profiles. You can use these profiles for specific applications. For instance, for *Photoshop*, automatically show all your *Photoshop* shortcuts.
 
-{{< caption "/2020/05/elgato4.png" "Stream Deck profiles per application"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACZSURBVH3BPU7DQBCA0W9m7cXClE5Ll5ISiUNwCLpcKzfhABGHoEBKh5t40f7MEBfuorwn4zi+7abpw90ZhoGUErhjZmx+5/nY9Q+PL8P+/VCaE/M3T39nNiJCa41LSl8dVpGfTyLQVMiqqCqh76mlYGa4Ox044KwEIcaIqlJKwcyotbLquBIR3J3VsizcIiGE5xjjK3fknE//nsNBmqR5emQAAAAASUVORK5CYII=" "824" >}}
+{{< caption-new "/uploads/2020/05/elgato4.png" "Stream Deck profiles per application"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACZSURBVH3BPU7DQBCA0W9m7cXClE5Ll5ISiUNwCLpcKzfhABGHoEBKh5t40f7MEBfuorwn4zi+7abpw90ZhoGUErhjZmx+5/nY9Q+PL8P+/VCaE/M3T39nNiJCa41LSl8dVpGfTyLQVMiqqCqh76mlYGa4Ox044KwEIcaIqlJKwcyotbLquBIR3J3VsizcIiGE5xjjK3fknE//nsNBmqR5emQAAAAASUVORK5CYII=" "824" >}}
 
 ## The bad
 
@@ -61,7 +61,7 @@ Something else that bothered me was the integration with the Elgato Key Lights. 
 
 As I wanted to check what was going on, I started checking the API calls the Control Center application performed. 
 
-{{< caption "/2020/05/elgato5.png" "Key Light API calls"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAABySURBVH3BwQ2EMBAEwZ4Vxt4ICIT84yEAJIQAj9E9+F6V1nUdmcm2bXyWZWHfd1przPOMbaYxBraRxMc2kui903vHNlFKITPJTCQREdRaiQhKKbTWqLUy3ffNeZ4cx8GPJK7r4nkeIoKIwDYhiX8kIYkXSzIu6wjT63QAAAAASUVORK5CYII=" "544" >}}
+{{< caption-new "/uploads/2020/05/elgato5.png" "Key Light API calls"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAABySURBVH3BwQ2EMBAEwZ4Vxt4ICIT84yEAJIQAj9E9+F6V1nUdmcm2bXyWZWHfd1przPOMbaYxBraRxMc2kui903vHNlFKITPJTCQREdRaiQhKKbTWqLUy3ffNeZ4cx8GPJK7r4nkeIoKIwDYhiX8kIYkXSzIu6wjT63QAAAAASUVORK5CYII=" "544" >}}
 
 That is when I saw the application was calling each light its API every 10ms. At that point, I decided to write a plugin myself, which does what I want it to do and not have to run additional applications.
 
@@ -77,7 +77,7 @@ I wanted to have the following actions:
 - Microsoft Teams microphone and camera controls
 - Other light controls in my office
 
-{{< caption "/2020/05/elgato1.jpg" "Stream Deck buttons configured for my daily work"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APy1/aV+Jngnwt8TPGNh40srfxA2k+N/Htpreizy/tA3via61HZPp1rc6sbAnwvb6hY6qJluYtNv7ZY2ivYZYFgdIZ/2irPh6vleAwuU4XCZfnPJOWMzfiZZpWyPkjhsI6ap0eHZ180dSpUp4xUWsLUhHEV8JKtbDxruGUsnWGyVY7C8W5DiczxFdVHk2MwmerEYKEp0PaUJVYZLh8BKMKU6qpeyx1eXtKNVzqVISoup4npHgn9qHxBpOl694b+CfxZfw9renWWr6C8Vj41ETaLqVtFeaW0YdWYRtYzQFAzMwUgFicmvzermmPpValJSdZUqk6arYaVaOGqqEnH2mHWIprEKhO3NSVdKsqbiqqU+ZExy6DjF1Pqzm4pzcab5XNq8nHmalyt3tzJSturn/9k=" "700" >}}
+{{< caption-new "/uploads/2020/05/elgato1.jpg" "Stream Deck buttons configured for my daily work"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APy1/aV+Jngnwt8TPGNh40srfxA2k+N/Htpreizy/tA3via61HZPp1rc6sbAnwvb6hY6qJluYtNv7ZY2ivYZYFgdIZ/2irPh6vleAwuU4XCZfnPJOWMzfiZZpWyPkjhsI6ap0eHZ180dSpUp4xUWsLUhHEV8JKtbDxruGUsnWGyVY7C8W5DiczxFdVHk2MwmerEYKEp0PaUJVYZLh8BKMKU6qpeyx1eXtKNVzqVISoup4npHgn9qHxBpOl694b+CfxZfw9renWWr6C8Vj41ETaLqVtFeaW0YdWYRtYzQFAzMwUgFicmvzermmPpValJSdZUqk6arYaVaOGqqEnH2mHWIprEKhO3NSVdKsqbiqqU+ZExy6DjF1Pqzm4pzcab5XNq8nHmalyt3tzJSturn/9k=" "700" >}}
 
 I choose to create all of these actions within a self-created plugin, but this meant I had to come up with a way around the limitation of running Node.js tasks.
 
@@ -95,7 +95,7 @@ In this section, I will go over each button group and tell more about what and h
 
 ### Key light controls
 
-{{< caption "/2020/05/elgato6.jpg" "Key lights enabled on the Stream Deck"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APhb9r3xn4h8I/GP4zeH/FXgDxd40OmeI4J/C9hqGkfGnUtcu1vhDc2F5ZLpNrfeBNJlXw9qmy1utPay2WLCImXUDIa/RMqlwhiuFKLlgpS4ixUVJ5lnmMzx5dhqccRJtVMFkmbYXEVKv1eKpcqptKrJzk/dfNxY7J8VChOtguMsPleNwtSVOOSYbJcBiY4qD9rT5njMbwrjuT3nSxMZLNLOjGVJQU5RjT8Gh+En7YviGKLX/Cn7P/xWsvC2uRprHhqzTwv4tKWmgamovdGtUN1Kl0Vg06e2iU3KLcYQecqybgPxzMsbmdHMcfRw2YYieHpY3FU6E8DXxtLBSowr1I0pYOlj/a46nhZQUXh6eNq1MXCk4RxFSdZTk/q8BhcIsDgljcPl2KxiwmGWLxM8LTjPEYn2MPb15xorD0VKtV56klSoUaacmoUacbQj/9k=" "700" >}}
+{{< caption-new "/uploads/2020/05/elgato6.jpg" "Key lights enabled on the Stream Deck"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APhb9r3xn4h8I/GP4zeH/FXgDxd40OmeI4J/C9hqGkfGnUtcu1vhDc2F5ZLpNrfeBNJlXw9qmy1utPay2WLCImXUDIa/RMqlwhiuFKLlgpS4ixUVJ5lnmMzx5dhqccRJtVMFkmbYXEVKv1eKpcqptKrJzk/dfNxY7J8VChOtguMsPleNwtSVOOSYbJcBiY4qD9rT5njMbwrjuT3nSxMZLNLOjGVJQU5RjT8Gh+En7YviGKLX/Cn7P/xWsvC2uRprHhqzTwv4tKWmgamovdGtUN1Kl0Vg06e2iU3KLcYQecqybgPxzMsbmdHMcfRw2YYieHpY3FU6E8DXxtLBSowr1I0pYOlj/a46nhZQUXh6eNq1MXCk4RxFSdZTk/q8BhcIsDgljcPl2KxiwmGWLxM8LTjPEYn2MPb15xorD0VKtV56klSoUaacmoUacbQj/9k=" "700" >}}
 
 For my Key Lights, I choose to add a toggle button on the left to turn them ON/OFF. The other buttons are there for controlling the light temperature and brightness.
 
@@ -105,7 +105,7 @@ These buttons are controlled by directly calling the Key Lights API. Each Key Li
 
 Once you have your IPs, you can call the API via a `GET` request to know their current state, and with a `PUT` request, you can set their brightness, temperature, and ON/OFF state.
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
 	"lights": [{
 		"brightness": 50 // 0 - 100
@@ -113,11 +113,11 @@ Once you have your IPs, you can call the API via a `GET` request to know their c
 		"on": 1 // 1 or 0
 	}]
 }
-{{< / highlight >}}
+```
 
 Here is a movie of how it works:
 
-{{< caption "/2020/05/elgato10.gif" "Key lights buttons in action" >}}
+{{< caption-new "/uploads/2020/05/elgato10.gif" "Key lights buttons in action" >}}
 
 ### Spotify
 
@@ -129,46 +129,46 @@ The application itself makes use of AppleScript to control the Spotify client. T
 
 ### Volume controls
 
-{{< caption "/2020/05/elgato7.jpg" "Volume turned on"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APzM/aa8X+HtA+LXj+y8XaVceJ7vQvEXxItr7QLtf2hdX8ZX+tPrGsaRoxuDpd7c+FrHVbSOWG6b+yptO0d9JhKXCy3Ms0c/67LF8N1cowGEyvL4YTPZ0ZRxmb8RrNZZBTcIuanCnkeIq5hUlUow9lh7YTljmFWk8Qlg1VkU+HVhsgq5rR4z4cxGZ1p08RTyDE0M0eNwsZY6hhauClLD5TSwjlDDKtjqbeOre5K067nbDw8KtfgZ+2D4jtrfxD4U+APxYTwtrsEOs+GkXw74sVU0DVI1vdHVVu4DdKF06e2AFyTcADEx8zdXwFbHY+nWq01UjWVOrUh7XB1K0MJV5ZOPtMLDFJYqGGnbmoRxKVeNJxVZKopI54YWDhB1Vh5VXGLqShT9x1LLncOeXNyuV3Hm961r63P/2Q==" "700" >}}
+{{< caption-new "/uploads/2020/05/elgato7.jpg" "Volume turned on"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APzM/aa8X+HtA+LXj+y8XaVceJ7vQvEXxItr7QLtf2hdX8ZX+tPrGsaRoxuDpd7c+FrHVbSOWG6b+yptO0d9JhKXCy3Ms0c/67LF8N1cowGEyvL4YTPZ0ZRxmb8RrNZZBTcIuanCnkeIq5hUlUow9lh7YTljmFWk8Qlg1VkU+HVhsgq5rR4z4cxGZ1p08RTyDE0M0eNwsZY6hhauClLD5TSwjlDDKtjqbeOre5K067nbDw8KtfgZ+2D4jtrfxD4U+APxYTwtrsEOs+GkXw74sVU0DVI1vdHVVu4DdKF06e2AFyTcADEx8zdXwFbHY+nWq01UjWVOrUh7XB1K0MJV5ZOPtMLDFJYqGGnbmoRxKVeNJxVZKopI54YWDhB1Vh5VXGLqShT9x1LLncOeXNyuV3Hm961r63P/2Q==" "700" >}}
 
 Stream Deck comes with volume controls out of the box. Instead, I still created them myself. The reason is to be able to show the current volume status.
 
-{{< caption "/2020/05/elgato8.jpg" "Volume turned off"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APyS+PHj/wCHPhDxP4nj8XvpN6dI1T4gWepaN9r+NV94ov8AV47CHQtMeeGz8X/2ENUi1lp57mKCPTNPgaDU4rq3js0itn/ZcXieGcRlmCweR5aqOf1FWWLzHiinmdDh6MY4TCyc6dbJsViMZJznRzBYRrB8s8VXy+NVRoSrKju+F6+D4clm1HjHhTF4+osNiaeS4nFV/wC0aEMRXwUauClRw2XRUZ4ajiqrtOrKfNha/tKk4xg5/G9/ov7RWv315rvgb4S/Ed/BOtXdxq3g57Lwp4uls38LalM954fa0luILq4ktm0ma0MEk9zcTPEUaWeZy0jfnWIr4ulXrU5V8PUlTrVISqZfLFvATlCcoueBeMjTxbwcmubDfWqcMR7Fw9vCNTmiuKnRfs6ftqdJ1eSPtXRU/YupyrndLnSn7Nyvyc6UuW3Mk7o//9k=" "700" >}}
+{{< caption-new "/uploads/2020/05/elgato8.jpg" "Volume turned off"  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APyS+PHj/wCHPhDxP4nj8XvpN6dI1T4gWepaN9r+NV94ov8AV47CHQtMeeGz8X/2ENUi1lp57mKCPTNPgaDU4rq3js0itn/ZcXieGcRlmCweR5aqOf1FWWLzHiinmdDh6MY4TCyc6dbJsViMZJznRzBYRrB8s8VXy+NVRoSrKju+F6+D4clm1HjHhTF4+osNiaeS4nFV/wC0aEMRXwUauClRw2XRUZ4ajiqrtOrKfNha/tKk4xg5/G9/ov7RWv315rvgb4S/Ed/BOtXdxq3g57Lwp4uls38LalM954fa0luILq4ktm0ma0MEk9zcTPEUaWeZy0jfnWIr4ulXrU5V8PUlTrVISqZfLFvATlCcoueBeMjTxbwcmubDfWqcMR7Fw9vCNTmiuKnRfs6ftqdJ1eSPtXRU/YupyrndLnSn7Nyvyc6UuW3Mk7o//9k=" "700" >}}
 
 To control these settings, I also make use of AppleScript.
 
 Volume up script:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 set volume output volume (output volume of (get volume settings) + 5)
 
 # Outputs the new volume number
 output volume of (get volume settings)
-{{< / highlight >}}
+```
 
 Volume down script:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 set volume output volume (output volume of (get volume settings) - 5)
 
 # Outputs the new volume number
 output volume of (get volume settings)
-{{< / highlight >}}
+```
 
 Toggle the volume:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 set crntVolume to get volume settings
 if output muted of crntVolume is false then
     set volume with output muted
 else
     set volume without output muted
 end if
-{{< / highlight >}}
+```
 
 Here is a movie how this works:
 
-{{< caption "/2020/05/elgato11.gif" "Volume buttons in action" >}}
+{{< caption-new "/uploads/2020/05/elgato11.gif" "Volume buttons in action" >}}
 
 ### Other light controls
 
@@ -182,7 +182,7 @@ So I invested some time into finding a solution to make it possible to control M
 
 With the Stream Deck application, you can add hotkey actions. 
 
-{{< caption "/2020/05/elgato9.png" "Hotkey action"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABJSURBVG3BOxKAIBBEwTc4kXAj7n8XI1PKwl0/mYHd6r1fPMYYzDn5Yxtv+wEy6zKxjW2+IoLMpFwZnBFIopRCrZXWGpKQhG1eN36lF89ZJyYLAAAAAElFTkSuQmCC" "978" >}}
+{{< caption-new "/uploads/2020/05/elgato9.png" "Hotkey action"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABJSURBVG3BOxKAIBBEwTc4kXAj7n8XI1PKwl0/mYHd6r1fPMYYzDn5Yxtv+wEy6zKxjW2+IoLMpFwZnBFIopRCrZXWGpKQhG1eN36lF89ZJyYLAAAAAElFTkSuQmCC" "978" >}}
 
 Great, with this, you can configure the hotkeys applicable for your operating system.
 
@@ -196,24 +196,24 @@ The solution was yet again, an AppleScript. The way it would work is first to ac
 
 Here is the script to toggle your microphone:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 tell application "Microsoft Teams"
 	 activate
 	 tell application "System Events"
 	 	keystroke "m" using {shift down, command down}
 	 end tell
 end tell
-{{< / highlight >}}
+```
 
 Here is the script to toggle your camera:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 tell application "Microsoft Teams"
      activate
      tell application "System Events"
          keystroke "o" using {shift down, command down}
      end tell
 end tell
-{{< / highlight >}}
+```
 
 > **Info**: To make things easier, I created an npm dependency which you can use in your Node.js API.

@@ -27,7 +27,7 @@ Something else which is great about it is that you can set up multiple builds an
 
 Here is an example of the build process:
 
-{{< caption-legacy "uploads/2017/05/050817_1701_Usebuildand1.png" "Build pipeline / tasks" >}}
+{{< caption-new "/uploads/2017/05/050817_1701_Usebuildand1.png" "Build pipeline / tasks" >}}
 
 In my case, when I push a new release to Git, the build process automatically picks it up and executes the following tasks:
 
@@ -35,7 +35,7 @@ In my case, when I push a new release to Git, the build process automatically pi
 *   Get all dependencies via the npm install command
 *   Update the CDN URL in the manifests JSON file. For this, I created a simple gulp tasks. That way you can change the URL per build task. Here is the code snippet of the task:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 const fs = require('fs');
 
 build.task('update-manifest', {
@@ -49,14 +49,14 @@ build.task('update-manifest', {
     });
   }
 });
-{{< / highlight >}}
+```
 
 
 *   Bundle the project via the `gulp bundle --ship` command
 *   Package the project via the `gulp package-solution --ship` command
 *   When the project is bundled and the solution package is created, everything will be zipped and published ready for release.
 
-{{< caption-legacy "uploads/2017/05/Screenshot-2017-05-05-11.17.41.png" "Build tasks" >}}
+{{< caption-new "/uploads/2017/05/Screenshot-2017-05-05-11.17.41.png" "Build tasks" >}}
 
 Once the build process is completed, the release task will automatically start the continuous deployment feature.
 
@@ -64,7 +64,7 @@ Once the build process is completed, the release task will automatically start t
 
 Here you can see the output of my production deployment:
 
-{{< caption-legacy "uploads/2017/05/050817_1701_Usebuildand2.png" "Release pipeline" >}}
+{{< caption-new "/uploads/2017/05/050817_1701_Usebuildand2.png" "Release pipeline" >}}
 
 It is not as fancy as the build output, but it does the following tasks:
 
@@ -73,10 +73,10 @@ It is not as fancy as the build output, but it does the following tasks:
 *   Upload the SharePoint Framework project bundle files to the SharePoint CDN library
 *   Upload the app package to SharePoint
 
-{{< caption-legacy "uploads/2017/05/Screenshot-2017-05-05-11.20.37.png" "Release tasks" >}}
+{{< caption-new "/uploads/2017/05/Screenshot-2017-05-05-11.20.37.png" "Release tasks" >}}
 
 > **Info**: for the upload gulp tasks to SharePoint I made use of the approach I explained in the two articles about automation for SPFx. Only a small change has been made to allow you to make use of gulp arguments. That way, it is not done from a configuration file in your project, but via variables in the build and release pipeline instead.
 
-{{< caption-legacy "uploads/2017/05/050817_1701_Usebuildand3.png" "Sample result of the web part" >}}
+{{< caption-new "/uploads/2017/05/050817_1701_Usebuildand3.png" "Sample result of the web part" >}}
 
 In the next article, I will explain how you can configure the build and release pipelines yourself.

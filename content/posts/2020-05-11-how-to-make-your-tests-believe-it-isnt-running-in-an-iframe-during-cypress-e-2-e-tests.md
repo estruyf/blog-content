@@ -26,11 +26,11 @@ For example, when running Cypress against SharePoint, it will be a different exp
 
 Here is a screenshot of my page loaded in a browser:
 
-{{< caption "/2020/05/iframe1.png" "Page loaded in a browser"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAADFSURBVHXBMU7CUBjA8f/7+vW9lqiLixsBWUjwDs4eghswOLp4BJy4hQncgTAyEycIhBgGosSSUCl9pklJOuDvZ14H7/7hzuJzT7NZ5/qqhjGGxXLNbvdDQSKHPnefiNQgIogYzhqNOvkpJz15pp9H9KbmEBGSJCHLMpxzqCqF0FqsMTzeRygl7z1BEBDHMZcoJeccYRjyH6FkrWU87PO13bCaz5iM3qgSKhYflsP+SLqH7eaWKqWi+9LjrNVpU1h+/5Jmnj+gBDmy4lxEIwAAAABJRU5ErkJggg==" "1321" >}}
+{{< caption-new "/uploads/2020/05/iframe1.png" "Page loaded in a browser"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAADFSURBVHXBMU7CUBjA8f/7+vW9lqiLixsBWUjwDs4eghswOLp4BJy4hQncgTAyEycIhBgGosSSUCl9pklJOuDvZ14H7/7hzuJzT7NZ5/qqhjGGxXLNbvdDQSKHPnefiNQgIogYzhqNOvkpJz15pp9H9KbmEBGSJCHLMpxzqCqF0FqsMTzeRygl7z1BEBDHMZcoJeccYRjyH6FkrWU87PO13bCaz5iM3qgSKhYflsP+SLqH7eaWKqWi+9LjrNVpU1h+/5Jmnj+gBDmy4lxEIwAAAABJRU5ErkJggg==" "1321" >}}
 
 Notice the differences here with loading it in Cypress:
 
-{{< caption "/2020/05/iframe2.png" "Page loaded in Cypress"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAACxSURBVH3BQWrCQBSA4f/NexmGxEXAdQn1MC49St15DT1MXXbZlZveoXTXVEGtYRISEUYIpe33SdM0A4mq8tMwDMQYMe89IkJd16gq3nvMjBszwzmHiGCMZFlGnuf8xkiKoiCEwF8cSQiB3XZNc/nm8PXJbruh73vuHEnbtrw+v3M+njjtD7y9fOCc485IzIzFakk5nTIpS+bLJ8aMRESYPVbcqCpV9cCYxRgREf7TdR1XURMxPV7t924AAAAASUVORK5CYII=" "1206" >}}
+{{< caption-new "/uploads/2020/05/iframe2.png" "Page loaded in Cypress"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAACxSURBVH3BQWrCQBSA4f/NexmGxEXAdQn1MC49St15DT1MXXbZlZveoXTXVEGtYRISEUYIpe33SdM0A4mq8tMwDMQYMe89IkJd16gq3nvMjBszwzmHiGCMZFlGnuf8xkiKoiCEwF8cSQiB3XZNc/nm8PXJbruh73vuHEnbtrw+v3M+njjtD7y9fOCc485IzIzFakk5nTIpS+bLJ8aMRESYPVbcqCpV9cCYxRgREf7TdR1XURMxPV7t924AAAAASUVORK5CYII=" "1206" >}}
 
 This iframe approach does not only affect tests running against SharePoint but other sites as well. The issue with SharePoint is that you do not own the platform, so you cannot make any modifications to make sure it loads these elements whenever it is testing in Cypress.
 
@@ -54,24 +54,24 @@ First, you need to verify how the platform is doing the iframe check. In most ca
 
 The way to trick your browser is not so hard. Usually, when you use the `cy.visit` method to open a specific page with Cypress.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 cy.visit(config.pageUrl);
-{{< / highlight >}}
+```
 
 What you can do, add the `onBeforeLoad` function. This function allows you to prepare things on the page before it gets loaded. To trick the site, all you need to do is this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 cy.visit(config.pageUrl, {
   onBeforeLoad: (win) => {
     // Let the child think it runs in the parent
     win["parent"] = win;
   }
 });
-{{< / highlight >}}
+```
 
 The result of this change looks like this:
 
-{{< caption "/2020/05/iframe3.png" "Fully loaded page in Cypress"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAADcSURBVH3BMUrEQBSA4f+9eUuCqNOIC66FjQTxDJZ6Cwux8QA29laCXkMUC48iFmKtsCwEREHIZjKzIwsJ2Oj3yd39Y563gZwzk60x480NnHM8Pb+Qc0ZVSWbY+v4BRxOHilAUJWaOparaJYTAPML0O2OHlUdEaJqGEFq6ThiZgQgjM9QUv0iYqiIixBgpioKyLPnNgG3vUHoxRv5j9Lz3mBl/UXrOOW6vT/j6/GA2fePh5pjFIjFQeikl6vcdcgKSUs/2UHUMrOs6BmdXFyytrK1yenlOCIHXukWAH0XIS1yzhCU3AAAAAElFTkSuQmCC" "1156" >}}
+{{< caption-new "/uploads/2020/05/iframe3.png" "Fully loaded page in Cypress"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAADcSURBVH3BMUrEQBSA4f+9eUuCqNOIC66FjQTxDJZ6Cwux8QA29laCXkMUC48iFmKtsCwEREHIZjKzIwsJ2Oj3yd39Y563gZwzk60x480NnHM8Pb+Qc0ZVSWbY+v4BRxOHilAUJWaOparaJYTAPML0O2OHlUdEaJqGEFq6ThiZgQgjM9QUv0iYqiIixBgpioKyLPnNgG3vUHoxRv5j9Lz3mBl/UXrOOW6vT/j6/GA2fePh5pjFIjFQeikl6vcdcgKSUs/2UHUMrOs6BmdXFyytrK1yenlOCIHXukWAH0XIS1yzhCU3AAAAAElFTkSuQmCC" "1156" >}}
 
 ## Example project
 

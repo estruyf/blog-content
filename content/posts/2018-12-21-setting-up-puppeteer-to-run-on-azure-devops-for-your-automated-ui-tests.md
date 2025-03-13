@@ -31,7 +31,7 @@ In order to run on Azure DevOps, we need to install the **jest-junit** dependenc
 
 Once this is installed, the dependency needs to be configured. You can do this by adding the following **jest** object to the **package.json** file:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 "jest": {
   "reporters": [
     [
@@ -43,11 +43,11 @@ Once this is installed, the dependency needs to be configured. You can do this b
     ]
   ]
 }
-{{< / highlight >}}
+```
 
 Here you can see where you should add it:
 
-{{< caption-legacy "uploads/2018/12/122118_1133_SettingupPu1.png" "Jest configuration for JUnit" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu1.png" "Jest configuration for JUnit" >}}
 
 If you want, you can already test out the outcome by running: `npm test`. If you tested it, it should have created a new folder **reports** and a **junit.xml** file. This is what is required for Azure DevOps to process the test results.
 
@@ -57,9 +57,9 @@ The code used from the repository is using a config.json file for passing the us
 
 In the **./src/tests/spfx.spec.ts** file, you can remove lines 8-10. On line 16, you can replace the config with the following:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 const { USERNAME: username, PASSWORD: password, PAGEURL: pageUrl } = process.env;
-{{< / highlight >}}
+```
 
 Update all other references for the username, password, and pageUrl in the code.
 
@@ -73,7 +73,7 @@ Once you implemented these changes, create a new repository in one of your Azure
 
 Once the repository is created, you can create a new **build pipeline** with the following tasks:
 
-{{< caption-legacy "uploads/2018/12/122118_1133_SettingupPu2.png" "Tasks required for the automated UI tests" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu2.png" "Tasks required for the automated UI tests" >}}
 
 As the agent, I use the **hosted macOS**, and the tasks should be configured as follows:
 
@@ -89,18 +89,18 @@ Use the npm task to run an **npm install**.
 
 We will use this task to run the tests, but also to set the **password** as an environment variable because this cannot be retrieved otherwise.
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 export PASSWORD=$(PASSWORD)
 npm test
-{{< / highlight >}}
+```
 
 Here is how I configured it:
 
-{{< caption-legacy "uploads/2018/12/122118_1133_SettingupPu3.png" "Command line tasks to run the test" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu3.png" "Command line tasks to run the test" >}}
 
 **Publish Test Results**
 
-{{< caption-legacy "uploads/2018/12/122118_1133_SettingupPu4.png" "Configuration for the Publish Test Results task" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu4.png" "Configuration for the Publish Test Results task" >}}
 
 The last step is to publish the test results. Configure it to search for the **junit.xml** file and to run even if the previous task has failed. That way you will always get to see the testing results.
 
@@ -112,15 +112,15 @@ The last thing before you can run it is to specify the pipeline variables, you w
 
 Once you configured all these things, you are ready to give it a first spin. Queue a new build and wait for the outcome.
 
-{{< caption-legacy "uploads/2018/12/122118_1133_SettingupPu5.png" "Run an automated UI test" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu5.png" "Run an automated UI test" >}}
 
 When clicking on the tests tab, you can see a test outcome:
 
-{{< caption-legacy "uploads/2018/12/122118_1133_SettingupPu6.png" "Check test results" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu6.png" "Check test results" >}}
 
 In case of a failed test, you see this:
 
-{{< caption-legacy "uploads/2018/12/122118_1133_SettingupPu7.png" "Check which results failed" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu7.png" "Check which results failed" >}}
 
 Next steps are to configure the pipeline to run on a specific trigger or schedule. This is something you can implement underneath the **triggers** tab.
 

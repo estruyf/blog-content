@@ -23,29 +23,29 @@ A couple of weeks ago I had a similar problem with our intranet, the problem was
 
 This was the view you retrieved:
 
-{{< caption-legacy "uploads/2014/04/041014_0715_Custombrand1.png" "Document set without a library view" >}}
+{{< caption-new "/uploads/2014/04/041014_0715_Custombrand1.png" "Document set without a library view" >}}
 
 The first thing I did as a check was directly the right thing to do, I turned removed the visibility property set to false from the **PlaceHolderPageTitleInTitleArea** content placeholder control. After I did this, the document set view became available:<span style="color: #313131; font-family: Helvetica; font-size: 10pt; background-color: white;">
 </span>
 
-{{< caption-legacy "uploads/2014/04/041014_0715_Custombrand2.png" "Default document set view" >}}
+{{< caption-new "/uploads/2014/04/041014_0715_Custombrand2.png" "Default document set view" >}}
 
 The best solution if you want to hide the content placeholder **PlaceHolderPageTitleInTitleArea** in your branding, is to place it in a hidden DIV and set the visible property to false or leave it out.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div style="display:none">
   <asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server" />
 </div>
-{{< / highlight >}}
+```
 
 Another way could be to include the required elements in your master page. There are two elements that need to be on the page before the document set view renders. These elements should have the following IDs **idParentFolderName** and **idDocsetName**.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div style="display:none">
   <div id="idParentFolderName"></div>
   <div id="idDocsetName"></div>
 </div>
-{{< / highlight >}}
+```
 
 Best is to use the first solution, because there are a lot of references in the OOTB SharePoint JavaScript files to the elements in that content placeholder.
 
@@ -53,19 +53,19 @@ Best is to use the first solution, because there are a lot of references in the 
 
 If you set the **visible** property of the content placeholder **PlaceHolderPageTitleInTitleArea** to false, you'll retrieve a JavaScript error for the **idParentFolderName** element which cannot be found.
 
-{{< caption-legacy "uploads/2014/04/041014_0715_Custombrand3.png" "JavaScript Error" >}}
+{{< caption-new "/uploads/2014/04/041014_0715_Custombrand3.png" "JavaScript Error" >}}
 
 When you add an element with **idParentFolderName** as ID, you'll get the next error for the **idDocsetName** element which cannot be found.
 
-{{< caption-legacy "uploads/2014/04/041014_0715_Custombrand4.png" "JavaScript Error" >}}
+{{< caption-new "/uploads/2014/04/041014_0715_Custombrand4.png" "JavaScript Error" >}}
 
 The errors you retrieve refer to the following lines in code:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 document.getElementById("idParentFolderName").innerHTML = "\u003ca href=\u0027http:\u002f\u002fsp2013app\u002fbrand\u002fThemes\u002fShared Documents\u0027\u003eDocuments\u003c\u002fa\u003e";
 var breadcrumb = "Document Set";
 document.getElementById("idDocsetName").innerHTML = breadcrumb;
 document.title = "Document Set";
-{{< / highlight >}}
+```
 
 So once you added the elements in the master page (with the first or second solution), these errors go away and the document set view will render.

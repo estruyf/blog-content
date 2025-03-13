@@ -24,7 +24,7 @@ In this blog post, I will cover Node.js and npm.
 
 ## Node.js
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto1.png" "Node.js logo" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto1.png" "Node.js logo" >}}
 
 > Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
 
@@ -38,27 +38,27 @@ The installation process for Node.js is fairly easy. Go to the [https://nodejs.o
 
 On my machine, I installed the current LTS version v4.4.7. Once you click on it, the installation file will be downloaded to your machine.
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto2.png" "Windows versions to download" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto2.png" "Windows versions to download" >}}
 
 Once the file is downloaded, run the installer.
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto3.png" "Windows installer" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto3.png" "Windows installer" >}}
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto4.png" "Windows installer finished" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto4.png" "Windows installer finished" >}}
 
 If you completed the installation, you can open a command prompt and run the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ node --version 
 
 OR 
 
 $ node -v
-{{< / highlight >}}
+```
 
 Once you ran it, you should get the following output:
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto5.png" "Node.js version" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto5.png" "Node.js version" >}}
 
 ### Using Node.js
 
@@ -66,23 +66,23 @@ When Node.js is installed on your machine, you can start making use of it. The e
 
 In your folder, create a new JS file "hello.js" and paste the following content in the newly created file:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 console.log("Hello, I'm executed by Node.js.");
-{{< / highlight >}}
+```
 
 Run the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ node hello.js
-{{< / highlight >}}
+```
 
 Running this command results in the following output:
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto6.png" "Hello.js output" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto6.png" "Hello.js output" >}}
 
 This is a very simple example of just logging something to the command prompt. The next step would be to try and run something in the browser. To do this, create a new file called "web.js" and insert the following contents:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 const http = require('http');
 
 const server = http.createServer((req, res) => {
@@ -96,7 +96,7 @@ server.listen(8080, (error) => {
 
   console.log('Server is listening on 8080')
 });
-{{< / highlight >}}
+```
 
 
 > **Info**: this code is making use of the **HTTP **module with which you are able to create your own HTTP server - [https://nodejs.org/api/http.html](https://nodejs.org/api/http.html)
@@ -104,77 +104,77 @@ server.listen(8080, (error) => {
 The code creates a new HTTP server and initiates it on port 8080. If you run the following command:
 
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ node web.js
-{{< / highlight >}}
+```
 
 You should get the following output:
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto7.png" "Console output" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto7.png" "Console output" >}}
 
 When you navigate to `http://localhost:8080`, you should see the following message:
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto8.png" "Browser output" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto8.png" "Browser output" >}}
 
 As you see in these simple examples, Node.js can be used in various ways. Node.js can even be used to help you with development tasks like minifying JavaScript, transpiling SASS to CSS, transpiling TypeScript to JavaScript. These so called jobs can be automated via task runners like Gulp or Grunt. More about this in the next blog post.
 
 ## npm
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto9.png" "npm logo" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto9.png" "npm logo" >}}
 
 > npm is the package manager for JavaScript
 
 Node.js and npm go hand in hand. Npm is a JavaScript package manager which is used by Node.js and is similar to what NuGet is for .NET. Npm makes it easy to install packages via executing a command like:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm install <package_name>
-{{< / highlight >}}
+```
 
 All packages which you can install, can be found on the official npm site: [https://www.npmjs.com/](https://www.npmjs.com/).
 
 Npm will automatically get installed when with Node.js. Execute the following command to see which version is currently installed on your machine:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm -v 
 
 OR 
 
 $ npm --version
-{{< / highlight >}}
+```
 
 This command gives you the following output:
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto10.png" "npm installed version" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto10.png" "npm installed version" >}}
 
 ### Installing packages
 
 You have a couple of ways to install new packages. The first one was already highlighted above:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm install <package_name>
-{{< / highlight >}}
+```
 
 For this example, install the **express** package which is a fast and minimalist web framework: [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 npm install express
-{{< / highlight >}}
+```
 
 Once you executed the installation command, you will see a Node.js process in your task manager:
 
-{{< caption-legacy "uploads/2016/08/snip_20160806085705.png" "Node.js process" >}}
+{{< caption-new "/uploads/2016/08/snip_20160806085705.png" "Node.js process" >}}
 
 If everything goes well, you have a similar output:
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto11.png" "npm install output of express" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto11.png" "npm install output of express" >}}
 
 Once executed, all the required modules for this package are downloaded into the **node_modules** folder, which will get automatically created if it did not exist.
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto12.png" "node_modules folder created in the directory" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto12.png" "node_modules folder created in the directory" >}}
 
 Create a new file called "express.js" and insert the following content:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 const express = require('express')
 var app = express()
 
@@ -189,7 +189,7 @@ app.listen(8080, (error) => {
 
   console.log('Server is listening on 8080. Navigate to: http://localhost:8080')
 });
-{{< / highlight >}}
+```
 
 This does just the same thing as the code in the web.js file, but it is a bit easier to read. Instead of using the **HTTP** node module, the code now makes use of **express**.
 
@@ -197,23 +197,23 @@ This does just the same thing as the code in the web.js file, but it is a bit ea
 
 If you run the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ node express.js
-{{< / highlight >}}
+```
 
 You get the following output:
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto13.png" "Console output" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto13.png" "Console output" >}}
 
 When you navigate to the `http://localhost:8080` site, you should see this:
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto14.png" "Browser output" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto14.png" "Browser output" >}}
 
 ### Installing packages and storing dependencies
 
 If you read everything from the npm install output, you might have seen this message at the end:
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto15.png" "package.json warning" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto15.png" "package.json warning" >}}
 
 This warns you that there is no package.json file in the current directory. The package.json file helps you to locally manage which npm packages need or have been installed. In the package.json you can place a couple of useful things:
 
@@ -226,17 +226,17 @@ This warns you that there is no package.json file in the current directory. The 
 
 The easiest way to create such a package.json file is by executing the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm init
-{{< / highlight >}}
+```
 
 When you execute this, you will see that it ask you a couple of questions.
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto16.png" "npm init questions" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto16.png" "npm init questions" >}}
 
 When all the question are answered, you end up with a similar package.json file like mine:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "name": "blog-examples",
   "version": "1.0.0",
@@ -252,7 +252,7 @@ When all the question are answered, you end up with a similar package.json file 
   "author": "Elio Struyf",
   "license": "ISC"
 }
-{{< / highlight >}}
+```
 
 Once you have the package.json file in place, you can make use of -save and -save-dev install flags.
 
@@ -266,21 +266,21 @@ The save-dev flag adds the package to the developer dependency list. A developer
 
 Execute the following command in order to register the dependency when installing:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm install express --save
-{{< / highlight >}}
+```
 
 Once executed, you see the following output:
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto17.png" "Install dependency" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto17.png" "Install dependency" >}}
 
 If you now open the package.json file, you should see that the express dependency has been added:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 "dependencies": {
     "express": "^4.14.0"
 }
-{{< / highlight >}}
+```
 
 
 ### Installing packages from the package.json file
@@ -291,13 +291,13 @@ As this folder will contain a lot of files very quickly when more and more depen
 
 When you start from scratch, you only have to execute the following command to install all the dependencies:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm install
-{{< / highlight >}}
+```
 
 You can also test this by removing the node_modules folder in your directory and executing the command. After the command has ran, the node_modules folder should be recreated.
 
-{{< caption-legacy "uploads/2016/08/080316_1525_Gettingupto18.png" "Running npm install" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto18.png" "Running npm install" >}}
 
 ### Installing packages globally
 
@@ -305,9 +305,9 @@ The last option is to install packages globally. Most of the time you will do th
 
 In order to install a package globally you need to specify the **-g** flag:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm install -g <package_name>
-{{< / highlight >}}
+```
 
 
 ## Useful resources

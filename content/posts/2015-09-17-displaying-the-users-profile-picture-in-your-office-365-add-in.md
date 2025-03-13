@@ -28,7 +28,7 @@ In my Office 365 add-in I am displaying the image via JavaScript and the authent
 
 To be able to retrieve the user's profile picture, you first need to add the **Sign in and read user profile (Office 365 unified API)** permission to your application in Azure Active Directory.
 
-{{< caption-legacy "uploads/2015/09/091715_1011_Displayingt1.png" "Unified API permissions" >}}
+{{< caption-new "/uploads/2015/09/091715_1011_Displayingt1.png" "Unified API permissions" >}}
 
 Once this permission is given, you will be able to make your calls.
 
@@ -44,17 +44,17 @@ If you want to know which user profile picture dimensions are available, you cou
 
 The largest available user picture can be retrieved by calling the following REST endpoint: [https://graph.microsoft.com/beta/me/Photo](https://graph.microsoft.com/beta/me/UserPhoto)
 
-{{< caption-legacy "uploads/2015/09/091715_1011_Displayingt2.png" "API output" >}}
+{{< caption-new "/uploads/2015/09/091715_1011_Displayingt2.png" "API output" >}}
 
 **All available photos**
 
 If you want to know all the dimensions that are available. You could call the following endpoint: [https://graph.microsoft.com/beta/me/Photos](https://graph.microsoft.com/beta/me/UserPhotos)
 
-{{< caption-legacy "uploads/2015/09/091715_1011_Displayingt3.png" "API output all photos" >}}
+{{< caption-new "/uploads/2015/09/091715_1011_Displayingt3.png" "API output all photos" >}}
 
 Here is an example how you could call the REST API via JavaScript:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var authContext = new AuthenticationContext(config);
 authContext.acquireToken("https://graph.microsoft.com", function (error, token) {
     var request = new XMLHttpRequest;
@@ -68,7 +68,7 @@ authContext.acquireToken("https://graph.microsoft.com", function (error, token) 
     };
     request.send(null);
 });
-{{< / highlight >}}
+```
 
 
 ### Retrieve the image (blob) and display it with JavaScript
@@ -90,7 +90,7 @@ You are also able to retrieve a photo with a specific dimension. For that you ne
 Once you know the REST endpoint to use, you need to add a **responseType** to your XMLHttpRequest in order to retrieve an image blob. Here is my example code:
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var authContext = new AuthenticationContext(config);
 authContext.acquireToken("https://graph.microsoft.com", function (error, token) {
     var request = new XMLHttpRequest;
@@ -112,17 +112,17 @@ authContext.acquireToken("https://graph.microsoft.com", function (error, token) 
     };
     request.send(null);
 });
-{{< / highlight >}}
+```
 
 In order to read the image blob, the **FileReader** ([more info about FileReader](http://blog.teamtreehouse.com/reading-files-using-the-html5-filereader-api)) interface is required. This will be used to convert the blob to a data URL:
 
-{{< caption-legacy "uploads/2015/09/091715_1011_Displayingt4.png" "base64 image" >}}
+{{< caption-new "/uploads/2015/09/091715_1011_Displayingt4.png" "base64 image" >}}
 
 You can also use **URL.createObjectURL**, this method creates a DOMString containing an URL representing the object given in parameter.
 > **Note**: More information about this createObjectURL method can be found here: [URL.createObjectURL](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL).
 The code for using this approach looks like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var authContext = new AuthenticationContext(config);
 authContext.acquireToken("https://graph.microsoft.com", function (error, token) {
     var request = new XMLHttpRequest;
@@ -140,15 +140,15 @@ authContext.acquireToken("https://graph.microsoft.com", function (error, token) 
     };
     request.send(null);
 });
-{{< / highlight >}}
+```
 
 Your element now contains a link to the object in your DOM.
 
-{{< caption-legacy "uploads/2015/09/createObjectURL.png" "URL.createObjectURL approach" >}}
+{{< caption-new "/uploads/2015/09/createObjectURL.png" "URL.createObjectURL approach" >}}
 
 The final output of the two code snippets is the user's profile image:
 
-{{< caption-legacy "uploads/2015/09/091715_1011_Displayingt5.png" "Profile picture (48x48)" >}}
+{{< caption-new "/uploads/2015/09/091715_1011_Displayingt5.png" "Profile picture (48x48)" >}}
 
 ## Updates
 

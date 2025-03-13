@@ -33,16 +33,16 @@ If you want to add sorting possibilities into your display templates, you first 
 
 The code for registering your sorts looks like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var availableSorts = ctx.DataProvider.get_availableSorts();
 availableSorts.push({"name":"Created-ASC","sorts":[{"p":"Created","d":0}]});
 availableSorts.push({"name":"Created-DES","sorts":[{"p":"Created","d":1}]});
 ctx.DataProvider.set_availableSorts(availableSorts);
-{{< / highlight >}}
+```
 
 To do the sorting of your results, you will have to include a trigger that uses one of the registered sorting options. The following methods are available to trigger the sorting: **sort** or **sortOrRank**. These methods can be used like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 // Sort or rank
 $getClientControl(this).sortOrRank('Created-ASC');
 
@@ -58,19 +58,19 @@ $getClientControl(this).sort('Created-ASC');
 <a href="#" title="Created ASC" onclick="$getClientControl(this).sort('Created-ASC');">
     <img alt="Ascending" src="/_layouts/15/images/sortaz.gif">
 </a>
-{{< / highlight >}}
+```
 
 Now the problem is if you have multiple links on your page for managed property sorting (this could be the case if you are using my table layout display template), you will only be able to sort on one managed property at a time. If you click on another managed property to sort on, the previous one will get overridden.
 
 Example: if you first so a sorting on the file size, the results get sorted on the file size. If you click on the author sorting links, the sorting on size is overridden by the author sorting.
 
-{{< caption-legacy "uploads/2014/11/111314_0939_Howtoaddmul1.png" "Managed property sorting (one at a time)" >}}
+{{< caption-new "/uploads/2014/11/111314_0939_Howtoaddmul1.png" "Managed property sorting (one at a time)" >}}
 
 The reason for this behavior is because a new query gets executed behind the scenes without taking the previous sorting into account.
 
 Here is a code snippet of what is happening behind the scenes in the Search.ClientControls.js file:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Get the available sorts on the data provider
 var sorts = dataProvider.get_availableSorts();
 if (!Srch.U.n(sorts) && sorts.length > 0) {
@@ -91,13 +91,13 @@ if (!Srch.U.n(sorts) && sorts.length > 0) {
     }
   }
 }
-{{< / highlight >}}
+```
 
 So if you want to include multi-sorting functionality to your display template, the only option you have is to write JavaScript code to enable this.
 
 Here is my function to enable multi-sorting:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 function sortProperty(sortName, clientControl) {
   if (Srch.U.e(sortName)) {
     return;
@@ -162,7 +162,7 @@ function sortProperty(sortName, clientControl) {
     return;
   }
 }
-{{< / highlight >}}
+```
 
 > **Note**: the function expects the name that is specified in the available sorts array (in the code snippet above this is **Created-ASC** or **Created-DES**) and the current client control.
 
@@ -170,17 +170,17 @@ The code checks if a sorting is in place, and if that is the case, it will retai
 
 The function can be called like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <a href="#" title="Created ASC" onclick="sortProperty('Created-ASC', $getClientControl(this));">
   <img alt="Ascending" src="/_layouts/15/images/sortaz.gif">
 </a>
-{{< / highlight >}}
+```
 
 Now if you have multi-sorting enabled in your display template, it can be useful to remove a specific sorting. For example: if you did a sort on Author and this didn't gave you the results you expected, by triggering a sorting removal the author sorting gets unset.
 
 Here is a function I created to achieve the removal functionality:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 function removeSortProperty(property, clientControl) {
   if (Srch.U.e(property)) {
     return;
@@ -223,25 +223,25 @@ function removeSortProperty(property, clientControl) {
     }
   }
 }
-{{< / highlight >}}
+```
 
 > **Note**: this function expects the property name that needs to be removed and the current client control.
 
 The function can be called like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <a href="#" title="Remove sorting" onclick="removeSortProperty('Created', $getClientControl(this));">
   Remove sorting
 </a>
-{{< / highlight >}}
+```
 
 
 ## Updated table layout display template
 
 I have created a new "updated" version of the table layout display template to include this functionality. In the new template you can do multi-sorting and removing the set sorting.
 
-{{< caption-legacy "uploads/2014/11/111314_0939_Howtoaddmul2.png" "New sorting options (mutli-sort and removal)" >}}
+{{< caption-new "/uploads/2014/11/111314_0939_Howtoaddmul2.png" "New sorting options (mutli-sort and removal)" >}}
 
-{{< caption-legacy "uploads/2014/11/111314_0939_Howtoaddmul3.png" "Sorting on file size and file extension" >}}
+{{< caption-new "/uploads/2014/11/111314_0939_Howtoaddmul3.png" "Sorting on file size and file extension" >}}
 
 You can find the new version of the table layout display templates on the [SPCSR GitHub repository](https://github.com/SPCSR/ "GitHub SPCSR Repository"): [Table Layout with Multi Sort Templates (CSWP)](https://github.com/SPCSR/DisplayTemplates/tree/master/Search%20Display%20Templates/Table%20Layout%20with%20Multi%20Sort%20Templates%20%28CSWP%29 "Table Layout with Multi-Sorting Templates \(CSWP\)").

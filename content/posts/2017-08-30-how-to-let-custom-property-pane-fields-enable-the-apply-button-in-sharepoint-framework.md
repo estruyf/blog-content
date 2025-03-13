@@ -26,13 +26,13 @@ In the previous versions, the **onRender** method of your custom property pane f
 *   The HTML element
 *   Context
 
-{{< caption-legacy "uploads/2017/08/083017_1110_Howtoletcus1.png" "Old onRender method" >}}
+{{< caption-new "/uploads/2017/08/083017_1110_Howtoletcus1.png" "Old onRender method" >}}
 
 Since version 1.2.0 a new argument has been added:
 
 *   Change callback function
 
-{{< caption-legacy "uploads/2017/08/083017_1110_Howtoletcus2.png" "onRender method since v1.2.0" >}}
+{{< caption-new "/uploads/2017/08/083017_1110_Howtoletcus2.png" "onRender method since v1.2.0" >}}
 
 This is a callback function which gets provided to your custom field by the property pane. You can make use of this to let the property pane know a change happened in one of your custom fields. If you use this in combination with a non-reactive property pane (that is the property pane with an apply button at the bottom) it will trigger the button to get enabled.
 
@@ -40,7 +40,7 @@ This is a callback function which gets provided to your custom field by the prop
 
 Code snippet of my onRender method:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 /**
  * @function
  * Renders the custom field
@@ -65,11 +65,11 @@ private render(elem: HTMLElement, ctx?, changeCallback?: (targetProperty: string
   // Calls the REACT content generator
   ReactDom.render(element, elem);
 }
-{{< / highlight >}}
+```
 
 Code snippet of my method where I store my new property value:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 private notifyAfterValidate(oldValue: string, newValue: string) {
   this.props.properties[this.props.targetProperty] = newValue;
   this.props.onPropertyChange(this.props.targetProperty, oldValue, newValue);
@@ -79,12 +79,12 @@ private notifyAfterValidate(oldValue: string, newValue: string) {
     this.props.onChanged(this.props.targetProperty, newValue);
   }
 }
-{{< / highlight >}}
+```
 
 
 ## Result
 
-{{< caption-legacy "uploads/2017/08/ezgif.com-optimize-2.gif" "Example of a custom field that triggers the apply button" >}}
+{{< caption-new "/uploads/2017/08/ezgif.com-optimize-2.gif" "Example of a custom field that triggers the apply button" >}}
 
 The sample code of this custom field can be found here: [InsecurePasswordPropertyField.ts gist](https://gist.github.com/estruyf/5d571460e235b748c93547fc86d46e22).
 

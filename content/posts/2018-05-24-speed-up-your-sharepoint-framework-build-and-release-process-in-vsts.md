@@ -26,13 +26,13 @@ In this article, I will highlight what you can do to make your build and release
 
 In my demo setup I used the following configuration:
 
-{{< caption-legacy "uploads/2018/05/052418_1051_Speedupyour1.png" "Simple build process" >}}
+{{< caption-new "/uploads/2018/05/052418_1051_Speedupyour1.png" "Simple build process" >}}
 
 The host agent which is being used is the **hosted** one.
 
 Once the build gets queued, it takes six minutes to get completed.
 
-{{< caption-legacy "uploads/2018/05/052418_1051_Speedupyour2.png" "First test run without any improvements" >}}
+{{< caption-new "/uploads/2018/05/052418_1051_Speedupyour2.png" "First test run without any improvements" >}}
 
 ## Node version
 
@@ -40,19 +40,19 @@ In the Office 365 CLI article, I mentioned that since SPFx version 1.4.1 you can
 
 To use Node v8 in your build and release process, all you must do is add the **Node Tool Installer** task to the process.
 
-{{< caption-legacy "uploads/2018/05/052418_1051_Speedupyour3.png" "Node tool installer task" >}}
+{{< caption-new "/uploads/2018/05/052418_1051_Speedupyour3.png" "Node tool installer task" >}}
 
 Be sure to add it as the first task of the process and update the **version spec** setting to **8.x**.
 
-{{< caption-legacy "uploads/2018/05/052418_1051_Speedupyour4.png" "Increase Node version to 8.x" >}}
+{{< caption-new "/uploads/2018/05/052418_1051_Speedupyour4.png" "Increase Node version to 8.x" >}}
 
 The updated process looks like this:
 
-{{< caption-legacy "uploads/2018/05/052418_1051_Speedupyour5.png" "Improved build process with Node v8" >}}
+{{< caption-new "/uploads/2018/05/052418_1051_Speedupyour5.png" "Improved build process with Node v8" >}}
 
 When you run this process, you should see a noticeable difference in execution time.
 
-{{< caption-legacy "uploads/2018/05/052418_1051_Speedupyour6.png" "Build process run with Node v8" >}}
+{{< caption-new "/uploads/2018/05/052418_1051_Speedupyour6.png" "Build process run with Node v8" >}}
 
 The biggest performance increase is in the **npm installation**. The reason is that in Node v6 it is using npm version v3. In Node v8 during my test runs, it used npm v5 which introduced a lot of performance improvements. The task went from 4.2 minutes to 1.2 minutes in my test run.
 
@@ -64,11 +64,11 @@ Can the process be even faster? Yes, and the way to achieve this is by using a h
 
 Switching the host is simple, all you need to do is get over to the process and witch the agent queue:
 
-{{< caption-legacy "uploads/2018/05/052418_1051_Speedupyour7.png" "macOS host agent" >}}
+{{< caption-new "/uploads/2018/05/052418_1051_Speedupyour7.png" "macOS host agent" >}}
 
 Once changed, you can test it out by triggering a new build process. Here is the result of my process:
 
-{{< caption-legacy "uploads/2018/05/052418_1051_Speedupyour8.png" "Final run with macOS host agent" >}}
+{{< caption-new "/uploads/2018/05/052418_1051_Speedupyour8.png" "Final run with macOS host agent" >}}
 
 Again, the biggest performance increase is in the npm installation process. This has to do how files are handles on Unix and Linux systems and with SPFx solutions, there are a lot of files involved. The task itself went from 1.2 minutes to 43 seconds in my test run.
 

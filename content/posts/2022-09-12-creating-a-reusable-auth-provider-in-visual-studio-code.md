@@ -33,14 +33,14 @@ Once you have the authentication provider, you can make it reusable by configuri
 
 Update the `activationEvents` array with the following:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   ...
   "activationEvents": [
     "onAuthenticationRequest:<auth id>"
   ],
 }
-{{< / highlight >}}
+```
 
 This `onAuthenticationRequest` event with your authentication ID (the ID you used in the `registerAuthenticationProvider` method) will trigger your extension to activate when another extension requests authentication.
 
@@ -50,14 +50,14 @@ With this change applied, your authentication provider extension is now reusable
 
 All the other extensions that you create require one small change as well. In the extension's `package.json` file, it is best to add the `extensionDependencies` array with the ID of your authentication provider extension.
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   ...
   "extensionDependencies": [
     "<auth provider extension id>"
   ],
 }
-{{< / highlight >}}
+```
 
 This array of extension dependencies will ensure that your Visual Studio Code instance installs the authentication provider extension.
 
@@ -65,6 +65,6 @@ This array of extension dependencies will ensure that your Visual Studio Code in
 
 There is no difference in using the authentication provider from another extension. You use the `getSessions` to retrieve the session or create a new one.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const session = authentication.getSession("<auth id>", [], { createIfNone: true });
-{{< / highlight >}}
+```

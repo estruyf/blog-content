@@ -23,7 +23,7 @@ Last week I finally found some time to get my demo tenant up and running with hy
 
 > **Important**: There are some disadvantages about using hybrid search. Mikael Svenson wrote an article about it which talks about them and made a checklist to see if hybrid search is good to implement in your environment: [Why Hybrid Crawl in SharePoint is a cold hot potato](http://www.techmikael.com/2015/11/why-hybrid-crawl-in-sharepoint-is-cold.html).
 
-{{< caption-legacy "uploads/2016/02/020216_0908_Highlighton1.png" "Default hybrid search behaviour" >}}
+{{< caption-new "/uploads/2016/02/020216_0908_Highlighton1.png" "Default hybrid search behaviour" >}}
 
 > **Note**: first result is from SharePoint Online, the other two is from my on-premises environment.
 
@@ -31,9 +31,9 @@ This is a great step forward, but what if you can only access your on-premises c
 
 That would expect from your users that they have to check the path of the content to where it leads. This is not ideal, so a better solution would be to highlight the on-premises or external (yes, on-premises content is seen as external content for Office 365) content in your search center like this:
 
-{{< caption-legacy "uploads/2016/02/020216_0908_Highlighton2.png" "Hybrid search with on-premises/external content highlighting" >}}
+{{< caption-new "/uploads/2016/02/020216_0908_Highlighton2.png" "Hybrid search with on-premises/external content highlighting" >}}
 
-{{< caption-legacy "uploads/2016/02/020216_0908_Highlighton3.png" "Notification text on VPN icon" >}}
+{{< caption-new "/uploads/2016/02/020216_0908_Highlighton3.png" "Notification text on VPN icon" >}}
 
 In the above screenshots you can see that I added a small image to highlight that the content can only be accessed on the corporate VPN. This small change can spare your users from frustration that they cannot open the document.
 
@@ -71,7 +71,7 @@ Here are the steps in order to create a new result type for your external conten
 *   Click on **New Result Type**;
 *   Configure the result type like in the following screenshot:
 
-{{< caption-legacy "uploads/2016/02/020216_0908_Highlighton4.jpg" "Result type configuration" >}}
+{{< caption-new "/uploads/2016/02/020216_0908_Highlighton4.jpg" "Result type configuration" >}}
 
 > **Information**: Condition has to be set with Managed Property **IsExternalContent** equals any of **true**. The action has to be set with the **External Item** display template.
 

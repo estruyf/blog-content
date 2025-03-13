@@ -29,13 +29,13 @@ During my session I showed a demo of a search box that displays additional searc
 
 The example I showed during my session was about a user that searched with the following keywords: "installation manual sink". When the user searches with that query he gets the following result:
 
-{{< caption-legacy "uploads/2015/06/060515_0747_Helpyouruse1.png" "Default search experience when no results are found" >}}
+{{< caption-new "/uploads/2015/06/060515_0747_Helpyouruse1.png" "Default search experience when no results are found" >}}
 
 The search query leads to zero results. As the web part suggests, the user needs to try to use different search terms, but of course it is guessing which keywords to use.
 
 If you would implement a search box with search combinations, you would get the following result:
 
-{{< caption-legacy "uploads/2015/06/060515_0747_Helpyouruse2.png" "Search box with search combinations" >}}
+{{< caption-new "/uploads/2015/06/060515_0747_Helpyouruse2.png" "Search box with search combinations" >}}
 
 By showing the search combinations, the user could see which combinations give results and can change its query.
 
@@ -43,7 +43,7 @@ By showing the search combinations, the user could see which combinations give r
 
 Here is another example:
 
-{{< caption-legacy "uploads/2015/06/060515_0747_Helpyouruse3.png" "Another example of a search box with search combinations" >}}
+{{< caption-new "/uploads/2015/06/060515_0747_Helpyouruse3.png" "Another example of a search box with search combinations" >}}
 
 ## How this is developed
 
@@ -71,6 +71,6 @@ When you downloaded the **Control_SearchResults_Hints.html** (or the on-premises
 
 To make use of the new search display template you need to edit **Search Result** web part and set the **Results control display template** to: **Default result with hints**.
 
-{{< caption-legacy "uploads/2015/06/060515_0747_Helpyouruse4.png" "Display template configuration" >}}
+{{< caption-new "/uploads/2015/06/060515_0747_Helpyouruse4.png" "Display template configuration" >}}
 
 Once this is configured, store these changes and publish the page. Now you can start searching and the search combinations should appear underneath the search box.

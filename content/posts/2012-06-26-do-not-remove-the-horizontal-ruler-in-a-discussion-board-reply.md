@@ -23,7 +23,7 @@ Then we saw that the **Show Quoted Message** link was not visible in the reply, 
 
 &nbsp;
 
-{{< caption-legacy "uploads/2012/06/060712_2004_DoNotRemove1.png" "Show Quoted Messages" >}}
+{{< caption-new "/uploads/2012/06/060712_2004_DoNotRemove1.png" "Show Quoted Messages" >}}
 
 &nbsp;
 
@@ -31,11 +31,11 @@ After some more research I finally found what was occurring the problem. It had 
 
 &nbsp;
 
-{{< caption-legacy "uploads/2012/06/060712_2004_DoNotRemove2.png" "Horizontal Ruler" >}}
+{{< caption-new "/uploads/2012/06/060712_2004_DoNotRemove2.png" "Horizontal Ruler" >}}
 
 When you remove this horizontal ruler on the creation of a reply, SharePoint cannot see the difference between the reply and the original message. That was why the **Show Quoted Message** was not shown.
 
-{{< caption-legacy "uploads/2012/06/060712_2004_DoNotRemove3.png" "Horizontal Ruler Not Shown" >}}
+{{< caption-new "/uploads/2012/06/060712_2004_DoNotRemove3.png" "Horizontal Ruler Not Shown" >}}
 
 &nbsp;
 
@@ -66,8 +66,8 @@ Here are some examples:
 
 ### Reply with the horizontal ruler
 
-{{< caption-legacy "uploads/2012/06/060712_2004_DoNotRemove4.png" "Example with the horizontal ruler" >}}
+{{< caption-new "/uploads/2012/06/060712_2004_DoNotRemove4.png" "Example with the horizontal ruler" >}}
 
 ### Reply without the horizontal ruler
 
-{{< caption-legacy "uploads/2012/06/060712_2004_DoNotRemove5.png" "Example without the horizontal ruler" >}}
+{{< caption-new "/uploads/2012/06/060712_2004_DoNotRemove5.png" "Example without the horizontal ruler" >}}

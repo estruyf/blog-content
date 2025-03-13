@@ -19,11 +19,11 @@ Last week I was doing some experiments with the creation process of page layouts
 
 This were the values for my auto-created managed property:
 
-{{< caption-legacy "uploads/2014/02/021714_1932_CatalogItem1.png" "DateTime Values" >}}
+{{< caption-new "/uploads/2014/02/021714_1932_CatalogItem1.png" "DateTime Values" >}}
 
 The difference between the auto-created property and the custom property is the data type that is specified.
 
-{{< caption-legacy "uploads/2014/02/021714_1932_CatalogItem2.png" "Date Time Managed Properties" >}}
+{{< caption-new "/uploads/2014/02/021714_1932_CatalogItem2.png" "Date Time Managed Properties" >}}
 
 Auto-created managed properties for a DateTime field are set to **Text**. My custom property was set to **Date and Time** because I also need it for filtering and sorting.
 
@@ -34,7 +34,7 @@ The values which these managed properties return are also very different:
 
 After some digging in the assembly of the Catalog Item Reuse web part (Microsoft.Office.Server.Search.WebControls.CatalogItemReuseWebPart), I found that it does a parsing from a string to a DateTime. That way, you're custom values would never be converted correctly.
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 private static string GetDateTimeValue(string searchData, bool dateOnly)
 {
     DateTime time;
@@ -46,7 +46,7 @@ private static string GetDateTimeValue(string searchData, bool dateOnly)
     }
     return str;
 }
-{{< / highlight >}}
+```
 
 Another downside of the catalog item reuse web part, is that you cannot define the format of your date time. You only have the option to show the time or not.
 

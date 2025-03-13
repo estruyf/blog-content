@@ -39,7 +39,7 @@ The following configuration steps are required:
 **named **QueryPropertiesTemplate** on the site where you want to do your anonymous JS calls;
 *   Create a new XML file named **queryparametertemplate.xml**, and copy the following XML content to the file:
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <QueryPropertiesTemplate xmlns="http://www.microsoft.com/sharepoint/search/KnownTypes/2008/08" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
   <QueryProperties i:type="KeywordQueryProperties">
     <EnableStemming>true</EnableStemming>
@@ -99,26 +99,26 @@ The following configuration steps are required:
   <a:string>Refiners</a:string>
 </WhiteList>
 </QueryPropertiesTemplate>
-{{< / highlight >}}
+```
 
 > **Note**: Two additional properties have been added to the **WhiteList** element. These properties are **SourceID** and **Refiner**. More information about these properties can be read in the last section of this article.
 
 *   Update the **FarmId**, **SiteId**, and **WebId** elements in the XML content to that of your environment;
 *   Upload the **queryparametertemplate.xml** file to the **QueryPropertiesTemplate** document library you created.
 
-{{< caption-legacy "uploads/2015/05/052115_1925_SearchJavaS1.png" "QueryPropertiesTemplate document library" >}}
+{{< caption-new "/uploads/2015/05/052115_1925_SearchJavaS1.png" "QueryPropertiesTemplate document library" >}}
 
 The last step that is explained in each of the two articles is the step where you need to add the **QueryTemplatePropertiesUrl** parameter and file location to your search Rest call. Of course this is not possible when you are working via JSOM.
 
 When working with JSOM you need to specify the **QueryTemplatePropertyUrl** parameter on the **DataProvider** object. This can be performed like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 dp.set_queryPropertiesTemplateUrl('spfile://webroot/queryparametertemplate.xml');
-{{< / highlight >}}
+```
 
 To finish the code to switch the result source ID for anonymous users, the previous code snippet needs to get added to every call an anonymous user will perform.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <script>
 // Show duplicated results
 if (typeof Srch.U.fillKeywordQuery !== 'undefined') {
@@ -149,7 +149,7 @@ if (typeof Srch.U.fillKeywordQuery !== 'undefined') {
   };
 }
 </script>
-{{< / highlight >}}
+```
 
 > **Note**: The highlighted line is where you need to set the query template property URL.
 
@@ -157,8 +157,8 @@ if (typeof Srch.U.fillKeywordQuery !== 'undefined') {
 
 The **SourceId** element is required to allow anonymous users to change the result source ID for the query. If you only add this property, you get the following result:
 
-{{< caption-legacy "uploads/2015/05/052115_1925_SearchJavaS2.png" "An anonymous search call with SourceId on the WhiteList" >}}
+{{< caption-new "/uploads/2015/05/052115_1925_SearchJavaS2.png" "An anonymous search call with SourceId on the WhiteList" >}}
 
 When you only added the **SourceId** element, you do not get any refiners. That is why you also need to add the **Refiners** element to the white list. Once you have done this, you will get all the refiners where the managed properties are configured as safe.
 
-{{< caption-legacy "uploads/2015/05/052115_1925_SearchJavaS3.png" "An anonymous search call with SourceId and Refiners on the WhiteList" >}}
+{{< caption-new "/uploads/2015/05/052115_1925_SearchJavaS3.png" "An anonymous search call with SourceId and Refiners on the WhiteList" >}}

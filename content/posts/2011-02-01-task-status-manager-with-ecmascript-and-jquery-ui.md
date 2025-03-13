@@ -27,7 +27,7 @@ For this concept I am only going to use the following task statuses:
 *   Completed
 To visualise the task items, I have created three task status blocks.
 
-{{< caption-legacy "uploads/2011/02/concept.png" "Concept layout" >}}
+{{< caption-new "/uploads/2011/02/concept.png" "Concept layout" >}}
 
 The task items will be retrieved with the SharePoint 2010 ECMAscript client object model.
 [jQuery](http://jquery.com/ "jQuery") and [jQuery UI](http://jqueryui.com/ "jQuery UI") will be used to place the task items on the page and be able to drag and drop them.
@@ -36,11 +36,11 @@ The task items will be retrieved with the SharePoint 2010 ECMAscript client obje
 
 The task list that I am going to use contains the following items:
 
-{{< caption-legacy "uploads/2011/02/taskItems_Drag.png" "Task list items" >}}
+{{< caption-new "/uploads/2011/02/taskItems_Drag.png" "Task list items" >}}
 
 On a new page I added my conceptual layout to the page and the jQuery and jQuery UI script references inside a "Content Editor" web part. To be a more flexible, I also added another script reference that will contain the code for this solution.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <script src="jquery.min.js" type="text/javascript"><!--mce:0--></script>
 <script src="jquery-ui-1.8.9.custom.min.js" type="text/javascript"></script>
 
@@ -79,13 +79,13 @@ On a new page I added my conceptual layout to the page and the jQuery and jQuery
     <div class="clear"></div>
   </div>
 </div>
-{{< / highlight >}}
+```
 
 ### Retrieve the task list items
 
 The first thing that needs to be done is retrieving all the task items from the task list.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var clientContext = null;
 var web = null;
 ExecuteOrDelayUntilScriptLoaded(Initialize, "sp.js");
@@ -113,11 +113,11 @@ function onQueryFailed(sender, args) {
 }
 
 function onListItemsLoadSuccess(sender, args) { }
-{{< / highlight >}}
+```
 
 The "onListItemsLoadSuccess" function will be used to place the task items to the correct task status blocks.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 //On success, put the task items to the correct list
 function onListItemsLoadSuccess(sender, args) {
   var listEnumerator = this.listItems.getEnumerator();
@@ -139,23 +139,23 @@ function onListItemsLoadSuccess(sender, args) {
     }
   }
 }
-{{< / highlight >}}
+```
 
 This piece of code will result in:
 
-{{< caption-legacy "uploads/2011/02/taskDrag_results.png" "Recieved tasks" >}}
+{{< caption-new "/uploads/2011/02/taskDrag_results.png" "Recieved tasks" >}}
 
 Each task item contains its "ID" in a "ref" attribute.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div ref="1" class="item">Task 1</div>
-{{< / highlight >}}
+```
 
 ### Enable drag and drop
 
 The task items are added with JavaScript to the page, this means that you cannot directly add the "draggable" handler to the task items. A solution for this problem is to live bind the "draggable" handler to the task items. The following jQuery helper function can be used to solve this problem.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 //This are the jQUery Live plugins.
 //This plugin enable you to bind the draggable event to the items that are placed by an Ajax call.
 (function ($) {
@@ -167,7 +167,7 @@ The task items are added with JavaScript to the page, this means that you cannot
     });
   };
 })(jQuery);
-{{< / highlight >}}
+```
 
 When this function is added to the JavaScript file, the jQuery code can be written.
 
@@ -177,7 +177,7 @@ When this function is added to the JavaScript file, the jQuery code can be writt
   *   Remove the dropped item, otherwise two task items will exists;
   *   Create a call to the update function.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 $(function () {
   //Attach the draggable handler to the task items
   $(".item").liveDraggable({ containment: "#task-blocks", scroll: false });
@@ -199,7 +199,7 @@ function deleteItem($item) {
 
 //Change the moved task item
 function changeItemToStatus(itemID, newStatus) {}
-{{< / highlight >}}
+```
 
 Currently it is only possible to drag around the items and drop them on another status block. The next step is to write update function.
 
@@ -207,7 +207,7 @@ Currently it is only possible to drag around the items and drop them on another 
 
 The update function will make use of the SharePoint ECMAscript client object model.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 //Change the moved task item
 function changeItemToStatus(itemID, newStatus) {
   clientContext = new SP.ClientContext.get_current();
@@ -237,7 +237,7 @@ function changeItemToStatus(itemID, newStatus) {
 function onQuerySucceeded() {
   alert('Item updated!');
 }
-{{< / highlight >}}
+```
 
 The "onQueryFailed" function is reused from the "Retrieve the task list items" section.
 

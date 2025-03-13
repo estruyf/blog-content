@@ -25,11 +25,11 @@ Multilingual support on Modern SharePoint is a long-awaited feature for many com
 
 Documentation for this feature is already available on the following page: [create multilingual communication sites, pages, and news](https://support.office.com/en-us/article/create-multilingual-communication-sites-pages-and-news-2bb7d610-5453-41c6-a0e8-6f40b3ed750c).
 
-{{< caption "/2020/03/multilingual1.png" "Language switcher"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAYAAACQN/8FAAAAAklEQVR4AewaftIAAAEfSURBVHXBwYriQBCA4d+yY6KbYBYUTx58/6cSPIlGZ1bthKquHvswsAy73zeLMebFYoGI8DEmgszIGcwzyTO/V4FC7vc7Zoa7o5b4iEpUY9JE1IRaInsibDYbYoycz2dijCyXS6I7qkpxG3+x3W4JvHVdR9d1/E9KiWBmxBi53W7Udc1ut+OnP1NChmGgaRr2+z193/Mvn6Mj6/UaVeV4PHK5XFBVflrMIcQYeb1epJRQVU6nE6pKVVW0bUshORNEhNVqxTRNuDuz2YwQAlVVEUKgcHdCXdfknBnHkUJEMDOapqHvewozI/DWti1t21K4OyKCu/O3wNvj8eB6vSIi1HXN8/mkOBwOfAtmRtH3PTlniqqqyDkzDAPz+RwR4QtwNqKMM1DW+gAAAABJRU5ErkJggg==" "174" >}}
+{{< caption-new "/uploads/2020/03/multilingual1.png" "Language switcher"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAYAAACQN/8FAAAAAklEQVR4AewaftIAAAEfSURBVHXBwYriQBCA4d+yY6KbYBYUTx58/6cSPIlGZ1bthKquHvswsAy73zeLMebFYoGI8DEmgszIGcwzyTO/V4FC7vc7Zoa7o5b4iEpUY9JE1IRaInsibDYbYoycz2dijCyXS6I7qkpxG3+x3W4JvHVdR9d1/E9KiWBmxBi53W7Udc1ut+OnP1NChmGgaRr2+z193/Mvn6Mj6/UaVeV4PHK5XFBVflrMIcQYeb1epJRQVU6nE6pKVVW0bUshORNEhNVqxTRNuDuz2YwQAlVVEUKgcHdCXdfknBnHkUJEMDOapqHvewozI/DWti1t21K4OyKCu/O3wNvj8eB6vSIi1HXN8/mkOBwOfAtmRtH3PTlniqqqyDkzDAPz+RwR4QtwNqKMM1DW+gAAAABJRU5ErkJggg==" "174" >}}
 
 Once you activated your languages, you can start testing out the feature by creating pages.
 
-{{< caption "/2020/03/multilingual2.png" "Lanuage translation options"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAYAAACQN/8FAAAAAklEQVR4AewaftIAAADjSURBVH3B0W7qMBBF0X2ciR0cRB8u//+FvEQgKxiYqVIpEretupZut1v03okITqcTZsZ3z+cTk4SZIYneO601NuNUebhIEsdiWCkFd2cjiZwzX5TIJnZ2uVy43+8oV/59zNTDgd/Y+XzG3dk9Hg/ejePIxtyd1hqS2EQEG3enlMI4jmxsXVdKKUzTxF8spcS6rvTekQRKpHxgzol35u6YGfM8I4lN8JNJIiK4Xq8Mw4C7QzJyKRRL7FJrjWVZiAjeBf+zWivH45FaK7uIQBLvTBKv14tlWTAz3J1IA7lMTJbYfQK6T13rQYawVwAAAABJRU5ErkJggg==" "313" >}}
+{{< caption-new "/uploads/2020/03/multilingual2.png" "Lanuage translation options"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAYAAACQN/8FAAAAAklEQVR4AewaftIAAADjSURBVH3B0W7qMBBF0X2ciR0cRB8u//+FvEQgKxiYqVIpEretupZut1v03okITqcTZsZ3z+cTk4SZIYneO601NuNUebhIEsdiWCkFd2cjiZwzX5TIJnZ2uVy43+8oV/59zNTDgd/Y+XzG3dk9Hg/ejePIxtyd1hqS2EQEG3enlMI4jmxsXVdKKUzTxF8spcS6rvTekQRKpHxgzol35u6YGfM8I4lN8JNJIiK4Xq8Mw4C7QzJyKRRL7FJrjWVZiAjeBf+zWivH45FaK7uIQBLvTBKv14tlWTAz3J1IA7lMTJbYfQK6T13rQYawVwAAAABJRU5ErkJggg==" "313" >}}
 
 ## But how does it all work?
 
@@ -52,7 +52,7 @@ These fields are essential to know which languages are available, and also to fe
 
 The source page metadata looks as follows:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "_SPIsTranslation": "No",
   "_SPIsTranslation.value": "0",
@@ -60,7 +60,7 @@ The source page metadata looks as follows:
   "_SPTranslationLanguage": "",
   "_SPTranslationSourceItemId": ""
 }
-{{< / highlight >}}
+```
 
 Relevant here is that the current page is not a translated page, and has the following languages available: NL, FI, DE, and FR. For this page, the `_SPIsTranslation` and `_SPTranslatedLanguages` are the two critical fields.
 
@@ -68,7 +68,7 @@ Relevant here is that the current page is not a translated page, and has the fol
 
 The metadata of a page translation looks as follows:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "_SPIsTranslation": "Yes",
   "_SPIsTranslation.value": "1",
@@ -76,7 +76,7 @@ The metadata of a page translation looks as follows:
   "_SPTranslationLanguage": "fi-fi",
   "_SPTranslationSourceItemId": "{07EF5378-90FF-4560-AF28-E0A759DDBAF4}"
 }
-{{< / highlight >}}
+```
 
 In this metadata, you see a couple of differences. First, the `_SPIsTranslation` field specifies that the page is a translation instead of a source page, and the link to the source page can be retrieved via the unique ID: `_SPTranslationSourceItemId`.
 
@@ -96,19 +96,19 @@ As explained above, you will need to do a couple of calls to know if your contro
 
 You can retrieve the translation metadata by calling the `RenderListDataAsStream` endpoint for the SitePages library: `https://tenant.sharepoint.com/sites/sitename/_api/web/GetList(@listUrl)/RenderListDataAsStream?@listUrl='/sites/sitename/SitePages`. This API needs to be called via a POST request with the following body:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "parameters": {
     "ViewXml": "<View Scope=\"RecursiveAll\"><ViewFields><FieldRef Name=\"_SPIsTranslation\" /><FieldRef Name=\"_SPTranslatedLanguages\" /><FieldRef Name=\"_SPTranslationLanguage\" /><FieldRef Name=\"_SPTranslationSourceItemId\" /></ViewFields><Query><Where><Eq><FieldRef Name=\"ID\" /><Value Type=\"Number\">19</Value></Eq></Where></Query><RowLimit /></View>"
   }
 }
-{{< / highlight >}}
+```
 
 > **Info**: more information to use the RenderListDataAsStream API can be found here: [Using the SharePoint RenderListDataAsStream API to fetch lookup and single managed metadata field values](https://www.eliostruyf.com/using-sharepoint-renderlistdataasstream-api-fetch-lookup-single-managed-metadata-field-values/).
 
 Data you get back looks as follows:
 
-{{< caption "/2020/03/multilingual3.png" "RenderListDataAsStream response"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAACSSURBVH3BQaoCMRBF0VtJtYqC4MAV6P535kRUOumqPHv4weafY7f7XbVWlt75j2cEp8uVw/xiZNBbQxItkr+clSSGFea5sUSwxVllBK7BYarsvWAYPRNJmBmScDPjjFCpzBF8lqTxy1nFSJ4RjOJMljTxo7DSSCSBFYxtRRI+7bnsdhyj08QmNzMenzcGxBDJti+1uVQGmRiH4QAAAABJRU5ErkJggg==" "776" >}}
+{{< caption-new "/uploads/2020/03/multilingual3.png" "RenderListDataAsStream response"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAACSSURBVH3BQaoCMRBF0VtJtYqC4MAV6P535kRUOumqPHv4weafY7f7XbVWlt75j2cEp8uVw/xiZNBbQxItkr+clSSGFea5sUSwxVllBK7BYarsvWAYPRNJmBmScDPjjFCpzBF8lqTxy1nFSJ4RjOJMljTxo7DSSCSBFYxtRRI+7bnsdhyj08QmNzMenzcGxBDJti+1uVQGmRiH4QAAAABJRU5ErkJggg==" "776" >}}
 
 ### Retrieving the available language variants
 
@@ -118,7 +118,7 @@ If the current page is the source, you can use the **ID** of the page to retriev
 
 The call you need to perform to know all translations is: `https://tenant.sharepoint.com/sites/sitename/_api/sitepages/pages/getByUniqueId('<UniqueId>')?$select=Path,Version,Translations&$expand=Translations`.
 
-{{< caption "/2020/03/multilingual4.png" "Translations response"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAklEQVR4AewaftIAAACeSURBVHXBQU4DQQxFwWe3h4lAOQlw/1NFYoEUZtr2B8SCBU2VvT6/aHcjejJbHAIzkCC7qWq+xZbJvj/Q1UQW71VMfklQ3cTZzV2GSrTExR3xQ0B1E8OJnCfj6UoBAo5MPsQfbmbUeZBdZBUSSw7C3NmGc9k2zFgKvpg72SKzCLHkYMzjjiTGcMxYchD745UxBsb/YmDU2w1HmKDF0iesr1s7/HJWvQAAAABJRU5ErkJggg==" "1052" >}}
+{{< caption-new "/uploads/2020/03/multilingual4.png" "Translations response"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAklEQVR4AewaftIAAACeSURBVHXBQU4DQQxFwWe3h4lAOQlw/1NFYoEUZtr2B8SCBU2VvT6/aHcjejJbHAIzkCC7qWq+xZbJvj/Q1UQW71VMfklQ3cTZzV2GSrTExR3xQ0B1E8OJnCfj6UoBAo5MPsQfbmbUeZBdZBUSSw7C3NmGc9k2zFgKvpg72SKzCLHkYMzjjiTGcMxYchD745UxBsb/YmDU2w1HmKDF0iesr1s7/HJWvQAAAABJRU5ErkJggg==" "1052" >}}
 
 Highlighted in the above screenshot is the metadata you need to know which languages are available and their page URL.
 
@@ -134,7 +134,7 @@ The creation process is also something you can do from your components. You can 
 
 The request body looks as follows:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "request": {
     "__metadata": {
@@ -145,11 +145,11 @@ The request body looks as follows:
     }
   }
 }
-{{< / highlight >}}
+```
 
 > **Info**: the `LanguageCodes` results is an array of the languages for which you want to create translations. If you specify an **empty array** `[]`, it creates all language pages at once. In my example, it would be NL, DE, FI, and FR. If you want to create an individual or a couple of pages, you can pass in the language code like: `["nl-nl"]` or `["nl-nl", "fi-fi"]`.
 
-{{< caption "/2020/03/multilingual5.png" "Translation creation API sample"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAklEQVR4AewaftIAAADESURBVHXBTUoDURCF0a/qvTYtgTaJS8gWBDEgbsVJnLkFtyi4g4wcSmNQsF/V9QcyUXOOPe5etF4WSikcmBl933Mgifpwf8s4jhgCiR/uSKAMvi0WC+rddsvT8xvr8xnzE+c/XddRNzcXXBtfhJlh7pgZ1QsHEYFdXm30ut9jH+9kishEgCQihblzNgzUjEZE0qbG1II/MolMHAnFhAG1OMe4gDo7pasFwzimGpARTC1oERxTl6sV7iM270mJFslvwzDwCdQUV0mrlFUPAAAAAElFTkSuQmCC" "1223" >}}
+{{< caption-new "/uploads/2020/03/multilingual5.png" "Translation creation API sample"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAklEQVR4AewaftIAAADESURBVHXBTUoDURCF0a/qvTYtgTaJS8gWBDEgbsVJnLkFtyi4g4wcSmNQsF/V9QcyUXOOPe5etF4WSikcmBl933Mgifpwf8s4jhgCiR/uSKAMvi0WC+rddsvT8xvr8xnzE+c/XddRNzcXXBtfhJlh7pgZ1QsHEYFdXm30ut9jH+9kishEgCQihblzNgzUjEZE0qbG1II/MolMHAnFhAG1OMe4gDo7pasFwzimGpARTC1oERxTl6sV7iM270mJFslvwzDwCdQUV0mrlFUPAAAAAElFTkSuQmCC" "1223" >}}
 
 ### How to know which translations are possible?
 
@@ -157,7 +157,7 @@ You can only translate pages to the selected languages for the site. Otherwise, 
 
 To know the untranslated languages, you can use the same API as you used for retrieving the page variants: `https://tenant.sharepoint.com/sites/sitename/_api/sitepages/pages/getByUniqueId('<UniqueId>')?$select=Path,Version,Translations&$expand=Translations`.
 
-{{< caption "/2020/03/multilingual6.png" "Untranslated languages"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAABoSURBVG3BQQoCMRAAwZ5kD4uCv5D9/9MUBLPJTHsVsSrux+F+vdHPFz2CMRcqBATBqkJlW3NCayyDVFCyEoVSsgqF7aLsmcxM2hw8SlKpkm9bRjBeT+Z4ozD5bzsjyNap3kFoVZTy6wPurkrtT/V/wAAAAABJRU5ErkJggg==" "827" >}}
+{{< caption-new "/uploads/2020/03/multilingual6.png" "Untranslated languages"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAABoSURBVG3BQQoCMRAAwZ5kD4uCv5D9/9MUBLPJTHsVsSrux+F+vdHPFz2CMRcqBATBqkJlW3NCayyDVFCyEoVSsgqF7aLsmcxM2hw8SlKpkm9bRjBeT+Z4ozD5bzsjyNap3kFoVZTy6wPurkrtT/V/wAAAAABJRU5ErkJggg==" "827" >}}
 
 You can retrieve languages that are available for translation from the `UntranslatedLanguages` property.
 

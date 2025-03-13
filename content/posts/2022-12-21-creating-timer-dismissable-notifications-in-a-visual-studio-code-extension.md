@@ -50,7 +50,7 @@ Additional logic is required to solve the dismiss issue in progress notification
 
 The whole solution looks as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import * as vscode from 'vscode';
 
 const sleep = (time: number) => {
@@ -104,7 +104,7 @@ export function activate(context: vscode.ExtensionContext) {
     // Add your undo logic here
   })
 }
-{{< / highlight >}}
+```
 
 The code from the above snippet shows a progress notification for 10 seconds with a **undo** link that uses a command URI.
 

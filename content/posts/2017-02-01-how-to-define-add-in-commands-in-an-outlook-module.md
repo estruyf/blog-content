@@ -43,7 +43,7 @@ If you have not done this before. The way to implement it is by specifying a new
 
 Here is an example (check out the previous URL for a fully-detailed example):
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <Control xsi:type="Button" id="btnSample">
   <Label resid="lblSampleButtonLabel" />
   <Supertip>
@@ -59,15 +59,15 @@ Here is an example (check out the previous URL for a fully-detailed example):
     <FunctionName>sampleFunction</FunctionName>
   </Action>
 </Control>
-{{< / highlight >}}
+```
 
 If you specified everything correctly in your manifest it will get displayed in Outlook. When you click on the button, it will execute the function which is defined in the **ExecuteFunction** action element. Which in this case is the **sampleFunction**.
 
 To allow this functionality to work, you have to specify a **FunctionFile** element with a reference to a page that contains all the command action functions (JavaScript).
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <FunctionFile resid="functionFile" />
-{{< / highlight >}}
+```
 
 
 ## Implementing add-in commands in a Outlook module
@@ -84,6 +84,6 @@ So, what I concluded is that the FunctionFile is not required for module add-in 
 
 Here is a very simple Outlook module sample:
 
-{{< caption-legacy "uploads/2017/02/020117_1337_Usingaddinc1.png" "Sample Outlook module to show the command functionality" >}}
+{{< caption-new "/uploads/2017/02/020117_1337_Usingaddinc1.png" "Sample Outlook module to show the command functionality" >}}
 
 On the following GitHub repository, you can check out the code: [Outlook module command sample](https://github.com/estruyf/OutlookModuleCommandSample).

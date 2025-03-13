@@ -18,7 +18,7 @@ comments: true
 
 Web part icons help you to distinguish your web part between all the others.
 
-{{< caption-legacy "uploads/2017/09/091917_1944_Usingbase641.png" "Modern client-side web parts" >}}
+{{< caption-new "/uploads/2017/09/091917_1944_Usingbase641.png" "Modern client-side web parts" >}}
 
 SharePoint Framework provides use two options at this moment of specifying an icon:
 
@@ -37,11 +37,11 @@ Instead of specifying an URL to an image to load, you can encode your image. Tha
 
 For example, this image:
 
-{{< caption-legacy "uploads/2017/09/091917_1944_Usingbase642.jpg" "PnP SharePoint" >}}
+{{< caption-new "/uploads/2017/09/091917_1944_Usingbase642.jpg" "PnP SharePoint" >}}
 
 Becomes this:
 
-{{< caption-legacy "uploads/2017/09/091917_1944_Usingbase643.png" "PnP SharePoint encode image" >}}
+{{< caption-new "/uploads/2017/09/091917_1944_Usingbase643.png" "PnP SharePoint encode image" >}}
 
 The great thing about it is that you can maintain everything in one location and do not have to worry about where you are going to store the icon images.
 
@@ -51,8 +51,8 @@ There are a lot of online converters, one that I use frequently is [https://www.
 
 On that website you upload the image, the website encodes it and provides you with a couple of options. The one you need to be used in the web part manifest is the **copy image** option.
 
-{{< caption-legacy "uploads/2017/09/091917_1944_Usingbase644.png" "Encoded image" >}}
+{{< caption-new "/uploads/2017/09/091917_1944_Usingbase644.png" "Encoded image" >}}
 
 Once copied, add it to the **iconImageUrl** property and you are all set to go.
 
-{{< caption-legacy "uploads/2017/09/091917_1944_Usingbase645.png" "Web part with encoded image instead of using an URL" >}}
+{{< caption-new "/uploads/2017/09/091917_1944_Usingbase645.png" "Web part with encoded image instead of using an URL" >}}

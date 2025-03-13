@@ -26,19 +26,19 @@ But these social features are nothing compared to the social features like Faceb
 
 When you click on the **Tags and Notes** button, the following location will be opened in a dialog box: /_layouts/socialdataframe.aspx?Url=http://your_page&Title=Home&mode=0&IsDlg=1
 
-{{< caption-legacy "uploads/2012/03/031812_1807_TakeyourSha1.png" "Social Data Frame" >}}
+{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha1.png" "Social Data Frame" >}}
 
 Another way to quickly check which tags have been created, is to navigate to the **Manage Social Tags and Notes** page. This page can be found here: Central Administration -> Manage service applications -> open your User Profile Service Application -> Manage Social Tags and Notes.
 
 On this page you can create your own tagging queries.
 
-{{< caption-legacy "uploads/2012/03/031812_1807_TakeyourSha2.png" "Social Tag Manager" >}}
+{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha2.png" "Social Tag Manager" >}}
 
 The previous page can only be accessed when you are a SharePoint administrator.
 
 What I want to achieve with this blog post series is to create something like this:
 
-{{< caption-legacy "uploads/2012/03/031812_1807_TakeyourSha3.png" "Page Tags" >}}
+{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha3.png" "Page Tags" >}}
 
 This can be found on various platforms and allow your users to quickly see the total of tags/likes/tweets that have been made for the page.
 
@@ -50,13 +50,13 @@ The first part of this blog post series describes how you can retrieve social ta
 
 Tags can easily be retrieved by code. To do this you will need to use the SharePoint 2010 [SocialTagManger class](http://msdn.microsoft.com/en-us/library/microsoft.office.server.socialdata.socialtagmanager.aspx). This class contains a method called **GetTags** which can be used to retrieve the tags for a current page or user.
 
-{{< caption-legacy "uploads/2012/03/031812_1807_TakeyourSha4.png" "Social Tag Methods" >}}
+{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha4.png" "Social Tag Methods" >}}
 
 As we want to show the total number of tags and likes that are related to the page, you could only use the method with the URI as parameter.
 
 Here is an example how to retrieve the tags for each page from the Site Pages library in a console application.
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 using System;
 using System.Web;
 using System.Linq;
@@ -94,7 +94,7 @@ namespace estruyf.SocialTagging
     }
   }
 }
-{{< / highlight >}}
+```
 
 You will need to add the following references:
 
@@ -103,11 +103,11 @@ You will need to add the following references:
 *   Microsoft.SharePoint.Taxonomy.
 My application output is the following:
 
-{{< caption-legacy "uploads/2012/03/031812_1807_TakeyourSha5.png" "Social Tag Results" >}}
+{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha5.png" "Social Tag Results" >}}
 
 The problem is that only the items for the **current user** can be retrieved.
 
-{{< caption-legacy "uploads/2012/03/031812_1807_TakeyourSha6.png" "Social Tag Method" >}}
+{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha6.png" "Social Tag Method" >}}
 
 ## Part 2
 

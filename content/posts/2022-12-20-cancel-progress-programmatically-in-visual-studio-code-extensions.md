@@ -26,7 +26,7 @@ For example, in your progress, you are processing all files because the user req
 
 With the progress its callback, you get a `CancellationToken` argument, although this token can only be used to monitor if the user has canceled the operation. 
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 vscode.window.withProgress({
     title: 'Please wait...',
     location: vscode.ProgressLocation.Notification,
@@ -42,7 +42,7 @@ vscode.window.withProgress({
     await sleep(1000);
   }
 });
-{{< / highlight >}}
+```
 
 If we want to do this programmatically, you must create your own `CancellationToken` logic. The nice thing is that Visual Studio Code's extension API already provides this. 
 
@@ -50,7 +50,7 @@ To create your cancellation logic, you can use the `vscode.CancellationTokenSour
 
 The code for this looks as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import * as vscode from 'vscode';
 
 const sleep = (time: number) => {
@@ -102,7 +102,7 @@ export function activate(context: vscode.ExtensionContext) {
     }
   }, 10000);
 }
-{{< / highlight >}}
+```
 
 {{< blockquote type="info" text="The above code snippet creates a progress notification for 30 seconds, but after 10 seconds, it will get canceled programmatically." >}}
 

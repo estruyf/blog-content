@@ -27,17 +27,17 @@ When you go to your CDN on the Azure Portal and click on **Manage**, it will ope
 
 On the configuration page, hover over the **HTTP Large** and click on **Rules Engine V4.0**.
 
-{{< caption "/2021/02/azurecdn1.png" "Rules Engine v4.0"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABNSURBVE3BMQ7DMAwEwRWPgtTQ+f/vYsC1Gps1gxQGNNPWWpWZmBlxfKjWGC7+JPEydyciiAjyubnOL5mJJHY+50QSVYUkeu+MMdiZGT878xQMXs+sLAAAAABJRU5ErkJggg==" "861" >}}
+{{< caption-new "/uploads/2021/02/azurecdn1.png" "Rules Engine v4.0"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABNSURBVE3BMQ7DMAwEwRWPgtTQ+f/vYsC1Gps1gxQGNNPWWpWZmBlxfKjWGC7+JPEydyciiAjyubnOL5mJJHY+50QSVYUkeu+MMdiZGT878xQMXs+sLAAAAABJRU5ErkJggg==" "861" >}}
 
 You will end up on a page with an overview of all the active policies/rules. Create a **new** one under **Drafts**.
 
-{{< caption "/2021/02/azurecdn2.png" "New draft policy/rule"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAmSURBVDXBKQ4AMAwDsByg//9rwUCkTAOzeXbrGdjGRxJtkQSPJFzmUQn1X5iy1AAAAABJRU5ErkJggg==" "1176" >}}
+{{< caption-new "/uploads/2021/02/azurecdn2.png" "New draft policy/rule"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAmSURBVDXBKQ4AMAwDsByg//9rwUCkTAOzeXbrGdjGRxJtkQSPJFzmUQn1X5iy1AAAAABJRU5ErkJggg==" "1176" >}}
 
 Specify the name for your new rule, and click **continue**. On the Rule builder, you can start creating your new rewrite rule, and this is where it became a bit different.
 
 Click on **+ Rule** and after that, click on **+**, and choose **Match**
 
-{{< caption "/2021/02/azurecdn3.png" "Create new rule"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAAC4SURBVIXBvY5FUBSA0W9z/MVBqfAOSk/jtRXUEqVCCDmOPaOY5FZ31hLvvf7iP0ZV2bYNVeV5HkSEVxiGOOcIgoAsyzAiQlmW/FFVRISXqiIivMy2bSRJQpqmfBM451iWhfM8+cbkeU5RFLyO4yAMQ7z3iAhxHHPfN1EUYdZ1ZZ5n1nXFWov3nuu6MMZQ1zVN05AkCWaaJoZhoCgKxnFk33c+9X1PVVWYruto2xZVRUQQET5Za3n9AJXtUDYf4GMcAAAAAElFTkSuQmCC" "208" >}}
+{{< caption-new "/uploads/2021/02/azurecdn3.png" "Create new rule"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAAC4SURBVIXBvY5FUBSA0W9z/MVBqfAOSk/jtRXUEqVCCDmOPaOY5FZ31hLvvf7iP0ZV2bYNVeV5HkSEVxiGOOcIgoAsyzAiQlmW/FFVRISXqiIivMy2bSRJQpqmfBM451iWhfM8+cbkeU5RFLyO4yAMQ7z3iAhxHHPfN1EUYdZ1ZZ5n1nXFWov3nuu6MMZQ1zVN05AkCWaaJoZhoCgKxnFk33c+9X1PVVWYruto2xZVRUQQET5Za3n9AJXtUDYf4GMcAAAAAElFTkSuQmCC" "208" >}}
 
 Set the select category dropdown to **General**, and the select match dropdown to **Always**. Click the **+** under the condition, choose **URL** for the category, and **URL Rewrite** for the feature.
 
@@ -49,14 +49,14 @@ In the destination input, add the following: `/<cdn-ID>/<CDN-name>/$1?sv=2020-02
 
 {{< blockquote type="Info" text="The `$1` placeholder will be replaced automatically by the CDN with the value from the regex in the source URL." >}}
 
-{{< caption "/2021/02/azurecdn4.png" "Source and destination configuration for rewrite"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACGSURBVF3BwWqEQBBF0VuvSlFcGLII+f/fm2RcCM4wbXeFXghhzrFt2zIiGKcZN3B3LqUUOncnBhmtVl7PB8uycKm1Ionz9wZywmJgkJBEKYV39vHJef8hTnNmF5IwM8yMLjMxM7r4+kbT6Lg7XWbSWqPb953jOOgkEbTEwpDEf+u6cslM/gAVEC4+A36hbAAAAABJRU5ErkJggg==" "1292" >}}
+{{< caption-new "/uploads/2021/02/azurecdn4.png" "Source and destination configuration for rewrite"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACGSURBVF3BwWqEQBBF0VuvSlFcGLII+f/fm2RcCM4wbXeFXghhzrFt2zIiGKcZN3B3LqUUOncnBhmtVl7PB8uycKm1Ionz9wZywmJgkJBEKYV39vHJef8hTnNmF5IwM8yMLjMxM7r4+kbT6Lg7XWbSWqPb953jOOgkEbTEwpDEf+u6cslM/gAVEC4+A36hbAAAAABJRU5ErkJggg==" "1292" >}}
 
 Click on **Lock Draft as Policy**, which brings you to create the policy deployment screen. Select your environment (Production), add a message, and click on **Create Deploy Request**.
 
-{{< caption "/2021/02/azurecdn5.png" "Create Deploy Request"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABqSURBVDXBuRXDIBBAwb+HAKkPB+6/GweuQSkIdv0IPCP3faeqUs4LFzAz/p7nYTMz3Esl1mKNjh4HYwxaa0QEIkL/ftBS8FYOeg9qragqZoaIkJnMOblebzaPCNydzGQTETITM8Pd2TKTH3Q4K1NS2fq9AAAAAElFTkSuQmCC" "1303" >}}
+{{< caption-new "/uploads/2021/02/azurecdn5.png" "Create Deploy Request"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABqSURBVDXBuRXDIBBAwb+HAKkPB+6/GweuQSkIdv0IPCP3faeqUs4LFzAz/p7nYTMz3Esl1mKNjh4HYwxaa0QEIkL/ftBS8FYOeg9qragqZoaIkJnMOblebzaPCNydzGQTETITM8Pd2TKTH3Q4K1NS2fq9AAAAAElFTkSuQmCC" "1303" >}}
 
 Now the CDN will start the deployment and will notify if it succeeded.
 
-{{< caption "/2021/02/azurecdn6.png" "Waiting on deployment"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABfSURBVF3BQQ6DQAwEwfaMcQ78/6EQKSLaBUd7TVUcx9ERQdaLzSIiWGwz52SRROZWLKKJCMYYSGJ5ngfbdDdKi3sOIoLuJjORxLxvPteXxTZZVVQV/9zN+zy5LPZ95wcW8yMbrI/xrAAAAABJRU5ErkJggg==" "1300" >}}
+{{< caption-new "/uploads/2021/02/azurecdn6.png" "Waiting on deployment"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABfSURBVF3BQQ6DQAwEwfaMcQ78/6EQKSLaBUd7TVUcx9ERQdaLzSIiWGwz52SRROZWLKKJCMYYSGJ5ngfbdDdKi3sOIoLuJjORxLxvPteXxTZZVVQV/9zN+zy5LPZ95wcW8yMbrI/xrAAAAABJRU5ErkJggg==" "1300" >}}
 
 {{< blockquote type="Important" text="Once this process is completed, make sure you wait a couple of hours before the new policy/rule is implemented on all nodes. Documentation tells you that this process can take up to 4 hours." >}}

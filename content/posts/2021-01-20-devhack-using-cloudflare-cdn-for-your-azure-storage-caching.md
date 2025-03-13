@@ -23,7 +23,7 @@ Suddenly it struck me that we might be able to make use of Cloudflare. As they h
 
 Go to Cloudflare, and register your domain. If you already have a registered domain, go to the **DNS** tab, and configure a CNAME record as follows:
 
-{{< caption "/2021/01/cloudflare1.png" "CDN - CNAME record in Cloudflare"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAqSURBVBXBMQ4AIAwDsYMQ9f8/7VIEUxH2yMy2TUTQ3VRt1hKfJDyhzuUBNGsM0/lMlykAAAAASUVORK5CYII=" "830" >}}
+{{< caption-new "/uploads/2021/01/cloudflare1.png" "CDN - CNAME record in Cloudflare"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAqSURBVBXBMQ4AIAwDsYMQ9f8/7VIEUxH2yMy2TUTQ3VRt1hKfJDyhzuUBNGsM0/lMlykAAAAASUVORK5CYII=" "830" >}}
 
 - Type: `CNAME`
 - Name: `cdn` (or anything you want)
@@ -37,7 +37,7 @@ Once you configured this record, you can set up this custom domain on your Azure
 
 On the Azure Storage portal, open your Azure Storage Account. Under **Blob service** you will find the **Custom domain** link.
 
-{{< caption "/2021/01/cloudflare2.png" "Provide the CDN domain name for your storage account"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAACuSURBVHXBQVLDMAxA0S/JxXHCojvufzqWTMK0E1uWDWGGZd+Tz73NTU40b7THzlvZ6K1yS8a6rvxL71qZE2Z7YmZEOzFVIoLjOLiYGamUwr7vXNydnDOtNUSEMQYigqqiZsYlIhhj4O703rn03okI3B3l1xiD3jtzTtwdVaXWiojg7ogI6esZSLlzK/zpMREVsoAgfKyGCCTrD3ROcs4sy8IrKc5Ja43zuyJ35ZUfzrFfdlC/uZoAAAAASUVORK5CYII=" "353" >}}
+{{< caption-new "/uploads/2021/01/cloudflare2.png" "Provide the CDN domain name for your storage account"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAACuSURBVHXBQVLDMAxA0S/JxXHCojvufzqWTMK0E1uWDWGGZd+Tz73NTU40b7THzlvZ6K1yS8a6rvxL71qZE2Z7YmZEOzFVIoLjOLiYGamUwr7vXNydnDOtNUSEMQYigqqiZsYlIhhj4O703rn03okI3B3l1xiD3jtzTtwdVaXWiojg7ogI6esZSLlzK/zpMREVsoAgfKyGCCTrD3ROcs4sy8IrKc5Ja43zuyJ35ZUfzrFfdlC/uZoAAAAASUVORK5CYII=" "353" >}}
 
 Once you filled in your domain name, you are all set in my case `cdn.eliostruyf.com`.
 

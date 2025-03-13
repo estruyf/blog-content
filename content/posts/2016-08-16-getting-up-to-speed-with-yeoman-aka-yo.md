@@ -19,7 +19,7 @@ Yeoman is yet another tool that you cannot miss in your client-side development 
 
 By now you may have asked yourself if this is always the case with every new project you are going to create. Luckily it is not the case. This is where Yeoman comes into the picture.
 
-{{< caption-legacy "uploads/2016/08/081616_1346_Gettingupto1.png" "Yeoman logo" >}}
+{{< caption-new "/uploads/2016/08/081616_1346_Gettingupto1.png" "Yeoman logo" >}}
 
 > Yeoman: the web's scaffolding tool for modern webapps
 
@@ -32,7 +32,7 @@ Yeoman creates projects base on the generator that you use. A generator is to Ye
 The creation process of new projects with Yeoman is also done via command line. An example of this would be: **yo displaytemplates** or **yo office**.
 
 
-{{< caption-legacy "uploads/2016/08/081616_1346_Gettingupto2.png" "Yeoman command line utility in action" >}}
+{{< caption-new "/uploads/2016/08/081616_1346_Gettingupto2.png" "Yeoman command line utility in action" >}}
 
 > **Info**: yo is the Yeoman command line tool that you need to use. That is why "everyone" is talking about **yo Office** or **yo SharePoint** (which is probably coming with the SharePoint framework).
 
@@ -41,9 +41,9 @@ The creation process of new projects with Yeoman is also done via command line. 
 
 The installation part of Yeoman requires you to have Node.js and npm installed on your machine. Once these prerequisites are in place. You can install Yeoman globally with the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm install -g yo
-{{< / highlight >}}
+```
 
 
 > **Info**: you need to install Yeoman globally to be able to use it as a command line utility.
@@ -51,17 +51,17 @@ $ npm install -g yo
 Once the installation is completed. You can test it out by running:
 
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ yo
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2016/08/081616_1346_Gettingupto3.png" "Running Yeoman for the first time" >}}
+{{< caption-new "/uploads/2016/08/081616_1346_Gettingupto3.png" "Running Yeoman for the first time" >}}
 
 ## Installing generators
 
 On the [http://yeoman.io/generators/](http://yeoman.io/generators/) page, you find all the available Yeoman generators:
 
-{{< caption-legacy "uploads/2016/08/081616_1346_Gettingupto4.png" "Yeoman generators search page" >}}
+{{< caption-new "/uploads/2016/08/081616_1346_Gettingupto4.png" "Yeoman generators search page" >}}
 
 The first way to install a generator is to let Yeoman search for it. You do this as follows:
 
@@ -69,28 +69,28 @@ The first way to install a generator is to let Yeoman search for it. You do this
 *   Select **install a generator**;
 *   Type in the name and press enter:
 
-{{< caption-legacy "uploads/2016/08/081616_1346_Gettingupto5.png" "Yeoman generator installation" >}}
+{{< caption-new "/uploads/2016/08/081616_1346_Gettingupto5.png" "Yeoman generator installation" >}}
 
 *   Yeoman will search on npm for your generator and once it is found you can press enter again to install it:
 
-{{< caption-legacy "uploads/2016/08/081616_1346_Gettingupto6.png" "Yeoman generator installation process" >}}
+{{< caption-new "/uploads/2016/08/081616_1346_Gettingupto6.png" "Yeoman generator installation process" >}}
 
 Now there is another way and most likely the one you will be using the most. If you go to a project on GitHub or npm, the developer will tell you the command to use to install the generator. Like for example on my display template generator page: [https://www.npmjs.com/package/generator-displaytemplates](https://www.npmjs.com/package/generator-displaytemplates)
 
 The command to install the display template generator is:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm install -g gulp yo generator-displaytemplates
-{{< / highlight >}}
+```
 
 
 > **Info**: the command will also install the gulp and yo dependencies.
 
 The same goes for the Office generator. If you go to the GitHub page of the [Office generator](https://github.com/OfficeDev/generator-office). The development team mentions the following install command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ npm install -g tsd bower gulp yo generator-office
-{{< / highlight >}}
+```
 
 
 > **Info**: the command will also install the tsd, bower, gulp and yo dependencies.
@@ -100,23 +100,23 @@ $ npm install -g tsd bower gulp yo generator-office
 
 Once you have installed a generator, it is time to make use of it. You can do this by typing yo followed by the name of the generator:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 $ yo displaytemplates
-{{< / highlight >}}
+```
 
 As Yeoman is a command line utility, there are no wizards for specifying the project name, description, and other project related information. Instead, Yeoman will ask you this questions in the command prompt:
 
-{{< caption-legacy "uploads/2016/08/081616_1346_Gettingupto7.png" "Yeoman questions" >}}
+{{< caption-new "/uploads/2016/08/081616_1346_Gettingupto7.png" "Yeoman questions" >}}
 
 Of course, these questions vary based on the type of generator you are using. These questions are defined by the developer.
 
 Once you answered all questions, the generator will do its thing to create your project.
 
-{{< caption-legacy "uploads/2016/08/081616_1346_Gettingupto8.png" "Yeoman project installation and configuration" >}}
+{{< caption-new "/uploads/2016/08/081616_1346_Gettingupto8.png" "Yeoman project installation and configuration" >}}
 
 In this case, you will end up with the following files and folders in the project root:
 
-{{< caption-legacy "uploads/2016/08/081616_1346_Gettingupto9.png" "Project files" >}}
+{{< caption-new "/uploads/2016/08/081616_1346_Gettingupto9.png" "Project files" >}}
 
 ## Building your own generators
 

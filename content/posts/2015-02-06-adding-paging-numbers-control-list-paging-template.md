@@ -20,13 +20,13 @@ comments: true
 
 When you are using the Content Search Web Part, you have by default a control template list with paging available. Now this template only shows left and right buttons to navigate to the next or previous page:
 
-{{< caption-legacy "uploads/2015/02/020615_1010_Addingpagin1.png" "Default list with paging template" >}}
+{{< caption-new "/uploads/2015/02/020615_1010_Addingpagin1.png" "Default list with paging template" >}}
 
 These two buttons do not give you very much visual information about paging. For example: you do not know on which page you currently are and you can only go back one page at a time.
 
 If you go to a SharePoint search center the paging works a bit differently compared to the CSWP template. In the default control template of the search result web part the same left and right paging buttons are included, but you also have page numbers which makes it easier to navigate.
 
-{{< caption-legacy "uploads/2015/02/020615_1010_Addingpagin2.png" "Search result web part template with paging" >}}
+{{< caption-new "/uploads/2015/02/020615_1010_Addingpagin2.png" "Search result web part template with paging" >}}
 
 As this is just some additional JavaScript it can be easily added to your own templates so that you can create a control template with paging numbers for the CSWP.
 
@@ -34,7 +34,7 @@ As this is just some additional JavaScript it can be easily added to your own te
 
 The code you need to add to get these paging numbers in your control template is the following:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--#_
 // Show the paging numbers
 for (var i = 0; i < pagingInfo.length; i++) {
@@ -56,7 +56,7 @@ _#-->
     }
 }
 _#-->
-{{< / highlight >}}
+```
 
 &nbsp;
 
@@ -64,13 +64,13 @@ The code loops over all the available pages. You need to be aware that there are
 
 *   "-1": move to the previous page
 *   "-2": move to the next page
-{{< caption-legacy "uploads/2015/02/020615_1010_Addingpagin3.png" "Special page numbers" >}}
+{{< caption-new "/uploads/2015/02/020615_1010_Addingpagin3.png" "Special page numbers" >}}
 
 These special numbers are used for the left and right buttons, so they do not need to be included in the paging numbers. That is why there is a check to see if the pageNumber is not equal to -1 or -2.
 
 This code needs to be added in between the left and right buttons:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <li class="ms-promlink-header">
     <span class="ms-promlink-headerNav">
         <a class="ms-commandLink ms-promlink-button _#= $htmlEncode(previousPageContainerClassName) =#_" title="_#= $htmlEncode(firstPage.title) =#_" href="#" onclick='$getClientControl(this).page(_#= $htmlEncode(firstPage.startItem) =#_);return Srch.U.cancelEvent(event);'>
@@ -112,14 +112,14 @@ _#-->
         </a>
     </span>
 </li>
-{{< / highlight >}}
+```
 
 
 ## Result
 
 This is the end result:
 
-{{< caption-legacy "uploads/2015/02/020615_1010_Addingpagin4.png" "List with paging buttons and numbers" >}}
+{{< caption-new "/uploads/2015/02/020615_1010_Addingpagin4.png" "List with paging buttons and numbers" >}}
 
 ## Download
 

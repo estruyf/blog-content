@@ -35,7 +35,7 @@ It is easy to understand that version numbers need to be in sync, but if you acc
 
 When you accidentally reference an incorrect version in a web part, you see the following message:
 
-{{< caption "/2019/11/library-component-1.png" "Web part with an incorrect version reference"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACHSURBVB3BSw7CMBAFwX7zCVbuf0nWiEhxbA8yVXp/nlpVhIkWxp+AAgRh0MIIf74EhQncXpgZtYqtVmE4911EzYcCPJPeO1XFJonMxN1xd2KthSTGGEgiIogINkn03slMYozBdV3MOTEz3J3WGpmJmeHubJGZnOfJnBNJRATHcZCZuDutNbYf4oMzsC/8YDoAAAAASUVORK5CYII=" "813" >}}
+{{< caption-new "/uploads/2019/11/library-component-1.png" "Web part with an incorrect version reference"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACHSURBVB3BSw7CMBAFwX7zCVbuf0nWiEhxbA8yVXp/nlpVhIkWxp+AAgRh0MIIf74EhQncXpgZtYqtVmE4911EzYcCPJPeO1XFJonMxN1xd2KthSTGGEgiIogINkn03slMYozBdV3MOTEz3J3WGpmJmeHubJGZnOfJnBNJRATHcZCZuDutNbYf4oMzsC/8YDoAAAAASUVORK5CYII=" "813" >}}
 
 This message tells you what the issue is. As it points out two things:
 
@@ -46,17 +46,17 @@ As you probably own both of the projects, it is easy to check the version number
 
 When you are using an Application Customizer, it is a bit different. There you get the following error message (in the browser its console):
 
-{{< caption "/2019/11/library-component-2.png" "Application Customizer issue when referencing incorrect library version"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAqSURBVGN0FRX7z8jBwfD5yxeGH1+/Mvz9+5cBDP7/Z/jPwMDAyMjIAAIATEENNs9UnyQAAAAASUVORK5CYII=" "1919" >}}
+{{< caption-new "/uploads/2019/11/library-component-2.png" "Application Customizer issue when referencing incorrect library version"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAqSURBVGN0FRX7z8jBwfD5yxeGH1+/Mvz9+5cBDP7/Z/jPwMDAyMjIAAIATEENNs9UnyQAAAAASUVORK5CYII=" "1919" >}}
 
 This was my original issue of where it all started for me. In the above error message, you do not see any reference to the library component, so you might think that SharePoint has an issue with loading the manifest file of your application customizer, which is, of course, not the case. Debugging the SharePoint JS code, you can find out where the issue is coming.
 
-{{< caption "/2019/11/library-component-3.png" "Debugging SP JS code"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABaSURBVDXBMQ6DMAxA0e+SilAxVr0Kvf9VmGGgCtgJwVUG3pPpO3kuhcbMEAL5VPyq9DFyC8/xYpl/3D7vF3EY0E1JdpLUaMK+VqhOIyIUPTiSYLmAO333wIE/EM8qDpxjYgcAAAAASUVORK5CYII=" "1382" >}}
+{{< caption-new "/uploads/2019/11/library-component-3.png" "Debugging SP JS code"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABaSURBVDXBMQ6DMAxA0e+SilAxVr0Kvf9VmGGgCtgJwVUG3pPpO3kuhcbMEAL5VPyq9DFyC8/xYpl/3D7vF3EY0E1JdpLUaMK+VqhOIyIUPTiSYLmAO333wIE/EM8qDpxjYgcAAAAASUVORK5CYII=" "1382" >}}
 
 By placing a breakpoint on that code and refreshing the page, the breakpoint gets hit twice, first, for the library component and second for the application customizer. 
 
 Here is the output of the variable `n` when it first hits my breakpoint:
 
-{{< caption "/2019/11/library-component-4.png" "Library component loading issue"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAjSURBVBXBwQ0AIAgEsJ7j8HP/1YgY2tyqed3WQRIreDMGjQ/OYwl5H6BLUQAAAABJRU5ErkJggg==" "1375" >}}
+{{< caption-new "/uploads/2019/11/library-component-4.png" "Library component loading issue"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAjSURBVBXBwQ0AIAgEsJ7j8HP/1YgY2tyqed3WQRIreDMGjQ/OYwl5H6BLUQAAAABJRU5ErkJggg==" "1375" >}}
 
 For the library component, there is no error shown in the browser console. The only pointer you have is the application customizer project ID, which might lead you to the wrong path.
 

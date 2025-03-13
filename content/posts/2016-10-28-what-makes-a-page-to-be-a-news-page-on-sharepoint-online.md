@@ -17,7 +17,7 @@ comments: true
 
 Yesterday our tenant got the new team news functionality. This functionality allows you to write news in your team site which gets published on the homepage or via the new news headlines web part.
 
-{{< caption-legacy "uploads/2016/10/102816_1451_Whatmakesap1.png" "Team news functionality" >}}
+{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap1.png" "Team news functionality" >}}
 
 > **Info**: SharePoint Online "team news" begins roll out to Office 365 First Release customers - [https://techcommunity.microsoft.com/t5/SharePoint-Blog/SharePoint-Online-team-news-begins-roll-out-to-Office-365-First/ba-p/22763](https://techcommunity.microsoft.com/t5/SharePoint-Blog/SharePoint-Online-team-news-begins-roll-out-to-Office-365-First/ba-p/22763)
 
@@ -27,17 +27,17 @@ As I started testing out the news page functionality. I questioned myself how th
 
 Both pages also look the same:
 
-{{< caption-legacy "uploads/2016/10/102816_1451_Whatmakesap2.png" "News page and site page layout" >}}
+{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap2.png" "News page and site page layout" >}}
 
 So, as they look and feel the same, where is the difference? You would think metadata, and this in fact true, but you cannot see it from the UI. If you would check the properties from the UI, you will only see its Title and Name. Now, when you open the content type of the page which is **Site Page** (also for the news pages). You will see the following metadata fields:
 
-{{< caption-legacy "uploads/2016/10/102816_1451_Whatmakesap3.png" "Site page content type" >}}
+{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap3.png" "Site page content type" >}}
 
 Here you find the answer. There are a couple of metadata fields which are hidden from the UI like **Promoted State** and **First Published Date**. When you check the contents of the ASPX page. You will see a couple of differences between the two types of pages.
 
 **News page**
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <%@ Page language="C#" Inherits="Microsoft.SharePoint.WebControls.ClientSidePage, Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
@@ -53,11 +53,11 @@ Here you find the answer. There are a couple of metadata fields which are hidden
 </mso:CustomDocumentProperties>
 </xml></SharePoint:CTFieldRefs><![endif]-->
 <title>News page test</title></head>
-{{< / highlight >}}
+```
 
 **Site page**
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <%@ Page language="C#" Inherits="Microsoft.SharePoint.WebControls.ClientSidePage, Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
@@ -72,7 +72,7 @@ Here you find the answer. There are a couple of metadata fields which are hidden
 </mso:CustomDocumentProperties>
 </xml></SharePoint:CTFieldRefs><![endif]-->
 <title>Another site page</title></head>
-{{< / highlight >}}
+```
 
 In the news page, you can find two important differences: **PromotedState** = 2.00000000000000 and the **FirstPublishedDate** which is defined.
 
@@ -82,16 +82,16 @@ A site page does not contain the FirstPublishDate element and the PromotedState 
 
 As it turns out, the **PromotedState** value needs to be set to **2** to display it via the news headlines web part. When you change the number of the site page content, it will be displayed in the news headlines web part:
 
-{{< caption-legacy "uploads/2016/10/102816_1451_Whatmakesap4.png" "Promoting a site page to a news page" >}}
+{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap4.png" "Promoting a site page to a news page" >}}
 
 In the screenshot, you can see that my site page article now gets displayed, but something seems to be wrong with the date. This is where the **FirstPublishDate** fits in. When you add this to the content of the site page and refresh the homepage.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:FirstPublishedDate msdt:dt="string">2016-10-28T07:00:00Z</mso:FirstPublishedDate>
-{{< / highlight >}}
+```
 
 You will see a similar output:
 
-{{< caption-legacy "uploads/2016/10/102816_1451_Whatmakesap5.png" "Added the publish date" >}}
+{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap5.png" "Added the publish date" >}}
 
 I hope this gave you some insights into how the new news page functionality works behind the scenes.

@@ -20,7 +20,7 @@ comments: true
 
 A few days ago I moved one of my personal domains to Office 365. One of the things I noticed is that you can create new documents without the need of a client application, everything is done by the Office Web Apps.
 
-{{< caption-legacy "uploads/2011/09/093011_1318_CreateaNewD1.png" "Create documents" >}}
+{{< caption-new "/uploads/2011/09/093011_1318_CreateaNewD1.png" "Create documents" >}}
 
 This is only possible from the **Home** page of Office 365. When you create a new document from within the document library itself, you still need the client application to be installed to create the document.
 
@@ -30,7 +30,7 @@ When I got back to the homepage of Office 365 I saw that it used the following u
 
 This URL can also be used on a SharePoint on-premises environment with Office Web Apps installed.
 
-{{< caption-legacy "uploads/2011/09/093011_1318_CreateaNewD2.png" "SharePoint on-premises with Office Web Apps" >}}
+{{< caption-new "/uploads/2011/09/093011_1318_CreateaNewD2.png" "SharePoint on-premises with Office Web Apps" >}}
 
 The **CreateNewDocument** page can be used to create Word, PowerPoint and OneNote documents. If you want to create Excel documents you need to use the following URL:
 
@@ -66,10 +66,10 @@ Querystrings
 
 You could add a HTML markup to your page with links to the documents templates, so you can create documents without the need of a client application. Like in Office 365.
 
-{{< caption-legacy "uploads/2011/09/093011_1318_CreateaNewD1.png" "Create documents" >}}
+{{< caption-new "/uploads/2011/09/093011_1318_CreateaNewD1.png" "Create documents" >}}
 
 Another approach could be to create a web part and check the available document libraries and document templates.
 
-{{< caption-legacy "uploads/2011/09/093011_1318_CreateaNewD4.png" "Web Part showing documents from the Documents library" >}}
+{{< caption-new "/uploads/2011/09/093011_1318_CreateaNewD4.png" "Web Part showing documents from the Documents library" >}}
 
-{{< caption-legacy "uploads/2011/09/093011_1318_CreateaNewD5.png" "Web Part showing documents from the Facturen library" >}}
+{{< caption-new "/uploads/2011/09/093011_1318_CreateaNewD5.png" "Web Part showing documents from the Facturen library" >}}

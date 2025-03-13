@@ -15,7 +15,7 @@ comments: true
 
 Now that my [PimpYourOwnBike](https://pimpyourownbike.com) website has launched. I started looking at where I can do some optimizations. When looking at the Next.js build output, I spotted a red number in the **First Load JS** section.
 
-{{< caption "/2020/11/firstload1.png" "First load JS too big"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACQSURBVF3BSw5BQRBA0VtdJT4tTIglWIL9L0eQ5xev0V3FG5g4R1bbXZy6jn+b9Zrz5cJ8MmYsQupLYblY8K8vhdoa3evBPgqmqsxmU1QT19udiMDdSaMEAghfgbk7psooZ3LO1Fo5HE+oKmbGs39C3zB35/V+M4gIaq0IENUJD36SRzAwNUQEM0NEGLTW+PkAXa1GBtph7A4AAAAASUVORK5CYII=" "466" >}}
+{{< caption-new "/uploads/2020/11/firstload1.png" "First load JS too big"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACQSURBVF3BSw5BQRBA0VtdJT4tTIglWIL9L0eQ5xev0V3FG5g4R1bbXZy6jn+b9Zrz5cJ8MmYsQupLYblY8K8vhdoa3evBPgqmqsxmU1QT19udiMDdSaMEAghfgbk7psooZ3LO1Fo5HE+oKmbGs39C3zB35/V+M4gIaq0IENUJD36SRzAwNUQEM0NEGLTW+PkAXa1GBtph7A4AAAAASUVORK5CYII=" "466" >}}
 
 That would be the first thing on my list to optimize, getting this number from red to green.
 
@@ -47,16 +47,16 @@ When using React, you typically use `React.lazy`, but this will not work if you 
 
 {{< blockquote type="Info" text="[Dynamic import Next.js documentation](https://nextjs.org/docs/advanced-features/dynamic-import)" >}}
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import dynamic from 'next/dynamic';
 // Loading StickerForm component, showing spinner while fetching the component
 // Use it like you're use to <StickerForm />
 const StickerForm = dynamic(() => import('./StickerForm'), { loading: () => <Spinner /> });
-{{< / highlight >}}
+```
 
 Above, you see an example of how I load my form on the site. By only implementing this dynamic import, I got my first load JS size down to 89kB.
 
-{{< caption "/2020/11/firstload2.png" "First load JS optimized"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACFSURBVE3BUQqCQBCA4d91VsXE3kzwBh2h+9+mZClKU3Zmegr8vmK83vyREqrG0TQOzOlJ0zdQQtj2nekycO47jrZ9J2vmtXx424Y4Tl1X9Jzo2pasyn1OhFaIW2RdvmCOqBruThUjDpQ5E6MQcyB4AQ62KkHVUDNEBDNDRChDIKvi7vz9AJxWRYe0MHwRAAAAAElFTkSuQmCC" "525" >}}
+{{< caption-new "/uploads/2020/11/firstload2.png" "First load JS optimized"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACFSURBVE3BUQqCQBCA4d91VsXE3kzwBh2h+9+mZClKU3Zmegr8vmK83vyREqrG0TQOzOlJ0zdQQtj2nekycO47jrZ9J2vmtXx424Y4Tl1X9Jzo2pasyn1OhFaIW2RdvmCOqBruThUjDpQ5E6MQcyB4AQ62KkHVUDNEBDNDRChDIKvi7vz9AJxWRYe0MHwRAAAAAElFTkSuQmCC" "525" >}}
 
 From project to project, it might be hard to achieve the same optimizations. So try to find these components or libraries, which are not instantly required for your page. For instance, this could be used for components that are, by default, loaded below the fold.
 

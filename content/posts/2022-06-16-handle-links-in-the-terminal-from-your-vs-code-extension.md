@@ -34,7 +34,7 @@ In the terminal link handler, I let Visual Studio Code show an information messa
 
 The code for this looks as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import * as vscode from 'vscode';
 
 export const UrlRegex = /(http|https):\/\/([\w_-]+(?:(?:\.[\w_-]+)+)|(localhost))([\w.,@?^=%&:\/~+#-]*[\w@?^=%&\/~+#-])/gi;
@@ -80,7 +80,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 // this method is called when your extension is deactivated
 export function deactivate() {}
-{{< / highlight >}}
+```
 
 The result of the code can be seen here:
 

@@ -23,7 +23,7 @@ For the new [Front Matter](https://frontmatter.codes) website, I needed to integ
 
 The first time that I noticed Algolia was on the  [Docusaurus](https://docusaurus.io/) website. Docusaurus uses the service to search through all the documentation and works pretty fast and efficiently.
 
-{{< caption "/2021/09/docsearch1.png" "DocSearch on Docusaurus"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAYAAABGbhwYAAAAAklEQVR4AewaftIAAADHSURBVH3BO07DQBRA0fs+ziQoGksUhDIboGYXLIJt0bIAWtaCRE+JFX9ij/0QrUk4R26Px9BxpOt6rrnZ73FTYXYlpYprdinh9fMTd48PNNOZdp64JH984cPrO58vb/xnk2tchpE612zUmMaR76ZhTebAZ3eGtmVSZRgGIhbWSim4lUK13SIRiCiqwlrXdzgBYoouQURwUYCKCGaGm5Fzxsz4Q8Ajgojg17IsiAARrHlVbSj9mSKKEKS0w3QiIjA37g8HTm3HD/9mUkbbbvn2AAAAAElFTkSuQmCC" "575" >}}
+{{< caption-new "/uploads/2021/09/docsearch1.png" "DocSearch on Docusaurus"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAYAAABGbhwYAAAAAklEQVR4AewaftIAAADHSURBVH3BO07DQBRA0fs+ziQoGksUhDIboGYXLIJt0bIAWtaCRE+JFX9ij/0QrUk4R26Px9BxpOt6rrnZ73FTYXYlpYprdinh9fMTd48PNNOZdp64JH984cPrO58vb/xnk2tchpE612zUmMaR76ZhTebAZ3eGtmVSZRgGIhbWSim4lUK13SIRiCiqwlrXdzgBYoouQURwUYCKCGaGm5Fzxsz4Q8Ajgojg17IsiAARrHlVbSj9mSKKEKS0w3QiIjA37g8HTm3HD/9mUkbbbvn2AAAAAElFTkSuQmCC" "575" >}}
 
 It happens to be that Algolia also provides a search implementation for documentation site via [DocSearch](https://docsearch.algolia.com/). They will crawl your content, and you need to implement the controls on your website.
 
@@ -51,7 +51,7 @@ Installing the component can be done by running: `npm i @docsearch/react@alpha`.
 
 Once installed, you can use it as follows in your code:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import * as React from 'react';
 import { DocSearch } from '@docsearch/react';
 
@@ -66,7 +66,7 @@ export const Searchbox: React.FunctionComponent<{}> = ({}: React.PropsWithChildr
       />
   );
 };
-{{< / highlight >}}
+```
 
 {{< blockquote type="Important" text="As you can see, the variables will be used in the `DocSearch` component." >}}
 
@@ -74,18 +74,18 @@ Once integrated, you need to add one final thing, the CSS. Otherwise, the compon
 
 Go to your `_app.tsx` file, and add the following reference:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import '@docsearch/css';
-{{< / highlight >}}
+```
 
 In my case, the result looks as follow:
 
-{{< caption "/2021/09/docsearch2.png" "DocSearch its search component integrated on Front Matter"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAnSURBVGNU1zb+//LlKwYY4OTkZGBkZGQAgT9/fjOwsrIxMDIyMQAAvKkHZ+ovV6AAAAAASUVORK5CYII=" "1267" >}}
+{{< caption-new "/uploads/2021/09/docsearch2.png" "DocSearch its search component integrated on Front Matter"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAnSURBVGNU1zb+//LlKwYY4OTkZGBkZGQAgT9/fjOwsrIxMDIyMQAAvKkHZ+ovV6AAAAAASUVORK5CYII=" "1267" >}}
 
 ## Running DocSearch crawler
 
 The final step is to get your data crawled and push the records to Algolia. If you applied for DocSearch, you would have to wait until your site is added to their system. If you do not want to wait, I recommend checking out the following guide from Algolia: [running your own crawler](https://docsearch.algolia.com/docs/run-your-own).
 
-{{< caption "/2021/09/docsearch3.png" "DocSearch search suggestions on Front Matter"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAYAAABGbhwYAAAAAklEQVR4AewaftIAAADZSURBVHXBTU7DQAyA0c9jNyT9UVsVdlyBNfe/C0sCAjXTpDOOUYW6gMJ78vj0HA+bNa/9G8K3AEQgAkSEpIoVr7z0PYwj/0mSMN57Gk1AkIdMdee3RdNighARIIK7I9za73dYWTRY2xDjhKjxF1XDtBYWo0PAGZgjuBGB2WpJimAshW6zRhHyMFC9chWAuc+gilYn58yViHIlKWGRB9yUWWC1bLmICC6maaKUgteCze2SGkEMR85z8FMi2R0fn0ds23SUeiZtD8xzQUSZphPVna7ruD8cyKeRL9KWbiHJukjLAAAAAElFTkSuQmCC" "577" >}}
+{{< caption-new "/uploads/2021/09/docsearch3.png" "DocSearch search suggestions on Front Matter"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAYAAABGbhwYAAAAAklEQVR4AewaftIAAADZSURBVHXBTU7DQAyA0c9jNyT9UVsVdlyBNfe/C0sCAjXTpDOOUYW6gMJ78vj0HA+bNa/9G8K3AEQgAkSEpIoVr7z0PYwj/0mSMN57Gk1AkIdMdee3RdNighARIIK7I9za73dYWTRY2xDjhKjxF1XDtBYWo0PAGZgjuBGB2WpJimAshW6zRhHyMFC9chWAuc+gilYn58yViHIlKWGRB9yUWWC1bLmICC6maaKUgteCze2SGkEMR85z8FMi2R0fn0ds23SUeiZtD8xzQUSZphPVna7ruD8cyKeRL9KWbiHJukjLAAAAAElFTkSuQmCC" "577" >}}
 
 {{< blockquote type="Info" text="In my case, I run the crawler on my Synology NAS every hour." >}}

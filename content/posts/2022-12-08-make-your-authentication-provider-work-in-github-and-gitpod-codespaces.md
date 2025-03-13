@@ -90,7 +90,7 @@ It works as follows:
 - In my Auth0 application, I configured the proxy with its callback URL: `https://vscode-redirect.vercel.app`
 - When I want to sign in, the authentication provider generates a URL to Auth0 with the callback URL set to the proxy and the state set to the actual page to redirect.
 
-{{< highlight text "linenos=table,noclasses=false" >}}
+```text
 https://dev-txghew0y.us.auth0.com/authorize
 ?response_type=code
 &client_id=3GUryQ7ldAeKEuD2obYnppsnmj58eP5u
@@ -100,7 +100,7 @@ https://dev-txghew0y.us.auth0.com/authorize
 &prompt=login
 &code_challenge_method=S256
 &code_challenge=KxB25Na88vIZ32wxe5CUZYYkrYdjE-FisrkllPSteg4
-{{< / highlight >}}
+```
 
 {{< blockquote type="info" text="Added line breaks for readability of the query string parameters." >}}
 
@@ -118,7 +118,7 @@ The original flow was changed to support the **PKCE** flow and also the proxy; y
 
 The following lines of code are the most important:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 let callbackUri = await env.asExternalUri(Uri.parse(this.redirectUri));
 const callbackQuery = new URLSearchParams(callbackUri.query);
 // If there is a state on the callback URI, use it, otherwise generate a new one
@@ -145,7 +145,7 @@ const uri = Uri.parse(`https://${AUTH0_DOMAIN}/authorize?${searchParams.toString
 remoteOutput.appendLine(`Login URI: ${uri.toString(true)}`);
 
 await env.openExternal(uri);
-{{< / highlight >}}
+```
 
 In these lines, the following logic takes place:
 

@@ -38,18 +38,18 @@ In this article, I will describe a way how you can exclude the mocking services 
 
 In my sample project, I have two services: Development and Production. Both of these services are imported into my web part as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import Production from '../../../services/production';
 import Development from '../../../services/development';
-{{< / highlight >}}
+```
 
 When I bundle my project and check the bundle statistics, I see the following output (gulp or gulp bundle):
 
-{{< caption-legacy "uploads/2017/11/112417_2108_Excludeyour1.png" "Development bundle statistics" >}}
+{{< caption-new "/uploads/2017/11/112417_2108_Excludeyour1.png" "Development bundle statistics" >}}
 
 Now when I bundle my project again, but now with the **--ship** flag. I get the following output:
 
-{{< caption-legacy "uploads/2017/11/112417_2108_Excludeyour2.png" "Production bundle statistics" >}}
+{{< caption-new "/uploads/2017/11/112417_2108_Excludeyour2.png" "Production bundle statistics" >}}
 
 > **Remark**: The size of the development.js file does not really matter, but you can see that the size changed a bit between debug and production build. This is because for production your code will get minimized.
 
@@ -61,17 +61,17 @@ In order to exclude the mock data and/or services, you want to make use of the *
 
 Here is an example:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 if (DEBUG) {
   alert('Only during development');
 }
-{{< / highlight >}}
+```
 
 In this example, you will only see the alert during development, but not in production. The same process can be used for optionally loading modules in TypeScript.
 
 If we use the previous example again. What you actually have to change the way how you import your modules. In order to optionally load a module, you will have to change the import to this:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import Production from '../../../services/production';
 // You will need the next two lines in order to get type safety
 import * as Dev from "../../../services/development";
@@ -79,11 +79,11 @@ let Development: typeof Dev.default = null;
 if (DEBUG) {
   Development = require('../../../services/development');
 }
-{{< / highlight >}}
+```
 
 The bundle statistics for development stay the same. When you now generate the production bundle, you will see this:
 
-{{< caption-legacy "uploads/2017/11/112417_2108_Excludeyour3.png" "New production bundle statistics" >}}
+{{< caption-new "/uploads/2017/11/112417_2108_Excludeyour3.png" "New production bundle statistics" >}}
 
 No more development.js file is shown. The development service got excluded from the production bundle. This is, of course, a great optimization to your bundle.
 

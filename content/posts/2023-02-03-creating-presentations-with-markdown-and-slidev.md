@@ -53,7 +53,7 @@ This **multiple entries** feature also makes it easy to restructure your present
 
 Here is an example of how I am using this feature:
 
-{{< highlight md "linenos=table,noclasses=false" >}}
+```md
 ---
 layout: cover
 theme: the-unnamed
@@ -84,7 +84,7 @@ src: ./slides/intro/index.md
 ---
 src: ./slides/commands/index.md
 ---
-{{< / highlight >}}
+```
 
 All the sections are located as you can see in a `slides` folder.
 
@@ -92,7 +92,7 @@ All the sections are located as you can see in a `slides` folder.
 
 The contents of a slide looks like this:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 ---
 layout: cover
 title: Introduction
@@ -108,7 +108,7 @@ background: intro/question.webp
 - `yo` aka `yeoman`
 - `generator-code` aka the project template
 - `@vscode/vsce` aka the Visual Studio Code Extension Manager
-{{< / highlight >}}
+```
 
 Each `---` starts a new slide. You can also add a layout to each slide.
 
@@ -118,9 +118,9 @@ Each `---` starts a new slide. You can also add a layout to each slide.
 
 To view your presentation, you can run the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 npm run dev
-{{< / highlight >}}
+```
 
 The command starts a local server (default on `http://localhost:3030`) and opens your browser with the presentation view.
 

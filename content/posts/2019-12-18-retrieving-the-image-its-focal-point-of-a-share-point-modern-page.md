@@ -15,7 +15,7 @@ comments: true
 
 On SharePoint modern pages, you can set the focal point of the header image. Having this kind of control is excellent for creating compelling pages.
 
-{{< caption "/2019/12/focal-point-1.png" "Header image with focal point"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAAB7SURBVBXBPQ8BMQCA4beuzTWqEQy+IjFZifsVFqs/azMYuFEkbiIuqUFEJ/HRyj2P2O3z6L2nUhxyjBYIkRCkYTSecLm/KdwLeXOOsrzinw+2mzVNk9DrDzieziyWKyrDWkSmWqOUotXuMJ1lNOopn++PedbFWkslhMgf53Um7RDUHDwAAAAASUVORK5CYII=" "2050" >}}
+{{< caption-new "/uploads/2019/12/focal-point-1.png" "Header image with focal point"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAAB7SURBVBXBPQ8BMQCA4beuzTWqEQy+IjFZifsVFqs/azMYuFEkbiIuqUFEJ/HRyj2P2O3z6L2nUhxyjBYIkRCkYTSecLm/KdwLeXOOsrzinw+2mzVNk9DrDzieziyWKyrDWkSmWqOUotXuMJ1lNOopn++PedbFWkslhMgf53Um7RDUHDwAAAAASUVORK5CYII=" "2050" >}}
 
 What if you also want to make use of the same focal point in your roll-ups? Luckily this is also possible, and it depends a bit on how you retrieve the data. 
 
@@ -23,11 +23,11 @@ What if you also want to make use of the same focal point in your roll-ups? Luck
 
 The header image information is available as a field property on the page named **LayoutWebpartsContent**. This field contains an HTML string with some JSON parsed string, which provides all properties of how the header needs to render.
 
-{{< caption "/2019/12/focal-point-2.png" "LayoutWebpartsContent data"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABnSURBVAXB0Q0CMQxEwbd24D4AUQU10H9PgJRc7GVGz9fbt/sDubCTqs3IoNtEBNWbc51ECtQFJNBkBLtBErZpB3NNog3toNtgkCAFGdBKRsD1ejBGiCOF84L3RBKr4awiZGpNft8PfwPLN1QgnoKaAAAAAElFTkSuQmCC" "3068" >}}
+{{< caption-new "/uploads/2019/12/focal-point-2.png" "LayoutWebpartsContent data"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABnSURBVAXB0Q0CMQxEwbd24D4AUQU10H9PgJRc7GVGz9fbt/sDubCTqs3IoNtEBNWbc51ECtQFJNBkBLtBErZpB3NNog3toNtgkCAFGdBKRsD1ejBGiCOF84L3RBKr4awiZGpNft8PfwPLN1QgnoKaAAAAAElFTkSuQmCC" "3068" >}}
 
 To get this information, you can use a REST API call and specify to retrieve the **LayoutWebpartsContent** field information. You can use the following API call: `/_api/web/lists/GetByTitle('Site Pages')/GetItemById(4)?$select=LayoutWebpartsContent`;
 
-{{< caption "/2019/12/focal-point-3.png" "Verify the returned JSON data"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAACnSURBVG3BsUoDURRF0X3uvSOJKQRBkAh+Q9D//w7B1iqFmIhFMvPeOzKFnWvp7ePs5/siM/nPNE2sYn8XvB9n2hBVRVVRVVQVVYVtbFPfP0ceNuZ0AklEBH8kkZEsbaDDy6tHbzBf6GPQh7HNsLEBiaf9I5WjkWOBSiaSkLANEq13rkvj8+tMSCAgJATYRhKrVBASq7rZbJkvAgEGCWywzZBJJbe7Hb8m2UmorZhtcwAAAABJRU5ErkJggg==" "2450" >}}
+{{< caption-new "/uploads/2019/12/focal-point-3.png" "Verify the returned JSON data"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAACnSURBVG3BsUoDURRF0X3uvSOJKQRBkAh+Q9D//w7B1iqFmIhFMvPeOzKFnWvp7ePs5/siM/nPNE2sYn8XvB9n2hBVRVVRVVQVVYVtbFPfP0ceNuZ0AklEBH8kkZEsbaDDy6tHbzBf6GPQh7HNsLEBiaf9I5WjkWOBSiaSkLANEq13rkvj8+tMSCAgJATYRhKrVBASq7rZbJkvAgEGCWywzZBJJbe7Hb8m2UmorZhtcwAAAABJRU5ErkJggg==" "2450" >}}
 
 As mentioned, the data you get back is an HTML encoded string with a JSON control data attribute. This data needs some parsing to get the actual values.
 

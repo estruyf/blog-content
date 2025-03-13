@@ -17,7 +17,7 @@ comments: true
 
 Webhooks are an easy way to do something when an event occurs. For example, when you want to do something when a new email is received. Currently, I have such a webhook subscription running which checks every mail for mail trackers. I just love to have control of my emails and know which of them are being tracked. Not that I do not read them. To highlight the emails that are tracked in my inbox, I tag them with a tracking category.
 
-{{< caption-legacy "uploads/2017/03/030917_0923_Creatingand1.png" "Email which is tracked" >}}
+{{< caption-new "/uploads/2017/03/030917_0923_Creatingand1.png" "Email which is tracked" >}}
 
 The original code for this was written about a year ago. One of the downsides back then was that the user, in this case, myself, had to manually update the webhook subscription. For this, I created a portal where I saw my current subscriptions and could trigger an update.
 
@@ -33,7 +33,7 @@ Which of course is some great news when you want to create webhook subscriptions
 
 When creating new subscriptions via user permissions, the request looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
 
@@ -44,7 +44,7 @@ Content-type: application/json
   "expirationDateTime":"2017-03-09T09:43:00.00Z",
   "clientState": "subscription-identifier"
 }
-{{< / highlight >}}
+```
 
 
 > **Note**: the documentation of this endpoint can be found here - [https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/subscription_post_subscriptions](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/subscription_post_subscriptions)
@@ -53,14 +53,14 @@ Notice the **resource** and **changeType** properties in the body of the request
 
 When you want to do this via application permission, you cannot use the resource URL which is used above. With application permissions, you are not running in the context of a user, so you should change the resource URL as follows in the body:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "changeType": "created",
   "notificationUrl": "https://url-to-your-api",
   "resource": "Users/<user-id>/mailFolders('Inbox')/messages",
   "clientState": "subscription-identifier"
 }
-{{< / highlight >}}
+```
 
 Notice that **me** parameter in the URL is changed to `User/<user-id>`.
 
@@ -75,7 +75,7 @@ Renewing subscriptions is done the same way as you would do from the user contex
 
 It depends on the type of resource you want to access. In my case, emails which should be retrieved and updated, so my application only requires the **Mail.ReadWrite** application permissions:
 
-{{< caption-legacy "uploads/2017/03/030917_0923_Creatingand2.png" "Microsoft Graph Application Permissions" >}}
+{{< caption-new "/uploads/2017/03/030917_0923_Creatingand2.png" "Microsoft Graph Application Permissions" >}}
 
 ## Mail tracker repository
 

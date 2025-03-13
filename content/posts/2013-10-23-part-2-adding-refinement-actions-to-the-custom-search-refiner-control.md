@@ -27,7 +27,7 @@ In the previous post I explained how to create your first search refiner control
 
 There are a couple of ways to add refinement actions and they depend on the structure they is used. In this post I'm going to create them as hyperlinks. To start, the **ShowRefiner** function needs to be modified to create these hyperlinks, the code looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--#_
 function ShowRefiner(refinementName, refinementCount, refiners, method) {
   // Create the onClick event
@@ -40,7 +40,7 @@ _#-->
   }
 }
 _#-->
-{{< / highlight >}}
+```
 
 As you can see in the code, the method to add these refiners is the **addRefinementFiltersJSON**, which as the name suggests adds the refinement to the results.
 
@@ -48,23 +48,23 @@ As you can see in the code, the method to add these refiners is the **addRefinem
 
 To make use of the updated **ShowRefiner** function, you'll need to add some parameters to the function call (the refiner tokens that are used to do the refinement of the results, and the refinement method that needs to be executed):
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 ShowRefiner(filter.RefinementName, filter.RefinementCount, refiners, 'addRefinementFiltersJSON');
-{{< / highlight >}}
+```
 
 The function will now create hyperlinks. Once you click on one of these links, the **onclick** event triggers the results to refine. The HTML mark-up of the links looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <a onclick="$getClientControl(this).addRefinementFiltersJSON('{\u0022Brand\u0022:[\u0022\\\u0022\u01C2\u01C2436f6e746f736f\\\u0022\u0022]}');" href="javascript:{}">Contoso (135)</a>
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2013/10/refiner3.png" "Brand Refiner with Refinement Actions" >}}
+{{< caption-new "/uploads/2013/10/refiner3.png" "Brand Refiner with Refinement Actions" >}}
 
 ## Reset the Current Refinement
 
 Now that the hyperlinks are in place, it's possible to refine the search results, but once you do this, you'll end up with an empty refinement control.
 
-{{< caption-legacy "uploads/2013/10/102213_1928_Part2Adding2.png" "Empty Refiner" >}}
+{{< caption-new "/uploads/2013/10/102213_1928_Part2Adding2.png" "Empty Refiner" >}}
 
 The next thing to do is to show a hyperlink to reset the current refinement.
 
@@ -72,22 +72,22 @@ For this you'll need a new HTML block that becomes visible once the results are 
 
 - Check if the selected array contains values (selectedFilter):
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 selectedFilters.length > 0
-{{< / highlight >}}
+```
 
 
 - **OR** - Check if there're refinement tokens in use for the current search refiner control:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var currentRefinementCategory = ctx.ClientControl.getCurrentRefinementCategory(ctx.RefinementControl.propertyName);
 // Check if the object is null or undefined && Count the tokens currently in place
 var hasAnyFiltertokens = (!Srch.U.n(currentRefinementCategory) && currentRefinementCategory.get_tokenCount() > 0);
-{{< / highlight >}}
+```
 
 The statement looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 if (selectedFilters.length > 0 '' hasAnyFiltertokens) {
 _#-->
   <div id='SelectedSection'>
@@ -97,11 +97,11 @@ _#-->
   </div>
 <!--#_
 }
-{{< / highlight >}}
+```
 
 Now let's add a hyperlink to remove the current refinement. To remove the current refinement, the **updateRefinersJSON** method will be used. You also have a **removeRefinementFiltersJSON** method, but this needs the exact refinement token that needs to be removed. The approach with the **updateRefinersJSON** method is to give a **null** value to the refinement.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 if (selectedFilters.length > 0 && hasAnyFiltertokens) {
 _#-->
   <div id='SelectedSection' class='ms-ref-selSec'>
@@ -114,11 +114,11 @@ _#-->
   </div>
 <!--#_
 }
-{{< / highlight >}}
+```
 
 The last thing to do is to do a small modification to the **ShowRefiner** function.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--#_
 function ShowRefiner(refinementName, refinementCount, refiners, method) {
   // Create the onClick event
@@ -135,17 +135,17 @@ _#-->
   }
 }
 _#-->
-{{< / highlight >}}
+```
 
 This will result in the following output:
 
-{{< caption-legacy "uploads/2013/10/102213_1928_Part2Adding3.png" "Remove refinement link" >}}
+{{< caption-new "/uploads/2013/10/102213_1928_Part2Adding3.png" "Remove refinement link" >}}
 
 ## Show the Selected Refinement
 
 The same approach as the unselected loop will be done. The only difference is that you need to enumerate the **selectedFilters** array, and in this loop the **removeRefinementFiltersJSON** method can be used because you know the exact tokens.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 for (var i = 0; i < selectedFilters.length; i++) {
   var filter = selectedFilters[i];
   if(!$isNull(filter)) {
@@ -154,13 +154,13 @@ for (var i = 0; i < selectedFilters.length; i++) {
     ShowRefiner('Remove ' + filter.RefinementName, filter.RefinementCount, refiners, 'removeRefinementFiltersJSON');
   }
 }
-{{< / highlight >}}
+```
 
 This script results in the following output when you're going to refine the results.
 
-{{< caption-legacy "uploads/2013/10/102213_1928_Part2Adding4.png" "Refinement Example 1" >}}
+{{< caption-new "/uploads/2013/10/102213_1928_Part2Adding4.png" "Refinement Example 1" >}}
 
-{{< caption-legacy "uploads/2013/10/102213_1928_Part2Adding5.png" "Refinement Example 2" >}}
+{{< caption-new "/uploads/2013/10/102213_1928_Part2Adding5.png" "Refinement Example 2" >}}
 
 ## Download
 

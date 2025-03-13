@@ -34,7 +34,7 @@ To retrieve your sponsors, you first need to have an OAuth Token. For this, you 
 
 The GraphQL query for retrieving your sponsors looks as follows:
  
-{{< highlight graphql "linenos=table,noclasses=false" >}}
+```graphql
 query SponsorQuery {
   viewer {
     sponsors(first: 100) {
@@ -51,13 +51,13 @@ query SponsorQuery {
     }
   }
 }
-{{< / highlight >}}
+```
 
 On the Front Matter website, I retrieve this information via my custom API, which performs a POST request to the `https://api.github.com/graphql` API.
 
 The code looks as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const response = await fetch(`https://api.github.com/graphql`, {
   method: 'POST',
   headers: {
@@ -89,6 +89,6 @@ if (response && response.ok) {
   const data = await response.json();
   // Start working with the data
 }
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="If you want, you can check out the API code for the website. You can see the [sponsor API](https://github.com/FrontMatter/web-documentation-nextjs/blob/main/pages/api/sponsors.ts) file." >}}

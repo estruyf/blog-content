@@ -44,7 +44,7 @@ That gave me that URL.
     *   k: use KQL (Boolean);
     *   m: this is the token to display value map. It's used when a custom refinement value (textbox) is used. This stores the value that you inserted, to visualize it in the refiner. Example: "m":{"equals(\"Item Value Text Box\")":"Item Value Text Box"}
 
-{{< caption-legacy "uploads/2013/11/110613_1705_Part5TheSea1.png" "Mapping Value" >}}
+{{< caption-new "/uploads/2013/11/110613_1705_Part5TheSea1.png" "Mapping Value" >}}
 
 > **Note**: you can find more information on the fields: [QueryState members](http://msdn.microsoft.com/en-US/library/office/microsoft.office.server.search.webcontrols.querystate_members.aspx).
 
@@ -66,19 +66,19 @@ When you want to add refinement to the results, you have a couple of options:
 
 These methods can be used on the refinement control. To test them, you can open up your browser developer tools (F12) and retrieve the refiner control like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Get the refiner control - the ID needs to be retrieved from your control
 var refiner = $getClientControl(document.getElementById("ID of the search refiner"))
-{{< / highlight >}}
+```
 
 I'll show you how to use these refiner methods with a simple example.
 
 ### addRefinementFilter
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 refiner.addRefinementFilter('FileType', 'html')
 {"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,"m":null}]}
-{{< / highlight >}}
+```
 
 URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,"m":null}]}`
 
@@ -86,38 +86,38 @@ URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,
 
 With a single value:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var refinerValue = {'FileType':['html']}
 refiner.addRefinementFilters(refinerValue)
 {"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,"m":null}]}
-{{< / highlight >}}
+```
 
 URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,"m":null}]}`
 
 With a multi-value:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var refinerValue = {'FileType':['html','txt']}
 refiner.addRefinementFilters(refinerValue)
 {"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"and","k":false,"m":null}]}
-{{< / highlight >}}
+```
 
 URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"and","k":false,"m":null}]}`
 
 ### addRefinementFiltersWithOp
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var refinerValue = {'FileType':['html','txt']}
 refiner.addRefinementFiltersWithOp(refinerValue, 'or')
 {"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"or","k":false,"m":null}]}
-{{< / highlight >}}
+```
 
 URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"or","k":false,"m":null}]}`
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 refiner.addRefinementFiltersWithOp(refinerValue, 'and')
 {"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"and","k":false,"m":null}]}
-{{< / highlight >}}
+```
 
 URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"and","k":false,"m":null}]}`
 
@@ -125,10 +125,10 @@ URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"and","k":
 
 With a multi-value:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 refiner.addRefinementFiltersJSON('{"FileType":["html"]}')
 {"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,"m":null}]}
-{{< / highlight >}}
+```
 
 URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"and","k":false,"m":null}]}`
 
@@ -136,28 +136,28 @@ URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"and","k":
 
 With a multi-value:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 refiner.addRefinementFiltersJSONWithOr('{"FileType":["html","txt"]}')
 {"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"or","k":false,"m":null}]}
-{{< / highlight >}}
+```
 
 URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html","txt"],"o":"or","k":false,"m":null}]}`
 
 ### updateRefiners
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var refinerValue = {'FileType':['html']};
 refiner.updateRefiners(refinerValue);
-{{< / highlight >}}
+```
 
 URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,"m":null}]}`
 
 ### updateRefinersJSON
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 refiner.updateRefinersJSON('{"FileType":["html"]}')
 {"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,"m":null}]}
-{{< / highlight >}}
+```
 
 URL outcome: `{"k":"test","r":[{"n":"FileType","t":["html"],"o":"and","k":false,"m":null}]}`
 
@@ -170,18 +170,18 @@ When you want to update your refiner with another value, you can make use of the
 
 ### updateRefiners
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var refinerValue = {'FileType':['txt']}
 refiner.updateRefiners(refinerValue)
-{{< / highlight >}}
+```
 
 URL outcome: `{"k":"test","r":[{"n":"FileType","t":[" txt"],"o":"and","k":false,"m":null}]}`
 
 ### updateRefinersJSON
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 refiner.updateRefinersJSON('{"FileType":["txt"]}')
-{{< / highlight >}}
+```
 
 URL outcome: `{"k":"test","r":[{"n":"FileType","t":[" txt"],"o":"and","k":false,"m":null}]}`
 
@@ -211,50 +211,50 @@ When you want to remove the whole refinement (first and second author), it is ea
 
 ### removeRefinementFilter
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 refiner.removeRefinementFilter('FileType', 'html')
-{{< / highlight >}}
+```
 
 ### removeRefinementFiltersJSON
 
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 refiner.removeRefinementFiltersJSON('{"FileType":["html"]}')
-{{< / highlight >}}
+```
 
 
 ### removeRefinementFilters
 
 Single value:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var refinerValue = {'FileType':['txt']}
 refiner.removeRefinementFilters(refinerValue)
-{{< / highlight >}}
+```
 
 Multi-value:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var refinerValue = {'FileType':['html','txt']}
 refiner.removeRefinementFilters(refinerValue)
-{{< / highlight >}}
+```
 
 
 ### updateRefiners
 
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var refinerValue = {'FileType':null}
 refiner.updateRefiners(refinerValue)
-{{< / highlight >}}
+```
 
 
 ### updateRefinersJSON
 
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 refiner.updateRefinersJSON('{"FileType":null}')
-{{< / highlight >}}
+```
 
 
 ## Part 6

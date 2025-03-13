@@ -26,7 +26,7 @@ One of the things I tried was the Wordpress + MSSQL option. After a day I found 
 
 So I went for setting up my own MySQL server. Which ran fine and performance was much better than ClearDB, but it was a bit pricier. This also had to do with the VNET I had configured to let my Web App connect to the MySQL server. A couple weeks ago I saw the article that the Azure team released a new feature in preview called: **MySQL in App**. This lets you create a MySQL database for the Web App context. There are some limitations at the moment. Like it cannot yet get scaled, and is not production ready.
 
-{{< caption-legacy "uploads/2016/09/092116_1217_Movingyourd1.png" "MySQL In App" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd1.png" "MySQL In App" >}}
 
 > **Info**: For now, my blog is just in testing stage. As I am currently testing out this feature.
 
@@ -39,31 +39,31 @@ If you want to test out this functionality, I will guide you through the process
 
 Setting up your new MySQL database is simple, all you have to do is opening your Web App in the Azure portal and click on **MySQL in App** option.
 
-{{< caption-legacy "uploads/2016/09/092116_1217_Movingyourd2.png" "MySQL In App option" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd2.png" "MySQL In App option" >}}
 
 Set the **MySQL in App (preview)** option to **On** and save this setting.
 
-{{< caption-legacy "uploads/2016/09/092116_1217_Movingyourd3.png" "Turn on the MySQL in app option" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd3.png" "Turn on the MySQL in app option" >}}
 
 Your MySQL database will be created and like every other service, Azure will notify you when finished.
 
-{{< caption-legacy "uploads/2016/09/092116_1217_Movingyourd4.png" " MySQL in app creation notification" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd4.png" " MySQL in app creation notification" >}}
 
 Once the MySQL creation is done, click on the **Manage** option at the top left:
 
-{{< caption-legacy "uploads/2016/09/092116_1217_Movingyourd5.png" "Click on manage to open PHPMyAdmin" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd5.png" "Click on manage to open PHPMyAdmin" >}}
 
 This will open a PHPMyAdmin site.
 
 > **Info**: this is one of the best features. Now I can remove my own PHPMyAdmin site I had as a backup plan when something failed or had to do some database changes.
 
-{{< caption-legacy "uploads/2016/09/092116_1217_Movingyourd6.png" "PHPMyAdmin in Azure" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd6.png" "PHPMyAdmin in Azure" >}}
 
 ## Moving from ClearDB
 
 If you are moving from ClearDB, it might be that if you open the PHPMyAdmin page, you will see your databases hosted at ClearDB. If this is the case, you have to remove the connection string of your MySQL connection in the **application settings**:
 
-{{< caption-legacy "uploads/2016/09/092116_1217_Movingyourd7.png" "Check if you do not have any MySQL connection strings" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd7.png" "Check if you do not have any MySQL connection strings" >}}
 
 When you configured the ClearDB database, you had to link it to a Web App. That is when this connection string was added. Once it is removed and settings were saved, you should be able to open your new MySQL databases on Azure.
 
@@ -79,17 +79,17 @@ I my case, I am using Wordpress. Normally, you enter the database name, hostname
 
 So normally you have something like this in your wp-config.php file:
 
-{{< highlight php "linenos=table,noclasses=false" >}}
+```php
 define('DB_NAME', 'databasename');
 define('DB_USER', 'username');
 define('DB_PASSWORD', 'password');
 define('DB_HOST', 'mysqlvmonazure.cloudapp.net');
-{{< / highlight >}}
+```
 
 This needs to be changed to the following code:
 
 
-{{< highlight php "linenos=table,noclasses=false" >}}
+```php
 /* Azure in APP MySQL */
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
@@ -111,7 +111,7 @@ define('DB_NAME', $connectstr_dbname);
 define('DB_USER', $connectstr_dbusername);
 define('DB_PASSWORD', $connectstr_dbpassword);
 define('DB_HOST', $connectstr_dbhost);
-{{< / highlight >}}
+```
 
 
 > **Info**: here is the official article of where I got this code - [https://blogs.msdn.microsoft.com/appserviceteam/2016/08/18/announcing-mysql-in-app-preview-for-web-apps/#mysqlconnect](https://blogs.msdn.microsoft.com/appserviceteam/2016/08/18/announcing-mysql-in-app-preview-for-web-apps/#mysqlconnect)

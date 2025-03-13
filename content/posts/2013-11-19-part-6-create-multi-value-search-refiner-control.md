@@ -25,7 +25,7 @@ This post focusses on the creation process for a multi-value search refiner cont
 
 First let me tell you how the default multi-value search refiner control works.
 
-{{< caption-legacy "uploads/2013/11/111813_1943_Part6Create1.png" "Default Search Refiner Control" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create1.png" "Default Search Refiner Control" >}}
 
 The default multi-value search refiner control uses checkboxes to set the multi-value refinement. When the refinement gets applied, it calls the **Srch.Refinement.submitMultiRefinement** method. This method retrieves all the checkboxes that are checked and it applies the refinement by calling the **updateRefinementFilters** method.
 
@@ -39,15 +39,15 @@ To give you more flexibility, I'll explain how you could create your own multi-v
 
 This will be the end result:
 
-{{< caption-legacy "uploads/2013/11/111813_1943_Part6Create2.png" "End Result" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create2.png" "End Result" >}}
 
-{{< caption-legacy "uploads/2013/11/111813_1943_Part6Create3.png" "Refined End Result" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create3.png" "Refined End Result" >}}
 
 ## Creating Your Own Custom Multi-Value Refinement Control
 
 The first thing to do is change the **select** element in the template to a **DIV** element, and to switch the option elements to checkboxes with their corresponding labels. For this you need to update the **ShowRefiner** function to this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function ShowRefiner(refinementName, refinementCount, tokens, checked) {
   // Create the onClick event
   var elmId = "checkbox-" + refinementName;
@@ -63,7 +63,7 @@ _#-->
 <!--#_
   }
 }
-{{< / highlight >}}
+```
 
 A couple of things have changed in this function:
 
@@ -71,7 +71,7 @@ A couple of things have changed in this function:
 *   The token value is used instead of the refiner object. Only the refiner token value is needed because this values will be used to create an array with the selected refiners.
 The next step is to update the function calls to this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 if (selectedFilters.length > 0 '' hasAnyFiltertokens) {
   for (var i = 0; i < selectedFilters.length; i++) {
     var filter = selectedFilters[i];
@@ -91,13 +91,13 @@ if (unselectedFilters.length > 0) {
     }
   }
 }
-{{< / highlight >}}
+```
 
 In these loops, the refiner objects are removed and updated to use the refiner token values.
 
 The current outcome looks like this:
 
-{{< caption-legacy "uploads/2013/11/111813_1943_Part6Create4.png" "Current Result" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create4.png" "Current Result" >}}
 
 ## Adding the Refinement Action
 
@@ -105,9 +105,9 @@ The next step is to add an element that will trigger the refinement action. Righ
 
 The following piece of code is added in place of the **RemoveRefinement** block.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <p><a href="javascript:{}" onclick="MultiRefinement.SubmitRefinement('_#= ctx.RefinementControl.propertyName =#_', $getClientControl(this));">Refine Results</a></p>
-{{< / highlight >}}
+```
 
 This link uses an external function call, this function will be created in a separated JavaScript file. You can also place this function in your own JavaScript file, as long as it is available when you do the refinement action.
 
@@ -117,25 +117,25 @@ For this function two things are needed:
 
 *   The element needs to get a ID to easily retrieve it via JavaScript;
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
   var elmId = ctx.RefinementControl.propertyName + '-MultiRefiner';
 _#-->
   <div id='_#= elmId =#_' class='ms-ref-unselSec' style='display:_#= $htmlEncode(displayStyle) =#_'>
-{{< / highlight >}}
+```
 
 
 *   A script reference needs to be added in the display template. This can be done with the **$includeScript** method (not needed if you have your own external JavaScript file already referenced);
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <body>
   <script>
     $includeScript(this.url, "~sitecollection/_catalogs/masterpage/EStruyf/refinement-functions.js");
   </script>
-{{< / highlight >}}
+```
 
 This is the content of the external JavaScript file:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var MultiRefinement = MultiRefinement '' {};
 
 MultiRefinement.SubmitRefinement = function (name, control) {
@@ -162,28 +162,28 @@ MultiRefinement.SubmitRefinement = function (name, control) {
     control.updateRefinementFilters(name, refiners, "OR", false, null);
   }
 };
-{{< / highlight >}}
+```
 
 What the code does, is it retrieves all the checkboxes from the control, and it loops over each to see if it is checked. When this is the case, the checkbox value will be added to the refinement array. At the end this refinement array will be used to call the **updateRefinementFilters** method, which will trigger the search refinement with your values.
 
 Now your refinement action will work, so you can test the multi-value refinement.
 
-{{< caption-legacy "uploads/2013/11/111813_1943_Part6Create5.png" "Current Refined Result" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create5.png" "Current Refined Result" >}}
 
 ## Add a Removal Action to the Refinement Control
 
 The next action that will be added to the control, is to get the ability to remove the whole refinement. This can be done like in the other parts. You'll need to add a link to the template that updates the refinement control with a null reference.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 if (selectedFilters.length > 0 '' hasAnyFiltertokens) {
 _#-->
   <p><a onclick="$getClientControl(this).updateRefinementFilters('_#= ctx.RefinementControl.propertyName =#_', null);" href="javascript:{}">Clear Refinement</a></p>
 <!--#_
-{{< / highlight >}}
+```
 
 This is the outcome:
 
-{{< caption-legacy "uploads/2013/11/111813_1943_Part6Create6.png" "Clear Refinement" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create6.png" "Clear Refinement" >}}
 
 ## Choose the Operation
 
@@ -191,17 +191,17 @@ An idea I got to make this refiner a bit more unique, was to add the operation t
 
 The first thing to do is creating a new function that will be used to create the radio buttons. This function will be called **ShowOperatorRadioElements**, and it will also allow to automatically check the operation in use. To know what type of operation is currently used, you'll need to retrieve it from the current Query State. This can be easily done by the following code:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 var currentRefinementCategory = ctx.ClientControl.getCurrentRefinementCategory(ctx.RefinementControl.propertyName);
-{{< / highlight >}}
+```
 
 The object that it returns looks like this:
 
-{{< caption-legacy "uploads/2013/11/multiple-refinement.png" "Refiner Object" >}}
+{{< caption-new "/uploads/2013/11/multiple-refinement.png" "Refiner Object" >}}
 
 In the output above, you can see that the operation can be retrieved from that object. The **ShowOperatorRadioElements** function looks like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function ShowOperatorRadioElements() {
   // Retrieve the intial set of refinement
   var currentRefinementCategory = ctx.ClientControl.getCurrentRefinementCategory(ctx.RefinementControl.propertyName);
@@ -224,22 +224,22 @@ _#-->
 <!--#_    
   }
 }
-{{< / highlight >}}
+```
 
 The following piece of code can be added just before the **Refine Results** link. This will show the **Operation** text, and calls the **ShowOperatorRadioElements** function.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <p>
   Operator:
 <!--#_
   ShowOperatorRadioElements();
 _#-->
 </p>
-{{< / highlight >}}
+```
 
 One last thing, to support this operation to take place, you'll need to do an update to the **SubmitRefinement** function so that it retrieves the dropdown value and use it for the refinement.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 MultiRefinement.SubmitRefinement = function (name, control) {
   // Get the Refiner Control Element from the page
   var refinerElm = document.getElementById(name + '-MultiRefiner');
@@ -273,11 +273,11 @@ MultiRefinement.SubmitRefinement = function (name, control) {
     control.updateRefinementFilters(name, refiners, operator, false, null);
   }
 };
-{{< / highlight >}}
+```
 
 The final result looks like this:
 
-{{< caption-legacy "uploads/2013/11/111813_1943_Part6Create8.png" "Final Result" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create8.png" "Final Result" >}}
 
 ## Download
 

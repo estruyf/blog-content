@@ -37,11 +37,11 @@ When you are using a framework/library, you will need to do some extra work to g
 First of all, follow the steps that were mentioned in the "[localizing the strings used in your source files](https://www.eliostruyf.com/localization-visual-studio-code-extensions/#localizing-the-strings-used-in-your-source-files)" section of the previous localization article. You must ensure you have configured the `l10n` property in your `package.json` file.
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"json"},{"name":"selection","value":"{\n  \"l10n\": \"./l10n\"\n}"}]} -->
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "l10n": "./l10n"
 }
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 Next, we will use the [@vscode/l10n](https://www.npmjs.com/package/@vscode/l10n-dev) dependency. This dependency is used internally by the `vscode.l10n.t()` function, but this function is not available in the webview context.
@@ -49,9 +49,9 @@ Next, we will use the [@vscode/l10n](https://www.npmjs.com/package/@vscode/l10n-
 To get started, you will need to install the dependency:
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"typescript"},{"name":"selection","value":"npm install @vscode/l10n"}]} -->
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 npm install @vscode/l10n
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 ## Localizing your webview
@@ -65,16 +65,16 @@ Once the `@vscode/l10n` dependency is installed, you can localize your webview's
 Open one of your webview files and import the `@vscode/l10n` dependency:
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"typescript"},{"name":"selection","value":""}]} -->
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import * as l10n from '@vscode/l10n'
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 Next, you must update all your hardcoded strings with the `l10n.t()` function.
 
 Example:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div className='app'>
   <h1>{l10n.t("Hello from the React Webview Starter")}</h1>
 
@@ -96,14 +96,14 @@ Example:
 
   {error && <p className='app__error'><strong>{l10n.t("ERROR")}</strong>: {error}</p>}
 </div>
-{{< / highlight >}}
+```
 
 Once all these hardcoded strings are replaced, you can start using the `@vscode/l10n-dev` CLI tool to export all your strings to the `bundle.l10n.json` file. You can do this by running the following command:
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"typescript"},{"name":"selection","value":"npx @vscode/l10n-dev export -o ./l10n ./src"}]} -->
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 npx @vscode/l10n-dev export -o ./l10n ./src
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 <!-- FM:Snippet:Start data:{"id":"Blockquote","fields":[{"name":"type","value":"info"},{"name":"selection","value":"You can always create your own `bundle.l10n.json` and `bundle.l10n.<locale>.json` files, but the tool gives you a good headstart."}]} -->
@@ -112,7 +112,7 @@ npx @vscode/l10n-dev export -o ./l10n ./src
 
 In my case, when I run the tool, I get the following output:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "Hello from the extension!": "Hello from the extension!",
   "Oops, something went wrong!": "Oops, something went wrong!",
@@ -126,7 +126,7 @@ In my case, when I run the tool, I get the following output:
   "Message from the extension": "Message from the extension",
   "ERROR": "ERROR"
 }
-{{< / highlight >}}
+```
 
 <!-- FM:Snippet:Start data:{"id":"Blockquote","fields":[{"name":"type","value":"important"},{"name":"selection","value":""}]} -->
 {{< blockquote type="important" text="The `bundle.l10n.json` is only used for the export and to pass to the translators. To support another language, you must create a `bundle.l10n.<locale>.json` file with the translated strings." >}}
@@ -134,7 +134,7 @@ In my case, when I run the tool, I get the following output:
 
 I translated all the strings to the pseudo-language locale `pqs-ploc` for this example. The contents of my `bundle.l10n.qps-ploc.json` file look like this:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "Hello from the extension!": "ₕₑₗₗₒ 𝒻ᵣₒₘ ₜₕₑ ₑₓₜₑₙₛᵢₒₙ!",
   "Oops, something went wrong!": "ₒₒₚₛ, ₛₒₘₑₜₕᵢₙ𝓰 𝓌ₑₙₜ 𝓌ᵣₒₙ𝓰!",
@@ -148,7 +148,7 @@ I translated all the strings to the pseudo-language locale `pqs-ploc` for this e
   "Message from the extension": "ᴹᵉˢˢᵃᵍᵉ ᶠʳᵒᵐ ᵗʰᵉ ᵉˣᵗᵉⁿˢᶦᵒⁿ",
   "ERROR": "ᴱᴿᴿᴼᴿ"
 }
-{{< / highlight >}}
+```
 
 Once the strings have been translated, you must implement some logic to get this correctly loaded in your webview. Unfortunately, the `@vscode/l10n` dependency will not automatically retrieve the localized strings for you in your subprocesses like the webview.
 
@@ -166,7 +166,7 @@ To simplify the `postMessage` calls, I will use my [@estruyf/vscode](https://www
 
 The code for your extension host webview listener looks like this:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 panel.webview.onDidReceiveMessage(
   (message) => {
     const { command, requestId, payload } = message;
@@ -194,7 +194,7 @@ panel.webview.onDidReceiveMessage(
   undefined,
   context.subscriptions
 );
-{{< / highlight >}}
+```
 
 <!-- FM:Snippet:Start data:{"id":"Blockquote","fields":[{"name":"type","value":"info"},{"name":"selection","value":"The `vscode.l10n.uri` will only be defined if VS Code is not loaded in the default language and a localization file exists for the current language."}]} -->
 {{< blockquote type="info" text="The `vscode.l10n.uri` will only be defined if VS Code is not loaded in the default language and a localization file exists for the current language." >}}
@@ -204,7 +204,7 @@ panel.webview.onDidReceiveMessage(
 
 On the webview side, you will need to implement the following message handler:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const [ready, setIsReady] = React.useState<boolean>(false);
 
 React.useEffect(() => {
@@ -222,7 +222,7 @@ React.useEffect(() => {
       setIsReady(true);
     });
 }, []);
-{{< / highlight >}}
+```
 
 {{< blockquote type="info" text="Once the main component loads, it requests the localization content. Once retrieved, it is ready to render its content." >}}
 

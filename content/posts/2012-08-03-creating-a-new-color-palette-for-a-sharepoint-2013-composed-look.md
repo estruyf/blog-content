@@ -29,24 +29,24 @@ Open the downloaded file in your favorite text editor, and you will see that thi
 Now you can define your own color values in HEX for each element.
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <s:color name="NavigationHoverBackground" value="CBEF00" />
 <s:color name="NavigationSelectedBackground" value="CBEF00" />
-{{< / highlight >}}
+```
 
 
-{{< caption-legacy "uploads/2012/08/withoutTransparency.png" "Without Transparency" >}}
+{{< caption-new "/uploads/2012/08/withoutTransparency.png" "Without Transparency" >}}
 
 **But this is not all**. SharePoint 2013 also works with RGBA (red, green, blue, alpha transparency) background colors, and they can be defined like this:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <s:color name="NavigationHoverBackground" value="20CBEF00" />
 <s:color name="NavigationSelectedBackground" value="20CBEF00" />
-{{< / highlight >}}
+```
 
 
-{{< caption-legacy "uploads/2012/08/withTransparency.png" "With Transparency" >}}
+{{< caption-new "/uploads/2012/08/withTransparency.png" "With Transparency" >}}
 
 As you can see the HEX values now contain 8 digits instead of 6. The first two will be used for the transparency value and the 6 other digits will define the color.
 

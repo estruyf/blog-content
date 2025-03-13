@@ -21,7 +21,7 @@ comments: true
 
 For my next blog post I needed to investigate how to use a custom Group Display Template for the Search Results WebPart. Unfortunately you can only set the Control Display Template and the Item Display Template in the Search Results WebPart properties.
 
-{{< caption-legacy "uploads/2013/07/072913_1905_HowtoDefine1.png" "Display Template Settings Search Results WebPart" >}}
+{{< caption-new "/uploads/2013/07/072913_1905_HowtoDefine1.png" "Display Template Settings Search Results WebPart" >}}
 
 If you want to specify the group display template, you have two options:
 
@@ -42,11 +42,11 @@ I found the first method when I compared the properties of the context from Sear
 
 ### Search Results WebPart
 
-{{< caption-legacy "uploads/2013/07/072913_1905_HowtoDefine2.png" "Search Results WP Properties" >}}
+{{< caption-new "/uploads/2013/07/072913_1905_HowtoDefine2.png" "Search Results WP Properties" >}}
 
 ### Content Search WebPart
 
-{{< caption-legacy "uploads/2013/07/072913_1905_HowtoDefine3.png" "Content Search WP Properties" >}}
+{{< caption-new "/uploads/2013/07/072913_1905_HowtoDefine3.png" "Content Search WP Properties" >}}
 
 The Content Search WebPart has a Group template property which isn't set on the Search Results WebPart. This property can be accessed via ctx['ClientControl'].$j_4
 
@@ -54,13 +54,13 @@ Inside the SharePoint JavaScript code of the search.clientcontrols.js file, ther
 
 To set the $j_4 property, you can use this piece of code:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // On-premises
 ctx['ClientControl'].$j_4 = "~sitecollection/_catalogs/masterpage/Tests/Clean-Search-Results-Item.html.js";
 
 // Office 365
 ctx['ClientControl'].$e_4 = "~sitecollection/_catalogs/masterpage/Tests/Clean-Search-Results-Item.html.js";
-{{< / highlight >}}
+```
 
 _Note: when I did some tests on Office 365, I found out that it's using a different property: ctx['ClientControl'].$e_4.
 _
@@ -71,12 +71,12 @@ When the property isn't set in the previous method, it retrieves the reference f
 
 You can set the **RenderTemplateId** property like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 if(!$isNull(ctx.ListData.ResultTables[0])) {
   // Override the Group Display Template
   ctx.ListData.ResultTables[0].Properties.RenderTemplateId = "~sitecollection/_catalogs/masterpage/Tests/Clean-Search-Results-Group.js";
 }
-{{< / highlight >}}
+```
 
 When this property is set, the code verifies and loads the referenced JavaScript file via the **ScriptApplicationManager**.
 
@@ -86,17 +86,17 @@ I found out that there is a better method when I was checking the **Search.Clien
 
 This is the best approach for setting a custom grouping template via JavaScript. You can set this GroupTemplatId property like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 ctx.ClientControl.set_groupTemplateId('~sitecollection/_catalogs/masterpage/Tests/Clean-Search-Results-Group.js');
-{{< / highlight >}}
+```
 
 The last thing that needs to be done is to include the custom Group Display Template script in the custom (or default) Control Display Template from the Search Results WebPart.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <script>
   $includeScript(this.url, "~sitecollection/_catalogs/masterpage/Tests/Clean-Search-Results-Group.js");
 </script>
-{{< / highlight >}}
+```
 
 [Check out my next post about how to use this method to get rid of the unnecessary markup of the Search Results WebPart](https://www.eliostruyf.com/how-to-use-the-search-results-webpart-as-replacement-when-content-search-webpart-is-not-available-in-your-farm/ "How to use the Search Results WebPart as Replacement When Content Search WebPart is not available in Your Farm").
 

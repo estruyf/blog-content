@@ -46,7 +46,7 @@ As mentioned, to call the GraphQL API, you must get an installation token. The r
 
 To get the JWT token, you will need the GitHub **app ID**, **client ID**, **client secret**, and **private key**. To simplify the code, you can use [@octokit/auth-app](https://github.com/octokit/auth-app.js/).
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import { createAppAuth } from "@octokit/auth-app";
 import { readFileSync } from "fs";
 
@@ -86,11 +86,11 @@ const installationAuthentication = await auth({
 if (!installationAuthentication.token) {
   throw new Error("Could not retrieve installation token");
 }
-{{< / highlight >}}
+```
 
 Once you have the installation's access token, you can call the GraphQL API.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const response = await fetch("https://api.github.com/graphql", {
   method: 'POST',
   headers: { Authorization: `Bearer ${installationAuthentication.token}` },
@@ -102,4 +102,4 @@ const response = await fetch("https://api.github.com/graphql", {
     `
   }),
 }).then((r) => r.json());
-{{< / highlight >}}
+```

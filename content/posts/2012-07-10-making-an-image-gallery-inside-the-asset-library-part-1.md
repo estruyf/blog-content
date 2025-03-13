@@ -56,7 +56,7 @@ First thing to do is download the Galleria sources from their site and put them 
 Add a reference to jQuery and the Galleria JavaScript files in your master page. This can also be added in a Content Editor Web Part or HTML Form Web Part.
 
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <script type="text/javascript" src="/_layouts/styles/estruyf/jquery.js"></script>
 <script type="text/javascript" src="/_layouts/styles/estruyf/Galleria/galleria-1.2.7.min.js"></script>
 <script type="text/javascript">
@@ -64,7 +64,7 @@ Add a reference to jQuery and the Galleria JavaScript files in your master page.
     
   });
 </script>
-{{< / highlight >}}
+```
 
 
 ## Step 3
@@ -75,17 +75,17 @@ First thing to do is adding a **galleries** section and a **galleria** section b
 
 The galleries section will be used to display all the available folder/galleries in the library. The galleria section will be used to display the image gallery itself.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Add the galleries and galleria section, and hide the standard images	
 jQuery("#pickerimages").before("<div id='galleries'><h2>Galleries</h2></div><div id='galleria'></div>").hide();
-{{< / highlight >}}
+```
 
 
 ## Step 4
 
 When the two sections are created, it is time to add all the folders/galleries to the galleries section.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Show the picture galleries
 jQuery('#pickerimages .ms-assetpicker-tiled-mediumprops a[onmousedown]').each(function() {
 	var elm = jQuery(this);
@@ -94,7 +94,7 @@ jQuery('#pickerimages .ms-assetpicker-tiled-mediumprops a[onmousedown]').each(fu
 });
 // Only show the Galleries section when it contains anchors
 jQuery('#galleries').has('a').show();
-{{< / highlight >}}
+```
 
 
 ## Step 5
@@ -102,7 +102,7 @@ jQuery('#galleries').has('a').show();
 Now that the galleries section is filled up, we can start filling the Galleria section. This can be done the same way we did before; the only thing that is different is the **onmousedown** selector.
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Add all the pictures to the galleria div
 jQuery('#pickerimages .ms-assetpicker-tiled-mediumprops a:not([onmousedown])').each(function() {
 	jQuery("#galleria").append("<img src='" + jQuery(this).attr("href") + "' />");
@@ -114,7 +114,7 @@ if(jQuery('#galleria').has("img").length) {
 	Galleria.loadTheme('/_layouts/styles/estruyf/Galleria/themes/classic/galleria.classic.min.js');
 	Galleria.run('#galleria');
 }
-{{< / highlight >}}
+```
 
 
 More information about using Galleria can be found [here](http://galleria.io/docs/getting_started/beginners_guide/).
@@ -124,7 +124,7 @@ More information about using Galleria can be found [here](http://galleria.io/doc
 The only thing that rests is the styling.
 
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 a img { border: 0; }
 #galleries {
     display: none;
@@ -151,18 +151,18 @@ a img { border: 0; }
     height:500px; 
     width:100%; 
 }
-{{< / highlight >}}
+```
 
 
 ## Result
 
-{{< caption-legacy "uploads/2012/07/062812_1955_MakinganIma1.png" "Result: Gallery View" >}}
+{{< caption-new "/uploads/2012/07/062812_1955_MakinganIma1.png" "Result: Gallery View" >}}
 
-{{< caption-legacy "uploads/2012/07/062812_1955_MakinganIma2.png" "Result: Image Gallery" >}}
+{{< caption-new "/uploads/2012/07/062812_1955_MakinganIma2.png" "Result: Image Gallery" >}}
 
 ## Sources
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 jQuery(function() {
   jQuery("#pickerimages").before("<div id='galleries'><h2>Galleries</h2></div><div id='galleria'></div>").hide();;
   
@@ -186,7 +186,7 @@ jQuery(function() {
     Galleria.run('#galleria');
   }
 });
-{{< / highlight >}}
+```
 
 ## Changes
 

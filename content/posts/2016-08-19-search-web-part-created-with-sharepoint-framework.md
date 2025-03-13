@@ -29,7 +29,7 @@ Today I spend some time developing with the new SharePoint Framework. I must say
 
 I learn new tools or programming languages by getting my hands dirty by digging through the code and writing a sample application. This is also what I have done for the SharePoint Framework. To learn how to use it I came up with the idea to create a search web part (of course search).
 
-{{< caption-legacy "uploads/2016/08/search-wp-spfx.gif" "Search wp SPFx" >}}
+{{< caption-new "/uploads/2016/08/search-wp-spfx.gif" "Search wp SPFx" >}}
 
 I uploaded my web part to GitHub in order for you to try it out: [https://github.com/estruyf/Search-WP-SPFx](https://github.com/estruyf/Search-WP-SPFx)
 

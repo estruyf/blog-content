@@ -22,7 +22,7 @@ My intention was to write three blog posts on this topic, but a commenter told m
 
 In this part I will show you why this is happening and what you could do to solve this.
 
-{{< caption-legacy "uploads/2012/04/040812_1804_TakeyourSha1.png" "Blog with social features" >}}
+{{< caption-new "/uploads/2012/04/040812_1804_TakeyourSha1.png" "Blog with social features" >}}
 
 First of all the reason why it is happening.
 
@@ -32,15 +32,15 @@ A standard blog post URL in SharePoint looks like this: http://sp2010/Lists/Post
 
 Using this URL on the **Manage Social Tags and Notes** page of my user profile service, it did not return any results.
 
-{{< caption-legacy "uploads/2012/04/040812_1804_TakeyourSha2.png" "Posts Query" >}}
+{{< caption-new "/uploads/2012/04/040812_1804_TakeyourSha2.png" "Posts Query" >}}
 
 Normally it should return the following items:
 
-{{< caption-legacy "uploads/2012/04/040812_1804_TakeyourSha3.png" "Blog post tags" >}}
+{{< caption-new "/uploads/2012/04/040812_1804_TakeyourSha3.png" "Blog post tags" >}}
 
 When I did a query for all the tags from a specific user, I noticed something interesting:
 
-{{< caption-legacy "uploads/2012/04/040812_1804_TakeyourSha4.png" "ViewPost Reference" >}}
+{{< caption-new "/uploads/2012/04/040812_1804_TakeyourSha4.png" "ViewPost Reference" >}}
 
 The tags are not linked to the Post.aspx page, but to the **ViewPost.aspx** page: http://sp2010/Lists/Posts/ViewPost.aspx?ID=1.
 
@@ -52,7 +52,7 @@ The solution is very simple, you only need to replace the Post.aspx from the URL
 
 Here is the code to do this:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 // Get page URL
 Uri uri = this.Page.Request.Url;
 // Check if it is a blog post
@@ -73,7 +73,7 @@ else
 {
   uri = new Uri(uri.AbsoluteUri.Replace("Post.aspx", "ViewPost.aspx"));
 }
-{{< / highlight >}}
+```
 
 Here you can find the whole code:
 
@@ -81,4 +81,4 @@ Here you can find the whole code:
 
 ## Result
 
-{{< caption-legacy "uploads/2012/04/040812_1804_TakeyourSha5.png" "Blog post tags end result" >}}
+{{< caption-new "/uploads/2012/04/040812_1804_TakeyourSha5.png" "Blog post tags end result" >}}

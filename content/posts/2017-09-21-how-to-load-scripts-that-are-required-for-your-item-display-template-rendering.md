@@ -31,13 +31,13 @@ You might ask yourself, why the control display template? That is because this t
 
 The first step is to register your script to load. This can be done like this:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 RegisterSod('moment.min.js', "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js");
-{{< / highlight >}}
+```
 
 Next is to write the **EnsureScriptFunc** function, which makes sure your registered script gets successfully loaded. One major change is that we will move all the code from the control display template into this function.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 AddPostRenderCallback(ctx, function() {
   // Ensure that the item script dependency is loaded
   EnsureScriptFunc("moment.min.js", 'moment', function() {
@@ -72,7 +72,7 @@ AddPostRenderCallback(ctx, function() {
     }
   });
 });
-{{< / highlight >}}
+```
 
 
 > **Important**: you can also see that there is a **AddPostRenderCallback** function defined. The reason this function has been included is to support async updates.
@@ -83,22 +83,22 @@ In the code, you have to make use of a placeholder element to which add the HTML
 
 The following is required for the placeholder element:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 var uniqueId = ctx.ClientControl.get_nextUniqueId();
-{{< / highlight >}}
+```
 
 
 > **Info**: Add this above the AddPostRenderCallback function.
 
 The last thing to add to the control template is the placeholder element:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div id="_#=uniqueId=#_"></div>
-{{< / highlight >}}
+```
 
 Once you have all this in place, the control display template will first load the script dependency before rendering the item display template. By doing this, you can now make use of **moment** in the item display template. No other change is necessary for the item display template.
 
-{{< caption-legacy "uploads/2017/09/092117_1826_Howtoloadsc1.png" "Sample of the item display template rendering with moment.js" >}}
+{{< caption-new "/uploads/2017/09/092117_1826_Howtoloadsc1.png" "Sample of the item display template rendering with moment.js" >}}
 
 ## Download the templates
 

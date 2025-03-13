@@ -32,6 +32,6 @@ To make use of this module in your SharePoint Framework projects, you will have 
 
 Once you implemented the Gulp task to deploy the solution packages, you can expect the following output:
 
-{{< caption-legacy "uploads/2017/08/081417_0816_Automatethe1.png" "Outcome of the deploy-sppkg Gulp task" >}}
+{{< caption-new "/uploads/2017/08/081417_0816_Automatethe1.png" "Outcome of the deploy-sppkg Gulp task" >}}
 
 For more information about adding this in your build and release pipeline, I have updated the article. You can check it out here: [Configure a build and release pipeline for your SharePoint Framework solution deployments](https://www.eliostruyf.com/configure-a-build-and-release-pipeline-for-your-sharepoint-framework-solution-deployments/).

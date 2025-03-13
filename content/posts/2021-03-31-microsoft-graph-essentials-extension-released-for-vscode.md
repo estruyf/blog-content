@@ -23,7 +23,7 @@ To make my life and that from many other developers out there more accessible. I
 
 The Microsoft Graph Essentials extension comes with snippets, code completion for CSS variables, and an extension pack.
 
-{{< caption "/2021/03/toolkit1.png" "Microsoft Graph Essentials Extension"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACQSURBVE3BQQqCQABA0Z9oFLlKG+oCLaJLuHBRCyPojl0hIaG6hYsiQdqEiyCyZqxJoWDea+kaP3G8J94kPJ4VURQynwX8WRgueU4wTNglB9L0iMnCUEpYbys8IfD9PiabmpSSxmoZsAgnXO9thPBQStFwHAdba02WZRRFwaercF0X3Ss531JO7xeDzoixP+ULsH02w9M5ZYgAAAAASUVORK5CYII=" "677" >}}
+{{< caption-new "/uploads/2021/03/toolkit1.png" "Microsoft Graph Essentials Extension"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACQSURBVE3BQQqCQABA0Z9oFLlKG+oCLaJLuHBRCyPojl0hIaG6hYsiQdqEiyCyZqxJoWDea+kaP3G8J94kPJ4VURQynwX8WRgueU4wTNglB9L0iMnCUEpYbys8IfD9PiabmpSSxmoZsAgnXO9thPBQStFwHAdba02WZRRFwaercF0X3Ss531JO7xeDzoixP+ULsH02w9M5ZYgAAAAASUVORK5CYII=" "677" >}}
 
 If you are developing solutions with the Microsoft Graph, definitely check out the [Microsoft Graph Essentials - Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-msgraph-essentials) extension.
 

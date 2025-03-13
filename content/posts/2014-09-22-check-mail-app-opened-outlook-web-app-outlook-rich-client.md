@@ -34,7 +34,7 @@ The URL loaded in the rich client context looks like this:
 
 To translate this to code, we need to check if the querystring parameter **et** is present in the URL, if it is, we know that the app is opened in the browser. The code looks like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 $(function () {
   var querystring = document.location.search;
   if (querystring !== null && querystring !== "") {
@@ -48,7 +48,7 @@ $(function () {
     $('#content-main .padding').append('<h2>App opened in the client</h2>');
   }
 });
-{{< / highlight >}}
+```
 
 > **Note**: this solution can also be used in managed code.
 
@@ -58,7 +58,7 @@ The other option you have is checking the **OWAView** property. This property on
 
 The code looks like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 Office.initialize = function () {
   var context = Office.context;
   if (typeof context.mailbox.diagnostics.OWAView === "undefined") {
@@ -67,11 +67,11 @@ Office.initialize = function () {
     $('#content-main .padding').append('<h2>App opened in the browser</h2>');
   }
 };
-{{< / highlight >}}
+```
 
 
 ## Result
 
-{{< caption-legacy "uploads/2014/09/092214_1257_Checkifyour1.png" "App opened in OWA" >}}
+{{< caption-new "/uploads/2014/09/092214_1257_Checkifyour1.png" "App opened in OWA" >}}
 
-{{< caption-legacy "uploads/2014/09/092214_1257_Checkifyour2.png" "App opened in the rich client" >}}
+{{< caption-new "/uploads/2014/09/092214_1257_Checkifyour2.png" "App opened in the rich client" >}}

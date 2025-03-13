@@ -24,7 +24,7 @@ This week I had the opposite question, how can you add a custom action to the ca
 
 First things first, we start by adding a new custom action to the callout. When you want to add a new action to the callout, you will need to render a new footer template for the callout.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 SP.SOD.executeFunc("callout.js", "Callout", function () {
   var itemCtx = {};
   itemCtx.Templates = {};
@@ -46,11 +46,11 @@ function AddCustomAction (renderCtx, calloutActionMenu) {
     onClickCallback: function() { console.log('Callback from custom action'); }
   }));
 }
-{{< / highlight >}}
+```
 
 The code above will create a "Custom action" action to the callout.
 
-{{< caption-legacy "uploads/2013/10/100213_1731_Addingacust1.png" "Custom action in callout" >}}
+{{< caption-new "/uploads/2013/10/100213_1731_Addingacust1.png" "Custom action in callout" >}}
 
 As you can see the problem is that you lose the other actions, because the default footer was overridden.
 
@@ -64,7 +64,7 @@ To re-add the default actions, you have to call the SharePoint function that cre
 
 Once you know which function you need to call, it is just a matter of adding it to the code.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function AddCustomAction (renderCtx, calloutActionMenu) {   
   // Add your custom action
   calloutActionMenu.addAction (new CalloutAction ({
@@ -76,11 +76,11 @@ function AddCustomAction (renderCtx, calloutActionMenu) {
   // Show the default document library actions
   CalloutOnPostRenderTemplate(renderCtx, calloutActionMenu);
 }
-{{< / highlight >}}
+```
 
 > **Note**: Line 10 needs to be changed in order to make it work on other list / library templates.
 
-{{< caption-legacy "uploads/2013/10/100213_1731_Addingacust2.png" "Default actions added to the callout" >}}
+{{< caption-new "/uploads/2013/10/100213_1731_Addingacust2.png" "Default actions added to the callout" >}}
 
 ## Why is my follow action gone?
 
@@ -88,7 +88,7 @@ That is correct, the default functions from the library and asset library don't 
 
 You can re-add the follow action like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function AddCustomAction (renderCtx, calloutActionMenu) {   
   // Add your custom action
   calloutActionMenu.addAction (new CalloutAction ({
@@ -112,8 +112,8 @@ function AddCustomAction (renderCtx, calloutActionMenu) {
     }
   }));
 }
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2013/10/100213_1731_Addingacust3.png" "Custom action + Default actions + Follow action" >}}
+{{< caption-new "/uploads/2013/10/100213_1731_Addingacust3.png" "Custom action + Default actions + Follow action" >}}
 
 As you can see it's possible to add your custom actions, but it involves a bit of extra coding.

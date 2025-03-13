@@ -21,7 +21,7 @@ In my last two blog posts I talked about how you could add sorting, and how to f
 
 The result of this display template looks like this:
 
-{{< caption-legacy "uploads/2014/06/062714_0632_Tablelayout1.png" "Table layout" >}}
+{{< caption-new "/uploads/2014/06/062714_0632_Tablelayout1.png" "Table layout" >}}
 
 As you can see in the screenshot above, the **ModifiedOWSDATE** doesn't have sort icons after it, this means that the property isn't sortable.
 
@@ -34,21 +34,21 @@ As you can see in the screenshot above, the **ModifiedOWSDATE** doesn't have sor
 
 Sorted on the Title property (ASC)
 
-{{< caption-legacy "uploads/2014/06/title-sorted.png" "Sorted on the title property" >}}
+{{< caption-new "/uploads/2014/06/title-sorted.png" "Sorted on the title property" >}}
 
 ### Sorted on the Created property (Desc)
 
-{{< caption-legacy "uploads/2014/06/created-desc.png" "Sorted on the created property" >}}
+{{< caption-new "/uploads/2014/06/created-desc.png" "Sorted on the created property" >}}
 
 ## How to use it
 
 Once the display templates are added to the master page gallery, these display templates become available for you in the CSWP settings:
 
-{{< caption-legacy "uploads/2014/06/062714_0632_Tablelayout4.png" "Display template settings" >}}
+{{< caption-new "/uploads/2014/06/062714_0632_Tablelayout4.png" "Display template settings" >}}
 
 In the **Property Mappings** section, check "**Change the mapping of managed properties ..."** and choose which managed properties you want to visualize:
 
-{{< caption-legacy "uploads/2014/06/062714_0632_Tablelayout5.png" "Property mappings" >}}
+{{< caption-new "/uploads/2014/06/062714_0632_Tablelayout5.png" "Property mappings" >}}
 
 ## Updates
 
@@ -58,22 +58,22 @@ In the **Property Mappings** section, check "**Change the mapping of managed pro
 
 I added the possibility to change the property names like "Property 1", "Property 2" to the name of your choice. This could be done by changing the following line in the item display template:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var propertyNames = {"Property 1":"Property 1 header value","Property 2":"Property 2 header value"};
-{{< / highlight >}}
+```
 
 So if you want that "Property 1" will be displayed as "Title" and "Property 2" as "Author", you need to change it to this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var propertyNames = {"Property 1":"Title","Property 2":"Author"};
-{{< / highlight >}}
+```
 
 
 #### Document property links
 
 A callout has been added to the display templates to show the **view properties** and **edit properties** link.
 
-{{< caption-legacy "uploads/2014/06/table-with-properties.png" "Document properties callout" >}}
+{{< caption-new "/uploads/2014/06/table-with-properties.png" "Document properties callout" >}}
 
 ### 06/08/2014
 
@@ -83,7 +83,7 @@ Updated the templates to retrieve the correct web url for the document property 
 
 Created a new table layout display template that enables you to do multi-sorting of managed properties. You could download these templates here: [Table Layout with Multi Sort Templates (CSWP)](https://github.com/SPCSR/DisplayTemplates/tree/master/Search%20Display%20Templates/Table%20Layout%20with%20Multi%20Sort%20Templates%20%28CSWP%29 "Table Layout with Multi-Sorting Templates \(CSWP\)").
 
-{{< caption-legacy "uploads/2014/11/111314_0939_Howtoaddmul3.png" "Table layout with multi-sorting" >}}
+{{< caption-new "/uploads/2014/11/111314_0939_Howtoaddmul3.png" "Table layout with multi-sorting" >}}
 
 ## Download
 

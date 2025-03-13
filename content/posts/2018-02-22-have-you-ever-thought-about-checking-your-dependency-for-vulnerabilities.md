@@ -39,7 +39,7 @@ I do not want to scare you, but it is true, some libraries/dependencies might ha
 
 Luckily you do not actually have to do any code reviews yourself to check for vulnerabilities. There are some services like [Snyk](https://snyk.io/) or [Node Security Platform](https://nodesecurity.io) (NSP) which allow you to manually / automatically check your dependencies for known vulnerabilities. You can, for example, search for version 2.18.1 from moment and you will see that it contains a vulnerability:
 
-{{< caption-legacy "uploads/2018/02/022218_1357_Haveyouever1.png" "Dependency check result for moment@2.18.1" >}}
+{{< caption-new "/uploads/2018/02/022218_1357_Haveyouever1.png" "Dependency check result for moment@2.18.1" >}}
 
 In most cases, it will advise you what to do, as for example, in this case, make use of version >= 2.19.3 of moment.
 
@@ -59,7 +59,7 @@ Once installed you can run from your command prompt and will give you the follow
 
 `nsp check`
 
-{{< caption-legacy "uploads/2018/02/022218_1357_Haveyouever2.png" "nsp cli tool test result" >}}
+{{< caption-new "/uploads/2018/02/022218_1357_Haveyouever2.png" "nsp cli tool test result" >}}
 
 ## Quickly check vulnerabilities in VSCode
 
@@ -69,13 +69,13 @@ To simplify things, I created a Visual Studio Code extension that can automatica
 
 Once you installed the extension and open the **package.json** file from your project. It does an automatic does a check and will show you the known vulnerabilities:
 
-{{< caption-legacy "uploads/2018/02/022218_1357_Haveyouever3.png" "package.json file dependency problems" >}}
+{{< caption-new "/uploads/2018/02/022218_1357_Haveyouever3.png" "package.json file dependency problems" >}}
 
 You can also manually start a full check which includes the package, NPM shrinkwrap, and/or package lock file into the check:
 
-{{< caption-legacy "uploads/2018/02/022218_1357_Haveyouever4.png" "Check for dependency vulnerabilities command" >}}
+{{< caption-new "/uploads/2018/02/022218_1357_Haveyouever4.png" "Check for dependency vulnerabilities command" >}}
 
-{{< caption-legacy "uploads/2018/02/022218_1357_Haveyouever5.png" "Check for dependency vulnerabilities result" >}}
+{{< caption-new "/uploads/2018/02/022218_1357_Haveyouever5.png" "Check for dependency vulnerabilities result" >}}
 
 > **Info**: this full check is always best to do, as it will use your package, shrinkwrap and package-lock files to do the check. The shrinkwrap and package lock file contains a list of all the dependencies, including the sub-dependencies which are installed. That way you are sure that all your production used dependencies are checked for vulnerabilities.
 
@@ -84,13 +84,13 @@ You can also manually start a full check which includes the package, NPM shrinkw
 
 If you configured a build pipeline in VSTS, you can also include this check into the process so that you never forget it. Here are the tasks you can add to your process:
 
-{{< caption-legacy "uploads/2018/02/022218_1357_Haveyouever6.png" "VSTS tasks" >}}
+{{< caption-new "/uploads/2018/02/022218_1357_Haveyouever6.png" "VSTS tasks" >}}
 
 ### npm shrinkwrap task (optional)
 
 This is an optional task, which is not required when you use **npm** version >= 5. As of **npm** version 5, a **package-lock.json** file will be created automatically. When working with a lower version or when you do not have a package-lock.json file. You can run the **npm shrinkwrap** command which will give you a full detail of all the installed dependencies. Just in case, to make sure VSTS has the latest version of the file, you can create it during the build process and it will be used in the NSP check.
 
-{{< caption-legacy "uploads/2018/02/022218_1357_Haveyouever7.png" "npm schrinkwrap optional task" >}}
+{{< caption-new "/uploads/2018/02/022218_1357_Haveyouever7.png" "npm schrinkwrap optional task" >}}
 
 *   Command: **custom**
 *   Arguments: **shrinkwrap**
@@ -99,7 +99,7 @@ This is an optional task, which is not required when you use **npm** version >= 
 
 This task if for installing the nsp CLI tool so that it can be used in the next task.
 
-{{< caption-legacy "uploads/2018/02/022218_1357_Haveyouever8.png" "nsp task" >}}
+{{< caption-new "/uploads/2018/02/022218_1357_Haveyouever8.png" "nsp task" >}}
 
 *   Command: **custom**
 *   Arguments: **install nsp**
@@ -108,7 +108,7 @@ This task if for installing the nsp CLI tool so that it can be used in the next 
 
 This is task will initiate the NSP check.
 
-{{< caption-legacy "uploads/2018/02/022218_1357_Haveyouever9.png" "nsp check task" >}}
+{{< caption-new "/uploads/2018/02/022218_1357_Haveyouever9.png" "nsp check task" >}}
 
 *   Task type: **Command line**
 *   Command: **$(System.DefaultWorkingDirectory)/node_modules/.bin/nsp**
@@ -118,7 +118,7 @@ This is task will initiate the NSP check.
 
 When you included these tasks in your build pipeline, this is the result you can expect when there are known vulnerabilities found:
 
-{{< caption-legacy "uploads/2018/02/022218_1357_Haveyouever10.png" "VSTS nsp result" >}}
+{{< caption-new "/uploads/2018/02/022218_1357_Haveyouever10.png" "VSTS nsp result" >}}
 
 I hope this article made you aware of the potential risks that you might unintentionally include in your solutions and how to take action to get them removed.
 

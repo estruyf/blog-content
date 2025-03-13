@@ -26,7 +26,7 @@ In a code coverage report, you can check if your unit-tests covered all your cod
 
 Is that wrong? No, it is not, but when you open the code coverage report, you will see code that will never get covered. Like for example this:
 
-{{< caption-legacy "uploads/2017/09/092617_0751_ExtendKarma1.png" "__extends TypeScript helper function" >}}
+{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma1.png" "__extends TypeScript helper function" >}}
 
 In this example, you see the **__extends** function which is not completely covered. This is not a function you wrote yourself. It is a function TypeScript automatically adds to your JS file when you are extending classes in your TS. Basically, it is a helper function to support extending in ES5 code.
 
@@ -38,7 +38,7 @@ But how can you get full coverage for this? Luckily there are some plugins for K
 
 In order to extend the Karma configuration in your SPFx solution, you first have to create a new **karma.config.js** file. The basic configuration looks as follows:
 
-{{< highlight TypeScript "linenos=table,noclasses=false" >}}
+```TypeScript
 "use strict";
 const existingKarmaConfig = require('@microsoft/sp-build-web/lib/karma/karma.config');
 const gulp_core_build = require("@microsoft/gulp-core-build");
@@ -49,11 +49,11 @@ module.exports = function (config) {
 
   // Add your code here
 };
-{{< / highlight >}}
+```
 
 To allow the Karma process to pick up your configuration file, you will have to update the **gulpfile.js** content to this:
 
-{{< highlight TypeScript "linenos=table,noclasses=false" >}}
+```TypeScript
 'use strict';
 
 const gulp = require('gulp');
@@ -66,7 +66,7 @@ const karmaTask = build.karma;
 if (karmaTask) {
   karmaTask.taskConfig.configPath = './config/karma.config.js';
 }
-{{< / highlight >}}
+```
 
 
 > **Important**: Check the path to your Karma config file in the last line. In my example I added it to the **config** folder.
@@ -80,13 +80,13 @@ First, you will have to install this to your project with the following command:
 
 Once installed, open your **karma.config.js** file, and include this plugin to the file:
 
-{{< highlight TypeScript "linenos=table,noclasses=false" >}}
+```TypeScript
 const remapCoverageReporter = require('karma-remap-coverage');
-{{< / highlight >}}
+```
 
 The next step is to add the configuration for this plugin. After the **existingKarmaConfig(config);** line, add the following code:
 
-{{< highlight TypeScript "linenos=table,noclasses=false" >}}
+```TypeScript
 // Add the remap-coverage - code coverage for the original files
 config.reporters.push('remap-coverage');
 config.coverageReporter = {
@@ -98,19 +98,19 @@ config.remapCoverageReporter = {
   cobertura: path.join(gulp_core_build.getConfig().tempFolder, 'coverage/cobertura.xml')
 };
 config.plugins.push(remapCoverageReporter);
-{{< / highlight >}}
+```
 
 Now run your gulp test task again, and you should get a new **HTML** folder in the **temp/coverage** directory. If you check the generated **index.html** file. You will notice that the outcome will be different to the first generated coverage report. Here is the outcome of my JS coverage:
 
-{{< caption-legacy "uploads/2017/09/092617_0751_ExtendKarma2.png" "Default code coverage report" >}}
+{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma2.png" "Default code coverage report" >}}
 
 Here is the new report:
 
-{{< caption-legacy "uploads/2017/09/092617_0751_ExtendKarma3.png" "Code coverage report after extending the Karma configuration" >}}
+{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma3.png" "Code coverage report after extending the Karma configuration" >}}
 
 The **placeholder** coverage went from 90.63% to 100%. All had to do with the **__extends** helper function. In the newly generated report, you can see that the coverage is based on the original code.
 
-{{< caption-legacy "uploads/2017/09/092617_0751_ExtendKarma4.png" "React TSX component file" >}}
+{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma4.png" "React TSX component file" >}}
 
 ## What can you do more?
 
@@ -120,13 +120,13 @@ In order to get the Karma HTML reporter, you first have to install it via: `npm 
 
 Add the following to the **karma.config.js** file:
 
-{{< highlight TypeScript "linenos=table,noclasses=false" >}}
+```TypeScript
 const htmlReporter = require('karma-html-reporter');
-{{< / highlight >}}
+```
 
 This is the required configuration:
 
-{{< highlight TypeScript "linenos=table,noclasses=false" >}}
+```TypeScript
 // Add the HTML reporter
 config.reporters.push('html');
 config.htmlReporter = {
@@ -139,11 +139,11 @@ config.htmlReporter = {
   reportName: 'sp-dev-fx-controls-react-report',
 };
 config.plugins.push(htmlReporter);
-{{< / highlight >}}
+```
 
 When you now run your unit-tests, you should see a new **karma-html-report** folder in the temp directory. If everything went good, it should contain an HTML file with the following output:
 
-{{< caption-legacy "uploads/2017/09/092617_0751_ExtendKarma5.png" "HTML test report" >}}
+{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma5.png" "HTML test report" >}}
 
 You can check the following project to see the complete configuration: [https://github.com/sharepoint/sp-dev-fx-controls-react](https://github.com/sharepoint/sp-dev-fx-controls-react)
 

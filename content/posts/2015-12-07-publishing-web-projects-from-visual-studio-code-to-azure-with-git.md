@@ -21,7 +21,7 @@ In Visual Studio Code it is not that easy as its big brother, but that does not 
 
 The way to achieve it is via the continuous deployment functionality of a Web App. With this option you can connect a source control system to your site in order to push updates.
 
-{{< caption-legacy "uploads/2015/12/clip_image001_thumb.png" "Deployment options" >}}
+{{< caption-new "/uploads/2015/12/clip_image001_thumb.png" "Deployment options" >}}
 
 As you can see in the screenshot above, you have a couple of options. The option that I used was the one that creates a local git repository on your web app. This is probably one of the easiest options (except for OneDrive and Dropbox), as you do not need to configure something anywhere else.
 
@@ -29,83 +29,83 @@ As you can see in the screenshot above, you have a couple of options. The option
 
 First thing you have to do is create a new Web App for your web project on Azure. Once you did that, click on the settings button of your Web App. In the settings list you find the following section:
 
-{{< caption-legacy "uploads/2015/12/clip_image002_thumb.png" "Continuous deployment" >}}
+{{< caption-new "/uploads/2015/12/clip_image002_thumb.png" "Continuous deployment" >}}
 
 Click on Continuous deployment and you will get the option to configure it:
 
-{{< caption-legacy "uploads/2015/12/clip_image003_thumb.png" "Configure continuous deployment" >}}
+{{< caption-new "/uploads/2015/12/clip_image003_thumb.png" "Configure continuous deployment" >}}
 
 From the list of available deployment options choose Local Git Repository.
 
-{{< caption-legacy "uploads/2015/12/clip_image004_thumb.png" "Local Git Repository" >}}
+{{< caption-new "/uploads/2015/12/clip_image004_thumb.png" "Local Git Repository" >}}
 
 Once you select it, click to on the OK button and your Git repository will be provisioned. The repository uses the same username and password as your FTP account. You can update your credentials via the Deployment credentials link.
 
-{{< caption-legacy "uploads/2015/12/clip_image005_thumb.png" "Deployment credentials" >}}
+{{< caption-new "/uploads/2015/12/clip_image005_thumb.png" "Deployment credentials" >}}
 
 Once the Git repository is completely provisioned, you can see the information on the Web App.
 
-{{< caption-legacy "uploads/2015/12/clip_image006_thumb.png" "Git clone url" >}}
+{{< caption-new "/uploads/2015/12/clip_image006_thumb.png" "Git clone url" >}}
 
 The provisioning experience is much better in the old portal. In the old portal under the deployments tab it shows you when your Git repository is ready to be used.
 
-{{< caption-legacy "uploads/2015/12/clip_image007_thumb.png" "Git repository is ready message on the old portal" >}}
+{{< caption-new "/uploads/2015/12/clip_image007_thumb.png" "Git repository is ready message on the old portal" >}}
 
 It gives you a couple of steps what you have to do in order to get it running on your environment:
 
-{{< caption-legacy "uploads/2015/12/clip_image008_thumb.png" "Git repository information" >}}
+{{< caption-new "/uploads/2015/12/clip_image008_thumb.png" "Git repository information" >}}
 
 ## Visual Studio Code configuration (new application push)
 
 Now that the Local Git Repository is ready, you have to open Visual Studio Code with your web project. Click on the Git icon:
 
-{{< caption-legacy "uploads/2015/12/clip_image009_thumb.png" "Initialize git repository in Visual Studio Code" >}}
+{{< caption-new "/uploads/2015/12/clip_image009_thumb.png" "Initialize git repository in Visual Studio Code" >}}
 
 Fill in the message of your commit in the message textbox and press ctrl+enter or click on commit all (check) icon at the top.
 
-{{< caption-legacy "uploads/2015/12/clip_image010_thumb.png" "Do your first commit" >}}
+{{< caption-new "/uploads/2015/12/clip_image010_thumb.png" "Do your first commit" >}}
 
 Open a command prompt and navigate to the folder of your web project. Execute the following commands to do your commit:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 git remote add azure https://account@yoursite.scm.azurewebsites.net:443/estruyf-publish.git 
 git config credential.helper store 
 git push -u azure master
-{{< / highlight >}}
+```
 
 
-{{< caption-legacy "uploads/2015/12/image_thumb.png" "Do your first commit (command line)" >}}
+{{< caption-new "/uploads/2015/12/image_thumb.png" "Do your first commit (command line)" >}}
 
 If you go back to Azure you can see your push on the deployment tab:
 
-{{< caption-legacy "uploads/2015/12/clip_image012_thumb.png" "Active deployment" >}}
+{{< caption-new "/uploads/2015/12/clip_image012_thumb.png" "Active deployment" >}}
 
 The nice thing about the Azure portal is that you get an overview of all the past deployments:
 
-{{< caption-legacy "uploads/2015/12/clip_image013_thumb.png" "Active deployment overview" >}}
+{{< caption-new "/uploads/2015/12/clip_image013_thumb.png" "Active deployment overview" >}}
 
 ### Pushing new commits
 
 Once you executed the commands from above in your command prompt, you can do pulling and pushing from within Visual Studio Code. That means that you do not need your command prompt anymore.
 
-{{< caption-legacy "uploads/2015/12/clip_image014_thumb.png" "Push and pull via Visual Studio Code" >}}
+{{< caption-new "/uploads/2015/12/clip_image014_thumb.png" "Push and pull via Visual Studio Code" >}}
 
 ## Update an existing application (clone)
 
 If you already used the Git repository with another editor and want to use it with Visual Studio Code, you have to do the following things. First you start by creating a clone of your application. Open your command prompt, navigate to where you want to clone the application and execute the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 git clone https://account@yoursite.scm.azurewebsites.net:443/estruyf-publish.git
-{{< / highlight >}}
+```
 
 
-{{< caption-legacy "uploads/2015/12/clip_image015_thumb.png" "Clone your application" >}}
+{{< caption-new "/uploads/2015/12/clip_image015_thumb.png" "Clone your application" >}}
 
 Once you done this, you can pull and push from within Visual Studio Code.
 
 If you can to store your credentials, you have to navigate to the newly created folder and execute the following command:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 cd your-application
 git config credential.helper store
-{{< / highlight >}}
+```

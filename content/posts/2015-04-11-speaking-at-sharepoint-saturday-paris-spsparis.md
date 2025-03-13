@@ -16,7 +16,7 @@ comments: true
 
 I am pleased to tell you that I will be speaking at SharePoint Saturday Paris on May, 30th. This event is organised by [Benoit Jester](https://twitter.com/SPAsipe), [Patrick Guimonet](https://twitter.com/patricg), and [Gokan Ozcifci](https://twitter.com/GokanOzcifci). These guys already did an amazing job with their personalized speaker announcements and the agenda they put together.
 
-{{< caption-legacy "uploads/2015/04/spsparis.png" "SPSParis Twittre " >}}
+{{< caption-new "/uploads/2015/04/spsparis.png" "SPSParis Twittre " >}}
 
 On #SPSParis I will be talking about how to improve your SharePoint search experience and is scheduled at 15:00 - 15:45.
 

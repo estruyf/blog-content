@@ -35,7 +35,7 @@ Now the question is, where are you going to write that function?
 
 The function needs to be created in the script section of the HTML display template. As an example I will rewrite the default two lines display template.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <script>
 function getSearchDataForTwoLines(ctx) {
   var itemData = [];
@@ -60,7 +60,7 @@ function getSearchDataForTwoLines(ctx) {
   return itemData;
 }
 </script>
-{{< / highlight >}}
+```
 
 > **Note**: there can only be one script section in your HTML display template.
 
@@ -70,15 +70,15 @@ The trick to access that function can be done with the same technique SharePoint
 
 So you need to add a function call in the script section:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 Srch.U.registerRenderTemplateByName("getsearchdatafortwolines", getSearchDataForTwoLines);
-{{< / highlight >}}
+```
 
 > **Note**: the name to call your function can best be written in lower case because it gets converted afterwards.
 
 Now that the function is registered, it knows the exact location and can be called within the comment section like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--#_
   var itemData = Srch.U.getRenderTemplateCollection().getsearchdatafortwolines(ctx);
 
@@ -89,7 +89,7 @@ Now that the function is registered, it knows the exact location and can be call
   line1 = itemData["line1"];
   line2 = itemData["line2"];
 _#-->
-{{< / highlight >}}
+```
 
 The only thing which is necessary in the last code block is the function call. It is not necessary to define the variables, it can be done in the HTML template, but it just makes your code a bit cleaner.
 

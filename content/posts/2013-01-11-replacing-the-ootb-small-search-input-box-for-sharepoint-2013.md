@@ -27,15 +27,15 @@ The process of replacing the search box is still the same as in 2010 or 2007, bu
 
 The Delegate Control in the master page stayed the same:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" />
-{{< / highlight >}}
+```
 
 The delegate control points to a file in the OSearchBasicFeature feature (like in 2010). The element file that is referenced is the **SearchArea.xml** file. The default location of this element file is: C:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\TEMPLATE\FEATURES\OSearchBasicFeature\SearchArea.xml
 
 The content of the file looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <?xml version="1.0" encoding="utf-8" ?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Control  Id="SmallSearchInputBox" 
@@ -51,13 +51,13 @@ The content of the file looks like this:
     <Property Name="ID">SmallSearchInputBox1</Property>
   </Control>  
 </Elements>
-{{< / highlight >}}
+```
 
 A lot of changes have been made compared to the previous version.
 
 Here is the content of the 2010 version:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <?xml version="1.0" encoding="utf-8" ?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Control Id="SmallSearchInputBox" 
@@ -73,7 +73,7 @@ Here is the content of the 2010 version:
   <Property Name="FrameType">None</Property>
   </Control>
 </Elements>
-{{< / highlight >}}
+```
 
 Like in every new version of SharePoint, the assembly references have been changed, but the biggest change is that it is using a new control the **SearchBoxScriptWebPart** instead of the SearchBoxEx control.
 
@@ -99,7 +99,7 @@ Replacing the OOTB search box can be done the same way as in SharePoint 2007 or 
 4.  Make your modifications to the **element.xml** file.
 Here is an example of my elements.xml file:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Control 
@@ -116,7 +116,7 @@ Here is an example of my elements.xml file:
     <Property Name="QuerySuggestionMinimumPrefixLength">3</Property>
   </Control>
 </Elements>
-{{< / highlight >}}
+```
 
 **Note**: sequence number must be smaller than the default one (default is set to 50).
 

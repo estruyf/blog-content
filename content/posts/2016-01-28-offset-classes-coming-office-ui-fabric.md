@@ -27,7 +27,7 @@ Today the pull request got merged into the master branch. That means that in the
 
 The offset classes allow you to move elements / columns to the right.
 
-{{< caption-legacy "uploads/2016/01/012816_1022_Offsetclass1.png" "Offset classes example" >}}
+{{< caption-new "/uploads/2016/01/012816_1022_Offsetclass1.png" "Offset classes example" >}}
 
 Here is a Codepen example for you to fiddle around with:
 
@@ -59,4 +59,4 @@ You have classes available for: small, medium, large, XL, XXL, and XXXL.
 
 Office UI Fabric announced yesterday the these classes are available in version 2.
 
-{{< caption-legacy "uploads/2016/01/snip_20160208075249.png" "Office UI Fabric tweet" >}}
+{{< caption-new "/uploads/2016/01/snip_20160208075249.png" "Office UI Fabric tweet" >}}

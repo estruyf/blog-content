@@ -51,7 +51,7 @@ To support this development approach for on-premises environments, I created a n
 
 Here is an example of the Gulp watch function in action:
 
-{{< caption-legacy "uploads/2016/06/060616_0907_Anewwayofde1.png" "Gulp watch task" >}}
+{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde1.png" "Gulp watch task" >}}
 
 Of course, this requires some configuration. When you start a new project for a new client, you have to install a couple of dependencies before you can start (or you can copy and paste everything from another project). This is not ideal, so that is where Yeoman comes in the picture.
 
@@ -59,23 +59,23 @@ Of course, this requires some configuration. When you start a new project for a 
 
 Yeoman can be used to build your own generator that automatically creates all required files and folders. Last week during the SPC Adriatics conference I created a display template generator and I am happy to announce that this generator is now publicly available via the Yeoman site.
 
-{{< caption-legacy "uploads/2016/06/060616_0907_Anewwayofde2.png" "Display template generator on Yeoman website" >}}
+{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde2.png" "Display template generator on Yeoman website" >}}
 
 If you want to test out this generator, you can install it with the following command:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 $ npm install -g gulp yo generator-displaytemplates
-{{< / highlight >}}
+```
 
 Once installed, go to a folder in your command prompt and run the next command:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 $ yo displaytemplates
-{{< / highlight >}}
+```
 
 This loads the display template generator and it will ask you a couple of question:
 
-{{< caption-legacy "uploads/2016/06/060616_0907_Anewwayofde3.png" "Yeoman display template generator" >}}
+{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde3.png" "Yeoman display template generator" >}}
 
 Once you answered all these questions, the files get created and the required npm packages get installed.
 
@@ -97,27 +97,27 @@ Here are a couple of Gulp tasks that you can use (more information on the GitHub
 
 **gulp**: this task uploads all the display templates to the masterpage gallery
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 $ gulp
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2016/06/060616_0907_Anewwayofde4.png" "Default gulp task" >}}
+{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde4.png" "Default gulp task" >}}
 
 **gulp publish**: uploads all the files, sets metadata and publishes each of the files.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 $ gulp publish
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2016/06/060616_0907_Anewwayofde5.png" "Gulp publish task" >}}
+{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde5.png" "Gulp publish task" >}}
 
 **gulp watch**: watches for file changes, once a change happens, the file will get uploaded.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 $ gulp watch
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2016/06/060616_0907_Anewwayofde6.png" "Gulp watch task" >}}
+{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde6.png" "Gulp watch task" >}}
 
 > **Info**: all the information about the Gulp tasks that can be used can be found on the generator's GitHub repository page:[ Yeoman display template generator](https://github.com/estruyf/generator-displaytemplates).
 

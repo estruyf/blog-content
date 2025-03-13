@@ -34,10 +34,10 @@ It is also good to know that Playwright is not a testing tool, but you can use i
 
 To start, you will only need Playwright and Jest for your project dependencies:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 npm init
 npm i playwright jest -S -E
-{{< / highlight >}}
+```
 
 Once you have created a new project and installed these two dependencies, all you need is the configuration to run the tests.
 
@@ -51,7 +51,7 @@ Your first test could look like this:
 
 As you configured to run Jest as the test for `npm`, you are now able to run it via `npm test`.
 
-{{< caption "/2020/02/playwright1.png" "Running tests with Playwright and Jest"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACTSURBVFXBSQ6CMABA0d9S2jA6hMjCw3gM7+vGq5igGAdaaqA1Llj4nqiPh6hkwnTuSZVimmeqIsNojR09OlW8Botyp46sMBitkVIghGAOgcE5uv5BiJEfuV1V5KnBmJS7G3hWE7fZMvoPVZmzkG2zYd82uNGTSEmzrlFJQgRiiCzU8215Dw7rPGWu2PnA5Wpx/PsCl+o9P7LErIAAAAAASUVORK5CYII=" "500" >}}
+{{< caption-new "/uploads/2020/02/playwright1.png" "Running tests with Playwright and Jest"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACTSURBVFXBSQ6CMABA0d9S2jA6hMjCw3gM7+vGq5igGAdaaqA1Llj4nqiPh6hkwnTuSZVimmeqIsNojR09OlW8Botyp46sMBitkVIghGAOgcE5uv5BiJEfuV1V5KnBmJS7G3hWE7fZMvoPVZmzkG2zYd82uNGTSEmzrlFJQgRiiCzU8215Dw7rPGWu2PnA5Wpx/PsCl+o9P7LErIAAAAAASUVORK5CYII=" "500" >}}
 
 ## Adding cross-browser support to your test
 
@@ -63,7 +63,7 @@ The previous test will look like this:
 
 Run `npm test` again, and Jest will now automatically test against all supported browsers.
 
-{{< caption "/2020/02/playwright2.png" "Running cross-browser tests"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACtSURBVDXBTU4CQRCA0a+qe34COmKMOxNZuDPxCp7Cg3oKz+HOhBAQxBm6u7p0Frwnt2+vvvwW8ucvKsJwvUQEYlCmc+JFIakSx48t3bAAnOrO8eeEu9M0kZQL77sD1R0VQDUgCDPnnwggFKtcxBCUKWXMjOSGOLQSOJ5GrFaqOzN9fnrk4f6O0Eeu1gPtqqNvG4oZU8pcxK/Nju3+wOzGA2nMlBhY9B3VnVyM2R+ftU1pyHek/AAAAABJRU5ErkJggg==" "500" >}}
+{{< caption-new "/uploads/2020/02/playwright2.png" "Running cross-browser tests"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACtSURBVDXBTU4CQRCA0a+qe34COmKMOxNZuDPxCp7Cg3oKz+HOhBAQxBm6u7p0Frwnt2+vvvwW8ucvKsJwvUQEYlCmc+JFIakSx48t3bAAnOrO8eeEu9M0kZQL77sD1R0VQDUgCDPnnwggFKtcxBCUKWXMjOSGOLQSOJ5GrFaqOzN9fnrk4f6O0Eeu1gPtqqNvG4oZU8pcxK/Nju3+wOzGA2nMlBhY9B3VnVyM2R+ftU1pyHek/AAAAABJRU5ErkJggg==" "500" >}}
 
 ## Adding support for SharePoint Online testing
 
@@ -81,11 +81,11 @@ In the sample I created, you can verify the provided pipeline: [azure-pipelines.
 
 The whole test pipeline looks like this:
 
-{{< caption "/2020/02/playwright3.png" "Azure DevOps pipeline for Playwright and Jest"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAPCAYAAADd/14OAAAAAklEQVR4AewaftIAAAD+SURBVHXB4WrCMBSG4fecJqFG+8f7v0WFTilqmnxrYAUn2/PY9XrVuq7knAkh8J9QSuHr+cXtdqO1xvF4JMbIrpRCF06nEyklaq08n09ijOScebeuK2EYBpa6kIeMu1NKYZ5n3J1aK+fzmWFwAhs3ZxdjZJomfjMCGzfH3YkxklLiL4GNEJ0kaq0sy0I3jiPuTud8aK3RuTudJFprBDaG0VrDzDAzcs7sSilIIvBmXVe61+tFzpmUEjFGSik4m6aGJDpJuDspJd45m6bGzsyQxCfngyQkcblcmOcZSXSBzZQmaq1I4nA4MI4jO0l0zo/WGmbG4/Hgfr+zMzPMjG8CKYE1MlrjHgAAAABJRU5ErkJggg==" "500" >}}
+{{< caption-new "/uploads/2020/02/playwright3.png" "Azure DevOps pipeline for Playwright and Jest"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAPCAYAAADd/14OAAAAAklEQVR4AewaftIAAAD+SURBVHXB4WrCMBSG4fecJqFG+8f7v0WFTilqmnxrYAUn2/PY9XrVuq7knAkh8J9QSuHr+cXtdqO1xvF4JMbIrpRCF06nEyklaq08n09ijOScebeuK2EYBpa6kIeMu1NKYZ5n3J1aK+fzmWFwAhs3ZxdjZJomfjMCGzfH3YkxklLiL4GNEJ0kaq0sy0I3jiPuTud8aK3RuTudJFprBDaG0VrDzDAzcs7sSilIIvBmXVe61+tFzpmUEjFGSik4m6aGJDpJuDspJd45m6bGzsyQxCfngyQkcblcmOcZSXSBzZQmaq1I4nA4MI4jO0l0zo/WGmbG4/Hgfr+zMzPMjG8CKYE1MlrjHgAAAABJRU5ErkJggg==" "500" >}}
 
 Automatically screenshots are taken before and after each test. The pipeline publishes these screenshots as artifacts.
 
-{{< caption "/2020/02/playwright4.png" "Screenshot artifacts"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAABYSURBVH3B0RHCMAxEwXeyhZnxAP2XCFRgffhICiC7en++vo8bYwyu9NfzgSQykys9IqgqbPNPRNA5VBVrLfbeSOIkCdvYprVG55CZ2MY2kjjZJiKYc3L6AXcYIjieMbZCAAAAAElFTkSuQmCC" "800" >}}
+{{< caption-new "/uploads/2020/02/playwright4.png" "Screenshot artifacts"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAABYSURBVH3B0RHCMAxEwXeyhZnxAP2XCFRgffhICiC7en++vo8bYwyu9NfzgSQykys9IqgqbPNPRNA5VBVrLfbeSOIkCdvYprVG55CZ2MY2kjjZJiKYc3L6AXcYIjieMbZCAAAAAElFTkSuQmCC" "800" >}}
 
 <blockquote class="important">
 <p><strong>Important</strong>: The sample tests are just as a reference for you to get started.</p>
@@ -93,11 +93,11 @@ Automatically screenshots are taken before and after each test. The pipeline pub
 
 After all tests, the `JUnit` file gets published, and you can verify the test outcome. You can find the configuration for JUnit in the [jest.config.js](https://github.com/estruyf/playwright-jest-e2e/blob/dev/jest.config.js) file.
 
-{{< caption "/2020/02/playwright5.png" "Test results"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABUSURBVG3BMQ7DIBBFwQcsyBEF9z9civRRrC1IBfvt9JlJ7q69N6UUcs6YGf/k1hq9d16fJ+f3zY+7I4k5J5KotWI3JBEEKUREMMYgpcTxODAz1lpca7slnQWaz0MAAAAASUVORK5CYII=" "700" >}}
+{{< caption-new "/uploads/2020/02/playwright5.png" "Test results"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABUSURBVG3BMQ7DIBBFwQcsyBEF9z9civRRrC1IBfvt9JlJ7q69N6UUcs6YGf/k1hq9d16fJ+f3zY+7I4k5J5KotWI3JBEEKUREMMYgpcTxODAz1lpca7slnQWaz0MAAAAASUVORK5CYII=" "700" >}}
 
 If you want to run a similar pipeline on your environment, you need a variable group with the following settings:
 
-{{< caption "/2020/02/playwright6.png" "Settings required to run the automated tests on Azure DevOps"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAAA+SURBVIXBMQoAIRAEwZ5lVfz/U80WYS4SjLwqrbU8xqC1xkvOObGNbW5VRe+dIyOCvTeSuGUmkjjCNlXFnw8oNhYU5L794AAAAABJRU5ErkJggg==" "700" >}}
+{{< caption-new "/uploads/2020/02/playwright6.png" "Settings required to run the automated tests on Azure DevOps"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAAA+SURBVIXBMQoAIRAEwZ5lVfz/U80WYS4SjLwqrbU8xqC1xkvOObGNbW5VRe+dIyOCvTeSuGUmkjjCNlXFnw8oNhYU5L794AAAAABJRU5ErkJggg==" "700" >}}
 
 > **Info**: The sample project for this article can be found on GitHub - [https://github.com/estruyf/playwright-jest-e2e](https://github.com/estruyf/playwright-jest-e2e).
 >

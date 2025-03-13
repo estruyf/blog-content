@@ -14,7 +14,7 @@ tags:
 comments: true
 ---
 
-{{< caption-legacy "uploads/2016/04/spsbe-2016.jpg" "SPSBE 2016" >}}
+{{< caption-new "/uploads/2016/04/spsbe-2016.jpg" "SPSBE 2016" >}}
 
 The BIWUG board is proud to announce the **sixth** edition of SharePoint Saturday Belgium.
 

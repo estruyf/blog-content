@@ -31,7 +31,7 @@ To not completely rewrite the fillKeywordQuery function, we are going to store t
 
 You don't need to write a lot of code to dynamically change the result source. What I wanted to achieve is when I used `<documents>` or `<pictures>` as a keyword in the search box, it should dynamically change the result source. My code looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 // Show duplicated results
 if (typeof Srch.U.fillKeywordQuery !== 'undefined') {
     // Override the fillKeywordQuery function
@@ -59,7 +59,7 @@ if (typeof Srch.U.fillKeywordQuery !== 'undefined') {
         originalFillKeywordQuery(query, dp);
     };
 }
-{{< / highlight >}}
+```
 
 This piece of code can be added in a **Script Editor Web Part** on the results page of your search center.
 

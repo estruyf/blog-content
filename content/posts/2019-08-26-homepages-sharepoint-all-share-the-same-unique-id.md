@@ -24,7 +24,7 @@ For example in my environment I currently see the following IDs being reused:
 
 Another example:
 
-{{< caption "/2019/08/unique-id-fig1.png" "Sample of a tenant with multiple of the same unique IDs for pages"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABCSURBVBXBQQ2AMBREwbct/pCABERyIcEFqQgS+ncJM1q3Pcd5Md+HspnzpbdOAAFOaBLLPQZJIYnEVBk7/ASEUIgPLrQi7+eI7TwAAAAASUVORK5CYII=" "1084" >}}
+{{< caption-new "/uploads/2019/08/unique-id-fig1.png" "Sample of a tenant with multiple of the same unique IDs for pages"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABCSURBVBXBQQ2AMBREwbct/pCABERyIcEFqQgS+ncJM1q3Pcd5Md+HspnzpbdOAAFOaBLLPQZJIYnEVBk7/ASEUIgPLrQi7+eI7TwAAAAASUVORK5CYII=" "1084" >}}
 
 So in this case you can say that the field `UniqueId` !== unique.
 

@@ -42,7 +42,7 @@ This new navigation experience is important for your application customizer and 
 
 For covering all scenarios, I created the following application customizer:
 
-{{< caption-legacy "uploads/2018/08/082318_0800_Handlingnav1.png" "Sample project header" >}}
+{{< caption-new "/uploads/2018/08/082318_0800_Handlingnav1.png" "Sample project header" >}}
 
 This will be the code to start with:
 
@@ -56,7 +56,7 @@ The first issue that could occur happens when you use the application customizer
 
 When you would navigate to another page, check what happens:
 
-{{< caption-legacy "uploads/2018/08/scenario1-issue.gif" "Navigation issue 1" >}}
+{{< caption-new "/uploads/2018/08/scenario1-issue.gif" "Navigation issue 1" >}}
 
 Nothing happens, and the reason for this is that your component doesn't get updated. Luckily this can easily be fixed with adding a **navigatedEvent** listener. You can do this by adding the following code in the **onInit** function:
 
@@ -64,7 +64,7 @@ Nothing happens, and the reason for this is that your component doesn't get upda
 
 Once this is in place, every time you are going to navigate to another page, it will trigger to re-render your component.
 
-{{< caption-legacy "uploads/2018/08/scenario1-solution.gif" "Navigation solution 1" >}}
+{{< caption-new "/uploads/2018/08/scenario1-solution.gif" "Navigation solution 1" >}}
 
 Now you see the URL location getting changed on every page navigation event.
 
@@ -72,7 +72,7 @@ Now you see the URL location getting changed on every page navigation event.
 
 In the next scenario we open an Office UI Fabric panel and navigate to another page. Let's see what happens:
 
-{{< caption-legacy "uploads/2018/08/scenario2-issue.gif" "Navigation issue 2" >}}
+{{< caption-new "/uploads/2018/08/scenario2-issue.gif" "Navigation issue 2" >}}
 
 As you can see, the panel stays open. This is great because you are not doing a full-page refresh. So, the page routing system of SharePoint is working very well but could also give you some troubles.
 
@@ -84,7 +84,7 @@ The easiest way for this would be to check if the list ID or list item ID got ch
 
 The above code would not work, as both the prevProps.context and this.props.context reference the same object. The list id and item id check will always be false.
 
-{{< caption-legacy "uploads/2018/08/082318_0800_Handlingnav2.png" "Issue with the list and item change validation" >}}
+{{< caption-new "/uploads/2018/08/082318_0800_Handlingnav2.png" "Issue with the list and item change validation" >}}
 
 A better way is to pass the list and list item IDs from within the application customizer itself.
 
@@ -96,21 +96,21 @@ The code in the componentDidUpdate method would look like this:
 
 Once that is in place, it should have solved this issue:
 
-{{< caption-legacy "uploads/2018/08/scenario2-solution.gif" "Navigation solution 2" >}}
+{{< caption-new "/uploads/2018/08/scenario2-solution.gif" "Navigation solution 2" >}}
 
 ## Scenario 3: correctly disposing of your components
 
 Another issue that could happen is when you navigate to a page where the application customizer is not enabled. To show you the issue I will open the same Office UI Fabric panel and navigating to the page without the application customizer.
 
-{{< caption-legacy "uploads/2018/08/scenario3-issue.gif" "Navigation issue 3" >}}
+{{< caption-new "/uploads/2018/08/scenario3-issue.gif" "Navigation issue 3" >}}
 
 Did we not just solve the closing panel issue? Yes, we did, but this only works on pages/sites where the application customizer is active. On page/sites where it is not active, the code is not actually running. Which is true, but if you navigate from a page where you had the controls enabled, they will still be known to your browser.
 
-{{< caption-legacy "uploads/2018/08/082318_0800_Handlingnav3.png" "Components are not unmounted" >}}
+{{< caption-new "/uploads/2018/08/082318_0800_Handlingnav3.png" "Components are not unmounted" >}}
 
 The issue here is that they are not unmounted/disposed of the page. But there is another issue. Notice that when I navigate back to the page where the application customizer is enabled. The application customizer is not displayed anymore. This will not be the case for all projects, but what I did in this sample solution. I created a singleton which gets initialized with the context of the application customizer. I also implemented the **componentWillUnmount** method to dispose of the singleton once the component gets unmounted from the page, but this never gets called because the header never gets unmounted. When navigating back to the page, it will use the old context which causes issues:
 
-{{< caption-legacy "uploads/2018/08/082318_0800_Handlingnav4.png" "Property is undefined" >}}
+{{< caption-new "/uploads/2018/08/082318_0800_Handlingnav4.png" "Property is undefined" >}}
 
 To solve both of these issues, you will have to implement the **onDispose** method in the application customizer itself. The onDispose method gets called whenever the SharePoint tells the loaded placeholder to dispose of their content. This is what you define in the **placeholderProvider.tryCreateContent** method.
 
@@ -120,7 +120,7 @@ If your placeholder contains only HTML, you could just remove all nodes, but in 
 
 Once this is implemented, this should solve both my Office UI Fabric panel issue and my singleton disposal.
 
-{{< caption-legacy "uploads/2018/08/scenario3-solution.gif" "Navigation solution 3" >}}
+{{< caption-new "/uploads/2018/08/scenario3-solution.gif" "Navigation solution 3" >}}
 
 Notice that when navigating to the page where the application customizer is not enabled, the console logs that it is unmounting the header component. This means that the disposal code does its job. Also, the Office UI Fabric panel is gone. As all the components got correctly disposed of, navigating back to the page is not causing any issues anymore for the singleton, this gets initialized again and the application customizer gets displayed correctly.
 

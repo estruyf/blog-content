@@ -38,23 +38,23 @@ Retrieving the Office theme is even easier than I expected. Since the 1.1 versio
 
 The values can be retrieved like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 Office.context.officeTheme.bodyBackgroundColor
-{{< / highlight >}}
+```
 
 
 ## Using the colors in your add-in
 
 The way to use these colors in you add-ins is by applying it via JavaScript. Here is an example:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 $('.example').css({
   'background-color': Office.context.officeTheme.bodyBackgroundColor,
   'color': Office.context.officeTheme.bodyForegroundColor
 });
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2016/01/010716_1158_UsingOffice1.png" "Example of applied colors" >}}
+{{< caption-new "/uploads/2016/01/010716_1158_UsingOffice1.png" "Example of applied colors" >}}
 
 ## Office client theme colors add-in
 
@@ -62,14 +62,14 @@ I created a sample add-in which visualizes the Office client theme colors. Here 
 
 **Colorful**
 
-{{< caption-legacy "uploads/2016/01/010716_1158_UsingOffice2.png" "Colorful Office theme colors" >}}
+{{< caption-new "/uploads/2016/01/010716_1158_UsingOffice2.png" "Colorful Office theme colors" >}}
 
 **Dark gray**
 
-{{< caption-legacy "uploads/2016/01/010716_1158_UsingOffice3.png" "Dark gray Office theme colors" >}}
+{{< caption-new "/uploads/2016/01/010716_1158_UsingOffice3.png" "Dark gray Office theme colors" >}}
 
 **White**
 
-{{< caption-legacy "uploads/2016/01/010716_1158_UsingOffice4.png" "White Office theme colors" >}}
+{{< caption-new "/uploads/2016/01/010716_1158_UsingOffice4.png" "White Office theme colors" >}}
 
 The add-in can be found on GitHub: [https://github.com/estruyf/Office-Client-Theme-Colors](https://github.com/estruyf/Office-Client-Theme-Colors).

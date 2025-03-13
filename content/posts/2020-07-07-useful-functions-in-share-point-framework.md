@@ -35,14 +35,14 @@ Here is the full list: `assign`, `camelCase`, `chunk`, `clone`, `cloneDeep`, `cl
 
 In your project, all you need to do is import the wanted function as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 // Import your utility functions like this
 import { find } from '@microsoft/sp-lodash-subset';
 
 // Start using them
 const people = [{firstName:"Elio"}, {firstName:"Seb"}];
 const person = find(people, p => p.firstName === "Elio");
-{{< / highlight >}}
+```
 
 > **Info**: Lodash also provides a modularized way of installing these utility functions, but if you already have them installed, why not reuse what is already in place.  
 
@@ -58,7 +58,7 @@ The dependency contains functions that are exported and readily available to use
 
 The first handy function is GUIDs. This utility class helps you to generate/validate/parse GUIDs. 
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import { Guid } from '@microsoft/sp-core-library';
 
 // Generate a guid
@@ -69,7 +69,7 @@ console.log(Guid.tryParse(myGuid.toString()));
 console.log(Guid.parse(myGuid.toString()));
 // Checks if the passed guid is valid
 console.log(Guid.isValid(myGuid.toString()));
-{{< / highlight >}}
+```
 
 #### Session information
 
@@ -79,13 +79,13 @@ The `applicationId` is a unique ID that gets generated when a new session starts
 
 The `pageId` is a unique ID that changes per page.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import { Session } from '@microsoft/sp-core-library';
 
 // Session information
 console.log('pageId:', Session.pageId);
 console.log('applicationId:', Session.applicationId);
-{{< / highlight >}}
+```
 
 > **Info**: The good thing about these variables is that they are generated and cannot be pointed directly to a user. These uniquely created IDs make it GDPR proof.
 
@@ -97,7 +97,7 @@ The reason why this is useful is when you are working with localization strings.
 
 Such functionality is not so hard to create, but it is already available.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import { Text } from '@microsoft/sp-core-library';
 
 // Working with text
@@ -106,7 +106,7 @@ const myVar = "stricker";
 console.log(Text.format(`This is my {0} label`, myVar));
 // Replace all occurences - This way you do not need to use regex
 console.log(Text.replaceAll(`This can replace all the i-s from this string.`, 'i', 'I'));
-{{< / highlight >}}
+```
 
 #### Other functionality
 
@@ -118,9 +118,9 @@ Besides the public exported ones, there are a couple of other handy functions th
 
 In case you want to use any of these, you first need to include the localization file of this dependency to your project. If you would not do this, the build engine throws an error that it cannot find the `resx-strings` module. To solve this, add the following to the `localizationResources` property of your project `config/config.json` file:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 "resx-strings": "node_modules/@microsoft/sp-core-library/lib/resx-strings/{locale}.js"
-{{< / highlight >}}
+```
 
 Once the localization reference is in place, you can start using the utility classes.
 
@@ -128,25 +128,25 @@ Once the localization reference is in place, you can start using the utility cla
 
 Want to know which browser your user uses? Then you can make use of the `BrowserDetection` utility class. This class has a `getBrowserInformation` method which will return you the browser type, version, and OS.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import BrowserDetection from '@microsoft/sp-core-library/lib/BrowserDetection';
 
 const browserInfo = BrowserDetection.getBrowserInformation();
 console.log(`Browser`, browserInfo);
-{{< / highlight >}}
+```
 
 #### Browser utilities
 
 Want to know if your solution is running in Teams, an iframe, mobile, ...? You can use the `BrowserUtilities` class for it.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import { BrowserUtilities } from '@microsoft/sp-core-library/lib/BrowserUtilities';
 
 console.log(`isEmbedded:`, BrowserUtilities.isEmbedded());
 console.log(`isMobileBrowser:`, BrowserUtilities.isMobileBrowser());
 console.log(`isSharePointiOSApp:`, BrowserUtilities.isSharePointiOSApp());
 console.log(`isTeamsBrowserHosted:`, BrowserUtilities.isTeamsBrowserHosted());
-{{< / highlight >}}
+```
 
 #### URL utilities
 
@@ -154,13 +154,13 @@ One last useful utility class is for working with URLs. It is called `UrlUtiliti
 
 This class contains functions to concatenate URLs, remove leading or ending slashes in the URL, and some validation.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import UrlUtilities from '@microsoft/sp-core-library/lib/url/UrlUtilities';
 
 console.log(`isRelativeUrl`, UrlUtilities.isRelativeUrl(location.href));
 console.log(`isRelativeUrl`, UrlUtilities.isRelativeUrl(`/temp/workbench.html`));
 console.log(`removeLeadingSlash`, UrlUtilities.removeLeadingSlash(`/temp/workbench/`));
 console.log(`removeEndSlash`, UrlUtilities.removeEndSlash(`/temp/workbench/`));
-{{< / highlight >}}
+```
 
 *Did you find another useful function? Feel free to share it via the comments*

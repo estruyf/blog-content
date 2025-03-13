@@ -15,7 +15,7 @@ comments: true
 
 I love static sites! In 2020 I have created ten production sites with various static site generators and a couple of POCs. My favorites are [Hugo](https://gohugo.io/) and [Next.js](https://nextjs.org/).
 
-{{< caption "/2020/12/doctor3.png" "Doctor logo"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAECSURBVF3BMUsCYQCA4fc+j8rwUoIOryIhInCpwXIo2g5sagxaW1pamkOosTX8DS1tNRR11FBTUEPCUSGJBJZ0hdyd2vWJdsNNPY9CZKm4vdd9rd5sBM5y0PbzHdk/37+0S0RUQiu52XHdNIvy+qIy9iFTbiuuJ368DFAiIgh1cvOG8/JcXYxprj5X0IPfOEpi1D/aGlojEiNUv7ffa6fW4WZhtT6RlOsjmui3mo46PPj2eXzXvSKk8M9O3jhw/W55OpO2d8/KD0QUUxOTQMPyepKQqYkp4BsILK8niSimJk6AGvAEfAFZQABJoAFUgAUVGACaQBZoA2ngFjCAGSAFPP4BbqpYsOFmxCsAAAAASUVORK5CYII=" "500" >}}
+{{< caption-new "/uploads/2020/12/doctor3.png" "Doctor logo"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAAECSURBVF3BMUsCYQCA4fc+j8rwUoIOryIhInCpwXIo2g5sagxaW1pamkOosTX8DS1tNRR11FBTUEPCUSGJBJZ0hdyd2vWJdsNNPY9CZKm4vdd9rd5sBM5y0PbzHdk/37+0S0RUQiu52XHdNIvy+qIy9iFTbiuuJ368DFAiIgh1cvOG8/JcXYxprj5X0IPfOEpi1D/aGlojEiNUv7ffa6fW4WZhtT6RlOsjmui3mo46PPj2eXzXvSKk8M9O3jhw/W55OpO2d8/KD0QUUxOTQMPyepKQqYkp4BsILK8niSimJk6AGvAEfAFZQABJoAFUgAUVGACaQBZoA2ngFjCAGSAFPP4BbqpYsOFmxCsAAAAASUVORK5CYII=" "500" >}}
 
 ## The story
 
@@ -53,7 +53,7 @@ The tool itself will keep the pages up to date on SharePoint. During this proces
 - Check if the Markdown web part with a specific ID exists. If not, add it
 - Update the Markdown from the current page to the web part
 
-{{< caption "/2020/12/doctor1.png" "Doctor publish command output"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAADWSURBVHXBv0rDQADA4d/l/qCQZBDU1priUvQdHF18DRefUBxdFFz0CbS4RUM1kVhyRy7nSQchCH6fuDi9jPOdgrvynlp+EkLAWkvf94ypm/dbcpthjCGGyEaapoQQEEKgtcY5h4oyIcsyjDF478nznLZtkYmkfC3x3rOhRPimsx22s0QizjlCCDRNw5g6Pwvs730AEq173iq4utb8pR4edymKQ56el6zXkf+oIzVn6ibMJlOEFizLFyq1oq5rYoz8SmbygJPtBcdbC6pqRau+GIYBrTVjP/9hXmACqKWPAAAAAElFTkSuQmCC" "364" >}}
+{{< caption-new "/uploads/2020/12/doctor1.png" "Doctor publish command output"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAADWSURBVHXBv0rDQADA4d/l/qCQZBDU1priUvQdHF18DRefUBxdFFz0CbS4RUM1kVhyRy7nSQchCH6fuDi9jPOdgrvynlp+EkLAWkvf94ypm/dbcpthjCGGyEaapoQQEEKgtcY5h4oyIcsyjDF478nznLZtkYmkfC3x3rOhRPimsx22s0QizjlCCDRNw5g6Pwvs730AEq173iq4utb8pR4edymKQ56el6zXkf+oIzVn6ibMJlOEFizLFyq1oq5rYoz8SmbygJPtBcdbC6pqRau+GIYBrTVjP/9hXmACqKWPAAAAAElFTkSuQmCC" "364" >}}
 
 The process is straightforward but so powerful.
 
@@ -77,7 +77,7 @@ Installing the `doctor` on your machine can be done by running: `npm i -g @estru
 
 To make your start as easy as possible, I shared a sample repository for you to use: [doctor sample](https://github.com/estruyf/doctor-sample). Clone it, and get started.
 
-{{< caption "/2020/12/doctor2.png" "Doctor sample output on SharePoint"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAACbSURBVH3BOwrCQBRA0TuTNyMBP71gExcgFn5AwR0obtFGwcLCfQlpMvmYeWphZzzHFEWhTVMzHI74R5IkATwhBFQjYPgQEbz3fMnpfOF6u/OsKsqy4sMYMETquqRtleNhj0zGY1bzGXmeoxr5ZZplyG67Yb1ckKYp3nu6WHGOp3PUqkRVulgRoe8cjxBo2pYulrfEWga+R1SlywtogzeIFi+p2gAAAABJRU5ErkJggg==" "572" >}}
+{{< caption-new "/uploads/2020/12/doctor2.png" "Doctor sample output on SharePoint"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAAklEQVR4AewaftIAAACbSURBVH3BOwrCQBRA0TuTNyMBP71gExcgFn5AwR0obtFGwcLCfQlpMvmYeWphZzzHFEWhTVMzHI74R5IkATwhBFQjYPgQEbz3fMnpfOF6u/OsKsqy4sMYMETquqRtleNhj0zGY1bzGXmeoxr5ZZplyG67Yb1ckKYp3nu6WHGOp3PUqkRVulgRoe8cjxBo2pYulrfEWga+R1SlywtogzeIFi+p2gAAAABJRU5ErkJggg==" "572" >}}
 
 ## What do you think?
 

@@ -19,7 +19,7 @@ tags:
 comments: true
 ---
 
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche1.png" "Default message when there is a problem with your template" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche1.png" "Default message when there is a problem with your template" >}}
 
 I receive a lot of questions about why display templates are not working or why managed properties do not contain a value. Most of the times the solution is similar to what has been already asked before, so I thought of writing this down in order that it can help everyone with similar issues.
 
@@ -31,17 +31,17 @@ This is actually a common one. It has nothing to do with the template in fact, b
 
 When you download the file via right-click > save link as (or save target as). The template will not work because it will also include the HTML of the GitHub page.
 
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche2.png" "Display template contains content from GitHub" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche2.png" "Display template contains content from GitHub" >}}
 
 **Solution**
 
 The best way to get the display template is to open it on GitHub so that you can see the file content.
 
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche3.png" "Click on the raw button" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche3.png" "Click on the raw button" >}}
 
 Once you opened it, you will have a **Raw** button at the top. Click on that button and copy/paste the code to a new HTML file.
 
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche4.png" "Raw file content" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche4.png" "Raw file content" >}}
 
 You can also right-click on this button and save the link as an HTML file.
 
@@ -58,11 +58,11 @@ There are a couple of reasons why a template would not appear in the dropdown li
 *   If you have published it already and it still does not appear, try to re-publish it. I know it sounds stupid, but in most cases this works;
 *   Check that you did not accidently set the template as hidden (uncheck the hidden template checkbox);
 
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche5.png" "Hidden template checkbox" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche5.png" "Hidden template checkbox" >}}
 
 *   Check if the target control type is set to the web part in which you want to use it:
 
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche6.png" "Specify the target control type" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche6.png" "Specify the target control type" >}}
 
 ## Sorry, something went wrong. Template not found or has syntax errors
 
@@ -70,23 +70,23 @@ In 99 percent of the cases, this error is related to a bug in the code. That one
 
 Here is an example of such an error:
 
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche7.png" "Template not found or has syntax errors" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche7.png" "Template not found or has syntax errors" >}}
 
 **Solution**
 
 As the error does not say much, the best way to solve it is to open your browser developer tools (f12) and go to the **console** first. In the browser console, check if there is an error logged. In most cases when you wrote a bug in the display template, you will see it in the console like in this example:
 
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche8.png" "Check browser console" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche8.png" "Check browser console" >}}
 
 If you click on the **file link**, the developer tools load the file and shows you where the error occurs:
 
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche9.png" "Most of the time the develop tools tell you the error" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche9.png" "Most of the time the develop tools tell you the error" >}}
 
 ### What if you do not see any errors in the console?
 
 Something else might be going on. Try to set a breakpoint in the JS template and debug the code to see where the error occurs.
 
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche10.png" "Debug your display template" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche10.png" "Debug your display template" >}}
 
 ## My managed property value is empty or null, but I am sure the content is indexed
 
@@ -100,9 +100,9 @@ If you are adding new property mappings to you display templates, it can happen 
     *   If this is the case, the problem can be related to the template.
     *   When you do not retrieve any values, it could be related to the content which might not be indexed yet.
 *   When you introduced a new managed property in a display template associated with a result type, you will have to go to the result types page and do a property sync:
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche11.png" "Property sync message" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche11.png" "Property sync message" >}}
 
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche12.png" "Property sync message when updated" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche12.png" "Property sync message when updated" >}}
 
 *   When people result managed properties get returned as empty like AccountName, CellPhone, .... You have to add the following managed properties to your display template mappings: **ServiceApplicationID** and **UserProfile_GUID**.
 
@@ -113,11 +113,11 @@ If you are adding new property mappings to you display templates, it can happen 
 
 You have to watch out when you download a display template via the **download a copy** ECB menu action in SharePoint Online.
 
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche13.png" "Download a copy of the file" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche13.png" "Download a copy of the file" >}}
 
 When you do this, additional content gets added to your template at the bottom of the file:
 
-{{< caption-legacy "uploads/2016/07/070616_1349_Thingstoche14.png" "Additional content that gets added" >}}
+{{< caption-new "/uploads/2016/07/070616_1349_Thingstoche14.png" "Additional content that gets added" >}}
 
 This additional content has to be removed from the template before upload it to SharePoint again. If you do not do this, it generates an error in the JS template.
 

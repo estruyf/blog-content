@@ -37,7 +37,7 @@ I used both of them, if you go for the second approach, you get a better underst
 
 When my app opens, it gets redirect to the authorization link to retrieve the RefreshToken from Azure AD. When the RefreshToken is retrieved, the AccessToken can be created, and that can be used to open a SharePoint context / call the SharePoint REST APIs / etc... This is how my code looked like in the beginning:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 private readonly string _clientId = ConfigurationManager.AppSettings["ida:ClientID"];
 private readonly string _appKey = ConfigurationManager.AppSettings["ida:Password"];
 
@@ -68,7 +68,7 @@ public async Task<ActionResult> Index(string code)
 
     return RedirectToAction("SiteInfo");
 }
-{{< / highlight >}}
+```
 
 When the index page gets loaded, the first thing to do is to check if the authorization code is null. If this is true that means that you need to be redirected to Azure AD to get authenticated. Once you are authenticated, it will give pass that authentication token to your app.
 
@@ -78,21 +78,21 @@ So if the first check is true, then you are going to retrieve the authentication
 
 This is what happens in Outlook Web App when the app gets opened:
 
-{{< caption-legacy "uploads/2014/10/102814_1452_Thingsyoune1.png" "OWA - Mail App Error" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune1.png" "OWA - Mail App Error" >}}
 
 The app returns an error. If you check the authentication flow in Fiddler, you can see that everything worked just fine:
 
-{{< caption-legacy "uploads/2014/10/102814_1452_Thingsyoune2.png" "Fiddler Authentication Flow" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune2.png" "Fiddler Authentication Flow" >}}
 
 The client did go to the index page (line 2) of that app, and from that index page it got redirected to the Azure AD login page (line 4). The authentication was fine, you can see that on line 8 the **RefreshToken** has been passed from Azure AD. The last line show that the client has been redirected to the **SiteInfo** page. That is the page where I make use of the **AccessToken** that was created on the landing page. So the error has nothing to do with the authorization process.
 
 If you check the HTML of the error, you notice that this is a DIV container which is placed above the Office App iframe.
 
-{{< caption-legacy "uploads/2014/10/102814_1452_Thingsyoune3.png" "Error container HTML" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune3.png" "Error container HTML" >}}
 
 When you remove the error container or hide it via CSS, you will see that your app is loaded without a problem:
 
-{{< caption-legacy "uploads/2014/10/102814_1452_Thingsyoune4.png" "OWA - Mail App loaded behind the error container" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune4.png" "OWA - Mail App loaded behind the error container" >}}
 
 **Note 1**: my app uses the AccessToken to connect to SharePoint and get the Site Title.
 
@@ -102,11 +102,11 @@ When you remove the error container or hide it via CSS, you will see that your a
 
 In the Outlook Rich Client the behaviour is completely different. You will get redirected to the Azure AD login page, and you will need to pass your credentials (this is not needed in the OWA because you are already logged in).
 
-{{< caption-legacy "uploads/2014/10/102814_1452_Thingsyoune5.png" "Outlook Rich Client - Sign in" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune5.png" "Outlook Rich Client - Sign in" >}}
 
 When I filled in my credentials and clicked on the **Sign in** button, the following happens:
 
-{{< caption-legacy "uploads/2014/10/102814_1452_Thingsyoune6.png" "Outlook Rich Client - Pop-up" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune6.png" "Outlook Rich Client - Pop-up" >}}
 
 An Internet Explorer window opens, and I need to sign in again, and the app will stay on the sign in page.
 
@@ -118,19 +118,19 @@ The first thing to solve is the rich client problem. This is an easy one, the pr
 
 To solve this, go to the Office App Manifest, open the **App Domains** tab. This should be empty by default:
 
-{{< caption-legacy "uploads/2014/10/102814_1452_Thingsyoune7.png" "App Domains" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune7.png" "App Domains" >}}
 
 Add the Azure AD login and the Identity Provider URL to the app domains:
 
-{{< caption-legacy "uploads/2014/10/102814_1452_Thingsyoune8.png" "App Domains" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune8.png" "App Domains" >}}
 
 When these settings are stored, you are able to sign in without you getting any pop-up.
 
-{{< caption-legacy "uploads/2014/10/102814_1452_Thingsyoune9.png" "Outlook Rich Client - App loaded" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune9.png" "Outlook Rich Client - App loaded" >}}
 
 > **Note**: if you are testing this in the Outlook rich client, I noticed some caching problems. What you could do if your app gets loaded is to right click in the app and click on **reload**. This should solve the caching problems.
 
-{{< caption-legacy "uploads/2014/10/102814_1452_Thingsyoune10.png" "Outlook Rich Client - App reload" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune10.png" "Outlook Rich Client - App reload" >}}
 
 ### Fixing the Outlook Web App problems
 
@@ -140,7 +140,7 @@ The Outlook Web App problems seems to be related to a context that is undefined 
 
 Here is my updated code for the JavaScript redirection:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 public async Task<ActionResult> Index(string et, string code)
 {
   var authContext = new AuthenticationContext(_authorizationUri + "/common", true);
@@ -170,19 +170,19 @@ public async Task<ActionResult> Index(string et, string code)
 
   return RedirectToAction("SiteInfo");
 }
-{{< / highlight >}}
+```
 
 The changes are done in the highlighted code block (in the if statement to know if the code variable is null). In that block I added a check to see if the app is opened in OWA or the rich client. If the app is opened in the browser a query string property **et** gets added, you can find more information here: [Check if your mail app is opened in Outlook Web App or Outlook rich client](https://www.eliostruyf.com/check-mail-app-opened-outlook-web-app-outlook-rich-client/).
 
 If the app is loaded in the rich client context, the redirection is done via managed code. For OWA the Azure AD authorization URL gets stored in a ViewBag property and will be used to redirect via JavaScript. The code on the index page looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <script>
   Office.initialize = function (reason) {
     window.location.href = "@ViewBag.URL";
   };
 </script>
-{{< / highlight >}}
+```
 
 The code is not that special, it first initializes the Office context before it does the redirection to Azure AD. If you test this in OWA, the app should work fine without showing the error container like before.
 

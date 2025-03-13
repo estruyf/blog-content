@@ -38,9 +38,9 @@ The code registers the necessary jQuery files and once the init function gets ca
 
 The refiner template renders the following output:
 
-{{< caption-legacy "uploads/2015/01/012815_0945_Daterangefi1.png" "Range filter display template" >}}
+{{< caption-new "/uploads/2015/01/012815_0945_Daterangefi1.png" "Range filter display template" >}}
 
-{{< caption-legacy "uploads/2015/01/012815_0945_Daterangefi2.png" "Range filter with date picker" >}}
+{{< caption-new "/uploads/2015/01/012815_0945_Daterangefi2.png" "Range filter with date picker" >}}
 
 ## Download
 

@@ -19,7 +19,7 @@ comments: true
 
 With the SharePoint Framework it is fairly easy to configure the properties you want to expose in the property pane of your web part. All you have to do is specify each of the property pane fields you want to show in the **propertyPaneSettings** function underneath the **groupFields** property.
 
-{{< caption-legacy "uploads/2016/09/090616_1425_Togglesetti1.png" "propertyPaneSettings function" >}}
+{{< caption-new "/uploads/2016/09/090616_1425_Togglesetti1.png" "propertyPaneSettings function" >}}
 
 There are various types of property pane fields like text, dropdown, toggle, checkbox, and if that is not enough or you need a special one, you have the ability to build it yourself.
 
@@ -27,17 +27,17 @@ When you are defining your properties, they will be immediately visible in the w
 
 Let me give you an example so you can see what I mean. In my POC search web part, I have a dropdown that will be visible the first time you open the property pane:
 
-{{< caption-legacy "uploads/2016/09/090616_1425_Togglesetti2.png" "Property when toggle is off" >}}
+{{< caption-new "/uploads/2016/09/090616_1425_Togglesetti2.png" "Property when toggle is off" >}}
 
 This dropdown is used to select an internal template. I also have the option to show data from an external template, but I did not want to show both options. So what I did, I added the **"use an external template"** toggle. One you toggle this setting, the dropdown will be gone and a textbox appears.
 
-{{< caption-legacy "uploads/2016/09/090616_1425_Togglesetti3.png" "Property when toggle is on" >}}
+{{< caption-new "/uploads/2016/09/090616_1425_Togglesetti3.png" "Property when toggle is on" >}}
 
 This example works with a toggle, but you can also achieve this when you select a specific property in the dropdown or something else.
 
 I achieved it with the following code:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
   let templateProperty: any;
   if (this.properties.propertyToggle) {
@@ -75,6 +75,6 @@ protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
     ]
   };
 }
-{{< / highlight >}}
+```
 
 Have fun coding with the SharePoint Framework!

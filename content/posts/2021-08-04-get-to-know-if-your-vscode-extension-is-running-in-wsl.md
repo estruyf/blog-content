@@ -25,19 +25,19 @@ By knowing this context, I could ensure that certain functionality works similar
 
 The solution is a very simple one-liner:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const isWsl = vscode.env.remoteName === "wsl";
-{{< / highlight >}}
+```
 
 ## How I use it
 
 I have two buttons in the Front Matter extension to open the project- and file folder in finder/explorer. When running in WSL, the `revealFileInOS` command from VSCode is not available. You need to use the `remote-wsl.revealInExplorer` command instead. With the one-liner, I can now do the following:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const isWsl = vscode.env.remoteName === "wsl";
 if (isWsl) {
   commands.executeCommand('remote-wsl.revealInExplorer');
 } else {
   commands.executeCommand('revealFileInOS');
 }
-{{< / highlight >}}
+```

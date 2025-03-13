@@ -31,13 +31,13 @@ In a REST API, it would look as follows: `/_api/search/query?querytext='<your-qu
 
 ### CSOM API
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 KeywordQuery keywordQuery = new KeywordQuery(clientCtx)
 {
     QueryText = $"<your-query>",
     SourceId = new Guid("8413cd39-2156-4e00-b54d-11efd9abdb89")
 };
-{{< / highlight >}}
+```
 
 ## Why?
 

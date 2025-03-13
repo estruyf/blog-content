@@ -41,9 +41,9 @@ Once the content was added, I only needed to symlink it to the `./src/content/` 
 
 To start, I symlinked my `posts` folder as follows:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 ln -s "$(pwd)/.frontmatter/content/posts" "$(pwd)/src/content/posts"
-{{< / highlight >}}
+```
 
 This command creates a symlink from the `./.frontmatter/content/posts` folder to the `./src/content/posts` folder.
 
@@ -63,7 +63,7 @@ I found the `preserveSymlinks` setting in the documentation and configuration re
 
 So I updated the `astro.config.mjs` file with the following configuration:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 export default defineConfig({
   ...
   vite: {
@@ -72,7 +72,7 @@ export default defineConfig({
     }
   }
 });
-{{< / highlight >}}
+```
 
 Once the local server restarted, I started to see the content of my blog.
 
@@ -87,10 +87,10 @@ As it works for the content, I could do the same for the assets of my site. In m
 
 I symlinked both folders as follows:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 ln -s "$(pwd)/.frontmatter/static/social" "$(pwd)/public/social"
 ln -s "$(pwd)/.frontmatter/static/uploads" "$(pwd)/public/uploads"
-{{< / highlight >}}
+```
 
 {{< caption-new "/uploads/2023/03/symlinked-asset-folders.png" "Symlinked asset folders"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAAB8SURBVH3BwQ2CMBiA0a/Qlv4Q9SKJCWEEzgzgJE7mPAzi0ROJRdpQ4WY04T1VN10L9OwbNHA9X6r7aIT34wlL4ptyhjSFW8YqjhN6ihSl8GdJbDSr4CpKpckri881YQ68vGeT5sgmY6WkwIlDxHE6HrDW8EvVTdcCPfuGDy9uH7PS09jcAAAAAElFTkSuQmCC" "497" >}}
 

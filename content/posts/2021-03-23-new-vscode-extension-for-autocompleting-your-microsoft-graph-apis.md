@@ -28,15 +28,15 @@ The good news for me was that Microsoft Graph Explorer has an API for retrieving
 
 The initial version of the extension supports the `GET` API paths, query string parameters, and their values.
 
-{{< caption "/2021/03/msgraph1.gif" "How it works" >}}
+{{< caption-new "/uploads/2021/03/msgraph1.gif" "How it works" >}}
 
 The `/users/` API completion allows you to add a `{user-id}` token.
 
-{{< caption "/2021/03/msgraph2.png" "User ID token"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABHSURBVB3BMQqAQAxFwbfJoiJYaWfjDbz/sWwUN5+N4ExZjjP3bcXdUQTFDDNDEfg0k8NIZlK7RH+FeuOXYG5I4n4uWnUS+ABSVh1uiaxg4QAAAABJRU5ErkJggg==" "572" >}}
+{{< caption-new "/uploads/2021/03/msgraph2.png" "User ID token"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABHSURBVB3BMQqAQAxFwbfJoiJYaWfjDbz/sWwUN5+N4ExZjjP3bcXdUQTFDDNDEfg0k8NIZlK7RH+FeuOXYG5I4n4uWnUS+ABSVh1uiaxg4QAAAABJRU5ErkJggg==" "572" >}}
 
 When providing your user-ID or username, it will automatically tokenize it.
 
-{{< caption "/2021/03/msgraph3.png" "Retrieving API paths for users"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABaSURBVG3BwQ3CQAxFweddb7YJGgAh+i+LwAHbKPmIAwekzNg8XeS9I4SZYWbM4VzPN+6PJxmJJDyrSP5pNEa8mBnEuvLVOCCMqiIj+XEOCPHeNugNXxZ27XwAUfcnQlqrdSwAAAAASUVORK5CYII=" "989" >}}
+{{< caption-new "/uploads/2021/03/msgraph3.png" "Retrieving API paths for users"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABaSURBVG3BwQ3CQAxFweddb7YJGgAh+i+LwAHbKPmIAwekzNg8XeS9I4SZYWbM4VzPN+6PJxmJJDyrSP5pNEa8mBnEuvLVOCCMqiIj+XEOCPHeNugNXxZ27XwAUfcnQlqrdSwAAAAASUVORK5CYII=" "989" >}}
 
 ## When would you use it?
 
@@ -44,7 +44,7 @@ There are various reasons for this. My reasoning, as mentioned, was to know whic
 
 Another option could be to use it in combination with the popular [rest-client extension](REST Client - Visual Studio Marketplace). 
 
-{{< caption "/2021/03/msgraph4.png" "Using it in combination with the Rest Client in VSCode mentioned by Darrel Miller"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAADASURBVG3BQUrDUBSG0e+/L6/VRKFQJ3U/0qnOXUoG7kpwIC7ALsGRnTRgEBpjk7zkSgaCA8/R/d2tv7zuGPqBqjrwPxHe9vuHPk18J2eRX7I4z8lCwAQhBMyMcUxk15sNq9UKswA4H3XNNF4giZm7U1UVWVmWbLc3SCCJGJd0w0Q8y4kxMnt+esQk8cvdictIfXinaz4ZTw3jqQGfMMeRhBBmxtfxiIXALKWEmWFmaL2+8qIoQICDTPRdx19t2/IDgGBKqzLTQU0AAAAASUVORK5CYII=" "600" >}}
+{{< caption-new "/uploads/2021/03/msgraph4.png" "Using it in combination with the Rest Client in VSCode mentioned by Darrel Miller"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAADASURBVG3BQUrDUBSG0e+/L6/VRKFQJ3U/0qnOXUoG7kpwIC7ALsGRnTRgEBpjk7zkSgaCA8/R/d2tv7zuGPqBqjrwPxHe9vuHPk18J2eRX7I4z8lCwAQhBMyMcUxk15sNq9UKswA4H3XNNF4giZm7U1UVWVmWbLc3SCCJGJd0w0Q8y4kxMnt+esQk8cvdictIfXinaz4ZTw3jqQGfMMeRhBBmxtfxiIXALKWEmWFmaL2+8qIoQICDTPRdx19t2/IDgGBKqzLTQU0AAAAASUVORK5CYII=" "600" >}}
 
 Let me know how you would use it.
 

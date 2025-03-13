@@ -24,7 +24,7 @@ One important piece of information I required for an application which I am curr
 
 When you call the API to retrieve the group details, you get the following response:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // API endpoint: https://graph.microsoft.com/v1.0/groups/<group-id>
 
 {
@@ -50,7 +50,7 @@ When you call the API to retrieve the group details, you get the following respo
     "securityEnabled": false,
     "visibility": "Public"
 }
-{{< / highlight >}}
+```
 
 This API endpoint already provides you some very useful pieces of information, but nothing about the URL of the SharePoint site.
 
@@ -60,18 +60,18 @@ You might think to compose the site URL yourself with the information you retrie
 
 As I was going through all the API endpoints of a group. I stumbled upon the endpoint of the group drive (the linked document library). This drive endpoint can return a **webUrl**, which is in fact the URL to the document library of course. One minor thing, if you want to retrieve this piece of information, it requires an additional call. The call itself is easy one:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 https://graph.microsoft.com/v1.0/groups/<group-id>/drive/root/webUrl
-{{< / highlight >}}
+```
 
 The call will give you the following response:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('41525360-8eca-49ce-bcee-b205cd0aa747')/drive/root/webUrl",
     "value": "https://a830edad9050849nda1.sharepoint.com/sites/contoso/Shared%20Documents"
 }
-{{< / highlight >}}
+```
 
 In this response, you can see the **webUrl** value, and as I already mentioned it includes the document library ("Shared Documents"). I think it is safe to presume that you would already know how to get it remove it.
 

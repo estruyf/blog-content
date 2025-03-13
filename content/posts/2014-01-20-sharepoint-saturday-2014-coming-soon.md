@@ -15,7 +15,7 @@ tags:
 comments: true
 ---
 
-{{< caption-legacy "uploads/2014/01/sps-2012-belgium.jpg" "SharePoint Saturday Belgium" >}}
+{{< caption-new "/uploads/2014/01/sps-2012-belgium.jpg" "SharePoint Saturday Belgium" >}}
 
 The BIWUG board is proud to announce a new edition of SharePoint Saturday Belgium!
 

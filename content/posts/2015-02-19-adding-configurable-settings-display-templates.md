@@ -45,24 +45,24 @@ As you can see, the managed property name will be used as the setting value for 
 
 Here is an example of how my managed property mapping attribute:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:ManagedPropertyMapping msdt:dt="string">'Link URL':'Path','Line 1':'Title','Line 2':'','FileExtension','SecondaryFileExtension','setting_Value1'{Setting Description 1}:'2','setting_Value2'{Setting Description 2}:'String Value'</mso:ManagedPropertyMapping>
-{{< / highlight >}}
+```
 
 
 ### Configuring the settings for your templates
 
 Once these settings are added to the managed property mappings attribute, they will become available in the **Property Mappings** section of your CSWP toolpart:
 
-{{< caption-legacy "uploads/2015/02/021915_1530_Addingconfi1.png" "Template with custom settings" >}}
+{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi1.png" "Template with custom settings" >}}
 
 Now if a user wants to configure the settings, they will need to check the **Change the mapping of managed properties** checkbox and the property mappings become editable:
 
-{{< caption-legacy "uploads/2015/02/021915_1530_Addingconfi2.png" "Template with custom settings enabled" >}}
+{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi2.png" "Template with custom settings enabled" >}}
 
 Now you are able to add your own values for the template:
 
-{{< caption-legacy "uploads/2015/02/021915_1530_Addingconfi3.png" "Template with custom settings changed" >}}
+{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi3.png" "Template with custom settings changed" >}}
 
 ### Retrieving the settings in the item display template
 
@@ -75,29 +75,29 @@ The next thing to do is retrieving the values that or either set by default or i
 
 Retrieving the settings with $getItemValue is similar as retrieving managed property value:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Retrieve the setting
 var setting1 = $getItemValue(ctx, "setting_Value1");
 // Retrieve the setting value
 var setting1_value = setting1.propertyMappings.toString();
-{{< / highlight >}}
+```
 
 **Approach 2**
 
 Another approach is to retrieve the settings from the DisplayTemplateData object on your context in your display template. The DisplayTemplateData object gets created at the top in each display template, but in the item display template an extra property gets added to the object that contains the managed property mappings for the template. The code for retrieving the property mappings looks like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var properties = "";
 // Retrieve the properties from the display template data variable
 var dtd = ctx['DisplayTemplateData'];
 if (!Srch.U.n(dtd) && !Srch.U.n(dtd['ManagedPropertyMapping'])) {
     properties = dtd['ManagedPropertyMapping'];
 }
-{{< / highlight >}}
+```
 
 Now if a user customizes the property mappings in the web part settings, this will not be change in the template of course, these changes are added to the web part. That means that they need to be retrieved from the client control object. So the next step to do is checking if there are some mappings set on the client control, if that is the case the properties variable will get overwritten with the client control mappings.
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Retrieve the properties from the client control
 var cc = ctx['ClientControl'];
 if (!Srch.U.n(cc)) {
@@ -108,22 +108,22 @@ if (!Srch.U.n(cc)) {
     }
   }
 }
-{{< / highlight >}}
+```
 
 Now that the properties are retrieved, you are able to retrieve the settings from the properties object like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var setting1 = properties["setting_Value1"];
 var setting2 = properties["setting_Value2"];
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2015/02/021915_1530_Addingconfi4.png" "Settings output example" >}}
+{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi4.png" "Settings output example" >}}
 
 ### Retrieving the settings in the control display template
 
 Retrieving the settings values in a control display template can only be achieved by the second approach that was discussed in the previous section.
 
-{{< caption-legacy "uploads/2015/02/021915_1530_Addingconfi5.png" "Control template that reads the settings" >}}
+{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi5.png" "Control template that reads the settings" >}}
 
 ### Using these settings in your template
 
@@ -136,11 +136,11 @@ These settings can be used for various kind of things, one of the examples is to
 
 In my control template I added some code to show a hyperlink which takes me to the overview page:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <a href="_#= decodeURIComponent(properties['setting_Value1'].toString()) =#_" title="_#= properties['setting_Value2'].toString() =#_">_#= properties["setting_Value2"].toString() =#_</a>
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2015/02/021915_1530_Addingconfi6.png" "Custom settings rendering" >}}
+{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi6.png" "Custom settings rendering" >}}
 
 ## Download the example display templates
 

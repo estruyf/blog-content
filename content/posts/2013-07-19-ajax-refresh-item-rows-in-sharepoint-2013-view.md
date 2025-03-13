@@ -20,7 +20,7 @@ This piece of code comes in handy when you have a custom actions that does an it
 
 The following code does a single row Ajax refresh, and can be used on the Query Succeeded callback:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function onQuerySucceeded () {
   // Set Ajax refresh context
   var evtAjax = {
@@ -32,11 +32,11 @@ function onQuerySucceeded () {
   // Initiate Ajax Refresh on the list
   AJAXRefreshView(evtAjax, SP.UI.DialogResult.OK);
 }
-{{< / highlight >}}
+```
 
 As you can see it isn't that hard, the only thing that changes if you want to refresh all the items is the **ctx.skipNextAnimation** property. This needs to be set to **false** or you can leave it out of the code.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function onQuerySucceeded () {
   // Set Ajax refresh context
   var evtAjax = {
@@ -46,6 +46,6 @@ function onQuerySucceeded () {
   // Initiate Ajax Refresh on the list
   AJAXRefreshView(evtAjax, SP.UI.DialogResult.OK);
 }
-{{< / highlight >}}
+```
 
 Here is a screencast to show you the functionality. The code behind it is just a simple value update of an item field.

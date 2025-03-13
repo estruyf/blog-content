@@ -22,7 +22,7 @@ A client of mine is currently undergoing a migration from SharePoint 2007 to 201
 
 On the Post lists, **Content Approval** is active to enable the users to let the posts be stored as draft. When this setting is turned on, you'll have three buttons on the new and edit form: **Save As Draft**, **Publish**, and **Cancel**.
 
-{{< caption-legacy "uploads/2014/05/052314_1324_BuginShareP1.png" "Blog post buttons" >}}
+{{< caption-new "/uploads/2014/05/052314_1324_BuginShareP1.png" "Blog post buttons" >}}
 
 The problems that occurs in SharePoint 2013 is that the **save as draft** and **publish **buttons have the same behaviour. Normally when you click the **publish** button, the post should be saved with the status set to **approved**, so that it's available for everyone to see. But in SharePoint 2013 the publish action just does the same as the Save as draft action. The posts will be stored as draft and you need to do a manual approval make it available for the users.
 
@@ -34,7 +34,7 @@ The publish or save action both submit the form data to the **ProcessQuery** end
 
 This is the JSON form data for the **save as draft** action:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 [{
   "SchemaVersion": "15.0.0.0",
   "LibraryVersion": "15.0.4525.1000",
@@ -90,11 +90,11 @@ This is the JSON form data for the **save as draft** action:
   "HasException": false,
   "ErrorInfo": null
 }]
-{{< / highlight >}}
+```
 
 This is the JSON form data for the **publish** action:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 [{
   "SchemaVersion": "15.0.0.0",
   "LibraryVersion": "15.0.4525.1000",
@@ -150,7 +150,7 @@ This is the JSON form data for the **publish** action:
   "HasException": false,
   "ErrorInfo": null
 }]
-{{< / highlight >}}
+```
 
 The two requests just do the same thing, in neither of the two, the moderation status is set. So it is quite logical that these two buttons do the same thing.
 
@@ -160,7 +160,7 @@ This problem also occurs on the default blog template in SharePoint 2013 and Off
 
 I created a solution by overwriting a JavaScript function call. This is not a clean solution, but it will get you going until it hopefully gets fixed in one of the next updates.
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 EnsureScriptFunc('mQuery.js', 'm$', function() {
   // Update the button functions
   var publishBtns = m$('.ms-formtoolbar input[value="Publish"]');
@@ -196,7 +196,7 @@ EnsureScriptFunc('mQuery.js', 'm$', function() {
     };
   }
 });
-{{< / highlight >}}
+```
 
 The code does the following things:
 
@@ -212,10 +212,10 @@ I added this code on the **NewPost.aspx** and **EditPost.aspx** pages via a scri
 
 If you are going to click on the **Save as draft** or **Publish** button, you'll see that the **_ModerationStatus** gets added to the request.
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Save as draft
 "_ObjectType_":"SP.ListItemFormUpdateValue","ErrorMessage":null,"FieldName":"_ModerationStatus","FieldValue":"3","HasException":false
 
 // Publish
 "_ObjectType_":"SP.ListItemFormUpdateValue","ErrorMessage":null,"FieldName":"_ModerationStatus","FieldValue":"0","HasException":false
-{{< / highlight >}}
+```

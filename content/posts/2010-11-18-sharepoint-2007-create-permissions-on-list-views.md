@@ -23,43 +23,43 @@ SharePoint Designer 2007 is necessary for the following steps.
 
 - Create a new document library. I named it "ViewsLib", and I do not let it be shown on the quick launch.
 
-{{< caption-legacy "uploads/2010/11/library.jpg" "This document library will be used to store the list views." >}}
+{{< caption-new "/uploads/2010/11/library.jpg" "This document library will be used to store the list views." >}}
 
 - Open the site in SharePoint Designer
 - Right click on the list for which you want to create a new view, and choose "New" -> "List view page".
 
-{{< caption-legacy "uploads/2010/11/list_view_page.jpg" "Create a new list view." >}}
+{{< caption-new "/uploads/2010/11/list_view_page.jpg" "Create a new list view." >}}
 
 - Give up a name for this view and click "OK".
 
-{{< caption-legacy "uploads/2010/11/list_view_name.jpg" "Fill in the list view name" >}}
+{{< caption-new "/uploads/2010/11/list_view_name.jpg" "Fill in the list view name" >}}
 
 - Copy and paste the newly created view to the document library.
 
-{{< caption-legacy "uploads/2010/11/paste_view.jpg" "Paste the view to the document library." >}}
+{{< caption-new "/uploads/2010/11/paste_view.jpg" "Paste the view to the document library." >}}
 
 - Delete the view from the list, you do not need this one anymore. You will only need the one inside the document library.
 - Go to the site and check all the list views. The new view should be available.
 
-{{< caption-legacy "uploads/2010/11/check_view.jpg" "Check list views." >}}
+{{< caption-new "/uploads/2010/11/check_view.jpg" "Check list views." >}}
 
 - Modify the view to suit your needs.
 
-{{< caption-legacy "uploads/2010/11/modify_view.jpg" "Modify the list view" >}}
+{{< caption-new "/uploads/2010/11/modify_view.jpg" "Modify the list view" >}}
 
 - Inside the document library you can set item permissions on the view (ASPX Page).
 
-{{< caption-legacy "uploads/2010/11/manage_permissions.jpg" "Manage item permissions." >}}
+{{< caption-new "/uploads/2010/11/manage_permissions.jpg" "Manage item permissions." >}}
 
-{{< caption-legacy "uploads/2010/11/edit-permissions.jpg" "Edit item permissions." >}}
+{{< caption-new "/uploads/2010/11/edit-permissions.jpg" "Edit item permissions." >}}
 
 When you test this view you will see that SharePoint will redirect you to the page in the document library.
 
 So this is all you need to do. When you check the view with a user that has no permissions, he will get an access denied.
 
-{{< caption-legacy "uploads/2010/11/Reader_Test_View.jpg" "Test the view with a user that has no rights." >}}
+{{< caption-new "/uploads/2010/11/Reader_Test_View.jpg" "Test the view with a user that has no rights." >}}
 
-{{< caption-legacy "uploads/2010/11/Access_Denied.jpg" "The user will get an access denied on the view." >}}
+{{< caption-new "/uploads/2010/11/Access_Denied.jpg" "The user will get an access denied on the view." >}}
 
 ## Changes
 
@@ -74,7 +74,7 @@ The following approach can be followed in order to achieve a restricted view for
 
 Create a new list view for the document library, and navigate to the document library in SharePoint Designer.
 
-{{< caption-legacy "uploads/2010/11/view1.png" "Document library view" >}}
+{{< caption-new "/uploads/2010/11/view1.png" "Document library view" >}}
 
 #### Step 2
 
@@ -84,20 +84,20 @@ Double-click on the list view, this will open the list view in SharePoint Design
 
 Click **File** -> **Save As**.
 
-{{< caption-legacy "uploads/2010/11/views2.png" "Save as" >}}
+{{< caption-new "/uploads/2010/11/views2.png" "Save as" >}}
 
 In the save as pop-up windows, navigate to the list view document library, and save your file.
 
-{{< caption-legacy "uploads/2010/11/views3.png" "Save in" >}}
+{{< caption-new "/uploads/2010/11/views3.png" "Save in" >}}
 
 #### Step 4
 
 Delete the old list view from the document library.
 
-{{< caption-legacy "uploads/2010/11/views4.png" "Delete the old list view" >}}
+{{< caption-new "/uploads/2010/11/views4.png" "Delete the old list view" >}}
 
 #### Step 5
 
 Now you can set the item permissions on the document library view. The new view will already be available in the document library.
 
-{{< caption-legacy "uploads/2010/11/views5.png" "Document Library View" >}}
+{{< caption-new "/uploads/2010/11/views5.png" "Document Library View" >}}

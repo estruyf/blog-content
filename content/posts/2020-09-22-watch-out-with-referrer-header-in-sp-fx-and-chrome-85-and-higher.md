@@ -29,7 +29,7 @@ On the Google Chrome documentation page, they mention that visual impact is expe
 
 When building solutions only in SharePoint, this will not generate any impact when used without a back-end. If you use a back-end and use the referrer header as a validation mechanism, this will impact your solution. As you now receive the SharePoint tenant URL, instead of the absolute page URL.
 
-{{< caption "/2020/09/chrome1.png" "Referrer header - origin URL"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA8SURBVDXBwQ3AIAwEwb3gSHTl/tvhaZAv4pEZZaYlUXuDTVXxG2NwzmGtxdPdRARvBN2NJCRxGbDNnJMPlf0Zmb2+crYAAAAASUVORK5CYII=" "398" >}}
+{{< caption-new "/uploads/2020/09/chrome1.png" "Referrer header - origin URL"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA8SURBVDXBwQ3AIAwEwb3gSHTl/tvhaZAv4pEZZaYlUXuDTVXxG2NwzmGtxdPdRARvBN2NJCRxGbDNnJMPlf0Zmb2+crYAAAAASUVORK5CYII=" "398" >}}
 
 {{< blockquote type="Info" text="Read more about the new default referrer policy in Chrome on: [A new default Referrer-Policy for Chrome: strict-origin-when-cross-origin](https://developers.google.com/web/updates/2020/07/referrer-policy-new-chrome-default)" >}}
 
@@ -45,7 +45,7 @@ You can follow the status of the browser implementations here: https://github.co
 
 If you rely on the `referrer` header for your API, best is to specify the `referrerPolicy` for these calls as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 await ctx.httpClient.post(creatorUrl, HttpClient.configurations.v1, {
   headers: {
     "Authorization": `Bearer ${token}`,
@@ -54,8 +54,8 @@ await ctx.httpClient.post(creatorUrl, HttpClient.configurations.v1, {
   referrerPolicy: 'no-referrer-when-downgrade', // Provide `referrerPolicy` option for falling back to the previous default
   body: JSON.stringify(msg)
 });
-{{< / highlight >}}
+```
 
 The result should be that the full URL now gets provided when calling the API.
 
-{{< caption "/2020/09/chrome2.png" "Referrer header - full URL"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAjSURBVAXBQREAMBCEMJBW/4Zu9kMT33ttYxsqd0eFSkWFyge2PROIJAyQ7gAAAABJRU5ErkJggg==" "887" >}}
+{{< caption-new "/uploads/2020/09/chrome2.png" "Referrer header - full URL"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAAklEQVR4AewaftIAAAAjSURBVAXBQREAMBCEMJBW/4Zu9kMT33ttYxsqd0eFSkWFyge2PROIJAyQ7gAAAABJRU5ErkJggg==" "887" >}}

@@ -44,17 +44,17 @@ The state is kept whenever you update Visual Studio Code or update the extension
 
 You can update the global or workspace state via:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 await context.globalstate.update(`key`, value)
 await context.workspaceState.update(`key`, value)
-{{< / highlight >}}
+```
 
 Retrieving state values is achieved similarly:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 await context.globalstate.get(`key`)
 await context.workspaceState.get(`key`)
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="Behind the scenes, VS Code uses an SQLite database to store these key/value pairs." >}}
 
@@ -64,13 +64,13 @@ In some cases, you might want to keep secrets, for instance, connection strings.
 
 The secret storage is accessible via the VS Code extension context:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 // Retrieving a secret
 await context.secrets.get(`secretkey`)
 
 // Storing a secret
 await context.secrets.store(`secretkey`, `This is the secret`);
-{{< / highlight >}}
+```
 
 ## Files
 

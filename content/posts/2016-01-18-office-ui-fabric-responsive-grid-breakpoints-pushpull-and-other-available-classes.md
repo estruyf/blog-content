@@ -27,41 +27,41 @@ First are the media queries or screen breakpoints. In the documentation you find
 
 **Small - ms-u-sm1 ... 12**
 
-{{< caption-legacy "uploads/2016/01/011816_1231_OfficeUIFab1.png" "Small sized add-in" >}}
+{{< caption-new "/uploads/2016/01/011816_1231_OfficeUIFab1.png" "Small sized add-in" >}}
 
 **Medium - ms-u-md1 ... 12**
 
-{{< caption-legacy "uploads/2016/01/011816_1231_OfficeUIFab2.png" "Medium sized add-in" >}}
+{{< caption-new "/uploads/2016/01/011816_1231_OfficeUIFab2.png" "Medium sized add-in" >}}
 
 **Large - ms-u-lg1 ... 12**
 
-{{< caption-legacy "uploads/2016/01/011816_1231_OfficeUIFab3.png" "Large sized add-in" >}}
+{{< caption-new "/uploads/2016/01/011816_1231_OfficeUIFab3.png" "Large sized add-in" >}}
 
 When you dive into the SASS or CSS from Office UI Fabric, you can notice that there are defined more media queries and utility classes. These other screen breakpoints and utility classes could come in handy when you are creating web applications. Here you can see which media query breakpoints are available:
 
 **Small**
 
-{{< caption-legacy "uploads/2016/01/011816_1231_OfficeUIFab4.png" "Small device" >}}
+{{< caption-new "/uploads/2016/01/011816_1231_OfficeUIFab4.png" "Small device" >}}
 
 **Medium**
 
-{{< caption-legacy "uploads/2016/01/011816_1231_OfficeUIFab5.png" "Medium device" >}}
+{{< caption-new "/uploads/2016/01/011816_1231_OfficeUIFab5.png" "Medium device" >}}
 
 **Large**
 
-{{< caption-legacy "uploads/2016/01/011816_1231_OfficeUIFab6.png" "Large device" >}}
+{{< caption-new "/uploads/2016/01/011816_1231_OfficeUIFab6.png" "Large device" >}}
 
 **X-Large**
 
-{{< caption-legacy "uploads/2016/01/011816_1231_OfficeUIFab7.png" "X-Large device" >}}
+{{< caption-new "/uploads/2016/01/011816_1231_OfficeUIFab7.png" "X-Large device" >}}
 
 **XX-Large**
 
-{{< caption-legacy "uploads/2016/01/011816_1231_OfficeUIFab8.png" "XX-Large device" >}}
+{{< caption-new "/uploads/2016/01/011816_1231_OfficeUIFab8.png" "XX-Large device" >}}
 
 **XXX-Large**
 
-{{< caption-legacy "uploads/2016/01/011816_1231_OfficeUIFab9.png" "XXX-Large device" >}}
+{{< caption-new "/uploads/2016/01/011816_1231_OfficeUIFab9.png" "XXX-Large device" >}}
 
 ## Hiding elements via visibility classes
 

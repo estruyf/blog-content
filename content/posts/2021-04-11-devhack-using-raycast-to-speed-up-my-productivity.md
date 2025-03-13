@@ -38,7 +38,7 @@ For instance, what I do frequently is open the Azure Portal. As I have various a
 
 My first improvement would be to create a script to open the portal in the right browser and profile.
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 #!/bin/bash
 
 # Required parameters:
@@ -60,11 +60,11 @@ then
 else
   echo "Implementation for second machine"
 fi
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="The script is simple. In my case, I check my hostname to know where I am running the script as I work on two machines." >}}
 
-{{< caption "/2021/04/raycast2.png" "Run the open Azure Portal script"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABASURBVDXBMQ6AMAwEwbVCqvBF/78kBQIpyvmomInM9DUnP+1Naw1JqApsxjg57uclgIhAErZZa1FV2Kb3jrT5AHRgJLx7oSb+AAAAAElFTkSuQmCC" "789" >}}
+{{< caption-new "/uploads/2021/04/raycast2.png" "Run the open Azure Portal script"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABASURBVDXBMQ6AMAwEwbVCqvBF/78kBQIpyvmomInM9DUnP+1Naw1JqApsxjg57uclgIhAErZZa1FV2Kb3jrT5AHRgJLx7oSb+AAAAAElFTkSuQmCC" "789" >}}
 
 That is not it. Another improvement that makes things even quicker is to get my development flow started just by running the script. Why? In my case, when I am developing for a Microsoft Teams project, I need to open:
 
@@ -75,7 +75,7 @@ That is not it. Another improvement that makes things even quicker is to get my 
 
 The script for this looks as follows:
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 #!/bin/bash
 
 # Required parameters:
@@ -101,15 +101,15 @@ else
   echo "Implementation for second machine"
 fi
 
-{{< / highlight >}}
+```
 
 Now I can just run my command, and it will automatically open all these instances.
 
-{{< caption "/2021/04/raycast1.png" "Run the get started with developing your project"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABBSURBVDXBMQ6AIBBFwWeAinvK3aGxMAbC7l9j4cxxthajd37bjJwSLiF3IqDWSn7uC3MnJCSxzZgSn4iglMJakxcQFSenq0FITAAAAABJRU5ErkJggg==" "792" >}}
+{{< caption-new "/uploads/2021/04/raycast1.png" "Run the get started with developing your project"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABBSURBVDXBMQ6AIBBFwWeAinvK3aGxMAbC7l9j4cxxthajd37bjJwSLiF3IqDWSn7uC3MnJCSxzZgSn4iglMJakxcQFSenq0FITAAAAABJRU5ErkJggg==" "792" >}}
 
 One more, for my blog, I place all the images in a `year/month` folder. This structure is still leftover from the WordPress days. I just kept the format. Each time I write an article like this one and want to add an image, I have to open that particular folder. With a custom script, I can now quickly open that folder, and if it does not exist, it will be created. Great for when we started a new month.
 
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 #!/bin/bash
 
 # Required parameters:
@@ -130,9 +130,9 @@ crntMonth=$(date +'%m')
 monthDir=~/blog/web-eliostruyf-hugo/static/uploads/$crntYear/$crntMonth
 [ ! -d "$monthDir" ] && mkdir -p "$monthDir"
 open $monthDir
-{{< / highlight >}}
+```
 
-{{< caption "/2021/04/raycast3.png" "Quickly open the blog images folder"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA6SURBVGXBQQ6AMAhFwYdpY29p759wAAj0G9fO2LO33J0fiT6Hy4x7LUZEYmYg0d1Ioqr4SGLMSUbyAi/bHcqPxv+8AAAAAElFTkSuQmCC" "790" >}}
+{{< caption-new "/uploads/2021/04/raycast3.png" "Quickly open the blog images folder"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA6SURBVGXBQQ6AMAhFwYdpY29p759wAAj0G9fO2LO33J0fiT6Hy4x7LUZEYmYg0d1Ioqr4SGLMSUbyAi/bHcqPxv+8AAAAAElFTkSuQmCC" "790" >}}
 
 {{< blockquote type="Tip" text="For the icon, you can add a base64 encoded image. That way, you do not have to link it to a local or online file." >}}
 

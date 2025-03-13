@@ -28,7 +28,7 @@ To download the artifact, I used the [GitHub Script](https://github.com/actions/
 
 The code of the script action looks as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 module.exports = async ({
   github,
   context,
@@ -84,11 +84,11 @@ module.exports = async ({
     core.setFailed("No artifact found");
   }
 }
-{{< / highlight >}}
+```
 
 To keep the workflow file clean, I put the above code in a separate file and configured the actions as follows:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 - name: Download artifact
   uses: actions/github-script@v6
   continue-on-error: true
@@ -101,13 +101,13 @@ To keep the workflow file clean, I put the above code in a separate file and con
     script: |
       const script = require('./scripts/download-previous-artifact.js')
       await script({github, context, core})
-{{< / highlight >}}
+```
 
 One more thing you need to do is to assign the permissions for the workflow job. By default, you will not be able to get previous workflow run information. To get this information, add `actions: read` to the workflow jobs.
 
 Here is what my complete workflow looks like:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 name: E2E Testing
 
 on:
@@ -161,4 +161,4 @@ jobs:
           name: playwright-snapshots
           path: tests/*-snapshots/
           retention-days: 30
-{{< / highlight >}}
+```

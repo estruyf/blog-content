@@ -21,15 +21,15 @@ When you create a display template that displays a publishing image (example: th
 
 This Srch.ContentBySearch.getPictureMarkup provides you the markup for rendering the image with the image rendition of your choice. The code in the function retrieves the **src** value from the image element and creates a new element with the rendition, class, alt, and id values that you provide. Here is an example of how to call the function:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var pictureMarkup = Srch.ContentBySearch.getPictureMarkup(pictureURL, 100, 100, ctx.CurrentItem, "cbs-picture3LinesImg", line1, pictureId);
-{{< / highlight >}}
+```
 
 This function outputs the following HTML:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 <img src="/BRAND/DEMO/PUBLISHINGIMAGES/Dummy.JPG?width=100&amp;height=100" class="cbs-picture3LinesImg" alt="test 2" id="ctl00_ctl39_g_aa528ff1_226a_4ddc_8e09_c37c6faaf319_csr8_2lines_picture" onerror="this.parentNode.innerHTML=Srch.ContentBySearch.getNoPictureMarkup(100);" onload="Srch.ContentBySearch.resizeImageToSquareLength(this, 100);" />
-{{< / highlight >}}
+```
 
 
 ## Where is my link?
@@ -38,19 +38,19 @@ Now a client noticed that if they set a hyperlink on the image (this is a defaul
 
 Here is an example of the field value output when a hyperlink is set:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <a href="http&#58;//www.eliostruyf.com"><img alt="Dummy image" src="/brand/demo/PublishingImages/dummy.jpg" style="BORDER&#58;0px solid;" /></a>
-{{< / highlight >}}
+```
 
 When you call the getPictureMarkup function with this value, it returns you the following markup:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <img src="/BRAND/DEMO/PUBLISHINGIMAGES/DUMMY.JPG?width=100&amp;height=100" class="cbs-picture3LinesImg" alt="test 2" id="ctl00_ctl39_g_aa528ff1_226a_4ddc_8e09_c37c6faaf319_csr8_2lines_picture" onerror="this.parentNode.innerHTML=Srch.ContentBySearch.getNoPictureMarkup(100);" onload="Srch.ContentBySearch.resizeImageToSquareLength(this, 100);" />
-{{< / highlight >}}
+```
 
 As you can see the anchor tag around the image element is removed. This is because the function does not checks if there is a hyperlink set. So if you need to have such kind of functionality in your display template, you need to implement it yourself. Here is the code to do it:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 <!--#_
 // Get the publishing image
 var publishingImage = $getItemValue(ctx, 'PublishingImage');
@@ -82,14 +82,14 @@ pictureMarkup = $isEmptyString(pictureLink) ?
 _#-->
 
 _#= pictureMarkup =#_
-{{< / highlight >}}
+```
 
 
 ### What does the code output?
 
 **Image with a hyperlink and no target**
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 // Field value
 <a href="http&#58;//www.eliostruyf.com"><img alt="Dummy image" src="/brand/Demo/PublishingImages/dummy.jpg" style="BORDER&#58;0px solid;" /></a>
 
@@ -97,11 +97,11 @@ _#= pictureMarkup =#_
 <a href="https://www.eliostruyf.com">
 	<img src="/BRAND/DEMO/PUBLISHINGIMAGES/DUMMY.JPG?width=100&amp;height=100" class="" alt="Test page image with link" onerror="this.parentNode.innerHTML=Srch.ContentBySearch.getNoPictureMarkup(100);" onload="Srch.ContentBySearch.resizeImageToSquareLength(this, 100);" width="100">
 </a>
-{{< / highlight >}}
+```
 
 **Image with a hyperlink and target set**
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 // Field value
 <a href="http&#58;//www.eliostruyf.com" target="_blank"><img alt="Dummy image" src="/brand/Demo/PublishingImages/Dummy.jpg" style="BORDER&#58;0px solid;" /></a>
 
@@ -109,14 +109,14 @@ _#= pictureMarkup =#_
 <a href="https://www.eliostruyf.com" target="_blank">
 	<img src="/BRAND/DEMO/PUBLISHINGIMAGES/DUMMY.JPG?width=100&amp;height=100" class="" alt="Test page image with link and target" onerror="this.parentNode.innerHTML=Srch.ContentBySearch.getNoPictureMarkup(100);" onload="Srch.ContentBySearch.resizeImageToSquareLength(this, 100);" width="100">
 </a>
-{{< / highlight >}}
+```
 
 **Image without a link**
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 // Field value
 <img alt="" src="/brand/Demo/PublishingImages/Dummy.jpg" style="BORDER&#58;0px solid;" />
 
 // HTML Output
 <img src="/BRAND/DEMO/PUBLISHINGIMAGES/DUMMY.JPG?width=100&amp;height=100" class="" alt="test 2" onerror="this.parentNode.innerHTML=Srch.ContentBySearch.getNoPictureMarkup(100);" onload="Srch.ContentBySearch.resizeImageToSquareLength(this, 100);" width="100">
-{{< / highlight >}}
+```

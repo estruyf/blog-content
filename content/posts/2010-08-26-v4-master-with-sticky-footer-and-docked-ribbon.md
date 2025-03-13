@@ -26,7 +26,7 @@ I have placed the wrapper inside the s4-workspace div and the footer inside the 
 
 The CSS that is used.
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 * {
   margin: 0;
 }
@@ -62,9 +62,9 @@ html.ms-dialog body {
 body #s4-workspace {
   margin-bottom: -40px;
 }
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2010/08/image001.png" "SharePoint 2010 with sticky footer Docked Ribbon" >}}
+{{< caption-new "/uploads/2010/08/image001.png" "SharePoint 2010 with sticky footer Docked Ribbon" >}}
 
 Here you can download the docked version: [V4.Master_Footer_Docked_Ribbon](/uploads/2011/04/V4_Master_Footer_Docked_Ribbon.zip). This version should work for Internet Explorer 8 and Firefox v3.6.8.
 

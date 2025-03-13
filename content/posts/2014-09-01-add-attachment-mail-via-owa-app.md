@@ -17,13 +17,13 @@ comments: true
 
 For one of our company events later this month, I developed a demo OWA app which could add attachments to a mail. I used the following MSDN article to achieve this: [Add and remove attachments to an item in a compose form in Outlook](http://msdn.microsoft.com/en-us/library/office/dn568061(v=office.15).aspx). In the article they give a good overview, but there is one little problem with the example code. This code does not include the file extension, so you end up with unrecognised files in OWA.
 
-{{< caption-legacy "uploads/2014/09/090114_0828_Howtoaddana1.png" "Files without extensions" >}}
+{{< caption-new "/uploads/2014/09/090114_0828_Howtoaddana1.png" "Files without extensions" >}}
 
 The first one is a JPG file, the second one a Word document. Because the file extensions are not included, the files cannot be opened in Office Web Apps.
 
 If you would manually upload the files, you get this:
 
-{{< caption-legacy "uploads/2014/09/090114_0828_Howtoaddana2.png" "Files with extensions" >}}
+{{< caption-new "/uploads/2014/09/090114_0828_Howtoaddana2.png" "Files with extensions" >}}
 
 I contacted Microsoft, and Adam Sheldon pointed me in the right direction. He told me to check if the file extension was added in the **AttachmentName** property.
 
@@ -31,7 +31,7 @@ I quickly tested this and you do indeed need to include the file extension to th
 
 So the example code requires an updated:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 var mailbox;
 var attachmentURI = "https://webserver/picture.png";
 var attachmentID;
@@ -69,7 +69,7 @@ Office.initialize = function () {
 function write(message){
   document.getElementById('message').innerText += message; 
 }
-{{< / highlight >}}
+```
 
 **Note**: only line 19 has been modified.
 

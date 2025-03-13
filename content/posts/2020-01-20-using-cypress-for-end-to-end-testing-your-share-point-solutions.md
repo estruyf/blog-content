@@ -19,7 +19,7 @@ Last year I already wrote an article about how you could implement visual UI tes
 
 Cypress is a proven End-to-End testing framework that many React and Angular applications (also other types of course) are using. The tool itself wants to create a fast, easy, and reliable testing framework that runs within a browser. The power is that it provides you all the tools required with a minimal amount of configuration.
 
-{{< caption "/2020/01/cypress1.png" "Cypress overview"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACFSURBVDXBSxLCIBBAwcc4SSn5eRJz/53lYeI+ViFMBJSF3a7+mBl2fBgHT1NKQURoQgjo6YTmnBER/OVMMqNTRUT4897TyHEcxJgARy2VnDMxRsyM5n5/sG1PtO97VCspJbquo1KJKTEOA8263lBVNIQ3uRSWeWLfX8zzxHVZ+JumEeccX300P9lXzfDuAAAAAElFTkSuQmCC" "1696" >}}
+{{< caption-new "/uploads/2020/01/cypress1.png" "Cypress overview"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAACFSURBVDXBSxLCIBBAwcc4SSn5eRJz/53lYeI+ViFMBJSF3a7+mBl2fBgHT1NKQURoQgjo6YTmnBER/OVMMqNTRUT4897TyHEcxJgARy2VnDMxRsyM5n5/sG1PtO97VCspJbquo1KJKTEOA8263lBVNIQ3uRSWeWLfX8zzxHVZ+JumEeccX300P9lXzfDuAAAAAElFTkSuQmCC" "1696" >}}
 
 ## Great, but does it work for SharePoint?
 
@@ -64,19 +64,19 @@ The actual test/spec file could look like this:
 
 Once this is in place, you can start writing your tests.
 
-{{< caption "/2020/01/cypress2.png" "Cypress with SharePoint tests"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAAClSURBVI3BQWrCQBSA4f/lvWRsFom0i7YrA+JGxQMIwYt02UPYA5T2IB5ICtLeoxuTjDMSUHAh4vfJuKpWk+nszXeBGCPee3qDgUPV6P397ja2rOv5ev3x7pxDRFBNuLRvOr6/PrdWliXPL6/k+QMuS7mmKApMVXl6HHKLiJBwJ2t94L/x9EKI+BAggmqCJkKvPUTELB1lmVtwYmYggu86ztq2+TkCdTot5j4OXTAAAAAASUVORK5CYII=" "1824" >}}
+{{< caption-new "/uploads/2020/01/cypress2.png" "Cypress with SharePoint tests"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAAClSURBVI3BQWrCQBSA4f/lvWRsFom0i7YrA+JGxQMIwYt02UPYA5T2IB5ICtLeoxuTjDMSUHAh4vfJuKpWk+nszXeBGCPee3qDgUPV6P397ja2rOv5ev3x7pxDRFBNuLRvOr6/PrdWliXPL6/k+QMuS7mmKApMVXl6HHKLiJBwJ2t94L/x9EKI+BAggmqCJkKvPUTELB1lmVtwYmYggu86ztq2+TkCdTot5j4OXTAAAAAASUVORK5CYII=" "1824" >}}
 
 ## Running your tests
 
 Once all your tests are in place (as well as the plugin + command), you can start running your tests with: `cypress open` (if you have cypress globally installed). In my case, I configured the command as a npm script:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 "scripts": {
   "test": "cypress open"
 }
-{{< / highlight >}}
+```
 
-{{< caption "/2020/01/cypress3.png" "Cypress running tests for SharePoint solutions"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACYSURBVG3BUU4CMRSG0e/vLZ3CgxopbIEEtwGrkV26ITVmQpnpLSGEF8M52u8/voa8Wp/PFfeOd8eb4+7cBDOGlC7x83TabUrZLFLips0TCoYkujutNaZpvsTj4cC6FPKQURAhBNIiIomHcRyJc2t8//wS9Ick8jKzLe/8F4NFXl7fuBNmgWciPrNMRu8dM0MStVYk8VBr5QoTQDZ1/eCANQAAAABJRU5ErkJggg==" "2080" >}}
+{{< caption-new "/uploads/2020/01/cypress3.png" "Cypress running tests for SharePoint solutions"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACYSURBVG3BUU4CMRSG0e/vLZ3CgxopbIEEtwGrkV26ITVmQpnpLSGEF8M52u8/voa8Wp/PFfeOd8eb4+7cBDOGlC7x83TabUrZLFLips0TCoYkujutNaZpvsTj4cC6FPKQURAhBNIiIomHcRyJc2t8//wS9Ick8jKzLe/8F4NFXl7fuBNmgWciPrNMRu8dM0MStVYk8VBr5QoTQDZ1/eCANQAAAABJRU5ErkJggg==" "2080" >}}
 
 ## Limitation
 
@@ -86,7 +86,7 @@ The reason is that SharePoint checks if it runs in an iframe. When it does, it w
 
 This limitation might not be a problem when you want to test out an already configured web part. Application customizers would be fully testable when they do not have a different rendering in edit mode.
 
-{{< caption "/2020/01/cypress4.png" "Completed SharePoint tests, but without the command bar"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAAB6SURBVHXBQQrCMBRF0fvjx4YWEbsKh7oMceACRZfWScWhoKGIkOZJ5nqOnS9XuQVkhgHznJFAEpWZIYQfTkfasCTGhoU7Brg7KSW6rsPMqELfroixoZpzJudMFcobJD7TgyrwxzjcSa8n43Cjcn6QxHa/o1pvekopfAFbBy3NOSninwAAAABJRU5ErkJggg==" "2050" >}}
+{{< caption-new "/uploads/2020/01/cypress4.png" "Completed SharePoint tests, but without the command bar"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAAB6SURBVHXBQQrCMBRF0fvjx4YWEbsKh7oMceACRZfWScWhoKGIkOZJ5nqOnS9XuQVkhgHznJFAEpWZIYQfTkfasCTGhoU7Brg7KSW6rsPMqELfroixoZpzJudMFcobJD7TgyrwxzjcSa8n43Cjcn6QxHa/o1pvekopfAFbBy3NOSninwAAAABJRU5ErkJggg==" "2050" >}}
 
 <blockquote class="important">
 <p><strong>Important</strong>: In order to overcome this limitation, you can check out the following article that I wrote: <a href="https://www.eliostruyf.com/tests-running-iframe-cypress-e2e-tests/" title="How to make your tests believe it isn't running in an iframe during Cypress

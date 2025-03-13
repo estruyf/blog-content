@@ -24,7 +24,7 @@ In this part (the last one) I will show you how you can integrate these tags int
 
 This will be the final result:
 
-{{< caption-legacy "uploads/2012/03/032812_1826_TakeyourSha1.png" "Social Tags Results" >}}
+{{< caption-new "/uploads/2012/03/032812_1826_TakeyourSha1.png" "Social Tags Results" >}}
 
 ## User Control
 
@@ -34,7 +34,7 @@ The advantage of creating an user control is that you can add the control into y
 
 My user control looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <style>
     .tagging {
         height: 50px;
@@ -77,11 +77,11 @@ My user control looks like this:
         <div class="border-left"></div>
     </div>
 </div>
-{{< / highlight >}}
+```
 
 And this is the content of the code behind:
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 using System;
 using System.Linq;
 using System.Web.UI;
@@ -149,7 +149,7 @@ namespace estruyf.SocialTaggingControl.ControlTemplates.estruyf.SocialTaggingCon
         }
     }
 }
-{{< / highlight >}}
+```
 
 
 ## Master Page
@@ -160,9 +160,9 @@ When you deploy your (or mine, can be downloaded at the bottom) user control to 
 
 Open your master page in SharePoint Designer and add the user control reference at the top of the master page.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <%@ Register TagPrefix="estruyf" TagName="SocialTags" src="~/_controltemplates/estruyf/Tags.ascx" %>
-{{< / highlight >}}
+```
 
 
 ### Step 2
@@ -171,9 +171,9 @@ Find the place where you want to add the user control.
 
 In my example I added a new table column next to the social data buttons. You can do this by doing a search for the following class **s4-socialdata-notif** and change the HTML to this:
 
-{{< caption-legacy "uploads/2012/03/032812_1826_TakeyourSha2.png" "HTML Code for Social Tags Location" >}}
+{{< caption-new "/uploads/2012/03/032812_1826_TakeyourSha2.png" "HTML Code for Social Tags Location" >}}
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <td>
   <!-- Social Tag Control -->
   <estruyf:SocialTags runat="server"/>
@@ -181,11 +181,11 @@ In my example I added a new table column next to the social data buttons. You ca
 <td class="s4-socialdata-notif">
   <SharePoint:DelegateControl ControlId="GlobalSiteLink3" Scope="Farm" runat="server"/>
 </td>
-{{< / highlight >}}
+```
 
 Save and publish your master page. When you now go to a SharePoint page, you should have the following result.
 
-{{< caption-legacy "uploads/2012/03/032812_1826_TakeyourSha3.png" "Social Tags Result" >}}
+{{< caption-new "/uploads/2012/03/032812_1826_TakeyourSha3.png" "Social Tags Result" >}}
 
 ## Download
 

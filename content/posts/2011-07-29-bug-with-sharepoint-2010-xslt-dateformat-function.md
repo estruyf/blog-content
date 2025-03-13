@@ -64,15 +64,15 @@ I did not notice it in the beginning, because my settings are always set to Engl
 
 ## English (United States)
 
-{{< caption-legacy "uploads/2011/07/072911_0854_BugWithShar1.png" "English (United States) Regional Setting" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar1.png" "English (United States) Regional Setting" >}}
 
-{{< caption-legacy "uploads/2011/07/072911_0854_BugWithShar2.png" "English date format converted to Dutch date format" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar2.png" "English date format converted to Dutch date format" >}}
 
 ## Dutch (Belgium)
 
-{{< caption-legacy "uploads/2011/07/072911_0854_BugWithShar3.png" "Dutch (Belgium) Regional Setting" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar3.png" "Dutch (Belgium) Regional Setting" >}}
 
-{{< caption-legacy "uploads/2011/07/072911_0854_BugWithShar4.png" "Conversion problem with the Dutch date format" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar4.png" "Conversion problem with the Dutch date format" >}}
 
 ## Solution
 
@@ -83,7 +83,7 @@ I have created my own version of his XSL template to format the date in Dutch da
 ### XSL Template
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:template name="FormatDutchDate">
 	<!-- Template Parameters -->
 	<xsl:param name="dateValue" />
@@ -120,43 +120,43 @@ I have created my own version of his XSL template to format the date in Dutch da
 	</xsl:choose>
 	<xsl:value-of select="$day" />-<xsl:value-of select="$monthString" />-<xsl:value-of select="$year" />
 </xsl:template>
-{{< / highlight >}}
+```
 
 
 ### Call the XSL template
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:call-template name="FormatDutchDate">
   <xsl:with-param name="dateValue" select="@Expires" />
   <xsl:with-param name="monthFormat">MMM</xsl:with-param>
 </xsl:call-template>
-{{< / highlight >}}
+```
 
 
 ## Result
 
-{{< caption-legacy "uploads/2011/07/072911_0854_BugWithShar5.png" "XSL Template Result" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar5.png" "XSL Template Result" >}}
 
 ## XSLT Month Options
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:with-param name="monthFormat">MM</xsl:with-param>
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2011/07/072911_0854_BugWithShar6.png" "MM - Number notation" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar6.png" "MM - Number notation" >}}
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:with-param name="monthFormat">MMM</xsl:with-param>
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2011/07/072911_0854_BugWithShar7.png" "MMM - Short Name Format" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar7.png" "MMM - Short Name Format" >}}
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:with-param name="monthFormat">MMMM</xsl:with-param>
-{{< / highlight >}}
+```
 
-{{< caption-legacy "uploads/2011/07/072911_0854_BugWithShar8.png" "MMMM - Full Name Format" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar8.png" "MMMM - Full Name Format" >}}

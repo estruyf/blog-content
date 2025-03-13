@@ -38,7 +38,7 @@ Once you downloaded the sample or created your own version of it. You should pub
 
 Add an **HTTP Webhook** action in your Logic App.
 
-{{< caption-legacy "uploads/2017/03/033017_1912_Callingacus1.png" "HTTP Webhook action" >}}
+{{< caption-new "/uploads/2017/03/033017_1912_Callingacus1.png" "HTTP Webhook action" >}}
 
 Fill in the following fields:
 
@@ -49,12 +49,12 @@ Fill in the following fields:
 *   Unsubscribe URI: define the unsubscribe API endpoint
 *   Unsubscribe body: same as the subscribe body
 
-{{< caption-legacy "uploads/2017/03/033017_1912_Callingacus2.png" "HTTP Webhook action configuration" >}}
+{{< caption-new "/uploads/2017/03/033017_1912_Callingacus2.png" "HTTP Webhook action configuration" >}}
 
 > **Info**: notice the body fields, you can also specify it like that, but always use the single quotes.
 
 Now one last thing, you must also specify the content-type header. Otherwise, the calls are not being made. You can specify the headers by clicking on the **show advanced options** link at the bottom of the action. Once the advanced properties are displayed, specify `{"Content-Type":"application/json"}` for the subscribe and unsubscribe headers.
 
-{{< caption-legacy "uploads/2017/03/033017_1912_Callingacus3.png" "HTTP Webhook action headers configuration" >}}
+{{< caption-new "/uploads/2017/03/033017_1912_Callingacus3.png" "HTTP Webhook action headers configuration" >}}
 
 Once it is configured like this, the webhook trigger should start working.

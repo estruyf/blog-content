@@ -20,7 +20,7 @@ When you are reading this, you are looking to create a SharePoint library from t
 
 When you want to create a new document library, you can perform the same call as mentioned in the create list documentation page instead of using the `genericList` template value. Use the `documentLibrary` value.
 
-{{< highlight text "linenos=table,noclasses=false" >}}
+```text
 POST /sites/{site-id}/lists
 Content-Type: application/json
 
@@ -30,7 +30,7 @@ Content-Type: application/json
     "template": "documentLibrary"
   }
 }
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="More information about all properties can be found here: [JSON body representation](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0#json-representation)." >}}
 

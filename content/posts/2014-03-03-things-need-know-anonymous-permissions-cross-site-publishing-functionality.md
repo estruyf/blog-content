@@ -24,7 +24,7 @@ Setting anonymous access to your catalog list or library for the search applicat
 
 To enable it, go to the list or library settings, and click on **Catalog Settings**. On the catalog settings page, you click on the **Enable anonymous access**, and in the dialog that opens, you click on **Make Anonymous** button.
 
-{{< caption-legacy "uploads/2014/03/030314_0745_Thingsyoune1.png" "Enable anonymous access" >}}
+{{< caption-new "/uploads/2014/03/030314_0745_Thingsyoune1.png" "Enable anonymous access" >}}
 
 If this is enabled, and you see that your items aren't accessible for your anonymous users on the public site, you should check if the following permission masks are correctly set:
 
@@ -32,13 +32,13 @@ If this is enabled, and you see that your items aren't accessible for your anony
 *   List: **AnonymousSearchAccessList**
 This was the first problem I experienced, on my site the anonymous permission mask on the web wasn't automatically set. This were the settings on my site:
 
-{{< caption-legacy "uploads/2014/03/030314_0745_Thingsyoune2.png" "Incorrect permissions" >}}
+{{< caption-new "/uploads/2014/03/030314_0745_Thingsyoune2.png" "Incorrect permissions" >}}
 
 I remove the anonymous access on the catalog and reactivated it again, and the correct permission masks were set.
 
 You can check the permissions via this script:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 $web = Get-SPWeb -Identity your-catalog-web-url
 $list = $web.Lists["your-catalog"]
 
@@ -49,11 +49,11 @@ write-host "List anonymous permission mask:" $list.AnonymousPermMask64
 write-host "------------------------------------------------------------"
 
 $web.Dispose()
-{{< / highlight >}}
+```
 
 The output of this script should be like this:
 
-{{< caption-legacy "uploads/2014/03/030314_0745_Thingsyoune3.png" "Correct permissions" >}}
+{{< caption-new "/uploads/2014/03/030314_0745_Thingsyoune3.png" "Correct permissions" >}}
 
 ## Navigation isn't visible for anonymous users, how to enable it?
 
@@ -61,7 +61,7 @@ The next problem you could run in to, is the navigation. If you connect your sit
 
 First, check if anonymous access to the site is in place:
 
-{{< caption-legacy "uploads/2014/03/030314_0745_Thingsyoune4.png" "Anonymous permissions" >}}
+{{< caption-new "/uploads/2014/03/030314_0745_Thingsyoune4.png" "Anonymous permissions" >}}
 
 Check if the catalog page layouts are published (_catalogs/masterpage), the default ones are:
 

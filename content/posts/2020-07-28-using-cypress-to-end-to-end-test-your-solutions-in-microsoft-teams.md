@@ -34,11 +34,11 @@ First of all, we have the authentication part. Usually, when navigating to the M
 
 Due to the iframe approach in Cypress, this will give you the following issue:
 
-{{< caption "/2020/07/msteams2.png" "Microsoft Login refuses to load"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAABISURBVI3BgQmAMBRDwZfw91+1A5SmKiiIKPZOrbXJqap4GmOQhEqCJA69d76YRWaRWVTcJCEJkrCNJC7FjW1s88YsKnZzTv5snmIY2mEdBdsAAAAASUVORK5CYII=" "937" >}}
+{{< caption-new "/uploads/2020/07/msteams2.png" "Microsoft Login refuses to load"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAABISURBVI3BgQmAMBRDwZfw91+1A5SmKiiIKPZOrbXJqap4GmOQhEqCJA69d76YRWaRWVTcJCEJkrCNJC7FjW1s88YsKnZzTv5snmIY2mEdBdsAAAAASUVORK5CYII=" "937" >}}
 
 The Microsoft login page does not like it that you load it from within an iframe.
 
-{{< caption "/2020/07/msteams1.png" "Console error which shows Microsoft Login refuses to render" >}}
+{{< caption-new "/uploads/2020/07/msteams1.png" "Console error which shows Microsoft Login refuses to render" >}}
 
 #### Solution 1
 
@@ -58,11 +58,11 @@ The plugin will first load Microsoft Teams and waits until it navigates you to t
 
 The iframe problem is not entirely solved. Authentication is the first part of the issue, and once you get past that, you will get stuck on the following page.
 
-{{< caption "/2020/07/msteams3.png" "Stuck on the Microsoft Teams loading page"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAABRSURBVI3BsQmAQBBFwffX5VLbEPvvRBSbMDK56FYTQRbBm1GtNW68RQQPMyMi8FIKkvhjdDI6GcmyHmz7SeYk8zQiGZmTDIPzxejkrTUk8ecCaksVtQnpaewAAAAASUVORK5CYII=" "946" >}}
+{{< caption-new "/uploads/2020/07/msteams3.png" "Stuck on the Microsoft Teams loading page"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAABRSURBVI3BsQmAQBBFwffX5VLbEPvvRBSbMDK56FYTQRbBm1GtNW68RQQPMyMi8FIKkvhjdDI6GcmyHmz7SeYk8zQiGZmTDIPzxejkrTUk8ecCaksVtQnpaewAAAAASUVORK5CYII=" "946" >}}
 
 Opening the browser console will tell you more about what is happening.
 
-{{< caption "/2020/07/msteams4.png" "Console error which mentions that it is not allowed to run in an iframe" >}}
+{{< caption-new "/uploads/2020/07/msteams4.png" "Console error which mentions that it is not allowed to run in an iframe" >}}
 
 This problem was the hardest to solve, and in the end, it was straightforward to get it resolved.
 
@@ -74,11 +74,11 @@ The only answer I got from the Cypress team was to override the method/function,
 
 I found the solution by checking the event catalog from Cypress: [Catalog of events](https://docs.cypress.io/api/events/catalog-of-events.html). At the end of the page, you find a screenshot that shows all the events in their chronologic order.
 
-{{< caption "/2020/07/msteams5.png" "Cypress events"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAAB3SURBVBXBMRLCMBAEwbk92a4S/P+PBCRExpJuwd0xXm+fFGcK27TWYEx6Jnp2lIkkRBXY2MY2VYWBaxXn+UUR3EQmoSQzkUREgGDNC9Xi+nzwmDTGpMIMBzfbxAoex8HWOxDE1mjsDWG2FMFfBItB5c4yFMUO/ACzVjz4y49E1QAAAABJRU5ErkJggg==" "690" >}}
+{{< caption-new "/uploads/2020/07/msteams5.png" "Cypress events"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAAB3SURBVBXBMRLCMBAEwbk92a4S/P+PBCRExpJuwd0xXm+fFGcK27TWYEx6Jnp2lIkkRBXY2MY2VYWBaxXn+UUR3EQmoSQzkUREgGDNC9Xi+nzwmDTGpMIMBzfbxAoex8HWOxDE1mjsDWG2FMFfBItB5c4yFMUO/ACzVjz4y49E1QAAAABJRU5ErkJggg==" "690" >}}
 
 The event I was looking for the whole time, was the `window:load` one. With this event hook, we are now able to override the default Microsoft Teams iframe check. How this works is as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 cy.on('window:load', (win: any) => {
   const checkOverride = () => {
     if (win.teamspace && win.teamspace.AppController && win.teamspace.AppController.prototype && win.teamspace.AppController.prototype.isInIFrame) {
@@ -97,13 +97,13 @@ cy.on('window:load', (win: any) => {
 
   checkOverride();
 });
-{{< / highlight >}}
+```
 
 This code looks hackish, but unfortunately, this is currently the only way for us to get it up and running. As the`teamspace` instance has other methods, we have to wait until it is loaded. That is why the `setTimeout` functionality is in place. Once it is available, only the `isInIFrame` method gets overwritten.
 
 Again, this will not work on the first try. Cypress will return the following error message:
 
-{{< caption "/2020/07/msteams6.png" "Blocked the code from accessing the iframe"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACRSURBVD3BQXLCQAxFwfcljQ2Oi/tfjEVOYRapwvYwUgoWdOu8/xZm+M/CVxUIKEBCEURfV04FckfThABRXCbxUYXMiHZbmdeFv71z5KCZaC4qAvfgTZkENagczCHyeVJD9OEc+4FJJMbiEJmgAjPjJWOWEdeJjwIETU7sjwfnttFa4+JGi0b0F28jB713Dnf+AYdWORlcWnOWAAAAAElFTkSuQmCC" "572" >}}
+{{< caption-new "/uploads/2020/07/msteams6.png" "Blocked the code from accessing the iframe"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACRSURBVD3BQXLCQAxFwfcljQ2Oi/tfjEVOYRapwvYwUgoWdOu8/xZm+M/CVxUIKEBCEURfV04FckfThABRXCbxUYXMiHZbmdeFv71z5KCZaC4qAvfgTZkENagczCHyeVJD9OEc+4FJJMbiEJmgAjPjJWOWEdeJjwIETU7sjwfnttFa4+JGi0b0F28jB713Dnf+AYdWORlcWnOWAAAAAElFTkSuQmCC" "572" >}}
 
 The solution here is to bypass the browser its security warnings. You can do this by setting `chromeWebSecurity` to `false` in the `cypress.json` config file.
 
@@ -115,7 +115,7 @@ In the previous section, I mentioned Playwright is used for the authentication f
 
 Once you get past all these issues, you will finally be able to start your tests.
 
-{{< caption "/2020/07/msteams7.gif" "Result of testing Microsoft Teams with Cypress" >}}
+{{< caption-new "/uploads/2020/07/msteams7.gif" "Result of testing Microsoft Teams with Cypress" >}}
 
 > **Info**: This was just a simple test, but it unlocks a lot of potential. This enables you to start testing your chat bots, messaging extensions, tabs, ... 
 

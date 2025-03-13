@@ -44,7 +44,7 @@ The first thing you need to do is download an existing font scheme from the them
 Download one of these files, and open it in your favorite text editor. All the elements for which the fonts can be defined are in this file. Each element has the following XML structure:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <s:fontSlot name="title">
   <s:latin typeface="Rockwell Light" eotsrc="/_layouts/15/fonts/RockwellLight.eot" woffsrc="/_layouts/15/fonts/RockwellLight.woff" ttfsrc="/_layouts/15/fonts/RockwellLight.ttf" svgsrc="/_layouts/15/fonts/RockwellLight.svg" largeimgsrc="/_layouts/15/fonts/RockwellLightLarge.png" smallimgsrc="/_layouts/15/fonts/RockwellLightSmall.png" />
   <s:ea typeface="" />
@@ -79,19 +79,19 @@ Download one of these files, and open it in your favorite text editor. All the e
   <s:font script="Tibt" typeface="Microsoft Himalaya" />
   <s:font script="Yiii" typeface="Microsoft Yi Baiti" />
 </s:fontSlot>
-{{< / highlight >}}
+```
 
 
 As you can see, you could define fonts for different languages, but you do not need to define all of them. For me the most important is the Latin one. The rest can be removed, so you end up with this:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <s:fontSlot name="title">
   <s:latin typeface="Rockwell Light" eotsrc="/_layouts/15/fonts/RockwellLight.eot" woffsrc="/_layouts/15/fonts/RockwellLight.woff" ttfsrc="/_layouts/15/fonts/RockwellLight.ttf" svgsrc="/_layouts/15/fonts/RockwellLight.svg" largeimgsrc="/_layouts/15/fonts/RockwellLightLarge.png" smallimgsrc="/_layouts/15/fonts/RockwellLightSmall.png" />
   <s:ea typeface="" />
   <s:cs typeface="Segoe UI Light" />
 </s:fontSlot>
-{{< / highlight >}}
+```
 
 
 The **s:ea** (EastAsianFont) and **s:cs** (ComplexScriptFont) elements cannot be removed, otherwise the composed looks page cannot be loaded.
@@ -103,7 +103,7 @@ What I want to achieve is that all the elements use Verdana as font.
 This is what my font file looks like:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <s:fontScheme name="Xylos" previewSlot1="title" previewSlot2="body" xmlns:s="http://schemas.microsoft.com/sharepoint/">
   <s:fontSlots>
@@ -144,11 +144,11 @@ This is what my font file looks like:
     </s:fontSlot>
   </s:fontSlots>
 </s:fontScheme>
-{{< / highlight >}}
+```
 
 
 Upload your file to the Theme Gallery (**Site Settings** > **Themes**), and you will be able to use your new font scheme in the composed looks.
 
 On the Change the look page (**Site Settings** > **Change the look**) you will now be able to select the Verdana font in the Fonts menu.
 
-{{< caption-legacy "uploads/2012/08/080912_1826_CreatingaNe1.png" "Selecting your font scheme" >}}
+{{< caption-new "/uploads/2012/08/080912_1826_CreatingaNe1.png" "Selecting your font scheme" >}}

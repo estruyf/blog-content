@@ -20,11 +20,11 @@ I tested this problem, and as it turned out, it were not only the checkboxes tha
 
 Let me first show you how a default task view rendering looks like.
 
-{{< caption-legacy "uploads/2013/07/071913_1533_ApplyingJSL1.png" "Default Task List Rendering" >}}
+{{< caption-new "/uploads/2013/07/071913_1533_ApplyingJSL1.png" "Default Task List Rendering" >}}
 
 The next screenshot shows you how rendering is from the moment you apply a custom JS Link reference:
 
-{{< caption-legacy "uploads/2013/07/071913_1533_ApplyingJSL2.png" "Rendering with JS Link applied" >}}
+{{< caption-new "/uploads/2013/07/071913_1533_ApplyingJSL2.png" "Rendering with JS Link applied" >}}
 
 As you see, the checkboxes aren't rendering, but also the Task Name text is not strikethrough, and the dates aren't colored red if task is overdue. This problems occurs with whatever JS Link you apply to the task list.
 
@@ -45,14 +45,14 @@ The solution for this problem is very simple, although I spend a couple of hours
 
 This can easily be done by adding a script reference from within your custom JS Link JavaScript file with the following piece of code:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 RegisterSod('hierarchytaskslist.js', '/_layouts/15/hierarchytaskslist.js');
 LoadSodByKey('hierarchytaskslist.js', null);
-{{< / highlight >}}
+```
 
 My updated script looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 var taskSample = taskSample '' {};
 
 taskSample.CustomizeFieldRendering = function () {
@@ -87,7 +87,7 @@ taskSample.PercentCompleteRendering = function (ctx) {
 }
 
 taskSample.CustomizeFieldRendering();
-{{< / highlight >}}
+```
 
 
 ## Solution 2
@@ -102,7 +102,7 @@ The JS Link property value in mine environment looks like this:
 
 The end result looks like when applied to the web part:
 
-{{< caption-legacy "uploads/2013/07/tasks.png" "Result of the default and custom JS Link references" >}}
+{{< caption-new "/uploads/2013/07/tasks.png" "Result of the default and custom JS Link references" >}}
 
 As you can see the checkboxes, strikethrough, overdue dates and my custom progress bar are working as it should be.
 

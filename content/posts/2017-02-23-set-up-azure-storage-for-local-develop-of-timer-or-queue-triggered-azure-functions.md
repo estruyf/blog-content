@@ -39,7 +39,7 @@ I logged this issue on GitHub and got a response that timer triggered functions 
 
 The error message got improved with the latest update of the Azure Function CLI. When you now create a new timer function without storage configuration you get the following error:
 
-{{< caption-legacy "uploads/2017/02/022317_1053_SetupAzureS1.png" "Storage connection error" >}}
+{{< caption-new "/uploads/2017/02/022317_1053_SetupAzureS1.png" "Storage connection error" >}}
 
 To solve this problem, you should add an Azure Storage account or make use of the Azure Storage Emulator.
 
@@ -51,15 +51,15 @@ First, you must install the Azure Storage Emulator on your machine.
 
 Once you downloaded the emulator, install it on your machine and run it:
 
-{{< caption-legacy "uploads/2017/02/022317_1053_SetupAzureS2.png" "Start Azure Storage Emulator" >}}
+{{< caption-new "/uploads/2017/02/022317_1053_SetupAzureS2.png" "Start Azure Storage Emulator" >}}
 
 From the moment, the emulator is running, you must configure the local environment to make sure that it uses this storage emulator. To do this, run the following command: `func settings add AzureWebJobsStorage UseDevelopmentStorage=true` or add `"AzureWebJobsStorage": "UseDevelopmentStorage=true"` to the AppSettings.json file.
 
-{{< caption-legacy "uploads/2017/02/022317_1053_SetupAzureS3.png" "Update connection string to use development storage" >}}
+{{< caption-new "/uploads/2017/02/022317_1053_SetupAzureS3.png" "Update connection string to use development storage" >}}
 
 When this is configured, run your function (example: `func run TimerTriggerJS`), and it should start to work:
 
-{{< caption-legacy "uploads/2017/02/022317_1053_SetupAzureS4.png" "Running a time function" >}}
+{{< caption-new "/uploads/2017/02/022317_1053_SetupAzureS4.png" "Running a time function" >}}
 
 To stop the Azure Storage Emulator, you can run the following command: `AzureStorageEmulator.exe stop`
 
@@ -71,14 +71,14 @@ To make use of this approach, you should add the connection string of your Azure
 
 > **Info**: more information about the connection string can be found here: [https://docs.microsoft.com/en-us/azure/storage/storage-configure-connection-string](https://docs.microsoft.com/en-us/azure/storage/storage-configure-connection-string)
 
-{{< caption-legacy "uploads/2017/02/022317_1053_SetupAzureS5.png" "Azure Storage connection string" >}}
+{{< caption-new "/uploads/2017/02/022317_1053_SetupAzureS5.png" "Azure Storage connection string" >}}
 
 Once added, the result should be the same when running the function:
 
-{{< caption-legacy "uploads/2017/02/022317_1053_SetupAzureS6.png" "Running timer function with the Azure Storage connection string" >}}
+{{< caption-new "/uploads/2017/02/022317_1053_SetupAzureS6.png" "Running timer function with the Azure Storage connection string" >}}
 
 On the Azure Storage account in the portal, you should see the following folders being added to the container once the function ran for the first time:
 
-{{< caption-legacy "uploads/2017/02/022317_1053_SetupAzureS7.png" "Azure storage container" >}}
+{{< caption-new "/uploads/2017/02/022317_1053_SetupAzureS7.png" "Azure storage container" >}}
 
-{{< caption-legacy "uploads/2017/02/022317_1053_SetupAzureS8.png" "Timer function folder" >}}
+{{< caption-new "/uploads/2017/02/022317_1053_SetupAzureS8.png" "Timer function folder" >}}

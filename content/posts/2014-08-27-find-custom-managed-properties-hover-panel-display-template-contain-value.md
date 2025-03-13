@@ -28,11 +28,11 @@ When you open a hover panel template, you will see a **ManagedPropertyMapping** 
 
 Here is a result of what happens if you map the managed properties in the hover panel template:
 
-{{< caption-legacy "uploads/2014/08/082714_0722_Findoutwhyc1.png" "Hover panel without values" >}}
+{{< caption-new "/uploads/2014/08/082714_0722_Findoutwhyc1.png" "Hover panel without values" >}}
 
 As you can see, Author and Created do not show any value. If you map these managed properties in the item display template, you get the following results:
 
-{{< caption-legacy "uploads/2014/08/082714_0722_Findoutwhyc2.png" "Hover panel with values" >}}
+{{< caption-new "/uploads/2014/08/082714_0722_Findoutwhyc2.png" "Hover panel with values" >}}
 
 That is of course good to know, but why do they need to be added in the item display template instead of the hover panel template?
 
@@ -40,13 +40,13 @@ That is of course good to know, but why do they need to be added in the item dis
 
 The reason why is very simple, in my previous post I talked about a function called **$setResultItem** ([$setResultItem a function that makes or breaks your search experience](https://www.eliostruyf.com/setresultitem-function-makes-breaks-search-experience/)). That function is going to store each of the results in memory. When the hover panel render function **Srch.U.getShowHoverPanelCallback** gets called (which has a reference set to the hover panel template), it will do another call to the **$getResultItem** when rendering the panel. This function **$getResultItem** retrieves the associated result from memory and that result will be set as the current item in the context.
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 renderCtx = {
   ResolveTemplate: resolve,
   CurrentItem: item,
   ScriptApplicationManager: scriptManager
 };
-{{< / highlight >}}
+```
 
 > **Note**: this is a piece of code from the **renderTemplate** function which sets the item retrieved from memory to the current context (ctx.CurrentItem).
 

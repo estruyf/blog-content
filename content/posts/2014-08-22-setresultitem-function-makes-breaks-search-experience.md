@@ -23,15 +23,15 @@ A couple of days ago I was talking with [Mikael Svenson](http://techmikael.blogs
 
 The function is only used in the search item display templates (search result web part). If you open for example the **Item_Default.html** template, you will find the following function call:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 $setResultItem(itemId, ctx.CurrentItem);
-{{< / highlight >}}
+```
 
 The function does not return anything, so what does it do exactly?
 
 The $setResultItem function stores the current result item in memory, so if you show ten items in your search center, these ten item can be found in memory. Here is an example of the object:
 
-{{< caption-legacy "uploads/2014/08/082214_1311_setResultIt1.png" "Search results" >}}
+{{< caption-new "/uploads/2014/08/082214_1311_setResultIt1.png" "Search results" >}}
 
 The reason why each result is temporally stored in memory, is because these result objects are used to when the hover panels render. When you hover over a result item in a search center, the **Srch.U.getShowHoverPanelCallback** function gets called and initiates the hover panel to load. The hover panel is filled with search information it finds in memory of the result objects.
 

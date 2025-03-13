@@ -62,19 +62,19 @@ This is a slightly adapted version of the basic configuration which is shared on
 
 In order to run your unit-tests, it might be best to do a change in the **scripts** property of your package.json file. In the scripts property, you see that **test** is already defined to **gulp test**.
 
-{{< caption-legacy "uploads/2018/06/060518_1952_SharePointF1.png" "Default scripts config in package.json" >}}
+{{< caption-new "/uploads/2018/06/060518_1952_SharePointF1.png" "Default scripts config in package.json" >}}
 
 To run Jest, change "gulp test" to **jest**. That would be all. Once you did this, you can run your test as follows: `npm test`.
 
 In many cases, this configuration is already enough, and the output will be as follows:
 
-{{< caption-legacy "uploads/2018/06/060518_1952_SharePointF2.png" "Jest test run" >}}
+{{< caption-new "/uploads/2018/06/060518_1952_SharePointF2.png" "Jest test run" >}}
 
 Depending on your usage of SharePoint Framework resources, it might be that you run against the following issue:
 
 > **Error**: Cannot find module 'resx-strings/en-us.json' from 'SPCoreLibraryStrings.resx.js'
 
-{{< caption-legacy "uploads/2018/06/060518_1952_SharePointF3.png" "Jest resx string file not found" >}}
+{{< caption-new "/uploads/2018/06/060518_1952_SharePointF3.png" "Jest resx string file not found" >}}
 
 Apparently, the test runner cannot find the en-us.json file. In order to make it work, you can add a mapping for this file in the already defined **moduleNameMapper** property like this:
 
@@ -82,13 +82,13 @@ Apparently, the test runner cannot find the en-us.json file. In order to make it
 
 When running the test again, test output is the same as before:
 
-{{< caption-legacy "uploads/2018/06/060518_1952_SharePointF4.png" "Jest third test run" >}}
+{{< caption-new "/uploads/2018/06/060518_1952_SharePointF4.png" "Jest third test run" >}}
 
 ## Writing unit-tests
 
 Unit-tests can be written with the use of enzyme. A sample of this is provided in the project. One requirement is that the test files have eighter **test** or **spec** in their name.
 
-{{< caption-legacy "uploads/2018/06/Screenshot-2018-06-05-22.02.14.png" "Test and spec files" >}}
+{{< caption-new "/uploads/2018/06/Screenshot-2018-06-05-22.02.14.png" "Test and spec files" >}}
 
 > **Info**: if you want to reference other test files, you will have to make your changes in the **transform** property.
 

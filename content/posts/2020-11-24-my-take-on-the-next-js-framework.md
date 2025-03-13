@@ -21,7 +21,7 @@ The store's idea would be that clients would create their own personalized stick
 
 The result is this website - [https://pimpyourownbike.com]()
 
-{{< caption "/2020/11/nextjs1.png" "PimpYourOwnBike"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAADgSURBVB3BTUrDQBiA4febTNpREEGEbAoiWkhuIHqC5HC6dNeVlxDxFi5FaP0hjajR1LaTZPIJPo9kx1MFQYR/SZLgW0/9VaOqiIkQEawAitKJxQyBZVmCwKAwRDGtRrh+g1WUOB5hxGCw+NZTFDlnF+cEhdHYcX11iTXjXU6yjIP9PVarX5ZvL6RpSl7keL/FOcfNbIZt1hvm8wWvbofQerbND92gyOabx+eK0AbW3YAVoPqsoX9nsDEm9Nze3fOweGLZfDA9PKIqS2QyOdVWBYPSI6iCs4agQAiIjSH0/AGzMmlsVeaOpAAAAABJRU5ErkJggg==" "1484" >}}
+{{< caption-new "/uploads/2020/11/nextjs1.png" "PimpYourOwnBike"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAADgSURBVB3BTUrDQBiA4febTNpREEGEbAoiWkhuIHqC5HC6dNeVlxDxFi5FaP0hjajR1LaTZPIJPo9kx1MFQYR/SZLgW0/9VaOqiIkQEawAitKJxQyBZVmCwKAwRDGtRrh+g1WUOB5hxGCw+NZTFDlnF+cEhdHYcX11iTXjXU6yjIP9PVarX5ZvL6RpSl7keL/FOcfNbIZt1hvm8wWvbofQerbND92gyOabx+eK0AbW3YAVoPqsoX9nsDEm9Nze3fOweGLZfDA9PKIqS2QyOdVWBYPSI6iCs4agQAiIjSH0/AGzMmlsVeaOpAAAAABJRU5ErkJggg==" "1484" >}}
 
 ## Choosing the framework
 
@@ -33,7 +33,7 @@ The thing that got triggered me to test out Next.js was the **Zero Config** setu
 
 Next.js it would be, so time to start developing.
 
-{{< caption "/2020/11/nextjs2.png" "Next.js"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAABgSURBVH3BsQqCUAAAwPM9kTTHQGyqaGzoK/p/XIX6BJWmcjFI0KXu/BGRm0Wc0OGMHUoMuKDCBn3AFRlqX0/ccMcbDx8BLQ7o0CLghdziGDGixx5bJGhQYMCI1EqBxA8TpqYQqTOe0EYAAAAASUVORK5CYII=" "400" >}}
+{{< caption-new "/uploads/2020/11/nextjs2.png" "Next.js"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAABgSURBVH3BsQqCUAAAwPM9kTTHQGyqaGzoK/p/XIX6BJWmcjFI0KXu/BGRm0Wc0OGMHUoMuKDCBn3AFRlqX0/ccMcbDx8BLQ7o0CLghdziGDGixx5bJGhQYMCI1EqBxA8TpqYQqTOe0EYAAAAASUVORK5CYII=" "400" >}}
 
 ## RTFM - Documentation 
 
@@ -55,7 +55,7 @@ Do I need to say more? It is just fast. With all the magic that is happening beh
 
 Also, automated bundling and chuck creation is a pretty nice feature. Bonus points for the **zero config** setup.
 
-{{< caption "/2020/11/nextjs3.png" "My Next.js config file"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAABySURBVH3BQQrCMBCG0e8fU2isuBMEwRN4/wu5cicI2iaTjOQA+p6myy28VvZ5RiamKVFKJecZd8dr4/1ZSdE7w+E0g8S6dZZjxsygifJKLDkwyRgUoAgsYKegN6duTvOGopMgGB73J78UwCRjuJ4T/3wBjkYvYqBPNlMAAAAASUVORK5CYII=" "243" >}}
+{{< caption-new "/uploads/2020/11/nextjs3.png" "My Next.js config file"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAklEQVR4AewaftIAAABySURBVH3BQQrCMBCG0e8fU2isuBMEwRN4/wu5cicI2iaTjOQA+p6myy28VvZ5RiamKVFKJecZd8dr4/1ZSdE7w+E0g8S6dZZjxsygifJKLDkwyRgUoAgsYKegN6duTvOGopMgGB73J78UwCRjuJ4T/3wBjkYvYqBPNlMAAAAASUVORK5CYII=" "243" >}}
 
 {{< blockquote type="Important" text="Even the scripts in `package.json` file kept unchanged." >}}
 

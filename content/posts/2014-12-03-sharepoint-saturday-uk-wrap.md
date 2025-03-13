@@ -23,7 +23,7 @@ Apart from the wifi at the venue, everything was great. I heard that some speake
 
 I would like to thank [Bret Lonsdale](https://twitter.com/brettlonsdale "Brett Lonsdale"), [Mark Macrae](https://twitter.com/m_macrae "Mark Macrae"), and [Wor Tony](https://twitter.com/WorTony "Wor Tony") for getting this opportunity.
 
-{{< caption-legacy "uploads/2014/12/IMG_2017.jpg" "A couple of minutes before my session" >}}
+{{< caption-new "/uploads/2014/12/IMG_2017.jpg" "A couple of minutes before my session" >}}
 
 ## Take your display template skills to the next level
 

@@ -18,19 +18,19 @@ comments: true
 
 A question I received a couple of days ago was if it would be possible to display the share action on a page like the action in the context menu of that page.
 
-{{< caption-legacy "uploads/2013/12/120413_1225_ShowtheShar1.png" "Share Action" >}}
+{{< caption-new "/uploads/2013/12/120413_1225_ShowtheShar1.png" "Share Action" >}}
 
 ## Solution
 
 The solution for this is really simple, all you need to do is creating a hyperlink on the page layout and use a JavaScript function call in the href attribute for the click event.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <a href="javascript:sharePage()" title="Share page">Share this page</a>
-{{< / highlight >}}
+```
 
 The function behind this call looks like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function sharePage() {
   EnsureScriptFunc("sharing.js", "DisplaySharingDialog", function () {
     var webUrl = _spPageContextInfo.webAbsoluteUrl;
@@ -41,7 +41,7 @@ function sharePage() {
     }
   });
 }
-{{< / highlight >}}
+```
 
 This function doesn't require a lot of code. You'll just need to be sure that the **DisplaySharingDialog** function is available, and pass through the following parameters:
 

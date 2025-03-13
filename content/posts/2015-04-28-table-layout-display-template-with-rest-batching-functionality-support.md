@@ -28,17 +28,17 @@ The session reminded that I needed to invest some time to optimize the table lay
 
 If you used or read the article about the table layout display template, you probably know how I used a HTTP request to check if a managed property is sortable or not. The sortable check needs to be performed for every managed property that will be used. Depending on the number of managed properties you want to show with the display template, it results in the same number of HTTP requests. For example: if you configured the CSWP (Content by Search Web Part) to visualize the **Path**, **Title**, **LastModifiedTime**, **Created**, and **Author** managed properties it will perform the following requests:
 
-{{< caption-legacy "uploads/2015/04/042815_1146_Tablelayout1.png" "Multiple HTTP requests to check if the managed properties are sortable" >}}
+{{< caption-new "/uploads/2015/04/042815_1146_Tablelayout1.png" "Multiple HTTP requests to check if the managed properties are sortable" >}}
 
 The first two requests returned a 400 error - Invalid parameter: SortList, which means that the corresponding managed property (path and title) are not sortable. By looking at the screenshot above, you could imagine what will happen if you are going to visualize ten managed properties. The REST batching functionality helps you reduce the number of requests that needs to be performed.
 
 If you combine the HTTP requests from the screenshot into one batch it results in the following request:
 
-{{< caption-legacy "uploads/2015/04/042815_1146_Tablelayout2.png" "Single batch request" >}}
+{{< caption-new "/uploads/2015/04/042815_1146_Tablelayout2.png" "Single batch request" >}}
 
 This request gives the following response:
 
-{{< caption-legacy "uploads/2015/04/042815_1146_Tablelayout3.png" "Batch request response" >}}
+{{< caption-new "/uploads/2015/04/042815_1146_Tablelayout3.png" "Batch request response" >}}
 
 In the screenshot you can see that the response contains the responses for all the combined requests. If you compare this screenshot with the first one, you can see that the first two requests (highlighted in red - path and title) return the same error 400 message - Invalid parameter: SortList.
 
@@ -48,7 +48,7 @@ To support the batching functionality, the table layout display template codes n
 
 First you need to create the batch of requests to check the managed properties.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var endpoint = _spPageContextInfo.webAbsoluteUrl + "/_api/search/query?querytext='*'&sortlist='" + prop + ":ascending'&RowLimit=1&selectproperties='Path'";
 // Put the properties to the batch
 batchContents.push('--batch_' + tableId);
@@ -58,11 +58,11 @@ batchContents.push('');
 batchContents.push('GET ' + endpoint + ' HTTP/1.1');
 batchContents.push('Accept: application/json;odata=nometadata');
 batchContents.push('');
-{{< / highlight >}}
+```
 
 Once the batch is created, the request can be done. The code for the batch request looks like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 var request = new XMLHttpRequest();
 var restUrl = _spPageContextInfo.webAbsoluteUrl + '/_api/$batch';
 request.open('POST', restUrl, true);
@@ -104,7 +104,7 @@ request.onerror = function (e) {
     // Catching errors
 };
 request.send(batchBody);
-{{< / highlight >}}
+```
 
 
 ## Download

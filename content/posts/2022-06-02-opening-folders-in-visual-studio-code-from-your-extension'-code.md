@@ -25,18 +25,18 @@ While testing it out, the command worked fine on macOS and Linux but gave issues
 
 In my case, the path to the folder gets retrieved from a CLI command. The folder path looks as follows:
 
-{{< highlight text "linenos=table,noclasses=false" >}}
+```text
 C:\data\vscode\test-project-folder
-{{< / highlight >}}
+```
 
 Initially, I used the following code:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const folderPath = `C:\\data\\vscode\\test-project-folder`;
 const folderPathParsed = folderPath.split(`\\`).join(`/`);
 const folderUri = vscode.Uri.parse(folderPathParsed);
 vscode.commands.executeCommand(`vscode.openFolder`, folderUri);
-{{< / highlight >}}
+```
 
 The folder path needs to be parsed to a URI to use the command. That is why the `vscode.Uri.parse()` method is used. The above code works fine on macOS and Linux but gives issues on Windows paths.
 
@@ -58,10 +58,10 @@ Instead of using the `vscode.Uri.parse()` method, I tried out the `vscode.Uri.fi
 
 The working solution for macOS, Linux, and Windows looks as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const folderPath = `C:\\data\\vscode\\test-project-folder`;
 const folderPathParsed = folderPath.split(`\\`).join(`/`);
 // Updated Uri.parse to Uri.file
 const folderUri = vscode.Uri.file(folderPathParsed);
 vscode.commands.executeCommand(`vscode.openFolder`, folderUri);
-{{< / highlight >}}
+```

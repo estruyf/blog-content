@@ -24,9 +24,9 @@ Using the command URI option involves less code and is also the preferred option
 
 When you want to use an anchor tag with a link to your website for instance, you would typically do it as follows:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <a href="https://elio.dev">elio.dev</a>
-{{< / highlight >}}
+```
 
 It is a quick and easy way, but there is an issue. When you click on the link, it will open immediately in the browser and bypasses the [outgoing link protection](https://code.visualstudio.com/docs/editor/editingevolved#_outgoing-link-protection) functionality from Visual Studio Code.
 
@@ -36,13 +36,13 @@ A better approach is to use an internal command like `vscode.open`.
 
 The command which can be used to open links/files is `vscode.open` and it can be used as follows from your extension:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const devUri = vscode.Uri.parse('https://elio.dev');
 vscode.commands.executeCommand('vscode.open', devUri);
 
 const fileUri = vscode.Uri.file(join(context.extensionPath, 'readme.md'));
 vscode.commands.executeCommand('vscode.open', fileUri);
-{{< / highlight >}}
+```
 
 To make use of internal or your commands in a webview, you need to enable the `enableCommandUris` option on the webview creation.
 
@@ -50,7 +50,7 @@ To make use of internal or your commands in a webview, you need to enable the `e
 
 In the code where you create your webview, you can define to enable command URIs as one of the Webview/Panel options.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const panel = vscode.window.createWebviewPanel(
 	'react-webview',
 	'React Webview',
@@ -61,7 +61,7 @@ const panel = vscode.window.createWebviewPanel(
 		enableCommandUris: true,
 	}
 );
-{{< / highlight >}}
+```
 
 Once you have set this option to `true`, you can use anchor tags with **HREF** attribute set to `command:<your command>`.
 
@@ -69,13 +69,13 @@ Once you have set this option to `true`, you can use anchor tags with **HREF** a
 
 The last step is to write the code to open a link or file. To do this, you will first have to generate a Visual Studio Code URI like object, which looks as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 {
   scheme: '',
   path: '',
   authority: ''
 }
-{{< / highlight >}}
+```
 
 This object will be used as argument in your command URI.
 
@@ -83,7 +83,7 @@ This object will be used as argument in your command URI.
 
 Here is an example of how you can open a link:
 
-{{< highlight tsx "linenos=table,noclasses=false" >}}
+```tsx
 const linkUri = {
   scheme: 'https',
   path: '/',
@@ -95,7 +95,7 @@ return (
     <a href={`command:vscode.open?${encodeURIComponent(JSON.stringify(linkUri))}`}>Open link</a>
   </>
 )
-{{< / highlight >}}
+```
 
 {{< blockquote type="info" text="When you click on the link in the webview, you will now be asked if you want to proceed opening it (if the domain is not in your trusted domains list)." >}}
 
@@ -105,7 +105,7 @@ return (
 
 Here is an example of how you can open a file:
 
-{{< highlight tsx "linenos=table,noclasses=false" >}}
+```tsx
 const fileUri = {
   scheme: 'file',
   path: '<absolute path>/readme.md',
@@ -115,4 +115,4 @@ const fileUri = {
 return (
   <a href={`command:vscode.open?${encodeURIComponent(JSON.stringify(fileUri))}`}>Open file</a>
 )
-{{< / highlight >}}
+```

@@ -38,7 +38,7 @@ The next step is to create a new data source in SharePoint Designer which will c
 
 Open your site in SharePoint Designer and go to **Data Sources**. Click on **REST Service Connection** and enter your URL.
 
-{{< caption-legacy "uploads/2012/05/051812_0726_CreatingaTw1.png" "Create Data Source" >}}
+{{< caption-new "/uploads/2012/05/051812_0726_CreatingaTw1.png" "Create Data Source" >}}
 
 Under the general tab you can set the name of your data source.
 
@@ -50,7 +50,7 @@ Create a new web part page and add an empty data view web part on it.
 
 Select your Twitter Data Source.
 
-{{< caption-legacy "uploads/2012/05/051812_0726_CreatingaTw2.png" "Select Data Source" >}}
+{{< caption-new "/uploads/2012/05/051812_0726_CreatingaTw2.png" "Select Data Source" >}}
 
 ## Step 5
 
@@ -60,7 +60,7 @@ In the data source select the following fields to be added to the data view web 
 - Item/author;
 - Item/description;
 - Item/pubDate.
-  {{< caption-legacy "uploads/2012/05/051812_0726_CreatingaTw3.png" "Select Fields" >}}
+  {{< caption-new "/uploads/2012/05/051812_0726_CreatingaTw3.png" "Select Fields" >}}
 
 When the fields are selected, click **Insert Selected Fields as** and choose **Multiple item view**.
 
@@ -147,4 +147,4 @@ Into this:
 
 Your results should be something similar to this:
 
-{{< caption-legacy "uploads/2012/05/051812_0726_CreatingaTw4.png" "End Result" >}}
+{{< caption-new "/uploads/2012/05/051812_0726_CreatingaTw4.png" "End Result" >}}

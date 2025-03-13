@@ -20,7 +20,7 @@ During the creation process of a demo for my SharePoint Saturday Belgium session
 
 What you'll need to do is creating or modifying a Control Display Template for the CSWP. In this control template you'll only need to add the following lines of code:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Do a refresh of the current result set
 AddPostRenderCallback(ctx, function(){
   setTimeout(function () {
@@ -30,11 +30,11 @@ AddPostRenderCallback(ctx, function(){
     ctx.ClientControl.raiseQueryReadyEvent(queryStateArgs);
   }, 60000);
 });
-{{< / highlight >}}
+```
 
 It can even be simpler, you could also use the following code:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Do a refresh of the current result set
 AddPostRenderCallback(ctx, function(){
   setTimeout(function () {
@@ -42,7 +42,7 @@ AddPostRenderCallback(ctx, function(){
     ctx.DataProvider.issueQuery();
   }, 60000);
 });
-{{< / highlight >}}
+```
 
 This piece of code will be executed every minute and will update the set of results. If you want to increase or decrease this, you'll need to change the number at the end of the **setTimeout** method.
 
@@ -50,9 +50,9 @@ This piece of code will be executed every minute and will update the set of resu
 
 Images don't say much in this scenario, but what you can see is that the first result is replaced with a newer task.
 
-{{< caption-legacy "uploads/2014/04/041114_1445_Automatical1.png" "First set of results" >}}
+{{< caption-new "/uploads/2014/04/041114_1445_Automatical1.png" "First set of results" >}}
 
-{{< caption-legacy "uploads/2014/04/041114_1445_Automatical2.png" "Results after a new crawl" >}}
+{{< caption-new "/uploads/2014/04/041114_1445_Automatical2.png" "Results after a new crawl" >}}
 
 ## Download
 

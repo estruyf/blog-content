@@ -63,7 +63,7 @@ Another useful thing, if you don't want to specify a lower or upper bound, you c
 
 **Integer**
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Results with the upper bound set to 94
 range(min, 94)
 // Results between 20 and 120 (20 and 120 included)
@@ -74,29 +74,29 @@ range(20, max)
 range(20, max, from="GT")
 // Results greater than 20 and less than 120
 range(20, 120, from="GT", to="LT")
-{{< / highlight >}}
+```
 
 **Decimal**
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Results with the upper bound set to 100.21
 range(min, 100.21)
 // Results between 21.21 and 100.21 (21.21 and 100.21 included)
 range(21.21, 100.21)
 // Results starting from 100.21 with no upper bound
 range(100.21, max)
-{{< / highlight >}}
+```
 
 **DateTime**
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Results greater than or equal to November 1st
 range(2013-11-01T00:01:01Z, max)
 // Results less than or equal to December 2nd
 range(min, 2013-12-02T00:01:01Z)
 // Results from November 1st, until December 2nd
 range(2013-11-01T00:01:01Z, 2013-12-02T00:01:01Z)
-{{< / highlight >}}
+```
 
 
 ## Creating Your Own Range Search Refiner Control
@@ -105,13 +105,13 @@ Now that you got a little bit of background information about how the range oper
 
 The end result will look like this:
 
-{{< caption-legacy "uploads/2013/12/121013_1745_Part7Workin1.png" "Range End Result" >}}
+{{< caption-new "/uploads/2013/12/121013_1745_Part7Workin1.png" "Range End Result" >}}
 
 For this search refiner we'll start from scratch, because the code will be much different than the ones that were created in the previous posts.
 
 The starter's template looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 <head>
     <title>Range Filter</title>
@@ -152,13 +152,13 @@ _#-->
     </div>
 </body>
 </html>
-{{< / highlight >}}
+```
 
 In this starter's template you'll find the **CompatibleSearchDataTypes** property, this property specifies for which kind of search data types that the control can be used. In this control the property is set to be used for **DateTime**, **Integer**, and **Decimal** search data types.
 
 Next step is to create the ID variables for the elements that will be used, and the default refinement control classes.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Element IDs
 var controlID = ctx.RefinementControl.containerId + "_" + ctx.RefinementControl.propertyName;
 var fromInput = controlID + "_from";
@@ -172,11 +172,11 @@ var iconClass = (isExpanded == "true"? "ms-ref-uparrow" : "ms-ref-downarrow");
 var refinerCatTitle = Srch.Refinement.getRefinementTitle(ctx.RefinementControl);
 // Display style > needed to hide the refinement list when collapsed
 var displayStyle = (isExpanded == "true"? "" : "none");
-{{< / highlight >}}
+```
 
 Now that the variables are created, you can add the HTML mark-up for the refiner. This looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 _#-->
 <div id='Container'>
     _#= Srch.U.collapsibleRefinerTitle(ctx.RefinementControl.propertyName, ctx.ClientControl.get_id(), refinerCatTitle, iconClass) =#_
@@ -191,17 +191,17 @@ _#-->
     </div>
 </div>
 <!--#_
-{{< / highlight >}}
+```
 
 The output after this will look the same as the end result, but without the functionality.
 
-{{< caption-legacy "uploads/2013/12/121013_1745_Part7Workin2.png" "Range Refiner" >}}
+{{< caption-new "/uploads/2013/12/121013_1745_Part7Workin2.png" "Range Refiner" >}}
 
 ### Adding the Click Events to the Hyperlinks
 
 For the **refinement** and **clear** hyperlinks, we'll add click events via JavaScript. This needs to be done from the moment the search refinement control is loaded. This can be done by using the **ctx.OnPostRender** functionality.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 ctx.OnPostRender = [];
 ctx.OnPostRender.push(function () {
     // Retrieve the two hyperlinks 
@@ -238,7 +238,7 @@ ctx.OnPostRender.push(function () {
         $getClientControl(this).updateRefinersJSON(refinement);
     };
 });
-{{< / highlight >}}
+```
 
 
 ### Showing the Refiner Values in the Input Fields
@@ -247,7 +247,7 @@ The last step is to show the used refiner values in the input fields after you r
 
 To add this kind of functionality, we'll have to retrieve these values from the current refinement category that is in place. This can be done the same way as explained in the previous post (multi-value search refiner control).
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Set input form values
 var from = "";
 var to = "";
@@ -262,23 +262,23 @@ if(!Srch.U.n(currentRefinementCategory) && currentRefinementCategory.get_tokenCo
         var to = matchResults[2] === "max" ? "" : matchResults[2];
     }
 }
-{{< / highlight >}}
+```
 
 This code needs to be added just before the HTML mark-up. The refinement values (start and end) that it retrieves will be stored in the **from** and **to** variables, and can be used for the input field values by adding a value attribute to the fields.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <label for='_#= fromInput =#_'>From</label>
 <input type='text' id='_#= fromInput =#_' name='from' value='_#= from =#_' />
 <label for='_#= toInput =#_'>To</label>
 <input type='text' id='_#= toInput =#_' name='to' value='_#= to =#_' />
-{{< / highlight >}}
+```
 
 
 ## Result
 
 The end result looks like this:
 
-{{< caption-legacy "uploads/2013/12/121013_1745_Part7Workin3.png" "Range Refiner" >}}
+{{< caption-new "/uploads/2013/12/121013_1745_Part7Workin3.png" "Range Refiner" >}}
 
 ## Download
 

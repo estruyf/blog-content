@@ -26,7 +26,7 @@ The image renditions are stored in a XML file that is located here: `http://your
 
 The default file content looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <?xml version="1.0"?>
 <SiteImageRenditions xmlns="http://schemas.datacontract.org/2004/07/Microsoft.SharePoint.Publishing" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
     <NextId>5</NextId>
@@ -61,7 +61,7 @@ The default file content looks like this:
         </ImageRendition>
     </Renditions>
 </SiteImageRenditions>
-{{< / highlight >}}
+```
 
 
 ## Provision Image Renditions
@@ -74,7 +74,7 @@ The simplest way to create your own Image Rendition XML file, is to configure al
 
 Here is an example of a modified PublishingImageRenditions file:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <?xml version="1.0"?>
 <SiteImageRenditions xmlns="http://schemas.datacontract.org/2004/07/Microsoft.SharePoint.Publishing" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
     <NextId>7</NextId>
@@ -109,15 +109,15 @@ Here is an example of a modified PublishingImageRenditions file:
         </ImageRendition>
     </Renditions>
 </SiteImageRenditions>
-{{< / highlight >}}
+```
 
 The content of your module elements file looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <File Url="PublishingImageRenditions.xml" Type="GhostableInLibrary" Level="Published" ReplaceContent="true">
   <Property Name="ContentTypeId" Value="0x01010012BCF119622FF14793A8A38D5831F25C" />
   <Property Name="ContentType" Value="Document" />
 </File>
-{{< / highlight >}}
+```
 
 Set the **ReplaceContent** property to **True** and the **Level** to **Published**. This way your file content gets updated, and the file itself is published in the master page gallery.

@@ -24,18 +24,18 @@ In my [previous post](https://www.eliostruyf.com/how-to-add-angularjs-to-your-di
 
 To create our own dataset, we will loop over the results that were retrieved from the search query.
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 $scope.ResultRows = [];
 angular.forEach(ctx.ListData.ResultTables[0].ResultRows, function(row) {
   // Modify the data
 });
-{{< / highlight >}}
+```
 
 As you can see in the code I pass through the current row to process. This is needed in order be able to use the **$getItemValue** function which can retrieve the managed property by the slot name defined in the **ManagedPropertyMapping** property.
 
 The complete code block for this looks like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 angular.forEach(ctx.ListData.ResultTables[0].ResultRows, function(row) {
   // Set the display template property mappings
   ctx['DisplayTemplateData'] = new Object();
@@ -49,7 +49,7 @@ angular.forEach(ctx.ListData.ResultTables[0].ResultRows, function(row) {
   item.DocIcon = Srch.ContentBySearch.getIconSourceFromItem(row);
   $scope.ResultRows.push(item);
 });
-{{< / highlight >}}
+```
 
 The **$getItemValue** function uses the **current item** and the **ManagedPropertyMapping** data to retrieve the value for the referenced managed property.
 
@@ -61,7 +61,7 @@ Now that the new dataset has been created with your additional information, you 
 
 The whole template now looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div ng-controller="DisplayControl" id="_#= elementId =#_" style="display:none;">
   <ul class="cbs-List">
     <li ng-show="ResultRows.length" ng-repeat="ResultRow in ResultRows">
@@ -78,17 +78,17 @@ The whole template now looks like this:
     </li>
   </ul>
 </div>
-{{< / highlight >}}
+```
 
 As you can see, you can also use the properties that have been added by the $getItemValue function. Like for instance to check if a value is empty in combination with the ngShow or ngHide directives to show or hide an element.
 
 The new template results in the following output:
 
-{{< caption-legacy "uploads/2014/08/080514_1830_Creatingyou1.png" "Updated AngularJS template" >}}
+{{< caption-new "/uploads/2014/08/080514_1830_Creatingyou1.png" "Updated AngularJS template" >}}
 
 With a second line mapping set, the result looks like this:
 
-{{< caption-legacy "uploads/2014/08/080514_1830_Creatingyou2.png" "AngularJS with Line 2 property" >}}
+{{< caption-new "/uploads/2014/08/080514_1830_Creatingyou2.png" "AngularJS with Line 2 property" >}}
 
 ## Download
 

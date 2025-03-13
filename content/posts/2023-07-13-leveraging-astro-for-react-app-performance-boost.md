@@ -24,7 +24,7 @@ The slowness mainly came from the amount of data and the processing in React. Th
 For the website I was working with Astro for building the pages, but still heavily relied on React for the data processing, searching, filtering, and more. The code for the *simplified* component looked like this:
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"typescript"},{"name":"selection","value":"---\nimport { getCollection } from \"astro:content\";\n\nlet dataSet = await getCollection(\"dataset\");\n---\n\n<Dashboard data={dataSet} client:only />"}]} -->
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 ---
 import { getCollection } from "astro:content";
 
@@ -32,7 +32,7 @@ let dataSets = await getCollection("dataset")
 ---
 
 <Dashboard data={dataSets} client:only />
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 To improve the performance, I had to understand Astro better and look into dynamic routing to improve the performance and lower the page sizes.
@@ -52,7 +52,7 @@ To get both routes, you must use the rest parameter in the filename. In my case,
 
 When using routing in Astro, you must define all the paths in the `getStaticPaths()` function on the page.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 ---
 import { getCollection } from "astro:content";
 
@@ -69,7 +69,7 @@ const { name } = Astro.params;
 ---
 
 <h1>Dataset: {name || "overview"}</h1>
-{{< / highlight >}}
+```
 
 <!-- FM:Snippet:Start data:{"id":"Blockquote","fields":[{"name":"type","value":"important"},{"name":"selection","value":"The `params` property is required to define the parameters of your paths. In my case, this is the `name` for the dataset."}]} -->
 {{< blockquote type="important" text="The `params` property is required to define the parameters of your paths. In my case, this is the `name` for the dataset and corresponds to the filename." >}}
@@ -79,7 +79,7 @@ In the above code block, you can see a parameter `name` with the value set to `u
 
 In my case, datasets are not predefined, so I needed a dynamic routing approach which I achieved as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 ---
 import { getCollection } from "astro:content";
 
@@ -99,7 +99,7 @@ const { name } = Astro.params;
 ---
 
 <h1>Dataset: {name || "overview"}</h1>
-{{< / highlight >}}
+```
 
 With the above code, I could get routes like:
 
@@ -116,7 +116,7 @@ Although there are pages for each dataset, there is still no data passed for eac
 
 To pass data to each of your routes, you need to define the `props` parameter on each route.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 ---
 import { getCollection } from "astro:content";
 
@@ -139,7 +139,7 @@ const { dataset } = Astro.props;
 <h1>Dataset: {name || "overview"}</h1>
 
 {dataset && <Dashboard dataset={dataset} client:only />}
-{{< / highlight >}}
+```
 
 To retrieve the data for the dataset, I only needed to add the following line: `const { dataSet } = Astro.props;`.
 

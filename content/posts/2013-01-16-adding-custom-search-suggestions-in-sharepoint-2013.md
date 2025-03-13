@@ -18,7 +18,7 @@ comments: true
 
 By default search suggestions are enabled on the default search boxes in SharePoint 2013.
 
-{{< caption-legacy "uploads/2013/01/011613_1828_AddingCusto1.png" "Search Suggestions" >}}
+{{< caption-new "/uploads/2013/01/011613_1828_AddingCusto1.png" "Search Suggestions" >}}
 
 Server administrators are still able to manually add search suggestions via PowerShell, but the commands have been changed a little.
 
@@ -39,11 +39,11 @@ The Available levels that can be used are:
 
 You need to run the following commands to create search suggestions:
 
-{{< highlight powershell "linenos=table,noclasses=false" >}}
+```powershell
 $searchapp = get-SPEnterpriseSearchServiceApplication
 $owner = Get-SPEnterpriseSearchOwner -level SSA
 
 New-SPEnterpriseSearchLanguageResourcePhrase -SearchApplication $searchapp -Language En-Us -Type QuerySuggestionAlwaysSuggest -Name "Suggestion 1" -Owner $owner
 
 Start-SPTimerJob -Identity "Prepare query suggestions"
-{{< / highlight >}}
+```

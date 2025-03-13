@@ -21,27 +21,27 @@ When you configure a catalog connection for the first time on your site, the cat
 
 To know which managed properties are available for the current catalog item, navigate to the catalog item page:
 
-{{< caption-legacy "uploads/2014/02/021414_1557_Checkingwhi1.png" "Catalog Item Page" >}}
+{{< caption-new "/uploads/2014/02/021414_1557_Checkingwhi1.png" "Catalog Item Page" >}}
 
 &nbsp;
 
 Click on **edit page** so that your page opens in edit mode, and click on the **Search** button of the **Catalog-Item URL** web part.
 
-{{< caption-legacy "uploads/2014/02/021414_1557_Checkingwhi2.png" "Catalog Item Page - Edit Mode" >}}
+{{< caption-new "/uploads/2014/02/021414_1557_Checkingwhi2.png" "Catalog Item Page - Edit Mode" >}}
 
 This opens a new dialog window with the connected catalog and its corresponing catalog items.
 
-{{< caption-legacy "uploads/2014/02/021414_1557_Checkingwhi3.png" "Connected Catalog Items" >}}
+{{< caption-new "/uploads/2014/02/021414_1557_Checkingwhi3.png" "Connected Catalog Items" >}}
 
 When you hover over an item, a hover panel will be loaded, and when you click on the **MORE** link in the hover panel, you'll retrieve all the available managed properties for the catalog item.
 
-{{< caption-legacy "uploads/2014/02/021414_1557_Checkingwhi4.png" "Available Managed Properties" >}}
+{{< caption-new "/uploads/2014/02/021414_1557_Checkingwhi4.png" "Available Managed Properties" >}}
 
 ## Important
 
 This only works with auto created managed properties. While rendering this hover panel overview, SharePoint does a check to see if the property name is auto created. When the property name looks like its auto created (should contain OWS as text), it will be displayed.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 Srch.ValueInfo.isAutoCreatedPropertyName = function Srch_ValueInfo$isAutoCreatedPropertyName(managedPropertyName) {
   if (Srch.U.w(managedPropertyName)) {
     return false;
@@ -56,4 +56,4 @@ Srch.ValueInfo.isAutoCreatedPropertyName = function Srch_ValueInfo$isAutoCreated
   }
   return false;
 }
-{{< / highlight >}}
+```

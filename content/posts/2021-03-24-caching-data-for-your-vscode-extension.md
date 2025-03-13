@@ -37,7 +37,7 @@ For my extension, I choose to use the `globalState`, as I want to cache the Micr
 
 Start by creating the cache as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 export async function activate(context: vscode.ExtensionContext) {
   
   const defaultData: CacheObject = { v1: {}, beta: {} };
@@ -46,29 +46,29 @@ export async function activate(context: vscode.ExtensionContext) {
 
   ...
 }
-{{< / highlight >}}
+```
 
 Once created, you can put data into the cache:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 // Add API response to the right API version of the cache
 cache[version][path] = apiData;
 await this.context.globalState.update(cacheName, cache);
-{{< / highlight >}}
+```
 
 When you added the data. You can start retrieving it as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 cache = context.globalState.get<CacheObject>(cacheName);
-{{< / highlight >}}
+```
 
 Currently you can only get and update data, you cannot clear/delete the cache. If you can override the cache with a default value.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const clear = () => {
   cache = {};
   await context.globalState.update(cacheName, {});
 }
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="You can find a complete example of using the VSCode state here: [CacheProvider.ts](https://github.com/estruyf/vscode-msgraph-autocomplete/blob/main/src/providers/CacheProvider.ts)." >}}

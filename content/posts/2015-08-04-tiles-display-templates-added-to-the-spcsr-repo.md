@@ -20,9 +20,9 @@ comments: true
 
 Right before my vacation I released new display templates in the SPCSR GitHub repository. These display templates can be used to visualize results as tiles. The tiles are build the same way the promoted links web part.
 
-{{< caption-legacy "uploads/2015/07/tiles.png" "Search tiles" >}}
+{{< caption-new "/uploads/2015/07/tiles.png" "Search tiles" >}}
 
-{{< caption-legacy "uploads/2015/07/tile-hover.png" "Search tile hover effect" >}}
+{{< caption-new "/uploads/2015/07/tile-hover.png" "Search tile hover effect" >}}
 
 The display template has the following configurable managed properties:
 

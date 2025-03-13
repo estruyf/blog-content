@@ -25,7 +25,7 @@ You can find the event name values on the [events that trigger the workflows](Ev
 
 The condition its implementation looks as follows:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,8 +35,8 @@ jobs:
       - name: Do not run on a schedule
         run: echo Just a message.
         if: ${{ github.event_name != 'schedule' }}
-{{< / highlight >}}
+```
 
 This results in:
 
-{{< caption "/2021/02/schedule1.png" "Skip step on a schedule"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAYAAABbayygAAAAAklEQVR4AewaftIAAAD6SURBVIXBsU7DMBCA4d/niwNSCR1AAp4HCYn3X4CdlIEGUmipY9/RDEiIoXxfuL27d1Xl4fGJY/S5f6FJicXijFmQgJtDgI/Nhh+6223Z7bb8R2OMXF3fkPdfiAgiQt/3/KVmxnr9ypQz7o6I0DQN7k6MkVorpRQ0hMDJySltSjRNg6oSCDiOiDAMA6UUxMyYckZVCSEwTROO4+6klHB3ZspBnjLb7Sdmhogwc3dm7s5MY4x03TlWC6pKSgkzo9ZKzplhGJgpB23bsv8yUkqYGSKCqtK2LcvlknEc0Vorq1VPLYVjNMbIxcUlU97TdR21Vjbjhrf3N377BkYhgn8pFJ0wAAAAAElFTkSuQmCC" "271" >}}
+{{< caption-new "/uploads/2021/02/schedule1.png" "Skip step on a schedule"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAYAAABbayygAAAAAklEQVR4AewaftIAAAD6SURBVIXBsU7DMBCA4d/niwNSCR1AAp4HCYn3X4CdlIEGUmipY9/RDEiIoXxfuL27d1Xl4fGJY/S5f6FJicXijFmQgJtDgI/Nhh+6223Z7bb8R2OMXF3fkPdfiAgiQt/3/KVmxnr9ypQz7o6I0DQN7k6MkVorpRQ0hMDJySltSjRNg6oSCDiOiDAMA6UUxMyYckZVCSEwTROO4+6klHB3ZspBnjLb7Sdmhogwc3dm7s5MY4x03TlWC6pKSgkzo9ZKzplhGJgpB23bsv8yUkqYGSKCqtK2LcvlknEc0Vorq1VPLYVjNMbIxcUlU97TdR21Vjbjhrf3N377BkYhgn8pFJ0wAAAAAElFTkSuQmCC" "271" >}}

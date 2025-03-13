@@ -20,7 +20,7 @@ comments: true
 
 Some time ago, I wrote about a layout problem when using the [People Search Box Web Part outside a SharePoint Search Center](https://www.eliostruyf.com/fix-people-search-box-has-layout-problems-when-used-outside-a-search-center/). Other layout problems occurs when you enable **Query Suggestions** for the **Search Box Web Part**.
 
-{{< caption-legacy "uploads/2011/08/082211_1348_FixSearchBo1.png" "Query Suggestions" >}}
+{{< caption-new "/uploads/2011/08/082211_1348_FixSearchBo1.png" "Query Suggestions" >}}
 
 What I experienced is that two different layout problems occur:
 
@@ -31,14 +31,14 @@ What I experienced is that two different layout problems occur:
 
 ### Problem
 
-{{< caption-legacy "uploads/2011/08/082211_1348_FixSearchBo2.png" "Search Suggestions Problem in the Top Navigation Menu" >}}
+{{< caption-new "/uploads/2011/08/082211_1348_FixSearchBo2.png" "Search Suggestions Problem in the Top Navigation Menu" >}}
 
 ### Solution
 
 The following CSS code solves the layout problem.
 
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 .srch-AutoCompContainer {
 	display: block !important;
 	top: 88px !important;
@@ -49,12 +49,12 @@ The following CSS code solves the layout problem.
 .srch-AutoCompHListItem {
 	display: block !important;
 }
-{{< / highlight >}}
+```
 
 
 **The CSS top attribute value depends on the height of the s4-titlerow**.
 
-{{< caption-legacy "uploads/2011/08/082211_1348_FixSearchBo3.png" "Search Suggestions Fixed in the Top Navigation Menu" >}}
+{{< caption-new "/uploads/2011/08/082211_1348_FixSearchBo3.png" "Search Suggestions Fixed in the Top Navigation Menu" >}}
 
 ## Fix Search Suggestions When Used on a page
 
@@ -62,15 +62,15 @@ The following CSS code solves the layout problem.
 
 Search Suggestions are being displayed on top of the Search Box.
 
-{{< caption-legacy "uploads/2011/08/082211_1348_FixSearchBo4.png" "Search Box on a page" >}}
-{{< caption-legacy "uploads/2011/08/082211_1348_FixSearchBo5.png" "Suggestions are displayed on top of the search box" >}}
+{{< caption-new "/uploads/2011/08/082211_1348_FixSearchBo4.png" "Search Box on a page" >}}
+{{< caption-new "/uploads/2011/08/082211_1348_FixSearchBo5.png" "Suggestions are displayed on top of the search box" >}}
 
 ### Solution
 
 The following CSS code solves the layout problem.
 
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 .srch-AutoCompContainer {
     top: 34px;
 }
@@ -78,10 +78,10 @@ The following CSS code solves the layout problem.
 .srch-AutoCompList {
     min-width: 218px !important;
 }
-{{< / highlight >}}
+```
 
 
-{{< caption-legacy "uploads/2011/08/082211_1348_FixSearchBo6.png" "Search Suggestions fixed on a page" >}}
+{{< caption-new "/uploads/2011/08/082211_1348_FixSearchBo6.png" "Search Suggestions fixed on a page" >}}
 
 ## Changes
 

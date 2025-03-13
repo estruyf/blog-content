@@ -30,9 +30,9 @@ In your item display template you will need to following two properties: **SPWeb
 
 > **Note**: here is a post about how you can get the web URL via a managed property on your on-premises environment: [Retrieve the web URL for a search result via a managed property](https://www.eliostruyf.com/retrieve-the-web-url-for-a-search-result-via-a-managed-property/).
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:ManagedPropertyMapping msdt:dt="string">'SPWebURL','ListID','Link URL'{Link URL}:'Path','Line 1'{Line 1}:'Title','Line 2'{Line 2}:'','FileExtension','SecondaryFileExtension'</mso:ManagedPropertyMapping>
-{{< / highlight >}}
+```
 
 Once you have the web URL and list ID it is only a matter of creating a correct REST URL to retrieve the list / library title via a REST call. The REST URL looks like this:
 
@@ -40,9 +40,9 @@ Once you have the web URL and list ID it is only a matter of creating a correct 
 
 So what you need is to do an Ajax call to that REST endpoint and once you retrieved the information write it back to an element on the page. In the HTML code I added a SPAN element with a class called **listname**. That element will be used to add the list / library name to it.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <strong>List / Library name:</strong> <span class="listname"></span>
-{{< / highlight >}}
+```
 
 Now you need to do some coding. So for each item you will need to retrieve the list name, but retrieving it for each search result would be a bit overkill. For example: if you have 50 items that are retrieved, you would do 50 calls to the rest endpoint. But if your items are only coming from five different lists or libraries you invoked it 45 times too much.
 
@@ -52,17 +52,17 @@ So to optimize the process I included a list object in my code. All the differen
 
 Let me explain this again, but this time I do it via some screenshots to make things clear:
 
-{{< caption-legacy "uploads/2015/01/011615_1224_Retrievingt1.png" "Loaded elements and REST call" >}}
+{{< caption-new "/uploads/2015/01/011615_1224_Retrievingt1.png" "Loaded elements and REST call" >}}
 
 Here is a screenshot of what happens the first time I load my page. The display initiates a call to the REST endpoint to retrieve the library title. In this example only one library needs to be called, so only one call will be performed instead of five calls because my code checks if it is already initiated.
 
 In the HTML code you will find the following classes on the SPAN elements:
 
-{{< caption-legacy "uploads/2015/01/011615_1224_Retrievingt2.png" "Listname element with list ID as class name" >}}
+{{< caption-new "/uploads/2015/01/011615_1224_Retrievingt2.png" "Listname element with list ID as class name" >}}
 
 When you go to the next page and back to the previous, the following HTML code is in place:
 
-{{< caption-legacy "uploads/2015/01/011615_1224_Retrievingt3.png" "List name can be retrieved from object in memory, no need to do an Ajax call" >}}
+{{< caption-new "/uploads/2015/01/011615_1224_Retrievingt3.png" "List name can be retrieved from object in memory, no need to do an Ajax call" >}}
 
 Now the element does not contain the list ID as class name. This is because it was not necessary to do an Ajax call, the list title is retrieved from the list information object.
 
@@ -74,7 +74,7 @@ Here is the code that does all the magic:
 
 The final result looks like this:
 
-{{< caption-legacy "uploads/2015/01/011615_1224_Retrievingt4.png" "Elements with corresponding library name" >}}
+{{< caption-new "/uploads/2015/01/011615_1224_Retrievingt4.png" "Elements with corresponding library name" >}}
 
 ## Download
 

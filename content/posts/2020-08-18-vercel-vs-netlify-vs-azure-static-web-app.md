@@ -49,7 +49,7 @@ The builds itself are very fast and allow you test out your site before you put 
 
 Check out their pricing plans: [Netlify Pricing Plans](https://www.netlify.com/pricing/).
 
-{{< caption "/2020/08/netlify.png" "Netlify"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABISURBVDXBMQ6AIAxA0d/WheIBjDPewPuPBhPPYRxcwTBpHHhPWmuvmmGqdCJCd1wn91MZtryzpETwwOgRUaGUipkS3Vmnmd8H5FAP55Hng94AAAAASUVORK5CYII=" "991" >}}
+{{< caption-new "/uploads/2020/08/netlify.png" "Netlify"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABISURBVDXBMQ6AIAxA0d/WheIBjDPewPuPBhPPYRxcwTBpHHhPWmuvmmGqdCJCd1wn91MZtryzpETwwOgRUaGUipkS3Vmnmd8H5FAP55Hng94AAAAASUVORK5CYII=" "991" >}}
 
 ### Pro
 
@@ -83,7 +83,7 @@ So I thought, why not give it a try. From my phone, I managed to put the site on
 
 All I had to do was link my GitHub project to Vercel. Tell Vercel which build commands it has to run and done.
 
-{{< caption "/2020/08/vercel.png" "Vercel"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAYAAABGbhwYAAAAAklEQVR4AewaftIAAAElSURBVDXBwW7aQBCA4X92xwvGLdBEShqqPkykvv+hl+bYhioXlILBxl4bz1Q+5PtkHEcPITBMRooBc+fYZe5XS2aTO26GiggOTIAhuIDGiIvwIUhAL+cLU+4ZgV4VJJK7Mz9fftFervz+u+fr7hs6mZFvA0bA3SjLkrfXP7wfDvxrWlIQqjKiIoLFxEID4tBdO94vDeuHJ6r7ieNhT6EB3WzWrAEXYd90fF8teH7+QUqJOo98Toqboe7O8XwihoBfT7z2zpdbyW3oSNUnTu6st3dozpnzsUZESEXB0A3YJvGw2zHLOSMxomGRWKxKgkPf91RVhapS1zVFURBjZKaK8PT4iCCICB/cnZmIYGbokDNN0zALIWBmbLdbRIS2bRERlssl/wHWGI26btvkVwAAAABJRU5ErkJggg==" "510" >}}
+{{< caption-new "/uploads/2020/08/vercel.png" "Vercel"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAYAAABGbhwYAAAAAklEQVR4AewaftIAAAElSURBVDXBwW7aQBCA4X92xwvGLdBEShqqPkykvv+hl+bYhioXlILBxl4bz1Q+5PtkHEcPITBMRooBc+fYZe5XS2aTO26GiggOTIAhuIDGiIvwIUhAL+cLU+4ZgV4VJJK7Mz9fftFervz+u+fr7hs6mZFvA0bA3SjLkrfXP7wfDvxrWlIQqjKiIoLFxEID4tBdO94vDeuHJ6r7ieNhT6EB3WzWrAEXYd90fF8teH7+QUqJOo98Toqboe7O8XwihoBfT7z2zpdbyW3oSNUnTu6st3dozpnzsUZESEXB0A3YJvGw2zHLOSMxomGRWKxKgkPf91RVhapS1zVFURBjZKaK8PT4iCCICB/cnZmIYGbokDNN0zALIWBmbLdbRIS2bRERlssl/wHWGI26btvkVwAAAABJRU5ErkJggg==" "510" >}}
 
 ### Pro
 
@@ -125,7 +125,7 @@ In the free plan, you could only use the HTTP triggered Azure Function. With the
 
 These changes makes Azure Static Web Apps a strong competitor against Vercel and Netlify.
 
-{{< caption "/2020/08/azure-static-web-app.png" "Azure Static Web App"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABNSURBVE3BWQrDMBBEwdcjSzLG2/3vZwK5w6iNPgKp0vP5+tg6ta9MvVUkYZthGAYBcV87x3mCRCkFSUy2yUyGjYElczCtrfIvImgR/LwAKRho1f8SagAAAABJRU5ErkJggg==" "1399" >}}
+{{< caption-new "/uploads/2020/08/azure-static-web-app.png" "Azure Static Web App"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABNSURBVE3BWQrDMBBEwdcjSzLG2/3vZwK5w6iNPgKp0vP5+tg6ta9MvVUkYZthGAYBcV87x3mCRCkFSUy2yUyGjYElczCtrfIvImgR/LwAKRho1f8SagAAAABJRU5ErkJggg==" "1399" >}}
 
 ### What I like
 

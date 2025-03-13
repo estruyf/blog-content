@@ -35,15 +35,15 @@ The `activeWebviewPanelId` value is set to the `viewType` you set when creating 
 
 If you only have one webview, it is easy to accomplish. Before, you had to set a context value to track if the webview was active or not. All you needed to do was set your context key when the webview got created and unset it when closed or navigated to another view/tab.
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 commands.executeCommand(`setContext`, `webview.active`, true);
-{{< / highlight >}}
+```
 
 When using multiple webviews, you had to ensure not to unsettle the context key when navigating from one to another.
 
 With the availability of the new `activeWebviewPanelId` context key, all you need to do is use it in the **when clause** command you want to enable/disable.
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "contributes": {
     ...
@@ -58,7 +58,7 @@ With the availability of the new `activeWebviewPanelId` context key, all you nee
     }
   }
 }
-{{< / highlight >}}
+```
 
 Here is how it will look in the extension:
 

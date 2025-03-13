@@ -44,7 +44,7 @@ The hub site check can be implemented in the **setTimeout** function as that one
 
 Working on multi-lingual environments, it is important that your solutions render with the correct language. Luckily, this is mostly handled by the framework itself, but there is an issue. When navigating from a site with which is configured to use another language than the previous one (and when only that language is enabled). It causes your application customizer to render in the wrong language (even the default SharePoint components).
 
-{{< caption-legacy "uploads/2019/06/58173514-dceff800-7c9b-11e9-9ca1-e0e3e8897277.gif" "MUI navigation" >}}
+{{< caption-new "/uploads/2019/06/58173514-dceff800-7c9b-11e9-9ca1-e0e3e8897277.gif" "MUI navigation" >}}
 
 > **Info**: I created an issue for this, so that the SharePoint - [https://github.com/SharePoint/sp-dev-docs/issues/4012](https://github.com/SharePoint/sp-dev-docs/issues/4012)
 

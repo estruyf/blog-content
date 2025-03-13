@@ -25,11 +25,11 @@ A standard Search Center in SharePoint 2013 doesn't show the duplicated results 
 2.  Or you could change the web part property **TrimDuplicates** in the webparts file, and set this value to false.
 The first result only shows a duplicates link when items have corresponding duplicates:
 
-{{< caption-legacy "uploads/2013/12/121913_1951_ViewDuplica1.png" "Default View Duplicates" >}}
+{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica1.png" "Default View Duplicates" >}}
 
 When you click on the link, you retrieve the set of results with the duplicate items:
 
-{{< caption-legacy "uploads/2013/12/121913_1951_ViewDuplica2.png" "Duplicates Result Set" >}}
+{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica2.png" "Duplicates Result Set" >}}
 
 The second approach is most properly the way you want the result set to behave, because you retrieve all the results including the duplicates. The downside of this approach is that you have less flexibility. Or it's on, or it's off, you can't easily switch (or you need to create an additional page).
 
@@ -39,7 +39,7 @@ What I wanted to achieve is that you could quickly set if you want to show or hi
 
 The code for this looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <label for="duplicates">Show duplicates</label>
 <input id="duplicates" type="checkbox" name="duplicates" value="duplicates">
 
@@ -60,23 +60,23 @@ if (typeof Srch.U.fillKeywordQuery !== 'undefined') {
     };
 }
 </script>
-{{< / highlight >}}
+```
 
 This code can be added in a Script Editor web part. I placed this above my Search Box:
 
-{{< caption-legacy "uploads/2013/12/121913_1951_ViewDuplica3.png" "Script Editor" >}}
+{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica3.png" "Script Editor" >}}
 
 ## Result
 
 The result looks like this:
 
-{{< caption-legacy "uploads/2013/12/121913_1951_ViewDuplica4.png" "Result set without duplicates" >}}
+{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica4.png" "Result set without duplicates" >}}
 
-{{< caption-legacy "uploads/2013/12/121913_1951_ViewDuplica5.png" "Result set with duplicates" >}}
+{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica5.png" "Result set with duplicates" >}}
 
 > **Note**: if you always want to show the duplicates, you only need to keep the **dp.set_trimDuplicates(false)** line and the **originalFillKeywordQuery(query, dp)** call to the original function.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Show duplicated results
 if (typeof Srch.U.fillKeywordQuery !== 'undefined') {
   var originalFillKeywordQuery = Srch.U.fillKeywordQuery;
@@ -85,6 +85,6 @@ if (typeof Srch.U.fillKeywordQuery !== 'undefined') {
       originalFillKeywordQuery(query, dp);
   };
 }
-{{< / highlight >}}
+```
 
 > **PS**: as this will be my last blog post of the year, I wish you all a merry Christmas & happy new year.

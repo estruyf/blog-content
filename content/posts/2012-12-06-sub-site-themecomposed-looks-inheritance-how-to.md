@@ -25,7 +25,7 @@ Let me first start with the differences between the 2010 and 2013 theme engine.
 
 In 2010 when you uploaded a PowerPoint Theme file to the theme gallery (Site Settings > Themes), it was also available to use on all sub-sites.
 
-{{< caption-legacy "uploads/2012/12/theme1.png" "SharePoint 2010 Themes are inherited" >}}
+{{< caption-new "/uploads/2012/12/theme1.png" "SharePoint 2010 Themes are inherited" >}}
 
 In the new version of SharePoint there is a significant difference between the previous one. The 2013 one works with a composed looks list (more information can be found [here](https://www.eliostruyf.com/themes-and-composed-looks-in-sharepoint-2013/)). When you create your own Composed Look Items, these items are not inherited along the sub-sites. That means that you will need to re-create them on the sub-sites if you want to be able to use them.
 
@@ -38,11 +38,11 @@ Theme inheritance is very simple if you are working with publishing sites or sit
 
 In SharePoint 2010 you needed to go to the Site Theme page (Site Settings > Site Theme) to set the inheritance.
 
-{{< caption-legacy "uploads/2012/12/theme2.png" "SharePoint 2010 Theme Inheritance" >}}
+{{< caption-new "/uploads/2012/12/theme2.png" "SharePoint 2010 Theme Inheritance" >}}
 
 In SharePoint 2013 this functionality is moved to the master page settings page (Site Settings > Master Page) under the Theme section of that page.
 
-{{< caption-legacy "uploads/2012/12/theme3.png" "SharePoint 2013 Theme Inheritance" >}}
+{{< caption-new "/uploads/2012/12/theme3.png" "SharePoint 2013 Theme Inheritance" >}}
 
 ## Theme Inheritance - Non-Publishing Sites
 
@@ -53,7 +53,7 @@ I created a C# version and a PowerShell version.
 ### C\#
 
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 var url = "http://your-site";
 using (var site = new SPSite(url))
 {
@@ -73,12 +73,12 @@ using (var site = new SPSite(url))
   Console.WriteLine("Done...");
   Console.Read();
 }
-{{< / highlight >}}
+```
 
 
 ### PowerShell
 
-{{< highlight batch "linenos=table,noclasses=false" >}}
+```batch
 $url = "http://your-site"
 $site = Get-SPSite -Identity $url
 Write-Host "RootWeb Theme: " site.RootWeb.ThemedCssFolderUrl
@@ -94,7 +94,7 @@ foreach ($web in $site.AllWebs) {
 }
 
 $site.Dispose();
-{{< / highlight >}}
+```
 
 
 My approach would be to create a SharePoint solution with a Feature Receiver (on the activated event) and a Web Event Receiver (for the WebProvisioned event).

@@ -33,7 +33,7 @@ These days when you create a page, it redirects you to the following page on the
 
 Due to this change, there is no navigation event-triggered anymore when creating a new page. Which means that your application customizer will think it is still on the previous page.
 
-{{< caption "/2019/09/new-page-event-without.gif" "No navigation event triggers when creation a new page" >}}
+{{< caption-new "/uploads/2019/09/new-page-event-without.gif" "No navigation event triggers when creation a new page" >}}
 
 As you can see in the animated GIF, the navigation event isn't getting triggered when a new page gets created. Depending on the logic of your application customizer, you might want to know when it's on new page creation or do something after the page has been created.
 
@@ -65,7 +65,7 @@ Once the page shows the read/view mode, the page will be fully reloaded. The rea
 
 Once this code has been added in your application customizer, you will see the following behaviour:
 
-{{< caption "/2019/09/new-page-event-with-check.gif" "Capturing navigation events when creation a new page" >}}
+{{< caption-new "/uploads/2019/09/new-page-event-with-check.gif" "Capturing navigation events when creation a new page" >}}
 
 The full code with the previous checks in place looks like this:
 

@@ -45,15 +45,15 @@ Another common thing which you might want to achieve is to show or hide actions 
 
 Here is the result output of this code. First, you do not see any of the command actions:
 
-{{< caption-legacy "uploads/2017/07/070217_1332_Thingstokno1.png" "Custom actions are not shown" >}}
+{{< caption-new "/uploads/2017/07/070217_1332_Thingstokno1.png" "Custom actions are not shown" >}}
 
 Once you selected an item, both will be visible:
 
-{{< caption-legacy "uploads/2017/07/070217_1332_Thingstokno2.png" "Actions become available when one item is selected" >}}
+{{< caption-new "/uploads/2017/07/070217_1332_Thingstokno2.png" "Actions become available when one item is selected" >}}
 
 Once you select one more item, only the second one will be displayed:
 
-{{< caption-legacy "uploads/2017/07/070217_1332_Thingstokno3.png" "Only the multi-select action will be shown when multiple items are selected" >}}
+{{< caption-new "/uploads/2017/07/070217_1332_Thingstokno3.png" "Only the multi-select action will be shown when multiple items are selected" >}}
 
 ## Retrieve the selected items information when action is clicked
 
@@ -63,7 +63,7 @@ Here is some sample code:
 
 {{< gist estruyf 99b177cbdfd53237beb37649719dca78 >}}
 
-{{< caption-legacy "uploads/2017/07/070217_1332_Thingstokno4.png" "Retrieve the selected item column information" >}}
+{{< caption-new "/uploads/2017/07/070217_1332_Thingstokno4.png" "Retrieve the selected item column information" >}}
 
 ## Updates
 

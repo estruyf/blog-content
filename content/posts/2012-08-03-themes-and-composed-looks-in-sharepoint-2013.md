@@ -37,7 +37,7 @@ These two types are stored in XML format, and they have their own file extension
 Here is an example of a Color Palette file:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <s:colorPalette isInverted="false" previewSlot1="BackgroundOverlay" previewSlot2="BodyText" previewSlot3="AccentText" xmlns:s="http://schemas.microsoft.com/sharepoint/">
   <s:color name="BodyText" value="444444" />
@@ -50,13 +50,13 @@ Here is an example of a Color Palette file:
   <s:color name="AccentText" value="0072C6" />
   ...
 </s:colorPalette>
-{{< / highlight >}}
+```
 
 
 Here is an example of a Font Scheme file:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <s:fontScheme name="Xylos" previewSlot1="title" previewSlot2="body" xmlns:s="http://schemas.microsoft.com/sharepoint/">
   <s:fontSlots>
@@ -97,7 +97,7 @@ Here is an example of a Font Scheme file:
   </s:fontSlot>
   </s:fontSlots>
 </s:fontScheme>
-{{< / highlight >}}
+```
 
 
 As you can see, themes are not the same anymore as in SharePoint 2010 were you could activate them. In SharePoint 2013 they created something new called the **Composed Looks**, which is a representation of a composed "theme".
@@ -116,7 +116,7 @@ Creating a new composed look can be done under **Site Settings** -> **Composed l
 *   **Display Order**: this will be used to arrange your composed looks ordering.
 For example:
 
-{{< caption-legacy "uploads/2012/08/080312_1451_ThemesandCo1.png" "Example of a composed look" >}}
+{{< caption-new "/uploads/2012/08/080312_1451_ThemesandCo1.png" "Example of a composed look" >}}
 
 With this new approach, you have a lot more flexibility. You can create multiple composed looks for your company that each use a different master page, color palette, background, or font palette.
 

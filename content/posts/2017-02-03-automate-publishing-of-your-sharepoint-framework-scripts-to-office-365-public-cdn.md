@@ -65,18 +65,18 @@ When you want to built-in this functionality into your SharePoint Framework proj
 
 **Default gulpfile.js contents**
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 'use strict';
 
 const gulp = require('gulp');
 const build = require('@microsoft/sp-build-web');
 
 build.initialize(gulp);
-{{< / highlight >}}
+```
 
 **Gulpfile.js contents when using the _gulp-spsync-creds_ plugin**
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 'use strict';
 
 const gulp = require('gulp');
@@ -102,11 +102,11 @@ build.task('upload-to-sharepoint', {
 });
 
 build.initialize(gulp);
-{{< / highlight >}}
+```
 
 **Gulpfile.js contents when using the _gulp-spsync_ plugin**
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 'use strict';
 
 const gulp = require('gulp');
@@ -132,12 +132,12 @@ build.task('upload-to-sharepoint', {
 });
 
 build.initialize(gulp);
-{{< / highlight >}}
+```
 
 
 > **Info**: you are of course free to give the task another name. Currently the task name is: upload-to-sharepoint.
 
-{{< caption-legacy "uploads/2017/02/020317_0748_Automatepub1.png" "Check the new task in the gulp tasks overview" >}}
+{{< caption-new "/uploads/2017/02/020317_0748_Automatepub1.png" "Check the new task in the gulp tasks overview" >}}
 
 *   Update the username, password, site URL and libraryPath settings.
 
@@ -146,18 +146,18 @@ build.initialize(gulp);
 *   Run `gulp bundle --ship` to generate the production scripts. These scripts get created in the "**./temp/deploy**" folder.
 *   Once the production bundle scripts have been generated. Run the upload to SharePoint task as follows: `gulp upload-to-sharepoint --ship`
 
-{{< caption-legacy "uploads/2017/02/020317_0748_Automatepub2.png" "Upload to SharePoint task output" >}}
+{{< caption-new "/uploads/2017/02/020317_0748_Automatepub2.png" "Upload to SharePoint task output" >}}
 
 *   When the command finishes, you can go check out the document library. The document library should now contain the JavaScript files.
 
-{{< caption-legacy "uploads/2017/02/020317_0748_Automatepub3.png" "Files uploaded to the SharePoint library" >}}
+{{< caption-new "/uploads/2017/02/020317_0748_Automatepub3.png" "Files uploaded to the SharePoint library" >}}
 
 *   Run the package solution command to create the app package to deploy it onto your environment: `gulp package-solution --ship`
 *   Upload the ***.spapp** package file (underneath the "**./sharepoint/solution**" folder) to your catalog and you are good to go to start using your web parts from the Office 365 CDN.
 
-{{< caption-legacy "uploads/2017/02/020317_0748_Automatepub4.png" "SPFx web part loaded from the CDN" >}}
+{{< caption-new "/uploads/2017/02/020317_0748_Automatepub4.png" "SPFx web part loaded from the CDN" >}}
 
-{{< caption-legacy "uploads/2017/02/020317_0748_Automatepub5.png" "Retrieved JS file in Chrome" >}}
+{{< caption-new "/uploads/2017/02/020317_0748_Automatepub5.png" "Retrieved JS file in Chrome" >}}
 
 ## Steps after previous configuration steps
 

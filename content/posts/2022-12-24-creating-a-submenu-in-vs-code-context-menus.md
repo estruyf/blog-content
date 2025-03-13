@@ -27,7 +27,7 @@ Creating a submenu starts with the `package.json` file (extension manifest) at t
 
 Add a `submenu` property to the `contributes` section:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   ...
   "contributes": {
@@ -39,11 +39,11 @@ Add a `submenu` property to the `contributes` section:
     ]
   }
 }
-{{< / highlight >}}
+```
 
 Once you have added the `submenu`, you can now register the submenu in the context menu:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   ...
   "contributes": {
@@ -57,11 +57,11 @@ Once you have added the `submenu`, you can now register the submenu in the conte
     }
   }
 }
-{{< / highlight >}}
+```
 
 The only thing left to do is to add the commands to the submenu:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   ...
   "contributes": {
@@ -74,11 +74,11 @@ The only thing left to do is to add the commands to the submenu:
     ]
   }
 }
-{{< / highlight >}}
+```
 
 The whole example looks as follows:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   ...
   "contributes": {
@@ -103,6 +103,6 @@ The whole example looks as follows:
     ]
   }
 }
-{{< / highlight >}}
+```
 
 I hope this article helped you to create a submenu in your Visual Studio Code context menus. If you have any questions, feel free to leave a comment below.

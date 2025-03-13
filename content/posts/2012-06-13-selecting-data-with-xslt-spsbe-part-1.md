@@ -32,17 +32,17 @@ The first demo that I gave was about selecting data with XSLT. The best way to s
 
 Open your site in SharePoint Designer and create a new web part page.
 
-{{< caption-legacy "uploads/2012/05/051812_0628_SelectingDa1.png" "Create Web Part Page" >}}
+{{< caption-new "/uploads/2012/05/051812_0628_SelectingDa1.png" "Create Web Part Page" >}}
 
 Give your page a meaningful name:
 
-{{< caption-legacy "uploads/2012/05/051812_0628_SelectingDa2.png" "Web Part Page Title" >}}
+{{< caption-new "/uploads/2012/05/051812_0628_SelectingDa2.png" "Web Part Page Title" >}}
 
 ### Step 2
 
 Click inside the **PlaceHolderMain (Custom)** and on the **Insert** ribbon, click **Data View **-> **Empty Data View**.
 
-{{< caption-legacy "uploads/2012/05/051812_0628_SelectingDa3.png" "Data View Web Part" >}}
+{{< caption-new "/uploads/2012/05/051812_0628_SelectingDa3.png" "Data View Web Part" >}}
 
 The reason why I always choose for an empty data view web part, is because you can choose for yourself which data you want to show. Otherwise the data view web part will show the default view.
 
@@ -50,12 +50,12 @@ The reason why I always choose for an empty data view web part, is because you c
 
 When you added an empty data view web part, click on the **Click here to select a data source** link.
 
-{{< caption-legacy "uploads/2012/05/051812_0628_SelectingDa4.png" "Select a data source" >}}
+{{< caption-new "/uploads/2012/05/051812_0628_SelectingDa4.png" "Select a data source" >}}
 
 Select your task list in the **Data Sources Picker** screen and click **OK**.**
 **
 
-{{< caption-legacy "uploads/2012/05/051812_0628_SelectingDa5.png" "Select the list to be used as data source" >}}
+{{< caption-new "/uploads/2012/05/051812_0628_SelectingDa5.png" "Select the list to be used as data source" >}}
 
 ### Step 4
 
@@ -63,15 +63,15 @@ When you selected the data source, it will be visible at the right side under **
 
 Select the **ID** and **Title** field.
 
-{{< caption-legacy "uploads/2012/05/051812_0628_SelectingDa6.png" "Select fields" >}}
+{{< caption-new "/uploads/2012/05/051812_0628_SelectingDa6.png" "Select fields" >}}
 
 Click **Insert Selected Fields as ... **-> **Multiple Item View**.
 
-{{< caption-legacy "uploads/2012/05/051812_0628_SelectingDa7.png" "Insert as Multiple Item View" >}}
+{{< caption-new "/uploads/2012/05/051812_0628_SelectingDa7.png" "Insert as Multiple Item View" >}}
 
 Your columns should now be visible in the Data View Web Part.
 
-{{< caption-legacy "uploads/2012/05/051812_0628_SelectingDa8.png" "Selected Columns" >}}
+{{< caption-new "/uploads/2012/05/051812_0628_SelectingDa8.png" "Selected Columns" >}}
 
 Right now SharePoint Designer generated the XSLT stylesheet for you, but you can also add columns yourself.
 
@@ -79,7 +79,7 @@ Right now SharePoint Designer generated the XSLT stylesheet for you, but you can
 
 Create a new table cell at the right side.
 
-{{< caption-legacy "uploads/2012/05/051812_0628_SelectingDa9.png" "Insert Cell at the Right Side" >}}
+{{< caption-new "/uploads/2012/05/051812_0628_SelectingDa9.png" "Insert Cell at the Right Side" >}}
 
 Click inside the new table cell, and click at the bottom on **Code**. This will bring you to the code line of the selected cell.
 
@@ -91,7 +91,7 @@ Remove the **<xsl:text xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/Dat
 
 Write **<xsl:value-of select="** and you will see that SharePoint Designer automatically gives you a list of the available columns in the data source.
 
-{{< caption-legacy "uploads/2012/05/051812_0628_SelectingDa10.png" "Available Columns" >}}
+{{< caption-new "/uploads/2012/05/051812_0628_SelectingDa10.png" "Available Columns" >}}
 
 Select **@Priority** and close the element with "/>".
 
@@ -100,7 +100,7 @@ Select **@Priority** and close the element with "/>".
 
 This will have the following result:
 
-{{< caption-legacy "uploads/2012/05/051812_0628_SelectingDa11.png" "Priority Column Values" >}}
+{{< caption-new "/uploads/2012/05/051812_0628_SelectingDa11.png" "Priority Column Values" >}}
 
 ### Step 8
 
@@ -114,11 +114,11 @@ In the **XPath Expression Builder** start typing the following: **substring-afte
 
 The result is shown at the bottom:
 
-{{< caption-legacy "uploads/2012/05/051812_0628_SelectingDa12.png" "Expression Builder Result Values" >}}
+{{< caption-new "/uploads/2012/05/051812_0628_SelectingDa12.png" "Expression Builder Result Values" >}}
 
 Click **OK** and save your page. This will give you the following end result.
 
-{{< caption-legacy "uploads/2012/05/051812_0628_SelectingDa13.png" "Result" >}}
+{{< caption-new "/uploads/2012/05/051812_0628_SelectingDa13.png" "Result" >}}
 
 ## Part 2
 

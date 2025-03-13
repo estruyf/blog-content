@@ -35,7 +35,7 @@ In my demo I used this to change the background color or the table row based on 
 *   Completed: Green;
 *   Deferred: Red;
 *   In Progress: Gray.
-{{< caption-legacy "uploads/2012/05/051812_0651_UsingXSLTSt1.png" "End Result" >}}
+{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt1.png" "End Result" >}}
 
 The best way to start with XSLT statements is with creating a new list view and adding conditional formatting to it.
 
@@ -47,7 +47,7 @@ Open your site in SharePoint Designer and go to **List and Libraries** and click
 
 On the **Views** section click the **New** button, and give your list view a meaningful name.
 
-{{< caption-legacy "uploads/2012/05/051812_0651_UsingXSLTSt2.png" "Create a New List View" >}}
+{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt2.png" "Create a New List View" >}}
 
 Click **OK**, and open the newly created view.
 
@@ -55,19 +55,19 @@ Click **OK**, and open the newly created view.
 
 Select the whole row, do a right-click, and click on **Conditional Formatting**.
 
-{{< caption-legacy "uploads/2012/05/051812_0651_UsingXSLTSt3.png" "Conditional Formatting" >}}
+{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt3.png" "Conditional Formatting" >}}
 
 At the right side the **Conditional Formatting** panel will open. Click on **Create** -> **Apply formatting**.
 
-{{< caption-legacy "uploads/2012/05/051812_0651_UsingXSLTSt4.png" "Apply formatting" >}}
+{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt4.png" "Apply formatting" >}}
 
 Set your condition as follows:
 
-{{< caption-legacy "uploads/2012/05/051812_0651_UsingXSLTSt5.png" "Set the Condition" >}}
+{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt5.png" "Set the Condition" >}}
 
 Click **Set Style**, and in the background section add #FFCFD1 as the **background-color** value.
 
-{{< caption-legacy "uploads/2012/05/051812_0651_UsingXSLTSt6.png" "Apply Custom Styling" >}}
+{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt6.png" "Apply Custom Styling" >}}
 
 Click **Ok**.
 
@@ -76,18 +76,18 @@ Click **Ok**.
 If you switch to the code view and do a search for **Deferred** you should see the following code:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:if test="normalize-space($thisNode/@Status) = 'Deferred'" ddwrt:cf_explicit="1">background-color: #FFCFD1;</xsl:if>
-{{< / highlight >}}
+```
 
 
 To add the other background colors to the rows, you can add the following lines to the code:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:if test="@Status = 'Completed'">background-color: #DFFFDF;</xsl:if>
 <xsl:if test="@Status = 'In Progress'">background-color: #DFDFDF;</xsl:if>
-{{< / highlight >}}
+```
 
 
 ### Step 4
@@ -99,7 +99,7 @@ In the choose statement you can express multiple tests to your column.
 The IF statements can be easily changed to a CHOOSE statement. It will look like this:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:choose>
   <xsl:when test="@Status='Deferred'">
     background-color: #FFCFD1;
@@ -114,7 +114,7 @@ The IF statements can be easily changed to a CHOOSE statement. It will look like
     background-color: transparent;
   </xsl:otherwise>
 </xsl:choose>
-{{< / highlight >}}
+```
 
 
 Notice the **otherwise** element, this will be used when none of your tests met the condition.

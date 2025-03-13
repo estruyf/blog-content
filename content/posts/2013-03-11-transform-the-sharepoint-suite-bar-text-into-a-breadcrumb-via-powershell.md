@@ -44,7 +44,7 @@ The **SuiteBarBrandingElementHtml** element only allows html code to be added, b
 
 First of all we need some JavaScript code:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 (function () {
   if(document.addEventListener ) {
       document.addEventListener('DOMContentLoaded', function() {
@@ -114,7 +114,7 @@ First of all we need some JavaScript code:
 
   function onCreationFail() {}
 })();
-{{< / highlight >}}
+```
 
 As you can see it is not that difficult. The event listener is very important if MDS (Minimal Download Strategy) is enabled on your site, so this may not be removed (when it is removed, your breadcrumb will not render).
 
@@ -122,7 +122,7 @@ As you can see it is not that difficult. The event listener is very important if
 
 Applying this breadcrumb to your sites will be done via the web application **SuiteBarBrandingElementHtml** property. To do this you could use the following script:
 
-{{< highlight powershell "linenos=table,noclasses=false" >}}
+```powershell
 $spInstalled = Get-PSSnapin ' Select-String Sharepoint
 if (!$spInstalled)
 {
@@ -208,18 +208,18 @@ $markup = @"
 
 $app.SuiteBarBrandingElementHtml = $markup
 $app.Update();
-{{< / highlight >}}
+```
 
 
 ## Result
 
-{{< caption-legacy "uploads/2013/03/subfolder.png" "Show LIbrary and Folders" >}}
+{{< caption-new "/uploads/2013/03/subfolder.png" "Show LIbrary and Folders" >}}
 
-{{< caption-legacy "uploads/2013/03/031113_1118_Transformth1.png" "Breadcrumb Sub-Sub-Site" >}}
+{{< caption-new "/uploads/2013/03/031113_1118_Transformth1.png" "Breadcrumb Sub-Sub-Site" >}}
 
-{{< caption-legacy "uploads/2013/03/031113_1118_Transformth2.png" "Breadcrumb Sub-Site" >}}
+{{< caption-new "/uploads/2013/03/031113_1118_Transformth2.png" "Breadcrumb Sub-Site" >}}
 
-{{< caption-legacy "uploads/2013/03/031113_1118_Transformth3.png" "Breadcrumb Top Site" >}}
+{{< caption-new "/uploads/2013/03/031113_1118_Transformth3.png" "Breadcrumb Top Site" >}}
 
 ## Download
 
@@ -229,7 +229,7 @@ Download the script here: [Suite-Bar-Breadcrumb.ps1 - update](/uploads/2013/08/S
 
 If you want to revert to the default SharePoint text, it only requires to run the following script.
 
-{{< highlight powershell "linenos=table,noclasses=false" >}}
+```powershell
 $spInstalled = Get-PSSnapin ' Select-String Sharepoint
 if (!$spInstalled)
 {
@@ -240,7 +240,7 @@ $app = Get-SPWebApplication -Identity http://your-web-application-url
 $markup = "<div class='ms-core-brandingText'>SharePoint</div>"
 $app.SuiteBarBrandingElementHtml = $markup
 $app.Update();
-{{< / highlight >}}
+```
 
 
 ## Updates
@@ -251,14 +251,14 @@ This solution won't work on SharePoint Foundation farms, on these farms the **So
 
 The element file looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Control Id="SuiteBarBrandingDelegate" Sequence="100"
         ControlClass="Microsoft.SharePoint.WebControls.SuiteBarBrandingElement"
         ControlAssembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
 </Elements>
-{{< / highlight >}}
+```
 
 
 ###  22/08/2013

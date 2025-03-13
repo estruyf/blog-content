@@ -26,7 +26,7 @@ Luckily, there is a way to check how your extension is running. You can check th
 
 You can retrieve the mode your extension is started with via the `context.extensionMode` property.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 import { ExtensionContext, ExtensionMode } from 'vscode';
 
 export function activate(context: ExtensionContext) {
@@ -39,7 +39,7 @@ export function activate(context: ExtensionContext) {
     // Running in production mode
   }
 }
-{{< / highlight >}}
+```
 
 There are three modes:
 

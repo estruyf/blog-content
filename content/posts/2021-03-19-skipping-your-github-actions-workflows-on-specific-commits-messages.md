@@ -16,7 +16,7 @@ preview: "/social/6d4acc8b-3596-4ad0-b952-709fd0f92fe8.png"
 
 In the `doctor` project, I try to do as much as possible in one GitHub Actions workflow. Having all logic in one workflow makes it more convenient but comes with a couple of complexities. Like, do you want to run each action for every type of commit/PR/...?
 
-{{< caption "/2021/03/skip2.png" "The whole GitHub Actions workflow"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABTSURBVDXBQQ7CQAwEwfbYREqekAsH/v89YFcbTw6IqjifL88xUQRrLcB0N7b5CaoKZSZgtu2BBPtxIAVVSWYgwRxvyhi3IYIIMb4frrXovviTxA04DiBl6x9G0wAAAABJRU5ErkJggg==" "1899" >}}
+{{< caption-new "/uploads/2021/03/skip2.png" "The whole GitHub Actions workflow"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABTSURBVDXBQQ7CQAwEwfbYREqekAsH/v89YFcbTw6IqjifL88xUQRrLcB0N7b5CaoKZSZgtu2BBPtxIAVVSWYgwRxvyhi3IYIIMb4frrXovviTxA04DiBl6x9G0wAAAABJRU5ErkJggg==" "1899" >}}
 
 ## Why I want to skip actions/jobs in my workflow
 
@@ -32,17 +32,17 @@ If you want to skip your job or actions when the commit contains a specific text
 
 In the case of my `#docs` commit messages, the expression looks as follows:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 jobs:
   build:
     name: Build ${{ matrix.os }} - Bash
     runs-on: ${{ matrix.os }}
     if: ${{ !contains(github.event.head_commit.message, '#docs') }}
-{{< / highlight >}}
+```
 
 {{< blockquote type="Important" text="Good thing to note is that the `contains` function is not case sensitive for the value to check." >}}
 
-{{< caption "/2021/03/skip1.png" "Skipping all GitHub Actions when commit message contains `#docs`"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABVSURBVE3BQQ7CMAxFwedvV5HKCbrohvtfr9CQxGaFxIwd57PmnMiMMQaVSVbxLyKQu0MV2xZIsD923I1wwwVS8elv4nVdrLVorSGJ3m/WnGQufiTxBYY9IlQJe80IAAAAAElFTkSuQmCC" "1903" >}}
+{{< caption-new "/uploads/2021/03/skip1.png" "Skipping all GitHub Actions when commit message contains `#docs`"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABVSURBVE3BQQ7CMAxFwedvV5HKCbrohvtfr9CQxGaFxIwd57PmnMiMMQaVSVbxLyKQu0MV2xZIsD923I1wwwVS8elv4nVdrLVorSGJ3m/WnGQufiTxBYY9IlQJe80IAAAAAElFTkSuQmCC" "1903" >}}
 
 {{< blockquote type="Info" text="You can read more about the GitHub Actions expression syntax at [context and expression syntax for GitHub Actions](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#about-contexts-and-expressions)." >}}
 

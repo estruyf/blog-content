@@ -27,7 +27,7 @@ For these templates I made use of jQuery UI to get the accordion styling on the 
 
 The result of the accordion template looks like this:
 
-{{< caption-legacy "uploads/2015/01/012215_0849_jQueryUItab1.png" "Accordion display template" >}}
+{{< caption-new "/uploads/2015/01/012215_0849_jQueryUItab1.png" "Accordion display template" >}}
 
 > **Note**: styling is up to you, I included the Smoothness CSS file from jQuery UI in this template.
 
@@ -37,6 +37,6 @@ The template can be downloaded from the SPCSR GitHub repository: [jQuery UI Acco
 
 The result of the template with tabs looks like this:
 
-{{< caption-legacy "uploads/2015/01/012215_0849_jQueryUItab2.png" "Tabbed display template" >}}
+{{< caption-new "/uploads/2015/01/012215_0849_jQueryUItab2.png" "Tabbed display template" >}}
 
 The template can be downloaded from the SPCSR GitHub repository: [jQuery UI Tabs Display Templates](https://github.com/SPCSR/DisplayTemplates/tree/master/Search%20Display%20Templates/jQuery%20UI%20Tabs%20Templates%20%28CSWP%29 "jQuery UI Tabs Display Templates").

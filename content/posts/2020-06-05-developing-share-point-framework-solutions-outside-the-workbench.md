@@ -36,14 +36,14 @@ How it works is very simple:
 - Edit the page and add the web part to the page
 - Start changing the code
 
-{{< caption "/2020/06/debug1.png" "Web part served locally running on SharePoint"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAACCSURBVE3BsQ3CMBBA0X/nmBg7QtSkYQCKdGwBk1CxEWIKpAzBCDQRQoQUVIATIwqkvCf3tk3OORBliBFEQUBFMKqcry+aZ4/WdU3wnjB1FEWgu13IbcbEZjiXs17O2KzmaFVVjJ0OR7pHh7WWsaxclPRD4m+721MEz/sTMcbwkxJ8AdQ0IegsthC/AAAAAElFTkSuQmCC" "923" >}}
+{{< caption-new "/uploads/2020/06/debug1.png" "Web part served locally running on SharePoint"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAACCSURBVE3BsQ3CMBBA0X/nmBg7QtSkYQCKdGwBk1CxEWIKpAzBCDQRQoQUVIATIwqkvCf3tk3OORBliBFEQUBFMKqcry+aZ4/WdU3wnjB1FEWgu13IbcbEZjiXs17O2KzmaFVVjJ0OR7pHh7WWsaxclPRD4m+721MEz/sTMcbwkxJ8AdQ0IegsthC/AAAAAElFTkSuQmCC" "923" >}}
 
 > **Info**: To make the last steps easier, I created a bookmarklet that will automatically add the query string parameters for you. You can find this related article here: [SharePoint Framework bookmarklet tool for quick and easy debugging
 ](https://www.eliostruyf.com/sharepoint-framework-bookmarklet-tool-for-quick-and-easy-debugging/).
 
 When you stop the local server and refresh your page, your web part will not show up anymore.
 
-{{< caption "/2020/06/debug2.png" "Web part will not be loaded once local server is stopped"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABDSURBVI3Buw2AMAxF0WsLB3kO1mD/liUoqFG6RDw+JVXOsVqrzAyJhwAREfTekWA7Gvt5MWUm7s5fKTOvdeHjDHIG3XQQEv7omT8HAAAAAElFTkSuQmCC" "922" >}}
+{{< caption-new "/uploads/2020/06/debug2.png" "Web part will not be loaded once local server is stopped"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABDSURBVI3Buw2AMAxF0WsLB3kO1mD/liUoqFG6RDw+JVXOsVqrzAyJhwAREfTekWA7Gvt5MWUm7s5fKTOvdeHjDHIG3XQQEv7omT8HAAAAAElFTkSuQmCC" "922" >}}
 
 <blockquote class="important">
 <p><strong>Important</strong>: Of course, this is the expected behavior. Once you start your server again, it will all start working, but only when you use the query string parameters. When you do not provide them, nothing will get loaded.</p>
@@ -65,15 +65,15 @@ The steps for this approach go as follows:
 
 You tell the SPFx build to run a debug build for the current project. The output of this will be a web part manifest file with reference to your local server: `https://localhost:4321/`, instead of your CDN or client-side assets token.
 
-{{< caption "/2020/06/debug3.png" "Localhost reference in web part manifest"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAADNSURBVCXBS07DQBBF0VufdkwkkLIThszY/3aAENPuV4UQ59jr23tfrzeWTdwdFtQSWqJHYmYc9w9yCRaFcWHOReagR0OImgdm4JF4hNMNkogIVEI6MWDsVyw2zuNOdjceSVVh5jjN7jBGoiXKjf3lRkYVu07UzaONBr5KBE1L/HncP0l58G2BhxMN1WA50PmDGzSwPT2T0qLWSRu4B11F868bqqF0kpEbuV0wC6qLTEMqwmEeB24QuZFWi9akJDw3ak58GGZFXIQeE63FL7j9f5GI2YH3AAAAAElFTkSuQmCC" "1206" >}}
+{{< caption-new "/uploads/2020/06/debug3.png" "Localhost reference in web part manifest"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAADNSURBVCXBS07DQBBF0VufdkwkkLIThszY/3aAENPuV4UQ59jr23tfrzeWTdwdFtQSWqJHYmYc9w9yCRaFcWHOReagR0OImgdm4JF4hNMNkogIVEI6MWDsVyw2zuNOdjceSVVh5jjN7jBGoiXKjf3lRkYVu07UzaONBr5KBE1L/HncP0l58G2BhxMN1WA50PmDGzSwPT2T0qLWSRu4B11F868bqqF0kpEbuV0wC6qLTEMqwmEeB24QuZFWi9akJDw3ak58GGZFXIQeE63FL7j9f5GI2YH3AAAAAElFTkSuQmCC" "1206" >}}
 
 When you created this package, you can upload and deploy it to your application catalog. You will even see the localhost reference on the deployment dialog.
 
-{{< caption "/2020/06/debug4.png" "Localhost reference shown on the deployment dialog"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAACfSURBVHXBQUrEQBBA0V9d1W0gyGQVMKCrucrgfVy48FKeyENMFiGdSaqcLAKD4HsyTVPc4e6ICIe2bbltgQgkAhvHkXVdcXdUld0wDOw+vn94ORW+Lm/YHTlnIoKUEmbG4fUZTmVjnmcspYS703Udqsqjz/czB6tbon0yaq2ICKpKKYW/LHnlel3YqSpN05BzRkR4ZH3f859lWYgIIoJftI845a0pmTAAAAAASUVORK5CYII=" "614" >}}
+{{< caption-new "/uploads/2020/06/debug4.png" "Localhost reference shown on the deployment dialog"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAACfSURBVHXBQUrEQBBA0V9d1W0gyGQVMKCrucrgfVy48FKeyENMFiGdSaqcLAKD4HsyTVPc4e6ICIe2bbltgQgkAhvHkXVdcXdUld0wDOw+vn94ORW+Lm/YHTlnIoKUEmbG4fUZTmVjnmcspYS703Udqsqjz/czB6tbon0yaq2ICKpKKYW/LHnlel3YqSpN05BzRkR4ZH3f859lWYgIIoJftI845a0pmTAAAAAASUVORK5CYII=" "614" >}}
 
 Now you can go to your page and add the web part. When the local server is not running, it will result in an error. 
 
-{{< caption "/2020/06/debug5.png" "Web part shows an error when the local server is not running"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABSSURBVD3BMQ6AIBBFwbcE0HgRD8LpvYOtrR2FivsNJjpjtVa5hCReEkPOXO1CgmU7WfebaGlELmIwxhT4pDzQlRkKEJuL5hAM6uGY8TODKQW6BycxIie6+/cwAAAAAElFTkSuQmCC" "919" >}}
+{{< caption-new "/uploads/2020/06/debug5.png" "Web part shows an error when the local server is not running"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABSSURBVD3BMQ6AIBBFwbcE0HgRD8LpvYOtrR2FivsNJjpjtVa5hCReEkPOXO1CgmU7WfebaGlELmIwxhT4pDzQlRkKEJuL5hAM6uGY8TODKQW6BycxIie6+/cwAAAAAElFTkSuQmCC" "919" >}}
 
 Be sure always to run the server first before you add the web part to the page. That way, you save/publish the page. Once you saved the page, it does not matter anymore.
 

@@ -23,7 +23,7 @@ When you want to create a SharePoint 2010 sandbox branding solution, you will no
 *   Approve the file.
 As an example I deployed a master page using a sandbox solution. When the solution is deployed and the feature is activated, the master page file has the following properties.
 
-{{< caption-legacy "uploads/2011/11/112711_1815_DeployingBr1.png" "Master Page in draft" >}}
+{{< caption-new "/uploads/2011/11/112711_1815_DeployingBr1.png" "Master Page in draft" >}}
 
 As you can see the file is **not checked in** and the approval status is still **draft**.
 
@@ -36,7 +36,7 @@ Create a feature event receiver for the feature that deploys the branding files 
 The following code retrieves the file, checks it in, and approves it.
 
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 public override void FeatureActivated(SPFeatureReceiverProperties properties)
 {
   using (SPSite site = (SPSite)properties.Feature.Parent)
@@ -58,9 +58,9 @@ public override void FeatureActivated(SPFeatureReceiverProperties properties)
     file.Update();
   }
 }
-{{< / highlight >}}
+```
 
 
 When the new solution is deployed, you will see that the file is now a **major version** and **approved**.
 
-{{< caption-legacy "uploads/2011/11/112711_1815_DeployingBr2.png" "Approved Master Page" >}}
+{{< caption-new "/uploads/2011/11/112711_1815_DeployingBr2.png" "Approved Master Page" >}}

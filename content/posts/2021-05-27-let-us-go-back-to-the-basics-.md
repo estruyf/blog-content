@@ -26,7 +26,7 @@ In most cases, when I encounter such an issue, I try to find a way to solve it. 
 
 Although pen and paper give me control, I also lose control of it. I cannot simply link to conversations or documents. That is why I began to think about what would work better for me. An application that can give me structure and allows me to store what matters most to me. If I can also share it with my team, that would be a bonus. 
 
-{{< caption "/2021/05/squarl-logo.png" "Squarl came to life"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAACKSURBVHXBIU7DUAAA0PfLF0swQ8Kqce3c+s3MHMmOwKkwC7IXwGBBzNQsS0gwhGRJETMLgiEIhMDfCfbeSZOaurosF3+D0ePH+/bLEfE6FbfVKKTl6//bzfekRcQpepwjookXQ6vnbU4/vzYoMcMLxjhDjTbeP+Xuqg7zu7UHfGahC/IUPXYosD8A8QQmO24iumsAAAAASUVORK5CYII=" "440" >}}
+{{< caption-new "/uploads/2021/05/squarl-logo.png" "Squarl came to life"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAACKSURBVHXBIU7DUAAA0PfLF0swQ8Kqce3c+s3MHMmOwKkwC7IXwGBBzNQsS0gwhGRJETMLgiEIhMDfCfbeSZOaurosF3+D0ePH+/bLEfE6FbfVKKTl6//bzfekRcQpepwjookXQ6vnbU4/vzYoMcMLxjhDjTbeP+Xuqg7zu7UHfGahC/IUPXYosD8A8QQmO24iumsAAAAASUVORK5CYII=" "440" >}}
 
 This idea drove me to create the initial version of Squarl. When I showed the first proof of concept to a couple of friends, I was amazed and happy about their reactions. It made me realize I was not solving only my problem, but an issue a lot of people experience today. The initial feedback motivated me to work late nights and weekends to get something ready to show to a broader audience. 
 
@@ -38,7 +38,7 @@ I am very excited about the evolution of Squarl and I am eager to find out where
 
 Squarl is a product that will allow you to regain control of the information overload you might experience in Microsoft Teams. It provides you the context you need to find your information quickly. What makes Squarl so powerful is that you will be able to use it anywhere you go. Squarl tries to be as close as possible to or in the application you are using, which allows you to keep your focus and be more productive. 
 
-{{< caption "/2021/05/squarl1.png" "My Squarl dashboard"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACnSURBVIXBzYpBcRjA4d/Li8XxOWWnZmHKRkLsZeN23MVcgZ07OWurSYmmzkLpZGMhpA518vdSlJU8j4x+h+Nmu9slPnB1F1SVKDqRy3oggpkx+1/+abU1+On0+o3zdgfrDavqF2W5ULGI+bGEl87wnZjulTsRIVXMQ7FATcDMcCLUPTAz1i5Gk0nlxTDjwQzj6RqTUFU+SmVR3/cnYRgenXO8EwTB4gZBOz7waqcQsQAAAABJRU5ErkJggg==" "2032" >}} 
+{{< caption-new "/uploads/2021/05/squarl1.png" "My Squarl dashboard"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAACnSURBVIXBzYpBcRjA4d/Li8XxOWWnZmHKRkLsZeN23MVcgZ07OWurSYmmzkLpZGMhpA518vdSlJU8j4x+h+Nmu9slPnB1F1SVKDqRy3oggpkx+1/+abU1+On0+o3zdgfrDavqF2W5ULGI+bGEl87wnZjulTsRIVXMQ7FATcDMcCLUPTAz1i5Gk0nlxTDjwQzj6RqTUFU+SmVR3/cnYRgenXO8EwTB4gZBOz7waqcQsQAAAABJRU5ErkJggg==" "2032" >}} 
 
 Do you want to know more about Squarl? Get in touch with me [elio@squarl.com](mailto:elio@squarl.com) or read more on [squarl.com](https://squarl.com). 
 

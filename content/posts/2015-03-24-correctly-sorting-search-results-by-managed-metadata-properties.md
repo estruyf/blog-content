@@ -26,12 +26,12 @@ For this article I make use of a simple list with items that are each mapped wit
 
 On a page I added a Content by Search Web Part (can also be a search result web part if you want) to show only the items of that specific list with test items. This is the output without sorting:
 
-{{< caption-legacy "uploads/2015/03/032415_1246_Correctlyso1.png" "Search results without sorting defined" >}}
+{{< caption-new "/uploads/2015/03/032415_1246_Correctlyso1.png" "Search results without sorting defined" >}}
 
 
 Now when I configure sorting for the results on my **owstaxIdTestTerm** managed property (which is the auto-created managed property linked to the managed metadata column), I retrieve the following search result order:
 
-{{< caption-legacy "uploads/2015/03/032415_1246_Correctlyso2.png" "Search results with sorting defined" >}}
+{{< caption-new "/uploads/2015/03/032415_1246_Correctlyso2.png" "Search results with sorting defined" >}}
 
 
 You can see that the result sorting seem to be in a sort of disorder, but for SharePoint your results are correctly sorted.
@@ -46,7 +46,7 @@ Auto-created managed properties for managed metadata columns are by default mapp
 
 Here is a screenshot of the same result set with the internal values:
 
-{{< caption-legacy "uploads/2015/03/032415_1246_Correctlyso3.png" "Managed properties term values" >}}
+{{< caption-new "/uploads/2015/03/032415_1246_Correctlyso3.png" "Managed properties term values" >}}
 
 
 Highlighted in red is the term ID on which the sorting of the results is performed. If you check these term ID values, you can see that the results are correctly sorted. To solve this problem you need to configure the managed property to sort on the display value of the term which requires some extra configuration on your environment.
@@ -57,19 +57,19 @@ The solution is to make use of another crawled property which does not contain t
 
 Go to your search schema page and click on the **Crawled Properties** link. On the Crawled Properties page search for the crawled properties linked to your managed metadata column.
 
-{{< caption-legacy "uploads/2015/03/032415_1246_Correctlyso4.png" "Crawled properties" >}}
+{{< caption-new "/uploads/2015/03/032415_1246_Correctlyso4.png" "Crawled properties" >}}
 
 
 You should get two crawled property results, a crawled property with and without a taxId in its name. The one without the taxId only contains the term its display value. This crawled property will not yet be mapped to a managed.
 
 Click on the **Managed Properties** link and do a search for: **RefinableString**. Click on one of the RefinableString properties that is not yet in use, and map this managed property with the **ows_TestTerm** (ows_ColumnName) crawled property.
 
-{{< caption-legacy "uploads/2015/03/032415_1246_Correctlyso5.png" "RefinableString - Managed Property" >}}
+{{< caption-new "/uploads/2015/03/032415_1246_Correctlyso5.png" "RefinableString - Managed Property" >}}
 
 
 Wait for a full crawl or if you are working on-premises you could start one. Once the crawl is complete you can configure the new managed property on the sorting tab in the query builder. Now the results should be in the correct visual order:
 
-{{< caption-legacy "uploads/2015/03/032415_1246_Correctlyso6.png" "Correctly sorted results" >}}
+{{< caption-new "/uploads/2015/03/032415_1246_Correctlyso6.png" "Correctly sorted results" >}}
 
 
 Now the results are sorted based on the display value of the managed property term instead of the term ID.

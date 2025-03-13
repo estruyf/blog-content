@@ -30,13 +30,13 @@ The example I'm going to explain in this post is how you could render the Comple
 
 The first thing you need to do is creating a new Task list with a view where the "% Complete" field is shown.
 
-{{< caption-legacy "uploads/2012/11/jslink1.png" "Task List View" >}}
+{{< caption-new "/uploads/2012/11/jslink1.png" "Task List View" >}}
 
 When you created this list, create a new JavaScript file and call is something like: Task_Complete_Rendering.js
 
 Paste the following code to your JavaScript file.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 (function () {
   // Intialize the variables for overrides objects
   var overrideCtx = {};
@@ -53,13 +53,13 @@ Paste the following code to your JavaScript file.
   // Register the override of the field
   SPClientTemplates.TemplateManager.RegisterTemplateOverrides(overrideCtx);
 })();
-{{< / highlight >}}
+```
 
 > **Important**: I'm using `<#=ctx.CurrentItem.PercentComplete#>` to render the % Completed value inside my script.
 
 Save the file and upload it to the Master Page Gallery (Site Settings > <span style="color: #444444; font-family: Segoe UI; font-size: 10pt;">Master pages and page layouts</span>), fill in the required metadata field.
 
-{{< caption-legacy "uploads/2012/11/jslink2.png" "Upload the JavaScript file" >}}
+{{< caption-new "/uploads/2012/11/jslink2.png" "Upload the JavaScript file" >}}
 
 Now that the file is uploaded to your SharePoint environment, go back to your Task List View you created. Once you are on the page, put the page in edit mode and edit the web part.
 
@@ -67,11 +67,11 @@ In the web part properties under **Miscellaneous** you can find the new JS Link 
 
 You can also use the `~sitecollection` URL token, this one should be used when working with sub-sites.
 
-{{< caption-legacy "uploads/2012/11/jslink3.png" "Reference the JavaScript file in the JS Link property" >}}
+{{< caption-new "/uploads/2012/11/jslink3.png" "Reference the JavaScript file in the JS Link property" >}}
 
 Store the web part changes and save the page, now you are done. Just refresh the page and you should see the following result.
 
-{{< caption-legacy "uploads/2012/11/jslink4.png" "Task Progress Bar Result" >}}
+{{< caption-new "/uploads/2012/11/jslink4.png" "Task Progress Bar Result" >}}
 
 ## References
 

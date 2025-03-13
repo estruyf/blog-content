@@ -41,39 +41,39 @@ Download and install Fiddler to your computer.
 
 When you open Fiddler, you will get the following window.
 
-{{< caption-legacy "uploads/2011/11/111511_1703_UseFiddlerI1.png" "Fiddler" >}}
+{{< caption-new "/uploads/2011/11/111511_1703_UseFiddlerI1.png" "Fiddler" >}}
 
 Normally it will immediately start logging, so when you start SharePoint Designer and open a connection to your site, Fiddler will have logged all the traffic between SharePoint Designer and the site. If not, click **File <span style="font-family: Wingdings;">à</span> Capture Traffic**.
 
-{{< caption-legacy "uploads/2011/11/111511_1703_UseFiddlerI2.png" "Traffic between SPD and SP Site" >}}
+{{< caption-new "/uploads/2011/11/111511_1703_UseFiddlerI2.png" "Traffic between SPD and SP Site" >}}
 
 Now that Fiddler captures the traffic between SharePoint Designer and your SharePoint site, you can create a new page (if you already have one with a Data View Web Part on it, you can use it).
 
-{{< caption-legacy "uploads/2011/11/111511_1703_UseFiddlerI3.png" "Empty Data View" >}}
+{{< caption-new "/uploads/2011/11/111511_1703_UseFiddlerI3.png" "Empty Data View" >}}
 
 Insert an empty data view. You could also insert a list or library, but this will already have some custom styling. If you want to create your own, you should better start from an empty data view.
 
-{{< caption-legacy "uploads/2011/11/111511_1703_UseFiddlerI4.png" "Data Source" >}}
+{{< caption-new "/uploads/2011/11/111511_1703_UseFiddlerI4.png" "Data Source" >}}
 
 Click on **Click here to select a data source** and select the data source that you want to use. On the right side the **Data Source Detail** tab will open.
 
-{{< caption-legacy "uploads/2011/11/111511_1703_UseFiddlerI5.png" "Data Source Details" >}}
+{{< caption-new "/uploads/2011/11/111511_1703_UseFiddlerI5.png" "Data Source Details" >}}
 
 If you go back to Fiddler, new records should be available. When you are working with a Web Part page it will the following record.
 
-{{< caption-legacy "uploads/2011/11/111511_1703_UseFiddlerI6.png" "Data Source Request in Fiddler" >}}
+{{< caption-new "/uploads/2011/11/111511_1703_UseFiddlerI6.png" "Data Source Request in Fiddler" >}}
 
 If you do not know exactly which of the records is from the data source request, you could check the time and refresh the data source.
 
 Select the record, and in the **Inspector **tab, select **Raw** output.
 
-{{< caption-legacy "uploads/2011/11/111511_1703_UseFiddlerI7.png" "Get raw output" >}}
+{{< caption-new "/uploads/2011/11/111511_1703_UseFiddlerI7.png" "Get raw output" >}}
 
 Normally you will get a notification that the message is encoded. This message could easily be decoded by clicking on the notification message: **Response is encoded and may need to be decoded before inspection. Click here to transform.
 **
 
 After you clicked on the notification message, you will retrieve the decoded SOAP message (XML output).
 
-{{< caption-legacy "uploads/2011/11/111511_1703_UseFiddlerI8.png" "SOAP Message" >}}
+{{< caption-new "/uploads/2011/11/111511_1703_UseFiddlerI8.png" "SOAP Message" >}}
 
 Fiddler can be used for a lot more than retrieving SOAP messages, but for me this is very useful when I doing some XSLT styling.

@@ -16,7 +16,7 @@ comments: true
 
 Since a couple of months I have encountered the **User cannot be found **error a few times when accessing the **List Settings** or** Library Settings**.
 
-{{< caption-legacy "uploads/2011/08/081611_1634_UserCannotb1.png" "User cannot be found" >}}
+{{< caption-new "/uploads/2011/08/081611_1634_UserCannotb1.png" "User cannot be found" >}}
 
 In my case I encountered this error in the following scenarios:
 
@@ -35,13 +35,13 @@ To republish the workflows you can follow the next steps:
 
 1.  Open your site in SharePoint Designer 2010;
 2.  Click on the **Workflows** link from the **Site Objects** menu;
-{{< caption-legacy "uploads/2011/08/081611_1634_UserCannotb2.png" "Existing Workflows" >}}
+{{< caption-new "/uploads/2011/08/081611_1634_UserCannotb2.png" "Existing Workflows" >}}
 
 3.  Click on the workflow name, this will open your workflow;
 4.  Click on the **Publish** button;
-{{< caption-legacy "uploads/2011/08/081611_1634_UserCannotb3.png" "Publish the workflow button" >}}
+{{< caption-new "/uploads/2011/08/081611_1634_UserCannotb3.png" "Publish the workflow button" >}}
 
 5.  Do step 3 and 4 for all the workflows.
-{{< caption-legacy "uploads/2011/08/081611_1634_UserCannotb4.png" "Republished workflows" >}}
+{{< caption-new "/uploads/2011/08/081611_1634_UserCannotb4.png" "Republished workflows" >}}
 
 Go back to your **List** or **Library Settings** and the error should be gone.

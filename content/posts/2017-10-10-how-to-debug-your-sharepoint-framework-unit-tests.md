@@ -33,19 +33,19 @@ Is it that easy? More or less. I indeed said that there was some more plumbing i
 
 When you run the command, the test task will start, but from the moment it starts up the **Karma** process it will wait.
 
-{{< caption-legacy "uploads/2017/10/101017_1516_Howtodebugy1.png" "Waiting for your browser" >}}
+{{< caption-new "/uploads/2017/10/101017_1516_Howtodebugy1.png" "Waiting for your browser" >}}
 
 The reason it waits is to allow you to connect to the test process via the following URL: http://localhost:9876. When you open your browser to that location, you see the following page:
 
-{{< caption-legacy "uploads/2017/10/101017_1516_Howtodebugy2.png" "Karma running on localhost" >}}
+{{< caption-new "/uploads/2017/10/101017_1516_Howtodebugy2.png" "Karma running on localhost" >}}
 
 By clicking on the **debug** button (or by directly loading the following page: http://localhost:9876/debug.html), you can start your debugging session in Chrome. Check the console for the test output.
 
-{{< caption-legacy "uploads/2017/10/101017_1516_Howtodebugy3.png" "Console test output" >}}
+{{< caption-new "/uploads/2017/10/101017_1516_Howtodebugy3.png" "Console test output" >}}
 
 > **Tip**: Probably the easiest way to start is by using the **debugger** statement in your tests. That way you do not have to look through the code to set your breakpoints.
 
-{{< caption-legacy "uploads/2017/10/101017_1516_Howtodebugy4.png" "Debugging in your browser developer tools" >}}
+{{< caption-new "/uploads/2017/10/101017_1516_Howtodebugy4.png" "Debugging in your browser developer tools" >}}
 
 ## Debugging unit-tests in Visual Studio Code
 
@@ -53,18 +53,18 @@ Now that you know how to start a debugging session, it is time to show you how t
 
 Adding the following configuration to your **launch.json** file in Visual Studio Code will allow you to debug your unit tests in VSCode instead of Chrome.
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "name": "Debug unit test (simple)",
   "type": "chrome",
   "request": "launch",
   "url": "http://localhost:9876/debug.html"
 }
-{{< / highlight >}}
+```
 
 You start your debugging session again by running: `gulp test --debug`. Once started, you can press F5 to start the VSCode debugging session.
 
-{{< caption-legacy "uploads/2017/10/101017_1516_Howtodebugy5.png" "Debugging your tests in VSCode" >}}
+{{< caption-new "/uploads/2017/10/101017_1516_Howtodebugy5.png" "Debugging your tests in VSCode" >}}
 
 This was not that, hard, right? This is indeed the quick way to debug your unit-tests. The next step will be to extend the unit-test process to get a better experience. The reason why is if you take a good look at the above two screenshots, you will see a **tests.js** file which is being loaded. This file is a bundle of all your tests created by Webpack. Depending on the number of files and code, you might experience that this process of debugging is very slow. A better way is to debug the individual unit-test files, but it requires a couple of things.
 
@@ -77,16 +77,16 @@ If you followed the article mentioned above, you should now have a custom **karm
 
 Config binding:
 
-{{< highlight TypeScript "linenos=table,noclasses=false" >}}
+```TypeScript
 const karmaTask = build.karma;
 if (karmaTask) {
   karmaTask.taskConfig.configPath = './config/karma.config.js';
 }
-{{< / highlight >}}
+```
 
 The reason why we want to add a custom Karma config to add source maps into the generated **tests.js** bundle. In order to get this, add the following code to your **karma.config.js** file:
 
-{{< highlight TypeScript "linenos=table,noclasses=false" >}}
+```TypeScript
 "use strict";
 const existingKarmaConfig = require('@microsoft/sp-build-web/lib/karma/karma.config');
 const sourcemap = require('karma-sourcemap-loader');
@@ -106,19 +106,19 @@ module.exports = function (config) {
     console.log(config);
   }
 };
-{{< / highlight >}}
+```
 
 One more thing, in order to run the test task, you will have to install the **karma-sourcemap-loader** module to your project. You can do this by running: `npm install karma-sourcemap-loader --save-dev --save-exact`.
 
 Right now, when you run the unit tests again with the debug flag, you should see the following outcome in the Chrome developer tools:
 
-{{< caption-legacy "uploads/2017/10/101017_1516_Howtodebugy6.png" "Running your tests in the source file" >}}
+{{< caption-new "/uploads/2017/10/101017_1516_Howtodebugy6.png" "Running your tests in the source file" >}}
 
 Note that you are not debugging in the **tests.js** file anymore.
 
 The last step is to add a new configuration to the **launch.json** file in order to debug the test in VSCode.
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "name": "Debug unit test (advanced)",
   "type": "chrome",
@@ -127,11 +127,11 @@ The last step is to add a new configuration to the **launch.json** file in order
   "webRoot": "${workspaceRoot}",
   "sourceMaps": true
 }
-{{< / highlight >}}
+```
 
 Once this configuration has been added, run the gulp test command and press F5.
 
-{{< caption-legacy "uploads/2017/10/101017_1516_Howtodebugy7.png" "Debugging your tests in VSCode with source maps" >}}
+{{< caption-new "/uploads/2017/10/101017_1516_Howtodebugy7.png" "Debugging your tests in VSCode with source maps" >}}
 
 > **Info**: At the moment, I only got it working with the JS source maps, if you now or find a way for getting the TypeScript files, feel free to let me know.
 

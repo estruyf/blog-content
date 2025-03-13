@@ -37,7 +37,7 @@ Once everyone understood it, we also started commenting when we refactored these
 
 Another good reason from [Wassim Chegham](https://twitter.com/manekinekko/status/1365425869909549062).
 
-{{< caption "/2021/03/comments1.png" "Another valid reason to write comments"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAACzSURBVDXBPVaFMBCA0W8meQY9B1v2YmHpri0t3IGlhUtAeCHzIxTeK2+vL/n1/UNrDTNDVenHQe+djMRssO879f3jk2VZcHfWdSUiEBEyE1XlchwH1d1xd1przPOMiJCZbNuGuxMRTNNE5eSWMN3IUrDRuTxMz0QGRZXe71ROKUqbHhnm1PKEu5GZFFF8dASonEpR3BxVAalIuRFujONOZnKpnIYZv9uKiBAoYYMM55/Z4A+WqG9J6YRCpwAAAABJRU5ErkJggg==" "586" >}}
+{{< caption-new "/uploads/2021/03/comments1.png" "Another valid reason to write comments"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAACzSURBVDXBPVaFMBCA0W8meQY9B1v2YmHpri0t3IGlhUtAeCHzIxTeK2+vL/n1/UNrDTNDVenHQe+djMRssO879f3jk2VZcHfWdSUiEBEyE1XlchwH1d1xd1przPOMiJCZbNuGuxMRTNNE5eSWMN3IUrDRuTxMz0QGRZXe71ROKUqbHhnm1PKEu5GZFFF8dASonEpR3BxVAalIuRFujONOZnKpnIYZv9uKiBAoYYMM55/Z4A+WqG9J6YRCpwAAAABJRU5ErkJggg==" "586" >}}
 
 ## Comments != bad code
 
@@ -118,4 +118,4 @@ The next reason is to help others understand you. Suppose an employee takes over
 
 There is a solution for everything. Almost everything can be solved by code. If you are a person that does not like to see comments, I have created just the VSCode Extension for you. With the [Hide Comments](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-hide-comments) extension, you decide if you want to show or hide the comments for the project. 
 
-{{< caption "/2021/03/comments2.png" "VSCode Extension to hide comments"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAYAAABGbhwYAAAAAklEQVR4AewaftIAAAEGSURBVG3BsUpcQRiG4febf3Z1z1nGws7CRAlsEAtbEUvB69DC1kJIkaTTztI6lxX2DkJS7sLqOTs7fxjkgIjPo+Vy6aUUBn/+/sMs8uXwM2+F6XRKSomUEiklrr/95Ov5Be/F9XqNuzO4PDtltrdH3/cMJBH7vifnjCQkcXtzhbvTdR0hBEajEWZGLKXQti3uTiWJyt2pYoxIIkpitVpRSaIqpRBCIMZIKQUzI97+uOf3fM4rUXV9hxc4OT7i19MjVWwn27RNAxJeCs8vL2xvbbG/M+PT7gGD+PD9jhACZkYlCXdn0HUdZkbMOSMJM6Maj8d8JE4mExaLBTlnJLHZbGiahvf+AxkkW4ihxkeyAAAAAElFTkSuQmCC" "728" >}}
+{{< caption-new "/uploads/2021/03/comments2.png" "VSCode Extension to hide comments"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAYAAABGbhwYAAAAAklEQVR4AewaftIAAAEGSURBVG3BsUpcQRiG4febf3Z1z1nGws7CRAlsEAtbEUvB69DC1kJIkaTTztI6lxX2DkJS7sLqOTs7fxjkgIjPo+Vy6aUUBn/+/sMs8uXwM2+F6XRKSomUEiklrr/95Ov5Be/F9XqNuzO4PDtltrdH3/cMJBH7vifnjCQkcXtzhbvTdR0hBEajEWZGLKXQti3uTiWJyt2pYoxIIkpitVpRSaIqpRBCIMZIKQUzI97+uOf3fM4rUXV9hxc4OT7i19MjVWwn27RNAxJeCs8vL2xvbbG/M+PT7gGD+PD9jhACZkYlCXdn0HUdZkbMOSMJM6Maj8d8JE4mExaLBTlnJLHZbGiahvf+AxkkW4ihxkeyAAAAAElFTkSuQmCC" "728" >}}

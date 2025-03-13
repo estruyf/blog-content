@@ -23,7 +23,7 @@ Thanks to [Katrien De Graeve](http://blogs.msdn.com/b/katriend/) for giving me t
 But "easier" was not the case when I tried to implement it in SharePoint 2010. Several problems occurred, so I tried an alternative solution of adding the site pinning functionality to my SharePoint site. In this blog post I will give you a brief overview of the ie9ify with SharePoint 2010 problems, and explain my alternative solution.
 
 The end result will be:
-{{< caption-legacy "uploads/2011/04/041111_1604_PinningShar1.png" "IE9 Site Pinning with Custom Jump List" >}}
+{{< caption-new "/uploads/2011/04/041111_1604_PinningShar1.png" "IE9 Site Pinning with Custom Jump List" >}}
 
 ## Problems with ie9ify and SharePoint 2010
 
@@ -32,7 +32,7 @@ The first problem was the following JavaScript error: "Object doesn't support pr
 After this fix, the next problem occurred. The meta tags were not added on every page load. Maybe this has something to do with the JavaScript of SharePoint itself.
 
 Another problem was that only the navigation button color were working.
-{{< caption-legacy "uploads/2011/04/041111_1604_PinningShar2.png" "Navigation Buttons" >}}
+{{< caption-new "/uploads/2011/04/041111_1604_PinningShar2.png" "Navigation Buttons" >}}
 All the other functionality like adding links to the jump lists were not working.
 
 ## Alternative site pinning solution
@@ -42,7 +42,7 @@ Because of all these problems with of implementing ie9ify with SharePoint, I sta
 I started adding the meta tags with regular JavaScript, so that the code does not need to wait until the page is fully loaded.
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 AppendToHead("application-name", document.title.toString());
 AppendToHead("msapplication-tooltip", document.title.toString());
 AppendToHead("msapplication-starturl", "http://" + location.host);
@@ -55,7 +55,7 @@ function AppendToHead(name, content) {
   newMeta.content = content;
   headID.appendChild(newMeta);
 }
-{{< / highlight >}}
+```
 
 
 After some testing, the meta tags are added every time the page is loaded, and the site can be pinned to the taskbar.
@@ -67,15 +67,15 @@ The next step is to create a custom jump list with all the SharePoint lists that
 The first thing you need to do, is to check if the site is opened in pinning mode. This can be checked with the following statement:
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 if (window.external.msIsSiteMode()) { }
-{{< / highlight >}}
+```
 
 
 After that you need can start by creating your custom jump list. To add links to the jump list, I made use of jQuery to iterate over each list item anchor element in the quick launch.
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 $(function() {				
   //Clear jumplist
   window.external.msSiteModeClearJumplist();
@@ -95,7 +95,7 @@ $(function() {
   //Display jumplist
   window.external.msSiteModeShowJumplist();
 });
-{{< / highlight >}}
+```
 
 
 ## The code
@@ -103,7 +103,7 @@ $(function() {
 This is the full code block that can be added in the head section of the master page.
 
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js" type="text/javascript"></script>
 <script type="text/javascript">        
   //Check if site is pinned
@@ -144,12 +144,12 @@ This is the full code block that can be added in the head section of the master 
     headID.appendChild(newMeta);
   }
 </script>
-{{< / highlight >}}
+```
 
 
 ## End Result
 
-{{< caption-legacy "uploads/2011/04/041111_1604_PinningShar1.png" "IE9 Site Pinning with Custom Jump List" >}}
+{{< caption-new "/uploads/2011/04/041111_1604_PinningShar1.png" "IE9 Site Pinning with Custom Jump List" >}}
 The only thing that is not working is the taskbar icon. For some reason IE9 does not take the favicon, on a custom HTML sample page with the same favicon it works correctly. If you have any advice or a solution, feel free to add a comment.
 
 ## References
@@ -162,4 +162,4 @@ The only thing that is not working is the taskbar icon. For some reason IE9 does
 
 The site icon problem has something to do with the "msapplication-starturl" meta tag. If you specify a full URL or do not implement the meta tag, then the site icon works. 
 
-{{< caption-legacy "uploads/2011/04/SiteIcon.jpg" "Working Site Icon" >}}
+{{< caption-new "/uploads/2011/04/SiteIcon.jpg" "Working Site Icon" >}}

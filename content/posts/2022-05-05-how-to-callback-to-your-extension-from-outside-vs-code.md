@@ -22,7 +22,7 @@ In the case of the authentication provider, I use it to retrieve the token that 
 
 It is relatively simple to create your own URI handler. All you need is the following code:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
@@ -43,7 +43,7 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 export function deactivate() {}
-{{< / highlight >}}
+```
 
 {{< blockquote type="info" text="The logic in the **handleUri** is up to you/your extension." >}}
 

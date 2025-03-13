@@ -31,7 +31,7 @@ You could do it either by using the catalog item reuse web part or the content b
 
 The first step is to add a web part to your page layout with the value you want to render. I used the method I explained in this post: [Client side managed property value formatting for catalog item page layouts](https://www.eliostruyf.com/client-side-managed-property-value-formatting-catalog-item-page-layouts/) to specify custom display templates for the catalog item reuse web part.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <cc1:CatalogItemReuseWebPart 
   runat="server" 
   AlwaysRenderOnServer="False" 
@@ -42,13 +42,13 @@ The first step is to add a web part to your page layout with the value you want 
   RenderTemplateId="~sitecollection/_catalogs/masterpage/Display Templates/System/Control_CatalogDefault.js" 
   ItemTemplateId="~sitecollection/_catalogs/masterpage/tests/Item_Catalog_Email.js">
 </cc1:CatalogItemReuseWebPart>
-{{< / highlight >}}
+```
 
 As you can see, I specified a custom **item template** via the **ItemTemplateId** property to do my custom rendering for an email value.
 
 The code for this item display template looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 <head>
 <title>Catalog Email Item</title>
@@ -86,17 +86,17 @@ _#-->
   </div>
 </body>
 </html>
-{{< / highlight >}}
+```
 
 Nothing very special in this template, it will just retrieve the value and format it as an anchor tag. The most important part of this template it the **CrawlerXSLFile** property, this property defines which XSL template will be used for sever side rendering. This property can also be filled in the SharePoint UI.
 
 When editing the display template in the SharePoint UI, you'll find the **Crawler XSL File** property.
 
-{{< caption-legacy "uploads/2014/03/032414_1607_Definecusto1.png" "Crawler XSL File Property" >}}
+{{< caption-new "/uploads/2014/03/032414_1607_Definecusto1.png" "Crawler XSL File Property" >}}
 
 If this property is filled in, the XSL template can be created. The default XSL template can be found under "/_catalogs/masterpage/Server Style Sheets/ServerRenderTemplate.xsl". I made a copy of this file to my custom location, and started to strip everything out of this XSL file which I didn't need. This is how my XSL file content looks like:
 
-{{< highlight xsl "linenos=table,noclasses=false" >}}
+```xsl
 <xsl:stylesheet version='1.0' xmlns:xsl='http://www.w3.org/1999/XSL/Transform' xmlns:ddwrt='http://schemas.microsoft.com/WebParts/v2/DataView/runtime'>
   <xsl:template match='/'>
     <xsl:apply-templates />
@@ -124,11 +124,11 @@ If this property is filled in, the XSL template can be created. The default XSL 
     </xsl:for-each>
   </xsl:template>
 </xsl:stylesheet>
-{{< / highlight >}}
+```
 
 The last thing to do is to configure the web part to make sure that it renders the values server side instead of client side. The configuration for this is really simple, the only thing you need to change is the **AlwaysRenderOnServer** property to **True** and you are done.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <cc1:CatalogItemReuseWebPart 
   runat="server" 
   AlwaysRenderOnServer="True" 
@@ -139,17 +139,17 @@ The last thing to do is to configure the web part to make sure that it renders t
   RenderTemplateId="~sitecollection/_catalogs/masterpage/Display Templates/System/Control_CatalogDefault.js"
   ItemTemplateId="~sitecollection/_catalogs/masterpage/tests/Item_Catalog_Email.js">
 </cc1:CatalogItemReuseWebPart>
-{{< / highlight >}}
+```
 
 The end result looks like this:
 
-{{< caption-legacy "uploads/2014/03/032414_1607_Definecusto2.png" "Email server-side formatted" >}}
+{{< caption-new "/uploads/2014/03/032414_1607_Definecusto2.png" "Email server-side formatted" >}}
 
 ### The content by search web part way
 
 This is the code of how you could achieve this with a content by search web part:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <cc1:ContentBySearchWebPart 
   runat="server" 
   AlwaysRenderOnServer="True" 
@@ -162,6 +162,6 @@ This is the code of how you could achieve this with a content by search web part
   QueryGroupName="Default"
   RenderTemplateId="~sitecollection/_catalogs/masterpage/Display Templates/Content Web Parts/Control_List.js"
   ItemTemplateId="~sitecollection/_catalogs/masterpage/tests/Item_Catalog_Email.js" />
-{{< / highlight >}}
+```
 
 The biggest difference when using the content by search web part to achieve it is the **DataProviderJSON** property, this isn't needed if you are using the catalog item reuse web part, because it reuses the dataprovider.

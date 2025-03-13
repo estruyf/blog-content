@@ -34,14 +34,14 @@ If you use the `asExternalUri` method in your extension running on a codespace, 
 
 For the example, I use the following code:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 const extensionUrl = `${vscode.env.uriScheme}://eliostruyf.vscode-remoteuri-sample`;
 const extensionUrlParsed = vscode.Uri.parse(extensionUrl);
 const callbackUri = await vscode.env.asExternalUri(extensionUrlParsed);
 
 // Use the callbackUri to open a browser
 vscode.env.openExternal(callbackUri.toString(true));
-{{< / highlight >}}
+```
 
 This code generates me the following results:
 
@@ -67,12 +67,12 @@ To ensure the URI handler can get triggered, ensure these query string parameter
 
 The code for the URI handler is pretty simple. It look as follows:
 
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 vscode.window.registerUriHandler({
   handleUri(uri: vscode.Uri): vscode.ProviderResult<void> {
     vscode.window.showInformationMessage(`URI handler called: ${uri.toString()}`);
   }
 });
-{{< / highlight >}}
+```
 
 {{< blockquote type="info" text="In the documentation, they use a `uri.path === '/auth-complete'` statement, this is only required if you want to be aware the handler is triggered on a codespace." >}}

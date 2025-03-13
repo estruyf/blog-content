@@ -27,7 +27,7 @@ Depending on the functionality of your application customizer, you might require
 
 What I experienced a couple of days ago, was when I navigated from page to page, all of a sudden, my control rendered with old data. The reason this happened was due to an API call which initiated on the previous page and did not return a response. That meant that my React component got data too late, and overwrote its current state with old data.
 
-{{< caption "/2019/09/abort1.png" "Sample where first call response comes back after the second one"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABBSURBVB3BOQ6AMAxFwRf5izWC+98vDTV02DEKM+VqLXsP3INhXRbm/cCmDQlk/BTPzRtBz8TdOWtFEpaOFQMKwweYWBgBYDiJ2AAAAABJRU5ErkJggg==" "1181" >}}
+{{< caption-new "/uploads/2019/09/abort1.png" "Sample where first call response comes back after the second one"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABBSURBVB3BOQ6AMAxFwRf5izWC+98vDTV02DEKM+VqLXsP3INhXRbm/cCmDQlk/BTPzRtBz8TdOWtFEpaOFQMKwweYWBgBYDiJ2AAAAABJRU5ErkJggg==" "1181" >}}
 
 > **Info**: In the above screenshot I on purpose delayed the API calls. If you check the ID from the second call, you notice that the first call gets returned after the second one. As you cannot always control the API speeds, this is where it could go wrong, and can cause issues while navigating through your hub/sites/pages.
 
@@ -60,11 +60,11 @@ In my application customizer, I initiate a new abort controller instance wheneve
 
 Whenever you notice that the control rendered on the previous URL and needs to be re-rendered, you can then trigger the abort, initiate a new abort controller instance, and render your application customizer again.
 
-{{< caption "/2019/09/abort2.png" "Sample where one call got aborted"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABASURBVB3BgQ2AMAhFwcevItb9p1QHaNKCiXd2P2+NMTAz1koko/eTwztpO1fw29ydqkISmQtJRAQNsJpUNtTEB/4WFTEWji4gAAAAAElFTkSuQmCC" "1047" >}}
+{{< caption-new "/uploads/2019/09/abort2.png" "Sample where one call got aborted"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABASURBVB3BgQ2AMAhFwcevItb9p1QHaNKCiXd2P2+NMTAz1koko/eTwztpO1fw29ydqkISmQtJRAQNsJpUNtTEB/4WFTEWji4gAAAAAElFTkSuQmCC" "1047" >}}
 
 In the screenshot, you can see that only one call returns a response, the other one aborts when it is not required anymore. You can also verify this in your network tab by checking the call its status.
 
-{{< caption "/2019/09/abort4.png" "Canceled request statuses"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABwSURBVDXByw6CMABFwXP7gCINGlzp//+YbIxrS0IDtMZFZ/RalmqtRRJxHJFEs+XMeZ5chgEXu449fTHOEeYZGUNjJcqa6ELAHTJsvqfWSnp/MEaUUkDidp3wY+TPeQp1z1jnmZ4PJNEcOVPWhPo7P8VbJVtcRQyUAAAAAElFTkSuQmCC" "803" >}}
+{{< caption-new "/uploads/2019/09/abort4.png" "Canceled request statuses"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABwSURBVDXByw6CMABFwXP7gCINGlzp//+YbIxrS0IDtMZFZ/RalmqtRRJxHJFEs+XMeZ5chgEXu449fTHOEeYZGUNjJcqa6ELAHTJsvqfWSnp/MEaUUkDidp3wY+TPeQp1z1jnmZ4PJNEcOVPWhPo7P8VbJVtcRQyUAAAAAElFTkSuQmCC" "803" >}}
 
 <blockquote class="important">
 <p><strong>Important</strong>: This approach can also be used in other parts of your webparts/extensions. Like if you have tabs in your web part, you can cancel API calls whenever you go to another tab view.</p>

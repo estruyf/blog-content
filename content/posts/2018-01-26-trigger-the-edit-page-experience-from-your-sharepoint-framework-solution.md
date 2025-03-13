@@ -23,11 +23,11 @@ Nothing more to say about it, so here is the code:
 
 Here is an example of what you could expect:
 
-{{< caption-legacy "uploads/2018/01/Jan-26-2018-14-57-24.gif" "Trigger edit page" >}}
+{{< caption-new "/uploads/2018/01/Jan-26-2018-14-57-24.gif" "Trigger edit page" >}}
 
 When the page is checked out to someone else, you SharePoint lets you know who is editing it:
 
-{{< caption-legacy "uploads/2018/01/Jan-26-2018-14-58-18.gif" "Page is already checked out" >}}
+{{< caption-new "/uploads/2018/01/Jan-26-2018-14-58-18.gif" "Page is already checked out" >}}
 
 ## Other actions
 

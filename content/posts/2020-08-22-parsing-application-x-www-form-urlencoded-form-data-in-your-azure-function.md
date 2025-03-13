@@ -18,7 +18,7 @@ For a Mailchimp webhook, I had to parse the `application/x-www-form-urlencoded` 
 
 To make it easier next time, I wanted to share the code snippet with the rest of you. As you will notice, there isn't a lot of code required.
 
-{{< highlight TypeScript "linenos=table,noclasses=false" >}}
+```TypeScript
 import { AzureFunction, Context, HttpRequest } from "@azure/functions";
 import { parse, ParsedQs } from 'qs';
 
@@ -37,6 +37,6 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
 };
 
 export default httpTrigger;
-{{< / highlight >}}
+```
 
 This code snippet makes use of the [qs](https://www.npmjs.com/package/qs) (querystring) dependency. To install this dependency to your project, all you need to do is: `npm i qs -S -E`.

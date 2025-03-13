@@ -21,12 +21,12 @@ One of the handiest features that were added to a list or library is the in-plac
 
 As an example I created a contacts list with the following items:
 
-{{< caption-legacy "uploads/2015/03/033115_0852_Makingcolum1.png" "Default contact list with items" >}}
+{{< caption-new "/uploads/2015/03/033115_0852_Makingcolum1.png" "Default contact list with items" >}}
 
 
 If I do a search on for a specific company like **Contoso**. I should expect to retrieve all the contacts linked to Contoso, but instead, I am retrieving none.
 
-{{< caption-legacy "uploads/2015/03/033115_0852_Makingcolum2.png" "Search for contoso in the contacts list" >}}
+{{< caption-new "/uploads/2015/03/033115_0852_Makingcolum2.png" "Search for contoso in the contacts list" >}}
 
 
 > **Note**: The searchbox does the following search query to retrieve the items: "path:path-to-the-list AND your-query-text".
@@ -39,13 +39,13 @@ In order to be able to search for content inside a column, that column needs to 
 
 In this example, the **company** column needs to be checked to see if it is searchable. First, you need to find the corresponding managed property inside the search schema. For the company field, this is the** OrgNames** managed property. The OrgNames property is configured as follows:
 
-{{< caption-legacy "uploads/2015/03/033115_0852_Makingcolum3.png" "OrgNames managed property" >}}
+{{< caption-new "/uploads/2015/03/033115_0852_Makingcolum3.png" "OrgNames managed property" >}}
 
 As you can see in the above screenshot, the managed property is mapped to two **crawled properties**. In my situation, both these crawled properties are not configured to include its content in the full-text index:
 
-{{< caption-legacy "uploads/2015/03/Screenshot-2017-09-21-13.56.39-1.png" "OrganizationNames crawled property" >}}
+{{< caption-new "/uploads/2015/03/Screenshot-2017-09-21-13.56.39-1.png" "OrganizationNames crawled property" >}}
 
-{{< caption-legacy "uploads/2015/03/Screenshot-2017-09-21-13.54.30-1.png" "ows_Company crawled property" >}}
+{{< caption-new "/uploads/2015/03/Screenshot-2017-09-21-13.54.30-1.png" "ows_Company crawled property" >}}
 
 > **Info**: in this case only the ows_Company crawled property is important, as the other one is only used for people results.
 
@@ -53,7 +53,7 @@ As the managed property OrgNames is only configured as **queryable** and the lin
 
 > **Info**: Queryable means that you need to include the managed property name in order to search for the information you want. You could test this in your list by doing a query like this: **ManagedPropertyName:QueryText**. You can test this in the list by searching for **OrgNames:Contoso**.
 
-{{< caption-legacy "uploads/2015/03/033115_0852_Makingcolum4.png" "Search on Contoso with Managed Property name" >}}
+{{< caption-new "/uploads/2015/03/033115_0852_Makingcolum4.png" "Search on Contoso with Managed Property name" >}}
 
 This search query returns the items with the company set to Contoso. Of course, you cannot expect from your end users to always type the managed property name in front of the search query, so you best enable the managed property to be searchable.
 
@@ -63,22 +63,22 @@ This search query returns the items with the company set to Contoso. Of course, 
 
 If you are working in an on-premises environment, you can enable this on the managed property linked to your site column. You need to edit the managed property in order to get a **Searchable** checkbox (only available in the Search Service Application), enable this and store your change.
 
-{{< caption-legacy "uploads/2015/03/033115_0852_Makingcolum5.png" "Searchable checkbox" >}}
+{{< caption-new "/uploads/2015/03/033115_0852_Makingcolum5.png" "Searchable checkbox" >}}
 
 The managed property now has the following configuration:
 
-{{< caption-legacy "uploads/2015/03/033115_0852_Makingcolum6.png" "Configure OrgNames to be searchable" >}}
+{{< caption-new "/uploads/2015/03/033115_0852_Makingcolum6.png" "Configure OrgNames to be searchable" >}}
 
 > **Important**: when working with Office 365 you cannot enable the searchable checkbox directly in the corresponding managed property. In Office 365 you need to create a new managed property, link it with the crawled property of your column and make the managed property searchable.
 
-{{< caption-legacy "uploads/2015/03/033115_0852_Makingcolum7.png" "Custom managed property in Office 365" >}}
+{{< caption-new "/uploads/2015/03/033115_0852_Makingcolum7.png" "Custom managed property in Office 365" >}}
 
 Wait for a full crawl to happen or start one. Once it finished, you can go back to the list or library. Do your search query again without the managed property name. Right now you should retrieve the same items like in the previous query.
 
-{{< caption-legacy "uploads/2015/03/033115_0852_Makingcolum8.png" "Search for contoso after a full crawl" >}}
+{{< caption-new "/uploads/2015/03/033115_0852_Makingcolum8.png" "Search for contoso after a full crawl" >}}
 
 ## My managed property is not marked as searchable, and I am able to search on its contents
 
 This is possible when one of the crawled properties (in most cases you will have two ows_ and ows_q_) of the column is marked to be included in the full-text index.
 
-{{< caption-legacy "uploads/2015/03/Screenshot-2017-09-21-14.17.54.png" "Include in the full-text index" >}}
+{{< caption-new "/uploads/2015/03/Screenshot-2017-09-21-14.17.54.png" "Include in the full-text index" >}}

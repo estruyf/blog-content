@@ -25,7 +25,7 @@ This was my first international speaker engagement, with a full room and a camer
 
 If I didn't test the demo just before the session, everything should have worked perfectly fine. Only an IISRESET was needed to solve it.
 
-{{< caption-legacy "uploads/2014/01/012814_1130_SharePointS1.jpg" "Speaking" >}}
+{{< caption-new "/uploads/2014/01/012814_1130_SharePointS1.jpg" "Speaking" >}}
 
 Here are my slides:
 
@@ -35,7 +35,7 @@ Watch the video:
 <iframe width="560" height="315" src="//www.youtube.com/embed/46bEPsPH-Z8" frameborder="0" allowfullscreen=""></iframe>
 <div style="margin-bottom: 5px;">These were the feedback results of my session:</div>
 
-{{< caption-legacy "uploads/2014/01/012814_1130_SharePointS2.png" "Session Feedback" >}}
+{{< caption-new "/uploads/2014/01/012814_1130_SharePointS2.png" "Session Feedback" >}}
 
 Thank you all for the honest votes. More feedback is always welcome, so feel free to comment.
 
@@ -45,14 +45,14 @@ Probably the biggest challenge that day was playing Defender against Tobias Zimm
 
 Eventually I won with about 1000 points more (which is still not that great if you compare it to this guy: [http://elst.es/1e1LL72](http://elst.es/1e1LL72)).
 
-{{< caption-legacy "uploads/2014/01/012814_1130_SharePointS3.jpg" "Highscore" >}}
+{{< caption-new "/uploads/2014/01/012814_1130_SharePointS3.jpg" "Highscore" >}}
 
-{{< caption-legacy "uploads/2014/01/012814_1130_SharePointS4.jpg" "Tobias playing Defender" >}}
+{{< caption-new "/uploads/2014/01/012814_1130_SharePointS4.jpg" "Tobias playing Defender" >}}
 
-{{< caption-legacy "uploads/2014/01/012814_1130_SharePointS5.jpg" "Me playing Defender" >}}
+{{< caption-new "/uploads/2014/01/012814_1130_SharePointS5.jpg" "Me playing Defender" >}}
 
-{{< caption-legacy "uploads/2014/01/012814_1130_SharePointS6.jpg" "Me and my kindle" >}}
+{{< caption-new "/uploads/2014/01/012814_1130_SharePointS6.jpg" "Me and my kindle" >}}
 
 ## Thank you and see you next time
 
-{{< caption-legacy "uploads/2014/01/012814_1130_SharePointS7.png" "SharePoint Saturday Team and Speakers" >}}
+{{< caption-new "/uploads/2014/01/012814_1130_SharePointS7.png" "SharePoint Saturday Team and Speakers" >}}

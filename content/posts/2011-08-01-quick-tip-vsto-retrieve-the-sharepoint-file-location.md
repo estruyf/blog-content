@@ -20,25 +20,25 @@ Visual Studio Tools for Office (VSTO) can be used to develop add-ins (and more) 
 
 You always need to specify a site URL when using the SharePoint Client Object Model. This URL can be retrieved from the document information panel.
 
-{{< caption-legacy "uploads/2011/08/080111_1124_QuickTipVST1.png" "Document Information Panel" >}}
+{{< caption-new "/uploads/2011/08/080111_1124_QuickTipVST1.png" "Document Information Panel" >}}
 
 This location can easily be retrieved in your VSTO add-in or document template. To retrieve this value use the following code snippet.
 
 **Add-in**
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 Globals.ThisAddIn.Application.ActiveDocument.Path
-{{< / highlight >}}
+```
 
 **Document Template**
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 Globals.ThisDocument.Application.ActiveDocument.Path
-{{< / highlight >}}
+```
 
 
 ## Example
 
-{{< caption-legacy "uploads/2011/08/080111_1124_QuickTipVST2.png" "Retrieve File Location" >}}
+{{< caption-new "/uploads/2011/08/080111_1124_QuickTipVST2.png" "Retrieve File Location" >}}
 
-{{< caption-legacy "uploads/2011/08/080111_1124_QuickTipVST3.png" "Retrieved Location" >}}
+{{< caption-new "/uploads/2011/08/080111_1124_QuickTipVST3.png" "Retrieved Location" >}}

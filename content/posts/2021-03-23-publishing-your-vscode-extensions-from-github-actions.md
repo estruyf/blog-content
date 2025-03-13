@@ -29,11 +29,11 @@ In this case, we will do this on GitHub Actions instead, but before you can star
 
 When you got this **PAT**, add it as a GitHub Secret to your project.
 
-{{< caption "/2021/03/extension1.png" "PAT Secret in GitHub"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAAB2SURBVIXBsQrCQBBF0TuP2WBABcHGSuL/f5UaGwurFJuwO8YiENJ4jp3OlzCJf1wS1+5G0yTMxDAMtO2OnDOvvmfhzJ6PO2ZGRCCJWitbXkqhqhIlUCNiCjCoY2VNzHzvKAk/JPyYMBdbzmz6TPyM78zCzFj7An9yJxFqyZUAAAAAAElFTkSuQmCC" "232" >}}
+{{< caption-new "/uploads/2021/03/extension1.png" "PAT Secret in GitHub"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAAB2SURBVIXBsQrCQBBF0TuP2WBABcHGSuL/f5UaGwurFJuwO8YiENJ4jp3OlzCJf1wS1+5G0yTMxDAMtO2OnDOvvmfhzJ6PO2ZGRCCJWitbXkqhqhIlUCNiCjCoY2VNzHzvKAk/JPyYMBdbzmz6TPyM78zCzFj7An9yJxFqyZUAAAAAAElFTkSuQmCC" "232" >}}
 
 We will use this secret in the GitHub Actions workflow which looks as follows:
 
-{{< highlight yaml "linenos=table,noclasses=false" >}}
+```yaml
 name: Release
 on:
   release:
@@ -60,7 +60,7 @@ jobs:
 
       - name: Publish
         run: vsce publish -p ${{ secrets.VSCE_PAT }}
-{{< / highlight >}}
+```
 
 {{< blockquote type="Info" text="The GitHub Actions workflow gets triggered whenever you create and publish a new release. In the last step, the **PAT** will be used to publish your extension." >}}
 

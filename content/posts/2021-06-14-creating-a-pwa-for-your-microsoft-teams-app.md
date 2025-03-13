@@ -65,7 +65,7 @@ The manifest is required for the PWA as your browser uses that to create the app
 
 My manifest looks as follows:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "dir": "ltr",
   "lang": "en-US",
@@ -99,7 +99,7 @@ My manifest looks as follows:
   "start_url": "/pwa?redirect=true",
   "screenshots": []
 }
-{{< / highlight >}}
+```
 
 {{< blockquote type="Important" text="Notice the `redirect` query string parameter in the `start_url` property. The website uses the `redirect` query string to know if your app needs to be redirected. You can also create another path if you want." >}}
 

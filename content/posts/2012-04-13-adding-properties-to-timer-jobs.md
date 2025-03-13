@@ -23,17 +23,17 @@ You could add these properties just like you would add properties to a SharePoin
 
 The following code can be used to add a property to the timer job at the creation process.
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 // Create new timer job
 TimerJob timerJob = new TimerJob("TimerJobName", site.WebApplication);
 // Add property to timer job
 timerJob.Properties.Add("Property_Name", "Property_Value");
-{{< / highlight >}}
+```
 
 To read the property in the timer job, you could use the following code.
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 String propertyValue = (string)Properties["Property_Name"];
-{{< / highlight >}}
+```
 
 Most of the time I use these properties to specify the site collection for which the timer job needs to run, or define a value for querying items.

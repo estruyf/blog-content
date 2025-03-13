@@ -24,7 +24,7 @@ Everywhere in SharePoint you got dialog windows. So it would be much cleaner to 
 
 The final result looks like this:
 
-{{< caption-legacy "uploads/2011/12/120811_1811_OrderListIt1.png" "Reorder Dialog Result" >}}
+{{< caption-new "/uploads/2011/12/120811_1811_OrderListIt1.png" "Reorder Dialog Result" >}}
 
 ## Model Dialog (JavaScript)
 
@@ -33,9 +33,9 @@ You will need to use JavaScript to open a dialog box. This can be done by creati
 So what does this function need?
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 SP.UI.ModalDialog.showModalDialog(options)
-{{< / highlight >}}
+```
 
 
 The option properties you will be using in this example are: **url** and **dialogReturnValueCallback**.
@@ -43,17 +43,17 @@ The option properties you will be using in this example are: **url** and **dialo
 For the **url** property you could use the **Navigate to URL** value from the previous post.
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 ~site/_layouts/Reorder.aspx?List={ListId}
-{{< / highlight >}}
+```
 
 
 When working with a JavaScript call, the **~site** token will not work. This needs to be replace with this: **{SiteUrl}**.
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 {SiteUrl}/_layouts/Reorder.aspx?List={ListId}
-{{< / highlight >}}
+```
 
 
 With the **dialogReturnValueCallback** property you can create a callback function that executes after a completed form submission.
@@ -61,17 +61,17 @@ With the **dialogReturnValueCallback** property you can create a callback functi
 We are going to use this property to create a callback function that automatically refreshes the page when the form submission was ok. You could use the following function.
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function(dialogResult, returnValue) { SP.UI.ModalDialog.RefreshPage(SP.UI.DialogResult.OK) }
-{{< / highlight >}}
+```
 
 
 The whole block looks like this:
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 javascript:SP.UI.ModalDialog.showModalDialog({url:"{SiteUrl}/_layouts/Reorder.aspx?List={ListId}",dialogReturnValueCallback: function(dialogResult, returnValue) { SP.UI.ddModalDialog.RefreshPage(SP.UI.DialogResult.OK) }})
-{{< / highlight >}}
+```
 
 
 ## Change Custom Action
@@ -79,13 +79,13 @@ javascript:SP.UI.ModalDialog.showModalDialog({url:"{SiteUrl}/_layouts/Reorder.as
 The only thing that remains is to update your custom action that you created in Part 2.
 
 *   Open the custom action;
-{{< caption-legacy "uploads/2011/12/120811_1811_OrderListIt2.png" "Custom Change Item Order Action" >}}
+{{< caption-new "/uploads/2011/12/120811_1811_OrderListIt2.png" "Custom Change Item Order Action" >}}
 *   Change the **Navigate to URL** property with your JavaScript block;
-{{< caption-legacy "uploads/2011/12/120811_1811_OrderListIt3.png" "Update the Navigate to URL" >}}
+{{< caption-new "/uploads/2011/12/120811_1811_OrderListIt3.png" "Update the Navigate to URL" >}}
 *   Click **OK**.
 Now you should have a custom action that opens a dialog box to the reorder page.
 
-{{< caption-legacy "uploads/2011/12/120811_1811_OrderListIt4.png" "Change Item Order Result" >}}
+{{< caption-new "/uploads/2011/12/120811_1811_OrderListIt4.png" "Change Item Order Result" >}}
 
 ## Related Posts
 

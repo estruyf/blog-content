@@ -46,19 +46,19 @@ Before you can start, you will need to download the following files:
 The first thing you need to do is creating a "nuspec" or  NuGet manifest file. This can be done by opening a command console, and run the following command:
 
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 nuget spec EStruyfSP2010Branding
-{{< / highlight >}}
+```
 
 
 This command creates the "nuspec" file in the current path.
 
-{{< caption-legacy "uploads/2011/05/051711_1620_CreatingaNu1.png" "NuGet Manifest File" >}}
+{{< caption-new "/uploads/2011/05/051711_1620_CreatingaNu1.png" "NuGet Manifest File" >}}
 
 When you open the file you have something like this:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
@@ -77,13 +77,13 @@ When you open the file you have something like this:
     </dependencies>
   </metadata>
 </package>
-{{< / highlight >}}
+```
 
 
 This is my cleaned up version:
 
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
@@ -98,7 +98,7 @@ This is my cleaned up version:
     <language />
   </metadata>
 </package>
-{{< / highlight >}}
+```
 
 
 ### Adding SharePoint Content
@@ -107,27 +107,27 @@ When the NuGet manifest file is created, your next step will be to build the NuG
 
 My branding project looks like this:
 
-{{< caption-legacy "uploads/2011/05/051711_1620_CreatingaNu2.png" "SharePoint Branding Project" >}}
+{{< caption-new "/uploads/2011/05/051711_1620_CreatingaNu2.png" "SharePoint Branding Project" >}}
 Go to the location where you created your NuGet manifest file and create a folder with the name "content". This folder will be used to add the SharePoint content (Modules, mapped folders), so that it can automatically be added when installing the package to your project.
 
 In my example I have copied the "_catalogs" module, the mapped "Images" folder, and the mapped "STYLES" folder to my NuGet "content" folder. Be sure that you also copied the "*.spdata" files. If you did not copy them, Visual Studio will recognize the content as common folders.
 
-{{< caption-legacy "uploads/2011/05/051711_1620_CreatingaNu3.png" "NuGet Folder Structure" >}}
+{{< caption-new "/uploads/2011/05/051711_1620_CreatingaNu3.png" "NuGet Folder Structure" >}}
 
 ### Build the NuGet Package
 
 When everything is added to the content folder, you are ready to build your package. Go back to the command console, and run the following command:
 
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 Nuget pack EStruyfSP2010Branding.nuspec
-{{< / highlight >}}
+```
 
 
 When the command is complete, you end up with a new file named: EStruyfSP2010Branding.1.0.nupkg.
 
 To check the package you can rename the "nupkg" extension to "zip" and open it.
-{{< caption-legacy "uploads/2011/05/051711_1620_CreatingaNu4.png" "NuGet Package Content" >}}
+{{< caption-new "/uploads/2011/05/051711_1620_CreatingaNu4.png" "NuGet Package Content" >}}
 
 ## Testing the NuGet Package
 
@@ -137,23 +137,23 @@ NuGet allows you to add new Package Sources in Visual Studio. These sources can 
 
 To add a new Package Source, open Visual Studio with NuGet installed. Click "Tools" -> "Options" -> "Package Manager" -> "Package Sources".
 
-{{< caption-legacy "uploads/2011/05/051711_1620_CreatingaNu5.png" "NuGet Package Sources" >}}
+{{< caption-new "/uploads/2011/05/051711_1620_CreatingaNu5.png" "NuGet Package Sources" >}}
 
 In this window you can add your local folder as a Package Source for NuGet.
-{{< caption-legacy "uploads/2011/05/051711_1620_CreatingaNu6.png" "Custom NuGet Package Source" >}}
+{{< caption-new "/uploads/2011/05/051711_1620_CreatingaNu6.png" "Custom NuGet Package Source" >}}
 
 ### Testing the package
 
 Start a new empty SharePoint project, and right click on "References" -> "Add Library Package Reference".
-{{< caption-legacy "uploads/2011/05/051711_1620_CreatingaNu7.png" "Add Library Package Reference" >}}
+{{< caption-new "/uploads/2011/05/051711_1620_CreatingaNu7.png" "Add Library Package Reference" >}}
 This step opens the NuGet Package manager window.
 
-{{< caption-legacy "uploads/2011/05/051711_1620_CreatingaNu8.png" "NuGet Package Manager Window" >}}
+{{< caption-new "/uploads/2011/05/051711_1620_CreatingaNu8.png" "NuGet Package Manager Window" >}}
 
 Under the official NuGet package source you can see your custom package source. Open your package source and install the package.
-{{< caption-legacy "uploads/2011/05/051711_1620_CreatingaNu9.png" "Custom NuGet Package" >}}
+{{< caption-new "/uploads/2011/05/051711_1620_CreatingaNu9.png" "Custom NuGet Package" >}}
 This should have added your files to the project.
-{{< caption-legacy "uploads/2011/05/051711_1620_CreatingaNu10.png" "Content added by NuGet" >}}
+{{< caption-new "/uploads/2011/05/051711_1620_CreatingaNu10.png" "Content added by NuGet" >}}
 
 ## Download
 

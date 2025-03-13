@@ -30,21 +30,21 @@ The section that encapsulates everything from the page is the body and form tags
 
 Before the "form" closing tag, add the following HTML code block:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div class="push s4-notdlg"></div>
-{{< / highlight >}}
+```
 
 After the "form" closing tag, add the following HTML block:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div class="footer s4-notdlg">
   <span>This is my minimal.master page footer.</span>
 </div>
-{{< / highlight >}}
+```
 
 The CSS isn't that different, you will need to change the wrapper class to the "form" section.
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 /* Page needs to have a 100% height. */
 html, body { 
   height: 100%;
@@ -71,12 +71,12 @@ body #aspnetForm {
   line-height: 40px;
   text-align: center;
 }
-{{< / highlight >}}
+```
 
 The end result should be like this.
 
-{{< caption-legacy "uploads/2011/01/minimal_footer.png" "minimal.master with footer" >}}
+{{< caption-new "/uploads/2011/01/minimal_footer.png" "minimal.master with footer" >}}
 
-{{< caption-legacy "uploads/2011/01/minimal_scroll.png" "Minimal.master at the bottom of the page scrolling" >}}
+{{< caption-new "/uploads/2011/01/minimal_scroll.png" "Minimal.master at the bottom of the page scrolling" >}}
 
 Here you can download my version of the ["minimal.master" master page with a footer](/uploads/2011/01/minimal_with_footer.master.txt).

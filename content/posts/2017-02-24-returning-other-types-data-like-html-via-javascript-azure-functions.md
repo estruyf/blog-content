@@ -21,7 +21,7 @@ As it turned out it is quite easy to return the mime type of your choice with an
 
 Here is an example of an HTTPTrigger function which returns HTML:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 const fs = require('fs');
 const path = require('path');
 
@@ -48,9 +48,9 @@ module.exports = function (context, req) {
         });
     }
 };
-{{< / highlight >}}
+```
 
 
 > **Info**: Notice line 9 - 11 where I specified the content-type header.
 
-{{< caption-legacy "uploads/2017/02/022417_1432_Returningot1.png" "Sample of the HMTL output" >}}
+{{< caption-new "/uploads/2017/02/022417_1432_Returningot1.png" "Sample of the HMTL output" >}}

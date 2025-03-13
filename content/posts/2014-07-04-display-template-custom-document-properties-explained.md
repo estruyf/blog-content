@@ -19,7 +19,7 @@ In this post all the search display template custom document properties of are e
 
 Here is an example of how an out-of-the-box display template document property section looks like:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:CustomDocumentProperties>
   <mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
   <mso:ManagedPropertyMapping msdt:dt="string">'Link URL'{Link URL}:'Path','Line 1'{Line 1}:'Title','Line 2'{Line 2}:','FileExtension','SecondaryFileExtension'</mso:ManagedPropertyMapping>
@@ -30,7 +30,7 @@ Here is an example of how an out-of-the-box display template document property s
   <mso:HtmlDesignStatusAndPreview msdt:dt="string">http://site/_catalogs/masterpage/Display Templates/Content Web Parts/Item_TwoLines.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
   <mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
 </mso:CustomDocumentProperties>
-{{< / highlight >}}
+```
 
 
 ## Content Type IDs
@@ -63,9 +63,9 @@ The following values can be specified for the **ContentTypeId** property:
 </table>
 </div>
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106601</mso:ContentTypeId>
-{{< / highlight >}}
+```
 
 ## Target Control Type
 
@@ -105,27 +105,27 @@ This property **TargetControlType** specifies which web parts can use the displa
 </table>
 </div>
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:TargetControlType msdt:dt="string">;#Content Web Parts;#</mso:TargetControlType>
-{{< / highlight >}}
+```
 
 
 ## Master Page Description
 
 As the name suggests, the **MasterPageDescription** property defines the description you want to give to the display template.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:MasterPageDescription msdt:dt="string">Description</mso:MasterPageDescription>
-{{< / highlight >}}
+```
 
 
 ## Template Hidden
 
 The **TemplateHidden** property specifies if the template is hidden for people to select it in one of the search web parts. Values can either be **0 (visible)** or **1 (hidden)**.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
-{{< / highlight >}}
+```
 
 
 ## Managed Property Mapping (Item Display Template)
@@ -134,15 +134,15 @@ The **ManagedPropertyMapping** property needs to be used to determine which mana
 
 > **Note**: the display name isn't required, you could also specify it as: "slot name":"managed property name".
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:ManagedPropertyMapping msdt:dt="string">'Link URL'{Link URL}:'Path','Title':'Title'</mso:ManagedPropertyMapping>
-{{< / highlight >}}
+```
 
 You could also specify multiple values for a specific slot. That way, if the first property doesn't contain a value, it takes the next one.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:ManagedPropertyMapping msdt:dt="string">'Picture URL'{Picture URL}:'PublishingImage;PictureURL;PictureThumbnailURL'</mso:ManagedPropertyMapping>
-{{< / highlight >}}
+```
 
 
 ## Compatible Search Data Types (Filter Display Template)
@@ -157,10 +157,10 @@ The following values can be used:
 *   DateTime
 *   YesNo
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:CompatibleSearchDataTypes msdt:dt="string">;#Text;#</mso:CompatibleSearchDataTypes>
 <mso:CompatibleSearchDataTypes msdt:dt="string">;#Text;#Integer;#Decimal;#DateTime;#YesNo;#</mso:CompatibleSearchDataTypes>
-{{< / highlight >}}
+```
 
 > **Note**: more information about this property can be found here: [Create Your First Search Refiner Control Template](https://www.eliostruyf.com/part-1-create-first-search-refiner-control-template/).
 
@@ -170,9 +170,9 @@ With the **CompatibleManagedProperties** property you can specify the managed pr
 
 The values in this property should be separated with commas.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:CompatibleManagedProperties msdt:dt="string">contentclass,FileType</mso:CompatibleManagedProperties>
-{{< / highlight >}}
+```
 
 > **Note**: at the moment I haven't used this property. During the first tests, I didn't notice any difference by applying this property. If you check the JavaScript version of the display template, you'll see that the **CompatibleManagedProperties** property is added, but it's never used. 
 
@@ -180,9 +180,9 @@ The values in this property should be separated with commas.
 
 This **HtmlDesignAssociated** property describes if there is a JavaScript version of the display template associated to the HTML version.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
-{{< / highlight >}}
+```
 
 
 ## Preview URL (will automatically be defined by SharePoint)
@@ -193,6 +193,6 @@ The **HtmlDesignStatusAndPreview** will automatically be defined by SharePoint f
 
 The **HtmlDesignConversionSucceeded** is linked to the previous property. If the display template conversion is successful the following property and value gets added to the display template:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
-{{< / highlight >}}
+```

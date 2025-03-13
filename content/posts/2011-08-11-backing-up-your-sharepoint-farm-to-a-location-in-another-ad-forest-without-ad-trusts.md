@@ -24,7 +24,7 @@ The previous paragraph will be the case for the most of you. But what if you are
 
 To make it easier to understand I will talk about **SharePoint.com forest** where the SharePoint servers are located and the **Backup.com forest** where the backup server is located.
 
-{{< caption-legacy "uploads/2011/08/081111_1301_BackingUpYo1.png" "Sketch of the situation" >}}
+{{< caption-new "/uploads/2011/08/081111_1301_BackingUpYo1.png" "Sketch of the situation" >}}
 
 On the backup server a share has been made available for the SharePoint backup. When you access the shared location from the **SharePoint.com** forest, you will be prompted for your credentials.
 
@@ -44,7 +44,7 @@ For certainty, I created a new local user on the backup server that also exists 
 
 The solution to back up the SharePoint.com farm to the share in the Backup.com forest, is to create the same **user that initiates the backup (SharePoint Farm Admin)** and **SQL Service account** as a local user on the backup server (with the **same passwords**). Give these accounts **read and write access** on the shared location.
 
-{{< caption-legacy "uploads/2011/08/081111_1301_BackingUpYo2.png" "Local user accounts" >}}
+{{< caption-new "/uploads/2011/08/081111_1301_BackingUpYo2.png" "Local user accounts" >}}
 
 Restart your backup, normally the backup completes without any access denied errors.
 

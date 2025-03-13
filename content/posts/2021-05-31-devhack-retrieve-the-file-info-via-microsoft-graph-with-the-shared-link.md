@@ -17,9 +17,9 @@ When you copy and share links from files, it creates a URL from which you cannot
 
 First of all, the shared links look like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 https://squarl.sharepoint.com/:x:/s/Squarl/<file-id>
-{{< / highlight >}}
+```
 
 First, I thought it would be a combination of splitting the URL with the site name and ID, but apparently, it was not. When I was going through the documentation, I saw the `/shares/` endpoint. This endpoint seemed the one I needed to use to be able to get the file information.
 
@@ -29,9 +29,9 @@ To use the `shares` API, you need to use the share ID or the sharing URL. There 
 
 Here is an example of how to use it with JavaScript/TypeScript.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 const fileUrl = btoa(`https://squarl.sharepoint.com/:x:/s/Squarl/<file-id>`);
 // Remove the '=` sign and replace other characters
 const resouce = `/shares/u!${fileUrl.slice(0, -1).replace(/\+/g, '-').replace(/\//g, '_')}/driveItem?$expand=listItem`;
 const fileData = await graph.api(resource).version("v1.0").get();
-{{< / highlight >}}
+```

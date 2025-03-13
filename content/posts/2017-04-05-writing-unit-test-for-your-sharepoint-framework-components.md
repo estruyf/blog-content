@@ -34,11 +34,11 @@ If you want to write some test yourself, you will have to go through a couple of
 
 When you created a new SPFx project, you automatically get a **tests** folder in the web part folder.
 
-{{< caption-legacy "uploads/2017/04/040517_1933_Unittestyou1.png" "Tests folder located in your project" >}}
+{{< caption-new "/uploads/2017/04/040517_1933_Unittestyou1.png" "Tests folder located in your project" >}}
 
 In the folder, you find a sample test file: **<webpart-name>.test.ts**. The first thing you will have to do when you want to test react components is changing the **ts** extension to **tsx**. This allows you to load the components in JSX syntax.
 
-{{< caption-legacy "uploads/2017/04/040517_1933_Unittestyou2.png" "Sample test file" >}}
+{{< caption-new "/uploads/2017/04/040517_1933_Unittestyou2.png" "Sample test file" >}}
 
 ## Installing a couple of developer dependencies
 
@@ -57,7 +57,7 @@ To install these two dependencies, execute the following command: `npm install e
 
 Now you are ready to write some tests. Override the contents of the test file, with the following code:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 /// <reference types="mocha" />
 /// <reference types="sinon" />
 
@@ -86,7 +86,7 @@ describe('<HelloWorld />', () => {
 
     // Write your tests here
 });
-{{< / highlight >}}
+```
 
 The code you see above does not contain any tests yet. The **before** function is the first once which gets called and it loads the component.
 
@@ -96,7 +96,7 @@ You can also do something before and after each test by writing **beforeEach** a
 
 Tests are written by **it()** (it should do something) functions. Here are a couple of examples:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 it('<HelloWorld /> should render something', () => {
     // Check if the component contains a paragraph element
     expect(renderedElement.find('p')).to.be.exist;
@@ -160,7 +160,7 @@ it('<HelloWorld /> should render 10 list items (triggering setState from the tes
     expect(renderedElement.update().state('results')).to.not.be.null;
     expect(renderedElement.update().find('ul li').length).to.be.equal(10);
 });
-{{< / highlight >}}
+```
 
 More information about JavaScript unit testing;
 
@@ -171,8 +171,8 @@ More information about JavaScript unit testing;
 
 You can run your tests via this command: `gulp test`. When you run the command with the sample project, you should get the following result:
 
-{{< caption-legacy "uploads/2017/04/040517_1933_Unittestyou3.png" "Sample component tests outcome" >}}
+{{< caption-new "/uploads/2017/04/040517_1933_Unittestyou3.png" "Sample component tests outcome" >}}
 
 > **Info**: the sample web part also contains a mock HTTP client which simulates an async call to retrieve items from a list. The web part renders the following output;
 
-{{< caption-legacy "uploads/2017/04/040517_1933_Unittestyou4.png" "Sample web part rendering" >}}
+{{< caption-new "/uploads/2017/04/040517_1933_Unittestyou4.png" "Sample web part rendering" >}}

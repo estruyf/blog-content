@@ -23,9 +23,9 @@ A lot of users want to get an overview of the latest items of a list or library.
 
 The solution is very easy. By default you have a managed property called **ParentLink**. You need to add this property to the **ManagedPropertyMapping** attribute inside your item display template.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:ManagedPropertyMapping msdt:dt="string">'ParentLink','Link URL'{Link URL}:'Path','Line 1'{Line 1}:'Title','Line 2'{Line 2}:'','FileExtension','SecondaryFileExtension'</mso:ManagedPropertyMapping>
-{{< / highlight >}}
+```
 
 Next, you should add some extra code to the item template.
 
@@ -35,7 +35,7 @@ Next, you should add some extra code to the item template.
 
 To check if the last row is processed, you should include the following code in the Item Template:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--#_
 // Check if it is the last item to process
 var currentItemIdx = ctx.CurrentItemIdx + 1;
@@ -45,13 +45,13 @@ _#-->
 <!--#_
 }
 _#-->
-{{< / highlight >}}
+```
 
 Place it at the bottom of your Item Template and you get the following result:
 
-{{< caption-legacy "uploads/2015/02/021315_1503_Addingalink1.png" "Items with link to list" >}}
+{{< caption-new "/uploads/2015/02/021315_1503_Addingalink1.png" "Items with link to list" >}}
 
-{{< caption-legacy "uploads/2015/02/021315_1503_Addingalink2.png" "Documents with link to library" >}}
+{{< caption-new "/uploads/2015/02/021315_1503_Addingalink2.png" "Documents with link to library" >}}
 
 > **Important**: This only works if your items are coming from the same library. Otherwise **View all** will link to the list or library location of the last item.
 

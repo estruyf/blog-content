@@ -30,7 +30,7 @@ After investigating the "Microsoft.Office.Server.Search" assembly I saw that you
 2.  The "**PropertiesToRetrieve**" must be Null or Empty;
 3.  "**UseLocationVisualization**" must be false.
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 set
 {
   if ((!string.IsNullOrEmpty(value) && string.IsNullOrEmpty(base.PropertiesToRetrieve)) && !base.UseLocationVisualization)
@@ -38,7 +38,7 @@ set
     base.PropertiesToRetrieve = value;
   }
 }
-{{< / highlight >}}
+```
 
 
 ## Solution
@@ -46,7 +46,7 @@ set
 The solution to programmatically add your columns to the fetched properties is the following:
 
 
-{{< highlight csharp "linenos=table,noclasses=false" >}}
+```csharp
 protected override void OnInit(EventArgs e)
 {
   //Set an empty string for the PropertiesToRetrieve property
@@ -57,12 +57,12 @@ protected override void OnInit(EventArgs e)
   //Set the fetched properties
   base.SelectColumns = fetchProp;
 }
-{{< / highlight >}}
+```
 
 
 "fetchProp" is a string that contains the following content.
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <Columns>
   <Column Name="WorkId"/>
   <Column Name="Rank"/>
@@ -80,4 +80,4 @@ protected override void OnInit(EventArgs e)
   <Column Name="IsDocument"/>
   <Column Name="SiteTitle"/>
 </Columns>
-{{< / highlight >}}
+```

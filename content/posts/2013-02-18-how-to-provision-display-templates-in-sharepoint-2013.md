@@ -50,7 +50,7 @@ Don't specify any additional properties when provisioning your HTML display temp
 
 These properties should all be in the Display Template Head section. Example of the Display Template header section:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <mso:CustomDocumentProperties>
   <mso:CompatibleManagedProperties msdt:dt="string"></mso:CompatibleManagedProperties>
   <mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
@@ -61,13 +61,13 @@ These properties should all be in the Display Template Head section. Example of 
   <mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
   <mso:HtmlDesignStatusAndPreview msdt:dt="string">Link to the file, Conversion successful.</mso:HtmlDesignStatusAndPreview>
 </mso:CustomDocumentProperties>
-{{< / highlight >}}
+```
 
 When you provision your file as draft, the design engine will automatically fill in the metadata properties.
 
 Provision your files like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <Module Name="_catalogs" Url="_catalogs/masterpage/Display Templates/Content Web Parts" Path="_catalogs/masterpage">
   <File Url="Item_Announcements.html" Type="GhostableInLibrary" Level="Draft" ReplaceContent="true"></File>
 </Module>
@@ -75,17 +75,17 @@ Provision your files like this:
 <Module Name="_catalogs" Url="_catalogs/masterpage/Display Templates/Filters" Path="_catalogs/masterpage">
   <File Url="Control_Custom_Refinement.html" Type="GhostableInLibrary" Level="Draft" ReplaceContent="true"></File>
 </Module>
-{{< / highlight >}}
+```
 
 When provisioning JavaScript Display Templates you need to add one property to your elements file: **ContentType**. If you do not specify this content type property, your Item Display Templates for the Content by Search Web Part will not be recognized.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <Module Name="_catalogs" Url="_catalogs/masterpage/Display Templates/Content Web Parts" Path="_catalogs/masterpage">
   <File Url="Item_Announcements.js" Type="GhostableInLibrary" Level="Draft" ReplaceContent="true">
     <Property Name="ContentType" Value="Display Template Code" />
   </File>
 </Module>
-{{< / highlight >}}
+```
 
 _Note: filter display styles seem to not have any problems when you don't specify the ContentType property._
 
@@ -97,14 +97,14 @@ The best way that worked for me is to provision the HTML and the JavaScript file
 
 The way I'm doing this right now is like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <Module Name="_catalogs" Url="_catalogs/masterpage/Display Templates/Filters" Path="_catalogs/masterpage">
   <File Url="Control_Custom_Refinement.html" Type="GhostableInLibrary" Level="Draft" ReplaceContent="true"></File>
   <File Url="Control_Custom_Refinement.js" Type="GhostableInLibrary" Level="Draft" ReplaceContent="true">
     <Property Name="ContentType" Value="Display Template Code" />
   </File>
 </Module>
-{{< / highlight >}}
+```
 
 
 ## 5. Create a Feature Receiver to Update and Publish your Display Templates

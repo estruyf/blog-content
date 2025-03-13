@@ -24,90 +24,90 @@ Two months ago I did this for a client to have more space for all the subsites.
 
 Here is what I have done to let it work in IE 7 - 8 and Firefox.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
   <SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" Version="4"/>
 </asp:ContentPlaceHolder>
-{{< / highlight >}}
+```
 
 The first thing I have done is replacing the searchbox control in the masterpage to the top ribbon, besides the user menu control. You can search for "PlaceHolderSearchArea" and cut this section.
 
 After you have cut this section search for the div with an id of "s4-trc-container-menu" (this is where the user menu control is placed). Above this div you should create a new div and place your copied code in this section. It should look like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div class="searchField" id="s4-searcharea">
   <asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
     <SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" Version="4"/>
   </asp:ContentPlaceHolder>
 </div>
-{{< / highlight >}}
+```
 
 Right now it still does not work.
 
-{{< caption-legacy "uploads/2010/08/searchbox1.png" "Searchbox position to top ribbon problems" >}}
+{{< caption-new "/uploads/2010/08/searchbox1.png" "Searchbox position to top ribbon problems" >}}
 
 Now we start adding the css code and it isn't that hard for IE 8 and Firefox.
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 .searchField {
   float: left;
   padding-top: 10px;
 }
-{{< / highlight >}}
+```
 
 In Internet Explorer 7 it still looks the same as before we added the css. So we need to add some css that targets only IE 7. The trick here is to give the searchbox div a width and that's it.
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 /* IE7 Adjustments */
 .searchField table.s4-wpTopTable{
   *width: 200px;
 }
-{{< / highlight >}}
+```
 
 ## SharePoint Foundation Solution
 
 When you are working in a SharePoint Foundation environment, you will notice that the previous approach gives a small problem.
 
-{{< caption-legacy "uploads/2010/08/searchbox_SPF.png" "SharePoint Foundation Search Image Problem" >}}
+{{< caption-new "/uploads/2010/08/searchbox_SPF.png" "SharePoint Foundation Search Image Problem" >}}
 
 This problem occurs because the SharePoint Foundation search box uses an additional css class to apply the styling. 
 
 To solve this, you need to add the "s4-search" class in the div that you created in the previous section. It should look like this for the SharePoint Foundation master page:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <div class="searchField s4-search" id="s4-searcharea">
   <asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
     <SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" Version="4"/>
   /asp:ContentPlaceHolder>
 </div>
-{{< / highlight >}}
+```
 
 Right now it should work, but a small change to the css needs to be made. Because the "s4-search" class has its own css paddings, the paddings from our "searchField" class overwritten. 
 
-{{< caption-legacy "uploads/2010/08/searchbox_SPF2.png" "SharePoint Foundation Search Box Padding" >}}
+{{< caption-new "/uploads/2010/08/searchbox_SPF2.png" "SharePoint Foundation Search Box Padding" >}}
 
 Add `!important` to your css padding-top attribute. The css class looks like this:
 
-{{< highlight css "linenos=table,noclasses=false" >}}
+```css
 .searchField {
   float: left;
   padding-top: 7px !important;
 }
-{{< / highlight >}}
+```
 
 The result looks like this.
 
-{{< caption-legacy "uploads/2010/08/searchbox_SPF3.png" "SharePoint Foundation Result" >}}
+{{< caption-new "/uploads/2010/08/searchbox_SPF3.png" "SharePoint Foundation Result" >}}
 
 ## Result
 
 Here are some screenshots of the different browsers.
 
-{{< caption-legacy "uploads/2010/08/searchbox2_FF.png" "Searchbox position to top ribbon Firefox" >}}
+{{< caption-new "/uploads/2010/08/searchbox2_FF.png" "Searchbox position to top ribbon Firefox" >}}
 
-{{< caption-legacy "uploads/2010/08/searchbox3_IE8.png" "Searchbox position to top ribbon IE8" >}}
+{{< caption-new "/uploads/2010/08/searchbox3_IE8.png" "Searchbox position to top ribbon IE8" >}}
 
-{{< caption-legacy "uploads/2010/08/searchbox4_IE7.png" "Searchbox position to top ribbon IE7" >}}
+{{< caption-new "/uploads/2010/08/searchbox4_IE7.png" "Searchbox position to top ribbon IE7" >}}
 
 ## Update
 
@@ -115,4 +115,4 @@ Here are some screenshots of the different browsers.
 
 A commenter called Dave pointed me out that there was a problem when you want to apply this to a SharePoint 2010 Foundation environment. The problem that arises with the SharePoint Foundation master page is that the search image is displayed below the search box.
 
-{{< caption-legacy "uploads/2010/08/searchbox_SPF.png" "SharePoint Foundation Search Image Problem" >}}
+{{< caption-new "/uploads/2010/08/searchbox_SPF.png" "SharePoint Foundation Search Image Problem" >}}

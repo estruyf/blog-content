@@ -33,14 +33,14 @@ The first step is to set the resource quota for your SharePoint Online site.
 
 *   Open the Office 365 admin site;
 *   Click on "**Manage**" under the **SharePoint Online** section;
-{{< caption-legacy "uploads/2011/04/042711_1727_SandboxedTo1.png" "Manage SharePoint Online" >}}
+{{< caption-new "/uploads/2011/04/042711_1727_SandboxedTo1.png" "Manage SharePoint Online" >}}
 *   In the next window, click on "**Manage site collections**";
-{{< caption-legacy "uploads/2011/04/042711_1727_SandboxedTo2.png" "Manage Site Collections" >}}
+{{< caption-new "/uploads/2011/04/042711_1727_SandboxedTo2.png" "Manage Site Collections" >}}
 *   Select the SharePoint Online site for which you want to set the resource quota;
 *   Click under the "**Site Collections**" tab on "**Resource Usage Quota**";
-{{< caption-legacy "uploads/2011/04/042711_1727_SandboxedTo3.png" "Resource Usage Quota" >}}
+{{< caption-new "/uploads/2011/04/042711_1727_SandboxedTo3.png" "Resource Usage Quota" >}}
 *   In the resources textbox you can specify the number of resources for your site. I have used 200 in this example, if you are finished, click on save.
-{{< caption-legacy "uploads/2011/04/042711_1727_SandboxedTo4.png" "Number of Resources" >}}
+{{< caption-new "/uploads/2011/04/042711_1727_SandboxedTo4.png" "Number of Resources" >}}
 
 ### Deploying the sandboxed solution
 
@@ -51,9 +51,9 @@ When you set the number of resources for your site, you can upload the sandboxed
 *   Under the "**Galleries**" section, click on "**Solutions**";
 *   On the "**Solutions**" tab click "**Upload Solution**";
 
-{{< caption-legacy "uploads/2011/04/042711_1727_SandboxedTo5.png" "Upload User Solution" >}}
+{{< caption-new "/uploads/2011/04/042711_1727_SandboxedTo5.png" "Upload User Solution" >}}
 *   When the solution is uploaded, you need to activate the solution by clicking on "**Activate**" in the modal dialog window.
-{{< caption-legacy "uploads/2011/04/042711_1727_SandboxedTo6.png" "Activate User Solution" >}}
+{{< caption-new "/uploads/2011/04/042711_1727_SandboxedTo6.png" "Activate User Solution" >}}
 
 ### Using the web part
 
@@ -61,11 +61,11 @@ When you have uploaded and activated the sandboxed solution, you can make use of
 
 *   Go to the page where you want to use the web part;
 *   Edit the page, and on the "**Insert**" tab, click "**More Web Parts**";
-{{< caption-legacy "uploads/2011/04/042711_1727_SandboxedTo7.png" "Insert To-Do Web Part" >}}
+{{< caption-new "/uploads/2011/04/042711_1727_SandboxedTo7.png" "Insert To-Do Web Part" >}}
 *   In the "Filter By" select "**E. Struyf**", select the "**To-do Web Part**", and click "**Add**";
-{{< caption-legacy "uploads/2011/04/042711_1727_SandboxedTo8.png" "Selecting and Adding the To-Do List Web Part" >}}
+{{< caption-new "/uploads/2011/04/042711_1727_SandboxedTo8.png" "Selecting and Adding the To-Do List Web Part" >}}
 *   Configure the web part and you are done.
 
 ## Result
 
-{{< caption-legacy "uploads/2011/04/042711_1727_SandboxedTo9.png" "Result" >}}
+{{< caption-new "/uploads/2011/04/042711_1727_SandboxedTo9.png" "Result" >}}

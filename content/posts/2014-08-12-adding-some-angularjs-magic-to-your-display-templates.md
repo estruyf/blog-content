@@ -29,21 +29,21 @@ One of the simplest things to add with AngularJS is a search box to filter out t
 
 The text input which needs to be added to the, looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <input type="text" ng-model="search.Line1" placeholder="Filter results" />
-{{< / highlight >}}
+```
 
 The ngRepeat directive needs to be updated with a filter property:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <li ng-show="ResultRows.length" ng-repeat="ResultRow in ResultRows ' filter:search:strict">
-{{< / highlight >}}
+```
 
 This results in the following output:
 
-{{< caption-legacy "uploads/2014/08/081214_0640_AddingsomeA1.png" "Template with a searchbox" >}}
+{{< caption-new "/uploads/2014/08/081214_0640_AddingsomeA1.png" "Template with a searchbox" >}}
 
-{{< caption-legacy "uploads/2014/08/081214_0640_AddingsomeA2.png" "Filtered results" >}}
+{{< caption-new "/uploads/2014/08/081214_0640_AddingsomeA2.png" "Filtered results" >}}
 
 > **Note**: I configured the search box to filter on the **line 1** property with **ng-model="search.Line1"**.
 
@@ -51,25 +51,25 @@ This results in the following output:
 
 Alternating row classes are very easy to insert, this can be done with the ngClassEven or ngClassOdd directives. The code for this looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 // Replace this line in the template
 <div class="cbs-Item">
 
 // With this line
 <div class="cbs-Item" ng-class-even="'ms-alternatingstrong'">
-{{< / highlight >}}
+```
 
 The code will automatically add an alternating class to the even rows.
 
-{{< caption-legacy "uploads/2014/08/081214_0640_AddingsomeA3.png" "Alternating rows" >}}
+{{< caption-new "/uploads/2014/08/081214_0640_AddingsomeA3.png" "Alternating rows" >}}
 
 ## Grouping results
 
 The last thing I prepared is how you can group results. First thing to do is put an order by filter in the ngRepeat directive.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <li ng-show="ResultRows.length" ng-repeat="ResultRow in ResultRows ' orderBy:'Line2'">
-{{< / highlight >}}
+```
 
 > **Note**: I have set the order by for the "line 2" property, so if you want to test it, make sure that you specify a managed property for the "line 2" property.
 
@@ -77,15 +77,15 @@ Next is the heading you want to show for the group, this heading only needs to b
 
 For this a function call is needed in the ngShow directive.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <h2 ng-show="CreateGroupHeader(ResultRow.Line2.value)">
   {{ ResultRow.Line2.value }}
 </h2>
-{{< / highlight >}}
+```
 
 The function looks like this:
 
-{{< highlight JavaScript "linenos=table,noclasses=false" >}}
+```JavaScript
 // Grouping function to check if the heading changed
 $scope.currentGroupHeader = '';
 $scope.CreateGroupHeader = function (value) {
@@ -93,11 +93,11 @@ $scope.CreateGroupHeader = function (value) {
   $scope.currentGroupHeader = value;
   return showHeader;
 }
-{{< / highlight >}}
+```
 
 This needs to be added inside the controller code.
 
-{{< caption-legacy "uploads/2014/08/081214_0640_AddingsomeA4.png" "Template with grouping" >}}
+{{< caption-new "/uploads/2014/08/081214_0640_AddingsomeA4.png" "Template with grouping" >}}
 
 Of course there are a lot more possibilities with AngularJS and display templates, these were just some simple ones to show you the possibilities and to get you started.
 

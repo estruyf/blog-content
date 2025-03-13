@@ -33,7 +33,7 @@ To begin with, localizing your extension, we will start with the commands and se
 As an example, I will use the following command definition:
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"json"},{"name":"selection","value":"{\n  \"contributes\": {\n    \"commands\": [{\n      \"command\": \"vscode-react-webview-starter.openWebview\",\n      \"title\": \"Open the webview\",\n      \"category\": \"React Webview\"\n    }]\n  }\n}"}]} -->
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "contributes": {
     "commands": [{
@@ -43,33 +43,33 @@ As an example, I will use the following command definition:
     }]
   }
 }
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 To localize this command, we first create the `package.nls.json` file in the root of our extension. This file holds the default language value for our extension (English).
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"json"},{"name":"selection","value":"{\n  \"command.openWebview\": \"Open the webview\"\n}"}]} -->
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "command.openWebview": "Open the webview"
 }
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 Next, we create the `package.nls.<locale>.json` file in the root of our extension. I will make a `package.nls.qps-ploc.json` file for the pseudo-language in my example.
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"json"},{"name":"selection","value":"{\n  \"command.openWebview\": \"ₒₚₑₙ ₜₕₑ 𝓌ₑᵦᵥᵢₑ𝓌\"\n}"}]} -->
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "command.openWebview": "ₒₚₑₙ ₜₕₑ 𝓌ₑᵦᵥᵢₑ𝓌"
 }
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 Within the `package.json` file, you must update the command title with the localization key. To let Visual Studio Code know that you want to use the localization key, you will have to wrap the key with a `%` sign.
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"json"},{"name":"selection","value":"{\n  \"contributes\": {\n    \"commands\": [{\n      \"command\": \"vscode-react-webview-starter.openWebview\",\n      \"title\": \"%command.openWebview%\",\n      \"category\": \"React Webview\"\n    }]\n  }\n}"}]} -->
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "contributes": {
     "commands": [{
@@ -79,7 +79,7 @@ Within the `package.json` file, you must update the command title with the local
     }]
   }
 }
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 {{< caption-new "/uploads/2023/07/localization-2.png" "Localizing the command"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAAA6SURBVGMUk9FI+ff/nyMDHsDIwLifRU1VjUFMVIzh9+/fDL9+/2b48uUrAwywsrIycHJyMLx5+5YBAGEHESDMCaVSAAAAAElFTkSuQmCC" "797" >}}
@@ -97,9 +97,9 @@ To start, all you need to do is to wrap your strings with the `vscode.l10n.t` fu
 As an example, I will use the following string:
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"typescript"},{"name":"selection","value":"vscode.window.showInformationMessage(`Your extension got activated with the ${vscode.env.language} language!`);"}]} -->
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 vscode.window.showInformationMessage(`Your extension got activated with the ${vscode.env.language} language!`);
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 <!-- FM:Snippet:Start data:{"id":"Blockquote","fields":[{"name":"type","value":"info"},{"name":"selection","value":"`vscode.env.language` returns the current loaded locale."}]} -->
@@ -113,49 +113,49 @@ This line returns the following notification:
 To localize the string, we only need to wrap it with the `vscode.l10n.t` function.
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"typescript"},{"name":"selection","value":"import * as vscode from 'vscode';\n\nconst localizedString = vscode.l10n.t('Your extension got activated with the {0} language!', vscode.env.language);"}]} -->
-{{< highlight typescript "linenos=table,noclasses=false" >}}
+```typescript
 import * as vscode from 'vscode';
 
 const localizedString = vscode.l10n.t('Your extension got activated with the {0} language!', vscode.env.language);
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 Once you have created these localization changes, you can run the following command in your terminal:
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"typescript"},{"name":"selection","value":"npx @vscode/l10n-dev export -o ./l10n ./src"}]} -->
-{{< highlight bash "linenos=table,noclasses=false" >}}
+```bash
 npx @vscode/l10n-dev export -o ./l10n ./src
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 The command creates a `bundle.l10n.json` file in the `./l10n` folder. This file contains all the strings that need translation. For the above sample, it has the following content:
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"json"},{"name":"selection","value":"{\n  \"Your extension got activated with the {0} language!\": \"Your extension got activated with the {0} language!\"\n}"}]} -->
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "Your extension got activated with the {0} language!": "Your extension got activated with the {0} language!"
 }
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 Now there are still two things to do. First, add the `l10n` property with the directory reference in the `package.json` file.
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"json"},{"name":"selection","value":"{\n  \"l10n\": \"./l10n\"\n}"}]} -->
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "l10n": "./l10n"
 }
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 The second thing is to start adding your localizations; you need to add a `bundle.l10n.<locale>.json` file in the `l10n` folder.
 
 <!-- FM:Snippet:Start data:{"id":"Highlight (single)","fields":[{"name":"type","value":"json"},{"name":"selection","value":"{\n  \"Your extension got activated with the {0} language!\": \"Yₒᵤᵣ ₑₓₜₑₙₛᵢₒₙ 𝓰ₒₜ ₐ𝒸ₜᵢᵥₐₜₑ𝒹 𝓌ᵢₜₕ ₜₕₑ {0} ₗₐₙ𝓰ᵤₐ𝓰ₑ!\"\n}"}]} -->
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "Your extension got activated with the {0} language!": "Yₒᵤᵣ ₑₓₜₑₙₛᵢₒₙ 𝓰ₒₜ ₐ𝒸ₜᵢᵥₐₜₑ𝒹 𝓌ᵢₜₕ ₜₕₑ {0} ₗₐₙ𝓰ᵤₐ𝓰ₑ!"
 }
-{{< / highlight >}}
+```
 <!-- FM:Snippet:End -->
 
 {{< caption-new "/uploads/2023/07/localization-4.png" "Localizing the string"  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABFSURBVB3B2w1AQBRF0X1yx8j49KkDdUgUrSShA+d6raVxmpeIWNNGEpIoJbguY5vPnd4Kr6E1+lrJNJKwk1o79uPkJ3gAsNcWjhrx+5IAAAAASUVORK5CYII=" "621" >}}

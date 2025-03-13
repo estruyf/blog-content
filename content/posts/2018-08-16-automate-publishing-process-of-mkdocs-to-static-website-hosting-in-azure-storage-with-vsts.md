@@ -30,15 +30,15 @@ In this article, I explain how you can set up an automated Visual Studio Team Se
 
 If you want to make use of the Static Website feature in Azure Storage, you need to be sure to use **general purpose v2** account type:
 
-{{< caption-legacy "uploads/2018/08/081618_1256_Automatepub1.png" "Be sure to specify General Purpose v2 (StorageV2)" >}}
+{{< caption-new "/uploads/2018/08/081618_1256_Automatepub1.png" "Be sure to specify General Purpose v2 (StorageV2)" >}}
 
 Once you have such a storage account in place, you could click on the **static website** option and enable it. During this configuration step, also set up the **index document name** to **index.html** and **error document path** to **404.html**.
 
-{{< caption-legacy "uploads/2018/08/081618_1256_Automatepub2.png" "Enable static website feature" >}}
+{{< caption-new "/uploads/2018/08/081618_1256_Automatepub2.png" "Enable static website feature" >}}
 
 Once you save this configuration, it will present you a URL of where you could access the static site:
 
-{{< caption-legacy "uploads/2018/08/081618_1256_Automatepub3.png" "Enabled static website feature provides you the endpoint" >}}
+{{< caption-new "/uploads/2018/08/081618_1256_Automatepub3.png" "Enabled static website feature provides you the endpoint" >}}
 
 ## Project setup with YAML
 
@@ -60,7 +60,7 @@ To make the installation process of the MkDocs dependencies, it is best to creat
 
 Here is how what demo project structure looks like:
 
-{{< caption-legacy "uploads/2018/08/081618_1256_Automatepub4.png" "Project files" >}}
+{{< caption-new "/uploads/2018/08/081618_1256_Automatepub4.png" "Project files" >}}
 
 ### Note on the YAML builds
 
@@ -68,17 +68,17 @@ When your account has permissions to create a new build pipeline, when pushing a
 
 When you do not have the right permissions, you will have to create it yourself on VSTS. Once the YAML build preview feature is turned on, you would have the following option when creating a new build definition:
 
-{{< caption-legacy "uploads/2018/08/081618_1256_Automatepub5.png" "Use YAML build pipeline" >}}
+{{< caption-new "/uploads/2018/08/081618_1256_Automatepub5.png" "Use YAML build pipeline" >}}
 
 Configure it as follows:
 
-{{< caption-legacy "uploads/2018/08/081618_1256_Automatepub6.png" "Specify the YAML file location" >}}
+{{< caption-new "/uploads/2018/08/081618_1256_Automatepub6.png" "Specify the YAML file location" >}}
 
 ## Project setup without YAML builds
 
 If you do not want to make use of the YAML builds, you could set up your build pipeline as follows:
 
-{{< caption-legacy "uploads/2018/08/081618_1256_Automatepub7.png" "Manual build pipeline creation" >}}
+{{< caption-new "/uploads/2018/08/081618_1256_Automatepub7.png" "Manual build pipeline creation" >}}
 
 The command line task can be configured with the same script as in the YAML build. The AzureBlob File Copy needs to currently use the **v2.* preview** version. The reason for this is that AzCopy dependency used in the preview version does now support the **$web** container in the Azure Storage. Before it returned an error because the dollar sign was not supported.
 
@@ -88,8 +88,8 @@ The rest of the AzureBlob File Copy task can be configured to your own needs.
 
 To test out your automated process, you just must push your code to VSTS and a build process should start up. If you manually configured it, it will depend on how you set it up (continuous integration, scheduled builds, manually).
 
-{{< caption-legacy "uploads/2018/08/081618_1256_Automatepub8.png" "Process output" >}}
+{{< caption-new "/uploads/2018/08/081618_1256_Automatepub8.png" "Process output" >}}
 
 Once the process completed, go check out your site on the provided URL when setting up the static site hosting feature in Azure.
 
-{{< caption-legacy "uploads/2018/08/081618_1256_Automatepub9.png" "Render of the static website" >}}
+{{< caption-new "/uploads/2018/08/081618_1256_Automatepub9.png" "Render of the static website" >}}

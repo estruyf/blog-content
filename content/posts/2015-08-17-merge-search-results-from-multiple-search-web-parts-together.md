@@ -22,15 +22,15 @@ Over the past months I received the same question a couple of times from custome
 
 The standard search web parts only let you define the number of search results you want to display and the number of results per group.
 
-{{< caption-legacy "uploads/2015/08/081715_1551_Mergesearch1.png" "Number of items to show" >}}
+{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch1.png" "Number of items to show" >}}
 
 When you configure your results to group in the query builder (underneath the refiners tab). You will also have the option to specify the number of results to show per group. This grouping functionality is powerful, but it has the limitation that the amount is specified per group. You are not able to specify it per group value.
 
-{{< caption-legacy "uploads/2015/08/081715_1551_Mergesearch2.png" "Group search results" >}}
+{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch2.png" "Group search results" >}}
 
 So if you want to be able to specify the number of results per query / category / division, I always gave the advice to develop it via JS in combination with calling the REST APIs. Right now I can tell you that it can also be achieved via the use of multiple search web parts and display templates. The result of these templates look like this:
 
-{{< caption-legacy "uploads/2015/08/081715_1551_Mergesearch3.png" "Merged search results" >}}
+{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch3.png" "Merged search results" >}}
 
 ## Combining search result display templates
 
@@ -42,7 +42,7 @@ The display template has to wait until all the search web parts are finished ren
 
 In his article he added a code snippet that needs to be added to each control templates that will be used on the page to know when all the content search web parts are finished rendering. This code snippet with a small adjustment will be used in our control template. The adjustment that has been added to the snippet is a check to know if the search web part uses the same control template. This check is required because you only have to way until the web parts that are using the control template to merge the search results are finished. The updated code looks like this:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 AddPostRenderCallback(ctx, function(){
   // Loop over all queries on the page
   var allRendered = true;
@@ -63,15 +63,15 @@ AddPostRenderCallback(ctx, function(){
     // Still have to wait to render the items
   }
 });
-{{< / highlight >}}
+```
 
 The code for the function which holds the HTML markup is very simple:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 push = function (sortField, content) {
   items.push([sortField, content]);
 }
-{{< / highlight >}}
+```
 
 From within the item display template you push the HTML markup from each item to the custom function defined in the control template. This push can be called from within the item template.
 
@@ -79,13 +79,13 @@ From within the item display template you push the HTML markup from each item to
 
 In the item template you can call the function as follows:
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 search.combine.push(sortField, output);
-{{< / highlight >}}
+```
 
 Once the search web parts are finished rendering, the **renderItems** function gets executed. This function retrieves the DIV element from the first search web part and appends the HTML from the items to it.
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Render the items on the page
 renderItems = function () {
   // Order the items based on the sortfield
@@ -98,7 +98,7 @@ renderItems = function () {
     elm.style.display = "block";
   }
 };
-{{< / highlight >}}
+```
 
 
 ## Configuration
@@ -114,17 +114,17 @@ If you want to make use of these templates or approach, have to follow the next 
 3.  In each web part go to the property mappings section and select to change the mappings of the managed properties;
 4.  In the **SortField** define the field on which you want to do your sorting.
 
-{{< caption-legacy "uploads/2015/08/081715_1551_Mergesearch4.png" "Managed property mappings" >}}
+{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch4.png" "Managed property mappings" >}}
 
 Once these things are configured, you would have the following result:
 
-{{< caption-legacy "uploads/2015/08/081715_1551_Mergesearch5.png" "Merged search results" >}}
+{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch5.png" "Merged search results" >}}
 
 The final result of these templates is not very "sexy", they are only created to show you how this can be achieved.
 
 In this example I used two web parts. When you open the page in edit mode, you will see that all the results are redirected to the first content search web part.
 
-{{< caption-legacy "uploads/2015/08/081715_1551_Mergesearch6.png" "Merged search results / web parts in edit mode" >}}
+{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch6.png" "Merged search results / web parts in edit mode" >}}
 
 ## Download these display templates
 

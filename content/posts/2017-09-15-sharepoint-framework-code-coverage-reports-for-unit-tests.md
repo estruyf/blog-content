@@ -36,29 +36,29 @@ A good resource for learning more about Istanbul can be found here: [learn-istan
 
 As mentioned, you only have to take care of writing your tests. Once your tests are completed, just run: `gulp test`.
 
-{{< caption-legacy "uploads/2017/09/091517_0803_SharePointF1.png" "Test gulp task output" >}}
+{{< caption-new "/uploads/2017/09/091517_0803_SharePointF1.png" "Test gulp task output" >}}
 
 ## Where do I find the report?
 
 Once you ran the test task with gulp, you can find the code coverage report in the **temp/coverage/js/** project folder. Open the **index.html** file to check out the report.
 
-{{< caption-legacy "uploads/2017/09/091517_0803_SharePointF2.png" "Coverage folder" >}}
+{{< caption-new "/uploads/2017/09/091517_0803_SharePointF2.png" "Coverage folder" >}}
 
 ## What do such reports look like?
 
 If you never used **Istanbul** before, here is what they look like:
 
-{{< caption-legacy "uploads/2017/09/091517_0803_SharePointF3.png" "Code coverage report" >}}
+{{< caption-new "/uploads/2017/09/091517_0803_SharePointF3.png" "Code coverage report" >}}
 
 In the above screenshot, you can see three controls for which I wrote some tests. The listView control as you can tell from the red bar, is not completely covered yet in my tests.
 
 You can also click on the control names to dig deeper into the files and code.
 
-{{< caption-legacy "uploads/2017/09/091517_0803_SharePointF4.png" "Code coverage file report" >}}
+{{< caption-new "/uploads/2017/09/091517_0803_SharePointF4.png" "Code coverage file report" >}}
 
 In this screenshot, you see that two files were used in my tests and that the scss.js file is fully covered. The **js** file is only 89.29% covered when clicking on that file, you can see the actual code and which code coverage you are missing.
 
-{{< caption-legacy "uploads/2017/09/091517_0803_SharePointF5.png" "Code coverage untested code report" >}}
+{{< caption-new "/uploads/2017/09/091517_0803_SharePointF5.png" "Code coverage untested code report" >}}
 
 At the moment, the coverage that I am missing as you can see in the screenshot is the one for the TypeScript helpers that get added when code gets transpiled to ES5 JS.
 

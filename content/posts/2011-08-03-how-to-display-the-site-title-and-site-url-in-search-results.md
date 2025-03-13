@@ -27,7 +27,7 @@ Adding the site title of the returned results is very easy, this can be retrieve
 My second thought was to some XSL manipulation, and this was the best approach.
 
 The final result will be:
-{{< caption-legacy "uploads/2011/05/052711_1345_HowtoDispla1.png" "Search Result with Site Reference" >}}
+{{< caption-new "/uploads/2011/05/052711_1345_HowtoDispla1.png" "Search Result with Site Reference" >}}
 The things I did to establish this were:
 
 1.  Adding Site Title column references to the fetched properties of the Core Result Web Part.
@@ -45,13 +45,13 @@ To add these columns go to your search result page or the page where you are usi
 *   Turn the page in edit mode;
 *   Edit the "Search Core Results" web part;
 *   Open the "Display Properties" section;
-{{< caption-legacy "uploads/2011/05/052711_1345_HowtoDispla2.png" "Display Properties Section" >}}
+{{< caption-new "/uploads/2011/05/052711_1345_HowtoDispla2.png" "Display Properties Section" >}}
 *   Add the following column to the "Fetched Properties";
 <Column Name=" SiteTitle "/>
 *   Click "Ok".
 The full "Fetched Properties" XML is the following:
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <Columns>
   <Column Name="WorkId"/>
   <Column Name="Rank"/>
@@ -70,7 +70,7 @@ The full "Fetched Properties" XML is the following:
   <Column Name="ServerRedirectedURL"/>
   <Column Name="SiteTitle"/>
 </Columns>
-{{< / highlight >}}
+```
 
 
 ## Search result XSL styling
@@ -79,11 +79,11 @@ Now that the" SiteTitle" column is added as to the Fetched Properties, you can e
 
 *   Edit the "Search Core Results" web part;
 *   Under the "Display Properties" section, click on the "XSL Editor" button;
-{{< caption-legacy "uploads/2011/05/052711_1345_HowtoDispla3.png" "XSL Editor" >}}
+{{< caption-new "/uploads/2011/05/052711_1345_HowtoDispla3.png" "XSL Editor" >}}
 *   Copy the content of the XSL Editor to the text editor of your choice;
 *   Add the following two XSL templates before the </xsl:stylesheet> closing tag;
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <xsl:template name="SPWebUrl">
   <xsl:param name="siteUrl" />
   <xsl:param name="contentclass" />
@@ -138,12 +138,12 @@ Now that the" SiteTitle" column is added as to the Fetched Properties, you can e
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
-{{< / highlight >}}
+```
 
 
 *   The next step is to add the following piece of code somewhere inside the "Results" template.
 
-{{< highlight xml "linenos=table,noclasses=false" >}}
+```xml
 <a>
   <xsl:attribute name="href">
     <xsl:call-template name="SPWebUrl">
@@ -153,7 +153,7 @@ Now that the" SiteTitle" column is added as to the Fetched Properties, you can e
   </xsl:attribute>
   <xsl:value-of select="sitetitle" />
 </a>
-{{< / highlight >}}
+```
 
 
 *   Click "OK" and save the page.
@@ -161,5 +161,5 @@ Now that the" SiteTitle" column is added as to the Fetched Properties, you can e
 ## Result
 
 Each search result contains the site hyperlink (depending on the location in the result template).
-{{< caption-legacy "uploads/2011/05/052711_1345_HowtoDispla4.png" "Final Result" >}}
+{{< caption-new "/uploads/2011/05/052711_1345_HowtoDispla4.png" "Final Result" >}}
 This solution only works on items and documents. When sites are returned as results, the site url gets broken. To fix this you could check if the result "contentclass" is not equal to "STS_Site".

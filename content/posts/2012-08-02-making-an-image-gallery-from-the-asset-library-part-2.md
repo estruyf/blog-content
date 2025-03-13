@@ -27,7 +27,7 @@ In the [previous part](https://www.eliostruyf.com/making-an-image-gallery-inside
 
 In the first part I created a gallery section which looked like this:
 
-{{< caption-legacy "uploads/2012/08/080212_0907_MakinganIma1.png" "Gallery view with default image" >}}
+{{< caption-new "/uploads/2012/08/080212_0907_MakinganIma1.png" "Gallery view with default image" >}}
 
 What I want to do is change the default image to the first image of that folder/gallery. To do this, I will make use of the SharePoint REST service and an Ajax call.
 
@@ -42,7 +42,7 @@ http://sp2010/_vti_bin/ListData.svc/Assets()?$filter=substringof('Gallery-Name',
 Creating a new JavaScript function that will be used to do the Ajax call for each gallery.
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 function GetFirstImage(elm, gallery) {
   // Check if the current context is not null
   // ctx can be used, because the object is created by the asset library view
@@ -62,7 +62,7 @@ function GetFirstImage(elm, gallery) {
     });
   }
 }
-{{< / highlight >}}
+```
 
 
 ## Step 3
@@ -70,7 +70,7 @@ function GetFirstImage(elm, gallery) {
 Now that the JavaScript function is created, the function call can be added to the **each** loop when creating the galleries.
 
 
-{{< highlight javascript "linenos=table,noclasses=false" >}}
+```javascript
 // Show the picture galleries
 jQuery('#pickerimages .ms-assetpicker-tiled-mediumprops a[onmousedown]').each(function() {
   var elm = jQuery(this);
@@ -80,13 +80,13 @@ jQuery('#pickerimages .ms-assetpicker-tiled-mediumprops a[onmousedown]').each(fu
   // Adding the first image as gallery image
   GetFirstImage(elm, gallery);
 });
-{{< / highlight >}}
+```
 
 
 ## Result
 
 The end result looks like this:
 
-{{< caption-legacy "uploads/2012/08/080212_0907_MakinganIma2.png" "Gallery view result" >}}
+{{< caption-new "/uploads/2012/08/080212_0907_MakinganIma2.png" "Gallery view result" >}}
 
 Event has still the default image, this is because there are no pictures added to this folder/gallery.

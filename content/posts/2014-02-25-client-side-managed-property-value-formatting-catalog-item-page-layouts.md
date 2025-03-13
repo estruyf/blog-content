@@ -33,7 +33,7 @@ In this section I'll cover how you could use the catalog item reuse web part to 
 
 The first thing to do is to open you catalog item page layout (master page gallery: `CatalogItem-<your term set>.html`), and add a new catalog item reuse web part.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--CS: [owstaxIdSliceCategory] Start Catalog-Item Reuse Snippet-->
 <!--SPM:<cc1:CatalogItemReuseWebPart runat="server" UseServerSideRenderFormat="True" ResultType="" NumberOfItems="1" UseSharedDataProvider="True" OverwriteResultPath="False" ResultsPerPage="1"  SelectedPropertiesJson="[&#34;PublicationDate&#34;]" ID="g_06e4745b_ed51_499a_a184_4b535d459892" __WebPartId="{06e4745b-ed51-499a-a184-4b535d459892}">-->
 <!--SPM:<RenderFormat>-->
@@ -41,7 +41,7 @@ The first thing to do is to open you catalog item page layout (master page galle
 <!--SPM:</RenderFormat>-->
 <!--SPM:</cc1:CatalogItemReuseWebPart>-->
 <!--CE:End Catalog-Item Reuse Snippet-->
-{{< / highlight >}}
+```
 
 > **Important**: you will need to update the **SelectedPropertiesJson** attribute with your managed property name.
 
@@ -56,7 +56,7 @@ If you want to change the display templates to be loaded, you'll need to specify
 
 For this example I created a new display template that will be used for the DateTime formatting (the link to the display template can be found at the bottom). Here is how the web part code block looks like:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--CS: [owstaxIdSliceCategory] Start Catalog-Item Reuse Snippet-->
 <!--SPM:<cc1:CatalogItemReuseWebPart runat="server" UseServerSideRenderFormat="True" ResultType="" NumberOfItems="1" UseSharedDataProvider="True" OverwriteResultPath="False" ResultsPerPage="1"  SelectedPropertiesJson="[&#34;PublicationDate&#34;]" ID="g_06e4745b_ed51_499a_a184_4b535d459892" __WebPartId="{06e4745b-ed51-499a-a184-4b535d459892}" RenderTemplateId="~sitecollection/_catalogs/masterpage/Display Templates/System/Control_CatalogDefault.js" ItemTemplateId="~sitecollection/_catalogs/masterpage/estruyf/Item_CatalogDateTime.js">-->
 <!--SPM:<RenderFormat>-->
@@ -64,7 +64,7 @@ For this example I created a new display template that will be used for the Date
 <!--SPM:</RenderFormat>-->
 <!--SPM:</cc1:CatalogItemReuseWebPart>-->
 <!--CE:End Catalog-Item Reuse Snippet-->
-{{< / highlight >}}
+```
 
 At the moment, the web part still renders the value server side. To change this behaviour you need to change a couple of things to the web part. This are the thing you need to change:
 
@@ -72,7 +72,7 @@ At the moment, the web part still renders the value server side. To change this 
 *   **UseSharedDataProvider** attribute should be set to **False**;
 *   A new property needs to be added: **DataProviderJSON** and it should contain the query that needs to be executed against the correct result source.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--CS: [owstaxIdSliceCategory] Start Catalog-Item Reuse Snippet-->
 <!--SPM:<cc1:CatalogItemReuseWebPart runat="server" UseServerSideRenderFormat="False" ResultType="" NumberOfItems="1" UseSharedDataProvider="False" OverwriteResultPath="False" ResultsPerPage="1"  SelectedPropertiesJson="[&#34;PublicationDate&#34;]" ID="g_06e4745b_ed51_499a_a184_4b535d459892" __WebPartId="{06e4745b-ed51-499a-a184-4b535d459892}" RenderTemplateId="~sitecollection/_catalogs/masterpage/Display Templates/System/Control_CatalogDefault.js" ItemTemplateId="~sitecollection/_catalogs/masterpage/estruyf/Item_CatalogDateTime.js" DataProviderJSON="{&#34;QueryTemplate&#34;:&#34;owstaxidSliceCategory:{URLTOKEN.1}&#34;,&#34;SourceID&#34;:&#34;DED6E249-29C2-4C53-839D-2DF8970BD8A8&#34;,&#34;PropertiesJson&#34;:&#34;{&#39;Tag&#39;:&#39;{Term}&#39;}&#34;}">-->
 <!--SPM:<RenderFormat>-->
@@ -80,18 +80,18 @@ At the moment, the web part still renders the value server side. To change this 
 <!--SPM:</RenderFormat>-->
 <!--SPM:</cc1:CatalogItemReuseWebPart>-->
 <!--CE:End Catalog-Item Reuse Snippet-->
-{{< / highlight >}}
+```
 
 > **Important**: if you search for the "DataProviderJSON" value in the page layout, you'll find the correct value to use for your environment.
 _
 
 After a page refresh you see the value appear:
 
-{{< caption-legacy "uploads/2014/02/022514_2034_Clientsidem1.png" "Client side value rendering" >}}
+{{< caption-new "/uploads/2014/02/022514_2034_Clientsidem1.png" "Client side value rendering" >}}
 
 The ASPX code looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <cc1:CatalogItemReuseWebPart 
 	runat="server" 
 	UseServerSideRenderFormat="False" 
@@ -108,21 +108,21 @@ The ASPX code looks like this:
 <RenderFormat>
 </RenderFormat>
 </cc1:CatalogItemReuseWebPart>
-{{< / highlight >}}
+```
 
 
 ### Content Search Web Part
 
 Another possibility is to use the Content Search Web Part to render the managed property values.
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <!--MS:<cc1:ContentBySearchWebPart runat="server" AlwaysRenderOnServer="False" ResultType="" BypassResultTypes="False" NumberOfItems="1" QueryGroupName="Default" FrameType="None" __WebPartId="{18a39c80-a5c3-4476-950d-0eee191ed90a}" RenderTemplateId="~sitecollection/_catalogs/masterpage/Display Templates/System/Control_CatalogDefault.js" ItemTemplateId="~sitecollection/_catalogs/masterpage/estruyf/Item_CatalogDateTime.js" SelectedPropertiesJson="[&#34;PublicationDate&#34;]" DataProviderJSON="{&#34;QueryTemplate&#34;:&#34;owstaxidSliceCategory:{URLTOKEN.1}&#34;,&#34;SourceID&#34;:&#34;DED6E249-29C2-4C53-839D-2DF8970BD8A8&#34;,&#34;PropertiesJson&#34;:&#34;{&#39;Tag&#39;:&#39;{Term}&#39;}&#34;}">-->
 <!--ME:</cc1:ContentBySearchWebPart>-->
-{{< / highlight >}}
+```
 
 The ASPX code for this block looks like this:
 
-{{< highlight html "linenos=table,noclasses=false" >}}
+```html
 <cc1:ContentBySearchWebPart 
 	runat="server" 
 	AlwaysRenderOnServer="False" 
@@ -137,11 +137,11 @@ The ASPX code for this block looks like this:
 	SelectedPropertiesJson="[&quot;PublicationDate&quot;]" 
 	DataProviderJSON="{&quot;QueryTemplate&quot;:&quot;owstaxidSliceCategory:{URLTOKEN.1}&quot;,&quot;SourceID&quot;:&quot;DED6E249-29C2-4C53-839D-2DF8970BD8A8&quot;,&quot;PropertiesJson&quot;:&quot;{'Tag':'{Term}'}&quot;}">
 </cc1:ContentBySearchWebPart>
-{{< / highlight >}}
+```
 
 The output is just the same as the previous one:
 
-{{< caption-legacy "uploads/2014/02/022514_2034_Clientsidem2.png" "Client side value rendering" >}}
+{{< caption-new "/uploads/2014/02/022514_2034_Clientsidem2.png" "Client side value rendering" >}}
 
 ## Overwrite the property mapping
 

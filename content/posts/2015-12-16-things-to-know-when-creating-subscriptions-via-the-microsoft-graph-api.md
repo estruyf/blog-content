@@ -44,7 +44,7 @@ If you already used the Outlook Subscription API, you will know that you have to
 
 During the creation of my subscription the API always returned the following message:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
   "error": {
     "code": "",
@@ -55,7 +55,7 @@ During the creation of my subscription the API always returned the following mes
     }
   }
 }
-{{< / highlight >}}
+```
 
 This error message does not tell you much about the real problem. So I had to fiddle around and while I was reviewing my code, I saw that I was using the HTTP URL of my application. By changing this to HTTPS, the subscription got created. The error message could have been a bit clearer, so you have to know that you always have to use HTTPS for the notificationUrl property.
 
@@ -67,7 +67,7 @@ Once your subscription is in place, the webhook will send notifications to your 
 
 Here is what the notification payload looks like:
 
-{{< highlight json "linenos=table,noclasses=false" >}}
+```json
 {
    "value":[
       {
@@ -85,7 +85,7 @@ Here is what the notification payload looks like:
       }
    ]
 }
-{{< / highlight >}}
+```
 
 
 ## Useful resources
