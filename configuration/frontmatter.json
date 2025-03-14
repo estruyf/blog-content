@@ -3,7 +3,9 @@
   "frontMatter.logging": "verbose",
   // "frontMatter.copilot.family": "gpt-4-turbo",
   "frontMatter.website.host": "https://www.eliostruyf.com",
-  "frontMatter.framework.startCommand": "hugo server -D",
+  "frontMatter.framework.id": "astro",
+  "frontMatter.framework.startCommand": "npm run dev",
+  "frontMatter.preview.host": "http://localhost:4321",
   "frontMatter.content.fmHighlight": true,
   "frontMatter.global.activeMode": "",
   "frontMatter.global.modes": [
@@ -63,13 +65,11 @@
       "command": "~/.nvm/versions/node/v18.17.1/bin/node"
     }
   ],
-  "frontMatter.preview.host": "http://localhost:1313",
   "frontMatter.content.publicFolder": "[[workspace]]/.frontmatter/static",
   "frontMatter.content.defaultSorting": "DateDesc",
   "frontMatter.dashboard.openOnStart": false,
   "frontMatter.taxonomy.slugPrefix": "/",
   "frontMatter.taxonomy.slugSuffix": "/",
-  "frontMatter.framework.id": "hugo",
   "frontMatter.taxonomy.customTaxonomy": [
     {
       "id": "customTags",
