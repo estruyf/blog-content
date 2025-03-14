@@ -24,7 +24,7 @@ In this part (the last one) I will show you how you can integrate these tags int
 
 This will be the final result:
 
-{{< caption-new "/uploads/2012/03/032812_1826_TakeyourSha1.png" "Social Tags Results" >}}
+{{< caption-new "/uploads/2012/03/032812_1826_TakeyourSha1.png" "Social Tags Results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfUlEQVR4nGNQs/SDIw1rf3VrfyOXcDP3aB27YDVLP4ZTZ66eOnPl1Jkrp89e3X3g1P5DZ06cuXLkxMXjp6/sO3Sa4T8S+Pjh29cv3//8/vPr5++fP39/fP+J4fvXH2/ffnz37tO7d58+ffzy7cv371++vX77+fPHr9duPQMAQFZYRLsiq0wAAAAASUVORK5CYII=" "307" "137" >}}
 
 ## User Control
 
@@ -171,7 +171,7 @@ Find the place where you want to add the user control.
 
 In my example I added a new table column next to the social data buttons. You can do this by doing a search for the following class **s4-socialdata-notif** and change the HTML to this:
 
-{{< caption-new "/uploads/2012/03/032812_1826_TakeyourSha2.png" "HTML Code for Social Tags Location" >}}
+{{< caption-new "/uploads/2012/03/032812_1826_TakeyourSha2.png" "HTML Code for Social Tags Location"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAbklEQVR4nBXJ2xLDEBAAUP//g81LLypDSWSQZdklMj2vR4zGXqbvAl7lXdfNXeRjTlzKiHGKmvuhYJfg3jlaPDT+VrKmB8/cpyAcSZ9Wlm1F8wT1Ym3m6RFi/3eNzX7C8ghOw1UQ8mzYGYmQieYNTiBxJPPScp4AAAAASUVORK5CYII=" "450" "190" >}}
 
 ```html
 <td>
@@ -185,7 +185,7 @@ In my example I added a new table column next to the social data buttons. You ca
 
 Save and publish your master page. When you now go to a SharePoint page, you should have the following result.
 
-{{< caption-new "/uploads/2012/03/032812_1826_TakeyourSha3.png" "Social Tags Result" >}}
+{{< caption-new "/uploads/2012/03/032812_1826_TakeyourSha3.png" "Social Tags Result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAApklEQVR4nAGbAGT/ALOyrsTI0cbHz7a5w7i8xbq/yb7Czbi8x73CzLO4wgD5+/z8/f70+Pz3+/39///17erd2tDn6eLMycnq6usA9ff4+Pj44+Xl5OXm7/L0ybitnoZusJR8ZUIruLm5APP3+f7+/v79/f39/P///8a5r5KCbrGdjpiAcLu5vADx9PX7/Pz////+/v7////d19O1rqLJwLjKx8PPzc1NAHslIPYJAAAAAABJRU5ErkJggg==" "605" "324" >}}
 
 ## Download
 

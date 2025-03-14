@@ -26,15 +26,15 @@ In this part I show you a way to retrieve the all the tags for a specific locati
 
 My first step was to check the SocialTagManager class to see the code of the GetTags methods. The SocialTagManager class can be found in the **Microsoft.Office.Server.UserProfiles.dll**.
 
-{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha1.png" "SocialTagManager" >}}
+{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha1.png" "SocialTagManager"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABAUlEQVR4nFWOy26DMBBF+f+/6rqNVFVqaGCwsZPiB6A4UL8w8lSOUkW9m1mcObq3CjEOQnPGe9pzzjnjhBAhhDHGe1/lnK3z7Px9Op2GYXDOLcsyz3MIARErREwpTdPUNA0hBADWdcW/FLynfdQjpZR0hPVMCKGVNsY8bSUVAEAL9J66rpVS/2zoykPf94wxQsg4jjnnO96TUroUt1DGc04plVI+cIxRSgFtA9B1Xde20DTtczkiemv0wLTWdl28/dm3iDkXnO9nuZnDx9fL2/FwJM3lep43NgU2hYftrP2s4fX9eJGzsdvN7cYmY1OFWOzol3HgWuvg3RbDFksxIv4Cuw5OF8+i0TkAAAAASUVORK5CYII=" "211" "258" >}}
 
 The SocialTagManager class contains 13 GetTags methods, and only four of them are public.
 
-{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha2.png" "GetTags Methods" >}}
+{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha2.png" "GetTags Methods"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAX0lEQVR4nB3MYQ7AEAwGUPc/pYVOiH4aOtIfk2XeAZ4rdDMDAB8AxrHWMjOXIwGotTKzNBGRMUbvfc653+3oit57IgohlFJyzgD0UTPbe7v7iiHGlFJDq8ffiKjqfOYHEKNvrIGPFXkAAAAASUVORK5CYII=" "439" "195" >}}
 
 The method that could retrieve all the tags (a maximum of 1000) is the following **GetTags(Uri url, Int32 maximumItemsToReturn, SocialItemPrivacy socialItemPrivacy)**.
 
-{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha3.png" "Internal GetTags Method" >}}
+{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha3.png" "Internal GetTags Method"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAbklEQVR4nBXJSxKCMBAFQO5/N12DkggZYjJ5kw9TQnRnseuqHryjKEgiDDAu1H0vrR29lyzD+3bH45nGCeNUZlON1WVtxnyZVXWg+bVY653zRGBOIVTJH9Vf71f7lWjbQowQiZwAMHPO+Tx7FvwBXWBtLtHTB2oAAAAASUVORK5CYII=" "430" "191" >}}
 
 It seems that this method does not use the current user of a specific user to filter the tags. The only problem is that this is an internal method.
 
@@ -70,11 +70,11 @@ var itemTags = (SocialTag[])method.Invoke(stm, new object[] { uri, 1000, SocialI
 
 When you use these code snippets in the console application from part 1, you should now get other results for the items (if you have enough tags, and likes).
 
-{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha4.png" "Reflection GetTags Method Result" >}}
+{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha4.png" "Reflection GetTags Method Result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAo0lEQVR4nB3BWw6CMBAAwN7/NMb4CkZj4isEvxAR4wWw2+62C2hLITU6Iyaz3WKdrTaXeZJOl6d5km73+SGtzpfn4ZiJ6n4jVF3L3n+8d969e/8JvR+HnjSIPL8CACJpjaCURuy6rg8hhNEYI8qyREQiAoC6rgHAWjsMQ4yxYRaPR2WsZWYyRmlNRMzsnIsxtk0jiuKqlEL9I6UEKfHPOSfl6wuQMaKz/peKPgAAAABJRU5ErkJggg==" "440" "265" >}}
 
 When you compare this result with the first part, you can see that "How To Use This Library" has 2 likes more than in the first part.
 
-{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha5.png" "Social Tags" >}}
+{{< caption-new "/uploads/2012/03/032712_0950_TakeyourSha5.png" "Social Tags"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAW0lEQVR4nC3LUQ4CMQwD0d7/pEi06m7dJrFDBAIxer/TAFz3BWAtAJtiZlIiQ1Jzjzlnf/bRv+YYZ6Oq3r/aPiZlKo0VquM0C3qE/283M/N4LE5L8BXKiCBZVR/jGXOK9N5wkQAAAABJRU5ErkJggg==" "479" "179" >}}
 
 ## Complete Source Code
 

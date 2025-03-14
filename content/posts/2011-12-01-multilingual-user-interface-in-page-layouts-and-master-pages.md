@@ -73,8 +73,8 @@ In the **Languages** attribute you could specify the language code (locale ident
 
 On an English site you get this:
 
-{{< caption-new "/uploads/2011/12/120111_1839_Multilingua1.png" "English Specific Content" >}}
+{{< caption-new "/uploads/2011/12/120111_1839_Multilingua1.png" "English Specific Content"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAApklEQVR4nAGbAGT/ABosQh0wRxgsRBwvQB4yQzJDWGx3hXN+iy5AVRYqQQCRmqScpq+WoKugqKWgq6q1usLy8vL7+/mutr6WoKoA7ezs+/v7/f39/////v7//v7+/v7//v7+////////APTUnvzZneTn8eLj6uHj6uLk6u3t8+7r8Ozr8fv4/AD03MD/4sLy8fjw7vPw7vPv7fLu7PHv7PL59vv/+/+lD3GoWYI+/gAAAABJRU5ErkJggg==" "250" "132" >}}
 
 On a Dutch site you get this:
 
-{{< caption-new "/uploads/2011/12/120111_1839_Multilingua2.png" "Dutch Specific Content" >}}
+{{< caption-new "/uploads/2011/12/120111_1839_Multilingua2.png" "Dutch Specific Content"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVR4nDWMvwqCUBjF73tUtEVb5hQNNSTl0h+IoIamaoteor0XEBoiaGrrVZqiQBJJrUzymter3xdqHX7DgcP5kbwox5TlrNAsVruiNBSlYaHSyZSaOaFF5NG8PV7UOlN5NFC2u/NFvWr6cqXUe5NGf0Y0Xb8ZhmHdXeoyxgAAAT4f36WeSylhPg94GHKOiAiIEWKYlCQE1T2c1o7jW5Zjmi9GOXKEAFIInA/RcWPbnmk5z8fb94L4zX8QDCEmSrSp+b8hxy9lMaWwYr9RqwAAAABJRU5ErkJggg==" "227" "154" >}}

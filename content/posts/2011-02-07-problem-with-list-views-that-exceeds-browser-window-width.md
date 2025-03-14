@@ -18,13 +18,13 @@ comments: true
 
 Last week a customer indicated that layout problems could arise with list views. The problem arises when the amount of data/columns that is visible, exceeds the browser width. This creates an empty space next to the title row when the user scrolls horizontally.
 
-{{< caption-new "/uploads/2011/02/020711_1811_ProblemWith1.png" "" >}}
+{{< caption-new "/uploads/2011/02/020711_1811_ProblemWith1.png" ""  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAWUlEQVR4nGXGQQ6DMAxE0VwxHKHpDcipkRqEIHbGHkzFFr7e4qep1Fxq/sy51On7lAxQHW3dfm27XqWjS++6H7K03Xg6GRHmPCOcTOYuAzAH7H4FSRlwpyj+1q9jVWiOokUAAAAASUVORK5CYII=" "508" "204" >}}
 
 This problem occurs when loading the page, the JavaScript of SharePoint sets the browser window width to the title row element.
 
 After some research I found two solution to set the width of the list view to the title row.
 
-{{< caption-new "/uploads/2011/02/020711_1811_ProblemWith2.png" "" >}}
+{{< caption-new "/uploads/2011/02/020711_1811_ProblemWith2.png" ""  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAW0lEQVR4nHXEiQ3CQAwEwKsutEBagMZDwpOc92yvbSSUApBG06br7Z/LfG8CYIxznItAgN7lsb2W9d1IqnkE3d3MPkcfaiQx9LmjRZaaV5U6I8ucVd/IjExG/gD8tGDSjPXEgQAAAABJRU5ErkJggg==" "526" "204" >}}
 
 ## Solution 1
 

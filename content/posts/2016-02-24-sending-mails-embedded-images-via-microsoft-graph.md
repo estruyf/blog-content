@@ -164,7 +164,7 @@ var response = client.Execute(request);
 
 When you run this code, it would give you the following result:
 
-{{< caption-new "/uploads/2016/02/022416_1612_Sendingmail1.png" "Mail message with an embedded image" >}}
+{{< caption-new "/uploads/2016/02/022416_1612_Sendingmail1.png" "Mail message with an embedded image"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAABnWAAAZ1gEY0crtAAAAX0lEQVR4nGWKOwqAMBAFc/+L2HkDD7LFYsxaScD9mKSLEoJBcKrhzXMsZnblnEWEmVU1pXS/uGWe9m3NpdRa+zSkZTvI5BTV7zpOrlvn7y3HGBHRe09EiAgAIQQAUNUHo3CPQ6WR3UMAAAAASUVORK5CYII=" "338" "165" >}}
 
 ## Sample application
 

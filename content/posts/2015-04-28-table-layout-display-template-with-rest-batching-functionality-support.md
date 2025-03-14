@@ -28,17 +28,17 @@ The session reminded that I needed to invest some time to optimize the table lay
 
 If you used or read the article about the table layout display template, you probably know how I used a HTTP request to check if a managed property is sortable or not. The sortable check needs to be performed for every managed property that will be used. Depending on the number of managed properties you want to show with the display template, it results in the same number of HTTP requests. For example: if you configured the CSWP (Content by Search Web Part) to visualize the **Path**, **Title**, **LastModifiedTime**, **Created**, and **Author** managed properties it will perform the following requests:
 
-{{< caption-new "/uploads/2015/04/042815_1146_Tablelayout1.png" "Multiple HTTP requests to check if the managed properties are sortable" >}}
+{{< caption-new "/uploads/2015/04/042815_1146_Tablelayout1.png" "Multiple HTTP requests to check if the managed properties are sortable"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAJklEQVR4nGP4+Pzlz+/fP718+fruPTC6+/L27Ze3br28eev906cAps0a77lny2gAAAAASUVORK5CYII=" "984" "88" >}}
 
 The first two requests returned a 400 error - Invalid parameter: SortList, which means that the corresponding managed property (path and title) are not sortable. By looking at the screenshot above, you could imagine what will happen if you are going to visualize ten managed properties. The REST batching functionality helps you reduce the number of requests that needs to be performed.
 
 If you combine the HTTP requests from the screenshot into one batch it results in the following request:
 
-{{< caption-new "/uploads/2015/04/042815_1146_Tablelayout2.png" "Single batch request" >}}
+{{< caption-new "/uploads/2015/04/042815_1146_Tablelayout2.png" "Single batch request"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AOfq4fPy9Ojp6vn5+v///+fn593c3OLi4+fn6ODg4a7BG3jDfG+mAAAAAElFTkSuQmCC" "438" "19" >}}
 
 This request gives the following response:
 
-{{< caption-new "/uploads/2015/04/042815_1146_Tablelayout3.png" "Batch request response" >}}
+{{< caption-new "/uploads/2015/04/042815_1146_Tablelayout3.png" "Batch request response"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfklEQVR4nD3L3RKCIBBAYd7/5ZoSMgccVAo3ftRYbFy8aRqnrr9zWFVxLm6tAeNm99pCLiGXuO4h71MurLpwzuvWQA/xubw9kkubx+KRAhI71/KqOjWM3RjtlOFXuINPvBFSy95+OSLMq0/kEjmkiMSE1I2+qwG09Y+D/3eiD0X+iOZHP21rAAAAAElFTkSuQmCC" "619" "309" >}}
 
 In the screenshot you can see that the response contains the responses for all the combined requests. If you compare this screenshot with the first one, you can see that the first two requests (highlighted in red - path and title) return the same error 400 message - Invalid parameter: SortList.
 

@@ -14,7 +14,7 @@ tags:
 comments: true
 ---
 
-{{< caption-new "/uploads/2016/04/spsbe-2016.jpg" "SPSBE 2016" >}}
+{{< caption-new "/uploads/2016/04/spsbe-2016.jpg" "SPSBE 2016"  "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAfEAABBAICAwAAAAAAAAAAAAABAAIDBBMhBRIxUmH/xAAVAQEBAAAAAAAAAAAAAAAAAAAGB//EABkRAQACAwAAAAAAAAAAAAAAAAEAAwQiI//aAAwDAQACEQMRAD8Alc5fNu5ibWq1ooY2RsbBEG66g7Pkn6SoWaT3KIndBoSf5D0Z/9k=" "500" "177" >}}
 
 The BIWUG board is proud to announce the **sixth** edition of SharePoint Saturday Belgium.
 

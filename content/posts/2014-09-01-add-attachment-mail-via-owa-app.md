@@ -17,13 +17,13 @@ comments: true
 
 For one of our company events later this month, I developed a demo OWA app which could add attachments to a mail. I used the following MSDN article to achieve this: [Add and remove attachments to an item in a compose form in Outlook](http://msdn.microsoft.com/en-us/library/office/dn568061(v=office.15).aspx). In the article they give a good overview, but there is one little problem with the example code. This code does not include the file extension, so you end up with unrecognised files in OWA.
 
-{{< caption-new "/uploads/2014/09/090114_0828_Howtoaddana1.png" "Files without extensions" >}}
+{{< caption-new "/uploads/2014/09/090114_0828_Howtoaddana1.png" "Files without extensions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKElEQVR4nAXBwQkAQAgDweu/yv0bECEGnzfzgKra3bubGUBSd9tO8gGtuBvr2IlrggAAAABJRU5ErkJggg==" "552" "71" >}}
 
 The first one is a JPG file, the second one a Word document. Because the file extensions are not included, the files cannot be opened in Office Web Apps.
 
 If you would manually upload the files, you get this:
 
-{{< caption-new "/uploads/2014/09/090114_0828_Howtoaddana2.png" "Files with extensions" >}}
+{{< caption-new "/uploads/2014/09/090114_0828_Howtoaddana2.png" "Files with extensions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/ANXZ2+rr6/Hx8fn4+Ozu8p601ebo6/Hx8PDw8PX19aIUGzPxfCJtAAAAAElFTkSuQmCC" "544" "71" >}}
 
 I contacted Microsoft, and Adam Sheldon pointed me in the right direction. He told me to check if the file extension was added in the **AttachmentName** property.
 

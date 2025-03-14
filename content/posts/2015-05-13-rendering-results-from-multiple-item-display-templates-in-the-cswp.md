@@ -116,11 +116,11 @@ The render function is nothing special, it retrieves the DIV element of the curr
 
 Once the code is in place, you configure the CSWP to use routing template as the item display template.
 
-{{< caption-new "/uploads/2015/05/051315_1319_Renderingre1.png" "Configure to load the routing template" >}}
+{{< caption-new "/uploads/2015/05/051315_1319_Renderingre1.png" "Configure to load the routing template"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAbklEQVR4nGWMQQrDMAwE/f+nloZYlhVJa8kOdaAUOoe9zDLF3dqFozkJXqR0jbURG1VQRPr7OElgCL5gyEdjpCJK79yZ15xz5mdmPkSEqhbAI2Ktffij1HrWSqrq7r8iMwEUM2NmoiYi+U3vuLvfpqmvnlAgpDsAAAAASUVORK5CYII=" "240" "136" >}}
 
 Here you can see a simple result output:
 
-{{< caption-new "/uploads/2015/05/051315_1319_Renderingre2.png" "Routing template loaded and rendered three other templates" >}}
+{{< caption-new "/uploads/2015/05/051315_1319_Renderingre2.png" "Routing template loaded and rendered three other templates"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAYUlEQVR4nAXBQQrDIBAFUO9/LHfSRSyZsQiOpPhtkKRCKM0sUrDvmd91ey45xshEITwAtNa2fT9VxxiGeyaamdk5Z60lDgUoQAWO42PKt0hOIuLvfvJTSvJa11prf3dV/QNS2k75UIMmlwAAAABJRU5ErkJggg==" "244" "74" >}}
 
 Here I have three different item display templates: Item_BodyOnly.js, Item_ImageLeft.js, Item_ImageRight.js. In these display templates I defined a block with a different background color, the display template filename and page title.
 
@@ -154,7 +154,7 @@ You will also have to add this 'Author': 'Author' mapping in the Item_Routing.ht
 
 Once you have done this and you refresh the page the Item_ImageLeft results should now include the author name.
 
-{{< caption-new "/uploads/2015/05/051315_1319_Renderingre3.png" "Updated Item_ImageLeft.js template" >}}
+{{< caption-new "/uploads/2015/05/051315_1319_Renderingre3.png" "Updated Item_ImageLeft.js template"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAWUlEQVR4nB3BSwqAIBAAUO9/LNsnupNc6IwxkF9QkNRF0HtsrcsjAKJ1johyya21vfd855yLmWKEOKWU/OBKKQC4vSeiWmvvncXxIIK1TmsNiCGEFFP9jTE+vINROq+QyDUAAAAASUVORK5CYII=" "297" "81" >}}
 
 ## Download and using the templates
 

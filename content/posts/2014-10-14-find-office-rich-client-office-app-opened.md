@@ -43,19 +43,19 @@ Here are some screenshots of the CoercionType object from the various applicatio
 
 ## Word
 
-{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh1.png" "CoercionType Object of Word" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh1.png" "CoercionType Object of Word"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAvUlEQVR4nB3OWU7DMBQFUO9/CYgq7IBFIH4IhVJhlMomSkMqI4/x8O5r+oXEWcERP8YqNWmtY4zM3BoRIedsrSOCiCnp2ajTcJ4m7yxAzKi1BO+ZIUJav8bL4SjfDp9qPK+FckWI+WJsrhBrio97d/cUu2f3sN/u+23Xb13P3QvtXm8C1Kbf9DGM82JShc8UC1yqapzd2sSVYXx+P0qzLLftCmoMArVByuC9YMCELE/fzjow/8dRatVKl1L/AB9nvWdVe74uAAAAAElFTkSuQmCC" "281" "198" >}}
 
 ## Excel
 
-{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh2.png" "CoercionType Object of Excel" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh2.png" "CoercionType Object of Excel"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAApUlEQVR4nCXJvRLBQBQG0H3/Ro28hFqjY8IMGYZI/CQZIyHJrrv33m9RKZz2mKbtd/tTnuXWOoSgqgCIqH22IcAwc3F7HNOsKitr7b+9p77rABginxb3TbJLkm1+OrOoKNyLmqYVBAPxk1U9mDbjWR3FYRh/RvE3ihEtdLT8Gqg8rZ+v0+Jasr5fXrzAkd8fss6SERFHnF0q13eAqgqgzFSVpQj/AO0+oeW8s1IuAAAAAElFTkSuQmCC" "281" "162" >}}
 
 ## PowerPoint
 
-{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh3.png" "CoercionType Object of PowerPoint" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh3.png" "CoercionType Object of PowerPoint"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAmUlEQVR4nBXH0Q7BMBQA0P7/L3ggMv7Au7CEEBYLJi0yM8tmu11nvb3rTIjzdliSFUKEggsAiYZqrRENgPwXDZOlutyS095PH9GbdNfoj0WtQCvoLDKQchnEc09MV4HrhzwjntEhUsf4JZ4N03U12RW9WT5009GWHM86XjveYH9RDtbIiExRqrPg6T3sqP5a/W2RKoivHFX+A9yrhdqqFDpwAAAAAElFTkSuQmCC" "281" "143" >}}
 
 ## Project
 
-{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh4.png" "CoercionType Object of Project" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh4.png" "CoercionType Object of Project"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAl0lEQVR4nAXBZwrCMBgA0Nz/pwgV9RAeQSy0ClUEBx0aIrZ0mGZ/SRfqewi/q9s9w08slQJrDYABAGspbRnjSAjxypv4eiHPTEveWzM4GDsrW6oFQ4zzKC39UxKc010Ux4Ug1BHqkpylhUBGy82xnm352m9WoZkHvbcfFodxGYIXOGQBpFIPTFhdTB18e5ic/g1W0op/yj+6A4WTU3pnjAAAAABJRU5ErkJggg==" "260" "119" >}}
 
 ## The code
 
@@ -113,16 +113,16 @@ If you add this code inside your Office.initialize, you get the following output
 
 ### APP opened in Word
 
-{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh5.png" "APP opened in Word" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh5.png" "APP opened in Word"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAgklEQVR4nGN4/+nbh88/3rz/+v7Tt/efvv/+8/c/FPz7/v07Q+30/dE1GxIbNyc0bkpq2pzcvCWlZUta69bYuo19S08wuOcsUw2arhEyE0IqBUwVcemTcJ/AZdMVUr6GYerqM/WzDjXPPdI053DjnMONsw/XzzrUMPtQ5dT9C7dcBABVN0tPrBz2mgAAAABJRU5ErkJggg==" "335" "129" >}}
 
 ### APP opened in Excel
 
-{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh6.png" "APP opened in Excel" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh6.png" "APP opened in Excel"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAhElEQVR4nGP48v3r5+9fP377/PHbl4/fPv/+++c/DPz88ZOhe+u8qGmlKXNqk2ZXJ8+pTZvXkDG/MWtBU8Ks6ql7ljMETswTz7WTK3KRynOQKXASybbmSDbkSTNliNEImVzAMH3vioKlHeUr+0qW95Su6ClZ3lO0rKtkeXf2wpY5B9YCAKT/RlAHdt6LAAAAAElFTkSuQmCC" "339" "130" >}}
 
 ### APP opened in PowerPoint
 
-{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh7.png" "APP opened in PowerPoint" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh7.png" "APP opened in PowerPoint"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAhElEQVR4nGP4/fnTn69ffn/68PvLpz9fPv/78/s/DPz49Yvh8dSmu5VJ9+sz79Vl3K/PvN+Yfb8p+0Fz3v269KdzexiuxTtfdFK45Kp80UnhgrPiJTfVS26q5yzFT2syX09wYXgyreVBfcbD5twHTTkPmnIeNuc8aM550JR9vyrp6exOAFRQTjWTc6C9AAAAAElFTkSuQmCC" "332" "132" >}}
 
 ### APP opened in Project
 
-{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh8.png" "APP opened in Project" >}}
+{{< caption-new "/uploads/2014/10/101414_1319_Findoutinwh8.png" "APP opened in Project"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAg0lEQVR4nGP4/P3z159fP379+Pn7ly/fv/z5++c/DPz+9Zuha0NH9pyswgUFBfPzixYUFC8sKltcWr6kLH9+3oyd0xl82ry0izT1inW0CzX1irV1i7Rl0qVk06UF4vlCe4MZejZ1Fy0sLFtSWrK4uGxxSfmS0qKFhcWLirLnZk3dMRUAiXREyFkCa44AAAAASUVORK5CYII=" "334" "130" >}}

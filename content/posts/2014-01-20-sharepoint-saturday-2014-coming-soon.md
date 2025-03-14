@@ -15,7 +15,7 @@ tags:
 comments: true
 ---
 
-{{< caption-new "/uploads/2014/01/sps-2012-belgium.jpg" "SharePoint Saturday Belgium" >}}
+{{< caption-new "/uploads/2014/01/sps-2012-belgium.jpg" "SharePoint Saturday Belgium"  "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAACAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUI/8QAHhAAAgIBBQEAAAAAAAAAAAAAAQMAAiEEEhMyQWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAIDMf/aAAwDAQACEQMRAD8A05rkrCCQugJIztEiotbgXk9R78iIcz1Y/9k=" "522" "116" >}}
 
 The BIWUG board is proud to announce a new edition of SharePoint Saturday Belgium!
 

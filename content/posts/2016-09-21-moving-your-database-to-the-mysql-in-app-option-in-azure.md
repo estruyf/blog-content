@@ -26,7 +26,7 @@ One of the things I tried was the Wordpress + MSSQL option. After a day I found 
 
 So I went for setting up my own MySQL server. Which ran fine and performance was much better than ClearDB, but it was a bit pricier. This also had to do with the VNET I had configured to let my Web App connect to the MySQL server. A couple weeks ago I saw the article that the Azure team released a new feature in preview called: **MySQL in App**. This lets you create a MySQL database for the Web App context. There are some limitations at the moment. Like it cannot yet get scaled, and is not production ready.
 
-{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd1.png" "MySQL In App" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd1.png" "MySQL In App"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAWUlEQVR4nB3BSwqAIBQFULdizoRCEHx+8vKs7DNo0qBZNGr/Wwg8Rzyfvd996K1zjoi01lLKrlFKiXKE877GkFJKAGKM1HjvjTGizmueFtQNOQNg5tIwMxH9mbQUWaSShX4AAAAASUVORK5CYII=" "520" "167" >}}
 
 > **Info**: For now, my blog is just in testing stage. As I am currently testing out this feature.
 
@@ -39,31 +39,31 @@ If you want to test out this functionality, I will guide you through the process
 
 Setting up your new MySQL database is simple, all you have to do is opening your Web App in the Azure portal and click on **MySQL in App** option.
 
-{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd2.png" "MySQL In App option" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd2.png" "MySQL In App option"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAIAAACExCpEAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAsklEQVR4nG3Oyw6CMBCF4T6KXEpbxmmHcpOoFBAJiIlhwfu/ihE2mvht/8zJsOqSkkkSm5AhRAyCwDt4vu9zzuM4ZqiNUsrV7bLWeZVpNAAQbqIoYkVZIh6bpn2+Hrdxcq5xzp03n2siAoCmrivXyXYSERdCKKXkhuV5ioh93xsiL+T77E4IwSjLpJTDMKTWBr7Hv2yZNABM42it3R/+yVlRaqPnef6fE9fx0/W+rOm//AZhKTD7EN7XRgAAAABJRU5ErkJggg==" "624" "538" >}}
 
 Set the **MySQL in App (preview)** option to **On** and save this setting.
 
-{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd3.png" "Turn on the MySQL in app option" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd3.png" "Turn on the MySQL in app option"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAgklEQVR4nGPQ1tIyNtA31NfT09bS19PV1dXV19c3MDAwMjLS1NRkMDIz8wiPdPQLsnD3dPX28fTwcHMHAV9fX2NjYwZ9C4/OkOlTk+dNipjraB+roa3u7OysoqKirKysoqLCoGVkFeqRHR2YH+mVZ2Lpqa2jaW5urqGhoa6urqqqCgDlSR0hMBTpVwAAAABJRU5ErkJggg==" "149" "55" >}}
 
 Your MySQL database will be created and like every other service, Azure will notify you when finished.
 
-{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd4.png" " MySQL in app creation notification" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd4.png" " MySQL in app creation notification"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAPklEQVR4nB3BQQrAMAgEwLzGhOpBihKz6iX/f1ShMwP3qeqIyMzuZuY5JxGJiKoO329VATjnANg/dzeztdYHfr8MPgqQ+b8AAAAASUVORK5CYII=" "309" "63" >}}
 
 Once the MySQL creation is done, click on the **Manage** option at the top left:
 
-{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd5.png" "Click on manage to open PHPMyAdmin" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd5.png" "Click on manage to open PHPMyAdmin"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAZ0lEQVR4nGOwNLcw0tNXUFRQAgNlZWUVJMDgG6ybkOGpp2diampiZmampaWlqKgIUQqStrQ3CowOtrG2tba2trOzs7KyMgMDCwsLfX19BjsbewcXdxtnVztbELAHAwcHB0dHR1NTUwB2BBiHhs82ygAAAABJRU5ErkJggg==" "532" "221" >}}
 
 This will open a PHPMyAdmin site.
 
 > **Info**: this is one of the best features. Now I can remove my own PHPMyAdmin site I had as a backup plan when something failed or had to do some database changes.
 
-{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd6.png" "PHPMyAdmin in Azure" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd6.png" "PHPMyAdmin in Azure"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAYklEQVR4nGXEwQqDMAwA0P7/121qIjhnGpPaDGthgXoWvPoOL/yylDx95vn17rq+HwAHHAERAAHHoKql7OsqRPG7EBExc2SmGEUkmFmtVVVFZLvl+5SSmYXWmrvv5fi7nw8XcFhrezLwL7kAAAAASUVORK5CYII=" "624" "264" >}}
 
 ## Moving from ClearDB
 
 If you are moving from ClearDB, it might be that if you open the PHPMyAdmin page, you will see your databases hosted at ClearDB. If this is the case, you have to remove the connection string of your MySQL connection in the **application settings**:
 
-{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd7.png" "Check if you do not have any MySQL connection strings" >}}
+{{< caption-new "/uploads/2016/09/092116_1217_Movingyourd7.png" "Check if you do not have any MySQL connection strings"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAJ0lEQVR4nGMwdHBSs7B1Dwm3sbHR0tJSV1fX0NDQ0tLS0NBQV1cHAGLYBcth+VUlAAAAAElFTkSuQmCC" "624" "92" >}}
 
 When you configured the ClearDB database, you had to link it to a Web App. That is when this connection string was added. Once it is removed and settings were saved, you should be able to open your new MySQL databases on Azure.
 

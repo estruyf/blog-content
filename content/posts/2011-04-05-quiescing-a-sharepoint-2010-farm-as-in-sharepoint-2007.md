@@ -33,7 +33,7 @@ To be able to start writing some code to quiesce your farm, you need to add the 
 
 The next step is to retrieve your farm "SessionStateService". This service allows you to quiesce the farm.
 
-{{< caption-new "/uploads/2011/04/040511_0854_QuiescingaS1.png" "Session State Service" >}}
+{{< caption-new "/uploads/2011/04/040511_0854_QuiescingaS1.png" "Session State Service"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKElEQVR4nGO4cvHK5YuXr166CmJcuHzl4pVH9x89vPfwycMnN67dAACDXxlH5MFyNQAAAABJRU5ErkJggg==" "490" "36" >}}
 
 ```csharp
 SessionStateService sessionStateService = SPFarm.Local.Services.GetValue();
@@ -67,19 +67,19 @@ The solution that I have created enables you to quiesce the SharePoint 2010 farm
 *   Navigate to **System Settings**;
 *   Under **Farm Management**, the **Quiesce Farm** option should be available.
 
-{{< caption-new "/uploads/2011/04/040511_0854_QuiescingaS2.png" "Quiesce Farm Option" >}}
+{{< caption-new "/uploads/2011/04/040511_0854_QuiescingaS2.png" "Quiesce Farm Option"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAARElEQVR4nAXBSw6AIAwFQO5/Q6MbIBpNRX6hrTwwzpjV05HFR3Z3paoPI7QeGUmA+ZnRYRdnt52yhIaz6FXeyCg6FPMHzbE4hXsWRoYAAAAASUVORK5CYII=" "439" "99" >}}
 
 ## Result
 
 When the SharePoint farm is not quiesced, you receive the following screen.
 
-{{< caption-new "/uploads/2011/04/040511_0854_QuiescingaS3.png" "Quiesce Normal State" >}}
+{{< caption-new "/uploads/2011/04/040511_0854_QuiescingaS3.png" "Quiesce Normal State"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAPElEQVR4nE3B0QqAIAwFUP//MxWyZcNJYHNj1147J6mqmbk7NiKi5EIHyS2Dx3zetH8AUD0bXWsu4d4bf/xhOXRi+wJhAAAAAElFTkSuQmCC" "605" "137" >}}
 
 When you quiesce the farm you will get the following results.
 
-{{< caption-new "/uploads/2011/04/040511_0854_QuiescingaS4.png" "Farm in Quiescing state" >}}
+{{< caption-new "/uploads/2011/04/040511_0854_QuiescingaS4.png" "Farm in Quiescing state"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOUlEQVR4nE3BSQoAIQwEQP//Tg/j0nEhjAS0FTxZ5VTVLnLNuYL3+EJF69KHDrcfJFNMkmG/FUjJOPs8OYHKwo6qAAAAAElFTkSuQmCC" "605" "123" >}}
 
-{{< caption-new "/uploads/2011/04/040511_0854_QuiescingaS5.png" "Farm Quiesced" >}}
+{{< caption-new "/uploads/2011/04/040511_0854_QuiescingaS5.png" "Farm Quiesced"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOklEQVR4nB3GQQrAIAwEQP//zOJBUDYpKxXRDYXMaQrJnSRdqT/V2qBP+vy4SkQoRQ7Aa372cRj6+AH8STmUI8oqugAAAABJRU5ErkJggg==" "605" "107" >}}
 
 ## Download
 

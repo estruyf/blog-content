@@ -25,25 +25,25 @@ Another possibility is working with the "If the file type is ..." action, but th
 
 In the following steps I am going to explain you how to create a SPD custom activity. The end result will be:
 
-{{< caption-new "/uploads/2011/03/033011_1445_Developinga1.png" "New SharePoint Designer Action" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga1.png" "New SharePoint Designer Action"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAASCAIAAADt1dgcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABjElEQVR4nFWQWW/bMBCE+XvbX1igz00M96X1EUtRfcmOeCwvkZbIJUUVaoAiWSz2ZbCY+YaE3Vd2+n7uhuHhvXOIWMpslG6v9NRqclt9ub9+O555Xb8e/xwvlyul7Hw6H17q3b4mTbOt65f9fr/dbjebbVVVh8Ohqqqqrn793hDEpLWWUmqlQwjzhwkBSYwRADjnWuspT4iYMMUYETGESCLi+zcASCWVUlLK3vXjOCwy7ZYgx+YIHJx1vvdW2xjilKZxCERL/dbeWcestlbb8TGWXFJMKaYwBKJAt9crCOhtb7QJQ0gpZcwZcxgjSSm/ewsQ3vtSyv/kGJEgopSSMSaltNZ+BFvklBZuABBCLGzT9El2vaeU0o5KkMaYKU+llGla7vAYCe/45XRhHfPWL9t7ZxwGzDFrZd69gXFGKWWM/SuQpZTmebbWkYhJKivACNBSWS6MADuMmPIspSHY7+D+LG4/4PYE9+eerRxfeVh7/gS0Iegq8faTtWt2W/PbetSbOTZlbOZQWdX+BbDe9oR7TkW+AAAAAElFTkSuQmCC" "221" "404" >}}
 
-{{< caption-new "/uploads/2011/03/033011_1445_Developinga2.png" "Extract File Extension Action" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga2.png" "Extract File Extension Action"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAJ0lEQVR4nAXBiQ0AIAgEMPdfE8I9oMYNbFdEskA1fFMPPtAUm95Z+qWQG0DNAncoAAAAAElFTkSuQmCC" "448" "58" >}}
 
-{{< caption-new "/uploads/2011/03/outcome.png" "Workflow history" >}}
+{{< caption-new "/uploads/2011/03/outcome.png" "Workflow history"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQBQYWludC5ORVQgdjMuNS420IOtWgAAADpJREFUeJwFwUECwCAIAzD//9EdZ4WiMKtLWu/vGPCYxnXupXswpLO3JDUzq8woPUjML0gA5syVVfUD/2g50TOnjb8AAAAASUVORK5CYII=" "377" "65" >}}
 
 ### Prepare the project
 
 1. Start by creating a new Empty SharePoint Project. I named my project: "estruyf.SPDActivity.GetFileExtension";
-{{< caption-new "/uploads/2011/03/033011_1445_Developinga3.png" "Create an Empty SharePoint Project" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga3.png" "Create an Empty SharePoint Project"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAASUlEQVR4nAE+AMH/ALnBzMHG0crN2LK6y7O6zMnN2M/T38PH0661yrG60gDEzsLHyMDLyMXJyMTW1NDa2NPb2dTa2NPNy8fS0MyqDS9dTwklFgAAAABJRU5ErkJggg==" "461" "76" >}}
 2.  Link it to the corresponding SharePoint site, and deploy it as a farm solution;
-{{< caption-new "/uploads/2011/03/033011_1445_Developinga4.png" "Link the Project to Your SharePoint Site" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga4.png" "Link the Project to Your SharePoint Site"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA2klEQVR4nD3Cb0+CQBwA4Pv+XyJftDZXYRTKwU8GOw5+3IGnxKFcUGv9sanTtdV0vmvL1rOH9CzpwNQNVN/G82t+YSWWO7Hc4sab+aEks8o8dt1q+bJdv29Wr7vN8vC9239tj/vPj7dnAp531utTl0rkWcrn+t4s6rkuc8FZCESkDOjdb4dFkCWRRCZSJjFGHhGB8dgfsRAkxoXgEtnpRCYSGVG5wLhArkSqdFn8X+hpnnHS1GVndNtUf41ujX5oqqe2LpUgY38YBvQ0gBFQB6hjD67o8NYeXP4AmaG8KFJk0TAAAAAASUVORK5CYII=" "401" "319" >}}
 3.  Add the following references to your project:
-{{< caption-new "/uploads/2011/03/033011_1445_Developinga5.png" "Insert the Following References" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga5.png" "Insert the Following References"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZUlEQVR4nGMw8mrRdm5QtqmWM6+QMinj08wT0CmQt6wU0S9StqlmMPVu1nKqlTEt5dPI4VbL4lHP5tPMUbSqENbNV7auZDDwaNZxadR3b1KyruLTzGdXzuJSzZE2LePTzJc1rwAATeEXXH06KVwAAAAASUVORK5CYII=" "395" "119" >}}
 
 ### Start coding
 
 1.  Create a new class and call it "GetFileExtension";
-{{< caption-new "/uploads/2011/03/033011_1445_Developinga6.png" "Create a New Class" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga6.png" "Create a New Class"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAm0lEQVR4nC3L0QqCMBQAUP//P0qMlAVmGplkaJhG4qDIl6DCDCQMXc657fbSeT/KPo7y/HzMTuYyXPsHZAXICl0/TbLrNkyVtm2kEKTrq3cFIIUQHWlYTwGgLF/KLsFBjPHldn+UlFLKhrr+MMYAoCieCudCSPh2hJAGAKSUA+s55/+tzTwNuRPkjKYLVbeNuafqzthYBRE27c0PznKB+SMTf+gAAAAASUVORK5CYII=" "530" "282" >}}
 2.  Make it the class "public" (when this class is not set to public, SharePoint Designer gives an error that the: <classname> is inaccessible due to the protection level);
 
 ```csharp
@@ -54,7 +54,7 @@ public class GetFileExtension
 ```
 
 3.  Let your class inherit from the "System.Workflow.ComponentModel.Activity" class;
-{{< caption-new "/uploads/2011/03/033011_1445_Developinga8.png" "Inherit from the \"System.Workflow.ComponentModel.Activity\" Class" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga8.png" "Inherit from the \"System.Workflow.ComponentModel.Activity\" Class"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/APf6+/j8/fL19dXW1t/e3+Lg4t/d397c3uPh4+vp66qtGxTkUnIrAAAAAElFTkSuQmCC" "447" "62" >}}
 4.  Define the workflow fields that will be used in the SharePoint activity.;
 
 ```csharp
@@ -143,7 +143,7 @@ When your code file is created, you need to register the action to SharePoint. T
 SharePoint will automatically read the new file and add the custom action into the memory.
 
 1.  Create a mapped folder to the following location: "SharePoint Root/TEMPLATE/Language Code/Workflow";
-{{< caption-new "/uploads/2011/03/033011_1445_Developinga9.png" "Mapped Folder" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga9.png" "Mapped Folder"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAIAAACExCpEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA10lEQVR4nG3Nz4/BQBjG8fnbxbGSJVs2euQggoOzm4ul6IiDdHSq2mmnko1frVbpvLI7EYns9/p5n7xI1brlWrvy1VbrnY9qq6g0iqVmQWkon61er4+oiT06wbPREuuh71yinyw5ZMkhvezx7Bsx5qexsybG8RQDgBACnhnTMXJd77ynlMyjKAGAPM/FXwCA5zpiHotPtm3h2/21k/1yyMP8ym1rkV5v/3DgB1nCyGoS8N3b74UxRdxnIARnS0JWUZxJkEcby0QB8wBg6xJVaw6GpjTJDiUPTpzxFr/fu28AAAAASUVORK5CYII=" "295" "274" >}}
 2.  Add a new XML file to the folder and name it: "GetFileExtension.actions";
 3.  Place the next code block into the Actions file;
 
@@ -179,7 +179,7 @@ When you deploy your project, you will notice that the custom activity cannot be
 To make this process a little more user friendly, you can create a web application feature event receiver that adds this "web.config" "authorizedType" entry.
 
 1.  Add a new feature to your project;
-{{< caption-new "/uploads/2011/03/033011_1445_Developinga10.png" "Web Application Feature" >}}
+{{< caption-new "/uploads/2011/03/033011_1445_Developinga10.png" "Web Application Feature"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAX0lEQVR4nC3GwQ5AIBgA4N7/eRw4xKFVZs0vyjBU69dqXsLFd/pIw3YqDj5Y1hs+WKXPyXowblxuMI5U1LRi8wF9QBceTCXlF1OJT075JTU7uv6aV6/0LSeUgAKigD8fhmtLBwu4FHsAAAAASUVORK5CYII=" "518" "131" >}}
 2.  Add an event receiver to the feature;
 3.  Add the following code block to the "FeatureActivated" method.
 

@@ -19,7 +19,7 @@ comments: true
 
 The SharePoint 2013 rating system slightly changed a bit. In SharePoint 2013 you can now choose to use **likes** or **star ratings**. This functionality can be turned on via the **Rating settings** in the list.
 
-{{< caption-new "/uploads/2013/10/100713_1901_Customizeth1.png" "List Rating Settings" >}}
+{{< caption-new "/uploads/2013/10/100713_1901_Customizeth1.png" "List Rating Settings"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOElEQVR4nAXBQQ4AIQgDQP//VFkTYgVs8bAzw92rimR3ZyaAW/W6JYka61s2p5kBIBkRJCUdHGz8+H05dT7XKC8AAAAASUVORK5CYII=" "671" "145" >}}
 
 Styling the SharePoint 2013 star rating involves some work. The only "quick" option you have is to apply a composed look to your site. But applying a composed look to your sites means that every element will get a new look and feel. Depending on the type of site / project / changes, it could be that this isn't the right option and would involve a lot more work.
 
@@ -75,7 +75,7 @@ I found out that there are two different renderings of the star ratings:
 
 The default rendering of a star rating in a list view looks like this:
 
-{{< caption-new "/uploads/2013/10/100713_1901_Customizeth9.png" "Default Star Rating" >}}
+{{< caption-new "/uploads/2013/10/100713_1901_Customizeth9.png" "Default Star Rating"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcUlEQVR4nB3JwRKCMBQDQP7/Gz3ojUGk0DallJfE0b3uFMcrysy6XMh3WWpOuVSRlkhOOjf1I+6bDFQACFJ2BFtrU0SoZ3HYliXbMYS3+i5xsn02lJx/YZNMbcx7SwXivwGsnw3lUAySz60/1p5wSfoCCvCRZuDKXKgAAAAASUVORK5CYII=" "315" "163" >}}
 
 To apply your own star rating style to a list view you will need to add the following script to your master page.
 
@@ -116,11 +116,11 @@ The second part of the script is to let SharePoint know where your "theme" folde
 
 The result looks like this:
 
-{{< caption-new "/uploads/2013/10/100713_1901_Customizeth10.png" "Custom Star Rating" >}}
+{{< caption-new "/uploads/2013/10/100713_1901_Customizeth10.png" "Custom Star Rating"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcUlEQVR4nCWMSQ6CUBBE//3vaEzciEIiPSHQ1dWGuH7DgNyhz/LX1z+pU6iIKAB2kxwV79oFmcg0FXNHsdgAI7aReXKX5l8vdjeO8om7XDXZW7iZ9YX72h5rxXT6jOLobjOb5yV07UJmQh+13k5fUPwB9fiRQZ84mTMAAAAASUVORK5CYII=" "310" "165" >}}
 
 You only need to specify the images that you want or need to modify. For example if you don't need to change the filled star image (RatingsSmallStarFilled), you can remove it from the array and your result looks like this:
 
-{{< caption-new "/uploads/2013/10/100713_1901_Customizeth11.png" "Star Rating" >}}
+{{< caption-new "/uploads/2013/10/100713_1901_Customizeth11.png" "Star Rating"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcElEQVR4nB2NWw4CIRAEuf8tjTFxs4LLYwCxu8dg/VYlFVDurAfb8bGMdlq5Sqki3CUpaCSNN76LhLXaWgUod4C99wCAMzuX734LccFOzUticPfRe8nZ/4D0mdQeyyKprc3sFZOVy7EXtzSeMbFHyn8M1ZF16aJs/gAAAABJRU5ErkJggg==" "315" "166" >}}
 
 ## Field Control - star rating rendering
 
@@ -174,8 +174,8 @@ Best is to place this block as close as possible to the body opening tag in your
 
 The rendering looks like this of the field looks like this:
 
-{{< caption-new "/uploads/2013/10/100713_1901_Customizeth12.png" "Field Control" >}}
+{{< caption-new "/uploads/2013/10/100713_1901_Customizeth12.png" "Field Control"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAWklEQVR4nF3Cuw5AMBgG0L5/7F7AajdbDVgMDOISTV0T2r+UrxWrk8OepYAcsFXYmy9NVq+QXB67UsQo8Uwd6cy/yvAsgluk95ibPp4F79uOuR8L56yzICIAL/62U6YaoZzDAAAAAElFTkSuQmCC" "97" "27" >}}
 
 When you don't need to use a particular image, you could leave out that image from the hidden block on your master page.
 
-{{< caption-new "/uploads/2013/10/100713_1901_Customizeth13.png" "Field Control" >}}
+{{< caption-new "/uploads/2013/10/100713_1901_Customizeth13.png" "Field Control"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAb0lEQVR4nFXISwqDMBRG4ex/B87qCtyBo0Kh1IGIG6iURmog8RGTm5v/ipQOevhGR+k5mi19Vpq25DxJdKCFvPX7zsyquOmqM5f7WD5M3T9lvJJu/LsdhpezVjGQMxinDEhOAk4UQwgAFES+fv2NAwVVcaZdUnFZAAAAAElFTkSuQmCC" "103" "40" >}}

@@ -68,7 +68,7 @@ If each check is passed, a new search query gets issued with the **StartRow** pr
 
 For each new batch of results, the **StartRow** property has to be incremented with the number of items that the web part should retrieve. In this template I make use of the number of items to show property which can be defined in the web part.
 
-{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast1.png" "Search batches" >}}
+{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast1.png" "Search batches"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AOzs++nq/+rY6+nQ0efPzuXMzOnR0efPz+bOzvDa25vMGhVY+GhAAAAAAElFTkSuQmCC" "627" "84" >}}
 
 ### Storing the item rendering in your array
 
@@ -107,7 +107,7 @@ render = function () {
 
 Because it can take a couple of seconds to retrieve all results (depending on the amount and number of batches it needs to retrieve), I added a loaded text that will be replaced by the search result items.
 
-{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast2.png" "Loading text" >}}
+{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast2.png" "Loading text"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfUlEQVR4nGWJyw7CIBAA+f8/NIBpE1FUsF0eK+wimNqDJs5lkhmRU1TyYG/3nKK1VwCw1hpjiGiMIQKEeTqezpfFO6W0klIrPc0TAGx7fOi7ftiL6P1/fRHMnLCsiQJSRMJCubb45Ij06l20xhmLh+JCWWJ1Kz5S9WEr3PobCoisc7dC7Q0AAAAASUVORK5CYII=" "181" "117" >}}
 
 ## Examples
 
@@ -115,11 +115,11 @@ Here are a couple of examples that show the number of items that are rendered, a
 
 > **Note**: this is removed from the final control template.
 
-{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast3.png" "Retrieving 10 results" >}}
+{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast3.png" "Retrieving 10 results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAT0lEQVR4nF2Jyw6AIAwE+f9/xSK20MdSDYkXncxhsluYmRqJCB1kZveXcjH33s/Waq2q+r+x0pFY20CaL4/XQBZ1yIyhoY5pu6dh6F4s1gNJj3ULfWAxlwAAAABJRU5ErkJggg==" "340" "125" >}}
 
-{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast4.png" "Retrieving 175 results" >}}
+{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast4.png" "Retrieving 175 results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAR0lEQVR4nEXIMQ7AIAwEQf//n6RAiAow9vniiKTIFFus9N5rra21chXVnZl3Hl+FcQDu7iTf+RMDh0ItDFwWQ31urI2pMPAB2TZXrs7E/ugAAAAASUVORK5CYII=" "351" "115" >}}
 
-{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast5.png" "Retrieving 600 results" >}}
+{{< caption-new "/uploads/2015/09/092215_1818_Gettingpast5.png" "Retrieving 600 results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQUlEQVR4nF2JQRKAIAzE+P875UBFT0q3dCmO3DSTQ2aSzqOWvYpI3jKA+SWNBZ2kR8R/o/NSb8ZmVHv7xlLd+ngA2d1Xr5UeCsYAAAAASUVORK5CYII=" "352" "116" >}}
 
 ## Download the control template
 

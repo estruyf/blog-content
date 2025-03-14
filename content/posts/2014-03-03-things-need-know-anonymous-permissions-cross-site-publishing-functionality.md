@@ -24,7 +24,7 @@ Setting anonymous access to your catalog list or library for the search applicat
 
 To enable it, go to the list or library settings, and click on **Catalog Settings**. On the catalog settings page, you click on the **Enable anonymous access**, and in the dialog that opens, you click on **Make Anonymous** button.
 
-{{< caption-new "/uploads/2014/03/030314_0745_Thingsyoune1.png" "Enable anonymous access" >}}
+{{< caption-new "/uploads/2014/03/030314_0745_Thingsyoune1.png" "Enable anonymous access"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAM0lEQVR4nD3JMQoAMAgEQf//U/FABPXQKkVIthpYUVUzA+DumVlVJGeG5O4KX939X0RcH+PhOUO/OIgrAAAAAElFTkSuQmCC" "492" "100" >}}
 
 If this is enabled, and you see that your items aren't accessible for your anonymous users on the public site, you should check if the following permission masks are correctly set:
 
@@ -32,7 +32,7 @@ If this is enabled, and you see that your items aren't accessible for your anony
 *   List: **AnonymousSearchAccessList**
 This was the first problem I experienced, on my site the anonymous permission mask on the web wasn't automatically set. This were the settings on my site:
 
-{{< caption-new "/uploads/2014/03/030314_0745_Thingsyoune2.png" "Incorrect permissions" >}}
+{{< caption-new "/uploads/2014/03/030314_0745_Thingsyoune2.png" "Incorrect permissions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQ0lEQVR4nGOQt8uSs8kQM00RN0sRNU0WMIjn0Y3l0QMhDq0oBlmbTDWXPAX7bAW7LHnbTEX7LFmbDH6DeAHDBA6taACm1w3OESSZhAAAAABJRU5ErkJggg==" "444" "75" >}}
 
 I remove the anonymous access on the catalog and reactivated it again, and the correct permission masks were set.
 
@@ -53,7 +53,7 @@ $web.Dispose()
 
 The output of this script should be like this:
 
-{{< caption-new "/uploads/2014/03/030314_0745_Thingsyoune3.png" "Correct permissions" >}}
+{{< caption-new "/uploads/2014/03/030314_0745_Thingsyoune3.png" "Correct permissions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAARklEQVR4nGNQsM+WskwVNUkWNU0SNkni04/j1Irm0onh1I5m04hkUHXO0/YoVHPJU3PJVXbMUXbKVXfNV3HMVXfOFTdLAQCpqw6Vk5Q0xAAAAABJRU5ErkJggg==" "442" "76" >}}
 
 ## Navigation isn't visible for anonymous users, how to enable it?
 
@@ -61,7 +61,7 @@ The next problem you could run in to, is the navigation. If you connect your sit
 
 First, check if anonymous access to the site is in place:
 
-{{< caption-new "/uploads/2014/03/030314_0745_Thingsyoune4.png" "Anonymous permissions" >}}
+{{< caption-new "/uploads/2014/03/030314_0745_Thingsyoune4.png" "Anonymous permissions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZUlEQVR4nEXMQQpFIQhA0fa/y6QU03DQCyLQPtTgn+mFm1QVL74QUVWJCADMLLl7zpmIeu+qKiJm5u57b3dP5xxmpgsRAaCUstY6V4qIOScz11qZWURaa2OMf/6+T0TePyJeePkHJvOM2roYS1UAAAAASUVORK5CYII=" "182" "95" >}}
 
 Check if the catalog page layouts are published (_catalogs/masterpage), the default ones are:
 

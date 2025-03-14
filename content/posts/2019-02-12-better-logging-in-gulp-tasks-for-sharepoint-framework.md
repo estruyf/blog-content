@@ -26,7 +26,7 @@ When you would use the default **console.log**, **console.warn**,**
 
 They will just log as follows:
 
-{{< caption-new "/uploads/2019/02/021219_0828_Loggingincu1.png" "Console logging" >}}
+{{< caption-new "/uploads/2019/02/021219_0828_Loggingincu1.png" "Console logging"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAnElEQVR4nBXJzQqCMAAA4KkdMpYYuIVOWpbNbYF/s9E8aCRBUafqAerU+79B+F0/gJhe5R3TF29zgKSZxw0kChLlxXoW1SBgmhZ9Up89YSa0tJfSwtzBewdLGwuQqoEWp6QewryD0ix2RzcsLcQBygDiYIqzYF0RYZA0sTRRanxauaS0sRy7vb7bx1fdfur+2XavUD39rLcQGw/xP0XpFbC2Cnn+AAAAAElFTkSuQmCC" "600" "283" >}}
 
 More importantly, the SharePoint build system isn't even aware of any issues. So, you will have to let the build engine know that something failed in your task.
 
@@ -43,6 +43,6 @@ Here is an example of the updated gulp task that uses these logging methods avai
 
 Running this task results in the following output:
 
-{{< caption-new "/uploads/2019/02/021219_0828_Loggingincu2.png" "SPFx logging methods output" >}}
+{{< caption-new "/uploads/2019/02/021219_0828_Loggingincu2.png" "SPFx logging methods output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAo0lEQVR4nC3J2wqCMAAA0CEWYc4Er5uuGZqbyws6b6xIn+r//yiU4Lwd4OUjrZd8/Fi33oh6E/fnjYTxcEINsGgTiDkaVrd7O+VkxKUesENY6L7QfA4gbREfwlrBbkladeUzTqVNSugXus+Bl9X4LvNKkceEC5WJl0ckRDXw+MZOGiJmJte0U6FoL7QyiTgG7N+QNkg88+Hrsl4LGXAYcPfY/QDR7Bdg3Dx8XQAAAABJRU5ErkJggg==" "600" "348" >}}
 
 The good thing about this is that the build system is now aware of the warnings and errors which occurred in your custom tasks.

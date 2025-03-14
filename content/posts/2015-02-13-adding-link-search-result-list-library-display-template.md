@@ -49,9 +49,9 @@ _#-->
 
 Place it at the bottom of your Item Template and you get the following result:
 
-{{< caption-new "/uploads/2015/02/021315_1503_Addingalink1.png" "Items with link to list" >}}
+{{< caption-new "/uploads/2015/02/021315_1503_Addingalink1.png" "Items with link to list"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAOCAIAAACZwRr8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA4UlEQVR4nIVR227DIAzl/39vD420NVpGyZqQjBDuYMxEiaq1UrUjyw++nHMsk1IKAJQXICklNrJ9NV8dX5icqZzpxi/7vlpEJDlnbbRTgTOpNie5Xq9KzMaqgFjIK9oGgojOWUgZIOeMOWMt4y2aNqXUCHt+m4aOj/3PcJqHE7cqHNsxxpp9igFiAKdj9ClDXf9PGwA459EnswergrfJ6WB2rzd/tKd50sJ+94J2Cx/V9VOwj3U8C7yTI96MNs9/yRGP3r2OFaXNkxTg8r4uTLJeyMU8MLXD9OarF+lTeP7NL6PXl2a/nsFvAAAAAElFTkSuQmCC" "125" "174" >}}
 
-{{< caption-new "/uploads/2015/02/021315_1503_Addingalink2.png" "Documents with link to library" >}}
+{{< caption-new "/uploads/2015/02/021315_1503_Addingalink2.png" "Documents with link to library"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAUElEQVR4nE2MUQrAMAhDvf9hN2tbddXqsDBYeD8hjwAN6eqkPtRJfHnkL0BTmzhy0aSk4tmydmQCdjmDIRupI9s17WZDLgmE1zqPO+KQH1VfP2p05brbbskAAAAASUVORK5CYII=" "460" "170" >}}
 
 > **Important**: This only works if your items are coming from the same library. Otherwise **View all** will link to the list or library location of the last item.
 

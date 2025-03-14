@@ -19,11 +19,11 @@ Last week I was doing some experiments with the creation process of page layouts
 
 This were the values for my auto-created managed property:
 
-{{< caption-new "/uploads/2014/02/021714_1932_CatalogItem1.png" "DateTime Values" >}}
+{{< caption-new "/uploads/2014/02/021714_1932_CatalogItem1.png" "DateTime Values"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAIUlEQVR4nGN4/vz5s2cg/OL5ixfPoeDNmzcfPnz49u0bAKT2G2nrWanqAAAAAElFTkSuQmCC" "341" "33" >}}
 
 The difference between the auto-created property and the custom property is the data type that is specified.
 
-{{< caption-new "/uploads/2014/02/021714_1932_CatalogItem2.png" "Date Time Managed Properties" >}}
+{{< caption-new "/uploads/2014/02/021714_1932_CatalogItem2.png" "Date Time Managed Properties"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AOjv9ff5+vz8/Pb39/X19fT09PLy8vX19Ovv8+fv9b00HJbdVRU7AAAAAElFTkSuQmCC" "787" "62" >}}
 
 Auto-created managed properties for a DateTime field are set to **Text**. My custom property was set to **Date and Time** because I also need it for filtering and sorting.
 

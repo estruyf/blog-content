@@ -23,13 +23,13 @@ This is exactly what a client of us requested, they did not want to have the Fol
 
 First of all, hiding the follow and share actions on your site is not that difficult. They can be hidden by some custom CSS.
 
-{{< caption-new "/uploads/2013/02/020513_1851_HidingtheSo1.png" "Social Ribbon Actions" >}}
+{{< caption-new "/uploads/2013/02/020513_1851_HidingtheSo1.png" "Social Ribbon Actions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAW0lEQVR4nB3BwQ2AIAwAQFbzrau4jR9WcBujDycATGotJDRAoJhwp2Z9LfqctmPd78cZ65wxJufcB1VK4RhfAPoQEa11ABBC4EH13kWEmcl7IkLElJKI1Fpbaz/+ZVFbYq5jIgAAAABJRU5ErkJggg==" "517" "134" >}}
 
 ## Hiding Document Library Callout Actions
 
 Hiding the callout actions in the document library is a bit more difficult, because the links do not have a specific ID or Class defined.
 
-{{< caption-new "/uploads/2013/02/020513_1851_HidingtheSo2.png" "Document Library Callout Standard Actions" >}}
+{{< caption-new "/uploads/2013/02/020513_1851_HidingtheSo2.png" "Document Library Callout Standard Actions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeUlEQVR4nDXJQQ5CIQxFUfa/I5fiDowtpZX2QQxUwzeeyR3csjMD6If7lR/3MLOy9wbARFyrXtqha60xRnm8Znc0abWKmf13c485Z7ndGxnecwIjIhCIAAD3k5KZqk2qMLGIMLOZ9d6BUNWS+TEzZiIiPnmKiKra5Qv86KoUVWHPGQAAAABJRU5ErkJggg==" "357" "200" >}}
 
 The trick is to override the default callout that is generated for the document libraries. This is also what SharePoint does, they are overriding the default callout to add the **Follow** action in the callout.
 
@@ -91,7 +91,7 @@ _
 
 The result looks like this:
 
-{{< caption-new "/uploads/2013/02/020513_1851_HidingtheSo3.png" "Callout without Follow and Share Actions" >}}
+{{< caption-new "/uploads/2013/02/020513_1851_HidingtheSo3.png" "Callout without Follow and Share Actions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeklEQVR4nC2MWQoCMRQEc/8jeRUvoJil+22JyGTkjdZHU9BQZe8zIlRVLUn5q4lI2XvP8Nbaq1aSY4zeO4DjOCKiPGVRjeAASKoqSQIRsdYqtzse8M97mbmpZVct3Nws5sw4gNZ6Pm5+kRJOsuzzFJFaK674b1MIEfkCIgyqxyLOpKsAAAAASUVORK5CYII=" "360" "201" >}}
 
 ## Changes
 

@@ -36,6 +36,6 @@ module.exports = function (context, myQueueItem) {
 
 This is the output of the function:
 
-{{< caption-new "/uploads/2017/05/051817_1421_HowtoletanA1.png" "Log output of the sample code" >}}
+{{< caption-new "/uploads/2017/05/051817_1421_HowtoletanA1.png" "Log output of the sample code"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAdUlEQVR4nE3NQQoCMAxE0d7/Vh7CvTaZSNOmreBCqRVJVPCvAo8hSW0cjjXX2/2x1lrPaO/98naCYPai5RIJBBA0a9ZtXmcCcDrnTERMDDAzERUttdU+unOmUGYG6Mv6z58pw9d+q2qzNuZIEAlzlvjNgP7WbxJUpAqFZe8tAAAAAElFTkSuQmCC" "624" "391" >}}
 
 As you can see in the above screenshot, the function gets triggered 5 times before it gets sent to a poison queue. When you would remove the error parameter, it will only be processed once. Throwing errors also result in the same outcome (one time processed).

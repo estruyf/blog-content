@@ -27,7 +27,7 @@ Something else which is great about it is that you can set up multiple builds an
 
 Here is an example of the build process:
 
-{{< caption-new "/uploads/2017/05/050817_1701_Usebuildand1.png" "Build pipeline / tasks" >}}
+{{< caption-new "/uploads/2017/05/050817_1701_Usebuildand1.png" "Build pipeline / tasks"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAA7ElEQVR4nGN4+fHb1x+/H75/cuP13Ssvb157cfX2m+u331x/+PHuk68PGD5++vj967d1B3cs2b19xd4dS3ZvW7p3x9J9O5fs3bF47w6Gdx/ef/78ObyiT8o1RcknS9otTdA2kccijtcyjss8huHHzx+/f/8OrWrncgxlsgxmNA9gMA5iMAxhMAwGof/////79y+perKUQwqjQRijQSgjSA6GINJRNd1CLtGc1uEs5iHMxiHMRmHMxiAElbYuKWJwcmJ28WNw8mYwDWDQ8GPQ8AEhiHTuzBkWhaXOpXWOZTV2OfW2SXW2SbW2SbUAq9l5NzQwC8cAAAAASUVORK5CYII=" "629" "475" >}}
 
 In my case, when I push a new release to Git, the build process automatically picks it up and executes the following tasks:
 
@@ -56,7 +56,7 @@ build.task('update-manifest', {
 *   Package the project via the `gulp package-solution --ship` command
 *   When the project is bundled and the solution package is created, everything will be zipped and published ready for release.
 
-{{< caption-new "/uploads/2017/05/Screenshot-2017-05-05-11.17.41.png" "Build tasks" >}}
+{{< caption-new "/uploads/2017/05/Screenshot-2017-05-05-11.17.41.png" "Build tasks"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAn0lEQVR4nHWPzQrCMBCE8/6PpuLRiyhIL5o26aZxN9H8jDQFEUsX5rAzH8Ou6gaPhwvo/Qt6il/Nu5UMIxmjZKjOTLhpaoHh1ELLeYE4LR6/ocLliieNSCmhlgKg4n9qrVDT7gDSGp4ZIoJcSkN/VWbQ749w/QAOAaU1rqc1yvkEZwawSDM2QaI7rDUgIjDzNuich3MOMcbloVpXmk/6AIWZN5vh0/EvAAAAAElFTkSuQmCC" "647" "543" >}}
 
 Once the build process is completed, the release task will automatically start the continuous deployment feature.
 
@@ -64,7 +64,7 @@ Once the build process is completed, the release task will automatically start t
 
 Here you can see the output of my production deployment:
 
-{{< caption-new "/uploads/2017/05/050817_1701_Usebuildand2.png" "Release pipeline" >}}
+{{< caption-new "/uploads/2017/05/050817_1701_Usebuildand2.png" "Release pipeline"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAARUlEQVR4nAXBOQ6AMAwEwPz/S1DDGyiR0oClGHLhxcsxE2KMIkLSYKWXZh0ASQDuHo7m183vebe8D8s4rXPSlM+sqrXWH+JpOFiVwOq6AAAAAElFTkSuQmCC" "480" "80" >}}
 
 It is not as fancy as the build output, but it does the following tasks:
 
@@ -73,10 +73,10 @@ It is not as fancy as the build output, but it does the following tasks:
 *   Upload the SharePoint Framework project bundle files to the SharePoint CDN library
 *   Upload the app package to SharePoint
 
-{{< caption-new "/uploads/2017/05/Screenshot-2017-05-05-11.20.37.png" "Release tasks" >}}
+{{< caption-new "/uploads/2017/05/Screenshot-2017-05-05-11.20.37.png" "Release tasks"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAbklEQVR4nDWMSQ7DIBTFuP8d2VdhDhCm8F2lVSx5Zb2nbIj4lPEx8Tksh7GEmIilcfVBG/OnSrmSaqf2iY8npRZ6H8y1EBFe1LiFvsCkijaZkCvGOq65/66nb9S7uO/NEBjO4bQmlEJrjedUtvAFe+ybFtCP6oMAAAAASUVORK5CYII=" "1037" "401" >}}
 
 > **Info**: for the upload gulp tasks to SharePoint I made use of the approach I explained in the two articles about automation for SPFx. Only a small change has been made to allow you to make use of gulp arguments. That way, it is not done from a configuration file in your project, but via variables in the build and release pipeline instead.
 
-{{< caption-new "/uploads/2017/05/050817_1701_Usebuildand3.png" "Sample result of the web part" >}}
+{{< caption-new "/uploads/2017/05/050817_1701_Usebuildand3.png" "Sample result of the web part"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAgElEQVR4nGN4+erlo0dPHj0EoZfPX7198x6KXr9///4jw88fv3J8OqLMKpMcGhLt6qPNq8KNKqJMqwI0CzvzFzB8+/rDSTbdki/ZgifBgCVSmyFUiyFEhzlMgcEn06eN4cf3nwVB3a3pawqDpoSblsXa1MRaV8fb1oQalvSWLgIAPPE/GQe06XoAAAAASUVORK5CYII=" "624" "260" >}}
 
 In the next article, I will explain how you can configure the build and release pipelines yourself.

@@ -151,4 +151,4 @@ Upload your file to the Theme Gallery (**Site Settings** > **Themes**), and you 
 
 On the Change the look page (**Site Settings** > **Change the look**) you will now be able to select the Verdana font in the Fonts menu.
 
-{{< caption-new "/uploads/2012/08/080912_1826_CreatingaNe1.png" "Selecting your font scheme" >}}
+{{< caption-new "/uploads/2012/08/080912_1826_CreatingaNe1.png" "Selecting your font scheme"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAIAAAAfVWhSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABJUlEQVR4nG2Ou07DMBiF/ZCwsbDzJrxIB6SKAQlU0Q4gMTCgbm1U1KZJm6Su4zi/7/XvILcSYuDobJ/Ohbx/3T+93Y2er0cvV0X9KRUHdegEPzIGEshi/bjYjMfT24fXm9XmY7MuiiLPsmy5zMqyJFIaAGOMjzEOSTgMGAeMMZkoAOjaXnApdQ9VXk8KOtmzacVnFZ8Rtvrezue+bU+IRivnrfe2bWm5L6r9lnR13WxzLQTGaK1FTBPGWNFLawzhnFNKe4AYB2sdOx6dc6A0aBMQE26a5nxq8N5LKUMIoHTNOGhDhBCUUqVUjDGEcHkvQOXVQRlLuq6jlGqlL/hSczoFZWwqh74XotMmYUS84F8Rxthut3POIWL4g+PZabup67T6X/oHosFsh72w2o4AAAAASUVORK5CYII=" "451" "589" >}}

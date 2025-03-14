@@ -107,7 +107,7 @@ So what it does is: with the **Srch.U.resolveRenderTemplate(ctx, row, "Item")** 
 
 The end result will looks the same as the previous part, but without custom JavaScript or HTML in the item display template.
 
-{{< caption-new "/uploads/2014/08/080614_1930_Movingallyo1.png" "AngularJS template result" >}}
+{{< caption-new "/uploads/2014/08/080614_1930_Movingallyo1.png" "AngularJS template result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfElEQVR4nGWM2QrFMAhE8/+/2lBqXLKN5iLt25VBhOOcQkS11uu6GvP5mzLnGmazd18rgMxegf1hEQXdzoT27PaACUze7cOqBmlu6l3dxLvFXifiACe8qHWYJFB2lfx7t4nPUZgl2yqpzYPTHPEm5ZvJ9ZVnCcoQcuWY4weBvMvw8UBYcwAAAABJRU5ErkJggg==" "435" "291" >}}
 
 ## Download
 

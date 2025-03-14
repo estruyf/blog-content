@@ -22,11 +22,11 @@ Hey developer, the solution which was just deployed in production is not working
 
 Within JavaScript / TypeScript project, your first thing to check is the browser developer tools console. These might give you your first clue.
 
-{{< caption-new "/uploads/2018/03/032918_1310_Testingandd1.png" "Browser developer tools errors" >}}
+{{< caption-new "/uploads/2018/03/032918_1310_Testingandd1.png" "Browser developer tools errors"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAX0lEQVR4nBXKSwqAIBAAUO9/noi2EQQdoY+VCRpl6Mw4U+2it37q7Ieg5zAv5L2IZGbKBAiQIkJStu2GopzKaq0bfl7mfwAiIIncyu3HtNnRmF5ruxrv3BUCIaYYM9EHwshRe38ygrgAAAAASUVORK5CYII=" "784" "266" >}}
 
 In most cases, when things go wrong, you will see errors like these in the console and they also point you to the line in the script where it happened. I know that you might think right now, but aren't the production bundles for SharePoint Framework solutions minimized? Yes, they are.
 
-{{< caption-new "/uploads/2018/03/032918_1310_Testingandd2.png" "Minimized JS files" >}}
+{{< caption-new "/uploads/2018/03/032918_1310_Testingandd2.png" "Minimized JS files"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AN/j5+Hf4Obl5u/r7PPu7vLv7/Lu7vPu7e/s7+rm6KbNG376aJFyAAAAAElFTkSuQmCC" "784" "113" >}}
 
 Chrome has the capability to make these scripts "pretty" again. Which allows you to make reading and debugging them a little bit easier, but still it might be hard.
 
@@ -43,7 +43,7 @@ The process of what you can do when something happens in an environment where yo
 *   Click on **Load debug scripts**
 *   Open the page and start debugging
 
-{{< caption-new "/uploads/2018/03/032918_1310_Testingandd3.png" "Debugging your local files instead of the bundle" >}}
+{{< caption-new "/uploads/2018/03/032918_1310_Testingandd3.png" "Debugging your local files instead of the bundle"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAl0lEQVR4nE3BWQ6CMBQAwN7/biYaTEhwAQpdoLTAW+hCov46I7phNNZMy9z3SsopGLu5afMLIoTgRd08LtdbP8gg97Z25m3ds3dyPFLmmISxxlgTthUgD1JX1b1pXpNb/LoH5wUx8cGAUErhNaiuXbTWapyV9vMsABEQgCAyf2L6/jnPUyAhEhIRRdoTcOZYImdOZy6l/ADFGqcveAj8uQAAAABJRU5ErkJggg==" "784" "475" >}}
 
 Doing it this way, you are actually loading the web part from your own local instance without impacting anyone else which is using it. Plus, it allows you to also test out some environment specific things, which you might not have taken into account in your dev./test environments.
 

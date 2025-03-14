@@ -21,7 +21,7 @@ Today I was creating my session for SharePoint Saturday Belgium and Paris. For m
 
 The first thing I got after I configured the web parts were errors like this:
 
-{{< caption-new "/uploads/2015/04/040115_1357_Watchoutwhe1.png" "$urlHtmlEncodeString is not defined" >}}
+{{< caption-new "/uploads/2015/04/040115_1357_Watchoutwhe1.png" "$urlHtmlEncodeString is not defined"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/APLk5PTl5fbo5/fo6Pbn5/bo6Pbo6Pjp6fnp6frt7aymG75NMwvyAAAAAElFTkSuQmCC" "1085" "160" >}}
 
 
 As it turns out, the **$urlHtmlEncodeString** function does only exist for SharePoint Online at the moment.

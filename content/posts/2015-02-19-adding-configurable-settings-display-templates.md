@@ -54,15 +54,15 @@ Here is an example of how my managed property mapping attribute:
 
 Once these settings are added to the managed property mappings attribute, they will become available in the **Property Mappings** section of your CSWP toolpart:
 
-{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi1.png" "Template with custom settings" >}}
+{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi1.png" "Template with custom settings"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAtklEQVR4nG2O0W6EMAwE8/+f2Wt7ByWBeInt2AYqWqk69Rjt22rHTo15rPyY21Dae27Sbdu2iNj3/TiOtMzzOE1fU55y/vh85JxLmYdhJCAi0v1+f7vdCBBmAMxtbWdqrSKa3Kyb/ZguSKUUANsVzJyIyD2OY3/F3VOlanZ++4qqJgDu/nvpYi0iqiqiIuLu/9dU67quwEpA7/asOOt61iACEanqs9zMEkBLXUCw3iPizxwRzPwNnOVdV5zlNToAAAAASUVORK5CYII=" "259" "316" >}}
 
 Now if a user wants to configure the settings, they will need to check the **Change the mapping of managed properties** checkbox and the property mappings become editable:
 
-{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi2.png" "Template with custom settings enabled" >}}
+{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi2.png" "Template with custom settings enabled"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAuElEQVR4nGWP3XLEIAiFff+3bDvTRBOUVfnT1XbcvUnT7wIGmHMAR0QHskcJyFtktj7neI4xfxYOUwoHhBMOiN97gJji6hxEPOd0PviPzy9EZKJSSl2shIiq4lprIjrm2+yO8/sGAP0fZsbMDgBEdYzx/EvvvbXmQgillHdxRVVFxJWc1WzOOV7c1VSp1kq0oqhedy91SinnknNGfLDIfRxfpJTW68xXczNzcJ77tvkQWMTMrqcx8y9z+lq66j9vwAAAAABJRU5ErkJggg==" "264" "314" >}}
 
 Now you are able to add your own values for the template:
 
-{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi3.png" "Template with custom settings changed" >}}
+{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi3.png" "Template with custom settings changed"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAtklEQVR4nG2OwW7EIAxE/f9/2T2sGjCYYLAhCaZKIlW77b6rZ8YPRARXWUgx6TOK9GOajTFsnkBK5BAdBh/i89thJCJyHquImYFz/uvxSCnVWjnnwoW5ZOaUUmsNtm1T1THG/AS4ZUEM+z967yICMQa52sc7dwK898y87/v2Tu9dVYGZW2tzmpkdLxt3AWotzHwJs6r+/r6VgYhyPgPrusqncwwXMZKI/FUjouXElVJe1VprIvIDf09awsRb+u4AAAAASUVORK5CYII=" "266" "315" >}}
 
 ### Retrieving the settings in the item display template
 
@@ -117,13 +117,13 @@ var setting1 = properties["setting_Value1"];
 var setting2 = properties["setting_Value2"];
 ```
 
-{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi4.png" "Settings output example" >}}
+{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi4.png" "Settings output example"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOklEQVR4nBXBQQ6AMAgEwP7/nWo0VsDusnA0zoyqItndkkBKioi13scsMwcIcycJLHMDcP3ObT/uOT/nxDh77Ag8XwAAAABJRU5ErkJggg==" "233" "40" >}}
 
 ### Retrieving the settings in the control display template
 
 Retrieving the settings values in a control display template can only be achieved by the second approach that was discussed in the previous section.
 
-{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi5.png" "Control template that reads the settings" >}}
+{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi5.png" "Control template that reads the settings"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKElEQVR4nAXBsREAMAgDsey/ZiiA4u2DDBDpzAwCtG8tg2R3143IrA+yuhvRgonNKQAAAABJRU5ErkJggg==" "342" "28" >}}
 
 ### Using these settings in your template
 
@@ -140,7 +140,7 @@ In my control template I added some code to show a hyperlink which takes me to t
 <a href="_#= decodeURIComponent(properties['setting_Value1'].toString()) =#_" title="_#= properties['setting_Value2'].toString() =#_">_#= properties["setting_Value2"].toString() =#_</a>
 ```
 
-{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi6.png" "Custom settings rendering" >}}
+{{< caption-new "/uploads/2015/02/021915_1530_Addingconfi6.png" "Custom settings rendering"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANUlEQVR4nDXBQQoAMQgDwP7/pZpSEYyxx8LCzixWkYwIM3N3ABvIzPNZ1SNdSfUjOTOSuvUAy8Q4gl4Tn54AAAAASUVORK5CYII=" "722" "161" >}}
 
 ## Download the example display templates
 

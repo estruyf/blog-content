@@ -26,7 +26,7 @@ So for JavaScript files it is important that you know when they are loaded or in
 
 In the article I wrote that loading files asynchronously does not really matter for CSS files. Last week I was working on an environment where I saw some strange behaviour on page loads. When you opened the page for the first time, all the elements were placed on the page and after a second or two, they were rearranged and received their right style. This styling delay came from the use of the **$includeCSS** function in the display templates. As multiple display templates used this functionality, all these additional CSS files have to be loaded by your browser and once loaded the results are styled. So it could occur that the rendering of the results is quicker then loading the CSS files.
 
-{{< caption-new "/uploads/2016/02/022216_1026_LoadingCSSf1.png" "Page load experiece" >}}
+{{< caption-new "/uploads/2016/02/022216_1026_LoadingCSSf1.png" "Page load experiece"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAABnWAAAZ1gEY0crtAAAAtUlEQVR4nGP49eXxm8fnfn99+v/f/3///v/4+vbatetXrly7fOXa5w8vGD4fini9VuX36bRzd++eefDo6q4WUzPLAH93IzP71VOSGL6cr/2wP+TH5bb3X79+/Pnr6bXtE/p65s6d19M78fzBxQyfjyW/3mj05VT2f2yA4evFxk+Hor5d6fz3D8T/9+/v7z8g8PvPn79//zB8Ohj6cpX856NxMA1gVXDdP+4t+3a168fD1VgNBwAOla/Ry0ip9gAAAABJRU5ErkJggg==" "627" "408" >}}
 
 As I mentioned, the $include function load the resources asynchronously and that's why this behaviour could occur. If these are small CSS changes to your HTML elements, this would not be a big issue. But if you are creating carousels, graphs, or more advanced things, it may be of higher importance to have the CSS ready when the results are rendered on the page.
 

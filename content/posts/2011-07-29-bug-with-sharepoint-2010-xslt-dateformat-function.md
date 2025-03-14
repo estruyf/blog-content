@@ -64,15 +64,15 @@ I did not notice it in the beginning, because my settings are always set to Engl
 
 ## English (United States)
 
-{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar1.png" "English (United States) Regional Setting" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar1.png" "English (United States) Regional Setting"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAJ0lEQVR4nGN4/fr1p48g8O3b918/f7148fLFi5dv3777/PnL27fvALQfHBVneVEUAAAAAElFTkSuQmCC" "565" "63" >}}
 
-{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar2.png" "English date format converted to Dutch date format" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar2.png" "English date format converted to Dutch date format"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAY0lEQVR4nF3LUQrDMAwEUd//oqXW2grJSoFaVkMoLdTz+5gyIg7aQ1rMfH/LzCd62/Yy5yTZe//ZJwjMrEQESaD9YWatQvK+T3fVbblV1f0srzFICrBwrXKQN5vZcmcm0Mz9Aok3ruzHXmmcAAAAAElFTkSuQmCC" "397" "242" >}}
 
 ## Dutch (Belgium)
 
-{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar3.png" "Dutch (Belgium) Regional Setting" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar3.png" "Dutch (Belgium) Regional Setting"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAJklEQVR4nGN48eLFhw8f3n94/+3bt9+/fz9//uLli1efweDdu3cAsuUcF0cqPb8AAAAASUVORK5CYII=" "569" "56" >}}
 
-{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar4.png" "Conversion problem with the Dutch date format" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar4.png" "Conversion problem with the Dutch date format"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAiElEQVR4nEXC0QqCMBQA0P3/jwn1EIWI6GxYsOs2nebmiPTe20NWhyNeSEHD/XReNXDXfRIAXHKnWkHMyZi+qnj07P+9rJMxYiOKAEZKjpFD2M+zVSpoEBtiGqfuqihGXpbfvr3FwYsV8elcbywhMtEecXrMyVqxMqeyHLKMm4al/K794bgUxRsmr6gSbR6GMgAAAABJRU5ErkJggg==" "398" "239" >}}
 
 ## Solution
 
@@ -136,7 +136,7 @@ I have created my own version of his XSL template to format the date in Dutch da
 
 ## Result
 
-{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar5.png" "XSL Template Result" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar5.png" "XSL Template Result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAVElEQVR4nE3LQQ6AIAxEUe5/VVsqEhgrpGNQF/7tz0sANs0RQVJtbx0kxxiiGe4JgIjwKZvhPL8tGhHJ3c1sWfKo1f0iOecspazdehfNr7afVl36BhnGdCrrA0P8AAAAAElFTkSuQmCC" "552" "242" >}}
 
 ## XSLT Month Options
 
@@ -145,18 +145,18 @@ I have created my own version of his XSL template to format the date in Dutch da
 <xsl:with-param name="monthFormat">MM</xsl:with-param>
 ```
 
-{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar6.png" "MM - Number notation" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar6.png" "MM - Number notation"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAiElEQVR4nGWMyw7CIBAA+f8f8+RB20OtGEujwC4Pu0CxJm0x6kXjXCczrJdQcVHz/tBdai52bVcdxbY5bfbtWSJLeaKUPcUwZh8ipZzydAvRURzvD2YMKqm0UgiIaOZ5Ll8wCoTGeO+tddb5j15flLUUFogAcBjIurdelp/aWSuvCgC0BvibPwFeiKkJuuGXVAAAAABJRU5ErkJggg==" "118" "73" >}}
 
 
 ```xml
 <xsl:with-param name="monthFormat">MMM</xsl:with-param>
 ```
 
-{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar7.png" "MMM - Short Name Format" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar7.png" "MMM - Short Name Format"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAkElEQVR4nDWLyw6CMBBF+/8fZtwRYVMfSKAyfYDGaZpOC5UaBG/u7pzDaiHLc1PeRHXtCn4veFPV3bG6HE6ct5JRiD5ERzHEyXnyFKc5OU/OU4gzUxK01gBgjOl7QMSc87Is+TeG+DbDqI0BkNbaOaUNbwKzFqVS4/M1mAER02fv9lopBVICrH8I4Sms9R9/AUurqKxA3brQAAAAAElFTkSuQmCC" "116" "71" >}}
 
 
 ```xml
 <xsl:with-param name="monthFormat">MMMM</xsl:with-param>
 ```
 
-{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar8.png" "MMMM - Full Name Format" >}}
+{{< caption-new "/uploads/2011/07/072911_0854_BugWithShar8.png" "MMMM - Full Name Format"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAmElEQVR4nE2M3Q6CIBhAef8Xa1210oum1kKFj0AZZAKf8dO8aOvcnp1Duh6q9lHfWdXS0/V2bmjV0WPdHi4NFTNxPqwuLC74gMvqXcCAaN/utbqwfYgAkFIC58Mwcg7yKWk/GGNKKTlnYo2RSnEA8ZTTNCNiTCnGmHPJpRBrLQBIpbTWs9YppfIHEUJw2FvGOBtHj9u+/ekvAlqn5LSa0n0AAAAASUVORK5CYII=" "118" "71" >}}

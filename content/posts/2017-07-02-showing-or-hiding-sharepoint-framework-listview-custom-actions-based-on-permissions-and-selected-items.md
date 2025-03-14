@@ -45,15 +45,15 @@ Another common thing which you might want to achieve is to show or hide actions 
 
 Here is the result output of this code. First, you do not see any of the command actions:
 
-{{< caption-new "/uploads/2017/07/070217_1332_Thingstokno1.png" "Custom actions are not shown" >}}
+{{< caption-new "/uploads/2017/07/070217_1332_Thingstokno1.png" "Custom actions are not shown"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAWklEQVR4nE3CzRFAQAwG0G1LdWrQhBLc3TWgCMNYSWS//Jjh4s0r3SD9xGnXdtRKrA2qgPm3jIvMK4nwXuWk+7z4qER3+5Z0acoA8sfdIiIjijaDeWbGDwB/PRBScpG6oAyIAAAAAElFTkSuQmCC" "624" "269" >}}
 
 Once you selected an item, both will be visible:
 
-{{< caption-new "/uploads/2017/07/070217_1332_Thingstokno2.png" "Actions become available when one item is selected" >}}
+{{< caption-new "/uploads/2017/07/070217_1332_Thingstokno2.png" "Actions become available when one item is selected"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAATklEQVR4nD3HsRGAMAwEQfdGjdREA4REpAS29Pq3DAljAi7YmSvLqv10a7WBfTzKWzmmfVq2I64aPTOUVCcFkhJCQRW4hxu+AjAzuP/7AiLxVGl9huJhAAAAAElFTkSuQmCC" "624" "169" >}}
 
 Once you select one more item, only the second one will be displayed:
 
-{{< caption-new "/uploads/2017/07/070217_1332_Thingstokno3.png" "Only the multi-select action will be shown when multiple items are selected" >}}
+{{< caption-new "/uploads/2017/07/070217_1332_Thingstokno3.png" "Only the multi-select action will be shown when multiple items are selected"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAaElEQVR4nE3GsQ2AIBBAUYZxVTsXcQdLO61sCKiFnYUmHHAQ5UCDxsSXX3xWlFg1ljysG+zKGDzQB+tPzAVW966btbOgtFYKAABdhk8skTsPpEDXDxHFGFNKrB2WSQo5jvIjhOCcv3MDkyRtuOGextgAAAAASUVORK5CYII=" "624" "266" >}}
 
 ## Retrieve the selected items information when action is clicked
 
@@ -63,7 +63,7 @@ Here is some sample code:
 
 {{< gist estruyf 99b177cbdfd53237beb37649719dca78 >}}
 
-{{< caption-new "/uploads/2017/07/070217_1332_Thingstokno4.png" "Retrieve the selected item column information" >}}
+{{< caption-new "/uploads/2017/07/070217_1332_Thingstokno4.png" "Retrieve the selected item column information"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAATklEQVR4nCXK7QqAIAxGYe//IgcGisOP9YZBtnCRPX/PcUTEzCGGEGPi1M+uj6qqmfnNu5zzAYhIrVVEsONvc87WmhtjfPNyL9dSSgHwAlNEVUzqyc7YAAAAAElFTkSuQmCC" "439" "130" >}}
 
 ## Updates
 

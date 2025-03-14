@@ -29,17 +29,17 @@ First, you need to get a spinner GIF. When you search on the internet for "spinn
 
 Once you have the spinner, you should copy & paste it into the PowerApps app. Which creates an image object in the app.
 
-{{< caption-new "/uploads/2016/12/120916_1404_Showingaspi1.png" "Spinner in a PowerApps app" >}}
+{{< caption-new "/uploads/2016/12/120916_1404_Showingaspi1.png" "Spinner in a PowerApps app"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAARCAIAAABrQaqyAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAZklEQVR4nLWQ7QrAIAhFe/83DSqScrZIHeyLRozB2M4/OVe4amKMRDQNEJFzziCiqoqIdsg6hhB2zczSwcwX/bAtf2o92t3qjFjKvAkZdWstpVxrfVvtzHx72Nufe+8BIA4AgLV2AbVX81B6cVCBAAAAAElFTkSuQmCC" "241" "409" >}}
 
 Now that you have the spinner added, it will always be visible in the app. The next step is to hide it once your data or process is completed. In my case, I am retrieving information from my custom API and it is configured in the **OnVisible** action of my screen object.
 
-{{< caption-new "/uploads/2016/12/120916_1404_Showingaspi2.png" "Screen Onvisible action" >}}
+{{< caption-new "/uploads/2016/12/120916_1404_Showingaspi2.png" "Screen Onvisible action"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAN0lEQVR4nD3EsQ0AIAgEQJe3edAQ5mMKCqCgMNHEK26oqpmJCAAi2nsx87wAjIhw96rKzP/T3QfvaS5BbcsANAAAAABJRU5ErkJggg==" "453" "87" >}}
 
 > **Info**: This is only one way of how you do the data retrieval in PowerApps. Another one would be to configure it directly onto the gallery object AllItems property.
 
 Once your process for data retrieval is defined, you can specify when the spinner can be hidden. In my case, it will be when the **User** data source is not blank. In the **Visible** design property, define the following: **IsBlank(Users)**.
 
-{{< caption-new "/uploads/2016/12/120916_1404_Showingaspi3.png" "Image Visible property" >}}
+{{< caption-new "/uploads/2016/12/120916_1404_Showingaspi3.png" "Image Visible property"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAWElEQVR4nCXIuwnAIBAAUFe0EiJIbAQHcB6nU3Lepzg56xDyyue89733MUZrLYRw53zFmFIqpdRaHRIi4d57rcVEE2A+j/BHVR0zi4iZqSoAMNE/5xwzewHpdEVoeag+OgAAAABJRU5ErkJggg==" "295" "87" >}}
 
 > **Info**: In case of using the gallery object, you can check if the **Gallery.AllItems** contains your items.
 

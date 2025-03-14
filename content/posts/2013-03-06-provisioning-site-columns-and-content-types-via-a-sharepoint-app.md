@@ -25,11 +25,11 @@ The first thing to do is creating a new **App for SharePoint 2013** project (I s
 When you've created your project, set the **Permission**
 **requests** settings in the **AppManifest.xml** file to **Web - Manage**.
 
-{{< caption-new "/uploads/2013/03/030613_1228_Provisionin1.png" "App Permissions" >}}
+{{< caption-new "/uploads/2013/03/030613_1228_Provisionin1.png" "App Permissions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOUlEQVR4nCXCSRKAIAwEQP7/UYQDkWyTwYtV2tWt92vMmSh81xL3UDUzB6ptNZ6neP4it0dEJopFvuUqOUi+hPnRAAAAAElFTkSuQmCC" "484" "74" >}}
 
 If you don't set this permissions or set the permission to a lower level (read or write), you will eventually end up with the following message when your code gets executed:
 
-{{< caption-new "/uploads/2013/03/030613_1228_Provisionin2.png" "Permission Message" >}}
+{{< caption-new "/uploads/2013/03/030613_1228_Provisionin2.png" "Permission Message"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeklEQVR4nE3CvQrCMBAA4Ly7P4PtiziJzyAOCl0Ctog2gqna5pK7crk0gouDix+fKnVfnHxZ++XRzPfn2a5ZHExRh1V13643yiB46GwP3eAeAyALsSBLnDK8P8pAyJEi829OMqWURAjxSaz0K9z8eAVq/14cVq3V1n0Bg0do8j9xmsYAAAAASUVORK5CYII=" "366" "130" >}}
 
 ## App Page Content
 
@@ -182,18 +182,18 @@ Here you can download the whole script here: [App.js](/uploads/2013/03/App-Provi
 
 When you installed the app on your SharePoint site, you should have the following app page:
 
-{{< caption-new "/uploads/2013/03/030613_1228_Provisionin3.png" "Provisioning Actions" >}}
+{{< caption-new "/uploads/2013/03/030613_1228_Provisionin3.png" "Provisioning Actions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAuklEQVR4nGWMvQ7BUBzF7+BlrOIh7FarhIHJQ1jYiQGJoRFvgUgsKqmPQaMRBP26Wu5t78df2pC0cfIbTvLLOag80mrKtqrsS8PNPygknmPbnFGQQYSI+RU0Ua3B8lHs73Ktdba5qox1l/AzDi44fFKOeotbd3bNt9VMY47q00JHAwAhpRAgARAmXDeJYdOTGxwtcvdCSARRJqwXc97RVVJ8tUvYIV4bNvUDLqRMaRIK02eYMCf6YGkLHyNk0a9TTLVcAAAAAElFTkSuQmCC" "257" "217" >}}
 
 Clicking the links, should give the following results:
 
 **Site Column**
 
-{{< caption-new "/uploads/2013/03/030613_1228_Provisionin4.png" "Site Column" >}}
+{{< caption-new "/uploads/2013/03/030613_1228_Provisionin4.png" "Site Column"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAJklEQVR4nGN48vLtizfv/4PB9+/fv3379u/fv//////8+fP79+8AvhUdBnn7kXwAAAAASUVORK5CYII=" "393" "37" >}}
 
 **Site Content Type**
 
-{{< caption-new "/uploads/2013/03/030613_1228_Provisionin5.png" "Site Content Type" >}}
+{{< caption-new "/uploads/2013/03/030613_1228_Provisionin5.png" "Site Content Type"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAI0lEQVR4nGN48/HLh2+/f/75+////1+/fv2HgR8/fnz79g0AxNcdUeUDF84AAAAASUVORK5CYII=" "395" "35" >}}
 
 **Linked Field in Content Type**
 
-{{< caption-new "/uploads/2013/03/030613_1228_Provisionin6.png" "Linked Field in Content Type" >}}
+{{< caption-new "/uploads/2013/03/030613_1228_Provisionin6.png" "Linked Field in Content Type"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANElEQVR4nD3IQQrAQAgEQf//1CCIeHNne0IuuRUVM2MbkAT8tn2keGb3ezKzu21LqipgdV8f9jqhBwOrCQAAAABJRU5ErkJggg==" "478" "80" >}}

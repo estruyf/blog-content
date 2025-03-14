@@ -34,11 +34,11 @@ If you want to write some test yourself, you will have to go through a couple of
 
 When you created a new SPFx project, you automatically get a **tests** folder in the web part folder.
 
-{{< caption-new "/uploads/2017/04/040517_1933_Unittestyou1.png" "Tests folder located in your project" >}}
+{{< caption-new "/uploads/2017/04/040517_1933_Unittestyou1.png" "Tests folder located in your project"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAf0lEQVR4nF3CQQrCMBAAwP2yCv2E4E88eaje/UDRHqomm6BFaxOTdLeNYAsehBwcBlSjS10aY3zwxPQXXPDmIRGFkNK6F/XcMaUQY0/u3t4qraTGS/D2HTkO9AuqHc61LY7FAZvqak+1wyenMNtO2aZbrcVyP2a7aZGP8/yTfgF9OYPX6H9goQAAAABJRU5ErkJggg==" "280" "136" >}}
 
 In the folder, you find a sample test file: **<webpart-name>.test.ts**. The first thing you will have to do when you want to test react components is changing the **ts** extension to **tsx**. This allows you to load the components in JSX syntax.
 
-{{< caption-new "/uploads/2017/04/040517_1933_Unittestyou2.png" "Sample test file" >}}
+{{< caption-new "/uploads/2017/04/040517_1933_Unittestyou2.png" "Sample test file"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAASUlEQVR4nAE+AMH/AOnm6OzLzN/e393e3+7v8O7v8O7v8O/v8O/w8e/w8QDQ0N2/x9mtvNLAwMq8vcm+v8vAwc2+wMzCxNDMztxWrzKVehnJfgAAAABJRU5ErkJggg==" "197" "45" >}}
 
 ## Installing a couple of developer dependencies
 
@@ -171,8 +171,8 @@ More information about JavaScript unit testing;
 
 You can run your tests via this command: `gulp test`. When you run the command with the sample project, you should get the following result:
 
-{{< caption-new "/uploads/2017/04/040517_1933_Unittestyou3.png" "Sample component tests outcome" >}}
+{{< caption-new "/uploads/2017/04/040517_1933_Unittestyou3.png" "Sample component tests outcome"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAY0lEQVR4nGOQMreRsTIXNTYRNjQR1Dfl1zPl1jKDIB5tMwZhIyNle30ZSyM5a0MQsjIUMzaGqOPTNWMQNjQWNwFpBRlgZCJiBGKIghlCBqYMspbWwkamgvqmvDpmvDpQY+EIAKI0Et6yYGBgAAAAAElFTkSuQmCC" "624" "259" >}}
 
 > **Info**: the sample web part also contains a mock HTTP client which simulates an async call to retrieve items from a list. The web part renders the following output;
 
-{{< caption-new "/uploads/2017/04/040517_1933_Unittestyou4.png" "Sample web part rendering" >}}
+{{< caption-new "/uploads/2017/04/040517_1933_Unittestyou4.png" "Sample web part rendering"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAg0lEQVR4nGMwqNwsnrlatWCdauF61cINsjlrZXPXyuSsFUlfZVK9lUEifRVD2ELBjA2cSavYY5ewxixhi13KHLWYIXi+bPYasHTIQt7sPRxJGxlC5jOELWQIW8gUsYgheIFM1hoG3fJNQqnLlXJXKeSsFktfKZ4BQhKZKwVTlhtWbgYADjQthsCsh0EAAAAASUVORK5CYII=" "624" "253" >}}

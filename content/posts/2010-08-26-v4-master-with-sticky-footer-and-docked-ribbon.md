@@ -64,7 +64,7 @@ body #s4-workspace {
 }
 ```
 
-{{< caption-new "/uploads/2010/08/image001.png" "SharePoint 2010 with sticky footer Docked Ribbon" >}}
+{{< caption-new "/uploads/2010/08/image001.png" "SharePoint 2010 with sticky footer Docked Ribbon"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAArElEQVR4nF3LuwrCMBSA4T6roIiLi6Dv4Qt4G0QEn8DZGyq4VNqmg4qKht7Tk9OcJNJV+LeP3xmsLsO121+eG6NNa7Jrjrft6b4zO3Tnx97i5FhrsaJcgNGkNWlSRmtrjLXGGnIUaVTkvyL3wb1ndOfZNy2TQqYlCsD6LmUVvuNPIlIBcQGpgEzIAlBiVTOguvGC5zKXlCMJJKi0JFOCdHwWMhZevcAP2F9BwH4s46AdgnLNSAAAAABJRU5ErkJggg==" "500" "290" >}}
 
 Here you can download the docked version: [V4.Master_Footer_Docked_Ribbon](/uploads/2011/04/V4_Master_Footer_Docked_Ribbon.zip). This version should work for Internet Explorer 8 and Firefox v3.6.8.
 

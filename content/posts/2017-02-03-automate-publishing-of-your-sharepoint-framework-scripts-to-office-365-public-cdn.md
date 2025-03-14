@@ -137,7 +137,7 @@ build.initialize(gulp);
 
 > **Info**: you are of course free to give the task another name. Currently the task name is: upload-to-sharepoint.
 
-{{< caption-new "/uploads/2017/02/020317_0748_Automatepub1.png" "Check the new task in the gulp tasks overview" >}}
+{{< caption-new "/uploads/2017/02/020317_0748_Automatepub1.png" "Check the new task in the gulp tasks overview"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAXElEQVR4nF3JMQ6AIAwAQN6iBhRQKJSCEtA4OPn/9xgmjcltxwJB2TFXIJrRLUZpoxurZyUFQ4R6uuumkLnFnotOjC8Wk1+3eBwFnJGSf681BkvJpdVbUJMcfv0AcKsVf52JfasAAAAASUVORK5CYII=" "418" "175" >}}
 
 *   Update the username, password, site URL and libraryPath settings.
 
@@ -146,18 +146,18 @@ build.initialize(gulp);
 *   Run `gulp bundle --ship` to generate the production scripts. These scripts get created in the "**./temp/deploy**" folder.
 *   Once the production bundle scripts have been generated. Run the upload to SharePoint task as follows: `gulp upload-to-sharepoint --ship`
 
-{{< caption-new "/uploads/2017/02/020317_0748_Automatepub2.png" "Upload to SharePoint task output" >}}
+{{< caption-new "/uploads/2017/02/020317_0748_Automatepub2.png" "Upload to SharePoint task output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAU0lEQVR4nCXC2w2AIAwAQEbRhAAttBVaeWii+2/lh5dzc9nzXjaUhJiAGZkRcwD0CbxTk3Gzrard1KQ1kgOJE3HKJbiz1zl1jCaSqQCiD3ELcf9/D0sQOGEXHsgAAAAASUVORK5CYII=" "627" "211" >}}
 
 *   When the command finishes, you can go check out the document library. The document library should now contain the JavaScript files.
 
-{{< caption-new "/uploads/2017/02/020317_0748_Automatepub3.png" "Files uploaded to the SharePoint library" >}}
+{{< caption-new "/uploads/2017/02/020317_0748_Automatepub3.png" "Files uploaded to the SharePoint library"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAY0lEQVR4nGXEwQ2DMAwF0KzFPOzAnRW4skhnQKrUMxI7xEntn8RxXUG59R1eGOZpXBc3I+YEzhAu4IL3dXi8ntuxd1UWYQCl1NZquwX/nPyPmbl7UFVKiYhijL9zzr13EQHwBXTNcIL1Q2ToAAAAAElFTkSuQmCC" "404" "178" >}}
 
 *   Run the package solution command to create the app package to deploy it onto your environment: `gulp package-solution --ship`
 *   Upload the ***.spapp** package file (underneath the "**./sharepoint/solution**" folder) to your catalog and you are good to go to start using your web parts from the Office 365 CDN.
 
-{{< caption-new "/uploads/2017/02/020317_0748_Automatepub4.png" "SPFx web part loaded from the CDN" >}}
+{{< caption-new "/uploads/2017/02/020317_0748_Automatepub4.png" "SPFx web part loaded from the CDN"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAxUlEQVR4nAG6AEX/AGKbk6zIxP/+//T39/f5+ff5+fb4+Pb4+Pj6+vj6+gDW393d4uDb29zQ0dLY2trc3t/g4eLm5+jr7e7t7+8A8O7v7Ovr7evq9O/r9fDs9fDs9/Lu/Pj0/ffz9/TxAPHy8vXz8t/n7ajF2qfD2qvG26zH3bDM4azK4cnc6gD8/f7///+zzeYAVaoYb7YHZbEAXK0DXa0ATqZakccA/P39////z+DuYJrIlbjVcKPMXpnIZZzKWZbFmb7cWj6Qo0EmigMAAAAASUVORK5CYII=" "627" "368" >}}
 
-{{< caption-new "/uploads/2017/02/020317_0748_Automatepub5.png" "Retrieved JS file in Chrome" >}}
+{{< caption-new "/uploads/2017/02/020317_0748_Automatepub5.png" "Retrieved JS file in Chrome"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAQUlEQVR4nB3BQQqAMAwEwP7/b3oXwRZPxQo2i0k2iiB0Jk3rNW+67HK2BgEAM+MQEanr2/WT+8kl16MGwwZ3J/kDwBE4Y9S+hDMAAAAASUVORK5CYII=" "627" "110" >}}
 
 ## Steps after previous configuration steps
 

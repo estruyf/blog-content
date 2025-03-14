@@ -27,11 +27,11 @@ One of these new functionalities with which I had trouble branding, were the sea
 
 When I was testing my design, everything was working fine in Internet Explorer:
 
-{{< caption-new "/uploads/2013/01/012313_0821_SearchHover1.png" "Search Results in Internet Explorer" >}}
+{{< caption-new "/uploads/2013/01/012313_0821_SearchHover1.png" "Search Results in Internet Explorer"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAgUlEQVR4nE3CSw6CMBAA0N7/JmJwY0y8hIgm6tooUVJK6W86Q0vHuOPlieNj3N/U7qrqy/DfyrqVVdNvTt9t04vDfazOkktmXpgzc1kXnfLPMb60/RirAcJcHKB13jofkUSEkFLqJv3WymCYF4aIAICIRCRswIAknRncRDkyc1n5AdMJizJO7WJoAAAAAElFTkSuQmCC" "648" "311" >}}
 
 But when I opened the site in a non IE browser, the following happened:
 
-{{< caption-new "/uploads/2013/01/012313_0821_SearchHover2.png" "Search Results in firefox" >}}
+{{< caption-new "/uploads/2013/01/012313_0821_SearchHover2.png" "Search Results in firefox"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfUlEQVR4nD2MzQoCIRhFff+XETR6iTZDY7QtWjVMn5M/o6LeLxLqcDm7e4QyJM/rwZC+kDak5lVOi5wWNb+0IXG82tPtzYyOxgxG//qH8GG3Id1pezrncisNHVxbH4MIMfmcH9Zue8C4AfDee+dSSqKDYy42xlLLv1lrbYMPTn+Mr+fSW2IAAAAASUVORK5CYII=" "720" "338" >}}
 
 _Note: these screenshots are just created for proving my point. Of course this was not the design I was working on, but the same thing happened._
 

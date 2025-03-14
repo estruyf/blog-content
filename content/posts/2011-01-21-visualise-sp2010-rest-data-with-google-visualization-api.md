@@ -108,10 +108,10 @@ Here is my code, feel free to make some code optimisation.
 
 You can place this code in a HTML Form Web Part. The end result will be the following.
 
-{{< caption-new "/uploads/2011/01/task4.png" "Task list with four tasks" >}}
+{{< caption-new "/uploads/2011/01/task4.png" "Task list with four tasks"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAO0lEQVR4nE3CMQ7AIAgFUO9/RUdNMB0IVGq+italQ19eUOOLszaaq353xZCUIguFp3VWMdzvj08vVAAc6g45akTsZZAAAAAASUVORK5CYII=" "455" "99" >}}
 
-{{< caption-new "/uploads/2011/01/pie4.png" "Pie chart with four tasks" >}}
+{{< caption-new "/uploads/2011/01/pie4.png" "Pie chart with four tasks"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA5ElEQVR4nAHZACb/APP08+Xl5fLt8/Pw7/T07+vr6/r7/fn7/vv6+v39/QD////5+/jK57qzzcrU2/n+///38/jf2ODm5ub5+fkA8Pjva7haH5oAH3R1N2Plhaft9vHl4NG10NLW8fHwAKzTky6PAEKeAEJ5aUxfyDxXusHM4fD45+7s7/f49wDtxXztlQDxpgvbZAbPQxzOOQTjsKD////+/Pz///8A8du66Y0H/6EG6l8A1TUFyEEO8dzT/////fz8/v7+AP///+bOptqeMspmGsFdPOTHuv////7+/f///////w2inyG9tQZ0AAAAAElFTkSuQmCC" "294" "218" >}}
 
-{{< caption-new "/uploads/2011/01/task10.png" "Task list with 10 tasks" >}}
+{{< caption-new "/uploads/2011/01/task10.png" "Task list with 10 tasks"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWklEQVR4nE3LywqAIBAFUP//KwuSJAux8TUz6o020fpwTC7tiqcOBjDnBKAizjnVDsBQqj4c0tvHzGw3m3MWEVMqBwp9yH/7wxOllynV/dxZy2+3dVljvJnlASUgc+oiqxJjAAAAAElFTkSuQmCC" "538" "242" >}}
 
-{{< caption-new "/uploads/2011/01/pie10.png" "Pie chart from 10 tasks" >}}
+{{< caption-new "/uploads/2011/01/pie10.png" "Pie chart from 10 tasks"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA5ElEQVR4nAHZACb/APDv8Ojr5/D28PT17/b08e3t7fX4+/f6/Pj39v39/gD////57/rfruC8tufZ4/b////w6O7e19vl5+b8/PwA7tnvpzWvlACZSETHMnTkkrP6/fLW49vH3d7k+Pj3AMBfyZoAp5UHnmpMqHBWhZ1OXd7CvszN0dLS0vLy8gCTaI9RTjw3fSJkjQL5hgvzaAP00cb2+v/s6+r08/QAm8iMCY8AMaERFpgDapUA454m+PTt//////7+////AP38/Zu+j0uVMTmPHmaiTerjz/////39/f7+/v7+/m9SmweKsRHNAAAAAElFTkSuQmCC" "292" "215" >}}

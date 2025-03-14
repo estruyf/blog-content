@@ -27,7 +27,7 @@ In the [previous part](https://www.eliostruyf.com/making-an-image-gallery-inside
 
 In the first part I created a gallery section which looked like this:
 
-{{< caption-new "/uploads/2012/08/080212_0907_MakinganIma1.png" "Gallery view with default image" >}}
+{{< caption-new "/uploads/2012/08/080212_0907_MakinganIma1.png" "Gallery view with default image"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAxElEQVR4nE3JMW7CQBBA0T1IsJQGTmDRpY1kd1RIHICKVOlzJe6RSAYZhImj0MQ4Xhzb692d2RlLGAko8sr/xfBp+jgOg9l89vLmhYvR5HXwPH/wQ88PPD8Q6cfyPVrnUhoL63gbreLdPo2Tr02SbpJUNPLTWFurtqxqCwCIRMRXjkgcKqpaICKtjSwKROyYOyLnCJ0TSlukru/PLVLWGGnoD7gw1F+JvGxOleqYNXKu4KhAavxV9r6/pfqpMVMMfL6l/y63arGFqAzgewAAAABJRU5ErkJggg==" "453" "297" >}}
 
 What I want to do is change the default image to the first image of that folder/gallery. To do this, I will make use of the SharePoint REST service and an Ajax call.
 
@@ -87,6 +87,6 @@ jQuery('#pickerimages .ms-assetpicker-tiled-mediumprops a[onmousedown]').each(fu
 
 The end result looks like this:
 
-{{< caption-new "/uploads/2012/08/080212_0907_MakinganIma2.png" "Gallery view result" >}}
+{{< caption-new "/uploads/2012/08/080212_0907_MakinganIma2.png" "Gallery view result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAzElEQVR4nGXJu27CMBhAYT8IRSzlCSJ1Y2RItk4g9rIwsvJMjEXqyEYgIVCKZAJioCAc1SQ2vvwOxCis/XS2g14brdqb53W67d6g6vbq7/1K86PieFXHfXFchP3hJAhPhPCrDKNlEEarNY5+8OIZSgm+CkFT9kdTKZWQUmsNAAZKaE+BMgEAnHNyPoPJi3spv92UUijjQkFubZFJfeJ6PvMn4/Ho82vqB9ZadEwuCc1yY5iCRACO42X0HYSzeLsp946ww0X9MiNNYf95AMV4rdHuHMBRAAAAAElFTkSuQmCC" "455" "297" >}}
 
 Event has still the default image, this is because there are no pictures added to this folder/gallery.

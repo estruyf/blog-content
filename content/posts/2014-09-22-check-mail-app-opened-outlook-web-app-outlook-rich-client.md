@@ -72,6 +72,6 @@ Office.initialize = function () {
 
 ## Result
 
-{{< caption-new "/uploads/2014/09/092214_1257_Checkifyour1.png" "App opened in OWA" >}}
+{{< caption-new "/uploads/2014/09/092214_1257_Checkifyour1.png" "App opened in OWA"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZUlEQVR4nFXJQQ5AMBBA0Z7SwjEsXYcL2NmLnTiARIjYC+2Ymmk7UgmJt/v5ioj4JRKIfbcczbi1s+lXrQCAma+IvOP9pKya0nJIiiGv17gBQGttjLHWOucQEU+4LIqIkr/w+PIGzGJwM7F+4jYAAAAASUVORK5CYII=" "835" "351" >}}
 
-{{< caption-new "/uploads/2014/09/092214_1257_Checkifyour2.png" "App opened in the rich client" >}}
+{{< caption-new "/uploads/2014/09/092214_1257_Checkifyour2.png" "App opened in the rich client"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAhElEQVR4nG2MwQ0CMQwEUyk0QkHQAQXwoQeOFx84JBxix44vsVE4QAIxr9WOdsN+uIpIKZKQACBT0iJWJymaRQNhKk8oc0LkjHDHM9AYCUgCM3Ofq+pUtLrb7hgX68NyM6y2p2Bm7vbB3bLo5YZjzEnqrL9o7dWY2V/d5qPWvOsf3rrnB5bgyf127YSEAAAAAElFTkSuQmCC" "1000" "664" >}}

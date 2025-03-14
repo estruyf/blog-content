@@ -50,7 +50,7 @@ As loading pages only work by a user account and not with an app-only client id 
 
 To make it a bit "safer" I added a dependency called **cpass** in order to encode and decode the passwords. In the project, you find an **encoder.js** file which you can use to encode your username and password. Add your username and password in it, and run **node encoder.js**, after this you can remove the file.
 
-{{< caption-new "/uploads/2018/11/111418_1049_TestingtheU1.png" "Encoded username and password" >}}
+{{< caption-new "/uploads/2018/11/111418_1049_TestingtheU1.png" "Encoded username and password"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAJ0lEQVR4nGNIyi6NTKtwiahyDi93Cit3iah2DC3VsfLSs/ZUM3UBAKfcCdM3NhaqAAAAAElFTkSuQmCC" "624" "72" >}}
 
 Copy these encoded username and password values and put them in the **config.json** file.
 
@@ -74,7 +74,7 @@ In SharePoint Framework when you are using class names from your **sass.module.s
 
 The class names get a unique suffix per change. This means that you cannot simply fetch element by their class name, as that changes each time you will do updates to your web part. A better way for this is to provide your own **data-*** attribute to the elements you want to test. In my sample, I choose to work with **data-ui-test-id**, but this can be anything you want it to be.
 
-{{< caption-new "/uploads/2018/11/Screenshot-2018-11-14-12.09.01.png" "Custom data attribute for UI testing" >}}
+{{< caption-new "/uploads/2018/11/Screenshot-2018-11-14-12.09.01.png" "Custom data attribute for UI testing"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAqklEQVR4nAXBvwoBAQDA4XsZQv6XcEdXuLtC50zCJMVgY2BQBscpUVZxAwaDUCZFYiCP4Gl+vk84v37UF09qA5ue/aa1/FKePdgfb9wfHw6nK6fLDaFtrfA21xj9HWp3g9zZ4m6sGY7nzKczRuYE07QQPGGJUDRJPJ0jpeVRFQ09rxPP6PhFhbCYJhCVEZxiAYdYIKhUiGWrxLQSEbWETzbwJg1ciSIuyeAPiAxYi3CpwTkAAAAASUVORK5CYII=" "1184" "462" >}}
 
 Once you put these testing IDs in place, you can retrieve your elements as follows:
 

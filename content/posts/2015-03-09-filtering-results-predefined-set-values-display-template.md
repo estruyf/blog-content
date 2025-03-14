@@ -89,11 +89,11 @@ In the code above you can find two functions: **click** and **checkRefinement**.
 
 At the moment the template output looks like this:
 
-{{< caption-new "/uploads/2015/03/030915_1341_Filteringre1.png" "Display template with filter links" >}}
+{{< caption-new "/uploads/2015/03/030915_1341_Filteringre1.png" "Display template with filter links"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfElEQVR4nE2Oiw5DIQhD/f+f3RQsT92CJtttTghJKdDoRWPo6NLfgHiuvdb+qQkTiYsnLFmdJR7ubp3AMFgM+NRg8cj/QMMEi6mnR2GRD3c3ZSKYx/qUdnGM29dygk2NB85at6DRaNZttRQLHORQL6x10yqWOFE+FRr3wS9Up+npb7trUQAAAABJRU5ErkJggg==" "456" "354" >}}
 
 When clicking on the **Refine on 'docx'** link you only retrieve **docx** documents.
 
-{{< caption-new "/uploads/2015/03/030915_1341_Filteringre2.png" "Search results filtered on docx file extension" >}}
+{{< caption-new "/uploads/2015/03/030915_1341_Filteringre2.png" "Search results filtered on docx file extension"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAh0lEQVR4nE2O2w7DMAhD8/8/26UBzLWtSDdpCPFgONjjOGgtnafMj0A9suqq61fjJCG4WJIG9syq+77eHnMxwWEhGmIpFgRn9SUtNs0wsYBmH1lgt0Vm1TiXEEy0OdYg9BvWiOwEYy7h9m7p5Xq37b/RGA5vGpbY9rBUz8ja0cRg+U8TenrkA+/e6S2LtYBkAAAAAElFTkSuQmCC" "456" "356" >}}
 
 The thing that remains is a link that allows you to remove the current filter that is in place. As like in the first step, you need to add a new link and a function to the template.
 
@@ -116,7 +116,7 @@ all = function (cc) {
 
 In the **all** function the refinement gets removed by creating a new QueryState in which you do not specify any query parameters or properties. This QueryState triggers the web part to perform the original (query you specified in the query builder) search query.
 
-{{< caption-new "/uploads/2015/03/030915_1341_Filteringre3.png" "All results link" >}}
+{{< caption-new "/uploads/2015/03/030915_1341_Filteringre3.png" "All results link"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAVklEQVR4nCWKSQ7AIAzE+P9naQLZGBIqWsmyfHDjPomUWXsXJqVHiGztzKyqajqYxcUxP9QxbZHc4ZxqbqYBi+0BXzcsEPidTcbgaRb7Tg4NyGcNLOQLCHp0IFnkgqIAAAAASUVORK5CYII=" "394" "152" >}}
 
 ## Making the filtering values customizable
 
@@ -124,6 +124,6 @@ The downside of working with predefined values is that the template can only be 
 
 In one of my previous articles, I explained how you can add configurable settings into your display template: [Adding configurable settings to your display templates](https://www.eliostruyf.com/adding-configurable-settings-display-templates/). You can apply that approach by adding two setting properties into your item display template that allow you to define the managed property name and the corresponding filter values. If you want to use the template for another kind of content, you just need to modify the display template setting properties in the web part.
 
-{{< caption-new "/uploads/2015/03/030915_1341_Filteringre4.png" "Filter settings in the property mappings section" >}}
+{{< caption-new "/uploads/2015/03/030915_1341_Filteringre4.png" "Filter settings in the property mappings section"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA7UlEQVR4nG3PzW4DIQwEYN7/9Voppyjdn3Q3wC4GAgaDcVVVyqHtp7mM5jQKEc9YjMczlB0QqYvIGEPGEBHlnNu12fXxMMeyaXucDkBrk3JmZmWNmacZwKf09AAhxBCi994BIKJqrSEWZpb/KKO1tZao/UJEKSUFzqWUufe/MxEpazR4/+ovtdacs4rPiKWwCI/B34ekM3fm1nshUvl2w3XFdU3zlOclTRNtG2vd9r3c7+rx/jbN8+eyHMZG7+E8S869ViLK1ip3vWqAwzkIMebMIn2MNgaJ1BDUebnsH9PTmApQnCPvf1K9z9v2BWt/V3BmBYzFAAAAAElFTkSuQmCC" "266" "317" >}}
 
 You can find the final versions of the item and control template on GitHub: [Result refinement display templates (CSWP)](https://github.com/SPCSR/DisplayTemplates/tree/master/Search%20Display%20Templates/Result%20refinement%20display%20templates%20(CSWP) "Result refinement display templates - CSWP").

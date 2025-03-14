@@ -22,7 +22,7 @@ This article is an addition to my previous one about how to automate the publica
 
 Not long after I had published my previous article, I got the following question on Twitter:
 
-{{< caption-new "/uploads/2017/02/020317_1441_AutomateSha1.png" "Question on Twitter" >}}
+{{< caption-new "/uploads/2017/02/020317_1441_AutomateSha1.png" "Question on Twitter"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAb0lEQVR4nE3ByxGCMBAA0PTfCAVYAFxsgnwWdMBMNnxkyJJJosvoifdEdavqexMCTfOSS+G/8uV1p5yzAIvt4MclPPxuV0I/I6J17jmM720TL+s09K3S0oCBXiqtDUilDHQxRhGIjiOmlMrV54eZT4GVbvGBIcfjAAAAAElFTkSuQmCC" "353" "145" >}}
 
 Let's split this up into the following questions:
 
@@ -63,11 +63,11 @@ build.task('upload-app-pkg', {
 });
 ```
 
-{{< caption-new "/uploads/2017/02/020317_1441_AutomateSha2.png" "Upload app package task" >}}
+{{< caption-new "/uploads/2017/02/020317_1441_AutomateSha2.png" "Upload app package task"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAABnWAAAZ1gEY0crtAAAAc0lEQVR4nE3J0QrCMAyF4b6KE9O0Sdt0S9R2kzG98P3fSMZgCN/F4fxOrbZm41QysXAqTIWPwRS9ey7ptenn2/oiOYUQbjHALgLi1dkj93na3j0LYBgALyePg1OV1mxdZ9VCDOD39+SKUB2T3asI/Ycj/wBIoBpbKvFPRwAAAABJRU5ErkJggg==" "586" "264" >}}
 
 Once you added this task in the gulp file, first run the command to package the solution: `gulp package-solution` (test) or `gulp package-solution --ship` (production). After the solution package is created, you can now run the new upload package command: `gulp upload-app-pkg` or `gulp upload-app-pkg --ship`.
 
-{{< caption-new "/uploads/2017/02/020317_1441_AutomateSha3.png" "Output of the upload task" >}}
+{{< caption-new "/uploads/2017/02/020317_1441_AutomateSha3.png" "Output of the upload task"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAaklEQVR4nCXJQQ6DIBAFUM6ihoEPAw5MVQqVRe9/J5M2ebtnrqZz9jEa5wAQvIW3ARThAGuq5jH181U5i1RJ2TN757af1ehrb285GtdDVWsRTgnARm4ht5hSUx/nffer7SlTiDYyeaz/fgBuSxX3ctv9rgAAAABJRU5ErkJggg==" "584" "230" >}}
 
 ## One required manual action
 
@@ -76,7 +76,7 @@ As I mentioned, there is one manual action which you should execute. That manual
 *   Go to your app catalog site
 *   Open the apps for SharePoint list
 
-{{< caption-new "/uploads/2017/02/020317_1441_AutomateSha4.png" "Apps for SharePoint" >}}
+{{< caption-new "/uploads/2017/02/020317_1441_AutomateSha4.png" "Apps for SharePoint"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAM0lEQVR4nE3ESQ4AIAgDQP//WrfWECiYeHIO0/oiAPJIysyq+m97Y8xBkqCZuXtE+CPpAhbJOpUR6OGvAAAAAElFTkSuQmCC" "627" "155" >}}
 
 *   Select the solution package
 *   In the ribbon, select **files** -> **Deploy** and click on deploy

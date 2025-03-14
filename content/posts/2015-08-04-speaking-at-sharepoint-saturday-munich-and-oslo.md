@@ -22,7 +22,7 @@ I am pleased to announce two other events where I will be speaking in October.
 
 Munich will be something special, it will be the first time that [Thomas Vochten](https://twitter.com/thomasvochten) and I will do a session together. We are going to do a session about SharePoint Search targeted for the IT Pro and Developer audience.
 
-{{< caption-new "/uploads/2015/08/spsmuc-long.png" "SharePoint Saturday Munich" >}}
+{{< caption-new "/uploads/2015/08/spsmuc-long.png" "SharePoint Saturday Munich"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAElJREFUeJwBPgDB/wCxhaVqS4c7YK9BWqc6V6YtS6AsSZ4kRqSEVXG9Z1wAikJxOl2sVWyxSWOsYnm4jp7MsrzbeZHKeV6FsWtqQh0csvseVqoAAAAASUVORK5CYII=" "1000" "160" >}}
 
 ### An IT Pro and a developer walk into a bar - SharePoint Search happy hour (lvl: 200)
 

@@ -32,7 +32,7 @@ The Search Results WebPart is the best option. The Search Results WebPart does t
 
 Indeed there are differences between the Search Results WebPart and the CSWP. The CSWP is made to visualize dynamic data, that makes it's easier to manage the display templates and allows you to change the property mappings.
 
-{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe1.png" "Property Mappings in the CSWP" >}}
+{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe1.png" "Property Mappings in the CSWP"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAsElEQVR4nE2I227DIBAF+f9PrJvmYsMawhIuuxizLqrivHQ0OjoaxUQu8y1WSPUa6B55F5He995/x1DWWmPAOu89rtYtGhCDc08DaxdRnxpCAFhzyq21/aS1NsZQMUaPuL1rF5HjOOTNcSrq/pi1gVyoEBfifC5xfaXsMSi9mCeGre3E9b+5UIxRGQNmtRhexJW5ct0KMdctF0opK21g+pqm78vP9aY1zIueF/05iOEPjKXg+hGDsWQAAAAASUVORK5CYII=" "265" "216" >}}
 
 > **Note**: to be honest, I never change these property mapping, the only time I do this, is when I'm using the diagnostic display template.
 
@@ -50,7 +50,7 @@ What you wouldn't need is:
 *   Paging
 *   Footer information (preference link, alert me)
 
-{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe2.png" "Search Results Footer Section" >}}
+{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe2.png" "Search Results Footer Section"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQ0lEQVR4nF2KQRKAMAwC+//3SgyZQJ3asQc5LSxjfpFny8yUdMZxyLbkqvrr3UkCCARZfrO0JQDdzSSuBZm5fnFLegC/sHYmqNh61QAAAABJRU5ErkJggg==" "347" "143" >}}
 
 These things can also be hidden by turning of the specific properties in the Search Results. Best is to create a new Control Display Template for the Search Results WebPart, because you will need to add some extra markup in a later step.
 
@@ -141,11 +141,11 @@ _#-->
 
 Not yet, if you are going to apply these two display templates. The results will look ok, but behind the scenes there is still some unnecessary HTML markup you need to get rid of.
 
-{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe3.png" "Search Results" >}}
+{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe3.png" "Search Results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANklEQVR4nCXGUQoAIAgE0e5/10pdyg/XjAiGxzSaEEp8lTDC0vchq6qFzpj99UdGmKQ7F9L3BfyYOadO6VCfAAAAAElFTkSuQmCC" "449" "97" >}}
 
 Here is a screenshot of the HTML markup. The unnecessary HTML markup is highlighted in green.
 
-{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe4.png" "Unnecessary HTML Markup" >}}
+{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe4.png" "Unnecessary HTML Markup"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAWUlEQVR4nC3C7Q5AIBQA0N7//QizVcNo11URbvm4/jg7YvSoTOHG0kEdsFpAztjAqjFqykGki9RknC2dlQFamjsCQzgcd0zPLo6U7WbXzfjYn3nn5/2/zMwf/7NUC3xG0/QAAAAASUVORK5CYII=" "770" "217" >}}
 
 ## Where does this HTML markup come from?
 
@@ -246,7 +246,7 @@ _#-->
 
 The HTML markup that it renders looks like this:
 
-{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe5.png" "Clean HTML rendered by the Search Results WP" >}}
+{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe5.png" "Clean HTML rendered by the Search Results WP"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAJElEQVR4nGN4+/7X2xef/718+f/tu/9v34LQ69cg9ObNnw8fAbb0HFlCNIHZAAAAAElFTkSuQmCC" "583" "81" >}}
 
 As you see, the unnecessary HTML markup is removed.
 
@@ -258,7 +258,7 @@ To make use of your display templates in the Search Results WebPart, you need to
 *   Select **Use single template to display items**
 *   Item Display Template: your custom item template
 
-{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe6.png" "Search Result WP property settings" >}}
+{{< caption-new "/uploads/2013/07/072913_1948_Howtousethe6.png" "Search Result WP property settings"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAVCAIAAADw0OikAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABgklEQVR4nFWRD2sbMQzF7/t/r6VlLJAmdKR0hUG7pOnZsmTLf2T7fMN3N8gewhj9zONZGvb7/W738Pj4ffft4bXr7fXX2/n8cj6/HI+n4efz8/7H/nB4Op5Ox1PX4fD0/vFxuV6un9eBiACA0BCiAUBjAEwIIcQYUxpEcvHcHE6WJjRzm+ZFLlYMZUiShUy5XYpR+fpeQK0YfB5dHlpr7CxqxYSkFQFY59g5pUByHboPO6VBaW3QKKWM6XcAMAY6nkrJkkTEp+xT5pil1KnWUkrHQPz7qkd0ijP4/MekkLeAi3mqN1dYtta9Oi5ZgmfPjIjWOu89AIjIhnsIpNwTZBEppZacp6ltuLWGy8j6M0QiW+tUFnU8txZCcK6bEyI7u06amRc8zyFEa4lTVr5on6XeJW+tiQgzR8kYeuV7/DWOWmtmBjDOWrPY9mArtkRaAyKtn5mm1uaV/jNflpvW03uutf6HDcA4qtvtaxzV5+1mEJ1zRLQlF5EY01apK8YYQvgLJSdXIcVav4YAAAAASUVORK5CYII=" "247" "514" >}}
 
 That is all, I hope these cleaned-up version help you with creating your own templates.
 

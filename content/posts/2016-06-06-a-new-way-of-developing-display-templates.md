@@ -51,7 +51,7 @@ To support this development approach for on-premises environments, I created a n
 
 Here is an example of the Gulp watch function in action:
 
-{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde1.png" "Gulp watch task" >}}
+{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde1.png" "Gulp watch task"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAfklEQVR4nGPw9fYJDgwKDg7x8/YP9ArwcfV2tnVytXe1NbfJyshkEBERkZSSlJCT4ebm42Pl42fj42Hl4WPjY2JgdLJ3YFBWVlXQUZDWlRKUFhAUFhISERIWERYWFebg4vTy8GCQlpQSkxUTlhPi5GXjZIcCDg4OBgYGRwcHADKgEJzuK1YSAAAAAElFTkSuQmCC" "624" "276" >}}
 
 Of course, this requires some configuration. When you start a new project for a new client, you have to install a couple of dependencies before you can start (or you can copy and paste everything from another project). This is not ideal, so that is where Yeoman comes in the picture.
 
@@ -59,7 +59,7 @@ Of course, this requires some configuration. When you start a new project for a 
 
 Yeoman can be used to build your own generator that automatically creates all required files and folders. Last week during the SPC Adriatics conference I created a display template generator and I am happy to announce that this generator is now publicly available via the Yeoman site.
 
-{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde2.png" "Display template generator on Yeoman website" >}}
+{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde2.png" "Display template generator on Yeoman website"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAsUlEQVR4nG3Gvw7BQBzA8Xsgkaa21mGmFoOJlzBIzB5CIiS1NLog0ZtsnkFC0kpUR4kY7m+v96vU7DN880Xz6aQ/GNi4Y7u47jRrLracZgO3LcdttNpoFJJxSIbBsefve/7O83fdzcFbB4vVerbcIpJkJMmi5BnFadVqniR+nC+30/WODEBhwED5F6JcUia0KZUGpUHmhnLFRM64knmBPoynr/eHcsq5lBIA2I8QQmv9BZ3viHuDe8MpAAAAAElFTkSuQmCC" "624" "363" >}}
 
 If you want to test out this generator, you can install it with the following command:
 
@@ -75,7 +75,7 @@ $ yo displaytemplates
 
 This loads the display template generator and it will ask you a couple of question:
 
-{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde3.png" "Yeoman display template generator" >}}
+{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde3.png" "Yeoman display template generator"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAABnWAAAZ1gEY0crtAAAApUlEQVR4nF3OWQ7DIBADUMMMMCGQpSELIfQCOUB7/5NVqfrR1l+WnmQZTGSIGpHQtt4Yx4zvWMMixns/9/0Uoxf5YWNYnNGaiJmY9dVIa/3hfJSyl7UcU84ppW4Y3TDaGGEtnMN6L+u2zGVLc+qmQccWrUcjlxGBR57rMiwjCGAFq0AKUFDqve6x1a3uRwiB/25femtyzfWo53k+n48Yg4g074jIC6sdCSnslt49AAAAAElFTkSuQmCC" "624" "504" >}}
 
 Once you answered all these questions, the files get created and the required npm packages get installed.
 
@@ -101,7 +101,7 @@ Here are a couple of Gulp tasks that you can use (more information on the GitHub
 $ gulp
 ```
 
-{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde4.png" "Default gulp task" >}}
+{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde4.png" "Default gulp task"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAeUlEQVR4nDXBOw7CMAwAUC+xgyCmtRNYkJD4nIGlIJQ0UodQKqVcAsT9Vybeg0cpc611fo1lmoZnvvXpGvM9d5fu+/7AJgQffLv1S9cwMhteGeeQAaCPCc6Hk+xlfeR214iKeNGg6pUsjaWAitCCjEUkg39EFgBSjD8JiQ+uyLhNHQAAAABJRU5ErkJggg==" "624" "276" >}}
 
 **gulp publish**: uploads all the files, sets metadata and publishes each of the files.
 
@@ -109,7 +109,7 @@ $ gulp
 $ gulp publish
 ```
 
-{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde5.png" "Gulp publish task" >}}
+{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde5.png" "Gulp publish task"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAgUlEQVR4nGMIDAiIjY6Jj0+MDI6ODYiJ8YsOcA0Icg30sHEvzCtgEBcV5xHm4RDnZuHlYGNmZWVhZWFhZWVlZWBgcHZ0ZFBWUBJQFOBR5eYT4+Xn4+Pn5+Pn5xcQEGBmYfby8GSQEBPnFOJiE2Lj5OXk5OTi5AIhLi4uRiZGC3NzAFoXEEBjlZ08AAAAAElFTkSuQmCC" "624" "276" >}}
 
 **gulp watch**: watches for file changes, once a change happens, the file will get uploaded.
 
@@ -117,7 +117,7 @@ $ gulp publish
 $ gulp watch
 ```
 
-{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde6.png" "Gulp watch task" >}}
+{{< caption-new "/uploads/2016/06/060616_0907_Anewwayofde6.png" "Gulp watch task"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAfklEQVR4nGPw9fYJDgwKDg7x8/YP9ArwcfV2tnVytXe1NbfJyshkEBERkZSSlJCT4ebm42Pl42fj42Hl4WPjY2JgdLJ3YFBWVlXQUZDWlRKUFhAUFhISERIWERYWFebg4vTy8GCQlpQSkxUTlhPi5GXjZIcCDg4OBgYGRwcHADKgEJzuK1YSAAAAAElFTkSuQmCC" "624" "276" >}}
 
 > **Info**: all the information about the Gulp tasks that can be used can be found on the generator's GitHub repository page:[ Yeoman display template generator](https://github.com/estruyf/generator-displaytemplates).
 

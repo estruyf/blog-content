@@ -23,7 +23,7 @@ Thanks to [Katrien De Graeve](http://blogs.msdn.com/b/katriend/) for giving me t
 But "easier" was not the case when I tried to implement it in SharePoint 2010. Several problems occurred, so I tried an alternative solution of adding the site pinning functionality to my SharePoint site. In this blog post I will give you a brief overview of the ie9ify with SharePoint 2010 problems, and explain my alternative solution.
 
 The end result will be:
-{{< caption-new "/uploads/2011/04/041111_1604_PinningShar1.png" "IE9 Site Pinning with Custom Jump List" >}}
+{{< caption-new "/uploads/2011/04/041111_1604_PinningShar1.png" "IE9 Site Pinning with Custom Jump List"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAOCAIAAACZwRr8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABj0lEQVR4nE3JPW/TQACA4fsd/AvYmJk7ImChMxtTZ8TapcwsFYgiIdLy0aoVIJCVoIJD6o/ENnUdp/Y5dmI7sWPnfGffnQ8FFl492wsUw1GvYvVyarizMUzGMHGDDQcm8sUQmKaWw8F1mHlBFC/ymgnyF2bix0AHzm8FedIEzoNpiGtaU/4PoXygDoFtKZUvhfNlUayahgoh2naDt0JWdGCZagV7QRjXBIv/aoU4/6UD01DLybc0Q4QQjAmlnHPBuWBMfO9rwDDUtde1rjwfBnGywKRhXFDWNrTt9TWgmnYUhkm2zooK1xwRighDhK0J68kaGBiu5S9hGPthMoEzbxovC1xitkK019eBarlxvp4tyigt4qyKM5QjtqrYoqw3Wx45+mQ+NGxtZJuX7shyXD8KojQvm66sgYvR2LF9GKXXcB6lZYH5CtESM8zET8UAx6edg867NyfSy8PTk8/S0dnX/c7H/bcfnr8+fHX0Hjx7cmN758HTF18e7+59Us4PpO7t7bs372/durd159HDPzEXadvA+QoWAAAAAElFTkSuQmCC" "289" "415" >}}
 
 ## Problems with ie9ify and SharePoint 2010
 
@@ -32,7 +32,7 @@ The first problem was the following JavaScript error: "Object doesn't support pr
 After this fix, the next problem occurred. The meta tags were not added on every page load. Maybe this has something to do with the JavaScript of SharePoint itself.
 
 Another problem was that only the navigation button color were working.
-{{< caption-new "/uploads/2011/04/041111_1604_PinningShar2.png" "Navigation Buttons" >}}
+{{< caption-new "/uploads/2011/04/041111_1604_PinningShar2.png" "Navigation Buttons"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAxUlEQVR4nAG6AEX/AKi5yK3F4rrK2LG+yrPJ4b/U6bTI3anA2qS50ae+1QCkvNbKtIP0uEvyuE3Jt46vxd6ovtawuLquusKjvtwAycCk/7Yq+MJe+7s//7Yqubqvw7ia+rc+77dPvMC6AM+pXO+qLOrGhOGwVe6jGcatd9qpSu6sNvGzRM2rZQC8sJHxlgDwqyzyngvwlgC1t627rIbxnQLlnhmusaUAmq/GuJlay5Y0y5c2sphim7POmbHMnKCal5+jlbDPeOJ3Vi5W9jQAAAAASUVORK5CYII=" "71" "41" >}}
 All the other functionality like adding links to the jump lists were not working.
 
 ## Alternative site pinning solution
@@ -149,7 +149,7 @@ This is the full code block that can be added in the head section of the master 
 
 ## End Result
 
-{{< caption-new "/uploads/2011/04/041111_1604_PinningShar1.png" "IE9 Site Pinning with Custom Jump List" >}}
+{{< caption-new "/uploads/2011/04/041111_1604_PinningShar1.png" "IE9 Site Pinning with Custom Jump List"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAOCAIAAACZwRr8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABj0lEQVR4nE3JPW/TQACA4fsd/AvYmJk7ImChMxtTZ8TapcwsFYgiIdLy0aoVIJCVoIJD6o/ENnUdp/Y5dmI7sWPnfGffnQ8FFl492wsUw1GvYvVyarizMUzGMHGDDQcm8sUQmKaWw8F1mHlBFC/ymgnyF2bix0AHzm8FedIEzoNpiGtaU/4PoXygDoFtKZUvhfNlUayahgoh2naDt0JWdGCZagV7QRjXBIv/aoU4/6UD01DLybc0Q4QQjAmlnHPBuWBMfO9rwDDUtde1rjwfBnGywKRhXFDWNrTt9TWgmnYUhkm2zooK1xwRighDhK0J68kaGBiu5S9hGPthMoEzbxovC1xitkK019eBarlxvp4tyigt4qyKM5QjtqrYoqw3Wx45+mQ+NGxtZJuX7shyXD8KojQvm66sgYvR2LF9GKXXcB6lZYH5CtESM8zET8UAx6edg867NyfSy8PTk8/S0dnX/c7H/bcfnr8+fHX0Hjx7cmN758HTF18e7+59Us4PpO7t7bs372/durd159HDPzEXadvA+QoWAAAAAElFTkSuQmCC" "289" "415" >}}
 The only thing that is not working is the taskbar icon. For some reason IE9 does not take the favicon, on a custom HTML sample page with the same favicon it works correctly. If you have any advice or a solution, feel free to add a comment.
 
 ## References
@@ -162,4 +162,4 @@ The only thing that is not working is the taskbar icon. For some reason IE9 does
 
 The site icon problem has something to do with the "msapplication-starturl" meta tag. If you specify a full URL or do not implement the meta tag, then the site icon works. 
 
-{{< caption-new "/uploads/2011/04/SiteIcon.jpg" "Working Site Icon" >}}
+{{< caption-new "/uploads/2011/04/SiteIcon.jpg" "Working Site Icon"  "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAGAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAdEAABBAIDAAAAAAAAAAAAAAACAAEDBCGhEhOS/8QAFQEBAQAAAAAAAAAAAAAAAAAABQb/xAAeEQAABgIDAAAAAAAAAAAAAAAAAQIDBCERElHR8P/aAAwDAQACEQMRAD8AqNmdqVYo7TySGUbcCEsDjG9KZFassTt3H6dEUtCUZOOY57Cs9CdG69Q//9k=" "59" "38" >}}

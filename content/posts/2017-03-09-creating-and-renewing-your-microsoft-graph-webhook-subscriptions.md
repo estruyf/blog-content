@@ -17,7 +17,7 @@ comments: true
 
 Webhooks are an easy way to do something when an event occurs. For example, when you want to do something when a new email is received. Currently, I have such a webhook subscription running which checks every mail for mail trackers. I just love to have control of my emails and know which of them are being tracked. Not that I do not read them. To highlight the emails that are tracked in my inbox, I tag them with a tracking category.
 
-{{< caption-new "/uploads/2017/03/030917_0923_Creatingand1.png" "Email which is tracked" >}}
+{{< caption-new "/uploads/2017/03/030917_0923_Creatingand1.png" "Email which is tracked"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAWklEQVR4nAXBUQqAIBAFQO9/pv66Qd9RgZmJFqatrrD5mlElpUoEAL0LvV9r1hwhhJyziKhLb26ZH6PTabLdKcZpHIxemRsAFZ19vat3oMvX29MTAbRSmFlEfl2VVJEPYlqlAAAAAElFTkSuQmCC" "557" "182" >}}
 
 The original code for this was written about a year ago. One of the downsides back then was that the user, in this case, myself, had to manually update the webhook subscription. For this, I created a portal where I saw my current subscriptions and could trigger an update.
 
@@ -75,7 +75,7 @@ Renewing subscriptions is done the same way as you would do from the user contex
 
 It depends on the type of resource you want to access. In my case, emails which should be retrieved and updated, so my application only requires the **Mail.ReadWrite** application permissions:
 
-{{< caption-new "/uploads/2017/03/030917_0923_Creatingand2.png" "Microsoft Graph Application Permissions" >}}
+{{< caption-new "/uploads/2017/03/030917_0923_Creatingand2.png" "Microsoft Graph Application Permissions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAABnWAAAZ1gEY0crtAAAAe0lEQVR4nDXLQQ7CIBAFUO5/qMaFMREPUXeWWv5Ap4IwDBgXfftnmDnE6IGUcj+pthAjM5taqweIwrb5dX3vzK2p9srJjz5MqRVEAKWcW2si0rWrCieoDiMiRAEg5mOctMuR8d8PF6fZTbO7PNfbslv/tSh3fK6vxfryA39rjd+wGwMFAAAAAElFTkSuQmCC" "561" "275" >}}
 
 ## Mail tracker repository
 

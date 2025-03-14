@@ -57,20 +57,20 @@ Once everything is in place, you can use the task as follows:
 
 *   This is the basic task run and can be used the very first time to create a backup of your default settings. All the settings are stored in a **package-solution-env-settings.json** file.
 
-{{< caption-new "/uploads/2017/06/062017_1947_Gulptasktoc1.png" "gulp change-pkg-settings" >}}
+{{< caption-new "/uploads/2017/06/062017_1947_Gulptasktoc1.png" "gulp change-pkg-settings"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAdElEQVR4nAXBSw7CIBQAQI5EYmv4aAsF3o+Hia6amNiFXXj/Ezhjvuf52X9PPVSOF+/vrbaUQ4zTdLHWmgatK5ESdGxYAYiAypqdc/N8NdKlK4MgKiM3FmBugCVvy5Ju5jFGH8pCpZY1p3iPzjsfnI8+BP8HKlUgbMWG8MAAAAAASUVORK5CYII=" "624" "266" >}}
 
 `gulp change-pkg-settings --env test --cdnpath https://tenant.sharepoint.com/testassets`
 
 *   With the **env** argument, you can specify the name of the build/environment
 *   With the **cdnpath** argument (optional) you can specify the location of the JS files. Best is to make use of different libraries/locations per build/environment you are adding. That way you will not accidentally override a production asset.
 
-{{< caption-new "/uploads/2017/06/062017_1947_Gulptasktoc2.png" "gulp change-pgk-settings --env --cdnpath output" >}}
+{{< caption-new "/uploads/2017/06/062017_1947_Gulptasktoc2.png" "gulp change-pgk-settings --env --cdnpath output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAdElEQVR4nCXBvQ7CIBAAYF6pkiA5/u6OWjhoMTFx62Q3E4f6/oOD36e+7/N4nM/ts/fXwRmJEmKMEWNK4JU06ZvMsvCNkXImppi8DwDOOafGGOvo7d7bKq2VWmei4DwYY6/GqFrrUkpmCiEAgLVWa335m6YfN5Ifp1qxvYsAAAAASUVORK5CYII=" "624" "221" >}}
 
 `gulp change-pkg-settings --check`
 
 *   By using the check flag, you can see which environments are already defined. Plus, you can also see the environment which is currently in use.
 
-{{< caption-new "/uploads/2017/06/062017_1947_Gulptasktoc3.png" "gulp change-pgk-settings --check output" >}}
+{{< caption-new "/uploads/2017/06/062017_1947_Gulptasktoc3.png" "gulp change-pgk-settings --check output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAi0lEQVR4nBXLSw7CIBAAUK5EST/D0FoYYDqQtJoudOlOEzXpzusb3/6p4zge9+/t/Nm393V9vhJfKI7en6bJISqKlJJPTCGFFMNIhLOzCP0w9F2npJbFxzXwRrynWmNGZ62Ftm2NMUqqLJmZJbMULoEiWAsAjWm01kpEpJSFM82zG0dE/F8AY4zW+ge/+yeOEg5EOwAAAABJRU5ErkJggg==" "624" "304" >}}
 
 `gulp change-pkg-settings --env test`
 
@@ -82,7 +82,7 @@ Every time you run the command, it will store the settings to a new file which c
 
 Here is an example of its contents:
 
-{{< caption-new "/uploads/2017/06/062017_1947_Gulptasktoc4.png" "Example output of the stored settings" >}}
+{{< caption-new "/uploads/2017/06/062017_1947_Gulptasktoc4.png" "Example output of the stored settings"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAOCAIAAACZwRr8AAAACXBIWXMAAB2HAAAdhwGP5fFlAAABMklEQVR4nE3PW26DMBCFYZaSJr57fANjG4PBEKDp/jdUkfSh0rwd6dP8DQCmoWVDNFZwgQj9ouxO6NfnGi4QHYdy1vNcnntZ17zUQQLB5HbNgj9w9OM2rTXVNT/3Mi8JFGX8wfijUUC5A+qtMdw6YZ1oOzCWa8NB0UYCoTmkrdQ159EPuRtyZ6yg7I7JrQHAaAhln59b3vayPcf9mGNyjN/fuCLMgoid73Xnte91H62xXGl24dcXoWunOJUQk+uDCdGCIp+8N55TPevrtXy/6vldXz9rjO5vVorSVsnknZO+1yHaEK1zUpvLf+O900PfB2tb+Wn7jxOU03os5znvx7wf5ThnYwUmtytMASGdbedhGv1UwlTCvCTnJGgqgVxhXCDEH5TdhUBcICExKCwk5gL9Aj0DUCY/XYlsAAAAAElFTkSuQmCC" "624" "856" >}}
 
 ## SharePoint Framework Extensions
 

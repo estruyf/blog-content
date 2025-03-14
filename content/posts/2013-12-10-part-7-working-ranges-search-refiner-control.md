@@ -105,7 +105,7 @@ Now that you got a little bit of background information about how the range oper
 
 The end result will look like this:
 
-{{< caption-new "/uploads/2013/12/121013_1745_Part7Workin1.png" "Range End Result" >}}
+{{< caption-new "/uploads/2013/12/121013_1745_Part7Workin1.png" "Range End Result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAIAAACExCpEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAhUlEQVR4nG2P7QqDMAxF+/4vOYUpE6wfrZrmpklH2cZQPD9zLjeJG4bXo2nWEMsdDuAYN6J0r/3ou65nwMz0jJk5IqKUAMgZAMzsKCVVvbiPBuC892sI30Q+oar1tFLMNJe6+u9EpJYPy9GOuw/Uz8eycx3/ykXETZu0U5p3eS68Ur489gaHGgdCTbJlOAAAAABJRU5ErkJggg==" "168" "150" >}}
 
 For this search refiner we'll start from scratch, because the code will be much different than the ones that were created in the previous posts.
 
@@ -195,7 +195,7 @@ _#-->
 
 The output after this will look the same as the end result, but without the functionality.
 
-{{< caption-new "/uploads/2013/12/121013_1745_Part7Workin2.png" "Range Refiner" >}}
+{{< caption-new "/uploads/2013/12/121013_1745_Part7Workin2.png" "Range Refiner"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAIAAACExCpEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAhUlEQVR4nG2P7QqDMAxF+/4vOYUpE6wfrZrmpklH2cZQPD9zLjeJG4bXo2nWEMsdDuAYN6J0r/3ou65nwMz0jJk5IqKUAMgZAMzsKCVVvbiPBuC892sI30Q+oar1tFLMNJe6+u9EpJYPy9GOuw/Uz8eycx3/ykXETZu0U5p3eS68Ur489gaHGgdCTbJlOAAAAABJRU5ErkJggg==" "168" "150" >}}
 
 ### Adding the Click Events to the Hyperlinks
 
@@ -278,7 +278,7 @@ This code needs to be added just before the HTML mark-up. The refinement values 
 
 The end result looks like this:
 
-{{< caption-new "/uploads/2013/12/121013_1745_Part7Workin3.png" "Range Refiner" >}}
+{{< caption-new "/uploads/2013/12/121013_1745_Part7Workin3.png" "Range Refiner"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAIAAACExCpEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAiUlEQVR4nG3O0Q7CIAyFYd7/DY13W0gEXWUyWlpoMbswccu+2z/pqYvP4L3PeRtXXMECAIh4nde0wgIiYmZ6ZGYuAUzTTFR77+2ImR1hCSFWllMTkVqrgwWQSFVb6yeq6vInxRBba6Zdj3k/nvI2P14Z60ZCfxMisuf5zbdAPvE9lph5jLF//PMFHMwGNQ491rYAAAAASUVORK5CYII=" "165" "147" >}}
 
 ## Download
 

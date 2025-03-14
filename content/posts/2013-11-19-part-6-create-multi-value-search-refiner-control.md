@@ -25,7 +25,7 @@ This post focusses on the creation process for a multi-value search refiner cont
 
 First let me tell you how the default multi-value search refiner control works.
 
-{{< caption-new "/uploads/2013/11/111813_1943_Part6Create1.png" "Default Search Refiner Control" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create1.png" "Default Search Refiner Control"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAATCAIAAAAmiQu5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABHklEQVR4nG2RUW/DIAyE8///4TSp0raHNTHGBhsMCUkm2lRb093r6eA73yAiMUYRqXXeXzRMAJfL5fPjM2fb933btie7tTbfZMVaa+e0iDAHRITJlVrPdkqJiEIIHJiIluXpgcHM7nQhBBFZlrZtneAO0R8nj+i8Q+cRmQIAXK/fzuGR1ofSTSKSc17bethEhM4BABMxs3OYUjr+VtUYo3fo0TtEEfWIqvpLHmNk5hgiEVkpqmrWT3SkEd04TgATh3ju3Yv1dG+1ruvfVt3OOcfQr+aJ/plE9dYbMTB3eofoEABgAitlkGwkKWqSZCnnUoqZ5ZRqKa21AXV5G7PP7X2yUZaXSWobQ2WtnGaQ+UB6jD6E3NMTZYjli8+D/gAhzyUZlU2iugAAAABJRU5ErkJggg==" "164" "305" >}}
 
 The default multi-value search refiner control uses checkboxes to set the multi-value refinement. When the refinement gets applied, it calls the **Srch.Refinement.submitMultiRefinement** method. This method retrieves all the checkboxes that are checked and it applies the refinement by calling the **updateRefinementFilters** method.
 
@@ -39,9 +39,9 @@ To give you more flexibility, I'll explain how you could create your own multi-v
 
 This will be the end result:
 
-{{< caption-new "/uploads/2013/11/111813_1943_Part6Create2.png" "End Result" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create2.png" "End Result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAARCAIAAABrQaqyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABFklEQVR4nG2R6W6EMAyEef9HrLatBDls54I4EMKSpYJCr+3306Oxx3bjnHXOE5l1XbcnGgAthNRK11r/kUspvBOd86WUvzIzIyICKqmY07Ztj4tdHscRtEKN+mDK8y93SskQApAGjQDOea1BiE5ruNwXhsgYo5S21i3Lcrr3pkp2bYeAznslZd/3P5pbo47d2rb1IRwj3CWPo1JSCKGVNOasfuY/ZxOClAo0PF9m33s3dwIAU+LInFJKzDHGZVn2q/UhkLHBewIw1hEZACCiacrN4UjDMOQ811rnfJJSKqU0MTgEQABmnvOkhACkruteb7chxoZLHeY6Lg8uNUz3e90Df0cTYX7BsfX53eY3m6eyfj1l27YPL83kDzEyI80AAAAASUVORK5CYII=" "163" "269" >}}
 
-{{< caption-new "/uploads/2013/11/111813_1943_Part6Create3.png" "Refined End Result" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create3.png" "Refined End Result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAIAAADJDItPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA1klEQVR4nF2Py27DIBBF+f/Pq7pKg52Yh4qxjVvzngEqnI3TsxrpjI50iZSSjuP0eIaUW2u1vUFiDPY4vHOl/FMdEqH6XFwquweb8CcAXP7IauFpstjTfQ6TSVQHDxcdgv/dDeSUYigAkDPknFJCxK6VUgMdZjULIbiQ67pKzodhXJala631OA6z1oJxvWx61kJIa21fUSt5peJJTvnVRsR6Qsy2McY447vZnXOCM/WtKKX3r9thHcFSsZzUfiBiKbVHoA8g3MQP4aY13rT/lC5eVrXW/gDCZDtjLJwH6gAAAABJRU5ErkJggg==" "168" "190" >}}
 
 ## Creating Your Own Custom Multi-Value Refinement Control
 
@@ -97,7 +97,7 @@ In these loops, the refiner objects are removed and updated to use the refiner t
 
 The current outcome looks like this:
 
-{{< caption-new "/uploads/2013/11/111813_1943_Part6Create4.png" "Current Result" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create4.png" "Current Result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAIAAAAfVWhSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA1UlEQVR4nG2Qy26EMAxF+f+vHEEcPwlJFWdKy2MUFrRV5y688JGPrjwQcUSEENav7/NfhlwyM6votu1vcGst5yXnLMytPd9gYVZVFcm57PvtODp2d0RkIgCIiLX6n+taq6oyERMJs5lGgMdjDCFc2J0RmRkgqqqZImJKy74f53l0OfVgmEKEaGYAkFL6kYsIUxdM4zinxcyWG7s7E8I0IZKI3qWO42peazVTCIBE27W6xq/mEWAcJyJKKc3z3J+09Dw/12Fd11KKqX2U0rHZbCYiZubeXkOycXJRXMPKAAAAAElFTkSuQmCC" "163" "206" >}}
 
 ## Adding the Refinement Action
 
@@ -168,7 +168,7 @@ What the code does, is it retrieves all the checkboxes from the control, and it 
 
 Now your refinement action will work, so you can test the multi-value refinement.
 
-{{< caption-new "/uploads/2013/11/111813_1943_Part6Create5.png" "Current Refined Result" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create5.png" "Current Refined Result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAm0lEQVR4nGWOwQ6DIBBE+f8fbE9FLe4CAguoFSpIYz300DlMJplk5jGJ8OB86HvvY2vtOI7Lr8DWdXWO5hByfrc/MSLqOm6MkYgSkYisdQgghEgpMyLfdVwpLc8WjbHTpIUYg/elFDbHiCDMpBWAQlCIztkRYN/LOb6kal9lyTXmI2x120+i37eO+QbL06XBbXdc1XwC1i92a+0DIBvG04l8DbAAAAAASUVORK5CYII=" "158" "115" >}}
 
 ## Add a Removal Action to the Refinement Control
 
@@ -183,7 +183,7 @@ _#-->
 
 This is the outcome:
 
-{{< caption-new "/uploads/2013/11/111813_1943_Part6Create6.png" "Clear Refinement" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create6.png" "Clear Refinement"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAIAAAAfVWhSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA8UlEQVR4nH1PXU/DMAzs//9bPICmSTANQaHtSD/SZGsLXZOUNrEdFNYVxAOWfX44684XffQ9r3nTNEJIrY33noj8taK2bdMse32Js/SglP5L+38rAqTJ4QU/LTogwNAWg0bUG7th5x03sTQ3Sf9Q6ftCbdjAuulHfLW7bLz6RwCQJsl71ymltVbGaKUUIi7ezkH8/FTzqq6PVVlwXjKWT7Ndafe430sphDjKMNKM46/PAXL21ransqqPQhR5oXVIv9BIhOSRwnffWRZc6GaYbw/9XXbO2nGbD7tSbfNhcuGEvI+IaAacHVogCzRZtIBrzi/Pc3UjHtiKUAAAAABJRU5ErkJggg==" "125" "162" >}}
 
 ## Choose the Operation
 
@@ -197,7 +197,7 @@ var currentRefinementCategory = ctx.ClientControl.getCurrentRefinementCategory(c
 
 The object that it returns looks like this:
 
-{{< caption-new "/uploads/2013/11/multiple-refinement.png" "Refiner Object" >}}
+{{< caption-new "/uploads/2013/11/multiple-refinement.png" "Refiner Object"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAVElEQVR4nF3GQQ7CMAwF0dz/pjiCRqqJfxu7UwE7njTStDknVcXH2w+k9f1/bYxBzInOE72eyAy5o33/5U5E0KSDXEldFxmirFNmVO/Uw6htI3NxAzShdOrX4QxvAAAAAElFTkSuQmCC" "479" "123" >}}
 
 In the output above, you can see that the operation can be retrieved from that object. The **ShowOperatorRadioElements** function looks like this:
 
@@ -277,7 +277,7 @@ MultiRefinement.SubmitRefinement = function (name, control) {
 
 The final result looks like this:
 
-{{< caption-new "/uploads/2013/11/111813_1943_Part6Create8.png" "Final Result" >}}
+{{< caption-new "/uploads/2013/11/111813_1943_Part6Create8.png" "Final Result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAARCAIAAABrQaqyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABFklEQVR4nG2R6W6EMAyEef9HrLatBDls54I4EMKSpYJCr+3306Oxx3bjnHXOE5l1XbcnGgAthNRK11r/kUspvBOd86WUvzIzIyICKqmY07Ztj4tdHscRtEKN+mDK8y93SskQApAGjQDOea1BiE5ruNwXhsgYo5S21i3Lcrr3pkp2bYeAznslZd/3P5pbo47d2rb1IRwj3CWPo1JSCKGVNOasfuY/ZxOClAo0PF9m33s3dwIAU+LInFJKzDHGZVn2q/UhkLHBewIw1hEZACCiacrN4UjDMOQ811rnfJJSKqU0MTgEQABmnvOkhACkruteb7chxoZLHeY6Lg8uNUz3e90Df0cTYX7BsfX53eY3m6eyfj1l27YPL83kDzEyI80AAAAASUVORK5CYII=" "163" "269" >}}
 
 ## Download
 

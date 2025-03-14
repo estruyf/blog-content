@@ -27,7 +27,7 @@ In this post I will cover how you could add your own web fonts to a font scheme.
 
 When you go to the page to change the **change the look** page, you have the following default font schemes available.
 
-{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw1.png" "Default font schemes" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw1.png" "Default font schemes"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAfCAIAAABRS8vCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABvUlEQVR4nG2SXY+iMBSG+ffezP6kzWavTAyJ7lhZQesirR0oS7+goUIpmxFFxuW9aNo+yfl6j4cQ8n1/u91GUbTZbNbrdRAE1tr+Jk8phRBKkuRyuXDOKaV5nj+xlDLc789xUpVV3/fOuQHc8fThHupHzFgRhiGEcAuAEOIlgMc5C3a7YBf8en8vq9f4XlVVJwgxuuhKz+Tuum78mt4HeZRSAMDQ9PF4BAD4vm+MuWOtdfYpyjk3xnDOhRBjDK8sVRSGSYK0nsvdP+Sc6x7qR8wYQwhhjPM8xxhnWVYUxRNfr1dKqZSy6zpr7RCjH7ExJk3TYV7/yxuGbK1t23Y427Z9YqXU6XSCEGKMCSFRFEEIm6a547quGWNCCHZT27ZT07ymaYQQSikpJWNsWlc/VG6Mud40U5rv+4vF4tvb23K5nJlaWZbJ+YwRrmYNres6jv+kH5mp7y71U2ytHWx2zg2tf9kWpRQhJI5jQgillBDCOX9irfXhcJx+vTaWZVl1W8IZ3N8SuceivTpW/KWr1WoLwBGewjDcB+D7j58FY0OTnlLyd7CLwoMUn5brqpJSjQE++04/Usa4MTND/QcncHcsakPGtgAAAABJRU5ErkJggg==" "165" "511" >}}
 
 SharePoint already uses a couple of custom web fonts. Like for example: Typewriter, Century Gothic, Rockwell, ...
 
@@ -48,9 +48,9 @@ The small and large images are just screenshots of what the font looks like. Sha
 
 Here is how SharePoint does it for the default font schemes:
 
-{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw2.png" "Font large image" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw2.png" "Font large image"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/ANnn+7fS977U9bzT9b7V9bTV+rjX+r/f/77e/73e/4uyGa0ulc9FAAAAAElFTkSuQmCC" "723" "50" >}}
 
-{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw3.png" "Font with no images in place (font-family is used)" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw3.png" "Font with no images in place (font-family is used)"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AOPt/JrH+6HI96DH96PJ96LH9qLJ95rI+5PE+5LE+3hjGAsgBvRRAAAAAElFTkSuQmCC" "505" "63" >}}
 
 As you can see, the difference between the first and the second is that Typewriter is a custom web font with a small and large image applied on it, so it uses the image file to visualise it in the list. In the second one, you can see that there the font-family style is set to Georgia.
 
@@ -59,7 +59,7 @@ But why two images?
 *   The large version is used for preview slot one (top);
 *   The small version is used for preview slot two (bottom).
 
-{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw4.png" "Preview slots 1 (top - large image) and 2 (bottom - small image)" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw4.png" "Preview slots 1 (top - large image) and 2 (bottom - small image)"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVR4nEXJQQrAMAgEwPz/n+KuIFHQ9NBDCylt5zojM1VVREgCMDN3v16juwGQnHNW1bn9vdZhW0RU1RdP327sVfdxUSJgAAAAAElFTkSuQmCC" "166" "51" >}}
 
 The next step is to add the file references in the font scheme, they need to be added with the following properties:
 
@@ -121,7 +121,7 @@ Here are two examples:
 
 This gives the following output in the dropdown:
 
-{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw5.png" "Font scheme with custom web font" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw5.png" "Font scheme with custom web font"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAVUlEQVR4nE3MSQrAIAxAUe9/SIdFNVgRHEuimELp9LcPvkBEIhpjEOK4Wmvxk2ithRBqrTmlGKP3+5zz45IzOGc3CwCI+MLNtWSttNFGStX7wcy/N58Y/nOqm50SFQAAAABJRU5ErkJggg==" "149" "65" >}}
 
 Here is an example with preview slot 1 and 2 set:
 
@@ -170,26 +170,26 @@ Here is an example with preview slot 1 and 2 set:
 
 This gives the following output in the dropdown:
 
-{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw6.png" "Font scheme with custom web fonts" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw6.png" "Font scheme with custom web fonts"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAS0lEQVR4nE3MywrAMAhE0fz/pyaIEIiOVpNC09ddzObAFDM7rtx975xzPZUxRq21987MRNRai4iPVSEiqioimfnCzQDMzN0B/G83n04mdUpvhm11AAAAAElFTkSuQmCC" "149" "64" >}}
 
 If you leave the image references blank, it renders with the font-family style property instead of the image:
 
-{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw7.png" "Preview slot where the large and small image attribute have an empty value" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw7.png" "Preview slot where the large and small image attribute have an empty value"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZklEQVR4nC3LSw6DMAxF0ex/V3RQJAhqOirzwgbqyJ/XOEYIzvBKN+H2P7UGgIgMEJaISPv2nefps65LzuVVSnmP43MYHjkvPSKZWaXKLD8iVW3u7o2ouvt5A2BmETHVK1167xFxAPmEcLw1oRmhAAAAAElFTkSuQmCC" "143" "58" >}}
 
-{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw8.png" "Rendering when no image reference is set" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw8.png" "Rendering when no image reference is set"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAJklEQVR4nGN48vbPrBO/Fp74tujEt4Unvi8Gk7NP/p554tf0E38AeMUYHx8fPckAAAAASUVORK5CYII=" "515" "63" >}}
 
 ## Activating the composed look
 
 Once you select the new font scheme, the preview image should render with the font scheme in place:
 
-{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw9.png" "Preview with custom web font" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw9.png" "Preview with custom web font"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAs0lEQVR4nE3LvYsCQQwF8P3/7W1WsBZbWxtBsTmuuV78xlk8ZpNJJuNMMrKoYHjN4/fSjFfH0XI/WZ/a9andnKfb83R7mf1cPUBkbua/bvHX1RJLedSvyzmXUhoCn4SRCDAAIBITR0nD1MwawEAs/z1CCBgw9IgeYpQ312pSbOfw4NwNOumc7G/Y88D64qx3IOREqSALsEjWr++sdxSIOYh6fnhKMdubVdVsKLXaJy8yVX0CCAfi6XEkEQwAAAAASUVORK5CYII=" "701" "532" >}}
 
 When the composed look is applied, the site should render with the font scheme in place.
 
-{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw10.png" "Site with custom web font applied" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw10.png" "Site with custom web font applied"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZElEQVR4nDXJMQ4CMQxE0VyTu9FxGc5ARbEFiGKlxOtMMmMHAeIVv/nlfH2eLrf7q2kOKTJzrUVSEsny2Nu2ux1u1sYYJCenviKioPvKNLNa6/GHDgCSiiIyFwCzz/jV3TsQEW9e2nKNOldeiQAAAABJRU5ErkJggg==" "958" "358" >}}
 
 In the themed version of the corev15.css file, you will find the following web font references:
 
-{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw11.png" "Web font references in the corev15 css file" >}}
+{{< caption-new "/uploads/2014/09/090814_1225_Addingyourw11.png" "Web font references in the corev15 css file"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVR4nBXCSw6AMAgFwN7/nH6gxagUXsG6ME6myCUbn6oZMYE5xh94zDPzLbfGsiqx7WTMVpsTmzSXA73nB+QtOKs6AjZUAAAAAElFTkSuQmCC" "827" "160" >}}
 
 In the next post I talk about how you could achieve it for Google web fonts.

@@ -92,7 +92,7 @@ Nothing very special in this template, it will just retrieve the value and forma
 
 When editing the display template in the SharePoint UI, you'll find the **Crawler XSL File** property.
 
-{{< caption-new "/uploads/2014/03/032414_1607_Definecusto1.png" "Crawler XSL File Property" >}}
+{{< caption-new "/uploads/2014/03/032414_1607_Definecusto1.png" "Crawler XSL File Property"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA1ElEQVR4nE2PUY7DMAhEff9jRmrcyEkVmxgM2LCK2+7u+4NhGE24AETE3fd9jzHu+wFzQ0TCEkTU3c0s5/M4bg0RCxSixiyhXtXM3f08z9frJSwswsxj9N57QMQxhrurau99jGGTMfVwG+fz99F/xhiBEFtrZsbMMt/KhJlVNbTWiIiZoZScc2tNJyJyu/lLSmnbNtW7yC+fbHdPKeVcPoOZzzrhri/iZlDKBVCgnoAVSVXNLKjeGWYW17gsy2ONj/W5Pbd6VVH5KwZw4ZtaKyIRtcY/DIFdR+j7ZE8AAAAASUVORK5CYII=" "484" "570" >}}
 
 If this property is filled in, the XSL template can be created. The default XSL template can be found under "/_catalogs/masterpage/Server Style Sheets/ServerRenderTemplate.xsl". I made a copy of this file to my custom location, and started to strip everything out of this XSL file which I didn't need. This is how my XSL file content looks like:
 
@@ -143,7 +143,7 @@ The last thing to do is to configure the web part to make sure that it renders t
 
 The end result looks like this:
 
-{{< caption-new "/uploads/2014/03/032414_1607_Definecusto2.png" "Email server-side formatted" >}}
+{{< caption-new "/uploads/2014/03/032414_1607_Definecusto2.png" "Email server-side formatted"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQklEQVR4nB3E0QqAMAgF0P3/J1aweorMhOHUdi0IOg+n9PGwonlKT7E8FZfhPwNv2duYD9/kXsgrx0S+cpCicojlB+MKOHt1XMUVAAAAAElFTkSuQmCC" "140" "30" >}}
 
 ### The content by search web part way
 

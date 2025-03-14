@@ -43,23 +43,23 @@ Open the page were you want to put your chart in edit mode.
 
 Insert an Empty Data View by selecting the **Insert Tab** and click on **Data View** -> **Empty Data View**.
 
-{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog1.png" "Empty Data View" >}}
+{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog1.png" "Empty Data View"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABBklEQVR4nAXBzW6CMAAA4L7/Ycc9i6clm/HgDkZQ+WtpaSnU0v9CRV1C9n2AfX2yJuejZPKO+slop+lRKWvcauwMxOQnm+Skh0nxuw3e0tMHrDNCB0I6kGUFxj2hI2V3RjltYXn9xRBihKsKgvO5qBrREjWIpYEcNXnSVQxx2zbvI8CXb1SeR1okx0lbk2r/0nkIcX2+gpbgdtr19S6Kw0MdOnhE18NDXkKIr/ff4iS4VLLrJj4EHzdMBMr3ZkA941qZ2YygLiEhgnPl/dq2fY/3zySsS3FOaZnBKW9xO2i9zPMfQqzHP8lmkhfJk4dFoCpKIaw1ybm1rhHD+TN2StyCKt9p+AegiQqzqFQ8MQAAAABJRU5ErkJggg==" "442" "455" >}}
 
 ### Step 4.
 
 Click on the **Click here to select a data source** link and select the task list you want to use.
 
-{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog2.png" "Select your task list" >}}
+{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog2.png" "Select your task list"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAARCAIAAABrQaqyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB2ElEQVR4nF2QzW/SYADG3z9P/ReWJR5mjNEYDy5GEw/ejJkmZlm44AfqLiZjxKmDOoVCoR9sFCot5W2hn7SUfrCttEAIfQ3sYvbkuf0Ozwd4uXe09fjDvaeZK9/afHNzY+fGxusXrzIfP2cBSVLlSo2okHi5huM1ut5qtsRGUxA7kG2cAfaUwosYTZbrNEESpVaD5liGY5m+1BHaLfCX41iWHbne+PzC9XzX81zXHbmewLexwjGwxNK5waj60DTNyzBECCVJghCaxhFNEsDij12IKZo1n03RWskax3HEUFVg8Jh09oOHmqLqgii73jiMZmE08/1ghWsnB7tv9+5sv998sHv7Uer+s08Pn+/ffZLZSX37/asAuPrJhQM1faiqhjPyZ/NFFM+ieD4Jw1wuB3qyPLBsy7Zt29I0LQgChNAySRzHrpSLQIFNVelDqSfJK1+GkwShBKEoWldTO6dqH2q6LoqiaZrL5fKq/zSOGLIKtG6jL3ehJOm67vv+YrH4DxOgJ9Rl2OEFYTgcrlLXWu+eUGQVyCLnOI4xsPxgfO0WgiCA0uUDW/UGfUXkZJ7tCU1D5m0V6lK78gcDR9XmIc4cFKl0Np/6+j2dzX/5WUofFt7lsP088Q/fAqeRZRJXJQAAAABJRU5ErkJggg==" "242" "410" >}}
 
 ### Step 5.
 
 Now that you have selected the list, the data source connection can be made by selecting some fields (Title and Status) and adding them as **Multiple Item View** to the data view.
 
-{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog3.png" "Add items to view" >}}
+{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog3.png" "Add items to view"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAARCAIAAABrQaqyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB3UlEQVR4nDWNTXPSQACG949586j8Cg96csYZD/WinfFj/AOevGjrtGVshAJaHAY7VtoAARRI+BRI0gSy2WSzmwSzNMk6+PHOe3vmeV/wqXJeLJ8VTr+Uq7VcqVL6fNbsji9bcrUmHQolIHVGoqTUGj1RUrZtKdqSmGiNcJQ9ygKkXaHpCE5GVFeJrlFd9Y0rqqsRDUvFIrD3downN5cvMtqzjPH8lvr0tvsy4+/eiBv5cvUc4MX02pzYirTq1d1Rxx5IzJhEC3n6oykIAiBozKOhpYuWLmKr5SybIf7OwhmE8CQnAA9OeDBczevmzwtba6zmIl11GJmtw6BUyANCQs45tBG0EcbERu7mOt5sNgElxZM8oDRI09g0TcuyHMfxMPZ9yhgLfFosbHGYJIlhGBBChBDGmHPOov/477jneYwxznn6J1HEQp9uvx2XxEkchCFyse24hPoR26x/RYFP8x8EQEjAOVdNAi3TdSD1UBLHaZoGPq19OweE+Jzz8dzJnbb2jmuv3lReH3w9/tj2KWlLEsB4i8WOdv/xu3uP9u/u7N95+PbBblZdzMXLi3+2amBoW65jJ0nCOY/jZDGbZA8PQEOsD+R+p91V+l251x3I/aEiD+R+sy6+zx79BqU4sfWVq+31AAAAAElFTkSuQmCC" "202" "349" >}}
 
 The result of your added fields should look something like this (based on which items are in your list).
 
-{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog4.png" "Data view result" >}}
+{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog4.png" "Data view result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAO0lEQVR4nF3JQQoAIAgF0e5/0mijlOIXTKJW1eyGVxrrvMqccDd4ni1E/HKqaq0tIjaLyMcAeh9mBvgC+DpXzbmaPnQAAAAASUVORK5CYII=" "496" "129" >}}
 
 ### Step 6.
 
@@ -241,9 +241,9 @@ Remove this parameter and you will retrieve all the items.
 
 ## Result
 
-{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog5.png" "Pie Chart Result 1" >}}
+{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog5.png" "Pie Chart Result 1"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAxElEQVR4nGP4////z58/X796/enTp/9g8O///7///kHYDCD+v7///v39////ty+fP7559fHt+8cPHr5+8wYiDVJ4/eTThRMP1sw7tenc8y8fXt2+eu7tuw9Q3S/ePuhpbS/NnhlRtLq2aOqT63dfvHrz/t37f//A0reeHJm2J/jk+og7RcF7nR1enTn1////P79/Q3V//P5py5qc1312r7psj9bmfP34BexCkKUMEOrX548vzu95eWnfr+9gObCD/v//DwAa3Lc1oGkV0QAAAABJRU5ErkJggg==" "415" "297" >}}
 
-{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog6.png" "Pie Chart Result 2" >}}
+{{< caption-new "/uploads/2012/02/022012_1905_CreateaGoog6.png" "Pie Chart Result 2"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA70lEQVR4nGP4/Pnzk6dPXr16+efv379///3/9+/f/////v4D0/8Z/oDA3/8g9n+wyP9XLz++fvnm7Zs3f/78Yfj///+Xb68v3V+74uDxQ5de//v//+ODS7evXbl79/7v378Z3n59uuhY4dQ9QVE9M+xK9s3ecfPP308fP334+PHT379/Gd5fWH5xrsPZNUHFPXN8mo4k9x/+8OUn3CKGT8dX/Jxo/6fbc2FauVvj4ciWHZ+/fv///z/Imf//M3z7+PbuvJRjiTZrPX3Dsmcs23sFrBWs9/9/kNN+/fh69/D+i+vXPbr7AOIDiNz///8BIWPLd2ch2/8AAAAASUVORK5CYII=" "346" "269" >}}
 
 ## Download
 

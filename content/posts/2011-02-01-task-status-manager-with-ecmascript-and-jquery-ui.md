@@ -27,7 +27,7 @@ For this concept I am only going to use the following task statuses:
 *   Completed
 To visualise the task items, I have created three task status blocks.
 
-{{< caption-new "/uploads/2011/02/concept.png" "Concept layout" >}}
+{{< caption-new "/uploads/2011/02/concept.png" "Concept layout"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQBQYWludC5ORVQgdjMuNS420IOtWgAAAKZJREFUeJwBmwBk/wDs9Pnu9fnu9fr09vjf4eLe4eP29/b6/PH6/PH5+/AAJIK/KYXAO5TNWIKUKFJYIk5ddZKA1OVlxNlbxdpXAEeVyT+RxVei1HWYpkBkazxicIykltjnfMjbbMzecACVv9qSvdifx+GwwsmTpqmRpay8ycHi67Pa5Krb5asAyNvnx9rmzd/r1t7ix9DRxs/S3OLe7PDW5+zR6O3SXAtsOLkNf6cAAAAASUVORK5CYII=" "437" "208" >}}
 
 The task items will be retrieved with the SharePoint 2010 ECMAscript client object model.
 [jQuery](http://jquery.com/ "jQuery") and [jQuery UI](http://jqueryui.com/ "jQuery UI") will be used to place the task items on the page and be able to drag and drop them.
@@ -36,7 +36,7 @@ The task items will be retrieved with the SharePoint 2010 ECMAscript client obje
 
 The task list that I am going to use contains the following items:
 
-{{< caption-new "/uploads/2011/02/taskItems_Drag.png" "Task list items" >}}
+{{< caption-new "/uploads/2011/02/taskItems_Drag.png" "Task list items"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQBQYWludC5ORVQgdjMuNS420IOtWgAAAHdJREFUeJwtjFsOgCAMBLn/SSUgSotsC9oaH/O3mckGQBiToe5e+5iXic69Ha0LHwhm3qE7s5l/oCPGSLWWtYRni+7czPwLRCSlRESlbL+ur/4Yqjk/eivbf14qX/YHAJYlElFe19CkU+ui43rPzX2eJyBjTFG9AUEFrhrDmGmGAAAAAElFTkSuQmCC" "529" "301" >}}
 
 On a new page I added my conceptual layout to the page and the jQuery and jQuery UI script references inside a "Content Editor" web part. To be a more flexible, I also added another script reference that will contain the code for this solution.
 
@@ -143,7 +143,7 @@ function onListItemsLoadSuccess(sender, args) {
 
 This piece of code will result in:
 
-{{< caption-new "/uploads/2011/02/taskDrag_results.png" "Recieved tasks" >}}
+{{< caption-new "/uploads/2011/02/taskDrag_results.png" "Recieved tasks"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQBQYWludC5ORVQgdjMuNS420IOtWgAAAKZJREFUeJwBmwBk/wDQ5fLK4vHR5/Tf5+q9y9C7ytHm6+f1+trz+Nb0+N0ANovCW5rDS5rPVYCTT21xRmh2fZmA1ONxxNJ7y9xuAHaszdHOzJS813idra20s6Kttpuxm9ngpMrMxNTfmACmxtqwxdKuzN61x86YqayVqK/G0cji6bXX4Kvg6LoA4evv2+fu4uzx6Ozu3+Pl3uPl7O7t8vPn7/Hk8vPoeXhyU/tXf18AAAAASUVORK5CYII=" "605" "273" >}}
 
 Each task item contains its "ID" in a "ref" attribute.
 

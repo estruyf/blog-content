@@ -117,11 +117,11 @@ body #s4-workspace {
 
 Here are a few screenshots of the sticky footer in action.
 
-{{< caption-new "/uploads/2010/08/footer1.jpg" "Footer on a OOTB Team Site" >}}
+{{< caption-new "/uploads/2010/08/footer1.jpg" "Footer on a OOTB Team Site"  "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAYI/8QAIRAAAQMEAQUAAAAAAAAAAAAAAQACBAMFBhETQVF0gdH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANFXS2UpFvq04To8eQ4NDKnACGaI307Aj2pY4fdyTrJ3a8VvxERX/9k=" "605" "441" >}}
 
-{{< caption-new "/uploads/2010/08/footer2.jpg" "Footer on the bottom of a long page" >}}
+{{< caption-new "/uploads/2010/08/footer2.jpg" "Footer on the bottom of a long page"  "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAGAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMI/8QAHBAAAQUBAQEAAAAAAAAAAAAAAgABAxEhBJHh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANJl0xlMR0VO+Yyu3bFTYfn1EQf/2Q==" "605" "354" >}}
 
-{{< caption-new "/uploads/2010/08/footer3.jpg" "The footer is not shown in the dialog windows" >}}
+{{< caption-new "/uploads/2010/08/footer3.jpg" "The footer is not shown in the dialog windows"  "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAJAAoDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFCP/EACIQAAAFAgcBAAAAAAAAAAAAAAABAwURAtIGEhQhMTN0gf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAWEQADAAAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/ANDKYeYKSTzMzdJ0lvpErQJsDBJwytseRO0X1Oqj4FD5DWER/9k=" "300" "258" >}}
 
 Here is the masterpage zip file: 
 

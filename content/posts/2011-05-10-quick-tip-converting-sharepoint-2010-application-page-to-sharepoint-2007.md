@@ -18,9 +18,9 @@ When you need to convert an application page from SharePoint 2010 to SharePoint 
 
 1.  Change the "SharePoint.WebControls" and the "SharePoint.Utilities" assemblies version numbers from "14.0.0.0" to "12.0.0.0";
 2.  Remove the "Microsoft.Web.CommandUI" assembly line:
-{{< caption-new "/uploads/2011/05/051011_0946_ConvertingS1.png" "Assembly Reference to be removed" >}}
+{{< caption-new "/uploads/2011/05/051011_0946_ConvertingS1.png" "Assembly Reference to be removed"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/ANTJpdXJycTL2sbJ18nN18jM18nM18XJ2MPG2svNyHDhF+b0TloVAAAAAElFTkSuQmCC" "605" "13" >}}
 3.  Change the "DynamicMasterPageFile" attribute name to "MasterPageFile", and replace the value with the following:
-{{< caption-new "/uploads/2011/05/051011_0946_ConvertingS2.png" "MasterPageFile Attribute" >}}
+{{< caption-new "/uploads/2011/05/051011_0946_ConvertingS2.png" "MasterPageFile Attribute"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AP7k3/7d3v7g4PHm8+XZ9OTX8uHU8+PX8uTV8evi9qZsGyO8Nv2MAAAAAElFTkSuQmCC" "328" "20" >}}
 
 The result should be something like this:
 

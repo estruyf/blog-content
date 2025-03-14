@@ -24,9 +24,9 @@ Developing an Azure function has to be done in the Azure Portal itself. There is
 
 > **Info**: You can find this option in the App Service Settings:
 
-{{< caption-new "/uploads/2016/09/092916_1036_Developinga1.png" "App Service Editor" >}}
+{{< caption-new "/uploads/2016/09/092916_1036_Developinga1.png" "App Service Editor"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAT0lEQVR4nE3MQQ6AMAgFUQ5DKUIafmtae/+TmWA0vs3shlTV7DDzh5npq9ZKJ3yvc861U0QwcymFM4R19TEARASAkXoSb1S9fbf/VlVF5AYGeBSQeKrpUQAAAABJRU5ErkJggg==" "555" "201" >}}
 
-{{< caption-new "/uploads/2016/09/092916_1036_Developinga2.png" "App Service Editor - UI" >}}
+{{< caption-new "/uploads/2016/09/092916_1036_Developinga2.png" "App Service Editor - UI"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAfUlEQVR4nCXLuw6CMBQG4D6yr2KiG4mSgptx8CUMlMHNxVHrhYFWoLfT8xtj8q2fWKz2h7PeNFq1J27KtzrulK67V60eVfcUy3Vx7ely+8yRhslb7yiMQAYYYFFspfV8783k/DwaCi4GH0OglDKzqKQEYI2JKeVM/wTOP+Avtx5rQLpcfRsAAAAASUVORK5CYII=" "624" "231" >}}
 
 It is good that you can develop it directly on Azure itself. I like that approach for doing quick and small code changes, but for larger ones, I want to be in control. So I always start my development on my local machine, so that I can easily debug and test them. This not only gives me more control, but it also allows me to write them in TypeScript. Once they are completed, I add the JavaScript code to the function on Azure.
 
@@ -71,7 +71,7 @@ As you can see, when running it in a production environment (Azure in this case)
 
 Here is an example of the debug output:
 
-{{< caption-new "/uploads/2016/09/092916_1036_Developinga3.png" "Debugging output" >}}
+{{< caption-new "/uploads/2016/09/092916_1036_Developinga3.png" "Debugging output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAN0lEQVR4nDXByRHAIAwDQLqJJI+wwzHQf2V5ZbdVevTowTLTsEHi+bX11lnj7llpiRGSRFISgA9BdgpJJkMNkAAAAABJRU5ErkJggg==" "624" "104" >}}
 
 Here is a direct link to the sample: [HttpTriggerNodeJS1](https://github.com/estruyf/Azure-Sample-Functions/tree/master/HttpTriggerNodeJS1).
 

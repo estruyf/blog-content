@@ -21,7 +21,7 @@ comments: true
 
 In this blog post part of the search refiner control series, I'll show how to create a dropdown search refiner control. To make it a bit special, I've added the functionality of showing the filters that were available before the results were refined.
 
-{{< caption-new "/uploads/2013/11/110113_0928_Part4Create1.png" "Mockup" >}}
+{{< caption-new "/uploads/2013/11/110113_0928_Part4Create1.png" "Mockup"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZUlEQVR4nCXJSQ4AERAAQP9/oURcEA5oS+yhew5T12JKKQDIOQMA59x7P8ZIKcUYa61MSmmt7b0j4nuPiM45Qgit9VqL1VqdczlnIkLEv6WUIYS9N2ut3XvnnP8R0XuvlGKM6b1/Kq9xR71CGjkAAAAASUVORK5CYII=" "415" "183" >}}
 
 > **Note**: for this post I start with the file I created in part 2 of this series. Download the template here: [Custom Search Refiner Control Part 2](/uploads/2013/10/Display-Template-Part2.txt "Custom Search Refiner Control Part 2").
 
@@ -93,11 +93,11 @@ _#-->
 
 This results in the following output:
 
-{{< caption-new "/uploads/2013/11/110113_0928_Part4Create2.png" "Dropdown Refiner" >}}
+{{< caption-new "/uploads/2013/11/110113_0928_Part4Create2.png" "Dropdown Refiner"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQElEQVR4nG3JMQrAMAgAQP//S2nSJQVBRalRGshQOvTWg372o7UxrucPqKqImNn8yEx3JyK4I3J7LyKqipkRcQHNalcQUUFhGwAAAABJRU5ErkJggg==" "194" "65" >}}
 
-{{< caption-new "/uploads/2013/11/110113_0928_Part4Create3.png" "Dropdown Refiner Values" >}}
+{{< caption-new "/uploads/2013/11/110113_0928_Part4Create3.png" "Dropdown Refiner Values"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABCUlEQVR4nG2PwU7DMBBE88dcOABCfAriG7hQpMK9/AAnqB3vbuxNHDtunbRJnKC0FRISo5H2MBq9nYyZjWHn/Pyfsto3trZht0/TNKZ0dkqp68ddN2TSj3mYhU/bevG3Hb/smPu02cb3T5s9fYSr53j32t68xNtVd78e7tf9w1t/vRoeN7ustiUX4GzpKva2mk7IaVpujDFjNoQkZa61Yea27Y7HY4ztPM/7fcyqqtRaF0i8yEgpicj5ZcilraRUCrTWhIBIRDSm9BuzFEJsBSIaY5z3zrl+GC5xyQYUFlQwl2fkn9cKxFxKQgLAEBrnXNM0IYTD4XBqlwwKiAgAEECIhQJKGWNCCD9lvUr23DN8LAAAAABJRU5ErkJggg==" "196" "230" >}}
 
-{{< caption-new "/uploads/2013/11/110113_0928_Part4Create4.png" "Remove Refinement" >}}
+{{< caption-new "/uploads/2013/11/110113_0928_Part4Create4.png" "Remove Refinement"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcklEQVR4nGWNSw7DIAwFuf/5um+KhDGtQyFU/IyhiqKuOm8zeptRAMZaNAZEZP2haCewFtEx8/gh52TIVL33tdacIoPnefMlDwy3u1P4/riQ6SiUivH5FQuGXDvvMQMlZWPXvkJsz9Q2KtpX7Wsb82p/AZ3Wj5eqpSTiAAAAAElFTkSuQmCC" "164" "77" >}}
 
 As you can see, creating a custom dropdown refiner control isn't that hard once you know what need to be updated. Now we go a step further, showing the elements that were there before the refining.
 
@@ -131,7 +131,7 @@ if (hiddenBlock === null '' hiddenBlock.lenght <= 0) {
 
 With this code a new block gets created in the refinement panel right after the search refiner control blocks, I gave it a unique ID to easily retrieve it.
 
-{{< caption-new "/uploads/2013/11/110113_0928_Part4Create5.png" "HTML Mark-up" >}}
+{{< caption-new "/uploads/2013/11/110113_0928_Part4Create5.png" "HTML Mark-up"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AOXr+d/f7uXh7eTg7eTi7+Hm8+Hl8tzk9eDm9eLt/KSoGzzo6EoLAAAAAElFTkSuQmCC" "960" "140" >}}
 
 The next step is to change the **ShowRefiner** function to populate the hidden block with the refiners. This is only needed for the unselected list of refiners, so we can add a check to see if the results aren't refined.
 
@@ -149,7 +149,7 @@ if (!hasAnyFiltertokens) {
 
 If you test this now, you won't see anything visual, but if you check the hidden container, you'll see that it gets populated with the refiners.
 
-{{< caption-new "/uploads/2013/11/110113_0928_Part4Create6.png" "Hidden Container with Refinement Values" >}}
+{{< caption-new "/uploads/2013/11/110113_0928_Part4Create6.png" "Hidden Container with Refinement Values"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOElEQVR4nBXCAQoAIAgEsP7/V8OS7tQsorFGOLqECKXnnNuswFoo4la19OAYqQpVt3Xcf/IAN+IB9245vO3Xn3IAAAAASUVORK5CYII=" "1109" "174" >}}
 
 This list needs some clean up every time the template starts populating the unselected array. If you wouldn't do it, you'll end up with double items. To achieve this, I created a **ClearHiddenList** function that will be called each time before the unselected loop starts the enumerations.
 
@@ -233,7 +233,7 @@ _#-->
 
 Right now the result looks like this once you refine your results:
 
-{{< caption-new "/uploads/2013/11/110113_0928_Part4Create7.png" "Dropdown with Refinement Groups" >}}
+{{< caption-new "/uploads/2013/11/110113_0928_Part4Create7.png" "Dropdown with Refinement Groups"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA3UlEQVR4nGXCTUvDMBgA4PxeD3pSRI/+DnGOqSdFETwKu7nKvqCbW5PFJmtM1og0LVnqmub1IJ58eFCeb7TWSirvPfyDhFSECcpE5bxrYLsLv2sffABkdy1AAGgBPEDzN9CPT1U49LRw56O2M2oux74z9t1p6E7a3jScPub9xKCLPt+7ZicPm6M7cXib7V+Rgxt6fC/Pnm1ES2QLXWku6YwvJkava6PqQvnt13ftTFkixtggGs7floPo9SUaktU7TdkSr6TSpqyQyNZxHKcpY5wTQnCSYIIxxpkQ1tof8fzTrZnTnoYAAAAASUVORK5CYII=" "160" "123" >}}
 
 ## Adding the Hidden Refiners to the Dropdown
 
@@ -263,7 +263,7 @@ AddPostRenderCallback(ctx, function() {
 
 If you now do a search and refine the results, you will see that the hidden refiners are added to the dropdown.
 
-{{< caption-new "/uploads/2013/11/110113_0928_Part4Create8.png" "Dropdown with Refinement Groups and Values" >}}
+{{< caption-new "/uploads/2013/11/110113_0928_Part4Create8.png" "Dropdown with Refinement Groups and Values"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAIAAAAfVWhSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABQElEQVR4nE2OW0rDQBiFs09BEARdgG7DLRR8kILPPtQ3N1BbaZMm80/u6S2TJpkMk5lkLlJoRTgPBz4+znHiJImiKC/2Whtj7P9Yax3Wi15wIYXWWmmltVJaGWsolycmnE05epV1iV0fjVsa71L0zOu+/Np5+cxvJtnjdPcwPdy9preT6P5t+/zBnmb6fd449aksYvBXiwQH5FCQXdaQ/SCltZZS6qRpslq7QYDm34sAcFFsAYd101prm7Z12rZJ09Tf+ABQkrLrOkrpMAwXW0pJ2wZjDABRFA/jqMax51xp3XXdGdf1CRAChDHGYRSiIMiynHPOGDvjihDf3wAChBAGCAIkxPWaHGRdVZ7rA0J5nve9YIwppf62RUXIz3KZJJmUo1LKGDOOV8w5P+z3GOMkjuM4icMwxCEgdDweKaW/asVg5bduw5EAAAAASUVORK5CYII=" "181" "241" >}}
 
 If you want to use one of the **other refiners**, you'll need to change the method that is used for refining the results. We cannot use the **addRefinementFiltersJSON**, we should use the **updateRefinersJSON** method instead. This is because the refinement that is in place needs to be updated, instead of adding an extra refinement.
 
@@ -310,7 +310,7 @@ AddPostRenderCallback(ctx, function() {
 
 The outcome looks as follows:
 
-{{< caption-new "/uploads/2013/11/110113_0928_Part4Create9.png" "Dropdown with Refinement Values (no duplicates)" >}}
+{{< caption-new "/uploads/2013/11/110113_0928_Part4Create9.png" "Dropdown with Refinement Values (no duplicates)"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABLklEQVR4nEWO30rDMByF+6DijYjgveBT+AgqgugDKAx8AG9UlnVd1yVN26Ttmm5Zk23t+mfNT4ayHQ7n5uODYzHGPEw4TwFg35vewLEAYFVN27VN17XG7Huz/1sAU9aNUKU1Fh3KAQkYZgYJgwSgzKDMDNztO1padwN29sivX+dXL/OLp+j8gV4+xzdv29uP/v5TWUrmIg581w6xWyySIk/WMmubGgC01lbM+cgezwj5+v7xMEnSlAbhUhYAUChlKVVwxgghjuNMnImUUmtdVtW/Xdf1eq0DSlnEOY+TdM6iiEWRUnqz2RzwcpG7rksIwRgTH9sju6x2J3slpTedet6MUqq0zoVo2vaEVbHypl4UsXp3OHzMAZdllaYJQkOMcUhpEIbU9/EMZ5lQSv0CXapDoa2D9fMAAAAASUVORK5CYII=" "179" "223" >}}
 
 ## Set the Selected Item
 
@@ -350,7 +350,7 @@ _#-->
 
 The function call in the selected loop needs to be updated to set the value to true, and the two other calls (unselected loop, and removal link) need to be set to false.
 
-{{< caption-new "/uploads/2013/11/110113_0928_Part4Create10.png" "Selected Refiner" >}}
+{{< caption-new "/uploads/2013/11/110113_0928_Part4Create10.png" "Selected Refiner"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAXElEQVR4nGXM2w5AMAwA0P3/FxIPai6jJNboZGujJN7E+YDjcMUWIEzBzO4fl84UY2Tm60tEcs6OiMah974joktVSpFSVBURAcBN+1mHA9bUbamauVl4pmxvYGYP2sNyZ1A+uvYAAAAASUVORK5CYII=" "182" "79" >}}
 
 This was the last step for this post.
 

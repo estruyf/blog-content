@@ -55,7 +55,7 @@ Once you save this template the JavaScript file gets created and the template wi
 
 For this post I set my refinement panel to use my custom template with the **Brand** result type, but you can use the result type you like.
 
-{{< caption-new "/uploads/2013/10/102013_1616_Part1Create1.png" "Refiner Settings" >}}
+{{< caption-new "/uploads/2013/10/102013_1616_Part1Create1.png" "Refiner Settings"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAhklEQVR4nFXO2wrEIAwE0P7/d0r6YIuKxiQ1l6XsLrTzOCeE2QDgOI5SSmvN3ZlZVVG00zKzTVUjorUGAKpKRGbmEeZxc87Z3UXke2dm8c/NKaVSypyz1oqIzPxiAEDE3vt5nrXWtdaL933POc85r+t6fv7xWvfCZ/tid7dHRGSMISJExMwfkl3paYw7DIMAAAAASUVORK5CYII=" "505" "417" >}}
 
 ## Important Display Template Property
 
@@ -114,7 +114,7 @@ The mark-up can be added inside the **DropdownRefinement** block. The mark-up co
 
 The **Srch.U.collapsibleRefinerTitle** function is used to display the collapsible refiner title.
 
-{{< caption-new "/uploads/2013/10/102013_1616_Part1Create2.png" "Refiner Title" >}}
+{{< caption-new "/uploads/2013/10/102013_1616_Part1Create2.png" "Refiner Title"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAALElEQVR4nF3JIQ4AMAgEQf7/UAQCcpKcWHQ7dkJSVc0ML9tASMrM7v56d4EDCGU6ZjcSlUUAAAAASUVORK5CYII=" "187" "34" >}}
 
 If you don't want to have this, you can remove the function call and display the refinement name instead: **refinerCatTitle**.
 
@@ -184,7 +184,7 @@ _#-->
 
 The end result of this part is just an enumeration of all the refinement values.
 
-{{< caption-new "/uploads/2013/10/refiner2.png" "Refiner values" >}}
+{{< caption-new "/uploads/2013/10/refiner2.png" "Refiner values"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAlUlEQVR4nHWPyw6FIAxE+f9PhIiK+GBBCEFwo87N1LC8TZqS9nSmqHVdYYzBOI543xf/Ql3XhZwzzvNEa02y1gr2Syl4nucDQwii5r2XtNZKLssC5xxSSrjvG+o4DgH3fce2bdBag+f0pXmexVFxyBs5pMIwDAITYKW9WFORIAGqTtMkthTgWf2DKsYoTVba9XePDv4ANhAHfYhgFXkAAAAASUVORK5CYII=" "171" "126" >}}
 
 ## Adding Total Items per Refinement Value
 
@@ -203,7 +203,7 @@ _#-->
 _#-->
 ```
 
-{{< caption-new "/uploads/2013/10/refiners.png" "Refiner values with total items per refiner" >}}
+{{< caption-new "/uploads/2013/10/refiners.png" "Refiner values with total items per refiner"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAqElEQVR4nHWPSQ6FIBBEuf8JjeI8wAIUR3Rj/VQb3X2SDkUPrxrlnENRFKiqCvu+499R53limiYJ6uM4ZICaEWPEfd9Q8zwLra5rWGvRdR36vpdgrmmap5HWfLDQtq2s8eosy5CmqVDVuq5C4fS7K3VZlgJgbVkWqBDCl9Raiz31MAxyX9f1fGYcRyRJIiQWSKN1nufSTMi2bc9naGmM+Ujc77Wlg/cePzDMKueX7JV3AAAAAElFTkSuQmCC" "169" "141" >}}
 
 ## Part 2
 

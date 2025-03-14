@@ -22,7 +22,7 @@ A client of mine is currently undergoing a migration from SharePoint 2007 to 201
 
 On the Post lists, **Content Approval** is active to enable the users to let the posts be stored as draft. When this setting is turned on, you'll have three buttons on the new and edit form: **Save As Draft**, **Publish**, and **Cancel**.
 
-{{< caption-new "/uploads/2014/05/052314_1324_BuginShareP1.png" "Blog post buttons" >}}
+{{< caption-new "/uploads/2014/05/052314_1324_BuginShareP1.png" "Blog post buttons"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAO0lEQVR4nE2LQQrAMAzD8v+fhvTmeAQywygpo7pYPsj63XTPHpE01wCsTQB4SHfPzKqKCJIm6S8muuUD2gFXVMpspuwAAAAASUVORK5CYII=" "267" "68" >}}
 
 The problems that occurs in SharePoint 2013 is that the **save as draft** and **publish **buttons have the same behaviour. Normally when you click the **publish** button, the post should be saved with the status set to **approved**, so that it's available for everyone to see. But in SharePoint 2013 the publish action just does the same as the Save as draft action. The posts will be stored as draft and you need to do a manual approval make it available for the users.
 

@@ -29,13 +29,13 @@ During my session I showed a demo of a search box that displays additional searc
 
 The example I showed during my session was about a user that searched with the following keywords: "installation manual sink". When the user searches with that query he gets the following result:
 
-{{< caption-new "/uploads/2015/06/060515_0747_Helpyouruse1.png" "Default search experience when no results are found" >}}
+{{< caption-new "/uploads/2015/06/060515_0747_Helpyouruse1.png" "Default search experience when no results are found"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAdklEQVR4nF2MSw7DMAgFff9jJt4kbWpsMPiDoHK7iTIavc1IL1yFX4BXqW9AIKldqU1qWmQASYCcPyklAMiZqPY+RIRZpLXKErAURFxLqKrubmZu5r4MqxH1PtoPVbUbgZljjNu+H+cpzM8850REQCYZ/+d7/gLNFq3Wvh5y+gAAAABJRU5ErkJggg==" "528" "292" >}}
 
 The search query leads to zero results. As the web part suggests, the user needs to try to use different search terms, but of course it is guessing which keywords to use.
 
 If you would implement a search box with search combinations, you would get the following result:
 
-{{< caption-new "/uploads/2015/06/060515_0747_Helpyouruse2.png" "Search box with search combinations" >}}
+{{< caption-new "/uploads/2015/06/060515_0747_Helpyouruse2.png" "Search box with search combinations"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAASUlEQVR4nB3CCQ6AIAwEQP7/VEUO6XZLKYmRyaQmWvpoA/WVodM8eMJ8qKXaei41P+W6s9JW7P/evsIjEhQKACIQku5uZiTn8QGpZVaDbrbIjQAAAABJRU5ErkJggg==" "533" "140" >}}
 
 By showing the search combinations, the user could see which combinations give results and can change its query.
 
@@ -43,7 +43,7 @@ By showing the search combinations, the user could see which combinations give r
 
 Here is another example:
 
-{{< caption-new "/uploads/2015/06/060515_0747_Helpyouruse3.png" "Another example of a search box with search combinations" >}}
+{{< caption-new "/uploads/2015/06/060515_0747_Helpyouruse3.png" "Another example of a search box with search combinations"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAASklEQVR4nBXHQQ6AIAwEQP7/VWmRdneLQY1xbtM86DNt5gj4TF279lP75XWnVvNzdnMb4+jWzaliLdUKgKpGgoBIZEaEJACZf0R+i1ZVoB7V3w0AAAAASUVORK5CYII=" "527" "137" >}}
 
 ## How this is developed
 
@@ -71,6 +71,6 @@ When you downloaded the **Control_SearchResults_Hints.html** (or the on-premises
 
 To make use of the new search display template you need to edit **Search Result** web part and set the **Results control display template** to: **Default result with hints**.
 
-{{< caption-new "/uploads/2015/06/060515_0747_Helpyouruse4.png" "Display template configuration" >}}
+{{< caption-new "/uploads/2015/06/060515_0747_Helpyouruse4.png" "Display template configuration"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAIAAAAfVWhSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABHklEQVR4nE3P3W6DMAwF4Lz/q5WfIbVltAWplSgJEJIAcZw4tBPdLvZdnJsj2zK7XK9JckgPaZJmt1vTNE1d101dXy6XumnY43EviqI8narquzyfj8djVVWcCyE6KSUDcOBwAb+CX8DHD4q0AK6AzHu/WDdoK40djfUf79fLYlydZzFuAHYc+nEY5DiKXa+0AbDokRHRFiPsHIBD3KcBXAgUQmBEMXg/yd08L+9/iGivKYR1XQHgNxHR2j0DEYufze3zOYxjxznnou+HjneT0kRxrxGdUpPWepmN0UZpbcxMRBQjQ0RAP7u44qYtWb/9Hv57jIjmebm3ouvlo+1b3iulpJSD1ICBbdtrkjJNkjzPi688S9Msy8qyFIIHoh8EtmxCfNpMPAAAAABJRU5ErkJggg==" "262" "351" >}}
 
 Once this is configured, store these changes and publish the page. Now you can start searching and the search combinations should appear underneath the search box.

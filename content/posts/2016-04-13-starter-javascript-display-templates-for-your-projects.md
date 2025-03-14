@@ -141,7 +141,7 @@ For the item template you have to specify the metadata as follows:
 *   Target control type: **Content Web Parts** and **SearchResults **(depends on which type of web part you are creating the template)
 *   Template level: **Item**
 *   Managed property mappings: 'Path','Title':'Title'
-{{< caption-new "/uploads/2016/04/041316_1714_JavaScripts1.png" "Managed property mappings" >}}
+{{< caption-new "/uploads/2016/04/041316_1714_JavaScripts1.png" "Managed property mappings"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAN0lEQVR4nFXKQQrAMAgEQP//WzcuuhhsIZBC5zxGMiIkVVVmzp89x8zsoy9J3W1fBODuANZF8gUBJVe4uh6eOQAAAABJRU5ErkJggg==" "627" "174" >}}
 
 ### Sandboxed solution - Module
 

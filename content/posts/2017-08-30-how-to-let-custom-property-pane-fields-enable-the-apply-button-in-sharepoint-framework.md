@@ -26,13 +26,13 @@ In the previous versions, the **onRender** method of your custom property pane f
 *   The HTML element
 *   Context
 
-{{< caption-new "/uploads/2017/08/083017_1110_Howtoletcus1.png" "Old onRender method" >}}
+{{< caption-new "/uploads/2017/08/083017_1110_Howtoletcus1.png" "Old onRender method"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAPklEQVR4nAXBgQ6AIAgFQP//QyvQxoMGDsPWXYOtgWegs3QLjTc83dNr1/52U4uD+ZKThEh46I0AJuaaWfkD4JA4ywxWCg0AAAAASUVORK5CYII=" "624" "116" >}}
 
 Since version 1.2.0 a new argument has been added:
 
 *   Change callback function
 
-{{< caption-new "/uploads/2017/08/083017_1110_Howtoletcus2.png" "onRender method since v1.2.0" >}}
+{{< caption-new "/uploads/2017/08/083017_1110_Howtoletcus2.png" "onRender method since v1.2.0"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAaklEQVR4nBXEQRLCIAwAQP7/SCBYHW1IAkrSUmxx3MM6rl3eSoWyZN1a//Y++jiPOec1L4dkfr1FCUkSCESKgYInz8rbsbvadqB7EljKAgKpJGyIbWWjcQ6XiR/PFxJy5fqpVMjMVNX0/w8wA3APwr+jWAAAAABJRU5ErkJggg==" "624" "232" >}}
 
 This is a callback function which gets provided to your custom field by the property pane. You can make use of this to let the property pane know a change happened in one of your custom fields. If you use this in combination with a non-reactive property pane (that is the property pane with an apply button at the bottom) it will trigger the button to get enabled.
 

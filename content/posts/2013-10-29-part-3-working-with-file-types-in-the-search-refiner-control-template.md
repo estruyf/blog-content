@@ -27,11 +27,11 @@ In the previous posts I explained how to create a new refiner control, but there
 
 You'll get the following output with the custom display template:
 
-{{< caption-new "/uploads/2013/10/102913_1018_Part3Workin1.png" "Custom Template used with File Type" >}}
+{{< caption-new "/uploads/2013/10/102913_1018_Part3Workin1.png" "Custom Template used with File Type"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAOCAIAAACZwRr8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA9ElEQVR4nG2QbWuDMBSF/f//aqAtY0NHGWWua50vaBs10STmxWjuMFuxyO6nA889h3OvJ4TAGBtjBjcAMM+ztRbceFV19YNgt9sTQsLozcm9lBIArLUeWDsZY8wIALQjtCeT03c3Hd+v4hsrxMZTo443mRH9iPVzSo9uIyq4f+nDgq+45eZQDhXV51YdyiHv9F+rX1z2+iVjn7X4quWpljlRFtYF79JIP1nCHzNXzNSUEZ0RFSPB9LzFKVFBQmMkXnNe8+Wk+0scrtkYFTxGS/MPJLbupF3cLlz+g1Osns40xSoseMPNNpypqeg0FgYPRozbaj8ano8CdXeAOAAAAABJRU5ErkJggg==" "102" "140" >}}
 
 The output of the default template is the following:
 
-{{< caption-new "/uploads/2013/10/102913_1018_Part3Workin2.png" "Default Template used with File Type" >}}
+{{< caption-new "/uploads/2013/10/102913_1018_Part3Workin2.png" "Default Template used with File Type"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAASCAIAAADt1dgcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABD0lEQVR4nHWR266CMBBF+f8P880ElUS8QQ1FTJjqGKnUaac1B1DB5KyXPqzZ7Z40Msbcbjdm1lo/n88Qgvc+vInqul4sFnEcV1U1n89ns5mU8jMUhRCcc0TkvUfEpmmY+Zu21hpjwj9ESqnlcrnb7foLmNl3DLo/nHPjRh8iRBRCnE6nPM+FEGVZns/noijatv3TxhgAqOtaKQUA6g0RDdWstd576nDOTZoj4n6/X6/Xm80my7I0Ta/X62TvD+POQ1prfTwepZQAcDgc+uhXMzN0aK2VUvf7faKJqG1bIrLWMrNzbqIRcbVabbdbIUSSJFmWTfS4189WQzrPcyklIv589vD25XIBgMfjMRa9fgF1+gZ04tIR0wAAAABJRU5ErkJggg==" "113" "199" >}}
 
 The first thing you'll notice is that the names of the file types are different. The custom display template uses the exact file type values, where the default template is using user friendly names.
 
@@ -245,7 +245,7 @@ if (ctx.RefinementControl.propertyName !== "FileType") {
 
 The result of this looks like this:
 
-{{< caption-new "/uploads/2013/10/102913_1018_Part3Workin3.png" "File Type Custom Refiner" >}}
+{{< caption-new "/uploads/2013/10/102913_1018_Part3Workin3.png" "File Type Custom Refiner"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAIAAAAfVWhSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABEUlEQVR4nFWQ3VKDMBBGef9H8q7jhbbaUlpQUOkMSBqgME0g2STNn0Nxat27nTPnm2836PueECKlpJQqpS6Xi7+boCiKcLOhlEZRtFw+V1X1DyvjlLHOe3lVrfPKOG2dm3FYsccDTWp4KsaXkuWdWOR0kQ9UmAl/tPBWQ96LELHdkVvnjXXKuGuiD2LM95gfOrFDPGtBGStu0d4HnyeR1PD6zZIaVuWY1LAsRqHtL85aESGWNpB3k+a9v6kzhhjzr068N9BzzZUdpRmkOTGtrZua7zFfV2xdsS3iIZrWLWIPGSGgg+IsQ8TmBrsjX5VjjPlf+BaxGPO8E2kDROhBGALTxXODIG0mKamhPMv7d872DyvDbg9iw4ndAAAAAElFTkSuQmCC" "122" "158" >}}
 
 ## Point 3: File Type Groups
 
@@ -262,7 +262,7 @@ ShowRefiner(filter.RefinementName, filter.RefinementCount, refiners, addMethod);
 
 I have added a check to see if the control is used for file type refinement, so that the correct refinement can be achieved.
 
-{{< caption-new "/uploads/2013/10/102913_1018_Part3Workin4.png" "File type refinement" >}}
+{{< caption-new "/uploads/2013/10/102913_1018_Part3Workin4.png" "File type refinement"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAiklEQVR4nFWL2w6CMBBE+/+/ZlAhEgxeYiQtWuyS1HZbSuma8oST8zCZk2FKKSmlMRYAtNaISJswwXlZlgDQ1PW+KIQQf3qKaV5oism44EIkoiWlFUpErBKm6Ewl7IGbI7fba363Ek+9bQd3V/4Bfvf8Nm885xFHnNlLh0t2rhunfu23T+Y6OO3jD8grqUnKcmISAAAAAElFTkSuQmCC" "123" "69" >}}
 
 The decoded URL looks like this: `http://your-site/Pages/DocumentResults.aspx#Default={"k":"","r":[{"n":"FileType","t":["equals(\"docx\")","equals(\"doc\")","equals(\"docm\")","equals(\"dot\")","equals(\"nws\")","equals(\"dotx\")"],"o":"or","k":false,"m":null}]}`
 
@@ -301,7 +301,7 @@ map["TXT File"] = {
 
 The result looks like this:
 
-{{< caption-new "/uploads/2013/10/102913_1018_Part3Workin5.png" "Custom File Types" >}}
+{{< caption-new "/uploads/2013/10/102913_1018_Part3Workin5.png" "Custom File Types"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAPCAIAAABSnclZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABO0lEQVR4nE2Q63KDIBBGef9X6gN0pjWp5trEtPEKaDRahQVEoMM0TbJ/z+z5dj+EMQnDkNIqSdM4PmFMnHPGWuv8ICWgphg4ay51np77a+ueBtFRn7uJDJoyTca5gflQi9NFCG08PrdiWYw7Cm/pGGRj2csV5hFmTM0ef1YQliws2aGGj4KZW+i/vOjVhkB8gfd8PNSi5dqfZh5YrgnPOrnI2Y5C1inn3F2Bvlu5LNi5lRvCjzVknfT4Lk87uaMQYb7CfJH7C9aYw+Tt1jmUXGVUeranQIeJqfnKtTa3fS9fYX5qxLEWvZitddpYNRumzGwdii8iwjws+WsyLgu2pTzI2Ybwl0PXgUZ0mAIfKbbUR2wpLAo2G+trtw6VvQryMevkVyPIj2qYpsP0eGxfwWsyrAjfV/Dc1x/+Baz9peC+7NNwAAAAAElFTkSuQmCC" "124" "192" >}}
 
 ## Download
 

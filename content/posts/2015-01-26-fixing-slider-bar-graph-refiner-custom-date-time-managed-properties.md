@@ -23,11 +23,11 @@ Last Friday there was a discussion on Twitter about a problem with the Slider wi
 
 When you would use a custom date and time managed property, you get the following output:
 
-{{< caption-new "/uploads/2015/01/012615_1525_Fixingthede1.png" "Custom date and time managed property" >}}
+{{< caption-new "/uploads/2015/01/012615_1525_Fixingthede1.png" "Custom date and time managed property"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAIAAADJDItPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA3klEQVR4nFVQbU7DMBTL/a/FxhXYhgRam5KkXdtsaV4S8j5QW5iE5V+2bFlWWGvakHNeQgBIIsJ/UDkna0zTaq073bbT7IkIEX9tgOic67Q2nTbWGWPa5jrcRmZhJkVEzOxDfLtayAURCXEX1zQRicg0zy/H12WJIkIreOVuQ2Xb346HQ4zLtotEeB+oaq3vjWm+nOm0nYK9J3tPzsOHGVMpqpQSHh5r3WrXTiZGxNl7gKRKzu0Epz6fXDz3cBnSZYBznz9HiDGq71IAYMv8IyLWWtdbHo+wL3qe9XztB5wRO9mgs8NyAAAAAElFTkSuQmCC" "185" "203" >}}
 
 If you compare this with an OOTB managed property, the date formatting you would expect a rendering like this:
 
-{{< caption-new "/uploads/2015/01/012615_1525_Fixingthede2.png" "OOTB managed property" >}}
+{{< caption-new "/uploads/2015/01/012615_1525_Fixingthede2.png" "OOTB managed property"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVR4nGWOwU7DMBBE/f9/VfUGHDhCqUAhja0Et6Rx7F2vvbuV1fZAeZrbaDTPEFGMawhhWQIzy18MADhnnbXjOP1rxYiIqvo5vO46KlVUWG5pNTOrqnV2s90SZW2I6n1dmX8CffX25flpBYRSUy5AFUvbt++uH6x1w6Ef/HyK5AOOv+HzMOVMrQ5rjIDnNUXAylpZqNT5vKQEJufcHePO497jh4f3Ke09vE3wfUoIyaRGbD7CV6m7GjOzQcQEIKLM8hARuQBmfiBF4DC92gAAAABJRU5ErkJggg==" "185" "177" >}}
 
 As you can see, the labels underneath the graph are different.
 
@@ -61,7 +61,7 @@ Another solution to solve this issue is to trick the code into thinking that it 
 
 So what this code does is it retrieves the property name and checks if the OWSDATE suffix is in place. If it does not exist, the code appends the OWSDATE suffix and retrieves the labels for the graph. When the labels are retrieved, the property name gets reset to the original name, and the rest of the code gets executed.
 
-{{< caption-new "/uploads/2015/01/012615_1525_Fixingthede3.png" "Custom managed property rendered correctly" >}}
+{{< caption-new "/uploads/2015/01/012615_1525_Fixingthede3.png" "Custom managed property rendered correctly"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAVCAIAAADw0OikAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABbElEQVR4nG2QzXLcIBCEef/XSpzYyTEnr+Ot9QJCFrKEBAzD35CSFKfW5XTNiR4a+mM5J++dtRYAjDEAobVG72IYglLdlXMhhJTSLEtKKef81waAQWulur7v+tdBdUpwPpultVZrZbXW1tq0ul/PIqb0L7Yetw97GPSXr3cY4+3DdNgG0lWqnz8eZhdcrGvILlbYg1iM8cyV6Hop+DAtC6QF0mgsV0PJhSGicw4QrfMQsFKrRDHn2cyIyFKMYobTGH+P+DTiSYeThkeNcg4xRoYBnLNtE90OUd2K5ZQCItF+8HGIiB1rpZScy22lQywAKNVdLi99J48MutHWm6jOq3/kQ87lI5V3alrru2/fEfE/1Hwm2b8+3N9jRGpbbyI69lhK6czVC5eX87McjbY4rEFN60WNpezUlnV1HpbVWg+5Ui4VMI5vbzsWxOvkd2o7OB2eNJw0iskjhg0qBPhMbWNWK4uIzvvjR5+p/QHRJVy0Mp7gcwAAAABJRU5ErkJggg==" "189" "395" >}}
 
 ## Using the predefined managed properties
 

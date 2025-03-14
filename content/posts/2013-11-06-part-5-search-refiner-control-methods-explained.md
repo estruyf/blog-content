@@ -44,7 +44,7 @@ That gave me that URL.
     *   k: use KQL (Boolean);
     *   m: this is the token to display value map. It's used when a custom refinement value (textbox) is used. This stores the value that you inserted, to visualize it in the refiner. Example: "m":{"equals(\"Item Value Text Box\")":"Item Value Text Box"}
 
-{{< caption-new "/uploads/2013/11/110613_1705_Part5TheSea1.png" "Mapping Value" >}}
+{{< caption-new "/uploads/2013/11/110613_1705_Part5TheSea1.png" "Mapping Value"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAp0lEQVR4nFWNwQ6CMBBE+/+/pzGGGNTIFkGWCN3a7tJujWiMvsMcZvIyRkSIPBFN80xEzjkiz8xlxcQQAKCu66qqAKwF2G62iGMpRVVNzllEVLWUkldSemd62Yjjbr8HaxERLIC99n3ftm3TNOS9ycI8dBp8fvjkJl2lL0aF4+UoQ7eMt3A65BBe9fr1mQVvyx0jkQxd8vRn5+jZnrmz0RHDOc3Tr/0EfUzlVC3rz/8AAAAASUVORK5CYII=" "151" "121" >}}
 
 > **Note**: you can find more information on the fields: [QueryState members](http://msdn.microsoft.com/en-US/library/office/microsoft.office.server.search.webcontrols.querystate_members.aspx).
 

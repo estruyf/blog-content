@@ -58,13 +58,13 @@ The function will now create hyperlinks. Once you click on one of these links, t
 <a onclick="$getClientControl(this).addRefinementFiltersJSON('{\u0022Brand\u0022:[\u0022\\\u0022\u01C2\u01C2436f6e746f736f\\\u0022\u0022]}');" href="javascript:{}">Contoso (135)</a>
 ```
 
-{{< caption-new "/uploads/2013/10/refiner3.png" "Brand Refiner with Refinement Actions" >}}
+{{< caption-new "/uploads/2013/10/refiner3.png" "Brand Refiner with Refinement Actions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAYAAABGbhwYAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABAElEQVR4nG2Q607DMAyF8/6vxhAbA9GxsY12vSXt2tLcmksPSto/iEWyZNnHn09MKKWgjKGqKjjvMePxI4wxFEWOuirhvY/FR2LSSI/v3qAYHW79hAOV4NM6MK8RhF+NwlshsMs5PpnCvhSg3Pwjk0urY/O1EHivJMLgudW4thp0NDHX1oOEJIgSqqIwrH65cTylI7Y5RyMsjJtB0k5jVyzEj1ri0ips0jGSQ935xQA5NQrPGcc2F9iXMlJPTIFxi3wwsG4VHpmKohBJLZH1E+xK+XOe0NxkIw5URV/5MOFHObTCoFMOd2kxKAcSbheo17uOH8k6Hb0mdPF7bnS87y9AFKNPdDNTtQAAAABJRU5ErkJggg==" "162" "174" >}}
 
 ## Reset the Current Refinement
 
 Now that the hyperlinks are in place, it's possible to refine the search results, but once you do this, you'll end up with an empty refinement control.
 
-{{< caption-new "/uploads/2013/10/102213_1928_Part2Adding2.png" "Empty Refiner" >}}
+{{< caption-new "/uploads/2013/10/102213_1928_Part2Adding2.png" "Empty Refiner"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAALElEQVR4nGP4+PHjmzdv3r59++/fv/8YgOHTp08vXrx48+YNphxIGqsoXBoA7/RYZlbPRt0AAAAASUVORK5CYII=" "188" "53" >}}
 
 The next thing to do is to show a hyperlink to reset the current refinement.
 
@@ -139,7 +139,7 @@ _#-->
 
 This will result in the following output:
 
-{{< caption-new "/uploads/2013/10/102213_1928_Part2Adding3.png" "Remove refinement link" >}}
+{{< caption-new "/uploads/2013/10/102213_1928_Part2Adding3.png" "Remove refinement link"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAXUlEQVR4nDXJ2wqAIBRE0f7/C5MoH4q0Iu1CnvFkGqEN+2VYFQAiAGDmmFKMpbxKq7ERtexaa9b08S+ZN3r0wcaFjcK4e33yd6+7sDp8PTlpMOxezK5ZSMyut8j8AgMmcveSPyNNAAAAAElFTkSuQmCC" "154" "61" >}}
 
 ## Show the Selected Refinement
 
@@ -158,9 +158,9 @@ for (var i = 0; i < selectedFilters.length; i++) {
 
 This script results in the following output when you're going to refine the results.
 
-{{< caption-new "/uploads/2013/10/102213_1928_Part2Adding4.png" "Refinement Example 1" >}}
+{{< caption-new "/uploads/2013/10/102213_1928_Part2Adding4.png" "Refinement Example 1"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfUlEQVR4nCWMyw6DIBAA/f9f82LPbVNZsZqW18IGQZRtqMmcZpLp0HultUMMRMx8Vq6VKzeYuXPWTOIlYfTomqjNX61lHQ/AfaWyhiJdHk1aMEuXnyodZ+3Aph7C7U0PtQ0z9RCGme7fzcTSso1lsnnB/Ak72CxMEv/BNf8BRfmOFPDBu3YAAAAASUVORK5CYII=" "154" "78" >}}
 
-{{< caption-new "/uploads/2013/10/102213_1928_Part2Adding5.png" "Refinement Example 2" >}}
+{{< caption-new "/uploads/2013/10/102213_1928_Part2Adding5.png" "Refinement Example 2"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfklEQVR4nF3OsQ6DIBSFYd7/xbq0SdOt0SYVRMMFakAULlRuQ9x6hn/5lsO0McZaAEBEIqqV6tlKRMQ0qFFwwYeT/8ZgO0Zf9H7MPnc69iZNDnsT1ZobP9V+5etDhk7Hy9vfRLjL8DIx4Lex3YpY0uwzhMyXJB0On+RiaT+Ifjr7jhe2ma33AAAAAElFTkSuQmCC" "156" "73" >}}
 
 ## Download
 

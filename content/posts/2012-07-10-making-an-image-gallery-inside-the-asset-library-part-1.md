@@ -156,9 +156,9 @@ a img { border: 0; }
 
 ## Result
 
-{{< caption-new "/uploads/2012/07/062812_1955_MakinganIma1.png" "Result: Gallery View" >}}
+{{< caption-new "/uploads/2012/07/062812_1955_MakinganIma1.png" "Result: Gallery View"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAxElEQVR4nE3JMW7CQBBA0T1IsJQGTmDRpY1kd1RIHICKVOlzJe6RSAYZhImj0MQ4Xhzb692d2RlLGAko8sr/xfBp+jgOg9l89vLmhYvR5HXwPH/wQ88PPD8Q6cfyPVrnUhoL63gbreLdPo2Tr02SbpJUNPLTWFurtqxqCwCIRMRXjkgcKqpaICKtjSwKROyYOyLnCJ0TSlukru/PLVLWGGnoD7gw1F+JvGxOleqYNXKu4KhAavxV9r6/pfqpMVMMfL6l/y63arGFqAzgewAAAABJRU5ErkJggg==" "453" "297" >}}
 
-{{< caption-new "/uploads/2012/07/062812_1955_MakinganIma2.png" "Result: Image Gallery" >}}
+{{< caption-new "/uploads/2012/07/062812_1955_MakinganIma2.png" "Result: Image Gallery"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAxUlEQVR4nAG6AEX/AKyvrb7Hz625w6Kpr6WssqWss6iwt6ewt622va21vQD///+ioaB4eHnu9fzo7PDt8vPRy8zLu7y3qqpgYF8A/P//cHJ0IyYkrbiywcrNfnV5ZldZf2hsWUFDEQ8PAP///3h4eiEfGaaijKqsn1pIRT4tLF1CQlE2NRISEgD///9xcXE4OTXp697T1cOOhHtENzQ+MS9JMTANDg4A////jIuLMC0sioaFent5WFRUNC0sLyUjJSEZFhcVyJxd7Ewt7Z0AAAAASUVORK5CYII=" "605" "372" >}}
 
 ## Sources
 

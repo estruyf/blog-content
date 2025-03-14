@@ -31,12 +31,12 @@ There is one thing I did not explain yet. The approach that I provided only work
 
 The reason why it does not work is because of a limitation in Cypress (web security).
 
-{{< caption-new "/uploads/2020/04/cypress2.png" "Failing Cypress tests due to missing access token" >}}
+{{< caption-new "/uploads/2020/04/cypress2.png" "Failing Cypress tests due to missing access token"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAJklEQVR4nGP49uLA/x/v9vz//gaK3+5FsN/t/f/97a7/P76d+g8A5wkkTJqGpYkAAAAASUVORK5CYII=" "798" "33" >}}
 
 Currently, when requesting access to an Azure AD-secured API. You first need to get an access token. If you are using the default SharePoint Framework approach for it, it will request it via an ADAL flow. The ADAL flow will use a hidden iframe that performs a cross-origin call to `login.microsoftonline.com`. This cross-origin call will not work as Cypress will prevent it.
 
 
-{{< caption-new "/uploads/2020/04/cypress3.png" "ADAL hidden iframe on the page" >}}
+{{< caption-new "/uploads/2020/04/cypress3.png" "ADAL hidden iframe on the page"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAALklEQVR4nGOwsTT/72Jl8t/Byuy/mbnlf1NT0/8WJob/zY0NwNjEQP+/vrbmfwBGNBAxHSw0vgAAAABJRU5ErkJggg==" "1458" "59" >}}
 
 > **Info**: You can find more information about Cypress and cross-origin iframes here: [https://docs.cypress.io/guides/guides/web-security.html#Cross-origin-iframes](https://docs.cypress.io/guides/guides/web-security.html#Cross-origin-iframes).
 

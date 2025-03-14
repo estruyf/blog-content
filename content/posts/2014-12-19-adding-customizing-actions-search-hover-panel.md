@@ -62,7 +62,7 @@ This piece of code can be added in a script editor web part on the page, in a cu
 
 Once you refresh your page, you should see the change to your search hover panel actions:
 
-{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu1.png" "Modified custom action" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu1.png" "Modified custom action"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAX0lEQVR4nAXBWw5AMBAAwN7/ZhKCCgkSj3h1dXVtG6X8mBHtqrvdDNqMyOQ/mJcyLcokww2+9xXIdFi2l33C/YQghzqq87iRaV8tBAIQlcaTyTnn/a12tc0THBrZkOUfzItR0F1G+54AAAAASUVORK5CYII=" "863" "273" >}}
 
 In this example I have changed the send action text to **send link**.
 
@@ -83,7 +83,7 @@ In this example I am going to copy the search templates for a Word file:
 
 The first thing to do is changing the title of the template in the **Item_Word.html** file.
 
-{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu2.png" "Change the title of the item display template" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu2.png" "Change the title of the item display template"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AOLk5Ojo3vPv6/b58/b5+Pr6+vr59vr49vr69/v+/LNpHI5B4JRgAAAAAElFTkSuQmCC" "785" "112" >}}
 
 The next thing to change is the location of the copied hover panel display template. This reference is stored in a variable named **hoverUrl**. Find it in your item display template and update it to the location of your version. For example:
 
@@ -121,15 +121,15 @@ The final step is to make a copy of the **result type** (in my example the one f
 
 The copy can be made by going to **Site settings** > **Search Result Types**. Click on **Microsoft Word** (or the result type you want to copy) and click on the copy action:
 
-{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu3.png" "Copy the result type" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu3.png" "Copy the result type"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAARUlEQVR4nE3BSxaAIAgAQO5/UN2oEYrGR2rT6zUDFXsqVLFPfo0xkOgkOloD862+zeOj5rMWRRRV4Mtx2f3jEZwS57xEHrA6VshyOVnbAAAAAElFTkSuQmCC" "321" "90" >}}
 
 A page will open on which you specify your copy of the result type. What you need to change on this page is the template that needs to be used in **Actions** dropdown. In my example this needs to be changed from** Word Item** to **Word Item Modified** (this was the change I made to the title of the item display template).
 
-{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu4.png" "Change the display template that needs to get loaded" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu4.png" "Change the display template that needs to get loaded"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAXUlEQVR4nEWMUQqAMAxDvf8xxT8Vxka3Nm03WSeaj5DwSDZm7r2PMQAQkbuvurR9iUVSSkTUmAG4+8QKmFmstdamQA+968miSM7XfpTzNlUzs7D/XIGSM0Q08Pp4AJQCkxI1EDZDAAAAAElFTkSuQmCC" "642" "336" >}}
 
 Once done, you can save your result type. If you go back to your results page, the Word documents results should now have the custom action in place.
 
-{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu5.png" "Custom action added to the hover panel" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu5.png" "Custom action added to the hover panel"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAvUlEQVR4nF2PTW4CMQxGff9T9AbcpjuExIZWgsRJxkn8Ew9K1KKBt7L8LH829N6JaNtIRMY7qgqtdREx1WH2oc0MbHadmo7h7vsRMwN3u8f2dfoO2KjJp6a5W2MiZmm9q+pLqxqwKPeK4QfjAxFLKQetwMwr8z32oIWoCvNwX/e6r2JGqkIivvyWXHnf9+Plc8odEsk1cNPh4+/v139Td6IcwpZSziUvaq36D2z3Rzif8XbDlDDGsChljhLRE2nLXiQ+dCF+AAAAAElFTkSuQmCC" "388" "457" >}}
 
 ### Approach evaluation
 
@@ -226,7 +226,7 @@ To allow that your templates are used in the search center, you need to create a
 
 If you do a new search, you should see your added or modified actions in the hover panel.
 
-{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu6.png" "Custom action added and modified to the hover panel" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu6.png" "Custom action added and modified to the hover panel"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAxklEQVR4nF2Qa2oDMQyEdf979AI9TSDQ0BDSbUhtryyv9bJddqHbJN/fGTEzAmamDTNrz5gZMLOqultr/iK7O/hKo0Vb772PR9wdxmifV3x7PyTkUu1VrqIiOuPCIrWy2b/DzEHVeaEUppRiSinn/CAbqOqW+Ry7y8xSShGRvXDvvbUmIqoKifjjO+cqY4y9+TpiAwLJObCorzv/rncT1EKU4pKRqBREmmeu1cy2fzjkafo5HuP1K+IcLpd4Ot1vtxAjIhLRL1bDXcBC2kBpAAAAAElFTkSuQmCC" "388" "459" >}}
 
 In my example I added a custom action and updated the send action text.
 
@@ -273,7 +273,7 @@ Once these things have been changed, you should get the same output as from the 
 
 Here is an example of how it looks like when added to the PowerPoint display templates:
 
-{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu7.png" "Custom action added and modified to the hover panel" >}}
+{{< caption-new "/uploads/2014/12/121914_0942_Addingandcu7.png" "Custom action added and modified to the hover panel"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABDklEQVR4nH2MwU7CMACG+4jGJWxmnHaRA77K3oGwZce9goR6MCZ6I0FMHHStBNaxrivdurYYUG/ql/z/f/iSHzDGUJ7nCKFzEMY4z/OiKAghlFIAIQyCYDQa3V74mrvxOAiCNE2BMeb0B9bab60/trSkW4xZtkaEyA062YvuleqNad/X+PFp8fyynD+8zaFYvhpjtNagVfq/88VyNZlMoiiK4vjc0+k0jpMkCcMQQghms3vn+urGHXjuYOj7Q993XdfzPMdxkiQBotO7xhxa29vfzsum21C5rWRRSyFVfeyOnbY/ACmEqCrZcCGaI+eCVV0rlVL9BcD3u2K1OhBSMlZifMiyYr+nZVnXNef8Ew/6Lyhy5cUlAAAAAElFTkSuQmCC" "388" "459" >}}
 
 ## Wrap-up
 

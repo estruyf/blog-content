@@ -18,13 +18,13 @@ For a colleague I did some checks on how the view selector rendering is achieved
 
 The default property value is **3**, which you can also check in all your lists and libraries. You always receive three view links, the other views can be accessed underneath in the list view menu (...):
 
-{{< caption-new "/uploads/2014/10/100714_2010_Changingthe11.png" "Default list view selector" >}}
+{{< caption-new "/uploads/2014/10/100714_2010_Changingthe11.png" "Default list view selector"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAARElEQVR4nC3JQQ7AIAgEQP//1upuwIgINY1t5zqldZfhw2P6ERGZeb/23mWYk+gqnzktYokISFU9fdUfCDNby0HW1gA8wXdWF1HbTiQAAAAASUVORK5CYII=" "633" "210" >}}
 
-{{< caption-new "/uploads/2014/10/100714_2010_Changingthe21.png" "List view selector menu" >}}
+{{< caption-new "/uploads/2014/10/100714_2010_Changingthe21.png" "List view selector menu"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAASElEQVR4nB3BCw4AEQwFQPc/K/2h9crKJmYKzTTHCIzpADLznPM9997isUTEVADEs/dWM1EdvRcPtNZqrURkprEiM5mFiJn5B8JTVjDJV/aUAAAAAElFTkSuQmCC" "633" "210" >}}
 
 Now by changing this property, for example to **6** in my example, all my list views become available:
 
-{{< caption-new "/uploads/2014/10/100714_2010_Changingthe31.png" "List view selector with 6 available views" >}}
+{{< caption-new "/uploads/2014/10/100714_2010_Changingthe31.png" "List view selector with 6 available views"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAS0lEQVR4nBXMiQ0AIQgEQPuvVR5BhYXEXG4KmEGe6+QORALIqgJQVd393hs3sFTPdnc3MyC7apmJ6nYfN3JOYiJmVtXMPxBRYhaRD7dgVf68DSsCAAAAAElFTkSuQmCC" "634" "203" >}}
 
 The code to achieve this fairly simple:
 

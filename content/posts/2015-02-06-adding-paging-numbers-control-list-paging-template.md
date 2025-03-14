@@ -20,13 +20,13 @@ comments: true
 
 When you are using the Content Search Web Part, you have by default a control template list with paging available. Now this template only shows left and right buttons to navigate to the next or previous page:
 
-{{< caption-new "/uploads/2015/02/020615_1010_Addingpagin1.png" "Default list with paging template" >}}
+{{< caption-new "/uploads/2015/02/020615_1010_Addingpagin1.png" "Default list with paging template"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAN0lEQVR4nFWJMQ4AIAjE+P9fnQQCcqcmDkY7NE0qo4pcL/OYJABpaj3+/yDhbkkNeNKTtzUwMDclzViSZoDEgAAAAABJRU5ErkJggg==" "516" "173" >}}
 
 These two buttons do not give you very much visual information about paging. For example: you do not know on which page you currently are and you can only go back one page at a time.
 
 If you go to a SharePoint search center the paging works a bit differently compared to the CSWP template. In the default control template of the search result web part the same left and right paging buttons are included, but you also have page numbers which makes it easier to navigate.
 
-{{< caption-new "/uploads/2015/02/020615_1010_Addingpagin2.png" "Search result web part template with paging" >}}
+{{< caption-new "/uploads/2015/02/020615_1010_Addingpagin2.png" "Search result web part template with paging"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZklEQVR4nGXOSQ6EMAxEUe5/1wx2EqMEVxkFeoHUb+kvWXVEBACS8UESQEQcJFNKZgZfxa40Ll9THiR3HmPMOQG35ecC3M/Hzt+f/3YGkHNurZW6qUgp5V3zy/uq2ntX1VqriLzTbg6nr5N7/hmYAAAAAElFTkSuQmCC" "166" "94" >}}
 
 As this is just some additional JavaScript it can be easily added to your own templates so that you can create a control template with paging numbers for the CSWP.
 
@@ -64,7 +64,7 @@ The code loops over all the available pages. You need to be aware that there are
 
 *   "-1": move to the previous page
 *   "-2": move to the next page
-{{< caption-new "/uploads/2015/02/020615_1010_Addingpagin3.png" "Special page numbers" >}}
+{{< caption-new "/uploads/2015/02/020615_1010_Addingpagin3.png" "Special page numbers"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAASUlEQVR4nAE+AMH/AN3p3tbl1t7o3tzc0drazuvl4fvl5frn6PLt7fj5+QDk7uTe6dzk8+vjwLngn5Xu4Nz67Oz67+/z9PP9/f1twzWK2GDIawAAAABJRU5ErkJggg==" "598" "93" >}}
 
 These special numbers are used for the left and right buttons, so they do not need to be included in the paging numbers. That is why there is a check to see if the pageNumber is not equal to -1 or -2.
 
@@ -119,7 +119,7 @@ _#-->
 
 This is the end result:
 
-{{< caption-new "/uploads/2015/02/020615_1010_Addingpagin4.png" "List with paging buttons and numbers" >}}
+{{< caption-new "/uploads/2015/02/020615_1010_Addingpagin4.png" "List with paging buttons and numbers"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAaUlEQVR4nEWNUQ4EIQhDvf9pFZ0pSsGNuMkkTT94tC3u4fEpYpMBnZi2lpXa0cD62nUBRdlh9V3TvLQBAS/rSgGNpyNi772LDOT1sKHsqZavEXHSDezZWWFjHnxdzYs8mmP/qKQa6Nn+A52XrtVXGCdnAAAAAElFTkSuQmCC" "464" "265" >}}
 
 ## Download
 

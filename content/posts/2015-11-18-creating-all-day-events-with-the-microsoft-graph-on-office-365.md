@@ -86,15 +86,15 @@ Once I made this change to my event model, I start experiencing two problems:
 
 As the first problem itself describes, you have to set the start and end properties of the event to midnight. So first of all you need to be sure that the DateTime object is correctly set:
 
-{{< caption-new "/uploads/2015/11/image_thumb.png" "DateTime object" >}}
+{{< caption-new "/uploads/2015/11/image_thumb.png" "DateTime object"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAVUlEQVR4nCXJSwpAUBhAYXu85bEJC7IByU3c15+iy8jIGiQmVnEkg9M3OEnpLor2ImvvP/2r6oO0Ocm7B1XtJGIMvh+Yg2dygclatmUlivC9OApOa15pnTxA3fe9LQAAAABJRU5ErkJggg==" "374" "62" >}}
 
 Now this was not enough, I kept receiving the error. When I checked my serialized JSON object, I saw that it had taken the time zone into account, although it was not specified on the DateTime object.
 
-{{< caption-new "/uploads/2015/11/image_thumb1.png" "Serialized DateTime object" >}}
+{{< caption-new "/uploads/2015/11/image_thumb1.png" "Serialized DateTime object"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAANElEQVR4nAEpANb/ANHW2//T197/297j/+fr7v/Q0tj/2qux/9Wprv/V1tv/09je/9LW3P/LtSLMiNFaUAAAAABJRU5ErkJggg==" "700" "20" >}}
 
 What I noticed was that RestSharp always serialized the DateTime object to UTC format (indicated by the "Z" suffix) and took the current time zone into account. To solve this I switched to make use of the [Newton serializer](https://www.nuget.org/packages/newtonsoft.json/).  By making use of the Newton serializer the DateTime objects were serialized correctly:
 
-{{< caption-new "/uploads/2015/11/image_thumb2.png" "Correct serialized DateTime object" >}}
+{{< caption-new "/uploads/2015/11/image_thumb2.png" "Correct serialized DateTime object"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAMUlEQVR4nBXGOREAIBAEQfxbOQ2Q4uCehZxCxVB01G1VsbW45xD/c7LNyD6QRLqjCB7NQiLecTmNwgAAAABJRU5ErkJggg==" "686" "24" >}}
 
 So be aware that your start and end properties contain the right values the API expects.
 

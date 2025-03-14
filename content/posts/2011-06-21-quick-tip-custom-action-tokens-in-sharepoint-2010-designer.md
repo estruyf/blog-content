@@ -18,11 +18,11 @@ comments: true
 
 SharePoint 2010 Designer allows you to create custom actions for the SharePoint ribbon or the item context menu.
 
-{{< caption-new "/uploads/2011/06/062111_1631_QuickTipCus1.png" "Custom Actions in SharePoint Designer" >}}
+{{< caption-new "/uploads/2011/06/062111_1631_QuickTipCus1.png" "Custom Actions in SharePoint Designer"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAIAAACExCpEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA9klEQVR4nB3JMU7DMBQAUB+KmYsVBnYOwMLAwsIEEkdAXWBA0CqRIjVpYjv+dhLbP7YTm9YI3vqI+Xyq91/toS0bVtXQsx2tr/jxhjcb2twS93DhHi9F+VbVbVEUQhzRglKdUnSaGBmKO76794ZbgyCYDwsDnVLKf86EfVyz903AaZ4DWmsM9j3EGP83E3F4lfWL0ROiW8Ia1zQjzqidX73zJCwLoqeU9X0vlfpJiQPsigIO26r8JssardUAMAyDlCqfT6N2+5LypmpbSVKM1loJAEKMw5BzdmhY1wql66Yjs+ZKadoxIWTwYY3Zq+14fA7rSevpF+xH81A93XneAAAAAElFTkSuQmCC" "261" "236" >}}
 
 These custom actions can be used to start a workflow, navigate to a form, and navigate to a custom URL.
 
-{{< caption-new "/uploads/2011/06/062111_1631_QuickTipCus2.png" "Action Types" >}}
+{{< caption-new "/uploads/2011/06/062111_1631_QuickTipCus2.png" "Action Types"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZ0lEQVR4nCXCSwrCMBAA0Nz/eiqIaA3NfJuZdCgki3Qj1MdLnyUDim7uHua7t6jWzHZVizhSc4dS3Oy4RETv/ZznnHOMkVT4cb/l76JMQsiEm4pbdasqnNzq+/WENTOWf4KVEYSRCX6yrW2FCngOhQAAAABJRU5ErkJggg==" "501" "202" >}}
 
 For the last option you can make use of "Tokens". These tokens enable you to create a variable URL's.
 

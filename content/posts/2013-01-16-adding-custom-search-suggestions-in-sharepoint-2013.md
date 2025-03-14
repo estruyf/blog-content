@@ -18,7 +18,7 @@ comments: true
 
 By default search suggestions are enabled on the default search boxes in SharePoint 2013.
 
-{{< caption-new "/uploads/2013/01/011613_1828_AddingCusto1.png" "Search Suggestions" >}}
+{{< caption-new "/uploads/2013/01/011613_1828_AddingCusto1.png" "Search Suggestions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfUlEQVR4nF3LWwrCMBCF4ex/Xe5BEBUVa25NZtK5tCltFJFC8ed7OxwDMtlEw7igzMD1B2UOwAHI2D4fTxcfMxSisfJmELWpmFzEOosAdaqttfcuZDW55Nv9EWIU0XVd29Z3JjW9P5yvnXMvJv57A6kBfHYeQ8JcGEn3gOQDEpOrHIM5OZUAAAAASUVORK5CYII=" "256" "165" >}}
 
 Server administrators are still able to manually add search suggestions via PowerShell, but the commands have been changed a little.
 

@@ -84,6 +84,6 @@ So, what I concluded is that the FunctionFile is not required for module add-in 
 
 Here is a very simple Outlook module sample:
 
-{{< caption-new "/uploads/2017/02/020117_1337_Usingaddinc1.png" "Sample Outlook module to show the command functionality" >}}
+{{< caption-new "/uploads/2017/02/020117_1337_Usingaddinc1.png" "Sample Outlook module to show the command functionality"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAABnWAAAZ1gEY0crtAAAA4ElEQVR4nE3KQUrDQBSA4ddeyLN4CHFXrF7AvVfwAF0obkQ9QBoFtZTQSFxpQuI0SScvb6bJDOm8UbAgftv/h/HZ08HF8nj2fjRLDi9XcBKOTx9H03A0DWEyh/PrxdU8GTq1VVRu8Hb59RCJ+0jcReJmUUAQBM8vr6bvWyKtiK12VjujnFHeaojfklUcr8sSEbFtm4ZwQ7rr9LYjpUHUzcdnmmUZNkiKeurbdTvsBmut9x6899//GGPSLC2KIs9z5xw4x+4XM3vvjTFCCCllXdfMDPv2d1hrq6pCRCklM/8At+zRQ/Yz9DkAAAAASUVORK5CYII=" "356" "297" >}}
 
 On the following GitHub repository, you can check out the code: [Outlook module command sample](https://github.com/estruyf/OutlookModuleCommandSample).

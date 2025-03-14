@@ -16,7 +16,7 @@ comments: true
 
 When setting up a portal on SharePoint Online these days, you most likely will do it with a hub site driven approach. With hub sites, you have one root site collection, which can be seen as the parent, and all children are associated with it.
 
-{{< caption-new "/uploads/2019/08/081419_1643_Howtogetthe1.png" "Hub site association" >}}
+{{< caption-new "/uploads/2019/08/081419_1643_Howtogetthe1.png" "Hub site association"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQklEQVR4nE3JOQrAQAgAQP//UAux8GAjYnS3CAmZdsDdRURVmdnM9t7zA2aGiES0rhUR96uqMhOqKiIyc2a6++vHAbziVzWVpaAnAAAAAElFTkSuQmCC" "277" "74" >}}
 
 When building solutions for your hub sites, you probably need to know on which hub site your solution is currently running. If that is the case, there are two ways in order to find out.
 

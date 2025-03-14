@@ -116,7 +116,7 @@ Creating a new composed look can be done under **Site Settings** -> **Composed l
 *   **Display Order**: this will be used to arrange your composed looks ordering.
 For example:
 
-{{< caption-new "/uploads/2012/08/080312_1451_ThemesandCo1.png" "Example of a composed look" >}}
+{{< caption-new "/uploads/2012/08/080312_1451_ThemesandCo1.png" "Example of a composed look"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAjElEQVR4nDWMSw6DIBQAuf+t2kTE+ongrqEgP1GE5ztCY7XJ7CYz5PAUfYWBYqgxNpAFZHGUG7LGHoooadyWDotAEPh3p/a2MTNbY//RzLjWLcMSB8j81rNmUlZ7GrXrlW2lOUlpvB4kuFapOv0KhAlhujrIHDInwTL1fmj5NIq6mVlNYecHiOS71by+RVmc+RMkcfAAAAAASUVORK5CYII=" "501" "310" >}}
 
 With this new approach, you have a lot more flexibility. You can create multiple composed looks for your company that each use a different master page, color palette, background, or font palette.
 

@@ -42,6 +42,6 @@ The complete configuration for edge looks as follows:
 
 When you now press F5 (when the localhost service is running), you should be able to debug your solution in Visual Studio Code like with Chrome.
 
-{{< caption-new "/uploads/2018/05/Screenshot-2018-05-14-12.10.22.png" "Debugging in Visual Studio Code with Microsoft Edge" >}}
+{{< caption-new "/uploads/2018/05/Screenshot-2018-05-14-12.10.22.png" "Debugging in Visual Studio Code with Microsoft Edge"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAo0lEQVR4nFXMQQqCUBhFYVdRIkXlr75KXwTtQrQmNUjN1lC0q1KIxvpsZSdsEg0O3MHHterni6qqqOua+/3B5XojzwrKc0l5KsiyI1meYxlj6Lru2/vdEccJ9tDGCzyUEsYjG8cZYLXG0OO+tjUk6ZbZzEUtIsJIM/d9ApEf7B/7naY7xBU8tSRab1ivNKHy/2HTNOz3B7TWiB+wCCNEhOl0wgdXn3DbGABbiwAAAABJRU5ErkJggg==" "2687" "1263" >}}
 
 Happy coding!

@@ -84,11 +84,11 @@ As you can see, you can also use the properties that have been added by the $get
 
 The new template results in the following output:
 
-{{< caption-new "/uploads/2014/08/080514_1830_Creatingyou1.png" "Updated AngularJS template" >}}
+{{< caption-new "/uploads/2014/08/080514_1830_Creatingyou1.png" "Updated AngularJS template"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfElEQVR4nGWM2QrFMAhE8/+/2lBqXLKN5iLt25VBhOOcQkS11uu6GvP5mzLnGmazd18rgMxegf1hEQXdzoT27PaACUze7cOqBmlu6l3dxLvFXifiACe8qHWYJFB2lfx7t4nPUZgl2yqpzYPTHPEm5ZvJ9ZVnCcoQcuWY4weBvMvw8UBYcwAAAABJRU5ErkJggg==" "435" "291" >}}
 
 With a second line mapping set, the result looks like this:
 
-{{< caption-new "/uploads/2014/08/080514_1830_Creatingyou2.png" "AngularJS with Line 2 property" >}}
+{{< caption-new "/uploads/2014/08/080514_1830_Creatingyou2.png" "AngularJS with Line 2 property"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAIAAACExCpEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAmklEQVR4nGWO2Q7DMAgE8/9/2lwGbC470MpJpT4UrXgZNOxCRPtxrNvWmN9/s7j5ZRruT7J7uEXvXwwF6r7B+lKENA3lkBoqX4yAUo7B7VKZzDSv6ydHIIEymUmYzrg9ydEXRGI4ad+MMN1i3uncKtl9yhWBoThhCIdwuv3krVYlZIJ+g1t7+01zjAXKrNbO3VtNv38//VVy9A+kIAWFvORZawAAAABJRU5ErkJggg==" "428" "394" >}}
 
 ## Download
 

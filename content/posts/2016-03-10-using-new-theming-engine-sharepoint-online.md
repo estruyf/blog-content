@@ -42,7 +42,7 @@ SPThemeUtils.RegisterCssReferences([{
 }])
 ```
 
-{{< caption-new "/uploads/2016/03/031016_1833_Usingthenew1.png" "Stylesheet and theming style block" >}}
+{{< caption-new "/uploads/2016/03/031016_1833_Usingthenew1.png" "Stylesheet and theming style block"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAKklEQVR4nAEfAOD/AOrm9OHf8t7e9N/d793b8N3c9OHd7d/d7+Th8/Dv+6GcGw8HBXB1AAAAAElFTkSuQmCC" "724" "94" >}}
 
 What you can see in this screen shot is at the top the style block which contains all the theme CSS changes. Underneath the style block, the initial stylesheet reference can be found.
 
@@ -78,7 +78,7 @@ If you want to know if your site is currently using the new theming engine, you 
 SPThemeUtils.UseClientSideTheming()
 ```
 
-{{< caption-new "/uploads/2016/03/031016_1833_Usingthenew2.png" "Check if your site uses the new theming engine" >}}
+{{< caption-new "/uploads/2016/03/031016_1833_Usingthenew2.png" "Check if your site uses the new theming engine"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAYklEQVR4nB3MSw7DMAgAUd//lLUUJYA3/oAhIaZV/bYjTfrkDIAIcGLJBxJRKXRdJxEiQqq1MrO7P/76iohYa4kIM5tZGmMAQGut964655xmFhHfLY2urfJ9m+4oIqr6n2w/RohyLiaAPFcAAAAASUVORK5CYII=" "451" "167" >}}
 
 > **Info**: If the function returns false, that means that the site does not use the new client side theming engine. It could also return undefined, that means that it is not yet available on your tenant.
 
@@ -130,8 +130,8 @@ This results in the following output (when a theme is applied on the site):
 
 **Before**
 
-{{< caption-new "/uploads/2016/03/031016_1833_Usingthenew3.png" "Before the custom stylesheet got applied" >}}
+{{< caption-new "/uploads/2016/03/031016_1833_Usingthenew3.png" "Before the custom stylesheet got applied"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAsUlEQVR4nGXJTQ7BUBRA4bcVAwOJFdiEpTVCR12AoaiY+S0qItJWaEiIAappESTS9r777hUxdEZfcoRhWdpq0z0GnVNkhfdp/OyH99457p6i+e4gZkG4DC/4OtI7YLwyxqxujDeWEeNDEBImj61RWlfyvl70a4V1teDrxZWW29fLgpgBMs9uO2PTnbQ8u+2OTWfUXAwbG2cg+C8ixUw/fzcRQZZClkCWSkgVSpQgAZRSH5skm201vdzbAAAAAElFTkSuQmCC" "625" "401" >}}
 
 **After**
 
-{{< caption-new "/uploads/2016/03/031016_1833_Usingthenew4.png" "Once the stylesheet got applied via JavaScript" >}}
+{{< caption-new "/uploads/2016/03/031016_1833_Usingthenew4.png" "Once the stylesheet got applied via JavaScript"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAABnWAAAZ1gEY0crtAAAA5ElEQVR4nAHZACb/AJ+qoGLIymvCwWLAwGrEw3nIx2TBwGXAv2fAv42xqQCszru1zLb926b/3Kv/367/36//4K//3q//3K3737UA69Kk8NOd7LBO7a1G7rBM8K9I77BJ77BL765E8LpkAPjUnPbQlMGOP76INb+KOb+MO76LOr6LO7yIOMmbUgD51Z341Z3x16z127H127H12rDy0qDz0p7005/01aUA+NWc+dWd9tuv992z992z+N2y+dWd99KZ+NSb+dehAPjVnPnVnPnTmPjTl/jTl/jTl/nVm/nVnPnVm/jWoUY0mhuv2+zDAAAAAElFTkSuQmCC" "627" "410" >}}

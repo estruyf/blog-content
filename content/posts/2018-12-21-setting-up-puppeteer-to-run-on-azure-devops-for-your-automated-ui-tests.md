@@ -47,7 +47,7 @@ Once this is installed, the dependency needs to be configured. You can do this b
 
 Here you can see where you should add it:
 
-{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu1.png" "Jest configuration for JUnit" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu1.png" "Jest configuration for JUnit"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAIAAACExCpEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAn0lEQVR4nG3OawuCMBSA4WOSNAtc5TadBgm6rXncKtCC/v//iq6gCM+3l3OBtEV5utNyiAtPcrfKHZEvsfREOqAahbpFWQepCpiGt+AHqEGu+0ggMPVpI9S0BzcQ6SGdy4lGcfbr8jLTmIbCYOWRl37DNeHN//xXXtl9fV1ldilsIkw4XS7srnNM99vjg0oMJw8KaQhXMVOENZTVi/H0E7wVGlP18gw4AAAAAElFTkSuQmCC" "624" "587" >}}
 
 If you want, you can already test out the outcome by running: `npm test`. If you tested it, it should have created a new folder **reports** and a **junit.xml** file. This is what is required for Azure DevOps to process the test results.
 
@@ -73,7 +73,7 @@ Once you implemented these changes, create a new repository in one of your Azure
 
 Once the repository is created, you can create a new **build pipeline** with the following tasks:
 
-{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu2.png" "Tasks required for the automated UI tests" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu2.png" "Tasks required for the automated UI tests"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqElEQVR4nGXCTU7DMBAGUN//Tj0AYoWEBEiopWSTpLFdz9Qz3/gvSKB2w9NzZpZzDiGklIiImcfdvu9u8xGKcmdmrbXe+xijtubmZfF+U4iqmAEGQAE1AzG7ed0uIaas6SYs+hssuKmFK7nn4+n1az1eZLrW71gez7G+nIObPt6m2XsGoZO2R0afY3ZPhwNTqrXu/5RS3Of7aVmXEGJKJCKt9b+9D1X8AO5i5G3pTpdWAAAAAElFTkSuQmCC" "526" "427" >}}
 
 As the agent, I use the **hosted macOS**, and the tasks should be configured as follows:
 
@@ -96,11 +96,11 @@ npm test
 
 Here is how I configured it:
 
-{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu3.png" "Command line tasks to run the test" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu3.png" "Command line tasks to run the test"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAPUlEQVR4nGXJQQrAQAgEQf//XAXRGceEQA4LW/StrapIPgftYr5Ga+7e3STnIP1ZRGQmAF1IGsndvZ8kAC+U0HYIBDF5+wAAAABJRU5ErkJggg==" "624" "266" >}}
 
 **Publish Test Results**
 
-{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu4.png" "Configuration for the Publish Test Results task" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu4.png" "Configuration for the Publish Test Results task"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZklEQVR4nHXOzQrDMAwD4Lz/e5auh8X5mRO3k9ySncpKPnwxQqCgqrvZeePuoH9B0kOptZkB43sKfV2QImdx2V49pWk71/JRncaSC4Cx6DfqT3jHzGM/yXEPoW1rFzERixGtgcTNBQ0Q60KCpJMSAAAAAElFTkSuQmCC" "624" "525" >}}
 
 The last step is to publish the test results. Configure it to search for the **junit.xml** file and to run even if the previous task has failed. That way you will always get to see the testing results.
 
@@ -112,15 +112,15 @@ The last thing before you can run it is to specify the pipeline variables, you w
 
 Once you configured all these things, you are ready to give it a first spin. Queue a new build and wait for the outcome.
 
-{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu5.png" "Run an automated UI test" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu5.png" "Run an automated UI test"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAIAAADJDItPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA0UlEQVR4nG2PWWrEMBAFdf9LOh7JS2tpuy3L2lryMAkBQ1K8v4KCJwY7qFmN4/iSUkmplBqGwRjbemvMwoeTiDbE8wxXuE7vQzhjjKUUZhbzCl+jdIi55Jhi5VqZa62lllKyMM7IWYNzYMChSymmnFJOueRcsgACNb1wQzigcrn73R8ITXqaJ9zRHqa19nTf+tDTMiNtztt/NBDISeLuFlp67/f9J76ss7VGWwhX8NE/G2Ld15eSGrRBjd4Vzv3+NH4QFMihIzoo0HERM38e/+4NKPs6gy82O3sAAAAASUVORK5CYII=" "404" "430" >}}
 
 When clicking on the tests tab, you can see a test outcome:
 
-{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu6.png" "Check test results" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu6.png" "Check test results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAmElEQVR4nDXMbQrCQAxF0dn/WnQjgovQUgalNpmPTJNMxkiLPf8uD16AvO5gBQRAVNUxhp/CZ1kA0+hDRXrvzMwizLwdAiDO7/lyu07zI8b4er/maYox1kaVamDm3PL9eUdYSy1ERJh423rv2jXUWhu1r331aBERVRb5n5sZJlw+SymlNbJhZubuOed9dvdSC5zSwd2JiJl/X+nHsn7yELcAAAAASUVORK5CYII=" "624" "460" >}}
 
 In case of a failed test, you see this:
 
-{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu7.png" "Check which results failed" >}}
+{{< caption-new "/uploads/2018/12/122118_1133_SettingupPu7.png" "Check which results failed"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeUlEQVR4nFXLwQ6CMAwG4L3/oxkhHrx5M5FuDIyMQfu3ZRqOfvcvFKIhxpQiEUHw/RfGaSplBSAKVrCwQE4QFg6l1ue9vz369+Wau25eFhpeaUwUaeMtuPn8yXmdNWXJWc1Uzqeq7h7MrNaNWeAOM1U93Pd9b60B+AHpe45WFUtJNQAAAABJRU5ErkJggg==" "624" "289" >}}
 
 Next steps are to configure the pipeline to run on a specific trigger or schedule. This is something you can implement underneath the **triggers** tab.
 

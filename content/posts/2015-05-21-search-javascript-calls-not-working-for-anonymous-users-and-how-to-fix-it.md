@@ -106,7 +106,7 @@ The following configuration steps are required:
 *   Update the **FarmId**, **SiteId**, and **WebId** elements in the XML content to that of your environment;
 *   Upload the **queryparametertemplate.xml** file to the **QueryPropertiesTemplate** document library you created.
 
-{{< caption-new "/uploads/2015/05/052115_1925_SearchJavaS1.png" "QueryPropertiesTemplate document library" >}}
+{{< caption-new "/uploads/2015/05/052115_1925_SearchJavaS1.png" "QueryPropertiesTemplate document library"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAXUlEQVR4nCXJQRaDMAgFQO9/09REJAhfQyB9trOdrfPZ6n7S0X6IqNZaSplzrrW2IuPTn6aDRaV3Mxtj/O/tw5zMfSbuG4C7A4iIzHw7IrjLdYmq4kFmMDMAZjazL71lcz3KI/sNAAAAAElFTkSuQmCC" "441" "186" >}}
 
 The last step that is explained in each of the two articles is the step where you need to add the **QueryTemplatePropertiesUrl** parameter and file location to your search Rest call. Of course this is not possible when you are working via JSOM.
 
@@ -157,8 +157,8 @@ if (typeof Srch.U.fillKeywordQuery !== 'undefined') {
 
 The **SourceId** element is required to allow anonymous users to change the result source ID for the query. If you only add this property, you get the following result:
 
-{{< caption-new "/uploads/2015/05/052115_1925_SearchJavaS2.png" "An anonymous search call with SourceId on the WhiteList" >}}
+{{< caption-new "/uploads/2015/05/052115_1925_SearchJavaS2.png" "An anonymous search call with SourceId on the WhiteList"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAhklEQVR4nB3LOQ4CMQwAwHyIN/IAJL5DC0+gA1HRcOSynZis482BtNK0Y47n1+5w3Z+eTGQdeA9cpMi6aOelmvuHL49we2eiDJgz/4poEa3aWutmzjHn1FWt9wEJKEUkDxiARMT0PvqYUvXrgw3RRXCALkZMSVXNGNtWtd4CASTETWautf4BdP2LweFYnBUAAAAASUVORK5CYII=" "633" "301" >}}
 
 When you only added the **SourceId** element, you do not get any refiners. That is why you also need to add the **Refiners** element to the white list. Once you have done this, you will get all the refiners where the managed properties are configured as safe.
 
-{{< caption-new "/uploads/2015/05/052115_1925_SearchJavaS3.png" "An anonymous search call with SourceId and Refiners on the WhiteList" >}}
+{{< caption-new "/uploads/2015/05/052115_1925_SearchJavaS3.png" "An anonymous search call with SourceId and Refiners on the WhiteList"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAgElEQVR4nDXCyw3CMAwA0CzCkozQibgyBCtwQaogdfyJ7cZuAHHi6ZXl+jgtt/Plrix1Q4Cmvo+cOb8eR6lsq0SzbNiBOqurR7fRPeb7XXbTzzzmPJ71BdQaYyPcEEh4jChrhYqCLMRKXbmbqLN6N8/MIrZbzBEBbUMh+lfTzPwBQ3SLB4GWYOIAAAAASUVORK5CYII=" "633" "310" >}}

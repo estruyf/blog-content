@@ -38,7 +38,7 @@ Due to the iframe approach in Cypress, this will give you the following issue:
 
 The Microsoft login page does not like it that you load it from within an iframe.
 
-{{< caption-new "/uploads/2020/07/msteams1.png" "Console error which shows Microsoft Login refuses to render" >}}
+{{< caption-new "/uploads/2020/07/msteams1.png" "Console error which shows Microsoft Login refuses to render"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAALklEQVR4nGNwEhb7byEm/d9ESvm/iZTSfzM5dTBtKST230pI9L+NqNR/U17B/wAX2Q4XZGAHlAAAAABJRU5ErkJggg==" "1362" "68" >}}
 
 #### Solution 1
 
@@ -62,7 +62,7 @@ The iframe problem is not entirely solved. Authentication is the first part of t
 
 Opening the browser console will tell you more about what is happening.
 
-{{< caption-new "/uploads/2020/07/msteams4.png" "Console error which mentions that it is not allowed to run in an iframe" >}}
+{{< caption-new "/uploads/2020/07/msteams4.png" "Console error which mentions that it is not allowed to run in an iframe"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAKklEQVR4nGPwFhL+7y8i8t9XWPi/l6AgGDvy8Py34uD4b8fFBcbWHBz/ARWLDbv3XboIAAAAAElFTkSuQmCC" "952" "47" >}}
 
 This problem was the hardest to solve, and in the end, it was straightforward to get it resolved.
 

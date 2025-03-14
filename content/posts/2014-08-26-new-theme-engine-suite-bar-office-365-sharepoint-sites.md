@@ -18,9 +18,9 @@ comments: true
 
 Today I saw a lag in the loading of the new suite bar colors on one of my SharePoint site in Office 365.
 
-{{< caption-new "/uploads/2014/08/082614_0910_Newthemeeng1.png" "Default suite bar" >}}
+{{< caption-new "/uploads/2014/08/082614_0910_Newthemeeng1.png" "Default suite bar"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAI0lEQVR4nGMoWnM9b/X1lKXXU5dBUfLiK6nLr01YsOXBvfsAJPUTqQbXZxEAAAAASUVORK5CYII=" "678" "87" >}}
 
-{{< caption-new "/uploads/2014/08/082614_0910_Newthemeeng2.png" "Default suite bar with a composed look applied" >}}
+{{< caption-new "/uploads/2014/08/082614_0910_Newthemeeng2.png" "Default suite bar with a composed look applied"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAJElEQVR4nGN4UV/6srrwVWHaq6J0CHpWkPa6OH3zxKlX7z4EABuZEqk/nL7NAAAAAElFTkSuQmCC" "672" "88" >}}
 
 The suite bar uses the **O365ShellCore.css** to do the styling. It turns out that when you apply a composed look to your site, the new colors are set by a new theme engine of the suite bar on the fly.
 

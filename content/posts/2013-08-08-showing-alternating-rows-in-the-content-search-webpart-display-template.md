@@ -49,7 +49,7 @@ This variable can be used to be added to the class property of your HTML element
 
 Now that you added the alternating class to the item row, you'll need to do the styling in your CSS file.
 
-{{< caption-new "/uploads/2013/08/080813_1419_ShowingAlte1.png" "Alternating rows" >}}
+{{< caption-new "/uploads/2013/08/080813_1419_ShowingAlte1.png" "Alternating rows"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAATUlEQVR4nE3LQQ6AIBAEQf7/ToMQJSrs7KKMYLiZdOrWDkCDUEEUmlKFBkLe9vQxXNrT5Zcc11nwOfiyRTkPKdlUnVnlvOUnXgWl9Lt+m8RV9h61c+EAAAAASUVORK5CYII=" "495" "128" >}}
 
 ## Extra Information
 
@@ -75,4 +75,4 @@ _#-->
 _#-->
 ```
 
-{{< caption-new "/uploads/2013/08/080813_1419_ShowingAlte2.png" "First row - Last row" >}}
+{{< caption-new "/uploads/2013/08/080813_1419_ShowingAlte2.png" "First row - Last row"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAASElEQVR4nEXGSQ6AIBAEQP7/U0VUejaIDZrowaQOlSICJQfA8Fd8GRxz3qlW1Lxq2X7HbmYq0tyTm0te2rlTQcMloApNqRi9P6J5VgL7uWdxAAAAAElFTkSuQmCC" "504" "163" >}}

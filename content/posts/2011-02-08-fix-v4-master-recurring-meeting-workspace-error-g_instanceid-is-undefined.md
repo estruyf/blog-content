@@ -19,7 +19,7 @@ In SharePoint 2007 a problem with JavaScript occurred when you used a recurring 
 
 Now in the SharePoint 2010 days, this problem has been resolved in the &#8220;MWSDefaultv4.master&#8221; master page. This is the standard master page that is used for meeting workspaces. When you want to make use of the &#8220;v4.master&#8221; like I did, the same problem occurs as in SharePoint 2007.
 
-{{< caption-new "/uploads/2011/02/020811_1723_FixV4master1.png" "g_InstanceID JavaScript Error" >}}
+{{< caption-new "/uploads/2011/02/020811_1723_FixV4master1.png" "g_InstanceID JavaScript Error"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAkElEQVR4nE3NPQrCMAAG0JzJwR9w8EqO3kSsiMfQzUW0CF1UxB+Q1ERNa4JKSkxs80mdCm9/xOqbFDy5xgmnSnApmBQsdwbwAMj+biLmImZDakPqSrFbnM2Sfk+PnHQnRXuEzhiNwNcHvhmUWkPU+uhNLVkd09k2nR/ULkXVWmBzeRP9Up/saY3+ZxW+MJn+AdgLgbP+AmKqAAAAAElFTkSuQmCC" "589" "277" >}}
 
 ## Solution
 

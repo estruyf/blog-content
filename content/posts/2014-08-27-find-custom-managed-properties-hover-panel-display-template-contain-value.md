@@ -28,11 +28,11 @@ When you open a hover panel template, you will see a **ManagedPropertyMapping** 
 
 Here is a result of what happens if you map the managed properties in the hover panel template:
 
-{{< caption-new "/uploads/2014/08/082714_0722_Findoutwhyc1.png" "Hover panel without values" >}}
+{{< caption-new "/uploads/2014/08/082714_0722_Findoutwhyc1.png" "Hover panel without values"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAdElEQVR4nGXGyw5CIQxFUf7/SyEhFuFy2t4+MFEHJu6swS7u3nt/zvkgEpHzLjOJiJmLuw8i7M0MAVSEAcZOt3AvfmtvVbB5X7iWAp8P1VAtoXqNEXafzBPxlXHMQqSYmQoL8636rwCotbbWxhhzrfnTWusFL6mtlIUvhZUAAAAASUVORK5CYII=" "420" "267" >}}
 
 As you can see, Author and Created do not show any value. If you map these managed properties in the item display template, you get the following results:
 
-{{< caption-new "/uploads/2014/08/082714_0722_Findoutwhyc2.png" "Hover panel with values" >}}
+{{< caption-new "/uploads/2014/08/082714_0722_Findoutwhyc2.png" "Hover panel with values"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAf0lEQVR4nEXHSRLDIAwAQf7/URO8YIRWJHAq5UO65jIpIkrZG0CtVUSe11p3a8ycIuI6DyZSYUFUESYi7NN9zZnCx7Ft516OT0ZoSiREJjyHhWma4f06EQBb4w6MSB1WxBMxVZO7m4ipDjMfNuztt2aWmDnnXEqp990Rof8h4hfQ7qyqmvA3MgAAAABJRU5ErkJggg==" "417" "268" >}}
 
 That is of course good to know, but why do they need to be added in the item display template instead of the hover panel template?
 

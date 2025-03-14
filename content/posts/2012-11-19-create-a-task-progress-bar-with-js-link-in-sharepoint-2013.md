@@ -30,7 +30,7 @@ The example I'm going to explain in this post is how you could render the Comple
 
 The first thing you need to do is creating a new Task list with a view where the "% Complete" field is shown.
 
-{{< caption-new "/uploads/2012/11/jslink1.png" "Task List View" >}}
+{{< caption-new "/uploads/2012/11/jslink1.png" "Task List View"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGnRFWHRTb2Z0d2FyZQBQYWludC5ORVQgdjMuNS4xMDD0cqEAAABLSURBVHicVclBDoBACAPA/f9XvZAoCi0Ukz2YONdZxwm7YdcTmTOjvwUiMklW1cyQxEYyIhZZJN3dzCR192yS3H31BsD9qqakrwG8cPV1nk9cXZgAAAAASUVORK5CYII=" "493" "173" >}}
 
 When you created this list, create a new JavaScript file and call is something like: Task_Complete_Rendering.js
 
@@ -59,7 +59,7 @@ Paste the following code to your JavaScript file.
 
 Save the file and upload it to the Master Page Gallery (Site Settings > <span style="color: #444444; font-family: Segoe UI; font-size: 10pt;">Master pages and page layouts</span>), fill in the required metadata field.
 
-{{< caption-new "/uploads/2012/11/jslink2.png" "Upload the JavaScript file" >}}
+{{< caption-new "/uploads/2012/11/jslink2.png" "Upload the JavaScript file"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAIAAADJDItPAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGnRFWHRTb2Z0d2FyZQBQYWludC5ORVQgdjMuNS4xMDD0cqEAAACpSURBVHicRY/RbkQhCET9/2/tmusqMKBII+6252FCAgxMgcD3BvCTvGplZgCRlN5HRJjZSERgZgBWUhRwd9875ah/Oe1rcnu3/sPdi6pGxLWac95irXUNiohAlYlaa5qYqpm5+3nNzCKCiWqt796fIc+Qudb9o9yTItKeh4jkrP9TROC+Fai19t4BTLOV23vv0ke/QVtrRDTGYGbLiRNMRPgglHCK2SfCL3UfQX31+xDLAAAAAElFTkSuQmCC" "545" "622" >}}
 
 Now that the file is uploaded to your SharePoint environment, go back to your Task List View you created. Once you are on the page, put the page in edit mode and edit the web part.
 
@@ -67,11 +67,11 @@ In the web part properties under **Miscellaneous** you can find the new JS Link 
 
 You can also use the `~sitecollection` URL token, this one should be used when working with sub-sites.
 
-{{< caption-new "/uploads/2012/11/jslink3.png" "Reference the JavaScript file in the JS Link property" >}}
+{{< caption-new "/uploads/2012/11/jslink3.png" "Reference the JavaScript file in the JS Link property"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAIAAAA7jDsBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGnRFWHRTb2Z0d2FyZQBQYWludC5ORVQgdjMuNS4xMDD0cqEAAAFmSURBVHicPVLZjhwhDOT/fzBRNsrDzGzS0M3hg2MAwwpmJyU/IJVdLtuof8fx56/9eb9+3M5PbUPwL4QQjkMrYkJEQEwpd5H+hogwR8VvlFL+c621OWfOReVcam2t9dZ6re0Vz2cVGTFlhUjO+RhT77KS+o7W55wp7erdaHVtL7L3Wuu3OMdEHEMAAAKg/UakOOb8FocAiAyAISyeiIljShmRFC1gjMs8IsYYz9Mc+sg5M7NKqTy387p8Se8DkEJAkZlSVnbDOee9h+UACAlX4BLHlQshgHPeOY/ErUvrImNbY15t3xUkMl6x5940Ep+X9WFNYK0PAZ2D1iWmtGhC9gGQGLYAEXsPSHGJe79OuNcCALh7r4ONOVPOCgABsJT6ukprImN0GWPMGLNaezDG2ssYc13XaYzW2ju3d57VdVnvg7Vu09Y5r7Wx1uZSrHXq18fv9VsAHo/HuTPu98d5nkbr2+3+BY8+O825Q9DIAAAAAElFTkSuQmCC" "251" "512" >}}
 
 Store the web part changes and save the page, now you are done. Just refresh the page and you should see the following result.
 
-{{< caption-new "/uploads/2012/11/jslink4.png" "Task Progress Bar Result" >}}
+{{< caption-new "/uploads/2012/11/jslink4.png" "Task Progress Bar Result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGnRFWHRTb2Z0d2FyZQBQYWludC5ORVQgdjMuNS4xMDD0cqEAAABiSURBVHicNccxDoMwDAXQ3H/vZTqzd+3cgQUJShPi2N/fRiD1ba8sFWvTvY1fPfyPJNwzswxzEYGZAREht2umAIq7AxAZqhoRJDNz63h9vlAtvPXe21FJRkRm7sMf0/x8rydE7HPCQQHJVAAAAABJRU5ErkJggg==" "546" "210" >}}
 
 ## References
 

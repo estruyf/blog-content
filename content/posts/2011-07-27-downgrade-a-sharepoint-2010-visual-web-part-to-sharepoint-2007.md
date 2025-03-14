@@ -42,8 +42,8 @@ When you need to downgrade/convert a SharePoint 2010 Visual Web Part to SharePoi
 
 ## Original
 
-{{< caption-new "/uploads/2011/07/072711_1453_DowngradeaS1.png" "Original References" >}}
+{{< caption-new "/uploads/2011/07/072711_1453_DowngradeaS1.png" "Original References"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQUlEQVR4nAXBAQqAMAgAwP3/iwVB0SBJBDU3UrO7dq1L3yacD4ATpeCLmKpuVhHV7r3jYYw0NVS+Ia5aIsVcY+QP0IU41k61MmEAAAAASUVORK5CYII=" "605" "106" >}}
 
 ## Modified
 
-{{< caption-new "/uploads/2011/07/072711_1453_DowngradeaS2.png" "Modified References" >}}
+{{< caption-new "/uploads/2011/07/072711_1453_DowngradeaS2.png" "Modified References"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQElEQVR4nAXBSQ6AIBAEQP7/STxJFDMJzSwiaFuVzryV7FJw1QftHe0G2DsBzskk5ZDdIW34Mv1ClxvNqMqI9QPZWzkWZCOwqwAAAABJRU5ErkJggg==" "605" "97" >}}

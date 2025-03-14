@@ -64,7 +64,7 @@ Now the problem is if you have multiple links on your page for managed property 
 
 Example: if you first so a sorting on the file size, the results get sorted on the file size. If you click on the author sorting links, the sorting on size is overridden by the author sorting.
 
-{{< caption-new "/uploads/2014/11/111314_0939_Howtoaddmul1.png" "Managed property sorting (one at a time)" >}}
+{{< caption-new "/uploads/2014/11/111314_0939_Howtoaddmul1.png" "Managed property sorting (one at a time)"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcElEQVR4nB3KQRbDIAgFQO9/zqy0xiaCwAdMX7qdN2WJqGpmWq1yHMLLI+SPqlba2VutRGRARBgzRADfmc/zlDe+19wdgMFcxD4dIu5RzvHtvc85VRXAGOO6rrs2Jc7c5Z601jLAgYwgImZeSwDsvX+0UpB12wK03AAAAABJRU5ErkJggg==" "810" "371" >}}
 
 The reason for this behavior is because a new query gets executed behind the scenes without taking the previous sorting into account.
 
@@ -240,8 +240,8 @@ The function can be called like this:
 
 I have created a new "updated" version of the table layout display template to include this functionality. In the new template you can do multi-sorting and removing the set sorting.
 
-{{< caption-new "/uploads/2014/11/111314_0939_Howtoaddmul2.png" "New sorting options (mutli-sort and removal)" >}}
+{{< caption-new "/uploads/2014/11/111314_0939_Howtoaddmul2.png" "New sorting options (mutli-sort and removal)"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANklEQVR4nAXByREAIAgEMPsvFoaVw4UHJseBzJwZkq+embk7cKuq2QcqIlqZJNmtqgAiguTufve2OZU7Vhl6AAAAAElFTkSuQmCC" "874" "175" >}}
 
-{{< caption-new "/uploads/2014/11/111314_0939_Howtoaddmul3.png" "Sorting on file size and file extension" >}}
+{{< caption-new "/uploads/2014/11/111314_0939_Howtoaddmul3.png" "Sorting on file size and file extension"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAN0lEQVR4nDXIQQ7AIAgEQP//2VYWFZZNMGnSOc4AnKQkknsfMwPgX2bmeN65lleVVCTtFxHdfQEBKjnYSuS6UwAAAABJRU5ErkJggg==" "1077" "176" >}}
 
 You can find the new version of the table layout display templates on the [SPCSR GitHub repository](https://github.com/SPCSR/ "GitHub SPCSR Repository"): [Table Layout with Multi Sort Templates (CSWP)](https://github.com/SPCSR/DisplayTemplates/tree/master/Search%20Display%20Templates/Table%20Layout%20with%20Multi%20Sort%20Templates%20%28CSWP%29 "Table Layout with Multi-Sorting Templates \(CSWP\)").

@@ -16,7 +16,7 @@ comments: true
 
 This is the next article of my getting up to speed series. This article is completely devoted to Gulp. In the [previous article](https://www.eliostruyf.com/getting-up-to-speed-with-node-js-and-npm/) I explained Node.js and NPM, but I also mentioned Gulp a couple of time. As you get in this world of JavaScript focussed development, you will see that Gulp (or Grunt - depending on the developers' preference) often used for various kind of things.
 
-{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto1.png" "Gulp logo" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto1.png" "Gulp logo"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAWCAIAAAB2RJoKAAAACXBIWXMAABnWAAAZ1gEY0crtAAACPklEQVR4nGWSy08TURTG7/+kK40UCn0MdFqkhdqWUh5lITJTWlAXY1yxsC6IpiYoUGUjQhS6I6LRFTsNrqxJDamxmjh3mMedyzycmc4103ajnnybc385J7nn+wD5vxyHEGIdH2OOA/+ydpsQYn86QXN5p9nsYNftqTPnNJtoLm/X64QQ4L3+vVarPDKe73RbQCzLFUWn1bIbDbv+xW58VRaZ3+/eu/icmCYwNzZVtiBnJuWxuEhH5XhCzc/LUzmVYc2NTaAWi/LMLCosqcsreOUmvnUbcxxiC3JuGhWLABWXeV8/HPDDoYBADcNQGAZDQpjir/Sh0jLA5fvw0mXEslIqLVDDQoQWwpRAR6F/EJfLQKtUMMeZOy/wnbswGIIDfpXjlOsLvy5c1La2gP3ho16tSlfHlLn8WWxUjCf0JxtSKi3SMWP/ALi2reTntQcPjepT7V7ZWH98vrpq7u5ZtZpzcgJcXbdqNfPlK2N72zo6sl4fWW/e2oeH1v5B+3sLOD9+qosMKpXEeELKZOTslLm7J2enpFTaaX4DbR6exUaFYAhSwzAQPIvQiGHhUECMJ1yMAcFYmszy/kHvP2FKCIWhf5Af8Mszs8S2Pce0tTUpeU2azIrjE+L4hJTNycmkvr7ecYwQ53MdLSyqbEEtljwxrMqw7dPTHnY1TUqleV9/dz/f55Ny08QwepgQIi/cgIGgd1E6CgNBpbDU9b4XB4VhvemRiDAS4ft8iC10U9TD+rNt76LRWFf6VrWbuz9pMdpHcnw7bgAAAABJRU5ErkJggg==" "70" "157" >}}
 
 So what is Gulp exactly?
 
@@ -57,11 +57,11 @@ After the command ran, you can try out the following command to check which vers
 $ gulp -v
 ```
 
-{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto2.png" "Output of the gulp -v command" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto2.png" "Output of the gulp -v command"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAQUlEQVR4nGMwtlQ1tVXRN5c3tJLXN5fXN1QxMVUzM1czt1DXN1BhMDLWNzLS09PT0jfUMTDU0dXT1NBUUVNXgiAAUp8KhkmHT2IAAAAASUVORK5CYII=" "348" "54" >}}
 
 When Gulp is installed, you still have some work to do. Running Gulp without any parameters results in the following output:
 
-{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto3.png" "No local gulp found message" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto3.png" "No local gulp found message"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAQUlEQVR4nAXBgQ2AIAwEQGYpGITqtwUEGhP3H8u7sD9+3mNs6otGy75O9zonAxUowRoEbDE1SpaiUdRcFLcJVK4fWiEKz30BglIAAAAASUVORK5CYII=" "445" "74" >}}
 
 When you executed the **gulp** command without parameters, you will see that it tells you that it did not find a local installation in the current project. When you want to run gulp tasks it will use the local instance to execute the tasks that you created.
 
@@ -90,7 +90,7 @@ $ npm install gulp --save-dev
 
 Once this is done, try running gulp again. You will get the following output:
 
-{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto4.png" "No gulpfile found" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto4.png" "No gulpfile found"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAQUlEQVR4nBXCYQrAIAgG0G4iZH71Y2iOWRLs/tcae7yyTo+XbdN9yJNstghkYm24S3ncdF46ZDJrYxUeqIKK/v8ATxoKPWk4QD4AAAAASUVORK5CYII=" "353" "55" >}}
 
 Now Gulp tells you that it did not find a **gulpfile**. In the gulpfile you define all your development tasks. So the next step is to create such a file in your project **root** folder:
 
@@ -112,7 +112,7 @@ gulp.task('default', () => {
 
 The code itself does not do anything special, right now it outputs the following text to the console: "Hello, from your first gulp task.". You can try it yourself via executing **gulp** again in your console:
 
-{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto5.png" "Default task output" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto5.png" "Default task output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAQElEQVR4nBXCAQ6AIAgAQL9TK0DKEARpq/+/qXW74ska4He1WUVIhbTTeSATEm4lwjzsfbLnbD6uxgg74PqH5QONjQyBZ3Ka9AAAAABJRU5ErkJggg==" "466" "101" >}}
 
 As you can see, you even get statistics about the task that started and when it ended.
 
@@ -202,11 +202,11 @@ You can run your task with the following command:
 $ gulp transpile
 ```
 
-{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto6.png" "Output of the transpile task" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto6.png" "Output of the transpile task"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAQElEQVR4nAXBiw2AIAwFQOYR6M+QZ1sl0aD7j+RdyVvm0rkUWQEK7+7drDFX5q1EIBPf++A6+XCMsYuakAoJtx+LZwyAuyuvxAAAAABJRU5ErkJggg==" "463" "86" >}}
 
 Now if you go and check in your project folder there should be a new JS folder with a **script.js** file in it.
 
-{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto7.png" "JS file created" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto7.png" "JS file created"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAIAAADJDItPAAAACXBIWXMAABnWAAAZ1gEY0crtAAAA0ElEQVR4nGXN0YqFIBCA4d7/waKw7CIKqSgJ01QyRyevl1NxdmG/G2F+nMm6rqOUNk3Ttm1d19WNUjoMwzRNWd/3VVURQiilRVHkeV6WJSFkHEfOeQYASqlt2wAg/OG9P8/zzUqpEAL8k8UYU0qIyDkfb8aYlFK8fTIAOOfsTWttrXXOee8/OYTgnBNCMMbWdX12MMY454iYIaK11hiDiCGEGCPe3uWIKKUUQlzXlVK6ruvb3tvPaF3XeZ6XZdn3/ff38wCA1lpKqbU+juObfwCVqytx3giqQAAAAABJRU5ErkJggg==" "127" "135" >}}
 
 ## Watching files
 
@@ -231,11 +231,11 @@ With the following command you can start the watch task:
 $ gulp watch
 ```
 
-{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto8.png" "Gulp watch output" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto8.png" "Gulp watch output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAP0lEQVR4nAXBgQ2AMAgEwC4DPKXGEhBTjd1/LO9avba2xSK/2V0ykIkxGEIKahGeV+zvmVVjztOOLtohplDwD1vYCuv9IcSzAAAAAElFTkSuQmCC" "461" "83" >}}
 
 Notice that the execution does not really ends. Instead it is in a watch state and waits for you to do file changes. So try to do a file change to the TypeScript file and notice what happens:
 
-{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto9.png" "Gulp watch output when files are changed" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto9.png" "Gulp watch output when files are changed"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAaUlEQVR4nAXBURLCIAwFQK7SRngEQgklTOyM1g+9/5ncDXZlf+fh1BeppjlhBpEIPHKmYHa6r8/9Gu4yRq+tgCvnysyMME2Xn7/v3Z5Ofk1TqZxAEVvCFo5eqkBVuHGUIgeXAoAS9oT9D074FUFET/iJAAAAAElFTkSuQmCC" "461" "170" >}}
 
 In this example I did two file changes (saved the file two times). The Gulp task automatically picks up the change and starts the "transpile" task.
 
@@ -243,7 +243,7 @@ In this example I did two file changes (saved the file two times). The Gulp task
 
 You can even specify multiple tasks in the watch:
 
-{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto10.png" "Multiple tasks in a watch task" >}}
+{{< caption-new "/uploads/2016/08/080916_1124_Gettingupto10.png" "Multiple tasks in a watch task"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAVElEQVR4nCXCSRKAIAwEQJ4jKiQQ2eLgUh7k/y/yYFebfsn5bLiCHlwKtcJaQxKOTIFWA7TedbyPAFLTFsm5xXlLNHuyRvcMlDFugXLHrjmyd376f3xZEsCOfrlyAAAAAElFTkSuQmCC" "465" "147" >}}
 
 ## How Gulp is used in the Yeoman display templates generator
 

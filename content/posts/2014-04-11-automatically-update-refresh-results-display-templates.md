@@ -50,9 +50,9 @@ This piece of code will be executed every minute and will update the set of resu
 
 Images don't say much in this scenario, but what you can see is that the first result is replaced with a newer task.
 
-{{< caption-new "/uploads/2014/04/041114_1445_Automatical1.png" "First set of results" >}}
+{{< caption-new "/uploads/2014/04/041114_1445_Automatical1.png" "First set of results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfUlEQVR4nGVM7QqDMBDr+z/mqO2qbuh51d7nRv2jYyEEkpCEDVHqZhUVwYU/vwh7a7K+ecpUkh17z9yv2m/mH2EBoNfIJVGOlCPPT57LWfVZMHNXdZFO1ZNyrRuRMVk77Khd92rUtKJWdOGwAggsXAaa+m1LDx4zlYFyVIQv6CHL6Dr12L0AAAAASUVORK5CYII=" "187" "132" >}}
 
-{{< caption-new "/uploads/2014/04/041114_1445_Automatical2.png" "Results after a new crawl" >}}
+{{< caption-new "/uploads/2014/04/041114_1445_Automatical2.png" "Results after a new crawl"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeElEQVR4nHWO2wrDMAxD8/9/ucHK1tR1c8eR447A2PZSobcjIblciuYI8hoYYQdvmoKmAFpHa662NrF/4dhx0MzFifv2HK06AGZ2XshxCLIustzlcTPgNPu3u+p92keMc5WpkwcTmEarPyy9a8kjp/moZC1piHzxGxlVzACk2x7PAAAAAElFTkSuQmCC" "199" "149" >}}
 
 ## Download
 

@@ -119,13 +119,13 @@ These two lines ensure that the group display template will be called, the group
 
 The result of the template should look like this:
 
-{{< caption-new "/uploads/2014/08/080414_1128_HowtoaddAng1.png" "AngularJS search results " >}}
+{{< caption-new "/uploads/2014/08/080414_1128_HowtoaddAng1.png" "AngularJS search results "  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAgklEQVR4nGWMQQ7CMBAD+/+fgiik2d1sm9gOaoETPowsjTRLKeWxrrf73czm35bRe0YcmehdhDA0usivZnNsL/qG7QnbUAu8avSf3hNemYEwZmPmlESKmNLC44AbW3zI8LMXjuYCFu6N4XBDLQxjmDDm1JSueAa8Ivxyfn6rJ72KfAOfDsxH4YTdhAAAAABJRU5ErkJggg==" "428" "289" >}}
 
 ## Hiding the template
 
 When you are loading the page, you will see the following output until the dataset is binded to the template.
 
-{{< caption-new "/uploads/2014/08/080414_1128_HowtoaddAng2.png" "AngularJS Template" >}}
+{{< caption-new "/uploads/2014/08/080414_1128_HowtoaddAng2.png" "AngularJS Template"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAATUlEQVR4nH3MYQqAIAxAYe9/xUIqwWAjwyWkbm7RBXz/v+dsmjMzKcQJhe4WgzzEOXU4pRRVdabKF9bgW9xev7R4cIK6rx1Bx/j1ZP4BRR90gW9gxCcAAAAASUVORK5CYII=" "141" "56" >}}
 
 This is because everything is loaded async. To solve this issue, you could hide the controller by adding "display:none" as style attribute, and show it once Angular is loaded.
 

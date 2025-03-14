@@ -60,19 +60,19 @@ In this piece of HTML code, you'll find two links that trigger the sorting once 
 
 > **Important**: sorting could only work if you set the query builder to build the query in advanced mode. Once in advanced mode, the sorting tab becomes available. If you'll use the predefined queries, the sorting won't do anything to the set of results.
 
-{{< caption-new "/uploads/2014/06/060514_1439_Howtoaddsor1.png" "Sorting tab in advanced mode" >}}
+{{< caption-new "/uploads/2014/06/060514_1439_Howtoaddsor1.png" "Sorting tab in advanced mode"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOklEQVR4nB3BQQ6AIAwEQP7/UQ8kFGOX1N1Sjc40O69hBnfNSSzqU1XPr4U2JUbQjMBNZqYAP/rq4wUFkznz46Rp0AAAAABJRU5ErkJggg==" "621" "113" >}}
 
 This is the result if you added this to your control template:
 
-{{< caption-new "/uploads/2014/06/060514_1439_Howtoaddsor2.png" "Default set of results" >}}
+{{< caption-new "/uploads/2014/06/060514_1439_Howtoaddsor2.png" "Default set of results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAXCAIAAAC9GEmvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABgUlEQVR4nFWSyY6DMBBE8///l8skFxKTAF7a+9LeRmYgypQsZKup6n6Gy7q8CSHTNN1vN0LIRmn/0oUzer/fp+kxTdPt9nO9XnvvrbWj/H2otSLmf+7WWqvj0Xof61Qp5XB/q5SCiCklAGitXUJISkDO+Hmj7aq1DreW6vmYrQm1NIwlx/KvN2Z0xq9P2GZYHmIlsA+Ih7v37r1njFJKAQTn3FrLhUgpnZOfYP2zOXWJMTDtiUTm8kOkh0hPkTyO5MNtjJnfy7pSyjjlQJkAqQ6wEVkrpjhWjJhSzrnkAT/KGdFF1LG5VB02FasORYaCdcwxykKZmZkNzCrdG+ybmxc3YPwBlkLgjILgErhW0mhtrVZKjvDzE/RWB1erre6xx+Q+eC0NrE5Sp6gTi4PNZjyudoRbY17za1nWbd0GHBMAwDk/wVrNJQ+ekkstH/3dWrTKOYnBopXJQqzlq3cpRUuzEEoXThexEOZdcM7lPP6qHSylwSGlMVprHULQWuNe/gWQeplIYOxG9wAAAABJRU5ErkJggg==" "210" "487" >}}
 
 ### Results in ascending order
 
-{{< caption-new "/uploads/2014/06/060514_1439_Howtoaddsor3.png" "Results in ascending order" >}}
+{{< caption-new "/uploads/2014/06/060514_1439_Howtoaddsor3.png" "Results in ascending order"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAIAAACgHXkXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABEUlEQVR4nFVQCW7EIAzk/0/cqNtVj80BSTiDDdhUJNk2HRnJ0uDxeMTj8f52v3dd191uMUKtlZnrCwIBYowpJWttKeWXOCDa973jo7hNE1HaIRAwp7TzpyZfaSXnaQ1QqkdyUDzS3+ZaRcp5mvWglmkxcrHTYtIhdu5mRkRAxCaW2yulEBdiZhZbjN/L9rVso4Few2Di5HCwqTcYkAQzO6ONXp1zwTvv/en0EEdEA+wSN2tIFshAWUNeQ46ZRErps5cfg3oqPcz6KfVsN49kY4FMgojamaXs1frLXVXEGFWv1WDm0a7SIWAbeIXYrHnvrDN+9+XDf2sAACFBSNHjNa+TzjnLQY29lOPinXPOX1P7AXri0QdYjyp4AAAAAElFTkSuQmCC" "292" "477" >}}
 
 ### Results in descending order
 
-{{< caption-new "/uploads/2014/06/060514_1439_Howtoaddsor4.png" "Results in descending order" >}}
+{{< caption-new "/uploads/2014/06/060514_1439_Howtoaddsor4.png" "Results in descending order"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAATCAIAAAAmiQu5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABLUlEQVR4nF2R23LDIAxE/f9/2Dx00mTsGBtzMRgJIUTH7iVx9knDgdXO0vV9vyzL0PejGreU2lmdUup2v1+vn5fLx9ft3loTkSf+n0SkvoB2nBxY2k5EmvzdqzUf6hAzArw9EhE61C3azKPBVDAViETIKVCG8mtOlM3k+tuklVG91pObHxY3kh0f0SjnBBsgIGImpELP5IgYPUabo8vRYvI5WAwO3LxtIXeFaJnNo1ezWqaHNtoa7QgZExXi3bzWylxKKcyFmWvlpzkAeL3ZMf6kfS+11uqtm9RsjPHeh3UNIZxKPWoSLrXWU6k7Tik5HebB6cFbHasI88vu1toWw+68+hh2xRifmJlLZs5MuA/v5gCgRzsNyzSYvU5AzPlkDgDruoYYUkpbSvDygd+3ZyiPY3AOSgAAAABJRU5ErkJggg==" "259" "480" >}}
 
 ## Download
 

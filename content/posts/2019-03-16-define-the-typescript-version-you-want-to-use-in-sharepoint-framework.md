@@ -37,6 +37,6 @@ Once all the dependencies are installed. You need to update the&nbsp;**extends**
 
 Once you have done this, you are good to go. You can see if it worked by running a gulp build / bundle / ... task in your project.
 
-{{< caption-new "/uploads/2019/03/Screenshot-2019-03-16-09.39.50-1024x590.png" "SPFx build engine running with TS version 3.3" >}}
+{{< caption-new "/uploads/2019/03/Screenshot-2019-03-16-09.39.50-1024x590.png" "SPFx build engine running with TS version 3.3"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqUlEQVR4nD3M0W6DIACFYd7//cwiyVRwgNWqVFsroP6NZtt/c26+HJFlGXkukVKilcbUFmcaxt7jB8+6BLa0I5xzWGtRStP1d0JMhLixXpsIayLFHWGM4cRa1xRFQTeN3J4D42vm9V4IIbCd0P5DTfkL+/mBn57EkDj2gzNhrMU1DbquKauK9jEwzBPLGq+3GDY4QDQyp1MlrfrG5F90VYH/0by79nr66wN5AOK9cAIa2QAAAABJRU5ErkJggg==" "1024" "590" >}}
 
 > **Info**: Marc D Anderson has written an article about his experience of updating a SPFx project to TypeScript 3.3. Read more about it here:&nbsp;[Common issues in SPFx 1.8.0 with TypeScript 3.3](https://sympmarc.com/2019/03/15/common-issues-in-spfx-1-8-0-with-typescript-3-3/).

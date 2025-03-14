@@ -90,7 +90,7 @@ EnsureScriptFunc("script3.js", null, function() {
 
 When you add this to your display template and refresh the page, it returns the following log messages:
 
-{{< caption-new "/uploads/2015/01/011215_1032_Correctlyin4.png" "Scripts loaded in correct order" >}}
+{{< caption-new "/uploads/2015/01/011215_1032_Correctlyin4.png" "Scripts loaded in correct order"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeklEQVR4nC3LUQ6EIAwAUe9/RxGKVretVVnUuI1oSHZ+X6Yxs6EfdFZVhRjv8u8pT7nvxsxc62j6EFHbum1bVRddViY+zrMyAMwiwhICHPuRc877nlK6rqsx+/nOC9W8ByZCHMdxghC29K13jFGEmaXvsfKAiNi5TlVffpGLKoWppZ8AAAAASUVORK5CYII=" "264" "135" >}}
 
 In this example I included three JavaScript files when you only need to add one reference like jQuery, for example, you do not have to add a dependency. You only need to register the reference to the jQuery script and the ensure script function.
 
@@ -100,7 +100,7 @@ When you are going to refresh your results (which can happen on a search query, 
 
 In the EnsureScriptFunc there are some checks in place to see if the script is loaded. The first time the function gets called, the script3.js reference is not yet loaded for the script on demand (SOD). You can check this in the SOD variable when the EnsureScriptFunc gets called:
 
-{{< caption-new "/uploads/2015/01/sod-not-loaded.png" "Script missing state" >}}
+{{< caption-new "/uploads/2015/01/sod-not-loaded.png" "Script missing state"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGHRFWHRTb2Z0d2FyZQBwYWludC5uZXQgNC4wLjVlhTJlAAAAmUlEQVR4nGXE3Q6CIBgAUN7/zeqiuXI2c4SYP4iAC0j5kJ/WdefioNut7LpuXbRZjRICAI4Q/HGEGLXWqG0pOGfq/t1QMFuOMceUQ8gpAQCilLp9s928D1xL6a0N1hy/7b5tiODnbj4pp/zHe0CkpVJaPvORyX4Qr4EPkxiZGpma5hXVDblj96jxqWDn63KpVFHrErsSu4r4L5Ycp5MusmcAAAAAAElFTkSuQmCC" "398" "258" >}}
 
 In the screenshot above you can see that the script has a state equal to 1 which corresponds to a missing state:
 
@@ -117,7 +117,7 @@ When the script reference is missing, the code will retrieve this script and onc
 
 Now when you are going to refine, sort, or do a new search query, your results will get refreshed and the templates will get loaded again. When the EnsureScriptFunc function gets called, the SOD variable will now have the following state:
 
-{{< caption-new "/uploads/2015/01/sod-loaded.png" "Script loaded state" >}}
+{{< caption-new "/uploads/2015/01/sod-loaded.png" "Script loaded state"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGHRFWHRTb2Z0d2FyZQBwYWludC5uZXQgNC4wLjVlhTJlAAAAlUlEQVR4nDXI6w6CIBiAYe7/5szmXNo0gQ8ceIijhJC21Xr2/npReSnxgJVUdtVW6/0vhMAYQ4QQ77yRXsD88uH8yznHGBGhNGybKVo7yN/+9s57SikhPGCvtRVScVhH5hbpF7k9Z6+WlHb0wDCCqeu2aqC4dlVDCddMeibcajK6dxTz1GJ3600PYeCRygOmE6aTiOMDMgenLpNgs/4AAAAASUVORK5CYII=" "426" "258" >}}
 
 As you can see the script reference is not missing anymore because it is already loaded. This is very normal because there was not a page refresh, so the script is still available from the first result rendering. That is also why the **Script3** function will not get executed.
 
@@ -190,17 +190,17 @@ AddPostRenderCallback(ctx, function () {
 
 Now when I configure a Content Search Web Part in combination with this template, this is what the results are in my developer tools console:
 
-{{< caption-new "/uploads/2015/01/011215_1032_Correctlyin1.png" "Async script loading - incorrect" >}}
+{{< caption-new "/uploads/2015/01/011215_1032_Correctlyin1.png" "Async script loading - incorrect"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAlklEQVR4nBXJ2w6DIAwAUP7/18yS3XGLESY6oS2Ie1KrdfG8HsXMrWsRiYis/TDzvotsBxFRyzy7xiFgJDK14YV3OVoOm1rW1TrnkXoA41zMGWKCmPoQ0jCoxVrUeqzqXBt6vUdjUZdYlqFpcgC1FsWk7+l6+ulbflyG53kqtVSVeC8Aipl98IEACb++hwhEhIi+6xLSH8oypXrSgurFAAAAAElFTkSuQmCC" "259" "152" >}}
 
 The first time I load my page script2.js was loaded before script1.js. That is why I received the error that **Script1** is not defined. If I refresh my page again this is what I get:
 
-{{< caption-new "/uploads/2015/01/011215_1032_Correctlyin2.png" "Async script loading - incorrect" >}}
+{{< caption-new "/uploads/2015/01/011215_1032_Correctlyin2.png" "Async script loading - incorrect"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAhUlEQVR4nC3CWQ7CIBQAQO5/NH6aiDFxgZTlPWgBq9SlaVmMxsmQbVvBmOk6hRC10jmX8p3LD9lyFlL6GAcfLlyU2mr7L7WS1Xt75glgAnRcJOdCL4NUI+IjJVIoXdju3tHngc2su7Fu3bN2PNVxbN6T5fXWShqrEU3fC0BtAQYEI0S07gNXfYncDoBhJQAAAABJRU5ErkJggg==" "265" "133" >}}
 
 Now the third script is loaded first. So the $include functions do exactly what they are supposed to do, they load the scripts onto your page async.
 
 The correct result should have been like this:
 
-{{< caption-new "/uploads/2015/01/011215_1032_Correctlyin3.png" "Async script loading - correct" >}}
+{{< caption-new "/uploads/2015/01/011215_1032_Correctlyin3.png" "Async script loading - correct"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeklEQVR4nC3LUQ6EIAwAUe9/RxGKVretVVnUuI1oSHZ+X6Yxs6EfdFZVhRjv8u8pT7nvxsxc62j6EFHbum1bVRddViY+zrMyAMwiwhICHPuRc877nlK6rqsx+/nOC9W8ByZCHMdxghC29K13jFGEmaXvsfKAiNi5TlVffpGLKoWppZ8AAAAASUVORK5CYII=" "264" "135" >}}
 
 When using the $includeScript function the code gets executed from the moment the file is loaded. This is normal behaviour of course, but you have no control when it gets executed, or in which order it gets executed because it is asynchronous.
 

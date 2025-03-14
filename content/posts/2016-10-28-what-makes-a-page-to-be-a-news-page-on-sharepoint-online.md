@@ -17,7 +17,7 @@ comments: true
 
 Yesterday our tenant got the new team news functionality. This functionality allows you to write news in your team site which gets published on the homepage or via the new news headlines web part.
 
-{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap1.png" "Team news functionality" >}}
+{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap1.png" "Team news functionality"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAsElEQVR4nCXLy27DMAxEUX1wPrWroosCRZPsbAQSRYkPkaYcB04uznImfV0u2tpxHM85n/v+sc952vcE16sRuYgxf7gI10qIjJgsQlUjYr6LOUXV3EUkzFLNeV0WAGDqqooV/n5/Wus5Z3dPRNQQ+Z2KkNqDXZhrrWaWxhiiyszEPESA7fsh544oIhKUUkomIupdRLDhui69dwA437XkCjDGUFV3L6X83+69d0Tctu0FHxrjMqPEd3kAAAAASUVORK5CYII=" "624" "485" >}}
 
 > **Info**: SharePoint Online "team news" begins roll out to Office 365 First Release customers - [https://techcommunity.microsoft.com/t5/SharePoint-Blog/SharePoint-Online-team-news-begins-roll-out-to-Office-365-First/ba-p/22763](https://techcommunity.microsoft.com/t5/SharePoint-Blog/SharePoint-Online-team-news-begins-roll-out-to-Office-365-First/ba-p/22763)
 
@@ -27,11 +27,11 @@ As I started testing out the news page functionality. I questioned myself how th
 
 Both pages also look the same:
 
-{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap2.png" "News page and site page layout" >}}
+{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap2.png" "News page and site page layout"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAABnWAAAZ1gEY0crtAAAAdElEQVR4nE3ISw6DIBAAUM7v+ZqwsIkVCDKEz0xAEIumCW76lo+9pilt2937fZ5Xa1dr/Th6rd9S2r4zY4xS6j3PnPPPsoh1lUJYgOi9d44hYggBAKSUWmuw1jkXY0REImJ+iMNTODzDSil5SCkRUc65/vkBuEOLGlwlTiIAAAAASUVORK5CYII=" "624" "331" >}}
 
 So, as they look and feel the same, where is the difference? You would think metadata, and this in fact true, but you cannot see it from the UI. If you would check the properties from the UI, you will only see its Title and Name. Now, when you open the content type of the page which is **Site Page** (also for the news pages). You will see the following metadata fields:
 
-{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap3.png" "Site page content type" >}}
+{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap3.png" "Site page content type"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAABnWAAAZ1gEY0crtAAAASElEQVR4nCXMSQ7AMAgEQf//rZG8ABNjEBMp7nt1A8C/qoqIqiLp7hH5nmyqCiAzSc45RYSkimB7R7be+xjjorXWnZnZ9vNYfPUFV3KWW47bAAAAAElFTkSuQmCC" "624" "210" >}}
 
 Here you find the answer. There are a couple of metadata fields which are hidden from the UI like **Promoted State** and **First Published Date**. When you check the contents of the ASPX page. You will see a couple of differences between the two types of pages.
 
@@ -82,7 +82,7 @@ A site page does not contain the FirstPublishDate element and the PromotedState 
 
 As it turns out, the **PromotedState** value needs to be set to **2** to display it via the news headlines web part. When you change the number of the site page content, it will be displayed in the news headlines web part:
 
-{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap4.png" "Promoting a site page to a news page" >}}
+{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap4.png" "Promoting a site page to a news page"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAgklEQVR4nB3MQQ5CIQxFUfa/PhMHDhwZjVKK5bUV+gnmc8Y3N6mqm0XEcRxzzt47gDHGWmuOkZjo9XwyM4Az3SJibamJ1FqxqSoUVMjMpElEJHM3MwCtNTP/Vr7friJCRL33VHImym1TQOz3wFAFM7t7KvlT6LypWXdn+OUNVYic8z+lsauYUaw5wAAAAABJRU5ErkJggg==" "624" "371" >}}
 
 In the screenshot, you can see that my site page article now gets displayed, but something seems to be wrong with the date. This is where the **FirstPublishDate** fits in. When you add this to the content of the site page and refresh the homepage.
 
@@ -92,6 +92,6 @@ In the screenshot, you can see that my site page article now gets displayed, but
 
 You will see a similar output:
 
-{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap5.png" "Added the publish date" >}}
+{{< caption-new "/uploads/2016/10/102816_1451_Whatmakesap5.png" "Added the publish date"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAh0lEQVR4nCXMOw7CMBBFUe9/dXQ0SDQUIfbY5M3PniQyIpz2SjepqqlGxL7v53mOMUTkOI455zlG+tT6XpY1ZwCq6pd/nnMmBj6tARCR38lszSszA4iI5O5mJiLMbGbYtufjDoCIeu+pUiEqfBFh9f7iUNXWmpmlWjJRsUt3h/ltYREFtoj4ApKCq2gQ6CsOAAAAAElFTkSuQmCC" "624" "369" >}}
 
 I hope this gave you some insights into how the new news page functionality works behind the scenes.

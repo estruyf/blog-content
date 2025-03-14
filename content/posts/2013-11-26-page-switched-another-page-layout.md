@@ -28,11 +28,11 @@ The solution I tried, which also worked, was detaching the page layout from the 
 
 You can easily test this by opening your site in the good "old" SharePoint Designer, navigate to the library, and right click on the page that's causing the problem. There you'll find the option to detach the page layout: **Detach from Page Layout**.
 
-{{< caption-new "/uploads/2013/11/112613_1245_ThePageCann1.png" "Detach from Page Layout" >}}
+{{< caption-new "/uploads/2013/11/112613_1245_ThePageCann1.png" "Detach from Page Layout"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAASCAIAAADt1dgcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABW0lEQVR4nG2Q2WodMRBE5/9/yw4xJE+B2PgGYs+dRUtrbS0jjUYao5vYfvGBLhqKLooeXp6Jd0FKabQ5P2hd9lKGK2PaISOEcw4grLW13szzPI5j+HkZf/zl356m+8fp7vf1/ml6+EO/X8gvGh9pGAQbZyYvE2OYuMvURqIjtRuEg2EaEEY0ksxzDH4LfotdvcOcUq11YFyh81obbYxSWkiplOIgfIjdDt6XUnLOe95z3mPc9typtfVqtz0752KMvuNCCCml/83nlSJaRqmUal1WSmnwobXW/l0vK0Fr+1usFUJQSgGAUaa1KeUYKJfOB0SsrdXaap++tNaOowyEK+c9ANTWzrN1eaeHKzYarTiHo9ZP58MW9Gq0klJ57xHRGFtKucW0UsowL6uUgjMGAGhRK73v5fN6WnpzQoix+EU4APfeUcLSlr+wX6YFQEzXaXx9NdbmnNM7McY34YcAgvfHmKwAAAAASUVORK5CYII=" "210" "378" >}}
 
 After that the option will be switched to **Reattach to Page Layout**:
 
-{{< caption-new "/uploads/2013/11/112613_1245_ThePageCann2.png" "Reattach from Page Layout" >}}
+{{< caption-new "/uploads/2013/11/112613_1245_ThePageCann2.png" "Reattach from Page Layout"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAVCAIAAADw0OikAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABf0lEQVR4nG2R227bMAyG9f5Ptrs124qiRZImWWKbEqkTJdmxZWlQEhTttg+6Eg//T1Lsn/sQIhEZbWot9SviLNEFhkECSGOMcy6vpZSWWGoVA5w8e42oUcmhZ2e/VG97/drZp1338x02u+7H+7AFtwV/svPJzmKH4fliv70cN0f162y+74enPWwO6g2vbziJRW+DM0Pf52VZ17W0V0rOZV1bcym1dl4CEJFCBAClcOh7bZoJUWtNKUmQXdeFEGqtpRlvTNMk2PM8zzHGGEJKMaY0juOYxnmey6M6RqWUJq1JyztKrbcWwvkGInrnlVSIyByu1+u9v/h97rxzSrZqKeWl64go3SilCCTtnUMk9szMRKRJE2ltTM5ZAJoYI3v+6xiPpQ6AzG3unNse2lTN1ON0IoQwjVMIYV3b1z38gYD+4p0zTcvgbWtpHD/yxOl8cdYiotZ6WZZpmnLOn7UVMx8PB+vcf6yBImctSMkh5pz/0ZbKeyZCGCDGWEpZP/EHJKVXbsPTfkIAAAAASUVORK5CYII=" "205" "424" >}}
 
 In my case I had to do this on a lot of sites and pages. So I created a PowerShell script for it to fix it.
 

@@ -20,7 +20,7 @@ Azure Static Web Apps offer several plans, including a free plan and a standard 
 
 {{< blockquote type="info" text="You can find more details about these quotas here: [Quotas in Azure Static Web Apps](https://learn.microsoft.com/en-us/azure/static-web-apps/quotas)" >}}
 
-{{< caption-new "/uploads/2025/03/swa-storage-limits.webp" "Static Web Apps - Plans" >}}
+{{< caption-new "/uploads/2025/03/swa-storage-limits.webp" "Static Web Apps - Plans"  "data:image/jpeg;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAACQAACAAAQUxQSDAAAAABL6CgjRQ29wMQhZYVEfFu1kBRI0nKgoW1sH9SAKeA/Os5BxH9D8tM3u89/a21lgBWUDggRAAAALABAJ0BKgoACQABQCYlpAAC7JILfQAA/vtk43U/NR+r5aMW5+HW+qa/5XSJu+7UwqOALZ/oMgSCDkaMo33u57KcAAAA" "855" "791" >}}
 
 If you're wondering how to check the storage usage of your Azure Static Web App, I recently discovered a way while exploring the Azure Portal.
 
@@ -35,6 +35,6 @@ Instead of estimating storage usage from your local build output, you can check 
 
 This page provides various details about your Static Web App, including a **Storage Usage** section that displays the current storage consumption.
 
-{{< caption-new "/uploads/2025/03/swa-storage-usage.webp" "Static Web App - Storage Usage" >}}
+{{< caption-new "/uploads/2025/03/swa-storage-usage.webp" "Static Web App - Storage Usage"  "data:image/jpeg;base64,UklGRpAAAABXRUJQVlA4WAoAAAAQAAAACQAABwAAQUxQSCwAAAABL6CQbQTI32oQw7lHIyLiPBYG2jbZHaDhwcGDASzgXxAOIvofk+QE1KNtL1ZQOCA+AAAAsAEAnQEqCgAIAAFAJiWkAALqd0UdgAD+/KToa9Xt9FOlcjd4dN/q1pcHMMLExngRwOlNWPw7+H9BCJogUAA=" "1328" "1003" >}}
 
 I hope this helps you better understand and monitor the storage usage of your Azure Static Web App.

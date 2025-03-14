@@ -87,7 +87,7 @@ _
 
 After a page refresh you see the value appear:
 
-{{< caption-new "/uploads/2014/02/022514_2034_Clientsidem1.png" "Client side value rendering" >}}
+{{< caption-new "/uploads/2014/02/022514_2034_Clientsidem1.png" "Client side value rendering"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOklEQVR4nB3BwQkAMQgEwPTfoogsCi740AJOEriZk5mqamYkRaS7773fb3dPVbk7AJIRQXJmSAKoqgenYDbxiBVefQAAAABJRU5ErkJggg==" "160" "35" >}}
 
 The ASPX code looks like this:
 
@@ -141,7 +141,7 @@ The ASPX code for this block looks like this:
 
 The output is just the same as the previous one:
 
-{{< caption-new "/uploads/2014/02/022514_2034_Clientsidem2.png" "Client side value rendering" >}}
+{{< caption-new "/uploads/2014/02/022514_2034_Clientsidem2.png" "Client side value rendering"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOUlEQVR4nAXBiRGAMAwDsO6/JLk8PselZYQgLVSGR3iKNDN2d8vs0dbMLJJAZaa0gSJ57yfJPd5zfo9vNl+6HKAaAAAAAElFTkSuQmCC" "158" "32" >}}
 
 ## Overwrite the property mapping
 

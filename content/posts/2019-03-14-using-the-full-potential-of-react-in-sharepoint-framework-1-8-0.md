@@ -46,13 +46,13 @@ Once you installed these dependencies, you need to update the **extends** proper
 
 When running the build process, you can now see that it is using version 3.2.4 of TypeScript.
 
-{{< caption-new "/uploads/2019/03/Screenshot-2019-03-14-21.17.33.png" "SPFx build process using TypeScript version 3.2.4" >}}
+{{< caption-new "/uploads/2019/03/Screenshot-2019-03-14-21.17.33.png" "SPFx build process using TypeScript version 3.2.4"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAACXBIWXMAABYlAAAWJQFJUiTwAAAArUlEQVR4nDXKWU7DMAAA0dz/doiqCBLAplm8NFtJjNcOChUjzd+rmqbhuK5r+q7HqpHJLGzLzrbuxJ9MToXKWotSCikl6mrZo8fliEsRFwMxJEq+U2lt0FohhEAKSbdeGbaZ6fvG7j3BB1IsVMYYtHrALyHp1xHrbsxuwzlHipmj6kCDGrh0LRcpGUbLOE94F8i5UEp5QPN6RtUvtOcT7fMT5uON+fOdOC9/4L9f4NbjA09GDTYAAAAASUVORK5CYII=" "1018" "628" >}}
 
 Once these changes are in place, you will be able to use the full potential of React version 16.7. Here is an example of the React.lazy functionality:  
 
 {{< gist estruyf f4b3c39f2bee0c6795d7d90bcc66ef34 >}}
 
-{{< caption-new "/uploads/2019/03/Screenshot-2019-03-14-21.27.08.png" "Lazy loading component" >}}
+{{< caption-new "/uploads/2019/03/Screenshot-2019-03-14-21.27.08.png" "Lazy loading component"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAv0lEQVR4nC3LwWqDQABF0fmfimmjTmZiqqISCu3XuhEXghjxX6Ig6kJQ0RsqeXA3B57Yto1935nnmaZp6Puetm3puo5hGI7+TfDeuq4HTNPE89kwjuNhy7ywLAuiqmvquqZ8PEjTlKqqyLKMJEnI85yyLCmKAnFXCkcpQveGkhLP97FtG9M8obUmiiKU0gitvzE+LczTmQ/zC8uRBEFAEIbEcXwcPc9H/Pz+IS+Ki76i3umriyMlhmFgWTaue+MF58ufm0PHNagAAAAASUVORK5CYII=" "972" "620" >}}
 
 As you can see in this sample, the component was created in a separated bundle file and got async loaded when the web part was loaded. This is very useful in many situations and this makes the SPFx version 1.8.0 a great release.
 

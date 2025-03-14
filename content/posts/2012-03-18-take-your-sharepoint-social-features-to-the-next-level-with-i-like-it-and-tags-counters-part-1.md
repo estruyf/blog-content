@@ -26,19 +26,19 @@ But these social features are nothing compared to the social features like Faceb
 
 When you click on the **Tags and Notes** button, the following location will be opened in a dialog box: /_layouts/socialdataframe.aspx?Url=http://your_page&Title=Home&mode=0&IsDlg=1
 
-{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha1.png" "Social Data Frame" >}}
+{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha1.png" "Social Data Frame"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAp0lEQVR4nFXOTQ6CMBAF4N7TRNZE1y5c6NLEC3gBT0UUQxNJC/JTW2hLp1ND3cCXWb3Fe0Out3t6uCT703a3umR/3qRH0nTCI4Y1jEnJa9L2Apwzxi5pYwJi9sxJ3fZSSmstgJ8c+MgBhBDygpJOjjjzE3gHOPdGsbwiatTLyT/vfQjhzSrCGqEGbSbnADCmq9cyygreUdaUvOafthdCquErlTb28aI/oLDYFkNDVDoAAAAASUVORK5CYII=" "374" "314" >}}
 
 Another way to quickly check which tags have been created, is to navigate to the **Manage Social Tags and Notes** page. This page can be found here: Central Administration -> Manage service applications -> open your User Profile Service Application -> Manage Social Tags and Notes.
 
 On this page you can create your own tagging queries.
 
-{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha2.png" "Social Tag Manager" >}}
+{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha2.png" "Social Tag Manager"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAVklEQVR4nB3EAQ4EIQgEQf//2JUFRGbk9LJWOt3MTETM/TZAkEwA+NYysz9P72KqpqavuGlVnauNEXVx/cCaEQSRWFxnn+bumUlAc2kyYlQVgDnn3vsP/Rl0BjvfgtgAAAAASUVORK5CYII=" "605" "232" >}}
 
 The previous page can only be accessed when you are a SharePoint administrator.
 
 What I want to achieve with this blog post series is to create something like this:
 
-{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha3.png" "Page Tags" >}}
+{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha3.png" "Page Tags"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAASUlEQVR4nAE+AMH/ADQ7Q19whWeEl36Qm6GgnqVqWo1rYrCzs7q7vF9fXwAxNjxMWWtLZXRgb3d7e3qBUUZvV1CJi4yRkZJQUVFftRs5zH3wgwAAAABJRU5ErkJggg==" "136" "29" >}}
 
 This can be found on various platforms and allow your users to quickly see the total of tags/likes/tweets that have been made for the page.
 
@@ -50,7 +50,7 @@ The first part of this blog post series describes how you can retrieve social ta
 
 Tags can easily be retrieved by code. To do this you will need to use the SharePoint 2010 [SocialTagManger class](http://msdn.microsoft.com/en-us/library/microsoft.office.server.socialdata.socialtagmanager.aspx). This class contains a method called **GetTags** which can be used to retrieve the tags for a current page or user.
 
-{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha4.png" "Social Tag Methods" >}}
+{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha4.png" "Social Tag Methods"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZUlEQVR4nAXBTQ9AIAAA0P7/XzE3Qw42TcSmdaMPQiNcWpiz90CBsqYtGCPHIZ1bn9fez+7v7fsuKRkYRC8UH2clFNeLtpfdT2s241+v5wlAGEIY1HVKaY5xXFVJ1+W4jDknCEU//91LNehzUeMAAAAASUVORK5CYII=" "302" "78" >}}
 
 As we want to show the total number of tags and likes that are related to the page, you could only use the method with the URI as parameter.
 
@@ -103,11 +103,11 @@ You will need to add the following references:
 *   Microsoft.SharePoint.Taxonomy.
 My application output is the following:
 
-{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha5.png" "Social Tag Results" >}}
+{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha5.png" "Social Tag Results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAq0lEQVR4nB3G2wqCMBgA4L3/20SURUZEJzEhULswyMO8kbb9m/55mBss6Lv6yGJ19Pxos488P1xub+vd/XBOLmEWPt6na0SeaSz454vtrMdx7PU06GkwRhujhWAkTVPOBYAEkP9A3w/zbKy1EoAkcQwASinOedM0QghEtNY656SS5JVlqm0RUSnFGJNSIqLW2jnXdS0JgqAqS0ppVVVFnhd5Timtac0YK4viB4TEoWFT0yBLAAAAAElFTkSuQmCC" "448" "270" >}}
 
 The problem is that only the items for the **current user** can be retrieved.
 
-{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha6.png" "Social Tag Method" >}}
+{{< caption-new "/uploads/2012/03/031812_1807_TakeyourSha6.png" "Social Tag Method"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKElEQVR4nGM4c/7Sles3n718++zl2+ev3714/e7563fPXoG4z169BQCZ3RrhZb1hFwAAAABJRU5ErkJggg==" "497" "44" >}}
 
 ## Part 2
 

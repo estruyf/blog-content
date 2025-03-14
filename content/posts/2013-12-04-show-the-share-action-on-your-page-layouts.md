@@ -18,7 +18,7 @@ comments: true
 
 A question I received a couple of days ago was if it would be possible to display the share action on a page like the action in the context menu of that page.
 
-{{< caption-new "/uploads/2013/12/120413_1225_ShowtheShar1.png" "Share Action" >}}
+{{< caption-new "/uploads/2013/12/120413_1225_ShowtheShar1.png" "Share Action"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqUlEQVR4nDXM247CIBRAUf7/90zGRzOJNVWgcO5wkNbYyaz3vYOcmJmFW2v95O6qWsoWVKWULcaUc/Yx5uk9577vRBS+IfFWChExIlSgWmtK3kxEwvJ4MAKmCFv2uDrCW2VHOLzHlIOqNpEGlRAYsan0MbqP4zi+de/dzEhEzQAR/s05vfeAiCnnuCy3y6W8oqiaqpmKCAAEJooxPe/33+tPWtcKUE9/jw/k/uOqvqtysQAAAABJRU5ErkJggg==" "324" "257" >}}
 
 ## Solution
 

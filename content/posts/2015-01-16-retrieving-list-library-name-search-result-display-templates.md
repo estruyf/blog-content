@@ -52,17 +52,17 @@ So to optimize the process I included a list object in my code. All the differen
 
 Let me explain this again, but this time I do it via some screenshots to make things clear:
 
-{{< caption-new "/uploads/2015/01/011615_1224_Retrievingt1.png" "Loaded elements and REST call" >}}
+{{< caption-new "/uploads/2015/01/011615_1224_Retrievingt1.png" "Loaded elements and REST call"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAf0lEQVR4nF3L0Q6CMAyFYd7/5aBBRBMTMSTEmKllY7Kua+sFN+K5+S++nCqEQESllLCmlYiZ7WcVM4uoqLoXvhFTSjveIipPv/j4KX9vM93Y4Yyzz0Q7JpYsSkWcjw9cYspZLIuRGBWruvbcwAmaFqAH6Ov60B0v12Eabvdxcl/MjaxKNsfSsgAAAABJRU5ErkJggg==" "755" "490" >}}
 
 Here is a screenshot of what happens the first time I load my page. The display initiates a call to the REST endpoint to retrieve the library title. In this example only one library needs to be called, so only one call will be performed instead of five calls because my code checks if it is already initiated.
 
 In the HTML code you will find the following classes on the SPAN elements:
 
-{{< caption-new "/uploads/2015/01/011615_1224_Retrievingt2.png" "Listname element with list ID as class name" >}}
+{{< caption-new "/uploads/2015/01/011615_1224_Retrievingt2.png" "Listname element with list ID as class name"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAASUlEQVR4nAE+AMH/APLk7Pri5P3h4P3e4P7i5Prk5/7i4v/n5//s6/v19gDE1vXA2PTA2fK/1/bE3PzK5P7J4vzK4v3I4v7E4f+ZszXmniI6ygAAAABJRU5ErkJggg==" "612" "94" >}}
 
 When you go to the next page and back to the previous, the following HTML code is in place:
 
-{{< caption-new "/uploads/2015/01/011615_1224_Retrievingt3.png" "List name can be retrieved from object in memory, no need to do an Ajax call" >}}
+{{< caption-new "/uploads/2015/01/011615_1224_Retrievingt3.png" "List name can be retrieved from object in memory, no need to do an Ajax call"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAASUlEQVR4nAE+AMH/APLl7vvk5f7l4/7i4//m5vzo6f7m5f/s6//w7v34+ADB1PXA1/PA2PLC2PjE3PzC3/3C3vzD3/3D4f7D4v+jdzX/BIIe9wAAAABJRU5ErkJggg==" "608" "97" >}}
 
 Now the element does not contain the list ID as class name. This is because it was not necessary to do an Ajax call, the list title is retrieved from the list information object.
 
@@ -74,7 +74,7 @@ Here is the code that does all the magic:
 
 The final result looks like this:
 
-{{< caption-new "/uploads/2015/01/011615_1224_Retrievingt4.png" "Elements with corresponding library name" >}}
+{{< caption-new "/uploads/2015/01/011615_1224_Retrievingt4.png" "Elements with corresponding library name"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA/ElEQVR4nGXP0ZKDIAwFUP7/Czvt1m4tyqooBAQChLij+7jnIS+ZOzcRxz/MnFJCxFKK8HsMmWJhrBwLx9JSaZWIqLZGAnz46tWtk/eXvHWfTs690g5g20yMUZRKlVquXKgV4lw5U4uZ/orEat171A+5vMblOSz9ZN6T+czW7zsiCmbOiBkxhBBDKPlUSkZEIhKztg+pn+N6l/qttkHDU1mpvd/DeflxHCEE7z0AOAfxkq55rufVzhB/bFpcnhxiIeZG7cTMZ7e1ZtXrNE2jmowFsOAArLUpJrEav7q0+Kx9zpW48ZU8nY8h5kHN31J1/TCMats2uKLWmNbaL9IaVq7Lqj6MAAAAAElFTkSuQmCC" "289" "350" >}}
 
 ## Download
 

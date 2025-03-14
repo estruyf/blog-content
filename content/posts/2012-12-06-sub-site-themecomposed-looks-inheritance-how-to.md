@@ -25,7 +25,7 @@ Let me first start with the differences between the 2010 and 2013 theme engine.
 
 In 2010 when you uploaded a PowerPoint Theme file to the theme gallery (Site Settings > Themes), it was also available to use on all sub-sites.
 
-{{< caption-new "/uploads/2012/12/theme1.png" "SharePoint 2010 Themes are inherited" >}}
+{{< caption-new "/uploads/2012/12/theme1.png" "SharePoint 2010 Themes are inherited"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAaUlEQVR4nCXJyw7CIBBAUf7/01wY99O0aGsfKuAQCKih10QXZ3XMum2oKrVWWmvknLH2zDReGS8T87zgnMeklCil8Hp/aG0npfzLEJ7EGFGNeB8w/TDQi+DlgO1OrLc7x+6BuP3PgyyRL0L0cMNmzhimAAAAAElFTkSuQmCC" "746" "190" >}}
 
 In the new version of SharePoint there is a significant difference between the previous one. The 2013 one works with a composed looks list (more information can be found [here](https://www.eliostruyf.com/themes-and-composed-looks-in-sharepoint-2013/)). When you create your own Composed Look Items, these items are not inherited along the sub-sites. That means that you will need to re-create them on the sub-sites if you want to be able to use them.
 
@@ -38,11 +38,11 @@ Theme inheritance is very simple if you are working with publishing sites or sit
 
 In SharePoint 2010 you needed to go to the Site Theme page (Site Settings > Site Theme) to set the inheritance.
 
-{{< caption-new "/uploads/2012/12/theme2.png" "SharePoint 2010 Theme Inheritance" >}}
+{{< caption-new "/uploads/2012/12/theme2.png" "SharePoint 2010 Theme Inheritance"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAALUlEQVR4nB3DUQoAIAhEwe5/TaNgzVDw/wUNzJBEZlFZdPdvNllrIznuh4jLAwZzJbYK+GIsAAAAAElFTkSuQmCC" "755" "102" >}}
 
 In SharePoint 2013 this functionality is moved to the master page settings page (Site Settings > Master Page) under the Theme section of that page.
 
-{{< caption-new "/uploads/2012/12/theme3.png" "SharePoint 2013 Theme Inheritance" >}}
+{{< caption-new "/uploads/2012/12/theme3.png" "SharePoint 2013 Theme Inheritance"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAQElEQVR4nC2KRwrAMAzA8v+vtpAuxyM2Kh0CgQ5qa99Y+k4/haoiZiJqDHXU/O3Mol1qHDIwDx4iJjK+UX49JjdwG03l4Sh03gAAAABJRU5ErkJggg==" "548" "132" >}}
 
 ## Theme Inheritance - Non-Publishing Sites
 

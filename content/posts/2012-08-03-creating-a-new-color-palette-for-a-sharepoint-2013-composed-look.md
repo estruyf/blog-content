@@ -35,7 +35,7 @@ Now you can define your own color values in HEX for each element.
 ```
 
 
-{{< caption-new "/uploads/2012/08/withoutTransparency.png" "Without Transparency" >}}
+{{< caption-new "/uploads/2012/08/withoutTransparency.png" "Without Transparency"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAl0lEQVR4nF3IvQ7BUBxA8fsaFh0NGLwdi9DZg2ksRdgE6QeatP3f2yYu6h7pWCf5LUeJ5FyuJ6L4SlUJxpRoXXS0TzVvhy5f6PKDkQ/vVwNfcE2XSp5LjumMQzpjH005y4Kb9UntktT6JHbO3a5QoXgEyZAgHrGOx2weA3amz1a3PELd42AmKOcceS5oqSlyIcs0dfXkvx9xbLHQrre8sAAAAABJRU5ErkJggg==" "201" "106" >}}
 
 **But this is not all**. SharePoint 2013 also works with RGBA (red, green, blue, alpha transparency) background colors, and they can be defined like this:
 
@@ -46,7 +46,7 @@ Now you can define your own color values in HEX for each element.
 ```
 
 
-{{< caption-new "/uploads/2012/08/withTransparency.png" "With Transparency" >}}
+{{< caption-new "/uploads/2012/08/withTransparency.png" "With Transparency"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAhElEQVR4nGXNSw6CMBgA4V7WSOQELPCORgmrBiIPWdhfWorgA8ZEF0qc5FuPaltDlmuORY7rLNYJ1v5T03PCnHvEDFxk5H578G5eUoWPSU8RaROR1BFaYqphS9nHlNcvpV3AvtpwqEN2RUjSBGi3IvPrBTXPEyIW7wes9YhxeD9+9j+9ABELtMhoUWLJAAAAAElFTkSuQmCC" "199" "106" >}}
 
 As you can see the HEX values now contain 8 digits instead of 6. The first two will be used for the transparency value and the 6 other digits will define the color.
 

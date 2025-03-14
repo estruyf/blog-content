@@ -31,7 +31,7 @@ The function does not return anything, so what does it do exactly?
 
 The $setResultItem function stores the current result item in memory, so if you show ten items in your search center, these ten item can be found in memory. Here is an example of the object:
 
-{{< caption-new "/uploads/2014/08/082214_1311_setResultIt1.png" "Search results" >}}
+{{< caption-new "/uploads/2014/08/082214_1311_setResultIt1.png" "Search results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAV0lEQVR4nAXBiw2AIAwFQPZfTBJYwJCWJ78CFmPUAbwzIp2IAESgtRpPoJTUjqNF1WFSzpu13nvn/B526pxw5SqoeekyqhpCYCZili79HnN+Y12yzuf9flMeT4SHVUkzAAAAAElFTkSuQmCC" "921" "231" >}}
 
 The reason why each result is temporally stored in memory, is because these result objects are used to when the hover panels render. When you hover over a result item in a search center, the **Srch.U.getShowHoverPanelCallback** function gets called and initiates the hover panel to load. The hover panel is filled with search information it finds in memory of the result objects.
 

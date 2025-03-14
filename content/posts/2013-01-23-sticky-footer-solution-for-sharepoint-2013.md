@@ -35,7 +35,7 @@ If you used my solution from 2010, you will see that not much has changed.
 ```
 
 
-{{< caption-new "/uploads/2013/01/012313_1253_StickyFoote1.png" "Wrapper DIV location" >}}
+{{< caption-new "/uploads/2013/01/012313_1253_StickyFoote1.png" "Wrapper DIV location"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAJ0lEQVR4nGPQN9DS1FAxNdKwtdWxttEzMlbXN1DV0VXR1VPV0lYGAFVZBV6v5iBAAAAAAElFTkSuQmCC" "690" "77" >}}
 
 *   Go straight to the bottom of the HTML file and find the last DIV closing tag;
 *   Replace the DIV's closing tag with the following code:
@@ -53,7 +53,7 @@ If you used my solution from 2010, you will see that not much has changed.
 ```
 
 
-{{< caption-new "/uploads/2013/01/012313_1253_StickyFoote2.png" "Footer HTML location" >}}
+{{< caption-new "/uploads/2013/01/012313_1253_StickyFoote2.png" "Footer HTML location"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOElEQVR4nE3CwQ2AMAwDwM5ChYNV20XiQ/ZfjC+nG0sgZwQHTiXllA3pJOdYwrPZ7+6+o6rr+P8AN0gJ7SJFtaMAAAAASUVORK5CYII=" "1034" "211" >}}
 
 *   Save the file
 
@@ -95,9 +95,9 @@ I paced this CSS code for testing purposes in the following location: `/_layouts
 
 The result looks like this:
 
-{{< caption-new "/uploads/2013/01/012313_1253_StickyFoote3.png" "SharePoint 2013 Footer" >}}
+{{< caption-new "/uploads/2013/01/012313_1253_StickyFoote3.png" "SharePoint 2013 Footer"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAoklEQVR4nEWL2wqCQBiE9x17iiB6jG7qLuiid/Cmw1X4EJYhKUZaFu2/Se5me7D9Da1oGIZhPoaM3GToJkGWb9NbTEUMD/8svGNxYpwXd3KgxSYTM++68MFZ56tI1D8ZYwhWOgXeHc/7k2Vn4PSmbmUtIn6xVFqZigJwXshSGFlaxFfLldakLVijbbLxX817R58hyIipCNSeqZipEORnCS78DQbVo4fqu03pAAAAAElFTkSuQmCC" "703" "448" >}}
 
-{{< caption-new "/uploads/2013/01/012313_1253_StickyFoote4.png" "SharePoint 2013 Footer Scrolling" >}}
+{{< caption-new "/uploads/2013/01/012313_1253_StickyFoote4.png" "SharePoint 2013 Footer Scrolling"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAmUlEQVR4nB2N2QqDMBRE8/8fVuhDH4RK1ZaCYF3iUk00m7l3Sjpvc4bDiEens0Zd30ve6Vu9Xl5z3qp7q/vV6G0TYA6RRx0AGB8n5QEwGIBzThCRP+O0ewZrd9az9ZGI02yNEcRkQuy3JCkbm687iYkJgN53wSlwIfXdRfl/SQg4jkMUgymlfY62kraUNvscxWBLaarR583yAwikqxvWzFjAAAAAAElFTkSuQmCC" "703" "449" >}}
 
 ### JavaScript Solution
 

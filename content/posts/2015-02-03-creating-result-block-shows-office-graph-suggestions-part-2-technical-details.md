@@ -32,7 +32,7 @@ In this solution the three display templates that were created for this solution
 
 The end result of these display templates looks like this:
 
-{{< caption-new "/uploads/2015/01/office-delve-result-block2.jpg" "Office Graph result block" >}}
+{{< caption-new "/uploads/2015/01/office-delve-result-block2.jpg" "Office Graph result block"  "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQI/8QAHRAAAwACAgMAAAAAAAAAAAAAAQIDABEEIRIxYf/EABUBAQEAAAAAAAAAAAAAAAAAAAAE/8QAGxEAAgEFAAAAAAAAAAAAAAAAAAEDERMxYcH/2gAMAwEAAhEDEQA/ANJtE041VFqzJHTI2iv0ZTBXWE1NqOQoHkxGz17OMZJK3fproWD/2Q==" "958" "394" >}}
 
 ## OfficeGraph_Results.html - main template
 

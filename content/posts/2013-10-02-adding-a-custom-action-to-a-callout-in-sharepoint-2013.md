@@ -50,7 +50,7 @@ function AddCustomAction (renderCtx, calloutActionMenu) {
 
 The code above will create a "Custom action" action to the callout.
 
-{{< caption-new "/uploads/2013/10/100213_1731_Addingacust1.png" "Custom action in callout" >}}
+{{< caption-new "/uploads/2013/10/100213_1731_Addingacust1.png" "Custom action in callout"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAUUlEQVR4nAXBQQoAIQgAwP7/ySjokEqbqWkQtDNp7xhjqKqp3Xvfe+6+FqusiEhQci611tpaQ0QAmN9QnqFy3NOas/eOAIRkauccZiYiJBKRH2TIVGjhOqtiAAAAAElFTkSuQmCC" "890" "264" >}}
 
 As you can see the problem is that you lose the other actions, because the default footer was overridden.
 
@@ -80,7 +80,7 @@ function AddCustomAction (renderCtx, calloutActionMenu) {
 
 > **Note**: Line 10 needs to be changed in order to make it work on other list / library templates.
 
-{{< caption-new "/uploads/2013/10/100213_1731_Addingacust2.png" "Default actions added to the callout" >}}
+{{< caption-new "/uploads/2013/10/100213_1731_Addingacust2.png" "Default actions added to the callout"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAT0lEQVR4nB3BSRKAIAwEQP7/TZRFCichJAIXLO12ag+A/ltr7b3NjIHe2prTFe+9P2IIOWcARNSYlWmIzDFcjfEMn5QSEakqgKuUet8i8gJov1RTvlY2awAAAABJRU5ErkJggg==" "873" "291" >}}
 
 ## Why is my follow action gone?
 
@@ -114,6 +114,6 @@ function AddCustomAction (renderCtx, calloutActionMenu) {
 }
 ```
 
-{{< caption-new "/uploads/2013/10/100213_1731_Addingacust3.png" "Custom action + Default actions + Follow action" >}}
+{{< caption-new "/uploads/2013/10/100213_1731_Addingacust3.png" "Custom action + Default actions + Follow action"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAUUlEQVR4nB3MWRaAIAgAQO9/TUM0twBXfuzVHGDMmKvW2loTEVU954zRqRZh0r1NcmAv8N7HGImImYW50zOFdS2TEe0FDgAR/0ZyTiHcpXzlC2yyVFm4+FjmAAAAAElFTkSuQmCC" "879" "293" >}}
 
 As you can see it's possible to add your custom actions, but it involves a bit of extra coding.

@@ -83,7 +83,7 @@ Here is my code which you can add in a script editor web part on the search page
 
 The code gives you the following output:
 
-{{< caption-new "/uploads/2014/10/100114_1407_Officegraph1.png" "Code output" >}}
+{{< caption-new "/uploads/2014/10/100114_1407_Officegraph1.png" "Code output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAALUlEQVR4nGXBgQ0AMAgCsP3/rnGAELMD1p7uripJJCUBmJndTWL7ABdAPrZJPhAaOoPbPKoaAAAAAElFTkSuQmCC" "532" "87" >}}
 
 > **Note**: you can add the code in a script editor web part that you can place above the search box web part.
 _
@@ -92,8 +92,8 @@ The textbox can be used to include the actor ID. If you leave it empty, it uses 
 
 ## Results
 
-{{< caption-new "/uploads/2014/10/100114_1407_Officegraph2.png" "Default Office Graph query: ACTOR(ME)" >}}
+{{< caption-new "/uploads/2014/10/100114_1407_Officegraph2.png" "Default Office Graph query: ACTOR(ME)"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA+klEQVR4nC2O2VIFIQxE+f9vtNTSWRmWkEASGOBao/bTeenTbQIkF0DbLbVp66w1Ue7zdY+prZuIBagAMRD/ccpcpEkbyGqICCmXkoV5/KX3OefrN2bf7efuQwBMiAmJSESJCABaa+Z023J8WL8FvBxYl6xHSwVVdc5pIKUt4hkJiFj4WVEWEWZ+2i5e6/ltw7lfq3X74TYbjsNtMcZaq4kiV8lRSht6j9qGPjDr/7UjwuL86kPAlAtiTlQwFxKRR279eUWbhYiJGFkzMqhKq22Mbpy3X84t7lp9WJxPGahgrY98edtMFoTsU4nEKeUIOdy933efr3m+nz8MM1X+bulOeAAAAABJRU5ErkJggg==" "402" "466" >}}
 
-{{< caption-new "/uploads/2014/10/100114_1407_Officegraph3.png" "Office Graph query: ACTOR(ME, action:1020)" >}}
+{{< caption-new "/uploads/2014/10/100114_1407_Officegraph3.png" "Office Graph query: ACTOR(ME, action:1020)"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAIAAACExCpEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAxklEQVR4nB3MSU7EMBAAQP//e1zmBBIDk1HipVfb7XYcFOoBFQpyRrZ5srY9FWBlbX5e5qvZCECCLIUYRUkqayOp1dzmquaBmAGJmWvVOf2ct7XW9S/Eqi+iQ7i6dq9taB1i3q7rWusKW4yvY3+nlBFYAO8LRFj1zkLK+4GJmoAyVG6jckf3cc7TuoUC6TfnLaV3KVtOyKX3Pn368M+Pr3CkY4fMWrQRK6CUMYZ1I+TvxzMA54h7oQiSM8VC0YZZt5zK8/HzB724AON95O6EAAAAAElFTkSuQmCC" "413" "367" >}}
 
 > **Important**: refiners are not working, no refinement data gets returned.

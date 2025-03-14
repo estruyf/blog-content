@@ -198,11 +198,11 @@ The list HTML looks like this:
 
 **Note 2**: I made the code as generic as possible so that this can be used by multiple CSWP on the same page.
 
-{{< caption-new "/uploads/2013/07/073113_1906_CreateaLoad1.png" "First Result Set" >}}
+{{< caption-new "/uploads/2013/07/073113_1906_CreateaLoad1.png" "First Result Set"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAX0lEQVR4nDWKwQnDUAxD//7QFdoJShfoQDn0kNiSE4j8HRyoEDq8p0GHbBVcvslNsKRnYOqsqkFHwkS/3dYntuumRgCNYLkzgwrmHiKaHDHW72d5PX7vZxJVVXP2/nMB5a1ydg1UaJUAAAAASUVORK5CYII=" "359" "153" >}}
 
-{{< caption-new "/uploads/2013/07/073113_1906_CreateaLoad2.png" "Extra results loaded" >}}
+{{< caption-new "/uploads/2013/07/073113_1906_CreateaLoad2.png" "Extra results loaded"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAlklEQVR4nD2OOxLCMAxEff+aK9BR0tBxDiooYKAhsfWxnawkxmFA1Y72SbuJ5oz8Rp7WPKHMKPMQQuEeEUlFTQhCpgxlE/Klh5tjDfckJMYFXDAgBtPQylbFDUm/NmUw2WaPB+vigANJtfnSrNZBDGg7bdVUrLekz3u7Xvrj5r1bb9brSP1Nyufja797nw7/VYSP2lvzD9xKyc1QoUxLAAAAAElFTkSuQmCC" "379" "256" >}}
 
-{{< caption-new "/uploads/2013/07/073113_1906_CreateaLoad3.png" "Two web parts with a Show More Results link" >}}
+{{< caption-new "/uploads/2013/07/073113_1906_CreateaLoad3.png" "Two web parts with a Show More Results link"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAXklEQVR4nDWMOQ6AMBAD8/8nUVBR8AcaaqQoBwTWyR4oEViuPLZdCb4BNgTUkhPTIyCpMFUnVzLVDxNa9Hym7rtohRNQJ6PR/JHWmXPoiUhfx2WiffsaKspN/zMzewE5onRlcxW86gAAAABJRU5ErkJggg==" "630" "247" >}}
 
 ## Download
 

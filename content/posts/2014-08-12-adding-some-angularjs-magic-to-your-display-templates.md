@@ -41,9 +41,9 @@ The ngRepeat directive needs to be updated with a filter property:
 
 This results in the following output:
 
-{{< caption-new "/uploads/2014/08/081214_0640_AddingsomeA1.png" "Template with a searchbox" >}}
+{{< caption-new "/uploads/2014/08/081214_0640_AddingsomeA1.png" "Template with a searchbox"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeUlEQVR4nEWMjQ4DIQiDff9Xvbts0uJNBV3Q/XwhBChtEpHrPI/zUNUZjF+bc6Zaayl37908+Jy/JAhbfjRIQ+4UVxqyK1bGSIQasilcYYQpR6v/cHLJkChK/JFeaIS/Sshe9i7b7XeZY0z3CIfQ5Lm0sO7Bla7wVt+OXMvZYUiKcAAAAABJRU5ErkJggg==" "431" "314" >}}
 
-{{< caption-new "/uploads/2014/08/081214_0640_AddingsomeA2.png" "Filtered results" >}}
+{{< caption-new "/uploads/2014/08/081214_0640_AddingsomeA2.png" "Filtered results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAVElEQVR4nE2LWwrDMAwEff+jJoZEWq0tG0ktfVA6LPOzTFOV3ns/DwCPF/X2lwZO8+1RK2vF76vP2i02VJ2cpBvTZ+39V6ulXGlSREICEkQQScs5nkd1dKxauqDVAAAAAElFTkSuQmCC" "417" "177" >}}
 
 > **Note**: I configured the search box to filter on the **line 1** property with **ng-model="search.Line1"**.
 
@@ -61,7 +61,7 @@ Alternating row classes are very easy to insert, this can be done with the ngCla
 
 The code will automatically add an alternating class to the even rows.
 
-{{< caption-new "/uploads/2014/08/081214_0640_AddingsomeA3.png" "Alternating rows" >}}
+{{< caption-new "/uploads/2014/08/081214_0640_AddingsomeA3.png" "Alternating rows"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAhUlEQVR4nGWJWw7DIAwEuf9JEyCAnyS2k1ZE/etoNRppEyLU4yi1sMjnj+TuYdft9oQ/7k/E8/bvBkDrh0E36NfyWBaOe5F6H5Q3rplrWW5VEIWFEU7VRMiGY200gzcQnMkIYmpqrVPZqWbK24qyU6vCzETnnElFgymUQyWmLjOtEd7X+QW9W8leK9HW4wAAAABJRU5ErkJggg==" "432" "309" >}}
 
 ## Grouping results
 
@@ -97,7 +97,7 @@ $scope.CreateGroupHeader = function (value) {
 
 This needs to be added inside the controller code.
 
-{{< caption-new "/uploads/2014/08/081214_0640_AddingsomeA4.png" "Template with grouping" >}}
+{{< caption-new "/uploads/2014/08/081214_0640_AddingsomeA4.png" "Template with grouping"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqklEQVR4nGWPyQ4CMQxD+/+fyQEBwwBtlmnTOIPCIg5EPliy9GKX2tp1XZdlEeH970q4xbT/YH/H9/N5LCcIOzUXcmEIQci5oWshlrlp2MDoGD1sxJwBpCJKfVSjGmNDT8Xo4f6D19qMKlRc2JXTUMO3ZlFmUwn/AHcg3AMfQOF13Y6H+bihKzZJvs8fnIi11TB7tRtpkuRJymG3u1wvzgRl5CqGcq7SfP8EExQkR6iO9iMAAAAASUVORK5CYII=" "429" "445" >}}
 
 Of course there are a lot more possibilities with AngularJS and display templates, these were just some simple ones to show you the possibilities and to get you started.
 

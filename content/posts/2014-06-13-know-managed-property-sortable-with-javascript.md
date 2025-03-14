@@ -19,7 +19,7 @@ comments: true
 
 In my previous post I talked about how you could add managed property sorting in a display templates. The problem with this is that you need to know that the managed property is sortable. If the managed property isn't sortable, it won't work. Unfortunately if you're going to sort on an unsortable managed property, this will result in a web part with an error:
 
-{{< caption-new "/uploads/2014/06/061314_1140_Howtoknowif1.png" "Error message when used an unsortable managed property" >}}
+{{< caption-new "/uploads/2014/06/061314_1140_Howtoknowif1.png" "Error message when used an unsortable managed property"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQ0lEQVR4nD3CMQrAIAwAQP//MBFCiGM+0A6trSTYGiGCm8eFdl9WX1fxr00z732fY4QzpSPGB7EAFAAhUiLNWRB/5gXDATY7hl0bWAAAAABJRU5ErkJggg==" "697" "167" >}}
 
 When looking this up in the ULS logs, you'll find the following explanation: **Attribute vector 'ModifiedOWSDATE' not available for sorting**. So it tells you that the property on which you wanted to do the sorting, isn't a sortable manage property. It would be much cleaner if you retrieved an unsorted result set in my opinion, instead of this error.
 
@@ -37,7 +37,7 @@ First of all you need to know what happens if you are going to sort with an unso
 
 I received the following result when entering this URL in IE:
 
-{{< caption-new "/uploads/2014/06/061314_1140_Howtoknowif2.png" "REST Result when using an unsortable managed property" >}}
+{{< caption-new "/uploads/2014/06/061314_1140_Howtoknowif2.png" "REST Result when using an unsortable managed property"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAASUlEQVR4nAE+AMH/APPn7uvZ4efa4enf4Ozh4fDj5Pnt7v78/P7+/v39/QDu6OnNx8fHycjIycrKycnT1NTf3uDj4+Pk5OTz8/OH/jVH6d5G/QAAAABJRU5ErkJggg==" "936" "189" >}}
 
 Of course you get the same error message as before, which is a good thing, because you could argue that if when an error is retrieved, the managed property is not sortable.
 

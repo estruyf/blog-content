@@ -78,21 +78,21 @@ So if the first check is true, then you are going to retrieve the authentication
 
 This is what happens in Outlook Web App when the app gets opened:
 
-{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune1.png" "OWA - Mail App Error" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune1.png" "OWA - Mail App Error"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAbklEQVR4nD3CQQrCMBAF0Nz/DO4E3XTjWsjCSwhBEe2iESK2STqJP5OJtIiPpwDUnzJPFz+eozdzNMg3xl0RkSxaE8Tn4XHd2H77sns37GjslHMuBA8UIH3o9LZdCseSdUmas1Z5xSupLMKt1f8vBg5wGWt77sMAAAAASUVORK5CYII=" "494" "215" >}}
 
 The app returns an error. If you check the authentication flow in Fiddler, you can see that everything worked just fine:
 
-{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune2.png" "Fiddler Authentication Flow" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune2.png" "Fiddler Authentication Flow"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAARklEQVR4nAXBSQ6AIAwAQP7/Nq8mJm4JItJiW0qscGTGSYQu+pOGzefEyq2QCRm/n9XucD3ag3bDPi3XfKIHDlkTl0hGdQCyUzcKcNBJZwAAAABJRU5ErkJggg==" "998" "220" >}}
 
 The client did go to the index page (line 2) of that app, and from that index page it got redirected to the Azure AD login page (line 4). The authentication was fine, you can see that on line 8 the **RefreshToken** has been passed from Azure AD. The last line show that the client has been redirected to the **SiteInfo** page. That is the page where I make use of the **AccessToken** that was created on the landing page. So the error has nothing to do with the authorization process.
 
 If you check the HTML of the error, you notice that this is a DIV container which is placed above the Office App iframe.
 
-{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune3.png" "Error container HTML" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune3.png" "Error container HTML"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AO/q9ero++vr/+/s++3r++/t+/Dt+/Hx/vf3/fr6/rZGHIapB391AAAAAElFTkSuQmCC" "1252" "132" >}}
 
 When you remove the error container or hide it via CSS, you will see that your app is loaded without a problem:
 
-{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune4.png" "OWA - Mail App loaded behind the error container" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune4.png" "OWA - Mail App loaded behind the error container"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAgklEQVR4nGP49evXv3///v//9+PX74kHn5Zvvle3/UH1tof1u57W73rK8P3799+///z/9+/Lj99hS+8ZTrphPuWGbv9Vzd4rmr1XGD58+PDjx49///79/ffv6esP95+/e/vtz9uvv99+AyGGv3//gg0Hga9fPn/68O7nj+8Q7v///wEi4Gf2LfoCeAAAAABJRU5ErkJggg==" "498" "215" >}}
 
 **Note 1**: my app uses the AccessToken to connect to SharePoint and get the Site Title.
 
@@ -102,11 +102,11 @@ When you remove the error container or hide it via CSS, you will see that your a
 
 In the Outlook Rich Client the behaviour is completely different. You will get redirected to the Azure AD login page, and you will need to pass your credentials (this is not needed in the OWA because you are already logged in).
 
-{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune5.png" "Outlook Rich Client - Sign in" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune5.png" "Outlook Rich Client - Sign in"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAIAAADUCbv3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAy0lEQVR4nFXPQW6EMAwFUO7e23TRI3TdfbvvohKkMAyEJIpj+zsVBA3TrywiPVn+7u5JnC9jKFPg9kRRqwGIMXaiUJjAjg9EYQaznb33nZmJSEoRQH2KiDjndlZVImJmVZUjjfu+72qtOWfn3LZtIYR1XUMIFz+mVRVH2mJmHoZh51LKPM+3I8uyEFHOmYhOZubf8RZiEmFmbuuvaUAo3eO2jNPUej1Xs9Hj9YM+f3Ywuw47+XvUl7fw/kW1muL0R3OYVcCIsSaQ/OM/Aeda3sPQh08AAAAASUVORK5CYII=" "349" "426" >}}
 
 When I filled in my credentials and clicked on the **Sign in** button, the following happens:
 
-{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune6.png" "Outlook Rich Client - Pop-up" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune6.png" "Outlook Rich Client - Pop-up"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAlUlEQVR4nCXNWwrCMBCF4ex/I74ruAMXoPjWWgSlBU1ba5KZTC5zpPX5+w/H7C7DvukOt+50f597d7wO7XOsQCqaUjKfwIiEkqEKgFOxjiSyiBCRGb9hmW0IJJIAUMx28X6ZnHPee9O85PGOwH8MTrmfQtvHWiszGxuK5BU2Xdk6poSq2JiKVA1ZKSsXnbnMtL6sKfMPZnGrogX9dK8AAAAASUVORK5CYII=" "973" "595" >}}
 
 An Internet Explorer window opens, and I need to sign in again, and the app will stay on the sign in page.
 
@@ -118,19 +118,19 @@ The first thing to solve is the rich client problem. This is an easy one, the pr
 
 To solve this, go to the Office App Manifest, open the **App Domains** tab. This should be empty by default:
 
-{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune7.png" "App Domains" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune7.png" "App Domains"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAX0lEQVR4nHXKwQoCMQxF0fz/l1aaGJO+pJRGlBkZcKFnebl0ZxGWA/Ottd4ZwDgBoHakzicRUX2YuV1IVd39s48xIiIzIxIId6c5Z1U9L/VlrUVV9fpj700A8hcAZvYG/ResY5woinEAAAAASUVORK5CYII=" "682" "392" >}}
 
 Add the Azure AD login and the Identity Provider URL to the app domains:
 
-{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune8.png" "App Domains" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune8.png" "App Domains"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZklEQVR4nGXMuw7EIAxEUf//jyJke/FzCyAQiUhpcopbjQYIkZCYmZBKKYgYEW7m7hkBtVZEejBza01VVU5EgYhE5KzdzCIij4hQM/gdmXl99N5hzrn3XmvtjzEGZOb/eD5f7i4iN8fTq9JYT1FMAAAAAElFTkSuQmCC" "683" "384" >}}
 
 When these settings are stored, you are able to sign in without you getting any pop-up.
 
-{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune9.png" "Outlook Rich Client - App loaded" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune9.png" "Outlook Rich Client - App loaded"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAvElEQVR4nGP49vPPlx9/vv78A2KA2X///YeAP79/Mqy88CZ/48PyrY/Ktz6u3Pa4Ytvj2p1PGnc/qdj2aMmZVwz5Gx+KNV3Q6L6s2nVZseOScON5ocbzIo3nWavORi27y7D43JuMDY+Ltz7J3fgwd+PD7A0glLvxYcqaB9OPv2T4/evXl48fvn35DLUQCfz9+5fh67dv9+7ff/T48YePH3//+fv33384+vP3L8OfP39+gMHXr1///v2LphsAMKeuSmLrwlgAAAAASUVORK5CYII=" "343" "233" >}}
 
 > **Note**: if you are testing this in the Outlook rich client, I noticed some caching problems. What you could do if your app gets loaded is to right click in the app and click on **reload**. This should solve the caching problems.
 
-{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune10.png" "Outlook Rich Client - App reload" >}}
+{{< caption-new "/uploads/2014/10/102814_1452_Thingsyoune10.png" "Outlook Rich Client - App reload"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAxUlEQVR4nAG6AEX/AOLv+N3s99np9eHu+N/t99nq9+fz++z1/Ofy+erw8wB2teJIndlPoNpRodpLntpiqdx5sdp1sNlzst2y0ecAUKHbHYbRJYrSKYzTD3/Qg7nf9u3m3N3d8e/u8O/tALzb8KnS76zT76rR7abP7cPb7dHW3cbO19fg6tvj7AD49vXw6+f38/D////////z9vnk6vDn7PLo7fTl6u8A8vP04+Xm5+nq7O7v+vz9/f7/////////////+/v6G3aWOnmroyIAAAAASUVORK5CYII=" "344" "222" >}}
 
 ### Fixing the Outlook Web App problems
 

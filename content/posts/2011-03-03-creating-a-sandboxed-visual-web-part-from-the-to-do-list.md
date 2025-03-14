@@ -37,11 +37,11 @@ There are some prerequisite:
 
 Open Visual Studio 2010 and start by creating a "Empty SharePoint Project".
 
-{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa1.png" "Create an empty SharePoint Project" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa1.png" "Create an empty SharePoint Project"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAy0lEQVR4nC3MzYuCQBiA8fn/LwvFLgRlRF8WuSAuCEtsdah7HYLoA900U2lmmnfGyHTeIPpdH3jIl2FW62aj73RH4541sd1FyxwP7bn7t5wuVkRJpsvyApTSROsCUWdKgOCIqJQijNKiKM80jdPkkReIKISQUiKilJKsN7sovuyDf8ZZfs+11vDyznsvOPjRNjhdQeALACil3vMoBX7N/NAPwpBSfrvnjAvvGB/PsPMS8lGzPo1vo2M3u06z99MeuO2BW6mZneGv5cyexwm199OH3yMAAAAASUVORK5CYII=" "605" "418" >}}
 
 In the next window enter your SharePoint Site URL and check if the option "Deploy as a sandboxed solution" is checked.
 
-{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa2.png" "Deploy as a sandboxed solution" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa2.png" "Deploy as a sandboxed solution"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AL67uLm3srq3s7+8uMfEwMfEv8XCvsbDv8XCvcvIw1btFmdeQX8mAAAAAElFTkSuQmCC" "549" "64" >}}
 
 ### Add a Sandboxed Visual Web Part to the project
 
@@ -49,17 +49,17 @@ If you installed the SharePoint Power Tools, you are now able to add a sandboxed
 
 Right click on your project name and choose: "Add" --> "New Item...".
 
-{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa3.png" "Add a "New Item"" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa3.png" "Add a "New Item""  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAaElEQVR4nAFdAKL/ACw6VCw7VC49ViIxTG13iOLk5OPk5ejo6dvd38fL1gAdLUocLEkfLksQIUBsdonp6uzo6evw8PLt7u/6+vkAcnh/d32BfYGFbnR6oaSj6+ne7erf8e7h8e/l/v7+8gM4eb0dUDsAAAAASUVORK5CYII=" "605" "181" >}}
 
 In the "Add New Item" window select "Visual Web Part (Sandboxed)" and add this to your project.
 
-{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa4.png" "Sandboxed Visual Web Part" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa4.png" "Sandboxed Visual Web Part"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AOPewfHjsPDir+3frfjqtv/xu/7vuv/xu/jqtfPksY3MGbWnAphYAAAAAElFTkSuQmCC" "435" "37" >}}
 
 ### Add the HTML and JavaScript to the User Control
 
 Now that you have created the visual web part it is time to add the HTML and JavaScript code from the [to-do list blog post](/uploads/2011/02/To-do_List.zip) to the User Control.
 
-{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa5.png" "Add the HTML to the User Control" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa5.png" "Add the HTML to the User Control"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAnklEQVR4nE3LyQ6CMBAA0P7/N3kwHjCgYjiQGJFEPMiS0Ba6MNNlavTkuz/WNlW2yw/7+pjVWfEoT7e8aIrL/Xxty6plixjsqA3HYB1syW+EG4UQiRJRYlJOgi/GAroA6AGDczHGQCkSEVvULJVUZvHRB/qtP2xVc9e93s9u7XvLBa4KtfYAAfG7VzWPw8CnyQphOLeCWylBK9DKAXwA9zSoTpnqL0wAAAAASUVORK5CYII=" "605" "365" >}}
 
 If you do not have the Visual Studio SP1 Beta installed, the User Control's designer file (.ascx.g.cs) gets removed because of a bug in VS 2010 with User Control's.
 
@@ -67,7 +67,7 @@ If you do not have the Visual Studio SP1 Beta installed, the User Control's desi
 
 When you deploy the web part, it will look like this:
 
-{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa6.png" "Current Result" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa6.png" "Current Result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAwElEQVR4nGNo3n69YtPV8s03IagMjMq33CzYcH3SoTsMdhNParcdlqrdJ169V7x6r2TNPsmafdK1+wTKd7tMPc7w5fuvjx8/Pn33+cX7L0/ffv7x6/f//////QeB33//MUw59KB3792+vXdbdtyq2Xyjafvt1l132nbdadh+a9axRwyP3n698PDt6Xuvzj94c+XJ+1svP774+OPlJxB69fkHw+cfv5+++/zw9aen7z4/ffflw9cfv/9AzP7/5+8/AFG8jD5Z+nFHAAAAAElFTkSuQmCC" "411" "255" >}}
 
 Right now you have a working to-do list, but you cannot choose which task list you want to use. In the next section I will show you how to create a custom tool part, so you can set the preferred task list.
 
@@ -175,7 +175,7 @@ private class CustomProperty : EditorPart
 
 When you deploy this solution, the web part will contain a new toolpart section.
 
-{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa7.png" "Custom toolpart" >}}
+{{< caption-new "/uploads/2011/03/030311_1309_CreatingaSa7.png" "Custom toolpart"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAIAAACExCpEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA8UlEQVR4nD3O0WqDMABA0fz/d3QdKCbTuJg0MUnXPnV0g5WiNUbdwwZSSafo8KUwusEu5wMuIITEOMYYQwRJQpRS6W9CCK0UaGyz3+1NZoqsOLwe2o926qfBDePXeOkcqG1dlZXr3Lk9t5+t61x/6edxvs7X72ECeZ6b0hhTFMWpburmvanqypbWGmtNCSIcLe+Xi7uF53thFN42YowfcRhHK84AFxw9IIggZZSt2D/KqFISCCECGHi+F8AgoQll9E9CE6lSoLVGCPq+D2FAaaKU0vpGSrndbsDx7Sg5YyTertcbLTklL887ydmTTIvs9ANsLtHI0+Rm6QAAAABJRU5ErkJggg==" "227" "209" >}}
 
 The last step is to make use of the inserted value by the JavaScript.
 

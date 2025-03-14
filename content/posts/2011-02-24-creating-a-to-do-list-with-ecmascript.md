@@ -17,7 +17,7 @@ comments: true
 
 In one of my previous post I created a task manager with ECMAscript. In this post I will go a step further and create a to-do list. This to-do list that enables you to add new items, delete items and mark them as completed.
 
-{{< caption-new "/uploads/2011/02/022411_1409_CreatingaTo4.png" "To-do list final result" >}}
+{{< caption-new "/uploads/2011/02/022411_1409_CreatingaTo4.png" "To-do list final result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAvElEQVR4nGPgLd3DX76XIXMbQwYYZYIQY8Y2huQtEhXbGIrXXyvfcCVjxaV0ELqYuuxC6rILOauvZK26UrX5BsOXH7++fHj/9v2nN+8+fvr05fPnr79//fr/79///yCCoWPP3Qn77/Xsvdu843bN1ptNO+8077rTtPN27bZb3fvuMVx79uHwjWcnbr84eP3pyTsv773+8vjd18fvvj169+3J+28MX3/8fvbu84t3X568+fTp28//SODfv/8AQI6IV/f2VZwAAAAASUVORK5CYII=" "403" "227" >}}
 
 [Download the solution package](/uploads/2011/02/To-do_List.zip)
 
@@ -136,7 +136,7 @@ I have chosen to create my own HTML object in this example, but you can also ope
 
 The result of this function is:
 
-{{< caption-new "/uploads/2011/02/022411_1409_CreatingaTo2.png" "Modal dialog with custom HTML" >}}
+{{< caption-new "/uploads/2011/02/022411_1409_CreatingaTo2.png" "Modal dialog with custom HTML"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAiUlEQVR4nGWMWwrCMBBFs2pRCe7GL2ndgr9qcA2KRFFjKfSRTKYzI5FYQQ/n7z6ULra6NIvSTFe7WWHm2b1eHybLjbpWddtD66EHlA/MLCIX59SzaSAiUwKHbMRBROzDKR+DcKoTfyGivA4I4+fPuXVOdb7jd/c/TuujPVd1jUSAOBpiZJHT7f4CKqTDDGSzuAMAAAAASUVORK5CYII=" "353" "254" >}}
 
 ## Creating a to-do item from the modal dialog
 
@@ -210,7 +210,7 @@ function DialogCallback(result, returnedMessage) {
 
 When the item is added, it will close the modal dialog and that will create a callback to the &#8220;DialogCallBack&#8221; function. The &#8220;returnedMessage&#8221; variable can be used to display a message in the notification box from SharePoint.
 
-{{< caption-new "/uploads/2011/02/022411_1409_CreatingaTo3.png" "Notification message" >}}
+{{< caption-new "/uploads/2011/02/022411_1409_CreatingaTo3.png" "Notification message"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAASUlEQVR4nAE+AMH/ANHPyMbFvsfGv8bEvMPCu8nIwcXEvcC/uMXDvdnZ0wDj4dPV08XQz8LV0sPLyb3a2MnS0MHGxLfQz8Lo6dyr/S9qUDx1YAAAAABJRU5ErkJggg==" "144" "28" >}}
 
 ## Fill the HTML lists
 
@@ -302,7 +302,7 @@ function onListItemsLoadFailed(sender, args) {
 
 The result looks like this:
 
-{{< caption-new "/uploads/2011/02/022411_1409_CreatingaTo1.png" "Result until now" >}}
+{{< caption-new "/uploads/2011/02/022411_1409_CreatingaTo1.png" "Result until now"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAwUlEQVR4nE3ETwvBYBwA4J8PIFffz2HDgQNZubgQiuRbIH+KLbKRg5OUZtO0LUktbba9tubPpr1y8xweiObZWIEDkgGS/k3QQNARkobEJE4xkBseqJGY7PCp7p7o8OmekB0cMn0x1RWKYwncp+/Ypm4iy3ZuJkLI+fg+DkOMf8HugjayxoraTNCW0nUtG9uzLemepHuy4UGDU5us0loolemxxBxrrFrn1OpcKc/k9uoEDz+w3IftPs2793oH+E8Y4i/Twogzwy4a+QAAAABJRU5ErkJggg==" "403" "227" >}}
 
 ## Mark the items as completed
 

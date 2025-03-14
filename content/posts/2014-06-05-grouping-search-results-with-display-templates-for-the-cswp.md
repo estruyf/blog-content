@@ -122,19 +122,19 @@ As you can see, there isn't any is HTML written, everything done in JavaScript a
 
 When you place the control and item display templates in the master page gallery of your site (the link to the files is at the bottom of the page), the following two templates become available in your Content Search Web Part:
 
-{{< caption-new "/uploads/2014/06/060514_0936_Groupingsea1.png" "Grouping templates" >}}
+{{< caption-new "/uploads/2014/06/060514_0936_Groupingsea1.png" "Grouping templates"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeElEQVR4nE3MSQ6EIBAFUO5/SzcdsakgKsWHGuwENv22fwgd7XthIxz32Aif0t/panLcI9Racz77EDVXNTVfzFxUQ32eGI+UEhHte0SDTcwcYwxjDBGZdVNVd1/nSzhzLuVC7zKzNXV3EWHm0JhLKTmfAP5jAET0AxdLrjVUEh8eAAAAAElFTkSuQmCC" "203" "123" >}}
 
 By default, it will sort everything on the Site Title managed property. This looks like this:
 
-{{< caption-new "/uploads/2014/06/060514_0936_Groupingsea2.png" "Grouping Results" >}}
+{{< caption-new "/uploads/2014/06/060514_0936_Groupingsea2.png" "Grouping Results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAIAAAA7jDsBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABKUlEQVR4nHWQ6WrEMAyE/f5v2F+lsGWbTZz4lHXZKdrsQdutGIzgk+RhnI/4dsrTiipdWIX7VSqsKt21TGGuJTSImFeoW4OEJbToa43oQHpCTagZNTWNTTYQ6WO/liuka5WtSmwSwJgvInrHGdUX9oXXYkPWVJkznwM17g6lN+4oTzXuQNaMsbsAcsnsi91cMl8S+ypT4iXzsL9R18oBZCkGNpC5cEHd990wSQe+HjTp0dDDWgS7aauFvyJNye4HkOc269AxtA/p9mof5urYPq14SXzM/i1XSYH6K3THFlaVtZr5xj9GHWsnMbGa/0faN7wkep/hY2lTpDnRw9QNryCfgc6RKukYvw06Am4JhSymF9awSc0o/A+uCZOH5GG7lOghLJWaRXbgb4a8SAjBmJbaAAAAAElFTkSuQmCC" "231" "465" >}}
 
 You could also change the grouping property if you want. This can be done by overwriting the property mappings in the web part properties:
 
-{{< caption-new "/uploads/2014/06/060514_0936_Groupingsea3.png" "Group field mapping" >}}
+{{< caption-new "/uploads/2014/06/060514_0936_Groupingsea3.png" "Group field mapping"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAIAAACExCpEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAnUlEQVR4nG3O2wrCMBAE0Pz/RypozaZmm0tpdrO5tBJBsOhhXuZhYFSM8RmSdht4umHyW66lSJbW2nEcCgAMGLTWLQsAoEVrETQ454lILYgPbVJKIkJEmfNIzjSwqm3Y9/34R033iZlba/WslBJjVIiYEpUy+jcRWddVzWbOWXrvv+sQgkKL3nkR6f394qPWOp4bgOvlqrWWM2ZGxBenWAMCs+7nZgAAAABJRU5ErkJggg==" "204" "193" >}}
 
 The result will look a bit different now:
 
-{{< caption-new "/uploads/2014/06/060514_0936_Groupingsea4.png" "Results grouped on contentclass" >}}
+{{< caption-new "/uploads/2014/06/060514_0936_Groupingsea4.png" "Results grouped on contentclass"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAIAAAA7jDsBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABS0lEQVR4nGVR2Y4jMQj0///izssmE02mD3f74MadFZ1Ee6ESKgm7KCB9rXj9hh+3evmG6wSAqmzCJqQmnqhJywiF+k59I9gJa/CSEZok0FHYm3jlIPsJP47HGamL72gbWGWv5IVsAzUfxxlpR1u6Li2QQeema9e56m1n0pHYBtsQP8RGwAfpQB3q43g80gY2Nc3dcg+ZKX7bVEMjelfyDLajzU3Wbhva0rSzv6yJhRqf+UlQh9rbee669JBaut6LzC30C/3xW2wAO6qDeD8JipuPKF8Xuqz0udK9yC3zZaGfK31mvheOMkr0e0r9HwnEC4f5DWIw+vtpArKOiuJsA8TVX57f5UJlBn0P+q+4sDEZoxKc6OrnOp83S9w4blwiU2Oq7PpbKVW2Qj433dAyvpZ633muYn6kr50/JviYcGnSyApaiRNoQTM/fgFPVERlhpeOwQAAAABJRU5ErkJggg==" "191" "383" >}}
 
 ## How to change the HTML output
 

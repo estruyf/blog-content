@@ -29,7 +29,7 @@ The new API endpoint can be called as follows: `https://graph.microsoft.com/v1.0
 
 Here is a sample:
 
-{{< caption-new "/uploads/2017/03/Screenshot-2017-05-10-20.28.39.png" "SharePoint site URL behind a group" >}}
+{{< caption-new "/uploads/2017/03/Screenshot-2017-05-10-20.28.39.png" "SharePoint site URL behind a group"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAWElEQVR4nD3G2wqDMBAG4bz/Q1Z6W0TtRs2/m8MUUvDiYya9lwtJeHFUNIUHoWD0Tm2D16eQjtjYtWPVyD1jLc/+3yYfJ2k147i/mIwcJ1fcqIno8SjV+QHsYnRxvlee9wAAAABJRU5ErkJggg==" "2492" "838" >}}
 
 When you only need the webUrl, you just have to call it as follows: `https://graph.microsoft.com/v1.0/groups/<group-id>/sites/root?$select=webUrl` or `https://graph.microsoft.com/v1.0/groups/<group-id>/sites/root/weburl`
 

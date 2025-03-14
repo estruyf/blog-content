@@ -25,7 +25,7 @@ The author refiner for example can simply be more useful by adding the user his 
 
 To include the user profile picture next to the refiner name, you have to add or create a new refiner display template. Here is an example output of the templates I have created:
 
-{{< caption-new "/uploads/2015/09/091415_1430_Peoplerefin1.png" "User refiner" >}}
+{{< caption-new "/uploads/2015/09/091415_1430_Peoplerefin1.png" "User refiner"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAVCAIAAADw0OikAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABuUlEQVR4nG2RPW/UQBCG/bOgBokCQUFBaPgBVKFCUEARivANBVGkSEghXJSAiCAEkChO4rO6IoeIuQgHgULsvV17z+v17qz3wza6OwtIuCmmmGf1jHZeL2MMIdRHEc9FXddVVVVNr+q69hRAH2NKE6WK+r/ygiDw/a+b3W4URSxNaZIklKZpOqAUALzP3e7O951Op4MQMsYIKSSAEAKUstZ6hJCyLPmoxrvrf+XOaBr+dFbpojDGaGO01s65BpO94OX8zJuNlSj8FScJHVBMSMbzBn/8tD514vid2avOmdGk2ifv+f7a46dv222lYAJ+/u71gxerUCjGM4z7SUwQQlqPTbW31F4/c+r0k4ct6YzMhZSS57l1tsG3F1uXzi3curK0i9GEj2UcBilnHEAV1lpjrdbaWjt+50WZWZy7/+XbbiYUIcPj74Uhxtjaod9LaPT+0eHgw7QbWQ/KLZA8bLEfy5Ubn2I/Xnv26ubM3dlr873tIM85pZQx5lzZ4Os37h09dGzq7MUtv1c6N8wK5J8N3vLqxpGTF85fXonppMQKrTOegwSllCuboP5iIUQSx4wxjDGAOoB/A96fPUIKqxybAAAAAElFTkSuQmCC" "166" "349" >}}
 
 ## Two types of user values, which one to use?
 

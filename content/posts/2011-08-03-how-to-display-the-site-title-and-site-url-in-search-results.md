@@ -27,7 +27,7 @@ Adding the site title of the returned results is very easy, this can be retrieve
 My second thought was to some XSL manipulation, and this was the best approach.
 
 The final result will be:
-{{< caption-new "/uploads/2011/05/052711_1345_HowtoDispla1.png" "Search Result with Site Reference" >}}
+{{< caption-new "/uploads/2011/05/052711_1345_HowtoDispla1.png" "Search Result with Site Reference"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AOvt7Nvm5d7n59zl5N/n5t/o6OTr6fH18e/y7/n5+aLpG2ERZbsZAAAAAElFTkSuQmCC" "572" "71" >}}
 The things I did to establish this were:
 
 1.  Adding Site Title column references to the fetched properties of the Core Result Web Part.
@@ -45,7 +45,7 @@ To add these columns go to your search result page or the page where you are usi
 *   Turn the page in edit mode;
 *   Edit the "Search Core Results" web part;
 *   Open the "Display Properties" section;
-{{< caption-new "/uploads/2011/05/052711_1345_HowtoDispla2.png" "Display Properties Section" >}}
+{{< caption-new "/uploads/2011/05/052711_1345_HowtoDispla2.png" "Display Properties Section"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAPCAIAAABSnclZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABQElEQVR4nDWQ25KCMBBE8//fZu2WIHJJAiEEg3LLHYKoWyB7HuZlurtmGvR9V9csjpOK0jzHWQZLSoWUYgfE8TXLIIYoSzOEEEaQN/dlea47IArDIAij6MJ5gxHECH4+n/f7/dkBOUZlSWvGbrcbIaVzzs/++Vx2zRv8/PzKHaWUlFIrJZWcJne4q6oyWmtjlNZCbCrn3ChFPwxKK1BRWhRFnud1fWOMEUIopcbYdV2f6wpOpxOldOg3hqHvu65tW2vtEY4xttZ67+d//LJYa7/HA940h3Uc74/HKIT3Xhvzeu3rMAjyoiBFwXlTM9a1nbV2nucjPDifp2map8k5N23TGq2dc0f49qyUoxBt30sphRTDMDwerTbbdSCJkzRJCSEQwiRJOedbcd4f4ddrlMZJHMUIoTTZpGF4YRX7Nv8HVUOfuwGycT0AAAAASUVORK5CYII=" "194" "300" >}}
 *   Add the following column to the "Fetched Properties";
 <Column Name=" SiteTitle "/>
 *   Click "Ok".
@@ -79,7 +79,7 @@ Now that the" SiteTitle" column is added as to the Fetched Properties, you can e
 
 *   Edit the "Search Core Results" web part;
 *   Under the "Display Properties" section, click on the "XSL Editor" button;
-{{< caption-new "/uploads/2011/05/052711_1345_HowtoDispla3.png" "XSL Editor" >}}
+{{< caption-new "/uploads/2011/05/052711_1345_HowtoDispla3.png" "XSL Editor"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZklEQVR4nAXB6wpAMBgA0L3/I7lEySXGaiOXRjJmy6X94cdXi3MQ7zjvRkZqJY/HPLe+1apOfclFmtOgaRiqAuMsr3DZsoYRSjDpmz6NEjEL1NY08JzQd33XybNYbftnP3jBgoUXfg4aTWA91neBAAAAAElFTkSuQmCC" "179" "55" >}}
 *   Copy the content of the XSL Editor to the text editor of your choice;
 *   Add the following two XSL templates before the </xsl:stylesheet> closing tag;
 
@@ -161,5 +161,5 @@ Now that the" SiteTitle" column is added as to the Fetched Properties, you can e
 ## Result
 
 Each search result contains the site hyperlink (depending on the location in the result template).
-{{< caption-new "/uploads/2011/05/052711_1345_HowtoDispla4.png" "Final Result" >}}
+{{< caption-new "/uploads/2011/05/052711_1345_HowtoDispla4.png" "Final Result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAVUlEQVR4nC3KSQ6AIAwAQP7/Q70JMaIslkJLoAGNiecZdTq36N34kCgXLlRJhvQhMmQ+U4V0b95ZhAMBK5ZWqBN3rlI/voJfjTbeWYgxR2DgztT+8QJv4FUox39kiQAAAABJRU5ErkJggg==" "452" "144" >}}
 This solution only works on items and documents. When sites are returned as results, the site url gets broken. To fix this you could check if the result "contentclass" is not equal to "STS_Site".

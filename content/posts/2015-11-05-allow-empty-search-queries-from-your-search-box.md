@@ -25,7 +25,7 @@ This article explains a quick tip how you can allow empty search queries. This f
 
 If you also placed a search box on the page to search through the results, once you start searching, you have no easy way to go back to the initial result set. You are not able to just remove the keywords from the search box, because by default the search box does not allow you to do empty keyword queries. What you have to do is reload the page without the search parameters in the page URL.
 
-{{< caption-new "/uploads/2015/11/Screenshot-2015-11-05-11.52.36_thumb.png" "Empty search query is not allowed" >}}
+{{< caption-new "/uploads/2015/11/Screenshot-2015-11-05-11.52.36_thumb.png" "Empty search query is not allowed"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAnklEQVR4nB3LTW7CMBiEYZ+jx+wNEBfqvndgwbZiQ4XBjvm+4J9GxrHfKhlpFiM9Y47flo/Dic+vC1knYkrkksk5U0qhtUatFfNjhfMtcZU/rHvig+x4WZa9G1rXFRNngTH2cbtb3OSYoyLzk6AT+tL9YFSVtXdqa/zePVfrcSGgKqSSyFF4t4bZ9Jb6rtiHJUjAB8cknlec6b0zxuAfXcK8q3SIuc8AAAAASUVORK5CYII=" "718" "339" >}}
 
 > **Note**: In the screenshot above you can see that there was a query performed with the keyword: **test**. Once the keyword gets removed from the search box you cannot reset the initial query.
 

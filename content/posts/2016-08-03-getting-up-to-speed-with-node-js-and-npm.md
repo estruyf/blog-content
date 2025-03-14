@@ -24,7 +24,7 @@ In this blog post, I will cover Node.js and npm.
 
 ## Node.js
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto1.png" "Node.js logo" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto1.png" "Node.js logo"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAuElEQVR4nE3OPwuCQBiA8fuMOUSBn6HJ7AMYCUERVKslON0QwQ2HSy2BBZX9IYkcuqOhsYY0w3vfKBr6fYHnIfhHKYWIjDHf9xExz3NCKXWH7jNLZtupvJ7jU6zrOqWUc+55HimVS6Zh9gfdWq/ScVtVo6ppmt2wC8VCs90k4SaUQkbHw3gymkcB48yqW0IIx3F2+x0BAAWf5CN7bC/rhQju6Q0RAQEAiPpCwPSVhnK1FsskSxB+m29lho+9SZVn3AAAAABJRU5ErkJggg==" "203" "124" >}}
 
 > Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
 
@@ -38,13 +38,13 @@ The installation process for Node.js is fairly easy. Go to the [https://nodejs.o
 
 On my machine, I installed the current LTS version v4.4.7. Once you click on it, the installation file will be downloaded to your machine.
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto2.png" "Windows versions to download" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto2.png" "Windows versions to download"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAaElEQVR4nAFdAKL/APL48uHs4dbf1tPd097k3tnf2dff19bf1ufw5/f79wBeo10DbgEjgSIGcARcoVtCk0EOdQ0kgSIEbwOZxJkAvdi9msOZo8iimsKZvNe8p8ynl8KXpcikjryN0uTS8zY43VZ15eMAAAAASUVORK5CYII=" "326" "97" >}}
 
 Once the file is downloaded, run the installer.
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto3.png" "Windows installer" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto3.png" "Windows installer"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAiklEQVR4nHWJSw6CQBAF5/63cqMSGH4RovSM8QACC0Hj0N3PKJEYo5VaVZl1WdqmseQy7xdTcin5VWwNcwAUUNFJNMyy3AFtu7MZLsPhtM/zbAoT3qgqgK7vzXW8lT4vqkzlmb43My/199YXf/fnYGYWYREAbdsZIuf9cZbIJYmNbBEX9a6qN9voAddb4UwlvrDQAAAAAElFTkSuQmCC" "514" "399" >}}
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto4.png" "Windows installer finished" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto4.png" "Windows installer finished"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAlElEQVR4nFWJ4QrCIBwHff+3CloEy9JFUVOjB0iNphPaX3/RotWO+3IcWzUNb1uu9E6bSd7qrTKLmjOiJ1CAUspQ8LUMQLHuxkIXzteTlCL1KcY+hBhDfHQBgPee9TE1RjTH976POOdSSgCc94yIMFLm/PbUE7P9P4iIcqacAVhrmVLamMtHpTTf8DUXtThIuV9W1Qsf7t/4MKRhqwAAAABJRU5ErkJggg==" "514" "399" >}}
 
 If you completed the installation, you can open a command prompt and run the following command:
 
@@ -58,7 +58,7 @@ $ node -v
 
 Once you ran it, you should get the following output:
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto5.png" "Node.js version" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto5.png" "Node.js version"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAdUlEQVR4nCXNWw7CIBBAUZZiIgYYYPBVCwNDpV9GTJpq3P9WTGNyv88V7089xh3YgwHpUBmQ/7TZO6/EusxXgnsrRAMGSDRQvmUemZNHLdb+zEz99WitYDCFY51SnajNjMGI79IzjzFdTmfvvNouVoLdfI/6B/VyGKxM6sPiAAAAAElFTkSuQmCC" "140" "62" >}}
 
 ### Using Node.js
 
@@ -78,7 +78,7 @@ $ node hello.js
 
 Running this command results in the following output:
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto6.png" "Hello.js output" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto6.png" "Hello.js output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAARUlEQVR4nAXBCw6AIAgAUE/SdCsrWpGSgEqf+5+q91ziqb5r+0Af4HvE4lMdYPcxhnkJrjbuJqJkpt2EhTIdV0GRjOf2A2aEC7VnZsbEAAAAAElFTkSuQmCC" "234" "57" >}}
 
 This is a very simple example of just logging something to the command prompt. The next step would be to try and run something in the browser. To do this, create a new file called "web.js" and insert the following contents:
 
@@ -110,17 +110,17 @@ $ node web.js
 
 You should get the following output:
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto7.png" "Console output" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto7.png" "Console output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAJ0lEQVR4nGOwstGzsNU1tdQ0MtXQ09fS09fS1dPQ09fU09fSN9ACAFoLBZSFeejYAAAAAElFTkSuQmCC" "475" "53" >}}
 
 When you navigate to `http://localhost:8080`, you should see the following message:
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto8.png" "Browser output" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto8.png" "Browser output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAOklEQVR4nB3BQQoAIQwDQP//TLNiUxrBngq9CDszMOHuAM7RWt8EzPbN7O6qGiQlxc/pJCNCkpll5gOnZTcvtAOfMgAAAABJRU5ErkJggg==" "263" "55" >}}
 
 As you see in these simple examples, Node.js can be used in various ways. Node.js can even be used to help you with development tasks like minifying JavaScript, transpiling SASS to CSS, transpiling TypeScript to JavaScript. These so called jobs can be automated via task runners like Gulp or Grunt. More about this in the next blog post.
 
 ## npm
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto9.png" "npm logo" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto9.png" "npm logo"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAh0lEQVR4nAF8AIP/ANRZWOGMi9htbNhoZ+GNjNZjYtpycd+FhOCIh9NZWADlmpn34+Pkl5bwx8byzs7jlZX009Puvr7tvLvgiYgA3Xx85qGh2Glp8MfH9dvb3Ht756Sk3H1923h32GloAOuxsO24tuOQj9lrathra+iko+y0s+yyseuzsuyysoHMUmpAuK1bAAAAAElFTkSuQmCC" "243" "94" >}}
 
 > npm is the package manager for JavaScript
 
@@ -144,7 +144,7 @@ $ npm --version
 
 This command gives you the following output:
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto10.png" "npm installed version" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto10.png" "npm installed version"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAWUlEQVR4nB3GCQqAIBQAUQ8iPzXIpci1NAsjsu5/pEgYHoNMIjrheGO/w3rBcoLbu+2BWMFGgrSR9S35sNoNQpFRUzlSOVE1UaEYcn4uJYdgOO9bjAv22+YDAOcP1FVFan8AAAAASUVORK5CYII=" "180" "59" >}}
 
 ### Installing packages
 
@@ -162,15 +162,15 @@ npm install express
 
 Once you executed the installation command, you will see a Node.js process in your task manager:
 
-{{< caption-new "/uploads/2016/08/snip_20160806085705.png" "Node.js process" >}}
+{{< caption-new "/uploads/2016/08/snip_20160806085705.png" "Node.js process"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAACXBIWXMAABnWAAAZ1gEY0crtAAAAVklEQVR4nIXFMQ5AQBBA0b3/oaxWIVGxkagEBTskYqwJ+Tqt1zzHDzNDYsTN285+Jk570Ov+VrvRZGhKzLLiikHxbY9vhLwVfIj4sJAFoZoO6mmk7DpeBy5x8kOxVzgAAAAASUVORK5CYII=" "529" "134" >}}
 
 If everything goes well, you have a similar output:
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto11.png" "npm install output of express" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto11.png" "npm install output of express"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAIAAACgHXkXAAAACXBIWXMAABnWAAAZ1gEY0crtAAABTklEQVR4nEWQ25KrIBBF/ZWJQHeDgJeAoojiJU5N1fz/70wlJ6nz3LV2772KzrFuKt1c+sRcZH7mPn0pfRNQApbFFNx55evK5yNv2/zzc56PbAwA3pDKwihoO4gR50QxUnfnUvEXegO8FaaCplXTROdDbjvljZwXTcuRPmdtUFUwjDhOkDc5RWwa9qatRlPTOMFxyG2X5yn3QzonVFUivehKwzCIIYDvxbxgnHGc0PdgDC9qQ7aWacHrW62Z1pW8B2O5VAyJvWgDwwgvCIYAXSech6YVz921IWMpJfr9rYYgjGVcPEv9H1ZpCCOmhfpe1A2X6lnqrcVqqlu5ZjofatvlcUrfC1UxAR9aaYgRcqa7E91d2JpV+mPNaqwb1fe4H8+A61LLSsZ8tPz73bRiTpgW9L2QqmT86x1uNdqalpX2Qy4LhgDOQwjYdkIq9gdvc1n2x09IuQAAAABJRU5ErkJggg==" "241" "389" >}}
 
 Once executed, all the required modules for this package are downloaded into the **node_modules** folder, which will get automatically created if it did not exist.
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto12.png" "node_modules folder created in the directory" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto12.png" "node_modules folder created in the directory"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAABnWAAAZ1gEY0crtAAAAa0lEQVR4nE3JQRLDIAgFUO9/0Y5JBAUxaMJPp4t2+rYv+WDi2ruWUlprtdbKnPNmY0REmtPNuvtcawGICADarYpe952AINpzzte1ni9VZSZ3T4HntZXj2AH8WkSI6Dw/DWqiIv9tZiIy53wDlo+Qk7cgjGwAAAAASUVORK5CYII=" "392" "179" >}}
 
 Create a new file called "express.js" and insert the following content:
 
@@ -203,17 +203,17 @@ $ node express.js
 
 You get the following output:
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto13.png" "Console output" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto13.png" "Console output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAJ0lEQVR4nGOwsNWzdjCwstczNtcyMNQ2MNTW09fU19fUN9Q2MNAGAF2IBcXF2PXUAAAAAElFTkSuQmCC" "479" "50" >}}
 
 When you navigate to the `http://localhost:8080` site, you should see this:
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto14.png" "Browser output" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto14.png" "Browser output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAHElEQVR4nGN48uTJ82fPX7588fjx4+fPn79HBQCl6ht6DiI4PAAAAABJRU5ErkJggg==" "352" "51" >}}
 
 ### Installing packages and storing dependencies
 
 If you read everything from the npm install output, you might have seen this message at the end:
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto15.png" "package.json warning" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto15.png" "package.json warning"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAJ0lEQVR4nGMICDC2sTI2NTMyNTM0tzAyNTOwtDK1sjazsTE3NzcCAGgqBpTKpxw3AAAAAElFTkSuQmCC" "624" "20" >}}
 
 This warns you that there is no package.json file in the current directory. The package.json file helps you to locally manage which npm packages need or have been installed. In the package.json you can place a couple of useful things:
 
@@ -232,7 +232,7 @@ $ npm init
 
 When you execute this, you will see that it ask you a couple of questions.
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto16.png" "npm init questions" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto16.png" "npm init questions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAYklEQVR4nB3ESQ7CMAwAwDyFAyVOvSVeVLOU/z8LUWk0rd56vCSLI2fE9NDI/zoRqbfMFRdzMWdzWcYeKjpg3JuHRM6jbC4052XEAkiPHbet39r5rc9Z9QxzZhkXIO7EQAw/lM4WjIyIWWgAAAAASUVORK5CYII=" "576" "246" >}}
 
 When all the question are answered, you end up with a similar package.json file like mine:
 
@@ -272,7 +272,7 @@ $ npm install express --save
 
 Once executed, you see the following output:
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto17.png" "Install dependency" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto17.png" "Install dependency"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAQklEQVR4nAXBgRGAIAgAQOepuzQFgiLELGv/ifoP1vP1QRvQ3nL2WB3N1kMXqwlpDqrcb3nG7r4RFRFgAaTMAjFNP676DYGW/+s1AAAAAElFTkSuQmCC" "348" "70" >}}
 
 If you now open the package.json file, you should see that the express dependency has been added:
 
@@ -297,7 +297,7 @@ $ npm install
 
 You can also test this by removing the node_modules folder in your directory and executing the command. After the command has ran, the node_modules folder should be recreated.
 
-{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto18.png" "Running npm install" >}}
+{{< caption-new "/uploads/2016/08/080316_1525_Gettingupto18.png" "Running npm install"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAi0lEQVR4nEXJSw6DIBQAQC5Trfo+AiofRRSRaO9/oC5s0mR2I5aM6cOxkEsvt1fOQ4y07ZQONqYT6+qvK9z3GsKgtbRWWz9ORjs/EbeiV90SMJ9wZLSu5b4GrABrwBrpLaRCYzkddN2cM0nVPPEQUlHc+CxUCueTQwCpmn/3EqyDPeE8gxoa4l88/QXcoiTCOFOgtAAAAABJRU5ErkJggg==" "350" "195" >}}
 
 ### Installing packages globally
 

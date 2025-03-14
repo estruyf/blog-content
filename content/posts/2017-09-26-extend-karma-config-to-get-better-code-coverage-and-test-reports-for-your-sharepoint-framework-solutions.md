@@ -26,7 +26,7 @@ In a code coverage report, you can check if your unit-tests covered all your cod
 
 Is that wrong? No, it is not, but when you open the code coverage report, you will see code that will never get covered. Like for example this:
 
-{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma1.png" "__extends TypeScript helper function" >}}
+{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma1.png" "__extends TypeScript helper function"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAdElEQVR4nAXB0Q7DEBQAUP//U/uFbQ+KarUxsYlLuYJK2uwcIoybLTDj+SqUXiD5XFPEEDJgy0R5yuyT25f8cWHp9JkWJ/YgN5D6WEnpkJHO/GHU+yt30Ft2UHxoMd33RVIFrHDEiIgFbW/sPEtvvbc2xvgDIPBtXOGsACcAAAAASUVORK5CYII=" "624" "243" >}}
 
 In this example, you see the **__extends** function which is not completely covered. This is not a function you wrote yourself. It is a function TypeScript automatically adds to your JS file when you are extending classes in your TS. Basically, it is a helper function to support extending in ES5 code.
 
@@ -102,15 +102,15 @@ config.plugins.push(remapCoverageReporter);
 
 Now run your gulp test task again, and you should get a new **HTML** folder in the **temp/coverage** directory. If you check the generated **index.html** file. You will notice that the outcome will be different to the first generated coverage report. Here is the outcome of my JS coverage:
 
-{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma2.png" "Default code coverage report" >}}
+{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma2.png" "Default code coverage report"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAY0lEQVR4nBXC2wpAMBgA4L3/67iUXLkQGiJqK4fNaZudfok7+fqQcsLfXoM+4fxfRnnlbgsPwOsRkX3Kw5xHVJT0KIY9o0dBBKYKj7pFHKaEBZWIN+hXW0uDN1cz28ymWmz3Ab6qT/SlIVBeAAAAAElFTkSuQmCC" "624" "165" >}}
 
 Here is the new report:
 
-{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma3.png" "Code coverage report after extending the Karma configuration" >}}
+{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma3.png" "Code coverage report after extending the Karma configuration"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAY0lEQVR4nAXBSw5AMBAA0N7/MNZWWBMan0hEWhqfoJ1OzYjEznvC3ie9hIzA4Bn8g45ceAN/xB+J0Q7FlpRrqm2jLjmdpboqBa2ytcFemKCzOcr3eLv7BeUBxeqlwUa7asHuB7/ET8BPzISPAAAAAElFTkSuQmCC" "624" "163" >}}
 
 The **placeholder** coverage went from 90.63% to 100%. All had to do with the **__extends** helper function. In the newly generated report, you can see that the coverage is based on the original code.
 
-{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma4.png" "React TSX component file" >}}
+{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma4.png" "React TSX component file"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AN3m8OHp89vn9d/j5+Hg3+Dh4eDg4Ovr7PX19fj4+KGcGzw2aLaQAAAAAElFTkSuQmCC" "521" "53" >}}
 
 ## What can you do more?
 
@@ -143,7 +143,7 @@ config.plugins.push(htmlReporter);
 
 When you now run your unit-tests, you should see a new **karma-html-report** folder in the temp directory. If everything went good, it should contain an HTML file with the following output:
 
-{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma5.png" "HTML test report" >}}
+{{< caption-new "/uploads/2017/09/092617_0751_ExtendKarma5.png" "HTML test report"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAhElEQVR4nE3J6wrCIBiAYe//ShrRif7HAoNAtuykbXiYNk1zfruFiCh6ef89CNfLHV3tz2t8mGE631bTkhQlKTZkgusFUoZzUYnuYp30wcbkh5wy5M9IGnaTtNUnfW+sUz70aUjwDYnuygSRlvlgQ3Tx6X/2ZmV5q4+Npv3DAMAI4z+/ABfAge/sK+PNAAAAAElFTkSuQmCC" "624" "318" >}}
 
 You can check the following project to see the complete configuration: [https://github.com/sharepoint/sp-dev-fx-controls-react](https://github.com/sharepoint/sp-dev-fx-controls-react)
 

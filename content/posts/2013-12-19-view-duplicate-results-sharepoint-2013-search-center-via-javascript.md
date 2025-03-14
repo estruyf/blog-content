@@ -25,11 +25,11 @@ A standard Search Center in SharePoint 2013 doesn't show the duplicated results 
 2.  Or you could change the web part property **TrimDuplicates** in the webparts file, and set this value to false.
 The first result only shows a duplicates link when items have corresponding duplicates:
 
-{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica1.png" "Default View Duplicates" >}}
+{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica1.png" "Default View Duplicates"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAhElEQVR4nG3NwQ6CMBBF0f7/vxG2rI2LytBp6ZtpYFrUCMZE9G7P4rrV6kTEzPMegJRSzllElmVxa20iAsDM7j85M/PeMzOAx3cvbq3FGEXkZG9W1WNcStm27Q9rKRlI81xrPTNPUxrH4H0kijGGEIgIgIioqtMQrn1/6brbMHw47wF4AmGz5k0wNhq4AAAAAElFTkSuQmCC" "420" "350" >}}
 
 When you click on the link, you retrieve the set of results with the duplicate items:
 
-{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica2.png" "Duplicates Result Set" >}}
+{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica2.png" "Duplicates Result Set"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAiUlEQVR4nCWKyw7DIAzA+P+fnLQJFfIA0maUUSDTOl/sg10iBu85BGHOgBxDQciIIqKqLglt+OIS5Z2KMguUg4qm3vsYw0kuB4EgKNOOUTDuBAdjrfU8Twccnv4RyLMgF4i0UY6cQVVba27aHGvMNZbNZfOOtdayG/eXmV3X1T+91tpam3Oa/a4vSySrC3F7SscAAAAASUVORK5CYII=" "517" "329" >}}
 
 The second approach is most properly the way you want the result set to behave, because you retrieve all the results including the duplicates. The downside of this approach is that you have less flexibility. Or it's on, or it's off, you can't easily switch (or you need to create an additional page).
 
@@ -64,15 +64,15 @@ if (typeof Srch.U.fillKeywordQuery !== 'undefined') {
 
 This code can be added in a Script Editor web part. I placed this above my Search Box:
 
-{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica3.png" "Script Editor" >}}
+{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica3.png" "Script Editor"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAARUlEQVR4nFXMQQ7AIAhEUe5/XBVU5DeNsGlfZsEkE2TvDUTyaT6t7ogAxMxaa1WIc5NqIao6xgCeD8CT9N5V9fytterHC3YidX0W23EwAAAAAElFTkSuQmCC" "682" "282" >}}
 
 ## Result
 
 The result looks like this:
 
-{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica4.png" "Result set without duplicates" >}}
+{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica4.png" "Result set without duplicates"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQElEQVR4nGXHMQ6AQAgFUe5/0G02IRTLRxDErNr5Ms0QM4tIROSPmZGqArAHVHeAu1dVZtL16q61jjHOOXvf5wbaS1eFAqrF4gAAAABJRU5ErkJggg==" "521" "168" >}}
 
-{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica5.png" "Result set with duplicates" >}}
+{{< caption-new "/uploads/2013/12/121913_1951_ViewDuplica5.png" "Result set with duplicates"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAARklEQVR4nC3KMQ7AIAwEQf7/Tgq6FMD5LOwDhWS6lbY8l7tLygjlLyJIljEGAAOMBDnNJuDumbnWKt+pvaN3q5WtvSnt6wDdSFd2twvWzQAAAABJRU5ErkJggg==" "521" "158" >}}
 
 > **Note**: if you always want to show the duplicates, you only need to keep the **dp.set_trimDuplicates(false)** line and the **originalFillKeywordQuery(query, dp)** call to the original function.
 

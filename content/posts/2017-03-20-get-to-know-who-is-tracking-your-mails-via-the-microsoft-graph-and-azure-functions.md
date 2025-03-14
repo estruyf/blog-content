@@ -22,7 +22,7 @@ Of course, this is useful information if you are sending out mail campaigns or t
 
 When webhooks in the Microsoft Graph was announced last year, this was the opportunity to automate this process. I choose to give the emails which are tracked a tracking category and the name of the used tracker. This does not change anything to the mail itself, but still, gives you a highlight of the tracked emails.
 
-{{< caption-new "/uploads/2017/03/031717_1442_Gettoknowwh1.png" "Example of tracking categories" >}}
+{{< caption-new "/uploads/2017/03/031717_1442_Gettoknowwh1.png" "Example of tracking categories"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAARklEQVR4nAXBQQqAMAwEwP7/Y77AgyBIizmYYoPGmG3swZkke+Z1USp+kDNp2ezRKc9NBEB6z3pXdmnDdJh2vb6O4XAgIn6vPTgUQH6JfgAAAABJRU5ErkJggg==" "545" "82" >}}
 
 Last week I have made this solution available on GitHub: [mail tracking via Microsoft Graph](https://github.com/estruyf/Mail-Tracking-Microsoft-Graph). So feel free to explore and test it out.
 
@@ -53,6 +53,6 @@ Here is an example how it works:
 
 When you open the mail, you will see the following categories:
 
-{{< caption-new "/uploads/2017/03/031717_1442_Gettoknowwh3.png" "Tracking categories after webhook call" >}}
+{{< caption-new "/uploads/2017/03/031717_1442_Gettoknowwh3.png" "Tracking categories after webhook call"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAcUlEQVR4nF3MMQ7DIAxAUe5/qA69RstAI4IrsALGIBlHtFI28tYvfdNaAwAiKqUw829lENF7H0KIMeacxxhLrlQR05GPlFLvXUSWfLvd5/TZOtE4VVVFhJnPi6rOOY1/PP3rve37F6DWaq0NF+ccEf0BCjasSH501fsAAAAASUVORK5CYII=" "187" "121" >}}
 
 Feel free to test out the code and provide feedback if you like it.

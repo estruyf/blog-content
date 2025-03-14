@@ -24,7 +24,7 @@ The problem with the lookup field occurs when it references a list from another 
 
 Besides this lookup field problem, there is also an issue when using a managed metadata field which is configured to single term selection. Only when the field is configured to allow single term selection, the REST API returns the index of the term instead of the actual term label value.
 
-{{< caption-new "/uploads/2018/03/031918_1517_UsingShareP1.png" "Managed metadata single value" >}}
+{{< caption-new "/uploads/2018/03/031918_1517_UsingShareP1.png" "Managed metadata single value"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/APDk8vDj7fbu7fXu7vLq6vHs7PX29vT09PX19fj4+LIuHDxJ5NajAAAAAElFTkSuQmCC" "624" "66" >}}
 
 > **Info**: also for this there is a UserVoice request: [Fix the REST API to return the value and not the Id when getting single value Managed Metadata field](https://sharepoint.uservoice.com/forums/329220-sharepoint-dev-platform/suggestions/10503294-fix-the-rest-api-to-return-the-value-and-not-the-i).
 
@@ -55,13 +55,13 @@ Here is an example of how you could use the API:
 
 In case of a lookup field, you get the following response back:
 
-{{< caption-new "/uploads/2018/03/031918_1517_UsingShareP2.png" "Lookup value from linked list living on another web" >}}
+{{< caption-new "/uploads/2018/03/031918_1517_UsingShareP2.png" "Lookup value from linked list living on another web"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAApElEQVR4nD2Nyw7CIBAA+f8PtK3RRK1CQWjZLnTL22jUOcxlDsPsE56jRgAEuwI45wCAiBwiETGnvOqM15g2n4hqrbW1j94wP6M4juJ8efQdH46878fDwUxT3LYSdlZp0wOfujs/X2cpl0ksQsxKerABV1ZCnAfpbrKsUHCtYW+ttpJbzi1FlvasTwa5Tt7XXL7PHyz6uFztrlQ0JlmbAEoI//wCwUjG/sAbcSIAAAAASUVORK5CYII=" "551" "370" >}}
 
 No more error message, you can see the lookup field value highlighted in the above screenshot.
 
 For the managed metadata term field value, you get this in return:
 
-{{< caption-new "/uploads/2018/03/031918_1517_UsingShareP3.png" "Correct label value of the specified term" >}}
+{{< caption-new "/uploads/2018/03/031918_1517_UsingShareP3.png" "Correct label value of the specified term"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAJklEQVR4nGP49OLL+zuPPj9+9PHR4w8PHnx+9erLx4/fweDHjx8Aq1Eb6RswQiAAAAAASUVORK5CYII=" "624" "64" >}}
 
 The label now contains the label of the term.
 

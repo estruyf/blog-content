@@ -89,4 +89,4 @@ In the code I showed you two examples:
 *   The second one **multiLookupSample** can be used when you're working with multi lookup values.
 The result of the rendering looks like this:
 
-{{< caption-new "/uploads/2014/01/013014_1055_HowtouseaLo1.png" "Lookup Value Example" >}}
+{{< caption-new "/uploads/2014/01/013014_1055_HowtouseaLo1.png" "Lookup Value Example"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAo0lEQVR4nH3NwQqCMBgA4L3/8wgevCkYDbN/sP0zzItminrQKXOJuUAQokPfC3zEGDP0/aiUGsdlWaZpUjuttbWW2L+IlBIR74c0TaWUQghEWZYlCYLA9/3TIQxDz/Nc13UchzFGzJeXMVrruq6K4lE9q3mef+/3tg1D3zRt13brupK9wdshSRKAKz1TSmme5wQAGGMCUew45wwgjuPoEmVZ9gECjtY15VUKZAAAAABJRU5ErkJggg==" "263" "215" >}}

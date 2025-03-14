@@ -22,15 +22,15 @@ Over the past months I received the same question a couple of times from custome
 
 The standard search web parts only let you define the number of search results you want to display and the number of results per group.
 
-{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch1.png" "Number of items to show" >}}
+{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch1.png" "Number of items to show"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAVUlEQVR4nEXI0Q6AIAgAQP//R1viIohAU6HV1rrHS6oKpEC2bOd+tojweAA31iuJHBlgzZmI3//NORMiQimIWKCICBH13t093McYiZnNrNVqn/YxsxvwIXOUoDaLtgAAAABJRU5ErkJggg==" "245" "110" >}}
 
 When you configure your results to group in the query builder (underneath the refiners tab). You will also have the option to specify the number of results to show per group. This grouping functionality is powerful, but it has the limitation that the amount is specified per group. You are not able to specify it per group value.
 
-{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch2.png" "Group search results" >}}
+{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch2.png" "Group search results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMklEQVR4nDXJQQoAIAgEQP//VkEvLYa7EhTNdczdIxLAriKZmQvQjKTuNpJ9SXoNQN8BAlQ6PBldCzkAAAAASUVORK5CYII=" "534" "101" >}}
 
 So if you want to be able to specify the number of results per query / category / division, I always gave the advice to develop it via JS in combination with calling the REST APIs. Right now I can tell you that it can also be achieved via the use of multiple search web parts and display templates. The result of these templates look like this:
 
-{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch3.png" "Merged search results" >}}
+{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch3.png" "Merged search results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAATElEQVR4nD2LSQ7AMAwC8//PtkriHbuV1QWNuMCMScKWbBAHaVggq64vY7GqpznU+xGozj9viSU++eUkP7aLoZ3IIQ62hrRtZOVDdd9pWnVTrASDUAAAAABJRU5ErkJggg==" "597" "262" >}}
 
 ## Combining search result display templates
 
@@ -114,17 +114,17 @@ If you want to make use of these templates or approach, have to follow the next 
 3.  In each web part go to the property mappings section and select to change the mappings of the managed properties;
 4.  In the **SortField** define the field on which you want to do your sorting.
 
-{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch4.png" "Managed property mappings" >}}
+{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch4.png" "Managed property mappings"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAp0lEQVR4nG3N2Y6DMAwF0Pz/T7ZSBQwhdinO4i0wovNSRj0PlixdX4eN6Ae2CWjG/IivV26q2lpz9+M4QkppWVICQMQYIyAC4ByXdV1VNSwpDeNEuYgIn95TpJTCzOHcWuu9H2/7h7N8HAZ8opvblaqWUgIAsHDv3a/M7CyP80xEf/FPIlJrDSVnVdv3vV+5u4iEnPNGxMzfr6dxvN/uIvrvvZnVWn8BRTUhV2WD//AAAAAASUVORK5CYII=" "260" "270" >}}
 
 Once these things are configured, you would have the following result:
 
-{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch5.png" "Merged search results" >}}
+{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch5.png" "Merged search results"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAATElEQVR4nD2LSQ7AMAwC8//PtkriHbuV1QWNuMCMScKWbBAHaVggq64vY7GqpznU+xGozj9viSU++eUkP7aLoZ3IIQ62hrRtZOVDdd9pWnVTrASDUAAAAABJRU5ErkJggg==" "597" "262" >}}
 
 The final result of these templates is not very "sexy", they are only created to show you how this can be achieved.
 
 In this example I used two web parts. When you open the page in edit mode, you will see that all the results are redirected to the first content search web part.
 
-{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch6.png" "Merged search results / web parts in edit mode" >}}
+{{< caption-new "/uploads/2015/08/081715_1551_Mergesearch6.png" "Merged search results / web parts in edit mode"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeklEQVR4nD3OUQ7DMAgD0Nz/sGuTNoDBsCnNNuv9WbLcjj7OcU0189jg4cGtvcbs07rgVr/Eb4tgZtbWjjEFNE91Chisqnr/0i6BgPoQ8NZYA5nMyqrWJ4bGED+nd3FdS2vMnMFsU00Mao4gnjvBr3UNgKoawCf/bvsAkO/MotDfmVoAAAAASUVORK5CYII=" "624" "426" >}}
 
 ## Download these display templates
 

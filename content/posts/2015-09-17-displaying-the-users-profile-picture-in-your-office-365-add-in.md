@@ -28,7 +28,7 @@ In my Office 365 add-in I am displaying the image via JavaScript and the authent
 
 To be able to retrieve the user's profile picture, you first need to add the **Sign in and read user profile (Office 365 unified API)** permission to your application in Azure Active Directory.
 
-{{< caption-new "/uploads/2015/09/091715_1011_Displayingt1.png" "Unified API permissions" >}}
+{{< caption-new "/uploads/2015/09/091715_1011_Displayingt1.png" "Unified API permissions"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/APb39/P09fX39/f4+Pf4+fz9/ujs7+Hi4+vs7ePk5bxbHEP9Z/0KAAAAAElFTkSuQmCC" "837" "124" >}}
 
 Once this permission is given, you will be able to make your calls.
 
@@ -44,13 +44,13 @@ If you want to know which user profile picture dimensions are available, you cou
 
 The largest available user picture can be retrieved by calling the following REST endpoint: [https://graph.microsoft.com/beta/me/Photo](https://graph.microsoft.com/beta/me/UserPhoto)
 
-{{< caption-new "/uploads/2015/09/091715_1011_Displayingt2.png" "API output" >}}
+{{< caption-new "/uploads/2015/09/091715_1011_Displayingt2.png" "API output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOUlEQVR4nD3CyREAIQgEQPNPU/DAAkYd//vbri7apHap1obbCg/AMx1wJM4uojpsxo7DS973yD/5AbELN9au8j6NAAAAAElFTkSuQmCC" "1063" "230" >}}
 
 **All available photos**
 
 If you want to know all the dimensions that are available. You could call the following endpoint: [https://graph.microsoft.com/beta/me/Photos](https://graph.microsoft.com/beta/me/UserPhotos)
 
-{{< caption-new "/uploads/2015/09/091715_1011_Displayingt3.png" "API output all photos" >}}
+{{< caption-new "/uploads/2015/09/091715_1011_Displayingt3.png" "API output all photos"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZElEQVR4nC2MQQ7EIAwD+f8r2WqrFRVxbBI4r2hrzcWyxsV6N6C7dycoo8DhDI3IzAKgHp/z+jY0oxm7CwppbArJX9uDiyPGTWwxMzIKHPWo53U2e2zzfc/XlkRp3llP5nrbXH9Vz4xxB6+BMwAAAABJRU5ErkJggg==" "1084" "504" >}}
 
 Here is an example how you could call the REST API via JavaScript:
 
@@ -116,7 +116,7 @@ authContext.acquireToken("https://graph.microsoft.com", function (error, token) 
 
 In order to read the image blob, the **FileReader** ([more info about FileReader](http://blog.teamtreehouse.com/reading-files-using-the-html5-filereader-api)) interface is required. This will be used to convert the blob to a data URL:
 
-{{< caption-new "/uploads/2015/09/091715_1011_Displayingt4.png" "base64 image" >}}
+{{< caption-new "/uploads/2015/09/091715_1011_Displayingt4.png" "base64 image"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/APbw9fXv8unq++fo++7u/fLy/u/w/e/w/e7u/fP0/bevHHqBIsDqAAAAAElFTkSuQmCC" "519" "54" >}}
 
 You can also use **URL.createObjectURL**, this method creates a DOMString containing an URL representing the object given in parameter.
 > **Note**: More information about this createObjectURL method can be found here: [URL.createObjectURL](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL).
@@ -144,11 +144,11 @@ authContext.acquireToken("https://graph.microsoft.com", function (error, token) 
 
 Your element now contains a link to the object in your DOM.
 
-{{< caption-new "/uploads/2015/09/createObjectURL.png" "URL.createObjectURL approach" >}}
+{{< caption-new "/uploads/2015/09/createObjectURL.png" "URL.createObjectURL approach"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAALklEQVR4nB3FMQ4AIAgEMP//UgYxIEEXvDM6NG17TJouihS1FyNA9+f8zcFM8AISjyaMBBk4ZAAAAABJRU5ErkJggg==" "578" "49" >}}
 
 The final output of the two code snippets is the user's profile image:
 
-{{< caption-new "/uploads/2015/09/091715_1011_Displayingt5.png" "Profile picture (48x48)" >}}
+{{< caption-new "/uploads/2015/09/091715_1011_Displayingt5.png" "Profile picture (48x48)"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA6klEQVR4nGP4jxcw/P////ixM339sxavWL9w6Zr5S1YtWbV13oI1u3cfgUpPmTJfTcvO0zfGzcJeQ0bexMTJyy+tqrYXKj1r7jJ9M8/wwJh9M6fOqyjQVVT2Dsyob5sMlZ4zd4mannNcePzO/r6p2ZlW6iqOruE1DROg0rPnLlPVdQgKSt7W3dMVGRrg4unoFlZc3g6VnjlnmYauo4dn1OLmprpQPxs7L2unsLz8eqj0tBkLPOzd46OSJjZ1VWYW27v42Rpbx8RlQqVPnzg5f0LP9OmzSyevrOhfMmPyjIktzbOmTYdK4wkWAJ9bwWBP+wf0AAAAAElFTkSuQmCC" "66" "67" >}}
 
 ## Updates
 

@@ -53,4 +53,4 @@ module.exports = function (context, req) {
 
 > **Info**: Notice line 9 - 11 where I specified the content-type header.
 
-{{< caption-new "/uploads/2017/02/022417_1432_Returningot1.png" "Sample of the HMTL output" >}}
+{{< caption-new "/uploads/2017/02/022417_1432_Returningot1.png" "Sample of the HMTL output"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAABnWAAAZ1gEY0crtAAAASklEQVR4nE3GwQrAIAgA0P7/K0c0TZIujbRUGLHL4B1eQoSK+Iwhcy5VN/tLV84F7imybJu7RRxf3NMuRRAVwIiCOVo7mIMoen8BmZ1VuHAeQz8AAAAASUVORK5CYII=" "624" "191" >}}

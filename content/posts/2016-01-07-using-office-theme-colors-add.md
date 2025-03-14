@@ -54,7 +54,7 @@ $('.example').css({
 });
 ```
 
-{{< caption-new "/uploads/2016/01/010716_1158_UsingOffice1.png" "Example of applied colors" >}}
+{{< caption-new "/uploads/2016/01/010716_1158_UsingOffice1.png" "Example of applied colors"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAIUlEQVR4nGN4+fLlazB49erVo0ePHj9+DOG+fv365cuXAKb4G0k5m+jNAAAAAElFTkSuQmCC" "344" "49" >}}
 
 ## Office client theme colors add-in
 
@@ -62,14 +62,14 @@ I created a sample add-in which visualizes the Office client theme colors. Here 
 
 **Colorful**
 
-{{< caption-new "/uploads/2016/01/010716_1158_UsingOffice2.png" "Colorful Office theme colors" >}}
+{{< caption-new "/uploads/2016/01/010716_1158_UsingOffice2.png" "Colorful Office theme colors"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAABnWAAAZ1gEY0crtAAAA0ElEQVR4nC2OTYqEMBSEc2fBK7gS3IiXEAY3bjzFDNigDESQVmN8ifkR80TN0N3zLWpTfFSR5+NnaB7P+nv8bRmbGWPz/MppmrquI9bofdv2bdusNcZordd1NcYg4r7vRCklhJByBRBVVX29KYqCMXaeJ9FaS7lqrYUQWZbFcZymaRRFlNL7vom1Viml33DOh2FommYcRwBwzr1sAFiWBRHzPA/DMEmSIAjKsvTeE0T03iMiAFBK67pu27bv+8+7//o4Ds65lPKzcl2X99459wcAxNNCTeKa1wAAAABJRU5ErkJggg==" "343" "259" >}}
 
 **Dark gray**
 
-{{< caption-new "/uploads/2016/01/010716_1158_UsingOffice3.png" "Dark gray Office theme colors" >}}
+{{< caption-new "/uploads/2016/01/010716_1158_UsingOffice3.png" "Dark gray Office theme colors"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAABnWAAAZ1gEY0crtAAAA3klEQVR4nC3Lz2qDMACA8bzpevEhBL3MiO+xnvTgIYgggvfBGNvEkkRlRCxLZ7Qk/umwQsbafdcfH4AQuq7red7jLQih4zgQQsuyTNMElNLlcpmmSUoZx3EYhgihIAg450VRAEzIcD4LIbqui6Lozr7vCyHqugZVVS3LMt6SUgoh+Ok0DMO6rhjjPx7Hse97pVSe51mWJUmSpiljjFIKaFnep/V63e+fDMOwbXu3e0AIMcZA0zRa60HNFTu+H8jz68fLW1F+Ntu2EUL+uVdzzVp25C3v2q9vOf9orTHGv5L0wOcMSFXSAAAAAElFTkSuQmCC" "342" "267" >}}
 
 **White**
 
-{{< caption-new "/uploads/2016/01/010716_1158_UsingOffice4.png" "White Office theme colors" >}}
+{{< caption-new "/uploads/2016/01/010716_1158_UsingOffice4.png" "White Office theme colors"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAABnWAAAZ1gEY0crtAAAAz0lEQVR4nC3MwWqEMBDGcd/Zgw/hRfCWdxAP6sk3KIXSXVoptXS7u6k0mp2qTBJTJynK/g5z+fNNsPx8/0mx3RGIyO1oh4iBtYsxelmMVmrdKaWcc+u6eu8DRByGAQCklHVdl2VZVVVRFJzzLWutfwHmeQYAxliapoyxOI7btt2yMWbcTdMkhOCcN03DOe/7nojuz29SWmuzLIuiKEmSMAzzPN/WROS9h1m/n67Pr28PT8fHw8vHF0dE59w93ybVni6fl+7ciXMnRly890T0D9yE1bvjEra1AAAAAElFTkSuQmCC" "340" "263" >}}
 
 The add-in can be found on GitHub: [https://github.com/estruyf/Office-Client-Theme-Colors](https://github.com/estruyf/Office-Client-Theme-Colors).

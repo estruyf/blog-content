@@ -21,9 +21,9 @@ comments: true
 
 When working with the new search centers in SharePoint 2013, the first thing that you will notice is that the title row is different compared with for example a standard Team Site.
 
-{{< caption-new "/uploads/2013/02/021313_1745_DisplaytheT1.png" "Standard SharePoint 2013 Title Row" >}}
+{{< caption-new "/uploads/2013/02/021313_1745_DisplaytheT1.png" "Standard SharePoint 2013 Title Row"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAASUlEQVR4nAE+AMH/AJi924Oz2JS93aHD4J/B36PE36TE4KzH3e3p6Ofi4gC0y+Nko9fH2ej/9/D58u7++fX//vn++fX/+Pj17e216TJKqwu/KQAAAABJRU5ErkJggg==" "859" "173" >}}
 
-{{< caption-new "/uploads/2013/02/021313_1745_DisplaytheT2.png" "Search Center Heading - Title Row is Hidden" >}}
+{{< caption-new "/uploads/2013/02/021313_1745_DisplaytheT2.png" "Search Center Heading - Title Row is Hidden"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAgUlEQVR4nAXByQ3CMBAFUFdEZ0iUQQNcWBoAikAsJ3JGIC4hQiFyLBuSjD1mjD/vqfH6MpqeJ9vr6lTNduXi8Fgeq03xtK12RqviXs/35a12EJLQQQYkyj+GMFOnvuwB9EQv3TRG248lH8h7IMfIyoeQMgZPxpp37wKHJElEAMQY/6u5a+Gp0b5VAAAAAElFTkSuQmCC" "859" "333" >}}
 
 As you can see, the title row (red box) where the top navigation should be, is replaced by the search icon and search box (orange box).
 
@@ -83,7 +83,7 @@ if ($('.ms-searchCenter-refinement').length > 0) {
 
 ## Result
 
-{{< caption-new "/uploads/2013/02/021313_1745_DisplaytheT3.png" "Search Center with the Title Row" >}}
+{{< caption-new "/uploads/2013/02/021313_1745_DisplaytheT3.png" "Search Center with the Title Row"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAg0lEQVR4nBXESwrCMBAA0NzIg4k3EVeCCJ5A0Cu4EJTiQly5ERFBajHSdpLM5DOdEd/imcn2PppexpvbfP+a7Z7L43tVNevzx/sAAOb0aBeH+lqDciyJVET1H/PgnDMpoqr4yE0fW0cQyGOiVHiQEIJBIhbFSLaztvt6hFJyzllVEfEH7mJso3v1pAkAAAAASUVORK5CYII=" "860" "329" >}}
 
 ## Updates
 

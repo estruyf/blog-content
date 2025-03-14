@@ -35,7 +35,7 @@ In my demo I used this to change the background color or the table row based on 
 *   Completed: Green;
 *   Deferred: Red;
 *   In Progress: Gray.
-{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt1.png" "End Result" >}}
+{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt1.png" "End Result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAWElEQVR4nAXByxJAMAwF0P7/v1lbeEzpFE3cVJNisHGOIwVjBaIYmIPYTgdRYTlzks0ZFpm70jYWR/VtTdO+eA6DUkhz7+pnR9kqwvkWy/F6cr4ATXqLGP/941LO7m/mPQAAAABJRU5ErkJggg==" "539" "166" >}}
 
 The best way to start with XSLT statements is with creating a new list view and adding conditional formatting to it.
 
@@ -47,7 +47,7 @@ Open your site in SharePoint Designer and go to **List and Libraries** and click
 
 On the **Views** section click the **New** button, and give your list view a meaningful name.
 
-{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt2.png" "Create a New List View" >}}
+{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt2.png" "Create a New List View"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeklEQVR4nC3CgQ6CIBQFUP7/D9saPDV5eIFXS0FB0Vbr7Ki+o6HvJ4CMvt0HwAMg6iyztazsgxyP7OCDpJxT+s1rXjcRUfJ8vecZ8MuSSqnftW6l7MfuQ1QxSmtHKVut9fxrrR3XdSFEBUBEogjgLbsJGC1rQ9oYbegDFOeLuU6iQoMAAAAASUVORK5CYII=" "438" "217" >}}
 
 Click **OK**, and open the newly created view.
 
@@ -55,19 +55,19 @@ Click **OK**, and open the newly created view.
 
 Select the whole row, do a right-click, and click on **Conditional Formatting**.
 
-{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt3.png" "Conditional Formatting" >}}
+{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt3.png" "Conditional Formatting"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAuUlEQVR4nB3CAW6DIBQAUO5/syYzxdhizRZbAfsFwcJAQVRcspeHqjJgHEq8EuJYJxiVjI6Uji+uQQTU9Z7r38mvVBgYzaCM1FYq2zzhCQbdiuZeVt91c/mqLtca31+koaTpHq2ofzgyLYmAs35AW8i+tW4+9iPnfJ5nTguaYIxOrk45I5VgPW9TsHmb9+S2aNFbbB9/KLMZf4KQQ1doXug3jp86eYb8ciwx/z8nO3MAADkItYQU4v4HF+6/iW91rqEAAAAASUVORK5CYII=" "390" "258" >}}
 
 At the right side the **Conditional Formatting** panel will open. Click on **Create** -> **Apply formatting**.
 
-{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt4.png" "Apply formatting" >}}
+{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt4.png" "Apply formatting"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAz0lEQVR4nDXJuU7DMBgAYL//M4BYKkQZqVKaplxmaFClyCDhkB6RnfiK7cS9FgjlRwxI3/ah+8c0nuHx5CG5w5MER9Onm2h2mzynGV2QAo1TGr38GS2WWVHxSqxKnn+slmvGKomG8+Ic0wtMz+YlYbbzTmkjpFTGuLZFIWwBwGrltPTOcc5FLb77HgB2uyPqwh4AmsZL7buwl8p24XA6/fy3LaE3tn5TnIQmN5y0Ov861tAbb9bIsymE2BbXG3Ip6LB+v9pkA/Y6+NSjLY9/AcyatJ5xjVQIAAAAAElFTkSuQmCC" "164" "122" >}}
 
 Set your condition as follows:
 
-{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt5.png" "Set the Condition" >}}
+{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt5.png" "Set the Condition"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAArklEQVR4nD3Cxw6CMAAA0P7/pzgOGoNWQWwRBOrooATxYBwYrEwR49F48eUBG9mUeFvfsZGB51NkwOVCdx1LrpAPR4CHe12oIUlGJBmSKxS5trnpsjDjdrGOAAsi/9jiuNaFgjQd0zuOCuvQoLgxPQFkEDTlo87S/2f++2kKwXZAg8arfd/VQ2VZWdVFVad5eUnV6Xzu9gdgMp3JMKSMMsY454wLzXLh0sUIdXr9L6t7lTNbcDIVAAAAAElFTkSuQmCC" "466" "291" >}}
 
 Click **Set Style**, and in the background section add #FFCFD1 as the **background-color** value.
 
-{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt6.png" "Apply Custom Styling" >}}
+{{< caption-new "/uploads/2012/05/051812_0651_UsingXSLTSt6.png" "Apply Custom Styling"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA50lEQVR4nAXBiW6CMAAA0P7/pywxmYtbPGakMKAFW9pCuUpBjs25Q80mCSyL8T1wN1ncP5rT2ephtnxawjVElu29YOJRZkAIHMxT1VJsrOeTIg33XVWrUGeCeZBgEzR1M46DtVk8z6d5GidxZJsrTl3JMfVtcDodx3GgnuU7m0zSJCQEm1HgxhyzrQ0ul9+/cRDU4RyxwBEMhQIz5jLmUg+CVAa6kG+l+iL+h49LaFQWPGD0Sbe1VoAgyIhz6NqfLO8L3ZdVr8v/trvu38/HbyACN2RI5bKq1a7R3euu6aokiwqdJVLcANmnxfQKt/6uAAAAAElFTkSuQmCC" "387" "323" >}}
 
 Click **Ok**.
 

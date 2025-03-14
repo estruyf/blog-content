@@ -23,12 +23,12 @@ A couple of weeks ago I had a similar problem with our intranet, the problem was
 
 This was the view you retrieved:
 
-{{< caption-new "/uploads/2014/04/041014_0715_Custombrand1.png" "Document set without a library view" >}}
+{{< caption-new "/uploads/2014/04/041014_0715_Custombrand1.png" "Document set without a library view"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAa0lEQVR4nI2OsQ6AIAxE+f8/c3Jz1MUYRSMOQLGFYgSMJg760qG5l0tOxAQzc/5iRCILzoJDRJGjValllkU7o9WkN4kORK61vazqJoRwejJsRgYZ2Ze2hr0bFPmkHxT9gtNd+px2j/tu/9MHugPsHHKiMREAAAAASUVORK5CYII=" "389" "330" >}}
 
 The first thing I did as a check was directly the right thing to do, I turned removed the visibility property set to false from the **PlaceHolderPageTitleInTitleArea** content placeholder control. After I did this, the document set view became available:<span style="color: #313131; font-family: Helvetica; font-size: 10pt; background-color: white;">
 </span>
 
-{{< caption-new "/uploads/2014/04/041014_0715_Custombrand2.png" "Default document set view" >}}
+{{< caption-new "/uploads/2014/04/041014_0715_Custombrand2.png" "Default document set view"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAlUlEQVR4nD2OSxLCMAxDc/+LsWPLCSif4dOUWrZjJ2bSFN7KkkcapdhoG+M2s5XwWaGqaVhEuEznWmtEeGFZbpKvppxG6JXpcDzlD/Uml8bP0Dmi7WlvbXqskDLknxRGYQjnaOrupRRVre4RvTUpvWm+G2ZDXnIG+iIz29PmlcBaClhEBCAzY8B7QaQuePv8AFh1H/EFPbbpxfodsi8AAAAASUVORK5CYII=" "405" "312" >}}
 
 The best solution if you want to hide the content placeholder **PlaceHolderPageTitleInTitleArea** in your branding, is to place it in a hidden DIV and set the visible property to false or leave it out.
 
@@ -53,11 +53,11 @@ Best is to use the first solution, because there are a lot of references in the 
 
 If you set the **visible** property of the content placeholder **PlaceHolderPageTitleInTitleArea** to false, you'll retrieve a JavaScript error for the **idParentFolderName** element which cannot be found.
 
-{{< caption-new "/uploads/2014/04/041014_0715_Custombrand3.png" "JavaScript Error" >}}
+{{< caption-new "/uploads/2014/04/041014_0715_Custombrand3.png" "JavaScript Error"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AOrg5efi7Ovl7uzo7+vm7/ft8P/09P/x8f/08//z86x0HA2TnoFYAAAAAElFTkSuQmCC" "570" "38" >}}
 
 When you add an element with **idParentFolderName** as ID, you'll get the next error for the **idDocsetName** element which cannot be found.
 
-{{< caption-new "/uploads/2014/04/041014_0715_Custombrand4.png" "JavaScript Error" >}}
+{{< caption-new "/uploads/2014/04/041014_0715_Custombrand4.png" "JavaScript Error"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AOzh5urj7e3n7u/p8O3o7/bt8P/09P7x8f7z8/7y8q5OHBwopw5pAAAAAElFTkSuQmCC" "568" "39" >}}
 
 The errors you retrieve refer to the following lines in code:
 

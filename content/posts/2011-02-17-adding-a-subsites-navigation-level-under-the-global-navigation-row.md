@@ -18,11 +18,11 @@ comments: true
 
 Normally subsites are displayed in a dropdown menu when the site collection publishing feature is activated.
 
-{{< caption-new "/uploads/2011/02/021711_1526_AddingaSubs1.png" "Subsite navigation dropdown" >}}
+{{< caption-new "/uploads/2011/02/021711_1526_AddingaSubs1.png" "Subsite navigation dropdown"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAW0lEQVR4nAXBSQ6AIAwAQP7/Ms8ePLkRSAhCWCqQgi1xRqw6LXfazOtLVzCg1BCiNk/KgB3FafPlG2AvNof9wdyIiZnmnEQktHHKeOKvx1KlH9A+5sNVGZoD/AE45FRw1bANgAAAAABJRU5ErkJggg==" "248" "68" >}}
 
 In this post I will show you how to display these subsites on their own navigation row. The end result is shown in the picture below.
 
-{{< caption-new "/uploads/2011/02/021711_1526_AddingaSubs2.png" "Final result" >}}
+{{< caption-new "/uploads/2011/02/021711_1526_AddingaSubs2.png" "Final result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAkUlEQVR4nBXF2Q7BQBQA0Plsf+MnhKd6kQhpIxJLhKBFdZquc2e5SyPEeTkK9GYoF+CwB+c8eh/+EYkIMSu/G3/XI13395euO2PBFrpseyMizKygq9A2g0ggAo8BiQkJkQmFSWVNOHefp5FTRfMb7CsuW5vptrEIOKjokE+TS3QslqmZJNfZNl09XPKmOMc4xx8YxokpD5EejgAAAABJRU5ErkJggg==" "230" "117" >}}
 
 ## Hide the subsites dropdown menu
 
@@ -32,7 +32,7 @@ First you need to hide the subsites dropdown menu from the global navigation.
 *   Do a search on "TopNavigationMenuV4". This is the standard global navigation menu.
 *   Set the "MaximumDynamicDisplayLevels" attribute to "0";
 
-{{< caption-new "/uploads/2011/02/021711_1526_AddingaSubs3.png" "Global Navigation code" >}}
+{{< caption-new "/uploads/2011/02/021711_1526_AddingaSubs3.png" "Global Navigation code"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAgklEQVR4nE3Muw7CIBhAYd7/yRxMvAzECrFIpNCC1haQ/kDBRAf9hjMeFLhmh4nsPKfR3Espa/2DqlKxucztIFgQHBJABsgxfppQ7VQ9YmhYj7W8LsmFZB14v0xz9C809vRx2mi6J+eWSm3WMRT4zSdJnngrKNX6Zm03OONyqLV8vQGcSYy/A77xvgAAAABJRU5ErkJggg==" "376" "196" >}}
 
 ## Add the a new sitemap data source
 
@@ -101,7 +101,7 @@ The code needs to be added **after** the global navigation menu.
 
 That is all, so you see it is fairly simple to add a new navigation level to your master page. The cool part about it, is that the subsite navigation will only be show if the parent site contains subsites.
 
-{{< caption-new "/uploads/2011/02/021711_1526_AddingaSubs4.png" "Subsite navigation level final result" >}}
+{{< caption-new "/uploads/2011/02/021711_1526_AddingaSubs4.png" "Subsite navigation level final result"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAIAAACgHXkXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABkUlEQVR4nCWQS47TQBRFa53sghk7YAPMEAtgwIBRQwYIQSNA3SYCQdMhUSdOxy67XK7Pe68+r+zGKEK6gyMd6QyuYH9X1KeUQkiZYkw5n5cSM5dSxHzzfHn/SMvdn6PaHu63x9Z5aNqulT1SEMUcpuZqyiFnZubM/B9KKcwstmOqmnB9tAqy1qPshxijsa6VvQcU+zHfKt70YaQEAKOxSIRE1nlEFA/tavn9NPquH91oPVLwAM57onCOl83L+eNjNM3upO7bHhCtdV0/DKM565xSIMo5z/MUM2NIIXMpXJhzSsIBSGU6pTWmzzVc7mHvp9HY+iStB3F55y7Whzc/jl/b/PZWv7raX/xsq26q+qlSszj5WGt7skmFqfPpZKhxqaO5o6mFIv7uXizfn6C3ddPp0SASeKfVAN7PhUXZvp7Xz5CwUcY48BgAyVoXQjx/HmIERCKapxKIAoXMPGLqHBmMQg62blUttcV4aPqj1BrSlxpWG7OWUXy4s6tf8lpN7zbD6kZ+Gx4qvVR6WZulGpZ/mR24dgVtPAIAAAAASUVORK5CYII=" "199" "323" >}}
 
 [Download v4](/uploads/2011/02/Subsite-Navigation-level.master.txt)
 

@@ -20,11 +20,11 @@ I tested this problem, and as it turned out, it were not only the checkboxes tha
 
 Let me first show you how a default task view rendering looks like.
 
-{{< caption-new "/uploads/2013/07/071913_1533_ApplyingJSL1.png" "Default Task List Rendering" >}}
+{{< caption-new "/uploads/2013/07/071913_1533_ApplyingJSL1.png" "Default Task List Rendering"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZ0lEQVR4nCXLQQ7EIAxDUe5/UxatmlIKcewwKvNWX7Jchl1o5nbifQFIGmMAcHdJJTYAEUFyZbr7VxFzzkJSUu/9MiOZmUmuLSKKtnY3M/PpEvE8Ka21APzfbO2utR7nQRFmAr7Z8QNAr5IRlXJFMwAAAABJRU5ErkJggg==" "600" "323" >}}
 
 The next screenshot shows you how rendering is from the moment you apply a custom JS Link reference:
 
-{{< caption-new "/uploads/2013/07/071913_1533_ApplyingJSL2.png" "Rendering with JS Link applied" >}}
+{{< caption-new "/uploads/2013/07/071913_1533_ApplyingJSL2.png" "Rendering with JS Link applied"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcklEQVR4nEXLywoCMRBE0fn/7xMXKogiLiQx0aQ7/UyLM4K1rMNdOD3omSGn0ftUNTNVdXdzj4hF14mIba8ZEbHIuF/xdv6yu7fWoMOcc6sjAi7Hdtj9uJRSa2VmERmIEdFPe0b41yknHKCquDK9XzzwA95/kJve0MW5AAAAAElFTkSuQmCC" "644" "312" >}}
 
 As you see, the checkboxes aren't rendering, but also the Task Name text is not strikethrough, and the dates aren't colored red if task is overdue. This problems occurs with whatever JS Link you apply to the task list.
 
@@ -102,7 +102,7 @@ The JS Link property value in mine environment looks like this:
 
 The end result looks like when applied to the web part:
 
-{{< caption-new "/uploads/2013/07/tasks.png" "Result of the default and custom JS Link references" >}}
+{{< caption-new "/uploads/2013/07/tasks.png" "Result of the default and custom JS Link references"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAiElEQVR4nD2NwQrCMBBE8///5UEEb2JpiQcVerCxoSRmk91lZFNxYBjYfcy4Gl6g9Y1PCKCUoK1BREBEPUUVJtdaAzPDUpih9hRBrRXMgnK/IfsrnB1VBdu2datqBy1N83DB43zcQXNcI2KMKDZJBCXq4PN0wDj8G7W3LcuClPMOlh/oJ/hpxBewucDoOK+UtgAAAABJRU5ErkJggg==" "623" "316" >}}
 
 As you can see the checkboxes, strikethrough, overdue dates and my custom progress bar are working as it should be.
 

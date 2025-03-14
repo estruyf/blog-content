@@ -38,7 +38,7 @@ ctx.RenderItems(ctx)
 
 The item template passes the item HTML mark-up back to the group template, which on its turn passes it back to the control template.
 
-{{< caption-new "/uploads/2016/01/012116_2011_Dosomething1.png" "Display template rendering flow" >}}
+{{< caption-new "/uploads/2016/01/012116_2011_Dosomething1.png" "Display template rendering flow"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKklEQVR4nAEfAOD/AOHk5+Tm6ejq7Onr7eTm6ebo6+jq7Ojp6+vs7tfZ3qTQGxjuYCefAAAAAElFTkSuQmCC" "627" "82" >}}
 
 So if you use the AddPostRenderCallback function in the control template, this will get executed once the group and item templates are completed rendering.
 

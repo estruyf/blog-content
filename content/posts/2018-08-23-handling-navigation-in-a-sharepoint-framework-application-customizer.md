@@ -42,7 +42,7 @@ This new navigation experience is important for your application customizer and 
 
 For covering all scenarios, I created the following application customizer:
 
-{{< caption-new "/uploads/2018/08/082318_0800_Handlingnav1.png" "Sample project header" >}}
+{{< caption-new "/uploads/2018/08/082318_0800_Handlingnav1.png" "Sample project header"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAoElEQVR4nG2LPQ6CQBSE3+2UYAhoaPQgGDGx8CDWlCa2XsDOSu00FkYhiywsf2/3rYkrVE6+4ptkBqLpJHRnK8dfjvy55QUDNxh6C2sc2v7admCzv+bPWPOUCq7LwiAZa5PkcY8hq5G3WKD6IgWqRlEtMaua7VlAhcRKmZaSiR+iVboLkNbUFeNSkQElQT/8GyDqz9ro5VVHx/fuxA+3/AOnvrjWiyOMSgAAAABJRU5ErkJggg==" "624" "432" >}}
 
 This will be the code to start with:
 
@@ -84,7 +84,7 @@ The easiest way for this would be to check if the list ID or list item ID got ch
 
 The above code would not work, as both the prevProps.context and this.props.context reference the same object. The list id and item id check will always be false.
 
-{{< caption-new "/uploads/2018/08/082318_0800_Handlingnav2.png" "Issue with the list and item change validation" >}}
+{{< caption-new "/uploads/2018/08/082318_0800_Handlingnav2.png" "Issue with the list and item change validation"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAIAAADuA9qHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOklEQVR4nDXJwQ3AIAwDQIYhsYRiUEE23X+yvnrfa76vOB2xyVXlzAfoEQBsN+kecmdfVRzjZM6/JX1LdAp+A1U+CwAAAABJRU5ErkJggg==" "624" "126" >}}
 
 A better way is to pass the list and list item IDs from within the application customizer itself.
 
@@ -106,11 +106,11 @@ Another issue that could happen is when you navigate to a page where the applica
 
 Did we not just solve the closing panel issue? Yes, we did, but this only works on pages/sites where the application customizer is active. On page/sites where it is not active, the code is not actually running. Which is true, but if you navigate from a page where you had the controls enabled, they will still be known to your browser.
 
-{{< caption-new "/uploads/2018/08/082318_0800_Handlingnav3.png" "Components are not unmounted" >}}
+{{< caption-new "/uploads/2018/08/082318_0800_Handlingnav3.png" "Components are not unmounted"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAApklEQVR4nGXGuw6CMBhA4T6LBaQt/m25qY2DGh+eKBYQHAwI0U1dDYlNRBNXT77hoO3hfKrbpm7b7vpzaZrudn88+94Yg/qX+fz1HobhN2iXJFrrNMtSrfda50WRFXlW5MeqqsoSrWdqFUeKe4HHOKUhh5CDpMSPJUQCea47VYuNipaRFMAJZbbjMDwCwZicIGHbQgYqDObc8xkDQoG4MHZsy8IYfwFT4GEisJd7NAAAAABJRU5ErkJggg==" "624" "396" >}}
 
 The issue here is that they are not unmounted/disposed of the page. But there is another issue. Notice that when I navigate back to the page where the application customizer is enabled. The application customizer is not displayed anymore. This will not be the case for all projects, but what I did in this sample solution. I created a singleton which gets initialized with the context of the application customizer. I also implemented the **componentWillUnmount** method to dispose of the singleton once the component gets unmounted from the page, but this never gets called because the header never gets unmounted. When navigating back to the page, it will use the old context which causes issues:
 
-{{< caption-new "/uploads/2018/08/082318_0800_Handlingnav4.png" "Property is undefined" >}}
+{{< caption-new "/uploads/2018/08/082318_0800_Handlingnav4.png" "Property is undefined"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAJ0lEQVR4nGNwFRSMUFAIUlX119V1lJM34OLSZmLSYmTUYWXVYWEBAEkHA8w2tkzwAAAAAElFTkSuQmCC" "624" "76" >}}
 
 To solve both of these issues, you will have to implement the **onDispose** method in the application customizer itself. The onDispose method gets called whenever the SharePoint tells the loaded placeholder to dispose of their content. This is what you define in the **placeholderProvider.tryCreateContent** method.
 

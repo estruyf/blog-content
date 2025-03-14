@@ -98,7 +98,7 @@ The last thing to add to the control template is the placeholder element:
 
 Once you have all this in place, the control display template will first load the script dependency before rendering the item display template. By doing this, you can now make use of **moment** in the item display template. No other change is necessary for the item display template.
 
-{{< caption-new "/uploads/2017/09/092117_1826_Howtoloadsc1.png" "Sample of the item display template rendering with moment.js" >}}
+{{< caption-new "/uploads/2017/09/092117_1826_Howtoloadsc1.png" "Sample of the item display template rendering with moment.js"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAALCAIAAADJDItPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA1klEQVR4nH2P2W6DMBQF+f8fbJJiFfCCF7xgbGObxLeCRupTO69HOqPp9j35kHR4Kl+5K9JXGw8AaHDS5X1f/faYljvWt1EhZgZu08U5A8BRC5lGJTjFg5JCzGwaMWX8Pf9Dl2L0W5hdnU0WrlCd5VqYzdTkV7vc2xY+semxQdQ8iEXU3sblY9THq53ntRY8DfLt5koKPA2cs/aXuwG0q6xLKTofiK2LL8yW2Ra9HT/RV3fOIcSeKET0fVQ9tV90cc7FGH+7Z0oWKTnF62oZIQj1XEgA+AZcqjhPaOdG/AAAAABJRU5ErkJggg==" "148" "170" >}}
 
 ## Download the templates
 

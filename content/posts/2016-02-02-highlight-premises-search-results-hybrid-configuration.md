@@ -23,7 +23,7 @@ Last week I finally found some time to get my demo tenant up and running with hy
 
 > **Important**: There are some disadvantages about using hybrid search. Mikael Svenson wrote an article about it which talks about them and made a checklist to see if hybrid search is good to implement in your environment: [Why Hybrid Crawl in SharePoint is a cold hot potato](http://www.techmikael.com/2015/11/why-hybrid-crawl-in-sharepoint-is-cold.html).
 
-{{< caption-new "/uploads/2016/02/020216_0908_Highlighton1.png" "Default hybrid search behaviour" >}}
+{{< caption-new "/uploads/2016/02/020216_0908_Highlighton1.png" "Default hybrid search behaviour"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAmklEQVR4nB3BOw4CIRAAUG7lHa3sPYuJpVYWFjY2JkZhYWH4w8wsmPieOF7U7nDfn95MlGvtf4g0xti2TdhQoGCqfYW4+tRa5z/zUQmi8KluYxJ2qeVXK2WUgTWVcjtfX4+nKDmNMRFR6mVxznhvADTERjznFCEEJGJCtRoNoD3Y4HurrTZmFjHG3jsRSa20Mwas9S7nXEph5h+FJaiS1WfvFgAAAABJRU5ErkJggg==" "624" "384" >}}
 
 > **Note**: first result is from SharePoint Online, the other two is from my on-premises environment.
 
@@ -31,9 +31,9 @@ This is a great step forward, but what if you can only access your on-premises c
 
 That would expect from your users that they have to check the path of the content to where it leads. This is not ideal, so a better solution would be to highlight the on-premises or external (yes, on-premises content is seen as external content for Office 365) content in your search center like this:
 
-{{< caption-new "/uploads/2016/02/020216_0908_Highlighton2.png" "Hybrid search with on-premises/external content highlighting" >}}
+{{< caption-new "/uploads/2016/02/020216_0908_Highlighton2.png" "Hybrid search with on-premises/external content highlighting"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAnklEQVR4nBXMMQ7CMAwAwPyKbzLxHxAbAxITCwuItmnS1k7TxI7dBHEPOHO69ofj43j+7ipbJmYuhUVKrXWvu4E1ZVai4mH1EIlIRVRl/HRhBrPEXGsrTP3Y9c4O3nqY1pTul9v7+TLbFmtrnNNgewfgAScED2tiaa0ZRPxfnK2zDsEj+IBEmYlU1YQQShEpbN3glmnCecYlxi2lpKo/gciofN8p/5cAAAAASUVORK5CYII=" "624" "388" >}}
 
-{{< caption-new "/uploads/2016/02/020216_0908_Highlighton3.png" "Notification text on VPN icon" >}}
+{{< caption-new "/uploads/2016/02/020216_0908_Highlighton3.png" "Notification text on VPN icon"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAoUlEQVR4nB3BSw6CMBQAwF7N87k28TSudGmMcSFKVBIQ+qVU+qHvtWB0hmz37WpzWe8aQHRhij8AAPMfsT7knBMikwNXZrQWYkwJVct43ZF+DHleEIFKRpXgSggtPUJxup4PR+KdW5bF+VBU9b2TJVUlVbe2fygvYibGGESEGJ/N+8VExUXFJdNGfZy2E7HWAmBC4IL2Rg+jGUbjvY9TSIhfIaenBxXd95YAAAAASUVORK5CYII=" "624" "396" >}}
 
 In the above screenshots you can see that I added a small image to highlight that the content can only be accessed on the corporate VPN. This small change can spare your users from frustration that they cannot open the document.
 
@@ -71,7 +71,7 @@ Here are the steps in order to create a new result type for your external conten
 *   Click on **New Result Type**;
 *   Configure the result type like in the following screenshot:
 
-{{< caption-new "/uploads/2016/02/020216_0908_Highlighton4.jpg" "Result type configuration" >}}
+{{< caption-new "/uploads/2016/02/020216_0908_Highlighton4.jpg" "Result type configuration"  "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAJAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQI/8QAHxAAAgAFBQAAAAAAAAAAAAAAAAECAxEhUSIxM0Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEQMRAD8A085uuX1bFCqqyDHzweMdbBa//9k=" "780" "681" >}}
 
 > **Information**: Condition has to be set with Managed Property **IsExternalContent** equals any of **true**. The action has to be set with the **External Item** display template.
 

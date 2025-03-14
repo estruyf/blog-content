@@ -75,8 +75,8 @@ body #aspnetForm {
 
 The end result should be like this.
 
-{{< caption-new "/uploads/2011/01/minimal_footer.png" "minimal.master with footer" >}}
+{{< caption-new "/uploads/2011/01/minimal_footer.png" "minimal.master with footer"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAjklEQVR4nG2KsQrCMBRF840qgq5SKq4SOji46Je4GaRIRCXFgn/TNh8geXnJlaboIB44w+VcUWx3yOUeo8Uak0x+HWcS07zAfLXBbCkhiAiOCJ4Z3v/q0dM0LQSHkEYIcYjMYGY48ni54dh2HUSMMY1/fJq1FkJdKvQetUF5r6HNM1neaihtcLo+cFBnvAHZQauNsWQBDQAAAABJRU5ErkJggg==" "659" "327" >}}
 
-{{< caption-new "/uploads/2011/01/minimal_scroll.png" "Minimal.master at the bottom of the page scrolling" >}}
+{{< caption-new "/uploads/2011/01/minimal_scroll.png" "Minimal.master at the bottom of the page scrolling"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAASklEQVR4nC3JWwqAIBQAUfe/qB5QKnUlpaWIj8CcEPqYnzMKoPdOzIlcIuVJvK0N/YNaC2o1jsU4Ji1sx4WWgHU3+xkYb9aCFc8HIB5I5ESSWXwAAAAASUVORK5CYII=" "659" "144" >}}
 
 Here you can download my version of the ["minimal.master" master page with a footer](/uploads/2011/01/minimal_with_footer.master.txt).

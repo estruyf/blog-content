@@ -35,6 +35,6 @@ During the ESPC14 I tried to take some pictures on each day, check them down her
 
 These Twitter analytics were aggregated with [Plus One Social](http://www.plusonesocial.com/ "Plus One  Social").
 
-{{< caption-new "/uploads/2014/05/Screenshot-2014-05-09-17.38.50.png" "Tweet Statistics" >}}
+{{< caption-new "/uploads/2014/05/Screenshot-2014-05-09-17.38.50.png" "Tweet Statistics"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAmklEQVR4nB2NvQ7BUABG72uK3Wr1BgaLWAwsJptBjAaJqSRG9dc2LrdNe9u0FE1xv0/qDGc5wxEkADiOe/wjpfR9pZTPKlAQzJLNJTwlOtVa6ziKwjTQ+7CwDCC4nQRWa+w3X+UdBvjygzxjY+gORjYE1z3v0O179fSpCJo3i4+8snbeTWcrR7DMl17bvi2qGU0lMDbzTHb4iH+nPoUQ+0qb0QAAAABJRU5ErkJggg==" "958" "489" >}}
 
-{{< caption-new "/uploads/2014/05/Screenshot-2014-05-09-17.39.51.png" "Tweet Statistics" >}}
+{{< caption-new "/uploads/2014/05/Screenshot-2014-05-09-17.39.51.png" "Tweet Statistics"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAVUlEQVR4nAXBsRECMQwEQPdfAm3QBSEZAfMZMzAQvANLp7uz2B1zzipIJJkgila9z7i9/DljRELelJOGvOhuXx9xuXf3HgkEuMDIkljkNp9fHL/Vwh+y1VZGIrxw2gAAAABJRU5ErkJggg==" "1203" "350" >}}

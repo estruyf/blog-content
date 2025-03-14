@@ -36,7 +36,7 @@ I am very honoured that I speak again for the second time in Stockholm. SPS Stoc
 
 This year the second SharePoint Saturday Paris is organized in May again, and I am very happy to be part of it again. Last year I talked about how you can improve your search experience. This year I will be talking about display templates.
 
-{{< caption-new "/uploads/2016/03/CdS_SLzW4AEq588.jpg" "SPSParis Display Template Session" >}}
+{{< caption-new "/uploads/2016/03/CdS_SLzW4AEq588.jpg" "SPSParis Display Template Session"  "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAGAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAYH/8QAIBAAAQMDBQEAAAAAAAAAAAAAAQIDIQAEBgUREhNxIv/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARAv/aAAwDAQACEQMRAD8AzbDHGbHV+YZb6ltFC/jkqZChIkEbeGr93JMaDiwLHVQATCXkgDwb0pU3YObMb//Z" "1023" "576" >}}
 
 > **Search display templates tips and tricks** (Dev - lvl 300)
 > 
@@ -46,7 +46,7 @@ This year the second SharePoint Saturday Paris is organized in May again, and I 
 
 The last event for me in May is SPC Adriatics. Also, at this event I will be talking about display templates.
 
-{{< caption-new "/uploads/2016/03/SPCADRIATICS_iamspeakingat.png" "Speaking at SPCAdriatics" >}}
+{{< caption-new "/uploads/2016/03/SPCADRIATICS_iamspeakingat.png" "Speaking at SPCAdriatics"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAK9JREFUeJwBpABb/wC0pFT/0cBt/8++a//JuGb/loU2/5+IL//Xu1j/pqel/6Wkpf+kpKT9AO3KG//kwBb/27kU/+fDF//92yT//+Eh/+PJSP+xr7P/xb25/6Kjo/0AcWxX/3dzYf+AfGv/eHNg/3RuV/99d2D/qKai/6WbgP+aiVD/goOJ/QBBQkj/RkZM/0dITP9ZWV7/UlJY/3l5f/+ZmqH/eG5E/4NyLv9ub3r9irNmta+mzhIAAAAASUVORK5CYII=" "851" "315" >}}
 
 > **Take your display template skills to the next level** (Dev - lvl 300)
 >
