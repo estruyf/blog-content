@@ -1,5 +1,5 @@
 ---
-title: '#DevHack: Using Azure CDN with SAS on Verizon Premium'
+title: "#DevHack: Using Azure CDN with SAS on Verizon Premium"
 slug: /devhack-azure-cdn-sas-verizon-premium/
 author: Elio Struyf
 type: post
@@ -11,6 +11,7 @@ tags:
   - Azure
 categories: []
 comments: true
+preview: /social/d2c0cecc-19f1-4561-a8f9-2fbbd34a2a42.png
 ---
 
 In the previous article, I explained how you could use the Shared Access Signature (SAS) in Cloudflare. The reason that I use this approach is to make sure the Azure Storage cannot be publicly accessed. Only via a SAS token blobs can be retrieved or updated. If you want to do this for Azure CDN, I pointed to the documentation to configure this, but it seems that it has changed a bit over time.

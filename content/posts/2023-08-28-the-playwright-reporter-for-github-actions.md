@@ -1,20 +1,20 @@
 ---
-title: "The Playwright Reporter for GitHub Actions"
+title: The Playwright Reporter for GitHub Actions
 longTitle: ""
 customField: ""
-slug: "/playwright-reporter-github-actions/"
-description: "Learn how to use the @estruyf/github-actions-reporter to discern Playwright test results in GitHub Actions quickly."
-date: "2023-08-28T08:56:53.930Z"
-lastmod: "2023-08-28T08:56:54.541Z"
-preview: "/social/0c75f71e-7f4f-4c70-84f2-d10ead5dcb4d.png"
+slug: /playwright-reporter-github-actions/
+description: Learn how to use the @estruyf/github-actions-reporter to discern Playwright test results in GitHub Actions quickly.
+date: 2023-08-28T08:56:53.930Z
+lastmod: 2023-08-28T08:56:54.541Z
+preview: /social/366e4617-038d-4202-a2ce-3984b969e34a.png
 draft: false
 comments: true
 tags:
-  - "CI/CD"
-  - "GitHub Actions"
-  - "Playwright"
-  - "Testing"
-type: "post"
+  - CI/CD
+  - GitHub Actions
+  - Playwright
+  - Testing
+type: post
 ---
 
 For developers leveraging GitHub Actions to automate workflows E2E tests, Playwright provides excellent documentation on its [use with GitHub Actions](https://playwright.dev/docs/ci-intro). By default, the setup uses the HTML reporter, offering a detailed look at test results. However, I found myself longing for a more straightforward overview of these results. This led me to develop a [GitHub Actions reporter](https://www.npmjs.com/package/@estruyf/github-actions-reporter). This reporter captures all the test outcomes and presents them as a concise GitHub Actions summary.

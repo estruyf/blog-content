@@ -11,7 +11,7 @@ tags:
   - "Development"
 categories: null
 slug: "/devhack-check-vscode-extension-running/"
-preview: "/social/51757d96-10e1-4c6f-9eee-582ddd85d464.png"
+preview: "/social/d3eb7afe-da36-418a-863e-ec74ce28a732.png"
 keywords:
   - "vscode"
 ---

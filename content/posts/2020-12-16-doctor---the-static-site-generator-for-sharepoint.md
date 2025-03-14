@@ -1,16 +1,17 @@
 ---
-title: Doctor - the static site generator for SharePoint
-slug: /doctor-static-site-generator-sharepoint/
-author: Elio Struyf
-type: post
-date: 2020-12-16T16:24:15.782Z
+title: "Doctor - the static site generator for SharePoint"
+slug: "/doctor-static-site-generator-sharepoint/"
+author: "Elio Struyf"
+type: "post"
+date: "2020-12-16T16:24:15.782Z"
 draft: false
 tags:
-  - SharePoint
-  - Static site
-  - Documentation
+  - "SharePoint"
+  - "Static site"
+  - "Documentation"
 categories: []
 comments: true
+preview: "/social/92087160-aaa2-4fb5-9c97-1ceaa0b994e5.png"
 ---
 
 I love static sites! In 2020 I have created ten production sites with various static site generators and a couple of POCs. My favorites are [Hugo](https://gohugo.io/) and [Next.js](https://nextjs.org/).

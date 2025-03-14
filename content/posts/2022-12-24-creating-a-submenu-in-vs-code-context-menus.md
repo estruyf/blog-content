@@ -5,7 +5,7 @@ slug: "/creating-submenu-code-step-step-guide/"
 description: "In this article, Elio explains how to create a submenu in your Visual Studio Code context menus to make these less cluttered."
 date: "2023-01-24T10:44:49.047Z"
 lastmod: "2023-01-24T10:44:50.590Z"
-preview: "/social/4b2202ea-339c-48aa-974f-db2de7ebff44.png"
+preview: "/social/106bf944-2ee9-4d7d-936c-a05db5894908.png"
 draft: false
 comments: true
 tags:

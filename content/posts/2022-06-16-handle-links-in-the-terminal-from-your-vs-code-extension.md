@@ -4,7 +4,7 @@ longTitle: "Handle links in the terminal from your Visual Studio Code extension"
 description: "In this article, Elio explains how you can handle links in the terminal by your extension to allow these to be handled by your code instead of navigating.."
 date: "2022-06-16T14:35:37.026Z"
 lastmod: "2022-06-16T14:35:37.577Z"
-preview: "/social/d90e3fe3-4d9f-4257-910f-4065b5b7fd4b.png"
+preview: "/social/c7c8abf0-5256-4fcd-83ed-78176e587fb2.png"
 draft: false
 comments: true
 tags:

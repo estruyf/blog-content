@@ -1,19 +1,19 @@
 ---
-title: Add a custom themable icon to Visual Studio Code
+title: "Add a custom themable icon to Visual Studio Code"
 longTitle: ""
 customField: ""
-slug: /add-custom-themable-icon-visual-studio-code/
-description: Learn how to create an icon font and add it to your Visual Studio Code extension to add a custom themable icon to the editor.
-date: 2023-09-11T08:47:57.020Z
-lastmod: 2023-09-11T08:47:57.020Z
-preview: /social/ebb7b405-d11c-4e3a-9665-c72d26271c25.png
+slug: "/add-custom-themable-icon-visual-studio-code/"
+description: "Learn how to create an icon font and add it to your Visual Studio Code extension to add a custom themable icon to the editor."
+date: "2023-09-11T08:47:57.020Z"
+lastmod: "2023-09-11T08:47:57.020Z"
+preview: "/social/7e3ba825-c3da-45e4-93b8-610b3ab38e5f.png"
 draft: false
 comments: true
 tags:
-  - Icons
-  - Theming
-  - Visual Studio Code
-type: post
+  - "Icons"
+  - "Theming"
+  - "Visual Studio Code"
+type: "post"
 ---
 
 In version 9.2.0 of Front Matter CMS, I wanted to add a status bar item to the editor that shows the Front Matter icon. To achieve this, the Visual Studio Code documentation explains you to add your icon as an icon font to the `icon contribution point` in your `package.json` file.

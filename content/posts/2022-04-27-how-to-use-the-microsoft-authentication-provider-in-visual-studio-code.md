@@ -1,20 +1,20 @@
 ---
-title: How to use the Microsoft auth provider in Visual Studio Code
-longTitle: How to use the Microsoft authentication provider in Visual Studio Code
-description: In this article, Elio explains how you can use the Microsoft authentication provider in your extensions.
-date: 2022-04-27T13:44:07.529Z
-lastmod: 2022-04-27T13:44:08.012Z
-preview: /social/b3b8b581-fbd6-454c-9d5b-95ef76d39712.png
+title: "How to use the Microsoft auth provider in Visual Studio Code"
+longTitle: "How to use the Microsoft authentication provider in Visual Studio Code"
+description: "In this article, Elio explains how you can use the Microsoft authentication provider in your extensions."
+date: "2022-04-27T13:44:07.529Z"
+lastmod: "2022-04-27T13:44:08.012Z"
+preview: "/social/a932229e-912f-4ebc-949d-94e1d4c213e1.png"
 draft: false
 comments: true
-type: post
+type: "post"
 tags:
-  - Authentication
-  - Azure AD
-  - Development
-  - VSCode
-  - OAuth
-slug: /microsoft-authentication-provider-visual-studio-code/
+  - "Authentication"
+  - "Azure AD"
+  - "Development"
+  - "VSCode"
+  - "OAuth"
+slug: "/microsoft-authentication-provider-visual-studio-code/"
 ---
 
 While creating a custom authentication provider, I found out the standard Microsoft authentication provider in Visual Studio Code can be used with your Azure AD Apps and Tenants.

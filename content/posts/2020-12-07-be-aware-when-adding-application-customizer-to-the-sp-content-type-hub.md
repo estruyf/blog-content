@@ -1,18 +1,19 @@
 ---
-title: Be aware adding extensions to SharePoint Content Type Hub
-slug: /be-aware-adding-extensions-sharepoint-content-type-hub/
-author: Elio Struyf
-type: post
-date: 2020-12-07T17:39:33.433Z
+title: "Be aware adding extensions to SharePoint Content Type Hub"
+slug: "/be-aware-adding-extensions-sharepoint-content-type-hub/"
+author: "Elio Struyf"
+type: "post"
+date: "2020-12-07T17:39:33.433Z"
 draft: false
 tags:
-  - SharePoint
-  - Development
-  - Application Customizer
+  - "SharePoint"
+  - "Development"
+  - "Application Customizer"
 categories: []
 comments: true
 aliases:
-  - /be-aware-adding-extensins-sharepoint-content-type-hub/
+  - "/be-aware-adding-extensins-sharepoint-content-type-hub/"
+preview: "/social/6f7232e5-6c39-4eba-a43f-1433479dba11.png"
 ---
 
 For one of our clients, we had a Microsoft support case open for a long time. On the client, its tenant, every time they created a new site collection, our Valo application customizers appeared automatically. Most of the time, this happened between 5-60 minutes.

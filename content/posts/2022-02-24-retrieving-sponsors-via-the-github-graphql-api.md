@@ -14,7 +14,7 @@ categories: []
 slug: "/devhack-fetching-sponsors-github-graphql-api/"
 keywords:
   - "graphql"
-preview: "/social/4685d700-3dde-4029-87db-6bb44a492b0e.png"
+preview: "/social/c4a58b26-3251-4762-ab44-54abd70be4c1.png"
 comments: true
 ---
 

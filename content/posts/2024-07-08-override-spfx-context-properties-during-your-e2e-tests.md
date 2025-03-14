@@ -6,7 +6,7 @@ slug: "/override-spfx-context-properties-playwright-e2e-tests/"
 description: "Learn how to override SPFx context properties while running Playwright E2E tests. It allows you to perform tests with your mocked properties."
 date: "2024-07-08T13:34:57.735Z"
 lastmod: "2024-07-08T13:34:58.265Z"
-preview: "/social/45a8a242-1327-45b0-a2eb-0e48b207daa1.png"
+preview: "/social/d4bd837f-014b-498f-93ec-3b08af44db6e.png"
 draft: false
 comments: true
 tags:

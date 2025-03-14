@@ -1,16 +1,17 @@
 ---
-title: 'To write code comments or not, it should not be a question'
-slug: /write-code-comments-or-not-should-not-be-question/
-author: Elio Struyf
-type: post
-date: 2021-03-01T16:10:00.066Z
+title: "To write code comments or not, it should not be a question"
+slug: "/write-code-comments-or-not-should-not-be-question/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-03-01T16:10:00.066Z"
 draft: false
 tags:
-  - Comments
-  - Development
-  - Best Practices
+  - "Comments"
+  - "Development"
+  - "Best Practices"
 categories: []
 comments: true
+preview: "/social/39053ef6-2a52-4164-ae6f-18fb3aaf0759.png"
 ---
 
 Comments, just do it. I write this post because I read a couple of articles, and messages on social platforms about stop using comments in your code. In some cases, there is good reasoning behind it, but even with this reasoning, I believe that comments are too valuable for your DEV team.

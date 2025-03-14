@@ -1,17 +1,17 @@
 ---
-title: Saying Goodbye to Rapid
-longTitle: Saying Goodbye to Rapid - A Reflection on Building a Successful VS Code Extension
+title: "Saying Goodbye to Rapid"
+longTitle: "Saying Goodbye to Rapid - A Reflection on Building a Successful VS Code Extension"
 customField: ""
-slug: /goodbye-rapid-reflection-building-successful-code-extension/
-description: This blog post reflects on the author's experience at Rapid and building a successful VS Code extension. It's a heartfelt goodbye and a reminder to keep smiling
-date: 2023-05-05T13:46:01.806Z
-lastmod: 2023-05-05T13:46:01.806Z
-preview: /social/032ffd60-82a8-4562-be81-6d7ff154c79d.png
+slug: "/goodbye-rapid-reflection-building-successful-code-extension/"
+description: "This blog post reflects on the author's experience at Rapid and building a successful VS Code extension. It's a heartfelt goodbye and a reminder to keep smiling"
+date: "2023-05-05T13:46:01.806Z"
+lastmod: "2023-05-05T13:46:01.806Z"
+preview: "/social/ca6ab350-5baf-4457-bcf9-273d32efdeb3.png"
 draft: false
 comments: true
 tags:
-  - Career
-type: post
+  - "Career"
+type: "post"
 ---
 
 It's with a heavy heart that I need to say farewell to Rapid. In this company, I had the opportunity to work and build a Visual Studio Code extension that quickly gained popularity among developers. Today Rapid decided to lay off even more people. This time, I was one of them.

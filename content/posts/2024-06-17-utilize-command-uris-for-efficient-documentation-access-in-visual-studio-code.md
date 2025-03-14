@@ -6,7 +6,7 @@ slug: "/utilize-command-uris-documentation-access-vscode/"
 description: "Learn how to improve the accessibility of your Visual Studio Code extensions by utilizing command URIs to open the documentation directly in the editor."
 date: "2024-06-17T11:08:45.153Z"
 lastmod: "2024-06-17T11:08:45.715Z"
-preview: "/social/58692959-e953-4be4-ba35-dbddc7d7724d.png"
+preview: "/social/4dfbddc3-faa2-4c0a-b9a8-5762caa7d03b.png"
 draft: false
 comments: true
 tags:

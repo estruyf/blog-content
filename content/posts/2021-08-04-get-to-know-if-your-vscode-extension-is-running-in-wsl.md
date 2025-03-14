@@ -1,20 +1,20 @@
 ---
 title: "#DevHack: Check if a VSCode extension is running in WSL"
-slug: "/devhack-vscode-extension-running-wsl/"
-description: "Are you developing a Visual Studio Code extension and do you need to know when it is running in WSL? In this article I explain how you can see when this happens"
-author: "Elio Struyf"
-type: "post"
-date: "2021-08-04T13:45:41.703Z"
-lastmod: "2021-08-04T13:45:43.000Z"
+slug: /devhack-vscode-extension-running-wsl/
+description: Are you developing a Visual Studio Code extension and do you need to know when it is running in WSL? In this article I explain how you can see when this happens
+author: Elio Struyf
+type: post
+date: 2021-08-04T13:45:41.703Z
+lastmod: 2021-08-04T13:45:43.000Z
 draft: false
 tags:
-  - "Extensions"
-  - "VSCode"
+  - Extensions
+  - VSCode
 categories: []
 comments: true
 keywords:
-  - "wsl"
-preview: "/social/6924266c-5def-419e-b927-6ee50b852fcf.png"
+  - wsl
+preview: /social/b417b3d2-6f35-47d3-bc38-fdeaf537c588.png
 ---
 
 For the [Front Matter](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter) Visual Studio Code extension, I needed to know if the current instance opened a Windows Subsystem for Linux (WSL) located project folder. 

@@ -1,16 +1,17 @@
 ---
-title: '#DevHack: Optimizing initial load JS from Next.js'
-slug: /devhack-optimizing-initial-load-js-nextjs/
-author: Elio Struyf
-type: post
-date: 2020-11-27T10:48:50.416Z
+title: "#DevHack: Optimizing initial load JS from Next.js"
+slug: "/devhack-optimizing-initial-load-js-nextjs/"
+author: "Elio Struyf"
+type: "post"
+date: "2020-11-27T10:48:50.416Z"
 draft: false
-tags: 
-  - Development
-  - WebDev
-  - TypeScript
+tags:
+  - "Development"
+  - "WebDev"
+  - "TypeScript"
 categories: []
 comments: true
+preview: "/social/0e07ae40-2b6c-4e18-af57-222499cd4226.png"
 ---
 
 Now that my [PimpYourOwnBike](https://pimpyourownbike.com) website has launched. I started looking at where I can do some optimizations. When looking at the Next.js build output, I spotted a red number in the **First Load JS** section.

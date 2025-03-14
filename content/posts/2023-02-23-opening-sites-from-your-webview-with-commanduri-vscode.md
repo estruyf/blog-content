@@ -5,7 +5,7 @@ slug: "/command-uri-vscode-webview-open-files-links/"
 description: "In this article, Elio shows how to use command URI to open files and links in a webview from a Visual Studio Code extension."
 date: "2023-02-23T11:26:20.326Z"
 lastmod: "2023-02-23T11:26:20.823Z"
-preview: "/social/a3bd32ca-432f-4a55-8c22-4a470f5d3afe.png"
+preview: "/social/ba6126f8-0a84-4920-9f13-0e6b1a746f43.png"
 draft: false
 comments: true
 tags:

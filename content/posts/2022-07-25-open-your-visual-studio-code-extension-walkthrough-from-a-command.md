@@ -4,7 +4,7 @@ longTitle: "Open your Visual Studio Code extension walkthrough from a command"
 description: "In this article Elio explains how you can open your Visual Studio Code extension walkthrough from a custom command."
 date: "2022-07-25T14:17:07.364Z"
 lastmod: "2022-07-25T14:17:08.214Z"
-preview: "/social/7c738dac-3af9-407a-88f9-6f9eac5ce2cf.png"
+preview: "/social/474b7073-f790-48ba-b3d6-97d4798476d7.png"
 draft: false
 comments: true
 tags:

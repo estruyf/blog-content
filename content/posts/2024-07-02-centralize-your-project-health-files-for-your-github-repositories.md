@@ -1,17 +1,17 @@
 ---
-title: "Centralize your project files for your GitHub repositories"
-longTitle: "Centralize your project health files for your GitHub repositories"
+title: Centralize your project files for your GitHub repositories
+longTitle: Centralize your project health files for your GitHub repositories
 customField: ""
-slug: "/centralize-project-files-github-repositories/"
-description: "Learn how to centralize project health files your GitHub repositories using a special repository called .github"
-date: "2024-07-02T14:05:23.716Z"
-lastmod: "2024-07-02T14:05:24.213Z"
-preview: "/social/fc921729-01a9-4cd3-9e15-34064b806119.png"
+slug: /centralize-project-files-github-repositories/
+description: Learn how to centralize project health files your GitHub repositories using a special repository called .github
+date: 2024-07-02T14:05:23.716Z
+lastmod: 2024-07-02T14:05:24.213Z
+preview: /social/282701ce-0f08-436c-9460-2eefed9e88f2.png
 draft: false
 comments: true
 tags:
-  - "GitHub"
-type: "post"
+  - GitHub
+type: post
 ---
 
 When you manage multiple repositories on GitHub, you can centralize your project health files like issue templates, pull request templates, code of conduct, and more. By centralizing those files, you can automatically reuse them across all your repositories or overwrite them when needed. You can achieve this by creating a special repository called `.github`.

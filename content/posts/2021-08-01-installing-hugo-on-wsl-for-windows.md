@@ -1,11 +1,9 @@
 ---
 title: "#DevHack: Installing Hugo on Windows with WSL"
 slug: "/devhack-installing-hugo-windows-wsl/"
-description: "Get to know how you can install Hugo io on Windows by using Windows Subsystem for Linux (WSL) in combination with Homebrew."
 author: "Elio Struyf"
 type: "post"
 date: "2021-08-01T15:38:52.132Z"
-lastmod: "2021-08-01T15:38:52.132Z"
 draft: false
 tags:
   - "Homebrew"
@@ -15,10 +13,12 @@ tags:
   - "Windows"
 categories: []
 comments: true
+preview: "/social/ee7f5eaf-d313-49ad-93b4-a1f8efd052c0.png"
+lastmod: "2021-08-01T15:38:52.132Z"
 keywords:
   - "Windows"
   - "Hugo"
-preview: "/social/4320f098-3fa5-494e-a153-91b7d2293e0f.png"
+description: "Get to know how you can install Hugo io on Windows by using Windows Subsystem for Linux (WSL) in combination with Homebrew."
 ---
 
 There were a couple of reasons for me to test out Windows 11, but the main reason was to give a new life to a device I hardly used anymore.

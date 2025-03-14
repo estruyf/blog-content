@@ -6,7 +6,7 @@ slug: "/fix-azure-function-node-js-github-actions-windows-workflow/"
 description: "Fixing the Azure Function Node.js GitHub Actions Windows workflow to deploy only production dependencies and exclude the node_modules folder from the artifact."
 date: "2024-09-09T10:15:49.612Z"
 lastmod: "2024-09-09T10:15:49.613Z"
-preview: "/social/15d2c2db-d797-4f3d-83ce-1c53c9903b84.png"
+preview: "/social/3c1a1de2-867d-44af-bc63-8ad9bb7cf4a9.png"
 draft: false
 comments: true
 tags:

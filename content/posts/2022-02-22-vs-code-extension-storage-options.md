@@ -5,7 +5,7 @@ draft: false
 type: "post"
 description: "In this article Elio helps you find out what the options of data storage are in Visual Studio code an which one to use in which circumstances."
 lastmod: "2022-02-22T16:17:11.136Z"
-preview: "/social/e92b2e3a-2f83-4413-9f85-0bfa725c672d.png"
+preview: "/social/b1443735-7fd8-48de-b300-7ccb677b9dcf.png"
 tags:
   - "Development"
   - "Storage"

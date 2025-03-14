@@ -1,23 +1,23 @@
 ---
-title: "Generate open graph preview image in Code with Front Matter"
-slug: "/generate-open-graph-preview-image-code-front-matter/"
-author: "Elio Struyf"
-type: "post"
-date: "2021-08-02T15:52:40.957Z"
-lastmod: "2021-08-02T15:52:42.210Z"
+title: Generate open graph preview image in Code with Front Matter
+slug: /generate-open-graph-preview-image-code-front-matter/
+author: Elio Struyf
+type: post
+date: 2021-08-02T15:52:40.957Z
+lastmod: 2021-08-02T15:52:42.210Z
 draft: false
 tags:
-  - "Extensions"
-  - "Front Matter"
-  - "VSCode"
-  - "Open Graph"
+  - Extensions
+  - Front Matter
+  - VSCode
+  - Open Graph
 categories: []
 comments: true
-preview: "/social/110f9492-57a4-483e-9fc3-82962e838af0.png"
-description: "Get to know how you can generate a preview image for your articles by using a custom script and the Front Matter Visual Studio Code extension."
+preview: /social/dad396ae-1565-493c-857a-30194cf2714a.png
+description: Get to know how you can generate a preview image for your articles by using a custom script and the Front Matter Visual Studio Code extension.
 keywords:
-  - "front matter"
-  - "preview image"
+  - front matter
+  - preview image
 ---
 
 Since I moved my blog to Hugo, I created a [Front Matter - VSCode extension](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter) which makes content/article management easier within Visual Studio Code.

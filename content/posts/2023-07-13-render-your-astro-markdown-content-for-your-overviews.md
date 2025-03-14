@@ -6,7 +6,7 @@ slug: "/render-astro-markdown-content-overviews/"
 description: "Learn how to easily render your Astro markdown content for overviews using Astro.glob() in this blog post."
 date: "2023-07-13T13:16:03.235Z"
 lastmod: "2023-07-13T13:16:03.235Z"
-preview: "/social/f0812b4c-57ab-487e-be26-1f0caa7197eb.png"
+preview: "/social/41113813-3a45-424f-a65e-9457c45b9d44.png"
 draft: false
 comments: true
 tags:

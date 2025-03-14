@@ -1,18 +1,18 @@
 ---
-title: Creating a reusable auth provider in Visual Studio Code
+title: "Creating a reusable auth provider in Visual Studio Code"
 longTitle: ""
-slug: /creating-reusable-auth-provider-visual-studio-code/
-description: In this article, Elio explains how you can create a reusable authentication provider extension that you can leverage in all your extensions.
-date: 2022-09-12T13:54:20.792Z
-lastmod: 2022-09-12T13:54:21.287Z
-preview: /social/25889665-20f5-4f91-b201-440206eccaf0.png
+slug: "/creating-reusable-auth-provider-visual-studio-code/"
+description: "In this article, Elio explains how you can create a reusable authentication provider extension that you can leverage in all your extensions."
+date: "2022-09-12T13:54:20.792Z"
+lastmod: "2022-09-12T13:54:21.287Z"
+preview: "/social/57767f13-ae0c-4e52-b1da-ac494bc941c6.png"
 draft: false
 comments: true
 tags:
-  - Development
-  - Visual Studio Code
-  - Authentication
-type: post
+  - "Development"
+  - "Visual Studio Code"
+  - "Authentication"
+type: "post"
 ---
 
 A couple of months ago, I wrote about how you could create an authentication provider for Visual Studio Code. In this article, we will take it further and make it reusable by other extensions. 

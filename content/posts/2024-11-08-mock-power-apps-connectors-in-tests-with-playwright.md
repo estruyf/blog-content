@@ -1,23 +1,23 @@
 ---
-title: "Mock Power Apps connectors in tests with Playwright"
+title: Mock Power Apps connectors in tests with Playwright
 longTitle: ""
 customField: ""
-slug: "/mock-power-apps-connectors-tests-playwright/"
-description: "Learn how to mock Power Apps connectors in tests using Playwright for a controlled testing environment and accurate results."
-date: "2024-11-12T09:19:10.583Z"
-lastmod: "2024-11-12T09:19:11.230Z"
-preview: "/social/91e72890-23ed-4b32-8cdf-c5e720f01618.png"
+slug: /mock-power-apps-connectors-tests-playwright/
+description: Learn how to mock Power Apps connectors in tests using Playwright for a controlled testing environment and accurate results.
+date: 2024-11-12T09:19:10.583Z
+lastmod: 2024-11-12T09:19:11.230Z
+preview: /social/0011baa9-ed48-445d-a639-75e71cb58f22.png
 draft: false
 comments: true
 tags:
-  - "API"
-  - "Mocking"
-  - "Playwright"
-  - "PowerApps"
-  - "Testing"
-  - "Connectors"
-type: "post"
-fmContentType: "post"
+  - API
+  - Mocking
+  - Playwright
+  - PowerApps
+  - Testing
+  - Connectors
+type: post
+fmContentType: post
 ---
 
 Power Apps connectors allow you to connect your app to external services like SharePoint, Microsoft 365, or custom APIs. When you build a Power App, you can use these connectors to read and write data from these services. For instance, you can get a list of items from a SharePoint list, create a new item in a SharePoint list, etc.

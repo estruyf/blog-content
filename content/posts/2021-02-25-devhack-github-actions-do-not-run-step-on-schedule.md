@@ -1,16 +1,17 @@
 ---
-title: '#DevHack: GitHub Actions do not run step on schedule'
-slug: /devhack-github-actions-run-step-schedule/
-author: Elio Struyf
-type: post
-date: 2021-02-25T14:14:41.404Z
+title: "#DevHack: GitHub Actions do not run step on schedule"
+slug: "/devhack-github-actions-run-step-schedule/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-02-25T14:14:41.404Z"
 draft: false
 tags:
-  - GitHub
-  - GitHub Actions
-  - DevOps
+  - "GitHub"
+  - "GitHub Actions"
+  - "DevOps"
 categories: []
 comments: true
+preview: "/social/2f85c01e-adb0-4456-afe4-cf12b53d73d8.png"
 ---
 
 When creating a whole new Github Actions workflow for [Doctor](https://github.com/estruyf/doctor), I wanted to do as much as possible from one workflow and be able to limit specific actions depending on how it triggered. 

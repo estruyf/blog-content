@@ -10,7 +10,7 @@ tags: []
 categories: []
 comments: true
 description: Read more about my personal experiences in the year 2021. Merry Christmas and best wishes for 2022.
-preview: /social/41986baf-97c9-4277-bdbf-b0e7ec4e01cc.png
+preview: /social/335ef0f2-a86b-4df2-a32f-01c10dd96ef3.png
 ---
 
 What!? It is already the end of 2021! All I can say about 2021 is that life takes you to unexpected places.

@@ -1,15 +1,16 @@
 ---
-title: Goodbye Valo World it is time to explore something new
-slug: /goodbye-valo-world-time-explore/
-author: Elio Struyf
-type: post
-date: 2021-03-12T13:30:11.368Z
+title: "Goodbye Valo World it is time to explore something new"
+slug: "/goodbye-valo-world-time-explore/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-03-12T13:30:11.368Z"
 draft: false
 tags:
-  - Personal
-  - Career
+  - "Personal"
+  - "Career"
 categories: []
 comments: true
+preview: "/social/67dca7da-6891-4f8b-a9fc-6644fc5d28f1.png"
 ---
 
 For the last 3,5 years, I have been working at Valo. I started as a developer and eventually became the Engineering Lead. Every single day I enjoyed working at Valo. It has been an exciting ride.

@@ -1,19 +1,19 @@
 ---
-title: Someone is DDoS-ing my Azure Functions, and what to do
-longTitle: Someone is DDoS-ing my Azure Functions, and here is what you can do
-slug: /ddos-azure-functions-front-door/
-description: In this article, Elio explains how someone started spamming one of his Azure Functions to fake their statistics and what he did to overcome it.
-date: 2022-10-26T08:32:55.784Z
-lastmod: 2022-10-26T08:32:55.784Z
-preview: /social/e01183a5-5784-4235-974a-8c7e4d848528.png
+title: "Someone is DDoS-ing my Azure Functions, and what to do"
+longTitle: "Someone is DDoS-ing my Azure Functions, and here is what you can do"
+slug: "/ddos-azure-functions-front-door/"
+description: "In this article, Elio explains how someone started spamming one of his Azure Functions to fake their statistics and what he did to overcome it."
+date: "2022-10-26T08:32:55.784Z"
+lastmod: "2022-10-26T08:32:55.784Z"
+preview: "/social/7f440da1-7015-4f61-a73b-2d0bd0234cbc.png"
 draft: false
 comments: true
 tags:
-  - Azure Functions
-  - Front Door
-  - WAF
-  - Firewall
-type: post
+  - "Azure Functions"
+  - "Front Door"
+  - "WAF"
+  - "Firewall"
+type: "post"
 ---
 
 Last week, all of a sudden, my Azure subscription got suspended. As the subscription runs on credits and is optimized to be way below the limit, I was surprised to see that I suddenly reached the spending limit.

@@ -6,7 +6,7 @@ slug: "/setting-variables-azure-devops-pipelines-node-js-scripts/"
 description: "Explore setting Azure DevOps pipeline variables effectively using Node.js, ensuring seamless task transitions in your CI/CD workflows."
 date: "2024-08-05T09:05:02.748Z"
 lastmod: "2024-08-05T09:05:03.134Z"
-preview: "/social/f935d2cf-8fd5-437f-bb4d-c16b6abe5500.png"
+preview: "/social/2547995e-e224-445f-b0e4-826b77f9da8d.png"
 draft: false
 comments: true
 tags:

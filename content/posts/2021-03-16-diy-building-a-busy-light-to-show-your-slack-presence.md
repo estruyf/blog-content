@@ -1,5 +1,5 @@
 ---
-title: 'DIY: Building a busy light to show your Slack presence'
+title: "DIY: Building a busy light to show your Slack presence"
 slug: /diy-building-busy-light-show-slack-presence/
 author: Elio Struyf
 type: post
@@ -10,6 +10,7 @@ tags:
   - Busy Light
 categories: []
 comments: true
+preview: /social/87c5e9c9-ab6d-41be-9ad7-20d19be6f55f.png
 ---
 
 Going back a year in time, I created a post about building my Busy Light, which I connected to the Microsoft Graph. Homebridge is used to control the busy light, its colors, and statuses.

@@ -1,20 +1,20 @@
 ---
-title: Locally running and testing your custom GitHub Action
+title: "Locally running and testing your custom GitHub Action"
 longTitle: ""
 customField: ""
-slug: /locally-testing-custom-github-action/
-description: Learn how to locally test and run your custom GitHub Action using the @github/local-action command-line tool with this step-by-step guide.
-date: 2024-07-16T09:05:40.297Z
-lastmod: 2024-07-16T09:05:40.763Z
-preview: /social/07f2b912-9ea8-4243-abc3-ce601f194996.png
+slug: "/locally-testing-custom-github-action/"
+description: "Learn how to locally test and run your custom GitHub Action using the @github/local-action command-line tool with this step-by-step guide."
+date: "2024-07-16T09:05:40.297Z"
+lastmod: "2024-07-16T09:05:40.763Z"
+preview: "/social/c561f6cd-8b66-490f-a5cf-947665425932.png"
 draft: false
 comments: true
 tags:
-  - GitHub Actions
-  - Testing
-  - Development
-type: post
-fmContentType: post
+  - "GitHub Actions"
+  - "Testing"
+  - "Development"
+type: "post"
+fmContentType: "post"
 ---
 
 When developing a custom GitHub Action, you should test and run it locally before pushing it to your repository. Initially, I created a script that allowed me to run it locally, but over the weekend, I found a better way by using the [@github/local-action](https://github.com/github/local-action) command-line tool.

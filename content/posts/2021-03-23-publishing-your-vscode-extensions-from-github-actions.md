@@ -1,18 +1,18 @@
 ---
-title: Publishing your VSCode Extensions from GitHub Actions
-slug: /publishing-vscode-extensions-github-actions/
-author: Elio Struyf
-type: post
-date: 2021-03-23T12:15:48.376Z
+title: "Publishing your VSCode Extensions from GitHub Actions"
+slug: "/publishing-vscode-extensions-github-actions/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-03-23T12:15:48.376Z"
 draft: false
 tags:
-  - GitHub
-  - GitHub Actions
-  - VSCode
-  - Extensions
+  - "GitHub"
+  - "GitHub Actions"
+  - "VSCode"
+  - "Extensions"
 categories: []
 comments: true
-preview: /social/bff5be54-9547-4889-b012-eb9447d2de6d.png
+preview: "/social/0c6ba8b1-8bdf-48b0-8d33-47631f1a527d.png"
 ---
 
 Automation is key! That is how I think anyway. I'm not too fond of repetition, but for some reason, I had not yet automated my Visual Studio Code extension publishing. I always did this manually from my terminal by running `vsce publish`.

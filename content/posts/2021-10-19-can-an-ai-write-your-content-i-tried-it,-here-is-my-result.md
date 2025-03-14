@@ -11,10 +11,10 @@ tags:
   - "Blog"
 categories: []
 comments: true
+description: "Is an AI able to write the contents of your article? Well, that was a question I had and wanted to find out. In this article I tell you all about it."
+preview: "/social/8cc32025-7dec-44d6-98d7-ca0b1ba82164.png"
 keywords:
   - "ai"
-description: "Is an AI able to write the contents of your article? Well, that was a question I had and wanted to find out. In this article I tell you all about it."
-preview: "/social/6de144b9-3173-4e8a-9832-6cb533f1692b.png"
 ---
 
 The power of AI is rising everywhere. More and more, you see services popping up which will help you write code, content, understand code, and so much more.

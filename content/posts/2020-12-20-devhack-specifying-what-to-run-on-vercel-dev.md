@@ -1,16 +1,17 @@
 ---
-title: '#DevHack: Specifying what to run on Vercel dev'
-slug: /devhack-specifying-what-to-run-on-vercel-dev/
-author: Elio Struyf
-type: post
-date: 2020-12-20T20:12:19.080Z
+title: "#DevHack: Specifying what to run on Vercel dev"
+slug: "/devhack-specifying-what-to-run-on-vercel-dev/"
+author: "Elio Struyf"
+type: "post"
+date: "2020-12-20T20:12:19.080Z"
 draft: false
 tags:
-  - Serverless
-  - Vercel
-  - Development
+  - "Serverless"
+  - "Vercel"
+  - "Development"
 categories: []
 comments: true
+preview: "/social/a16fd002-6fdb-43a4-9608-7e01e4f16f43.png"
 ---
 
 While developing the integration with Strava on our cycling club website, I wanted to use serverless functions to simplify the data retrieval from Strava. The website runs on [Vercel](https://vercel.com), and if you're going to test out your serverless functions locally, you will need to use Vercel its CLI.

@@ -15,7 +15,7 @@ tags:
   - "GitHub Actions"
 type: "post"
 fmContentType: "post"
-preview: "/social/3d23277d-d282-4e94-8f93-52eb0836f22a.png"
+preview: "/social/4a8d1978-f5a0-4e1c-9741-2f815b92dae5.png"
 ---
 
 In August 2024, GitHub announced it would exclude hidden files by default in the `actions/upload-artifact` GitHub Action. If you are using this action in your workflow, you should be aware of this change, as it might break your workflow.

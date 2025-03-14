@@ -1,19 +1,19 @@
 ---
-title: Using OAuth On-Behalf-Of flow in a Node.js Azure Functions
-slug: /oauth-behalf-flow-node-js-azure-functions/
-author: Elio Struyf
-type: post
-date: 2021-04-15T12:03:48.254Z
+title: "Using OAuth On-Behalf-Of flow in a Node.js Azure Functions"
+slug: "/oauth-behalf-flow-node-js-azure-functions/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-04-15T12:03:48.254Z"
 draft: false
 tags:
-  - Azure
-  - Azure Functions
-  - Node.js
-  - OAuth
-  - Azure AD
+  - "Azure"
+  - "Azure Functions"
+  - "Node.js"
+  - "OAuth"
+  - "Azure AD"
 categories: []
 comments: true
-preview: /social/b79b073c-45ed-4c46-860f-6aee43ae2de2.png
+preview: "/social/7ad1212c-d5eb-405e-8e57-8069af91c5ad.png"
 ---
 
 While implementing a couple of Azure Functions, I needed to use the [OAuth 2.0 On-Behalf-Of flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow). With this flow, you can allow, for instance, an API to perform tasks on your behalf. This flow is great when you want to offload some of the work from the front-end or perform additional calls on the back-end when processing data.

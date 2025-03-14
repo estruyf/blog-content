@@ -1,5 +1,5 @@
 ---
-title: '#DevHack: Use Cloudflare CDN for your Azure Storage caching'
+title: "#DevHack: Use Cloudflare CDN for your Azure Storage caching"
 slug: /devhack-cloudflare-cdn-azure-storage-caching/
 author: Elio Struyf
 type: post
@@ -11,6 +11,7 @@ tags:
   - Hosting
 categories: []
 comments: true
+preview: /social/3f2e5f4d-d08b-4780-912a-2507d46995f8.png
 ---
 
 Getting your files faster to your clients is very important. There are various options for this. Last year, we started to look into Azure CDN to quickly and reliably provide our source files to our customers. The Azure CDN is put in front of an Azure Storage account on which we host the files in different blob containers.

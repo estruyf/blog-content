@@ -6,7 +6,7 @@ slug: "/vite-bundling-visual-studio-code-extension/"
 description: "Learn how you can use Vite to generate a bundle for your Visual Studio Code extension."
 date: "2023-10-18T09:25:27.699Z"
 lastmod: "2023-10-18T09:25:28.749Z"
-preview: "/social/4b98a7fc-176b-416d-aef3-55a97f3373cb.png"
+preview: "/social/1abfd7b9-3a0d-4010-a8c3-4264241dddc8.png"
 draft: false
 comments: true
 tags:

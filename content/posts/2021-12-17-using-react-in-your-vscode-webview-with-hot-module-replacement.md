@@ -1,21 +1,21 @@
 ---
-title: "Use React in your VSCode WebView with hot module replacement"
-slug: "/react-vscode-webview-hot-module-replacement/"
-description: "In this article I explain how you can integrate a React application into your VSCode webview and make sure Hot Module Replacement is working during development."
-author: "Elio Struyf"
-type: "post"
-date: "2021-12-17T15:27:46.995Z"
-lastmod: "2021-12-17T15:27:47.492Z"
+title: Use React in your VSCode WebView with hot module replacement
+slug: /react-vscode-webview-hot-module-replacement/
+description: In this article I explain how you can integrate a React application into your VSCode webview and make sure Hot Module Replacement is working during development.
+author: Elio Struyf
+type: post
+date: 2021-12-17T15:27:46.995Z
+lastmod: 2021-12-17T15:27:47.492Z
 draft: false
 tags:
-  - "Development"
-  - "VSCode"
-  - "Extensions"
+  - Development
+  - VSCode
+  - Extensions
 categories: []
 comments: true
-preview: "/social/0cf16001-35c8-4591-9e37-af483576ed2b.png"
+preview: /social/420cb47c-19ef-4de1-b869-636da36c6356.png
 keywords:
-  - "vscode"
+  - vscode
 ---
 
 For Front Matter and another extension, I am currently developing. I use the Visual Studio Code WebView API heavily as it provides fully customizable views for your panels or tabs. It allows any company and developer to create their own unique experiences.

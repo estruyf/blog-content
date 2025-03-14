@@ -1,19 +1,19 @@
 ---
-title: "Using GitHub Project webhooks to manage labeling repo issues"
+title: Using GitHub Project webhooks to manage labeling repo issues
 longTitle: ""
 customField: ""
-slug: "/github-project-webhooks-manage-labeling-issues/"
-description: "Learn how to automate project management using GitHub Project webhooks for labeling issues."
-date: "2024-02-12T08:40:39.063Z"
-lastmod: "2024-02-12T08:40:39.063Z"
-preview: "/social/0af95894-048e-49b8-ae7c-14863d59d6a6.png"
+slug: /github-project-webhooks-manage-labeling-issues/
+description: Learn how to automate project management using GitHub Project webhooks for labeling issues.
+date: 2024-02-12T08:40:39.063Z
+lastmod: 2024-02-12T08:40:39.063Z
+preview: /social/3f202826-1a4d-4a34-9368-b86d4599f4ac.png
 draft: false
 comments: true
 tags:
-  - "Automation"
-  - "GitHub"
-  - "Webhook"
-type: "post"
+  - Automation
+  - GitHub
+  - Webhook
+type: post
 ---
 
 For managing the Front Matter CMS releases, I have been using [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) in combination with GitHub Actions for automatically labeling my issues, which I add to the Project board. I must say: "Add to my Project (classic) board."

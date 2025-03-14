@@ -6,7 +6,7 @@ slug: "/reporting-playwright-tests-microsoft-teams/"
 description: "Learn how to easily report your Playwright test results to a Microsoft Teams channel with the help of the playwright-msteams-reporter reporter."
 date: "2024-07-05T15:01:13.964Z"
 lastmod: "2024-07-05T15:01:13.964Z"
-preview: "/social/e974f0d0-077a-462a-90b1-29eb01236e24.png"
+preview: "/social/4cacbb24-282d-4d5d-9c2f-17152d87f19f.png"
 draft: false
 comments: true
 tags:

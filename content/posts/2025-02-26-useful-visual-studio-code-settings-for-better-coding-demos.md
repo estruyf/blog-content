@@ -1,22 +1,22 @@
 ---
-title: "Useful Visual Studio Code settings for better coding demos"
+title: Useful Visual Studio Code settings for better coding demos
 longTitle: ""
 customField: ""
-slug: "/visual-studio-code-settings-coding-demos/"
-description: "Enhance your coding demos with these Visual Studio Code settings for better visibility and focus during presentations."
-date: "2025-02-26T19:03:51.508Z"
-lastmod: "2025-02-26T19:03:52.899Z"
-preview: "/social/b891bbb5-c627-4380-8217-a85c55744712.png"
+slug: /visual-studio-code-settings-coding-demos/
+description: Enhance your coding demos with these Visual Studio Code settings for better visibility and focus during presentations.
+date: 2025-02-26T19:03:51.508Z
+lastmod: 2025-02-26T19:03:52.899Z
+preview: /social/1fcf6b5f-95f6-444b-bab0-18794e02d0b4.png
 draft: false
 comments: true
 tags:
-  - "Best Practices"
-  - "Coding Demos"
-  - "Productivity"
-  - "Visual Studio Code"
-  - "VSCode"
-type: "post"
-fmContentType: "post"
+  - Best Practices
+  - Coding Demos
+  - Productivity
+  - Visual Studio Code
+  - VSCode
+type: post
+fmContentType: post
 ---
 
 When delivering a coding demo, clarity and visibility are key. You want your audience to follow along effortlessly without losing track of where your cursor is or getting distracted by unnecessary UI elements. Of course, we all know it's best to use a light theme to improve readability, but there are additional settings that can make your live coding sessions even smoother. Here are some Visual Studio Code settings that can enhance the experience.

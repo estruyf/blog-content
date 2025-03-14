@@ -1,18 +1,18 @@
 ---
-title: "Make impactful presentations with Markdown and Slidev"
+title: Make impactful presentations with Markdown and Slidev
 longTitle: ""
-slug: "/impactful-presentations-markdown-slidev/"
-description: "This article by Elio explains how you can use Markdown and Slidev to create powerful and effective presentations that captures the attention of your audience."
-date: "2023-02-03T12:36:14.041Z"
-lastmod: "2023-02-03T12:36:14.041Z"
-preview: "/social/48a438f6-2798-4a1b-9f2d-51ab79799a15.png"
+slug: /impactful-presentations-markdown-slidev/
+description: This article by Elio explains how you can use Markdown and Slidev to create powerful and effective presentations that captures the attention of your audience.
+date: 2023-02-03T12:36:14.041Z
+lastmod: 2023-02-03T12:36:14.041Z
+preview: /social/cb5f242a-db61-4bf3-88b3-97176464bf96.png
 draft: false
 comments: true
 tags:
-  - "Markdown"
-  - "Speaking"
-  - "Slidev"
-type: "post"
+  - Markdown
+  - Speaking
+  - Slidev
+type: post
 ---
 
 I have done many presentations over the years, and my go-to tool has always been PowerPoint. It has all the features I needed, but I always struggled with the time it took to create the presentation. First, you need to get a suitable template, place the images in the correct place, and add the text, but adding code to slides is even trickier and not easy to maintain.

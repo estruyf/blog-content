@@ -14,7 +14,7 @@ tags:
   - Development
 categories: []
 comments: true
-preview: /social/d1c61df0-c2bc-4328-ae82-5a794f171def.png
+preview: /social/59a469e7-1b18-49a2-9ccf-825706c4028e.png
 keywords:
   - Viva Connections
 ---

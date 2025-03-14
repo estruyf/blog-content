@@ -6,7 +6,7 @@ slug: "/test-microsoft-365-solutions-playwright/"
 description: "This article explains how you can make use of Playwright to end-to-end test your Microsoft 365 (SharePoint & Microsoft Teams) solutions."
 date: "2023-08-24T14:13:30.235Z"
 lastmod: "2023-08-24T14:13:30.693Z"
-preview: "/social/b52a2991-8723-4b74-88ac-59bb8ecf56a9.png"
+preview: "/social/617e4a37-c066-4e12-a062-a549c7ffedc6.png"
 draft: false
 comments: true
 tags:

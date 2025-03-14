@@ -11,7 +11,7 @@ tags:
   - "Azure Functions"
 categories: []
 comments: true
-preview: "/social/71c2cd1d-c729-4172-b9da-83e2b9664bc8.png"
+preview: "/social/efe80d60-0657-4657-8d81-74819fc40981.png"
 ---
 
 For [Squarl](https://squarl.com), I started to implement a couple of improvements for the back-end running on Azure Functions. I created these functions with TypeScript. In the past, I used webpack and later Azure Funcpack to bundle my functions to one file per function. That way, the host does not have to do all those read actions for retrieving the dependencies.

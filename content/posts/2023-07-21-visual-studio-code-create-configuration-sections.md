@@ -1,19 +1,19 @@
 ---
-title: Splitting VSCode Extension Settings into Multiple Categories
+title: "Splitting VSCode Extension Settings into Multiple Categories"
 longTitle: "Organize and Optimize: Splitting Visual Studio Code Extension Settings into Multiple Categories"
 customField: ""
-slug: /splitting-vscode-extension-settings-multiple-categories/
-description: Organize Visual Studio Code extension settings into multiple categories for a better overview and easier configuration with this guide.
-date: 2023-07-22T22:03:10.444Z
-lastmod: 2023-07-22T22:03:09.856Z
-preview: /social/700e8874-44a2-4580-941d-7d7cbb35540c.png
+slug: "/splitting-vscode-extension-settings-multiple-categories/"
+description: "Organize Visual Studio Code extension settings into multiple categories for a better overview and easier configuration with this guide."
+date: "2023-07-22T22:03:10.444Z"
+lastmod: "2023-07-22T22:03:09.856Z"
+preview: "/social/e2c2b8e6-28db-4250-a6a0-e3ffb2a68c8e.png"
 draft: false
 comments: true
 tags:
-  - Extensions
-  - Settings
-  - VSCode
-type: post
+  - "Extensions"
+  - "Settings"
+  - "VSCode"
+type: "post"
 ---
 
 I have always been adding my Visual Studio Code extension settings to the `contributes.configuration` object, but I was missing a way to organize the settings in multiple sections/groups. That way, the end user gets a better overview of all settings grouped by their category.

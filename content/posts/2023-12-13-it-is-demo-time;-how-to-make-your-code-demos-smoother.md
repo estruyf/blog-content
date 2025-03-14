@@ -1,21 +1,21 @@
 ---
-title: "It is Demo Time; how to make your live code demos smoother"
+title: It is Demo Time; how to make your live code demos smoother
 longTitle: ""
 customField: ""
-slug: "/demo-time-live-code-demos-smoother/"
-description: "Discover how to make your live coding demos smoother and more efficient with the new Visual Studio Code Extension - Demo Time."
-date: "2023-12-13T08:44:26.741Z"
-lastmod: "2023-12-13T08:44:26.741Z"
-preview: "/social/6274a327-78f3-487a-8f83-058f8e37a635.png"
+slug: /demo-time-live-code-demos-smoother/
+description: Discover how to make your live coding demos smoother and more efficient with the new Visual Studio Code Extension - Demo Time.
+date: 2023-12-13T08:44:26.741Z
+lastmod: 2023-12-13T08:44:26.741Z
+preview: /social/5def3e27-0807-4317-9d1f-4983eaad0b11.png
 draft: false
 comments: true
 tags:
-  - "Demo Time"
-  - "Development"
-  - "Extensions"
-  - "Live Coding"
-  - "Visual Studio Code"
-type: "post"
+  - Demo Time
+  - Development
+  - Extensions
+  - Live Coding
+  - Visual Studio Code
+type: post
 ---
 
 I have had many sessions at conferences over the years. One thing I always liked to do is perform live demos. Although I know things could fail, it is also fun to show the audience how things work.

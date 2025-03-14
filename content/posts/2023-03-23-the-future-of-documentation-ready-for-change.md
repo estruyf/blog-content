@@ -2,20 +2,20 @@
 title: "The Future of Documentation: Ready for Change?"
 longTitle: ""
 customField: ""
-slug: /future-documentation-ready-change/
-description: Discover the latest advancements in documentation technology and how tools like GitHub Copilot for Docs, Mendable, and OpenAI are changing the game.
-date: 2023-03-23T07:41:15.181Z
-lastmod: 2023-03-23T07:41:15.181Z
-preview: /social/176abae2-64b0-4196-954e-b4b52a2333bb.png
+slug: "/future-documentation-ready-change/"
+description: "Discover the latest advancements in documentation technology and how tools like GitHub Copilot for Docs, Mendable, and OpenAI are changing the game."
+date: "2023-03-23T07:41:15.181Z"
+lastmod: "2023-03-23T07:41:15.181Z"
+preview: "/social/4eb88900-5b01-420b-9453-240516d4e79f.png"
 draft: false
 comments: true
 tags:
-  - AI
-  - Documentation
-  - GitHub
-  - OpenAI
-  - GitHub Copilot
-type: post
+  - "AI"
+  - "Documentation"
+  - "GitHub"
+  - "OpenAI"
+  - "GitHub Copilot"
+type: "post"
 ---
 
 

@@ -1,19 +1,19 @@
 ---
-title: "Locally verifying GitHub Actions Job Summaries"
+title: Locally verifying GitHub Actions Job Summaries
 longTitle: ""
 customField: ""
-slug: "/locally-verifying-github-actions-job-summaries/"
-description: "Learn how to locally verify and test your GitHub Actions Job Summaries with the help of @actions/core dependency. Save time by testing before pushing changes."
-date: "2024-03-11T09:46:31.518Z"
-lastmod: "2024-03-11T09:46:31.519Z"
-preview: "/social/1aa1ed4d-ce4f-447b-9282-e8d71cf3290e.png"
+slug: /locally-verifying-github-actions-job-summaries/
+description: Learn how to locally verify and test your GitHub Actions Job Summaries with the help of @actions/core dependency. Save time by testing before pushing changes.
+date: 2024-03-11T09:46:31.518Z
+lastmod: 2024-03-11T09:46:31.519Z
+preview: /social/114d2f90-001b-4bdc-a0b3-4d573e9499c8.png
 draft: false
 comments: true
 tags:
-  - "GitHub"
-  - "GitHub Actions"
-  - "Testing"
-type: "post"
+  - GitHub
+  - GitHub Actions
+  - Testing
+type: post
 ---
 
 GitHub Actions Job Summaries are a great way to provide more information on your job's output. This summary is shown in the Actions tab of your repository.

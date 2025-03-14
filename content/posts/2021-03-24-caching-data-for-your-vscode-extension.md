@@ -1,17 +1,17 @@
 ---
 title: "#DevHack: Caching data for your VSCode extension"
-slug: "/devhack-caching-data-vscode-extension/"
-author: "Elio Struyf"
-type: "post"
-date: "2021-03-24T13:38:56.670Z"
+slug: /devhack-caching-data-vscode-extension/
+author: Elio Struyf
+type: post
+date: 2021-03-24T13:38:56.670Z
 draft: false
 tags:
-  - "Extensions"
-  - "VSCode"
-  - "Caching"
+  - Extensions
+  - VSCode
+  - Caching
 categories: []
 comments: true
-preview: "/social/e660970a-a0d8-41d9-9699-0c745ac59843.png"
+preview: /social/eca10576-2227-4086-91cc-3f848671df87.png
 ---
 
 For my [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-msgraph-autocomplete) to autocomplete the Microsoft Graph APIs, I wanted to improve the speed of the suggestions by implementing a cache. That way, you would not have to do the same API calls each time.

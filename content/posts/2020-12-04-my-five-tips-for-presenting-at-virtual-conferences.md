@@ -1,16 +1,17 @@
 ---
-title: Five tips to make you a better presenter at virtual events
-slug: /tips-presenter-virtual-events/
-author: Elio Struyf
-type: post
-date: 2020-12-04T08:44:52.288Z
+title: "Five tips to make you a better presenter at virtual events"
+slug: "/tips-presenter-virtual-events/"
+author: "Elio Struyf"
+type: "post"
+date: "2020-12-04T08:44:52.288Z"
 draft: false
 tags:
-  - Speaking
-  - Conference
-  - Tips
+  - "Speaking"
+  - "Conference"
+  - "Tips"
 categories: []
 comments: true
+preview: "/social/96954b0c-0580-4cef-b9d6-167f3d4e11fa.png"
 ---
 
 I love presenting on a stage. I love to engage with people, have an audience in front of me. So you think that presenting virtually would be no big deal. Actually, it is a big deal. 

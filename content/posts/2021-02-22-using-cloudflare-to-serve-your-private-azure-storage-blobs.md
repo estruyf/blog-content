@@ -1,16 +1,17 @@
 ---
-title: Using Cloudflare to serve your private Azure Storage Blobs
-slug: /cloudflare-serve-private-azure-storage-blobs/
-author: Elio Struyf
-type: post
-date: 2021-02-22T17:57:54.883Z
+title: "Using Cloudflare to serve your private Azure Storage Blobs"
+slug: "/cloudflare-serve-private-azure-storage-blobs/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-02-22T17:57:54.883Z"
 draft: false
 tags:
-  - CDN
-  - cloudflare
-  - Azure
+  - "CDN"
+  - "cloudflare"
+  - "Azure"
 categories: []
 comments: true
+preview: "/social/00905423-209f-418e-a135-f95756ff7b81.png"
 ---
 
 Recently I wrote about how to use Cloudflare as a CDN for your Azure Storage Containers/Blobs. The process for setting up Cloudflare for Azure Storage is straightforward. 

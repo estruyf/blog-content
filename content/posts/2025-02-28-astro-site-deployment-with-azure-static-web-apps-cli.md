@@ -6,7 +6,7 @@ slug: "/deploy-astro-azure-static-web-apps-github-cli/"
 description: "Learn to deploy your Astro site to Azure Static Web Apps using GitHub and CLI for a seamless experience."
 date: "2025-02-28T13:42:47.800Z"
 lastmod: "2025-02-28T13:42:48.384Z"
-preview: "/social/a1b0ac61-0135-4a11-8508-a73492312b8e.png"
+preview: "/social/2eb5033c-339a-4f72-b3ff-bcb613f7ebe8.png"
 draft: false
 comments: true
 tags:

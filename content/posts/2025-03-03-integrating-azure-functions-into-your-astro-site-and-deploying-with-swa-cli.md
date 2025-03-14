@@ -1,22 +1,22 @@
 ---
-title: "Integrating Azure Functions into your Astro site"
+title: Integrating Azure Functions into your Astro site
 longTitle: ""
 customField: ""
-slug: "/integrating-azure-functions-astro-site/"
-description: "Learn how to seamlessly integrate Azure Functions into your Astro site for enhanced serverless capabilities and streamlined deployment."
-date: "2025-03-03T15:54:42.288Z"
-lastmod: "2025-03-03T15:54:42.813Z"
-preview: "/social/9fd6c7b4-be93-489f-8128-9c3db12e9faa.png"
+slug: /integrating-azure-functions-astro-site/
+description: Learn how to seamlessly integrate Azure Functions into your Astro site for enhanced serverless capabilities and streamlined deployment.
+date: 2025-03-03T15:54:42.288Z
+lastmod: 2025-03-03T15:54:42.813Z
+preview: /social/9b151a47-68c2-4a71-997d-da5de9a80036.png
 draft: false
 comments: true
 tags:
-  - "Astro"
-  - "Azure Functions"
-  - "Deployment"
-  - "GitHub Actions"
-  - "Serverless"
-type: "post"
-fmContentType: "post"
+  - Astro
+  - Azure Functions
+  - Deployment
+  - GitHub Actions
+  - Serverless
+type: post
+fmContentType: post
 ---
 
 In the [previous post](https://www.eliostruyf.com/deploy-astro-azure-static-web-apps-github-cli/), I showed you how to deploy your Astro site to Azure Static Web Apps using the Azure Static Web Apps (SWA) CLI. In this post, I will show you how you can integrate Azure Functions into your Astro site and deploy them using the same SWA CLI.

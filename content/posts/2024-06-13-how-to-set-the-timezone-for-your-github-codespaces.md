@@ -6,7 +6,7 @@ slug: "/set-timezone-github-codespaces/"
 description: "Learn how to set the timezone for your GitHub Codespaces and avoid issues with dates."
 date: "2024-06-13T10:23:21.911Z"
 lastmod: "2024-06-13T10:23:21.911Z"
-preview: "/social/d59b0135-26a4-4247-97d5-6ca8aa8be21b.png"
+preview: "/social/6615235f-9792-42b1-9d79-19c828c9cba2.png"
 draft: false
 comments: true
 tags:

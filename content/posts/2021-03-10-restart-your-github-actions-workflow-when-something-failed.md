@@ -1,16 +1,17 @@
 ---
-title: Restart your GitHub Actions workflow when something failed
-slug: /restart-github-actions-workflow-failed/
-author: Elio Struyf
-type: post
-date: 2021-03-10T13:34:45.867Z
+title: "Restart your GitHub Actions workflow when something failed"
+slug: "/restart-github-actions-workflow-failed/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-03-10T13:34:45.867Z"
 draft: false
 tags:
-  - GitHub
-  - GitHub Actions
-  - DevOps
+  - "GitHub"
+  - "GitHub Actions"
+  - "DevOps"
 categories: []
 comments: true
+preview: "/social/970289f5-20c6-4557-804f-ee59aadbb9f8.png"
 ---
 
 Sometimes it happens that your GitHub Actions workflow fails. When this happens, it is appropriate to check what exactly went wrong before you restart it. 

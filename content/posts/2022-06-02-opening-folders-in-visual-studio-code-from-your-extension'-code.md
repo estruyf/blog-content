@@ -4,7 +4,7 @@ longTitle: ""
 description: In this article, Elio explains how you can open a project folder or workspace from your extension' code for macOS, Linux, and Windows.
 date: 2022-06-02T10:18:41.146Z
 lastmod: 2022-06-02T10:18:41.513Z
-preview: /social/f55a353a-9720-4181-83f1-c1db56724071.png
+preview: /social/0c5da1e5-c0c7-4a9d-832f-c3c367abdc9d.png
 draft: false
 comments: true
 tags:

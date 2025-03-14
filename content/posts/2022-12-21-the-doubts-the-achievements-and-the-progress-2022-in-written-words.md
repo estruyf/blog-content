@@ -5,7 +5,7 @@ slug: "/doubts-achievements-progress-2022-wrap/"
 description: "In this article, Elio looks back at 2022 on his personal and work-related achievements and progress."
 date: "2022-12-21T09:46:56.333Z"
 lastmod: "2022-12-21T09:46:56.333Z"
-preview: "/social/72c7d312-f3c1-4b27-9f41-73afea13876b.png"
+preview: "/social/9db1289d-4726-4fde-bb38-0ad143f9b35a.png"
 draft: false
 comments: true
 tags:

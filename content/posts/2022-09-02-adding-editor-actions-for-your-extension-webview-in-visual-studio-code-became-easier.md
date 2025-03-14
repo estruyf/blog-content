@@ -5,7 +5,7 @@ slug: "/adding-editor-actions-extension-webview-vscode/"
 description: "In this article, Elio explains how you can take advantage of the activeWebviewPanelId context key to enable or disable commands in Visual Studio Code extensions"
 date: "2022-09-02T07:25:34.216Z"
 lastmod: "2022-09-02T07:25:34.216Z"
-preview: "/social/c04cad11-5d6f-4a80-9d18-c6dfdbcff93f.png"
+preview: "/social/9516eddd-b564-44ff-8904-a8aed55a9844.png"
 draft: false
 comments: true
 tags:

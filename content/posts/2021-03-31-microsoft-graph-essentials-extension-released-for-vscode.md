@@ -12,7 +12,7 @@ tags:
   - "Microsoft Graph Toolkit"
 categories: []
 comments: true
-preview: "/social/14588c27-98ad-449f-a238-694184aadecb.png"
+preview: "/social/8eb5ea4d-6d3e-47a9-a233-f20cb08c6395.png"
 ---
 
 Recently I started working more and more with the Microsoft Graph again and the related toolkit. While I began to use a couple of the Microsoft Graph Toolkit (MGT) components, I wanted to change the styling a bit and add some custom templates. I noticed that there was not yet a Visual Studio Code extension that helps you with building apps with MGT.

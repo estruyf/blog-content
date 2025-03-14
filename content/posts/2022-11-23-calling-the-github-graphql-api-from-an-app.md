@@ -5,7 +5,7 @@ slug: "/calling-github-graphql-api-app/"
 description: "In this article, Elio explains how you can use a GitHub App to make queries and mutations via the GraphQL API from GitHub."
 date: "2022-11-23T10:32:25.840Z"
 lastmod: "2022-11-23T10:32:25.840Z"
-preview: "/social/39f3799d-c029-44cc-8ccc-22ea54796954.png"
+preview: "/social/029badfa-a86c-4a17-b82e-03b8d28ec6c8.png"
 draft: false
 comments: true
 tags:

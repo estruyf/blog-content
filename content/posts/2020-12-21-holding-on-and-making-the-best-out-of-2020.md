@@ -1,15 +1,16 @@
 ---
-title: Holding on and making the best out of 2020
-slug: /holding-on-and-making-the-best-out-of-2020/
-author: Elio Struyf
-type: post
-date: 2020-12-21T13:33:51.230Z
+title: "Holding on and making the best out of 2020"
+slug: "/holding-on-and-making-the-best-out-of-2020/"
+author: "Elio Struyf"
+type: "post"
+date: "2020-12-21T13:33:51.230Z"
 draft: false
 tags:
-  - recap
-  - Personal
+  - "recap"
+  - "Personal"
 categories: []
 comments: true
+preview: "/social/07726dde-92d3-4f95-8a88-a5d50a339d88.png"
 ---
 
 Again we are at the end of the year and to start with the same words from my 2019 recap. WHAT A YEAR!

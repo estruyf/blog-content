@@ -1,17 +1,18 @@
 ---
-title: '#DevHack: Dismiss messaging extension dialog in MS Teams'
-slug: /devhack-dismiss-messaging-extension-dialog-ms-teams/
-author: Elio Struyf
-type: post
-date: 2020-11-27T14:13:22.946Z
+title: "#DevHack: Dismiss messaging extension dialog in MS Teams"
+slug: "/devhack-dismiss-messaging-extension-dialog-ms-teams/"
+author: "Elio Struyf"
+type: "post"
+date: "2020-11-27T14:13:22.946Z"
 draft: false
 tags:
-  - API
-  - Development
-  - Microsoft Graph
-  - SharePoint
+  - "API"
+  - "Development"
+  - "Microsoft Graph"
+  - "SharePoint"
 categories: []
 comments: true
+preview: "/social/df905238-628c-4638-a5b6-781fca59b312.png"
 ---
 
 Currently, I am developing my first "real" Microsoft Teams app with SharePoint Framework. In this app, I am making use of the new messaging extension capability.

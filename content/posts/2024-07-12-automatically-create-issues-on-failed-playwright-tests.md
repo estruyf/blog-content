@@ -6,7 +6,7 @@ slug: "/create-github-issues-failed-playwright-tests/"
 description: "Learn how to automatically create GitHub issues for failed Playwright tests with the Playwright Issue Creator action, available on the GitHub Marketplace."
 date: "2024-07-12T14:32:18.125Z"
 lastmod: "2024-07-12T14:32:18.654Z"
-preview: "/social/05e8865d-5d20-4673-8b0f-803079d9c622.png"
+preview: "/social/beaf639b-00b2-4d57-a830-146a680f0a4e.png"
 draft: false
 comments: true
 tags:

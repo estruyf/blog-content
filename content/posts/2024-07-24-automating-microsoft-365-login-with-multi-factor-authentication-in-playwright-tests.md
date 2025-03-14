@@ -6,7 +6,7 @@ slug: "/automating-microsoft-365-login-mfa-playwright-tests/"
 description: "Learn how to automate the login process for Microsoft 365 with multi-factor authentication (MFA) using Playwright in this informative blog post."
 date: "2024-07-24T10:13:18.887Z"
 lastmod: "2024-07-24T10:13:19.398Z"
-preview: "/social/d766d99b-6feb-4625-a03f-1302c26f1877.png"
+preview: "/social/55123399-8e8f-40c1-8796-7152a41c3b3f.png"
 draft: false
 comments: true
 tags:

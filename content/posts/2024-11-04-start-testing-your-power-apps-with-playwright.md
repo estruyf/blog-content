@@ -6,7 +6,7 @@ slug: "/start-testing-power-apps-playwright/"
 description: "Learn how to test your Power Apps with Playwright for better reliability and performance in your business applications."
 date: "2024-11-04T14:28:06.125Z"
 lastmod: "2024-11-04T14:28:06.550Z"
-preview: "/social/4652c4e4-8bc5-479b-8b13-35aa3aa90aba.png"
+preview: "/social/70e91f0a-c581-4fb3-8b17-8887f80e1af4.png"
 draft: false
 comments: true
 tags:

@@ -1,20 +1,20 @@
 ---
-title: "Approve a multitenant permission scope for a SPFx solution"
-longTitle: "Approve a multi-tenant webApiPermissionRequests scope for your SPFx solution"
+title: Approve a multitenant permission scope for a SPFx solution
+longTitle: Approve a multi-tenant webApiPermissionRequests scope for your SPFx solution
 customField: ""
-slug: "/approve-multitenant-permission-scope-spfx-solution/"
+slug: /approve-multitenant-permission-scope-spfx-solution/
 description: "Troubleshooting SharePoint Permission Approval: Learn how to create a Service Principal and define the correct resource for successful permission scope approval"
-date: "2023-06-29T15:40:31.644Z"
-lastmod: "2023-06-29T15:40:32.331Z"
-preview: "/social/911f5819-8b57-4aae-a3cd-45780538689e.png"
+date: 2023-06-29T15:40:31.644Z
+lastmod: 2023-06-29T15:40:32.331Z
+preview: /social/3175dbcc-d76e-446b-bc8d-585265b2a0e8.png
 draft: false
 comments: true
 tags:
-  - "Permissions"
-  - "Service Principal"
-  - "SharePoint"
-  - "SPFx"
-type: "post"
+  - Permissions
+  - Service Principal
+  - SharePoint
+  - SPFx
+type: post
 ---
 
 

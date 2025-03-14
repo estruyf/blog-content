@@ -15,7 +15,7 @@ categories: []
 comments: true
 keywords:
   - "rename"
-preview: "/social/a8a88bd7-1f78-4308-b995-ffc4259cebf6.png"
+preview: "/social/64fa79dd-a5a9-405b-8eba-14f924c143e8.png"
 ---
 
 Renaming a file is something that we do very often, but in my case, I wanted to do it from within a Visual Studio Code extension. When I first looked at the APIs and available documentation, I found the `vscode.executeDocumentRenameProvider` command and `RenameProvider`.

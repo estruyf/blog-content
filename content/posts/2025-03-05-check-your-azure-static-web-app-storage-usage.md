@@ -6,7 +6,7 @@ slug: "/check-azure-static-web-app-storage-usage/"
 description: "Learn how to easily check your Azure Static Web App's storage usage directly in the Azure Portal with this step-by-step guide."
 date: "2025-03-06T13:28:19.793Z"
 lastmod: "2025-03-06T13:28:20.324Z"
-preview: "/social/a0972664-405e-4546-a8a9-0ef1578a524c.png"
+preview: "/social/25304cbd-0940-4125-93b6-e3056f224fe6.png"
 draft: false
 comments: true
 tags:

@@ -1,18 +1,18 @@
 ---
-title: Creating timer dismissable notifications in VS Code
-longTitle: Creating timer dismissable notifications in a Visual Studio Code extension
-slug: /creating-timer-dismissable-notifications-visual-studio-code-extension/
-description: In this article, Elio explains how you can create timer dismissable notifications for your Visual Studio Code extensions.
-date: 2022-12-21T10:07:13.055Z
-lastmod: 2022-12-21T10:07:13.055Z
-preview: /social/69f31014-02a8-46a7-a85a-bbfdc0cadd4c.png
+title: "Creating timer dismissable notifications in VS Code"
+longTitle: "Creating timer dismissable notifications in a Visual Studio Code extension"
+slug: "/creating-timer-dismissable-notifications-visual-studio-code-extension/"
+description: "In this article, Elio explains how you can create timer dismissable notifications for your Visual Studio Code extensions."
+date: "2022-12-21T10:07:13.055Z"
+lastmod: "2022-12-21T10:07:13.055Z"
+preview: "/social/2bf91749-128a-4216-afe9-a91bf4147a7d.png"
 draft: false
 comments: true
 tags:
-  - Development
-  - VSCode
-  - Extensions
-type: post
+  - "Development"
+  - "VSCode"
+  - "Extensions"
+type: "post"
 ---
 
 Notifications in Visual Studio Code are trivial for your extensions to notify the user when something happens or a process completes. A downside of these notifications is that they cannot be dismissed programmatically; they require manual user interaction.

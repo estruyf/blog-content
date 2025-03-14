@@ -12,7 +12,7 @@ tags:
   - "OAuth"
 categories: []
 comments: true
-preview: "/social/9e514a26-1116-4961-bb72-b4fa471ba13c.png"
+preview: "/social/640603f6-8741-4744-90ca-b213ed092916.png"
 ---
 
 This article continues the previous article about using the OAuth On-Behalf-Of flow in your Azure Functions. In the last article, the Azure Function only verifies the JWT Token, and if valid, uses it to request an access token and get data on your behalf.

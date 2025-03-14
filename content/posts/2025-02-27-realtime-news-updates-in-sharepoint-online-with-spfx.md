@@ -6,7 +6,7 @@ slug: "/realtime-news-updates-sharepoint-online-spfx/"
 description: "Implement real-time news updates in SharePoint Online using SPFx and Socket.IO for dynamic content without manual refreshes."
 date: "2025-02-27T13:46:14.802Z"
 lastmod: "2025-02-27T13:46:15.346Z"
-preview: "/social/01e0b6d6-bdef-4c6b-81eb-47d1eed74df9.png"
+preview: "/social/55601db8-ab9b-4681-9602-554839f00828.png"
 draft: false
 comments: true
 tags:

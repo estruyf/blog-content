@@ -1,19 +1,19 @@
 ---
 title: "#DevHack: using the VSCode's URI Handler in codespaces"
 longTitle: "#DevHack: using the Visual Studio Code's URI Handler in codespaces"
-slug: "/devhack-vscode-uri-handler-codespaces/"
-description: "In this article, Elio explains the correct way to use Visual Studio Code's URI handler to ensure that it also works on GitHub Codespaces and Gitpod."
-date: "2022-12-07T12:43:15.352Z"
-lastmod: "2022-12-07T12:43:15.352Z"
-preview: "/social/3ec35699-8656-4174-98ec-da47abc0fc83.png"
+slug: /devhack-vscode-uri-handler-codespaces/
+description: In this article, Elio explains the correct way to use Visual Studio Code's URI handler to ensure that it also works on GitHub Codespaces and Gitpod.
+date: 2022-12-07T12:43:15.352Z
+lastmod: 2022-12-07T12:43:15.352Z
+preview: /social/6b7a2df4-27a5-4b76-b511-9468f303fb88.png
 draft: false
 comments: true
 tags:
-  - "Codespaces"
-  - "GitHub"
-  - "Gitpod"
-  - "VSCode"
-type: "post"
+  - Codespaces
+  - GitHub
+  - Gitpod
+  - VSCode
+type: post
 ---
 
 If you are reading this article, you know what a URI handler in Visual Studio Code is, but in case you do not. A URI Handler allows you to create a callback into your extension. Typically this is used in authentication flows to open your browser, fill in your credentials, and get redirected back into Visual Studio Code. Your URI Handler will then process the rest of the authentication process, like requesting an access token.

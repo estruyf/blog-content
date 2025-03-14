@@ -1,17 +1,17 @@
 ---
-title: "Migrate from Disqus to GitHub Discussions (giscus)"
-date: "2022-11-28T11:15:08.015Z"
+title: Migrate from Disqus to GitHub Discussions (giscus)
+date: 2022-11-28T11:15:08.015Z
 draft: false
-type: "post"
-description: "In this article, Elio explains how he migrated from Disqus to GitHub Discussions and how you can do so."
-lastmod: "2022-11-28T11:15:08.015Z"
-preview: "/social/39965f7c-c16c-495e-8eb1-8862b416d327.png"
+type: post
+description: In this article, Elio explains how he migrated from Disqus to GitHub Discussions and how you can do so.
+lastmod: 2022-11-28T11:15:08.015Z
+preview: /social/0ff5e4c0-efc8-4b6c-af77-4341b4c02bff.png
 comments: true
 tags:
-  - "GitHub"
-  - "GitHub Discussions"
-  - "migration"
-slug: "/migrate-disqus-github-discussions-giscus/"
+  - GitHub
+  - GitHub Discussions
+  - migration
+slug: /migrate-disqus-github-discussions-giscus/
 longTitle: ""
 ---
 

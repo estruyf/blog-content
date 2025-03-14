@@ -1,22 +1,22 @@
 ---
-title: "Manage branch subdomains without Netlify DNS"
+title: Manage branch subdomains without Netlify DNS
 longTitle: ""
 customField: ""
-slug: "/manage-netlify-branch-subdomains-netlify-dns/"
-description: "Learn how to manage Netlify's branch subdomains using external DNS like Cloudflare, bypassing the need for Netlify DNS, for seamless deployment."
-date: "2024-08-08T15:15:40.645Z"
-lastmod: "2024-08-08T15:15:41.098Z"
-preview: "/social/bbf2f56e-457f-47d7-8e23-f338dd1a36da.png"
+slug: /manage-netlify-branch-subdomains-netlify-dns/
+description: Learn how to manage Netlify's branch subdomains using external DNS like Cloudflare, bypassing the need for Netlify DNS, for seamless deployment.
+date: 2024-08-08T15:15:40.645Z
+lastmod: 2024-08-08T15:15:41.098Z
+preview: /social/41361f44-3c64-4add-9359-c89248e37993.png
 draft: false
 comments: true
 tags:
-  - "Cloudflare"
-  - "Deployment"
-  - "DNS"
-  - "Netlify"
-  - "Next.js"
-type: "post"
-fmContentType: "post"
+  - Cloudflare
+  - Deployment
+  - DNS
+  - Netlify
+  - Next.js
+type: post
+fmContentType: post
 ---
 
 In the last weeks, I have been moving the [Front Matter CMS](https://frontmatter.codes) documentation and APIs to different hosting providers. The documentation and APIs were hosted on Vercel, but they stopped their open-source program, which made me look for alternatives. I decided to move the documentation to Netlify and the APIs to Azure.

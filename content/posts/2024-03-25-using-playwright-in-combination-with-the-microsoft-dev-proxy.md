@@ -6,7 +6,7 @@ slug: "/playwright-microsoft-dev-proxy-github-actions/"
 description: "Learn how to use Playwright with Microsoft Dev Proxy on GitHub Actions to easily test your solutions with the same mocked API responses as during development."
 date: "2024-03-29T09:50:00.420Z"
 lastmod: "2024-03-29T09:50:01.145Z"
-preview: "/social/60c2b1cf-0d4e-4b7a-aaee-69503ae7c3db.png"
+preview: "/social/b283c52c-28cf-4bb9-ae49-8141a920795d.png"
 draft: false
 comments: true
 tags:

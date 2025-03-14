@@ -1,17 +1,17 @@
 ---
 title: "#DevHack: Skip GitHub Actions on specific commits messages"
-slug: "/devhack-skip-github-actions-specific-commits-messages/"
-author: "Elio Struyf"
-type: "post"
-date: "2021-03-19T08:39:40.681Z"
+slug: /devhack-skip-github-actions-specific-commits-messages/
+author: Elio Struyf
+type: post
+date: 2021-03-19T08:39:40.681Z
 draft: false
 tags:
-  - "GitHub"
-  - "GitHub Actions"
-  - "DevOps"
+  - GitHub
+  - GitHub Actions
+  - DevOps
 categories: []
 comments: true
-preview: "/social/6d4acc8b-3596-4ad0-b952-709fd0f92fe8.png"
+preview: /social/aa86486f-8e52-483f-b6cb-26600094986f.png
 ---
 
 In the `doctor` project, I try to do as much as possible in one GitHub Actions workflow. Having all logic in one workflow makes it more convenient but comes with a couple of complexities. Like, do you want to run each action for every type of commit/PR/...?

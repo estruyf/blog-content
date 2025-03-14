@@ -1,18 +1,18 @@
 ---
 title: "MacBook Air M2: a great device for developers on the go"
-slug: /macbook-air-m2-perfect-device-developers/
-description: As a developer, you need a reliable, powerful, and portable device. The MacBook Air M2 provides all of that and more. Discover why Elio likes this device....
-date: 2023-02-23T18:41:21.778Z
-lastmod: 2023-02-23T18:41:21.778Z
-preview: /social/7891d27b-4b7c-4d6f-80e8-9afd6fc94667.png
+slug: "/macbook-air-m2-perfect-device-developers/"
+description: "As a developer, you need a reliable, powerful, and portable device. The MacBook Air M2 provides all of that and more. Discover why Elio likes this device...."
+date: "2023-02-23T18:41:21.778Z"
+lastmod: "2023-02-23T18:41:21.778Z"
+preview: "/social/9376f739-4d04-4bc5-bd80-72e78a814e2e.png"
 draft: false
 comments: true
 tags:
-  - Apple
-  - MacBook
-  - MacBook-Air
-  - Review
-type: post
+  - "Apple"
+  - "MacBook"
+  - "MacBook-Air"
+  - "Review"
+type: "post"
 ---
 
 As a developer, having a reliable and powerful device that you can take with you wherever you go is essential. Whether working remotely, traveling for business, or simply working from a coffee shop, you need a device to keep up with your workload without weighing you down. The MacBook Air M2 is the perfect device for developers who need a lightweight and powerful machine that they can take on the go.

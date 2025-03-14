@@ -1,20 +1,20 @@
 ---
-title: "Symlink your content in Astro for better portability"
+title: Symlink your content in Astro for better portability
 longTitle: "Symlink your content in Astro: a simple solution for greater portability and flexibility"
 customField: ""
-slug: "/symlink-content-astro-portability/"
-description: "Discover how to effortlessly symlink content in Astro for improved portability & flexibility. Learn to resolve Vite.js symlink issues with a simple fix."
-date: "2023-03-15T16:47:03.723Z"
-lastmod: "2023-03-15T16:47:03.723Z"
-preview: "/social/dbb4f25c-472a-425c-b942-4a8ca223e110.png"
+slug: /symlink-content-astro-portability/
+description: Discover how to effortlessly symlink content in Astro for improved portability & flexibility. Learn to resolve Vite.js symlink issues with a simple fix.
+date: 2023-03-15T16:47:03.723Z
+lastmod: 2023-03-15T16:47:03.723Z
+preview: /social/ecde7e8a-e570-477d-b94d-a203e8d54f26.png
 draft: false
 comments: true
 tags:
-  - "Astro"
-  - "Development"
-  - "Static site"
-  - "Framework"
-type: "post"
+  - Astro
+  - Development
+  - Static site
+  - Framework
+type: post
 ---
 
 Astro is a powerful static-site generator that allows developers to build lightning-fast websites. However, when trying to create a more portable and flexible blog by separating content from the website's source, I faced issues with symlinks/content not being recognized/found. 

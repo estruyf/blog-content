@@ -1,20 +1,20 @@
 ---
-title: Using CLI for Microsoft 365 in TypeScript Azure Functions
+title: "Using CLI for Microsoft 365 in TypeScript Azure Functions"
 longTitle: ""
 customField: ""
-slug: /cli-microsoft-365-typescript-azure-functions/
+slug: "/cli-microsoft-365-typescript-azure-functions/"
 description: "Learn how to use the CLI for Microsoft 365 in TypeScript Azure Functions to automate tasks for Microsoft 365. "
-date: 2024-03-07T09:11:17.224Z
-lastmod: 2024-03-07T09:11:17.224Z
-preview: /social/d0e61dbd-19ac-47f7-8297-c07ac32e67ef.png
+date: "2024-03-07T09:11:17.224Z"
+lastmod: "2024-03-07T09:11:17.224Z"
+preview: "/social/daa9c2a8-d8f6-4e6f-b537-b3fdfd6b09dd.png"
 draft: false
 comments: true
 tags:
-  - Automation
-  - Azure Functions
-  - Microsoft 365
-  - TypeScript
-type: post
+  - "Automation"
+  - "Azure Functions"
+  - "Microsoft 365"
+  - "TypeScript"
+type: "post"
 ---
 
 The CLI for Microsoft 365 allows you to manage your Microsoft 365 tenant settings and data. It provides a powerful and flexible way to automate tasks for Microsoft 365, and lately, I have been using it in my Azure Functions to automate a couple of tasks.

@@ -1,19 +1,19 @@
 ---
-title: "Change is here - Rapid API here I am"
-slug: "/moving-to-rapid-api/"
-author: "Elio Struyf"
-type: "post"
-date: "2021-11-29T07:55:24.568Z"
-lastmod: "2021-11-29T07:56:58.508Z"
+title: Change is here - Rapid API here I am
+slug: /moving-to-rapid-api/
+author: Elio Struyf
+type: post
+date: 2021-11-29T07:55:24.568Z
+lastmod: 2021-11-29T07:56:58.508Z
 draft: false
 tags:
-  - "Career"
-  - "API"
+  - Career
+  - API
 categories: []
 comments: true
 keywords: []
-description: "Rapid API - The next step in my career. As of 29th of November 2021, I joined Rapid API to become a Lead DevTools Engineer."
-preview: "/social/d6d94e64-db8e-41ac-ad50-fce790fdd168.png"
+description: Rapid API - The next step in my career. As of 29th of November 2021, I joined Rapid API to become a Lead DevTools Engineer.
+preview: /social/031514f4-b6da-4b7e-8d12-a8e7641dccd1.png
 ---
 
 Over the last couple of months, I have been working at a great company. When the time comes, I'll be able to tell you more about it. Some of you might know where I moved. For the ones that don't, I can say it wasn't a Microsoft focussed company.

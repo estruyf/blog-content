@@ -1,17 +1,18 @@
 ---
-title: Use environment variables in Hugo to show branch information
-slug: /environment-variables-hugo-show-branch-information/
-author: Elio Struyf
-type: post
-date: 2021-03-02T10:24:23.742Z
+title: "Use environment variables in Hugo to show branch information"
+slug: "/environment-variables-hugo-show-branch-information/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-03-02T10:24:23.742Z"
 draft: false
 tags:
-  - Development
-  - Documentation
-  - Hugo
-  - Vercel
+  - "Development"
+  - "Documentation"
+  - "Hugo"
+  - "Vercel"
 categories: []
 comments: true
+preview: "/social/f0fe5476-3ed9-4781-a940-a9377f0b3ae8.png"
 ---
 
 For the new documentation website of [Doctor](https://getdoctor.io), I wanted to do something similar like I did for [Pimp Your Own Bike](https://pimpyourownbike.com/) to show a message depending on the version/branch of the site I am using. For the `doctor` documentation, I wanted to use this method to show a `beta` message when using the beta site ([beta.getdoctor.io](https://beta.getdoctor.io/)).

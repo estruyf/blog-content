@@ -1,21 +1,21 @@
 ---
-title: "Reviewing Cloudflare Pages to show what it has to offer"
-slug: "/reviewing-cloudflare-pages-show-offer/"
-author: "Elio Struyf"
-type: "post"
-date: "2021-10-15T11:46:51.562Z"
-lastmod: "2019-08-22T15:20:28.000Z"
+title: Reviewing Cloudflare Pages to show what it has to offer
+slug: /reviewing-cloudflare-pages-show-offer/
+author: Elio Struyf
+type: post
+date: 2021-10-15T11:46:51.562Z
+lastmod: 2019-08-22T15:20:28.000Z
 draft: false
 tags:
-  - "cloudflare"
-  - "Static site"
-  - "Jamstack"
+  - cloudflare
+  - Static site
+  - Jamstack
 categories: []
 comments: true
-description: "In this article I review Cloudflare its Pages service. A service that allows to host your Jamstack websites fast, secure, and easily."
+description: In this article I review Cloudflare its Pages service. A service that allows to host your Jamstack websites fast, secure, and easily.
 keywords:
-  - "review"
-preview: "/social/0816ed4d-3458-4c97-adbf-6e99c0431bf7.png"
+  - review
+preview: /social/5162414a-cc9a-4bbd-9fe8-7973227c806c.png
 ---
 
 Cloudflare is a name that probably does not need any introduction. It is a well-known service that provides one of the fastest and massively used content delivery networks (CDN).

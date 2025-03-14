@@ -1,19 +1,19 @@
 ---
-title: "Add a support link for a VSCode extension on the marketplace"
-longTitle: "Adding a support link for your Visual Studio Code extension on the marketplace"
+title: Add a support link for a VSCode extension on the marketplace
+longTitle: Adding a support link for your Visual Studio Code extension on the marketplace
 customField: ""
-slug: "/add-support-link-vscode-extension-marketplace/"
-description: "Learn how to add a support link for your VSCode extension on the marketplace to provide helpful resources and assistance to your users."
-date: "2024-02-28T14:19:19.562Z"
-lastmod: "2024-02-28T14:19:19.562Z"
-preview: "/social/1d1686fc-171e-44e7-be5d-5c6298f5bb26.png"
+slug: /add-support-link-vscode-extension-marketplace/
+description: Learn how to add a support link for your VSCode extension on the marketplace to provide helpful resources and assistance to your users.
+date: 2024-02-28T14:19:19.562Z
+lastmod: 2024-02-28T14:19:19.562Z
+preview: /social/a7944ce9-9f96-4030-aaa3-25416e29ae2c.png
 draft: false
 comments: true
 tags:
-  - "Marketplace"
-  - "Support"
-  - "VSCode"
-type: "post"
+  - Marketplace
+  - Support
+  - VSCode
+type: post
 ---
 
 While preparing a new release for Front Matter CMS, I noticed an API call to GitHub failing from the Visual Studio Code marketplace. While looking into it, it requested a `SUPPORT.md` file in the repository's root.

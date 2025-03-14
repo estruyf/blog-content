@@ -11,6 +11,7 @@ tags:
   - GitHub Actions
 categories: []
 comments: true
+preview: /social/0ff763e0-d661-46f5-bd88-5d7e6dc03fd8.png
 ---
 
 Doctor is a tool that you can use to write your documentation in markdown and push it to your SharePoint. That way, you have one location to use and share the documentation in your company. In this article, I want to tell you more about how you can set up GitHub Actions to do automated documentation deployments.

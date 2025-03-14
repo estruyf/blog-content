@@ -1,17 +1,17 @@
 ---
 title: "#DevHack: Using Raycast to speed up my productivity"
-slug: /devhack-raycast-speed-productivity/
-author: Elio Struyf
-type: post
-date: 2021-04-11T16:23:16.302Z
+slug: "/devhack-raycast-speed-productivity/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-04-11T16:23:16.302Z"
 draft: false
 tags:
-  - Application
-  - Productivity
-  - Raycast
+  - "Application"
+  - "Productivity"
+  - "Raycast"
 categories: []
 comments: true
-preview: /social/ca3e5f46-273f-4aa2-84ff-81e4300e6292.png
+preview: "/social/ab2e2ee7-e0c4-443c-9fb0-157adc147d79.png"
 ---
 
 It does not happen often I write an article about a tool, but this time, I felt this tool deserved some extra attention.

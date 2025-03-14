@@ -11,7 +11,7 @@ tags:
   - Microsoft Teams
 categories: []
 comments: true
-preview: /social/324f5821-fc9f-4320-968d-baadcfca0162.png
+preview: /social/ffb33d0d-9858-4b0a-83e4-e629a6c8f3cd.png
 ---
 
 Pen and paper, that is all that we needed years ago to start send messages or information from one person to another. This way of communication is still available, as it is effective. People like to go to their mailbox to see if some envelopes are waiting to be opened. At least, that is when we are not expecting bills. 

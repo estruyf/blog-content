@@ -1,20 +1,20 @@
 ---
-title: Leveraging Astro for React App Performance Boost
+title: "Leveraging Astro for React App Performance Boost"
 longTitle: ""
 customField: ""
-slug: /leveraging-astro-react-app-performance-boost/
+slug: "/leveraging-astro-react-app-performance-boost/"
 description: "Boost React app performance using Astro: Learn how to split datasets, leverage Astro's routing mechanism, and optimize page sizes for faster performance."
-date: 2023-07-13T09:23:46.654Z
-lastmod: 2023-07-13T09:23:46.654Z
-preview: /social/b9390ec4-e893-4633-b28e-3712471b69e5.png
+date: "2023-07-13T09:23:46.654Z"
+lastmod: "2023-07-13T09:23:46.654Z"
+preview: "/social/4663814f-8121-4f21-9e7a-72001fff7d0f.png"
 draft: false
 comments: true
 tags:
-  - Astro
-  - Optimization
-  - Performance
-  - React
-type: post
+  - "Astro"
+  - "Optimization"
+  - "Performance"
+  - "React"
+type: "post"
 ---
 
 Earlier this week, I was working on optimizing an internal analysis website that uses many JSON files for its content collections. During the local development and with smaller datasets, the website was super fast, but when I received a larger dataset, I noticed that the website got very slow.

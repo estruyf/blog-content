@@ -1,19 +1,19 @@
 ---
-title: Fix admin consent for SP token retrieval flows in SPFx
-longTitle: Fix admin consent for SharePoint token retrieval flows in your SPFx solution
+title: "Fix admin consent for SP token retrieval flows in SPFx"
+longTitle: "Fix admin consent for SharePoint token retrieval flows in your SPFx solution"
 customField: ""
-slug: /fix-admin-consent-sp-token-retrieval-flows-spfx/
-description: Learn how to fix admin consent issues with the  00000003-0000-0ff1-ce00-000000000000 SharePoint Entra App.
-date: 2024-04-22T11:23:02.324Z
-lastmod: 2024-04-22T11:23:02.905Z
-preview: /social/dbb86806-830f-4ca0-b9b8-1cb03a548497.png
+slug: "/fix-admin-consent-sp-token-retrieval-flows-spfx/"
+description: "Learn how to fix admin consent issues with the  00000003-0000-0ff1-ce00-000000000000 SharePoint Entra App."
+date: "2024-04-22T11:23:02.324Z"
+lastmod: "2024-04-22T11:23:02.905Z"
+preview: "/social/fe95d2c0-e53c-4eb6-adbc-00833b798bb0.png"
 draft: false
 comments: true
 tags:
-  - SharePoint
-  - SPFx
-  - Entra
-type: post
+  - "SharePoint"
+  - "SPFx"
+  - "Entra"
+type: "post"
 ---
 
 There have been a couple of changes in SharePoint recently related to retrieving access tokens for your SharePoint Framework solutions. One of the changes is that MSAL V3 now uses the `/_api/Microsoft.SharePoint.Internal.ClientSideComponent.Token.AcquireOBOToken` API to retrieve the access token. Typically, this API was only used when loading your solution from Microsoft Teams, but it will now also be used when loading your solution from SharePoint.

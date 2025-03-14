@@ -1,19 +1,19 @@
 ---
-title: "Creating a PWA for your Microsoft Teams app"
-slug: "/creating-pwa-microsoft-teams-app/"
-author: "Elio Struyf"
-type: "post"
-date: "2021-06-14T14:42:11.954+02:00"
+title: Creating a PWA for your Microsoft Teams app
+slug: /creating-pwa-microsoft-teams-app/
+author: Elio Struyf
+type: post
+date: 2021-06-14T14:42:11.954+02:00
 draft: false
 tags:
-  - "Microsoft Teams"
-  - "PWA"
+  - Microsoft Teams
+  - PWA
 categories: []
 comments: true
-preview: "/social/0e57976e-017c-4b48-b08b-7c989dc6d86d.png"
-lastmod: "2021-06-28T13:27:22.361Z"
+preview: /social/9b3d800e-bafc-4bab-a915-f184ecb30ad2.png
+lastmod: 2021-06-28T13:27:22.361Z
 keywords:
-  - "pwa"
+  - pwa
 ---
 
 Progressive Web Apps (PWA) are nothing new, but you see more and more websites implementing them. PWA provides you a way to bring your site as an app to your desktop/tablet/mobile. For [Squarl](https://squarl.com), I first thought of creating a mobile app, but at the beginning of a new product. There is a lot to take care of, which made me feel a native mobile app is a right thing? It will be in the future of the product, but PWA will provide all functionality to get started.

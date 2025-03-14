@@ -6,7 +6,7 @@ slug: "/devhack-synchronous-azure-translation-api-node/"
 description: "Learn how to use the new synchronous Azure AI Translator service in Node.js without setting up a storage account. Get started with this quick tutorial."
 date: "2024-03-21T16:59:07.718Z"
 lastmod: "2024-03-21T16:59:07.718Z"
-preview: "/social/6977792a-0460-4994-b681-66060ee85b8b.png"
+preview: "/social/b8ea7b4d-98fd-4eee-9ff2-7f07c86dcef1.png"
 draft: false
 comments: true
 tags:

@@ -1,15 +1,16 @@
 ---
-title: '#DevHack: Open your VSCode extension settings from the code'
-slug: /devhack-open-vscode-extension-settings-code/
-author: Elio Struyf
-type: post
-date: 2021-02-26T15:09:47.268Z
+title: "#DevHack: Open your VSCode extension settings from the code"
+slug: "/devhack-open-vscode-extension-settings-code/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-02-26T15:09:47.268Z"
 draft: false
 tags:
-  - VSCode
-  - Extensions
+  - "VSCode"
+  - "Extensions"
 categories: []
 comments: true
+preview: "/social/b49ea7a4-a5b6-4a50-90a2-253838a0b563.png"
 ---
 
 For my VSCode Front Matter extension, I wanted to implement a link that allows you to open the VSCode settings to the extension quickly.

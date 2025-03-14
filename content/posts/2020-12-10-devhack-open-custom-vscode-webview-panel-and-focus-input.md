@@ -1,5 +1,5 @@
 ---
-title: '#DevHack: Open custom VSCode WebView panel and focus input'
+title: "#DevHack: Open custom VSCode WebView panel and focus input"
 slug: /devhack-open-custom-vscode-webview-panel-focus-input/
 author: Elio Struyf
 type: post
@@ -11,6 +11,7 @@ tags:
   - Extensions
 categories: []
 comments: true
+preview: /social/6495dd27-cb52-4081-9b7b-4e0428797029.png
 ---
 
 For the last two weeks, I have been working on my FrontMatter extension for Visual Studio Code. This extension helps others and myself make it easier to manage their static markdown pages' metadata. Some time ago, I received the question to enhance the tag and category experience. As when you have many tags or categories, it is not optimal to use the selectors/pickers VSCode provides you.

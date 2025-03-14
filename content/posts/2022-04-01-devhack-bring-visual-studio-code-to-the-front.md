@@ -1,18 +1,18 @@
 ---
-title: Extension tip to bring Visual Studio Code to the foreground
-date: 2022-04-01T13:20:18.077Z
+title: "Extension tip to bring Visual Studio Code to the foreground"
+slug: "/trick-bring-visual-studio-code-foreground-extension/"
+description: "In this article Elio explains how you can get Visual Studio Code to be brought back to the foreground."
+type: "post"
+date: "2022-04-01T13:20:18.077Z"
+lastmod: "2022-04-01T13:20:18.792Z"
 draft: false
-type: post
-description: In this article Elio explains how you can get Visual Studio Code to be brought back to the foreground.
-lastmod: 2022-04-01T13:20:18.792Z
-preview: /social/54073414-fb5b-4baa-811a-4b5cbbd31998.png
-comments: true
 tags:
-  - Development
-  - Visual Studio Code
-  - Devhack
+  - "Development"
+  - "Visual Studio Code"
+  - "Devhack"
 categories: []
-slug: /trick-bring-visual-studio-code-foreground-extension/
+comments: true
+preview: "/social/87824da7-bac8-4870-a61d-4a77aa6e90ae.png"
 ---
 
 In one of the extensions I am developing with a custom authentication provider, I required to bring the last Visual Studio Code instance to the front once signed in.

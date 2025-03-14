@@ -1,19 +1,19 @@
 ---
-title: "A look at the features and benefits of the Front Matter CMS"
-slug: "/features-benefits-front-matter-cms/"
-type: "post"
-date: "2021-10-08T08:08:27.040Z"
-lastmod: "2021-08-22T15:20:28.000Z"
+title: A look at the features and benefits of the Front Matter CMS
+slug: /features-benefits-front-matter-cms/
+type: post
+date: 2021-10-08T08:08:27.040Z
+lastmod: 2021-08-22T15:20:28.000Z
 draft: false
 tags:
-  - "CMS"
-  - "Front Matter"
-  - "Review"
+  - CMS
+  - Front Matter
+  - Review
 comments: true
-description: "Front Matter has been created with the intention of becoming a simple and easy-to-use CMS. Read more about the features and benefits of the Front Matter CMS."
-preview: "/social/0001a33c-7d4e-461a-b423-e5323388e0b9.png"
+description: Front Matter has been created with the intention of becoming a simple and easy-to-use CMS. Read more about the features and benefits of the Front Matter CMS.
+preview: /social/99566c06-8ab3-4a29-b21c-fb4700ccae6e.png
 keywords:
-  - "cms"
+  - cms
 ---
 
 [Front matter CMS](https://frontmatter.codes) is a new, fresh and easy-to-use content management system with a sleek frontend. It can be used for any type of website - blog, portfolio, landing page or even an online store. Without any dependencies to websites, APIs, and databases.

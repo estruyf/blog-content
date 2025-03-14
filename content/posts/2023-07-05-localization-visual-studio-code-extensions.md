@@ -1,19 +1,19 @@
 ---
-title: Localization of Visual Studio Code Extensions
+title: "Localization of Visual Studio Code Extensions"
 longTitle: ""
 customField: ""
-slug: /localization-visual-studio-code-extensions/
-description: Learn how to localize your Visual Studio Code extensions! Explore localization of commands, settings, and strings in TypeScript files.
-date: 2023-07-05T14:34:07.134Z
-lastmod: 2023-07-05T14:34:07.681Z
-preview: /social/2bb04d86-37a1-4593-90ad-6c6a0171019f.png
+slug: "/localization-visual-studio-code-extensions/"
+description: "Learn how to localize your Visual Studio Code extensions! Explore localization of commands, settings, and strings in TypeScript files."
+date: "2023-07-05T14:34:07.134Z"
+lastmod: "2023-07-05T14:34:07.681Z"
+preview: "/social/50d23c95-3e28-43e8-882b-d89d4d38e1c0.png"
 draft: false
 comments: true
 tags:
-  - Localization
-  - Visual Studio Code
-  - Development
-type: post
+  - "Localization"
+  - "Visual Studio Code"
+  - "Development"
+type: "post"
 ---
 
 Welcome to another blog post where we explore the world of Visual Studio Code extensions! In this article, I will delve into localizing your extensions. Localization allows you to make your extension accessible to users around the globe by providing translations in different languages. As some things were unclear to me when I wanted to start localizing one of my extensions, I wrote this article to help others in the same situation.

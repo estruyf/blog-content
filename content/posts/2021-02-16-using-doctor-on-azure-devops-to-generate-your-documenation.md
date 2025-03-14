@@ -13,6 +13,7 @@ tags:
   - Documentation
 categories: []
 comments: true
+preview: /social/d9d1bb67-2dec-40f6-a6cd-34dfc3054b43.png
 ---
 
 GitHub Actions is hot these days, but still, Azure DevOps is being used in many companies, and I do as well. Doctor a tool for publishing your markdown documentation on SharePoint, works nicely on Azure DevOps as well. 

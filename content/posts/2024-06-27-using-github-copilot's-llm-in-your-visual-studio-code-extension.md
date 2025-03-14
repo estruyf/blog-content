@@ -6,7 +6,7 @@ slug: "/github-copilot-llm-code-extension/"
 description: "Explore the integration of GitHub Copilot's LLM API in your VS Code extension to revolutionize your development workflow with AI."
 date: "2024-06-27T10:54:51.149Z"
 lastmod: "2024-06-27T10:54:51.149Z"
-preview: "/social/beed28cf-9f48-41b4-b61e-0a3e355557be.png"
+preview: "/social/e8ec4a8d-9e6f-4da0-852b-f3095b9422a7.png"
 draft: false
 comments: true
 tags:

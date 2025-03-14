@@ -1,5 +1,5 @@
 ---
-title: '#DevHack: CORS for Cloudflare cached Azure Storage blobs'
+title: "#DevHack: CORS for Cloudflare cached Azure Storage blobs"
 slug: /devhack-setting-cors-azure-storage-blobs-cloudflare/
 author: Elio Struyf
 type: post
@@ -12,6 +12,7 @@ tags:
   - Devhack
 categories: []
 comments: true
+preview: /social/26719407-3d77-45e1-b948-4612924ffc14.png
 ---
 
 In the previous post, I told you why we moved to Cloudflare CDN to serve our Azure Storage files instead of Azure CDN. During the testing of Cloudflare, I found out that CORS headers were not present for the files. Usually, this is not needed if you only retrieve one file, but if you want to retrieve another file, for instance, a template from your site, these cross-origin resource sharing headers are required.

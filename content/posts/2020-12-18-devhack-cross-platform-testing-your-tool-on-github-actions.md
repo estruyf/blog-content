@@ -1,16 +1,17 @@
 ---
-title: '#DevHack: cross-platform testing your tool on GitHub Actions'
-slug: /devhack-cross-platform-testing-tool-github-actions/
-author: Elio Struyf
-type: post
-date: 2020-12-18T16:36:28.643Z
+title: "#DevHack: cross-platform testing your tool on GitHub Actions"
+slug: "/devhack-cross-platform-testing-tool-github-actions/"
+author: "Elio Struyf"
+type: "post"
+date: "2020-12-18T16:36:28.643Z"
 draft: false
 tags:
-  - GitHub
-  - GitHub Actions
-  - Documentation
+  - "GitHub"
+  - "GitHub Actions"
+  - "Documentation"
 categories: []
 comments: true
+preview: "/social/c93098bb-ebda-4803-afba-a75630386c8f.png"
 ---
 
 One of the Doctor's objectives, a documentation tool that converts markdown to SharePoint pages, was to make it usable cross-platform. Initially, I created this as an internal tool for Valo and would only be used on Azure DevOps or GitHub Actions. In the first release, I focussed on making the tool available to others like you and seeing if there was any interest in it.

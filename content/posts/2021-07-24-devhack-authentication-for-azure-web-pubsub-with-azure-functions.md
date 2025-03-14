@@ -1,22 +1,22 @@
 ---
 title: "#DevHack: Authenticate Azure Web PubSub with Azure Functions"
-slug: /devhack-authentication-azure-web-pubsub-azure-functions/
-description: Get to know how you can use an Azure Function to retrieve an authentication token for your Azure Web PubSub service.
-author: Elio Struyf
-type: post
-date: 2021-07-26T07:42:21.610Z
-lastmod: 2021-07-26T07:42:26.211Z
+slug: "/devhack-authentication-azure-web-pubsub-azure-functions/"
+description: "Get to know how you can use an Azure Function to retrieve an authentication token for your Azure Web PubSub service."
+author: "Elio Struyf"
+type: "post"
+date: "2021-07-26T07:42:21.610Z"
+lastmod: "2021-07-26T07:42:26.211Z"
 draft: false
 tags:
-  - Azure Functions
-  - WebSockets
-  - Azure Web PubSub
+  - "Azure Functions"
+  - "WebSockets"
+  - "Azure Web PubSub"
 categories: []
 comments: true
-preview: /social/3e49f8be-1a85-4c60-88bd-5e5b9e1e36e7.png
+preview: "/social/a9f767dc-59e5-4286-8ba1-3bf22e410660.png"
 keywords:
-  - pubsub
-  - azure
+  - "pubsub"
+  - "azure"
 ---
 
 This week, I tested out the Azure Web PubSub service, which is still in preview when writing this article. The Web PubSub service is a real-time messaging service that allows you to use the WebSockets APIs and the publish-subscribe pattern. It is excellent for collaborative applications.

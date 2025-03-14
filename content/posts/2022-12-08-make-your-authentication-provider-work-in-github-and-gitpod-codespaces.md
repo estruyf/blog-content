@@ -5,7 +5,7 @@ slug: "/authentication-provider-work-github-gitpod-codespaces/"
 description: "In this article, Elio explains how you can create an authentication provider that works with a proxy to redirect you to the desktop, GitHub Codespaces, Gitpod."
 date: "2022-12-08T08:32:01.320Z"
 lastmod: "2022-12-08T08:32:01.321Z"
-preview: "/social/8342dd97-88e1-4005-bebb-3145ea951efb.png"
+preview: "/social/0aa11984-7ca0-416e-9bf6-5a6b201a76b6.png"
 draft: false
 comments: true
 tags:

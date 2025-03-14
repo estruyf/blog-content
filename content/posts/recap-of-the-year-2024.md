@@ -6,7 +6,7 @@ slug: "/reflecting-incredible-year-2024-highlights/"
 description: "Reflect on an incredible 2024 filled with achievements, cycling milestones, awards, and innovative projects in this detailed year-end review."
 date: "2024-12-20T09:38:26.197Z"
 lastmod: "2024-12-20T09:38:26.917Z"
-preview: "/social/7fb6b673-06ab-4f4f-adbb-20e27fd60e50.png"
+preview: "/social/c53ff620-8263-48d5-b10e-6e7c8e8ad15c.png"
 draft: false
 comments: true
 tags:

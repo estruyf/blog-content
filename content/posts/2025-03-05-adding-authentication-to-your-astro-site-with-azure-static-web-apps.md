@@ -6,7 +6,7 @@ slug: "/authentication-astro-azure-static-web-apps/"
 description: "Secure your Astro site effortlessly with Azure Static Web Apps authentication and Microsoft Entra ID. Follow our guide for seamless integration."
 date: "2025-03-05T11:00:30.044Z"
 lastmod: "2025-03-05T11:00:30.629Z"
-preview: "/social/4baa97d3-0ffa-4718-83bd-30e5a444f039.png"
+preview: "/social/2a2dd940-8931-4dad-af12-4ebaf680ca88.png"
 draft: false
 comments: true
 tags:

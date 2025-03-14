@@ -1,17 +1,17 @@
 ---
-title: Deploy your site to Vercel using GitHub Actions and Releases
-slug: /deploy-site-vercel-github-actions-releases/
-author: Elio Struyf
-type: post
-date: 2021-04-26T06:26:10.220Z
+title: "Deploy your site to Vercel using GitHub Actions and Releases"
+slug: "/deploy-site-vercel-github-actions-releases/"
+author: "Elio Struyf"
+type: "post"
+date: "2021-04-26T06:26:10.220Z"
 draft: false
 tags:
-  - GitHub
-  - GitHub Actions
-  - Vercel
+  - "GitHub"
+  - "GitHub Actions"
+  - "Vercel"
 categories: []
 comments: true
-preview: /social/c6808fb9-aeae-4886-8545-27ed8f31bee5.png
+preview: "/social/187eaa0c-a18e-4831-b60f-f987407a2a01.png"
 ---
 
 One of my favorite hosting companies is [Vercel](https://vercel.com/) as they can provide simplicity and flexibility at the same time. I wanted to control my site's deployment process on Vercel entirely for a new product I am building.

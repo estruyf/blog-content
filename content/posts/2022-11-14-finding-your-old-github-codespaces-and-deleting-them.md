@@ -1,17 +1,17 @@
 ---
-title: "Finding your old GitHub Codespaces and deleting them"
+title: Finding your old GitHub Codespaces and deleting them
 longTitle: ""
-slug: "/finding-github-codespaces-deleting/"
-description: "In this article, Elio explains how you can find your old Codespace instances which take up space and how to remove these."
-date: "2022-11-14T08:39:21.525Z"
-lastmod: "2022-11-14T08:39:21.525Z"
-preview: "/social/f5368fc1-a64e-4cb6-bd77-3e1c9504e7b8.png"
+slug: /finding-github-codespaces-deleting/
+description: In this article, Elio explains how you can find your old Codespace instances which take up space and how to remove these.
+date: 2022-11-14T08:39:21.525Z
+lastmod: 2022-11-14T08:39:21.525Z
+preview: /social/d3aeca6d-fa62-42e0-acc6-889d9de58e8c.png
 draft: false
 comments: true
 tags:
-  - "GitHub"
-  - "Codespaces"
-type: "post"
+  - GitHub
+  - Codespaces
+type: post
 ---
 
 Over the weekend, I received a couple of emails I was running out of GitHub Codespaces storage. My limit is 20GB, but more interesting is that I rarely use codespaces. 

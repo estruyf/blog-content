@@ -6,7 +6,7 @@ slug: "/integrate-code-extension-scm-input/"
 description: "Integrate your VS Code extension into SCM input to provide additional logic for your commit messages."
 date: "2024-06-13T13:08:03.908Z"
 lastmod: "2024-06-13T13:08:03.908Z"
-preview: "/social/002b98ae-77c5-4246-b68d-1c271df5ba81.png"
+preview: "/social/08600b26-41c6-45f6-8469-4b5f81cbfef1.png"
 draft: false
 comments: true
 tags:
