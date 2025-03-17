@@ -7,7 +7,7 @@ description: "My journey migrating from Hugo to Astro highlights flexibility, ea
 date: "2025-03-17T11:21:30.391Z"
 lastmod: "2025-03-17T11:21:30.915Z"
 preview: "/social/7abfa2cf-438b-44ae-8b61-4942965fe7fd.png"
-draft: true
+draft: false
 comments: true
 tags:
   - "Astro"
