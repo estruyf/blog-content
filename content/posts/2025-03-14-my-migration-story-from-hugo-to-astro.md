@@ -79,13 +79,13 @@ For my content, I wrote a couple of these plugins to handle the following partia
 
 For instance, the plugin for image captions converts the following Hugo shortcode:
 
-```html title="Example of a caption shortcode"
+```html title="Example of a caption shortcode" wrap
 {{< caption-new "/uploads/2025/03/swa-storage-limits.webp" "Static Web Apps - Plans" "data:image/jpeg;base64,..." "855" >}}
 ```
 
 To the following HTML code:
 
-```html title="HTML output of the caption conversion"
+```html title="HTML output of the caption conversion" wrap
 <figure class="caption__figure">
   <a class="lightbox" href="https://www.eliostruyf.com/uploads/2025/03/swa-storage-limits.webp" title="Show image">
   <span class="sr-only">Show image</span>
