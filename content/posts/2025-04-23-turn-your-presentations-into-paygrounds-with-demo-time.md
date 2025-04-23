@@ -6,7 +6,7 @@ slug: "/turn-presentations-playgrounds-demo-time/"
 description: "Transform your presentations into interactive experiences with Demo Time, empowering your audience to learn and explore at their own pace."
 date: "2025-04-23T10:08:12.112Z"
 lastmod: "2025-04-23T10:08:12.724Z"
-preview: "/social/b07856f6-b0a2-4586-afef-cd967de2b678.png"
+preview: "/social/3217a192-7f8a-4372-8de3-d255b4beddda.png"
 draft: false
 comments: true
 tags:
