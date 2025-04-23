@@ -1,8 +1,8 @@
 ---
-title: "Turn your presentations into paygrounds with Demo Time"
+title: "Turn your presentations into playgrounds with Demo Time"
 longTitle: ""
 customField: ""
-slug: "/turn-presentations-paygrounds-demo-time/"
+slug: "/turn-presentations-playgrounds-demo-time/"
 description: "Transform your presentations into interactive experiences with Demo Time, empowering your audience to learn and explore at their own pace."
 date: "2025-04-23T10:08:12.112Z"
 lastmod: "2025-04-23T10:08:12.724Z"
