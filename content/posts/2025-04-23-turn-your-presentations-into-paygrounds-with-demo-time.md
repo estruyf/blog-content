@@ -32,7 +32,7 @@ This is not a great experience, that is why I created [Demo Time](https://demoti
 
 > Demo Time isn’t just for speakers. It’s for learners.
 
-{{< caption-new "/uploads/2025/04/demotime-graph.webp" "Demo Time - Learn and explore at your own pace" >}}
+{{< caption-new "/uploads/2025/04/demotime-graph.webp" "Demo Time - Learn and explore at your own pace"  "data:image/jpeg;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoKAAoAAUAmJYwCw7YtBwkUTZP0WgAA/v3YsSbdcD7aH6vcCk/eP8Go+Qc12J4oGbpVm+Gp1H+ffxkUSrYXiMXJxwZT/oeJYKT05zTLazqV7nF2wH3sf5P+LYU5gXdsvkcSKAAA" "1024" "1024" >}}
 
 ## What is Demo Time?
 
@@ -89,7 +89,7 @@ Just clone the repo, open it in Visual Studio Code, and follow the steps via the
 
 Marc Duiker used Demo Time to deliver his [KubeCon Europe 2025](https://marcduiker.dev/articles/speaking-at-kubecon-europe-2025/) talk. His repo includes slides, code, and a complete walkthrough: [GitHub: Dapr Resiliency & Durable Execution](https://github.com/diagrid-labs/dapr-resiliency-and-durable-execution).
 
-{{< caption-new "/uploads/2025/04/demo-time-dapr.webp" "Dapr demos from Marc Duiker with Demo Time" >}}
+{{< caption-new "/uploads/2025/04/demo-time-dapr.webp" "Dapr demos from Marc Duiker with Demo Time"  "data:image/jpeg;base64,UklGRjIAAABXRUJQVlA4ICYAAABQAQCdASoKAAQAAUAmJaQABDOAAP78aQmuNqcdLUygU9fCs0swAA==" "830" "333" >}}
 
 It’s a perfect showcase of how powerful and accessible technical talks can be—with the right tooling.
 

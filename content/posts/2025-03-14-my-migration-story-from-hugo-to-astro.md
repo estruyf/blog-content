@@ -154,11 +154,11 @@ To illustrate the transformation, here are before and after screenshots of the b
 
 Before Migration:
 
-{{< caption-new "/uploads/2025/03/homepage-hugo.webp" "Previous version of the site" >}}
+{{< caption-new "/uploads/2025/03/homepage-hugo.webp" "Previous version of the site"  "data:image/jpeg;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoKAA8AAUAmJaQAAu19MIEIsAD+/seZVthcQBn9qZqG3ZdCigk1cN6GAIWL77FcgAA=" "1592" "2377" >}}
 
 After Migration to Astro:
 
-{{< caption-new "/uploads/2025/03/homepage-astro.webp" "New website in Astro" >}}
+{{< caption-new "/uploads/2025/03/homepage-astro.webp" "New website in Astro"  "data:image/jpeg;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoKAA8AAUAmJaQAAxe58UOp+ugA/v3UXFZXToyQSPOixp2YQ0sJleNhNjasbdDL8/6fI0AtmU/eDeam30CcwK6f/G6maOAFAAAAAA==" "1585" "2362" >}}
 
 ## Final Thoughts
 

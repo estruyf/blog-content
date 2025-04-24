@@ -27,7 +27,7 @@ I have been using the Shokz OpenRun Pro 2 for a few weeks now, so I am sharing m
 
 The Shokz OpenRun Pro 2 has a design similar to that of the previous models. It is much slimmer than my AfterShokz. The headphones are lightweight and comfortable for long periods, even when wearing regular or cycling glasses.
 
-{{< caption-new "/uploads/2025/04/shokz-pro.webp" "Shokz OpenRun Pro 2" >}}
+{{< caption-new "/uploads/2025/04/shokz-pro.webp" "Shokz OpenRun Pro 2"  "data:image/jpeg;base64,UklGRnIAAABXRUJQVlA4IGYAAABwAgCdASoKAAgAAUAmJbACdLoAEIwTmB/G0gtAAP6bsiV2NxHQG38f92MCpw8qPZVv9o9eBSJt9hUtbZe4LWIM0x6CHP/cjF7ITWlXF/7UhzP/1fd/8/3/4I7QuwT+CcNXMkoAAAA=" "1280" "960" >}}
 
 I first bought the OpenFit 2 earbuds, but the fit was not great. They felt too loose on my ears, and I was afraid they would fall off during rides, so I traded them in for the OpenRun Pro 2s.
 
@@ -35,17 +35,17 @@ A significant difference from my previous model is the speaker; I have to adjust
 
 ### The AfterShokz vs. the Shokz OpenRun Pro 2
 
-{{< caption-new "/uploads/2025/04/aftershokz.webp" "AfterShokz" >}}
+{{< caption-new "/uploads/2025/04/aftershokz.webp" "AfterShokz"  "data:image/jpeg;base64,UklGRnYAAABXRUJQVlA4IGoAAACQAgCdASoKAAgAAUAmJbACdLoB+AAC/AxmOM5cAAD+4ZroDbccE/iR70w3OJFkM3q851kQD8BQU/1G+9qnJPP8J+rGElA45R4f//tftFwIVnuyP2RjvG9XrH1oP/iQ5XSuA86esS552AAA" "1280" "960" >}}
 
-{{< caption-new "/uploads/2025/04/shokz-pro.webp" "Shokz OpenRun Pro 2" >}}
+{{< caption-new "/uploads/2025/04/shokz-pro.webp" "Shokz OpenRun Pro 2"  "data:image/jpeg;base64,UklGRnIAAABXRUJQVlA4IGYAAABwAgCdASoKAAgAAUAmJbACdLoAEIwTmB/G0gtAAP6bsiV2NxHQG38f92MCpw8qPZVv9o9eBSJt9hUtbZe4LWIM0x6CHP/cjF7ITWlXF/7UhzP/1fd/8/3/4I7QuwT+CcNXMkoAAAA=" "1280" "960" >}}
 
 #### Controls
 
 The controls are similar to the previous model.
 
-{{< caption-new "/uploads/2025/04/aftershokz-controls.webp" "AfterShokz controls" >}}
+{{< caption-new "/uploads/2025/04/aftershokz-controls.webp" "AfterShokz controls"  "data:image/jpeg;base64,UklGRoYAAABXRUJQVlA4IHoAAACwAgCdASoKAA0AAUAmJbACdLoB+AARABY8mDDnsYAA/siGCkvdeqc7iMgEvGGQGodutJPaUCuvLWYj139Qt5nl8tWRovPIauJccDjg3EtzB0l0At/+18FjbnsT5f+3+8Gh+je5n9q6XAhhs/4Ny39xTQsmYUY03DBwAA==" "960" "1280" >}}
 
-{{< caption-new "/uploads/2025/04/skokz-pro-controls.webp" "Shokz OpenRun Pro 2 - Controls" >}}
+{{< caption-new "/uploads/2025/04/skokz-pro-controls.webp" "Shokz OpenRun Pro 2 - Controls"  "data:image/jpeg;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoKAAgAAUAmJbACdLoAAnaUkSOOAAD+1cV6gZCrhjZdFNF8I2Oszff0MOJTVFVKTyog4d2z/9/9vYOJ5C3v+1HN/0gWmfyVf/Eht+Tvq99nAAAA" "1280" "960" >}}
 
 ## Safety and awareness of your surroundings
 
