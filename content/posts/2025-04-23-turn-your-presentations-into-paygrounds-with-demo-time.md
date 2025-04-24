@@ -32,7 +32,7 @@ This is not a great experience, that is why I created [Demo Time](https://demoti
 
 > Demo Time isn’t just for speakers. It’s for learners.
 
-{{< caption-new "/uploads/2025/04/demotime-graph.webp" "Demo Time - Learn and explore at your own pace"  "data:image/jpeg;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoKAAoAAUAmJYwCw7YtBwkUTZP0WgAA/v3YsSbdcD7aH6vcCk/eP8Go+Qc12J4oGbpVm+Gp1H+ffxkUSrYXiMXJxwZT/oeJYKT05zTLazqV7nF2wH3sf5P+LYU5gXdsvkcSKAAA" "1024" "1024" >}}
+{{< caption-new "/uploads/2025/04/demotime-before-after.webp" "Before and after using Demo Time"  "data:image/jpeg;base64,UklGRnoAAABXRUJQVlA4IG4AAABQAgCdASoKAAcAAUAmJZACdDBIiIfLHSgl6agA/vlj7Tzk/kMWOkd5n/XfmqG718xNTUW/3nMdTtQTN/IeKDfbHss40W1NZ7E+CieVwqPqlSqYcO74mqIZShvkzEkq3a6V92f1K7SJ/rL9WeCAAA==" "1536" "1024" >}}
 
 ## What is Demo Time?
 
@@ -64,6 +64,8 @@ Demo Time gives your audience:
 Here’s how it works: you create your presentation using Demo Time, then share the code repository. Attendees can open it in VS Code, launch the Demo Time panel, and walk through the exact same flow—step by step.
 
 > No need for screenshots. No missed steps. No stress.
+
+{{< caption-new "/uploads/2025/04/demotime-explore-at-your-pace.webp" "Demo Time allows you to explore at your own pace"  "data:image/jpeg;base64,UklGRqYAAABXRUJQVlA4IJoAAADQAgCdASoKAA8AAUAmJbACdDiAN5OJU35BINd0BS3gAP76DhaF3sYODXaPWpL8bES4Hs40skQfwmW/JgQA9q+YH1JpnQn7eq/GPKcEO5l/m9q24ZmrhL+9sVuJFkq6uLC63ZfNZGX3cPah0DAZX1XUWriHZjdC0wKqoIdoBp9P3zf8hI3r4NnsuGXQTtPjQ6ofdgtbomVTngAA" "1024" "1536" >}}
 
 ## A better experience for everyone
 
