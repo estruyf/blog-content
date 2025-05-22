@@ -3,6 +3,21 @@
     "year": "2025",
     "events": [
       {
+        "session": "Don't ship it till you test it: End-to-End testing for Microsoft 365",
+        "description": "Shipping untested Power Apps, SharePoint Framework components, or custom Microsoft 365 solutions is a risky move, especially when you're building on platforms you don't control. With multi-factor authentication and rapid release cycles in play, the stakes are even higher. In this session, you'll learn how to bring confidence to your releases by implementing robust end-to-end tests using Playwright. We'll cover everything from writing your first test to handling authentication (yes, even MFA), mocking APIs, and integrating it all into a GitHub Actions pipeline. Whether you're a developer, tester, or team lead, you'll walk away with practical strategies, real-world examples, and code samples to help you build a scalable testing setup for the Microsoft 365 ecosystem. If you're serious about quality—and tired of finding bugs in production, then this is the session for you.",
+        "coSpeakers": [],
+        "date": "2025-12-02",
+        "endDate": "2025-12-02",
+        "event": "ESPC",
+        "location": "Dublin (IE)",
+        "link": "https://www.sharepointeurope.com/conference/schedule/2025/",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
         "session": "Integrate Playwright tests for Power Apps into your DevOps process",
         "description": "Tired of Power Platform solutions that feel like being held together by duct tape and bubble gum? You're not alone. In this session, Luise and Elio will discuss why proper testing is often overlooked in Power Apps development and how we can change that game. We'll introduce you to Playwright, your new best friend for automated testing, and show you why it's a perfect match for Power Apps. We'll cover the essentials of making your apps test-friendly and walk you through some common tests to get you started. But we won't stop there. We'll show you how to take your testing to the next level by automating the process and seamlessly integrating it into your development pipeline. By the end of this session, you'll have a clear roadmap for releasing rock-solid Power Apps that'll make your users (and your sanity) thank you.",
         "coSpeakers": [
