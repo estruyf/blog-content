@@ -18,6 +18,21 @@
         }
       },
       {
+        "session": "Enhancing web application quality with Playwright",
+        "description": "In this session, we will explore how to use Playwright to automate end-to-end testing of web applications. We will focus on how Playwright can be used to create end-to-end tests that verify the behavior of various web applications, including authentication scenarios for platforms like Microsoft 365. We will start from scratch and build up the test scenarios together. You will learn more about the techniques and best practices for creating practical tests during the session. By the end, you will have a deeper understanding of how to use Playwright to improve the quality of your solutions.",
+        "coSpeakers": [],
+        "date": "2025-10-29",
+        "endDate": "2025-10-29",
+        "event": "Techorama Netherlands",
+        "location": "Utrecht (NL)",
+        "link": "https://www.techorama.nl/",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
         "session": "Integrate Playwright tests for Power Apps into your DevOps process",
         "description": "Tired of Power Platform solutions that feel like being held together by duct tape and bubble gum? You're not alone. In this session, Luise and Elio will discuss why proper testing is often overlooked in Power Apps development and how we can change that game. We'll introduce you to Playwright, your new best friend for automated testing, and show you why it's a perfect match for Power Apps. We'll cover the essentials of making your apps test-friendly and walk you through some common tests to get you started. But we won't stop there. We'll show you how to take your testing to the next level by automating the process and seamlessly integrating it into your development pipeline. By the end of this session, you'll have a clear roadmap for releasing rock-solid Power Apps that'll make your users (and your sanity) thank you.",
         "coSpeakers": [
