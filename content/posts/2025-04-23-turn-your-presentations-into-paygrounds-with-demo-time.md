@@ -28,7 +28,7 @@ These are questions I’ve been asking myself for years. I've given many talks, 
 
 Don’t get me wrong—sharing your slides and code is a good start. But it’s not the same as being in the room during the demo. When attendees open your repo later, they’re forced to guess: *Which file did you edit? What command did you run? What was that output again?*
 
-This is not a great experience, that is why I created [Demo Time](https://demotime.elio.dev).
+This is not a great experience, that is why I created [Demo Time](https://demotime.show).
 
 > Demo Time isn’t just for speakers. It’s for learners.
 
@@ -101,5 +101,5 @@ Tech talks should not end with applause, they should spark action.
 
 **Demo Time** helps your audience go beyond inspiration. It turns passive watching into active learning. Your demo isn not just something they saw, it’s something they can do.
 
-🔗 [Try it out at demotime.elio.dev](https://demotime.elio.dev)
+🔗 [Try it out at demotime.show](https://demotime.show)
 

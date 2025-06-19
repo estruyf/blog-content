@@ -18,7 +18,7 @@ type: "post"
 fmContentType: "post"
 ---
 
-After years of good performance with [Hugo](https://gohugo.io/), I decided to migrate my blog to [Astro](https://astro.build). I choose to migrate for a few key reasons: **flexibility**, the **familiar syntax and programming language (JavaScript/TypeScript)**, and how **easy it is to get started** (in my case). In the past, I already used Astro a couple of times for some small projects (like [Demo Time](https://demotime.elio.dev)), and that made me feel comfortable making the switch.
+After years of good performance with [Hugo](https://gohugo.io/), I decided to migrate my blog to [Astro](https://astro.build). I choose to migrate for a few key reasons: **flexibility**, the **familiar syntax and programming language (JavaScript/TypeScript)**, and how **easy it is to get started** (in my case). In the past, I already used Astro a couple of times for some small projects (like [Demo Time](https://demotime.show)), and that made me feel comfortable making the switch.
 
 The developer experience with Astro is incredibly smooth. You can start building very quickly once you get the hang of the `*.astro` files and how Astro handles components. Another advantage is that I can make use of React in a relatively easy way. I created a React app for the search functionality in my Hugo theme. I hooked everything up with webpack, but it still used a version that depended on Node.js 16. With Astro, it enables React integration, and you can start loading your React components in your Astro files.
 

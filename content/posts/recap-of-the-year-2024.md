@@ -25,10 +25,10 @@ Here are some of my highlights:
 - **Best cycling year yet**: Surpassed 12,000 km cycled, marking my best year on the bike.
 - **Awards and recognition**: Celebrated my 10th Microsoft MVP award, 3rd GitHub Star recognition, and 2nd Google Developer Expert title.
 - **Speaking engagements**: Delivered talks at conferences and meetups, sharing knowledge and connecting with amazing communities.
-- **Presentation innovation**: Leveraged [Demo Time](https://demotime.elio.dev) and [Slidev](https://sli.dev/) to elevate my presentation style.
+- **Presentation innovation**: Leveraged [Demo Time](https://demotime.show) and [Slidev](https://sli.dev/) to elevate my presentation style.
 - **Blogging**: Published 34 articles, most of which focused on Playwright and GitHub Actions.
 - **Front Matter CMS milestone**: Featured on the Visual Studio Code marketplace with over 50,000 installations and 2000 GitHub stars.
-- **Demo Time recognition**: [Demo Time](https://demotime.elio.dev) was also featured on the Visual Studio Code marketplace and received positive feedback from other speakers.
+- **Demo Time recognition**: [Demo Time](https://demotime.show) was also featured on the Visual Studio Code marketplace and received positive feedback from other speakers.
 - **Visitor Badge success**: My [Visitor Badge](https://visitorbadge.io/) project generated over 60 million badges in 2024, surpassing a total of 70 million.
 - **New packages and growth on NPM**: Published and maintained several NPM packages that gained traction throughout the year.
 
@@ -88,7 +88,7 @@ It’s been a breakthrough year for two projects.
 
 {{< caption-new "/uploads/2024/12/demo-time-featured.webp" "Demo Time featured on the Visual Studio Code marketplace"  "data:image/jpeg;base64,UklGRjwAAABXRUJQVlA4IDAAAABwAQCdASoKAAIAAUAmJZwCdAFAAAD+/E/72nf/LTpLBSufp0bC/r1190BPiAK+oAA=" "1193" >}}
 
-[Demo Time](https://demotime.elio.dev) also gained recognition, further motivating me to continue innovating and improving these tools. What started as a personal project has now become a valuable resource for many speakers. Seeing it being used at conferences like [Microsoft Ignite](https://www.youtube.com/watch?v=yb72XC3ujdI), [OpenAI DevDays](https://youtu.be/mM8KhTxwPgs?si=BoDgQA_uzN5sNlbj&t=730), ESPC and probably more, makes me incredibly happy.
+[Demo Time](https://demotime.show) also gained recognition, further motivating me to continue innovating and improving these tools. What started as a personal project has now become a valuable resource for many speakers. Seeing it being used at conferences like [Microsoft Ignite](https://www.youtube.com/watch?v=yb72XC3ujdI), [OpenAI DevDays](https://youtu.be/mM8KhTxwPgs?si=BoDgQA_uzN5sNlbj&t=730), ESPC and probably more, makes me incredibly happy.
 
 {{< blockquote type="info" text="Demo Time allows you to script your coding demos to perfection with this Visual Studio Code extension - no typos, no missteps, just flawless, stress-free presentations every time. Execute each demo step seamlessly, just like advancing through a presentation!" >}}
 
