@@ -149,14 +149,19 @@ On my first installation of the dependencies, it failed, as GitHub Spark uses an
 I wanted to add the following features:
 
 - **Prompt 1**: Remove all the `@github/spark` dependency references from the files
+  
   **Result**: It removed all references, but I had to manually change `useKV` to `useState` in the React component, as it was unable to do so automatically.
 - **Prompt 2**: Write the API to be able to run on Cloudflare Pages/Workers and let it call the VS Code Marketplace API with the following example URL.
+  
   **Result**: It created a `functions` directory with a `stats.ts` file that can be used to fetch the stats from the VS Code Marketplace API.
 - **Prompt 3**: Use an environment variable for the VS Code Marketplace - Personal Access Token.
+  
   **Result**: It added the required code to the `stats.ts` file to use the `VSCODE_MARKETPLACE_PAT` environment variable.
 - **Prompt 4**: Make the table headers sortable.
+  
   **Result**: It added the necessary code to make the table headers sortable, allowing me to sort the stats by page views, installs, web downloads, and uninstalls.
 - **Prompt 5**: Add a selector for other extensions by performing an API call to the VS Code Marketplace API.
+  
   **Result**: It added a dropdown to select other extensions, allowing me to switch between them and see their stats.
 
 ## Minute 45-60: Deployment
