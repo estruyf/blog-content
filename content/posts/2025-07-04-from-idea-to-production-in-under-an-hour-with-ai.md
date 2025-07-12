@@ -7,7 +7,7 @@ description: "How I used GitHub Copilot and AI-powered development tools to buil
 date: "2025-07-04T09:28:38.482Z"
 lastmod: "2025-07-04T09:28:38.933Z"
 preview: "/social/420008f4-9654-42fd-a259-ad4903634e14.png"
-draft: false
+draft: true
 comments: true
 tags:
   - "AI"
