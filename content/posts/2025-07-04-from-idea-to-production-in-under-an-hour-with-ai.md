@@ -2,7 +2,7 @@
 title: "From idea to production in under an hour with AI"
 longTitle: ""
 customField: ""
-slug: "/idea-production-hour-ai-unpublished/"
+slug: "/idea-production-hour-ai/"
 description: "How I used GitHub Copilot and AI-powered development tools to build a complete VS Code extension stats dashboard from scratch in record time."
 date: "2025-07-04T09:28:38.482Z"
 lastmod: "2025-07-04T09:28:38.933Z"
