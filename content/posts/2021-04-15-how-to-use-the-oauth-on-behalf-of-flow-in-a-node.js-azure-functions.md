@@ -20,7 +20,7 @@ While implementing a couple of Azure Functions, I needed to use the [OAuth 2.0 O
 
 For this type of flow, there are already a lot of samples out there. Unfortunately, most of them are outdated and written in C#. That is why I thought it would be a good idea to write this article, to show how you can use this OAuth On-Behalf-Of flow in Node.js Azure Functions.
 
-{{< blockquote type="Code Sample" text="[msal-obo-azurefunctions](https://github.com/estruyf/azure-samples/tree/main/msal-obo-azurefunctions)" >}}
+{{< blockquote type="info" text="[msal-obo-azurefunctions](https://github.com/estruyf/azure-samples/tree/main/msal-obo-azurefunctions)" >}}
 
 ## Azure AD App Registration
 
