@@ -4,9 +4,9 @@ longTitle: ""
 customField: ""
 slug: "/idea-production-hour-ai/"
 description: "How I used GitHub Copilot and AI-powered development tools to build a complete VS Code extension stats dashboard from scratch in record time."
-date: "2025-07-04T09:28:38.482Z"
-lastmod: "2025-07-04T09:28:38.933Z"
-preview: "/social/420008f4-9654-42fd-a259-ad4903634e14.png"
+date: "2025-07-23T16:40:12.457Z"
+lastmod: "2025-07-23T16:40:13.127Z"
+preview: "/social/f91dee32-d429-4098-85e8-aa832ddc435a.png"
 draft: false
 comments: true
 tags:
