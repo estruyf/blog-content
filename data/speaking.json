@@ -1,6 +1,42 @@
 [
   {
     "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
+    "title": "VS Code Live - Behind the scenes of Demo Time: building better presentations and live coding in VS Code",
+    "description": "Explore the development of Demo Time for VS Code and discover how it can improve your live coding and presentations.",
+    "startDate": "2025-09-18",
+    "endDate": "2025-09-18",
+    "location": "Online (YouTube)",
+    "event": {
+      "name": "Visual Studio Code",
+      "link": "https://www.youtube.com/@code/streams"
+    },
+    "links": [],
+    "reporting": {
+      "gde": false,
+      "mvp": false,
+      "github": false
+    }
+  },
+  {
+    "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
+    "title": "Open Source Friday with GitHub",
+    "description": "Open Source Friday celebrates the creators, maintainers, and contributors who make the open source community thrive. Discover the world of open source with Open Source Fridays - Exciting talks, GitHub tips, and fun projects await! Join Hosts Andrea Griffiths, Kedasha Kerr and Kevin Crosby weekly!",
+    "startDate": "2025-09-05",
+    "endDate": "2025-09-05",
+    "location": "Online (YouTube)",
+    "event": {
+      "name": "Open Source Fridays",
+      "link": "https://www.youtube.com/playlist?list=PL0lo9MOBetEFmtstItnKlhJJVmMghxc0P"
+    },
+    "links": [],
+    "reporting": {
+      "gde": false,
+      "mvp": false,
+      "github": false
+    }
+  },
+  {
+    "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
     "title": "Improve Your Presentation Skills by Scripting Your Live Coding Demos to Perfection",
     "description": "Join Elio for a talk on mastering live coding demos. Learn to script your demos for seamless, error-free execution using Visual Studio Code and the Demo Time extension. Ideal for anyone performing live coding at conferences, webinars, or team meetings, this session will help transform your presentations from stressful to impressive.",
     "startDate": "2025-06-13",
