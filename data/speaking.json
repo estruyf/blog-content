@@ -1,6 +1,29 @@
 [
   {
     "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
+    "title": "WeAreDevelopers LIVE - Demo Time, Live Coding, End-to-End Testing and more",
+    "description": "This week’s guest is Elio Struyf! On September 3, he’ll join us on the show for some demo time, live coding, and a look into end-to-end testing.",
+    "startDate": "2025-09-18",
+    "endDate": "2025-09-18",
+    "location": "Online (YouTube)",
+    "event": {
+      "name": "WeAreDevelopers LIVE",
+      "link": "https://devrel.wearedevelopers.com/live/2025-09-03.html"
+    },
+    "links": [
+      {
+        "title": "Youtube",
+        "link": "https://www.youtube.com/live/fvx4OZH5U6w?si=DvefF3sN32Qyr4Xy"
+      }
+    ],
+    "reporting": {
+      "gde": false,
+      "mvp": false,
+      "github": false
+    }
+  },
+  {
+    "$schema": "https://www.eliostruyf.com/dev/speaking.schema.json",
     "title": "VS Code Live - Behind the scenes of Demo Time: building better presentations and live coding in VS Code",
     "description": "Explore the development of Demo Time for VS Code and discover how it can improve your live coding and presentations.",
     "startDate": "2025-09-18",
