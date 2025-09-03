@@ -21,7 +21,7 @@ fmContentType: "post"
 
 Since **September 1st, 2025**, Microsoft officially **discontinued Azure Sponsored Subscriptions** for open-source maintainers. The company now focuses on sponsoring only **strategic open-source projects**. While Microsoft continues to fund open source in other ways (for example, through its internal FOSS Fund), this marks the end of a program that helped many independent developers run and scale their projects.
 
-{{< blockquote type="info" text="[Azure credits for open source projects](https://opensource.microsoft.com/azure-credits/)" >}}
+{{< blockquote type="info" text="The updated statement can be found here: [Azure credits for open source projects](https://opensource.microsoft.com/azure-credits/)." >}}
 
 {{< caption-new "/uploads/2025/09/azure-credits-os.webp" "Azure credits for open source projects" >}}
 
