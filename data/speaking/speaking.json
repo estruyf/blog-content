@@ -3,6 +3,51 @@
     "year": "2025",
     "events": [
       {
+        "session": "WeAreDevelopers LIVE - Demo Time, Live Coding, End-to-End Testing and more",
+        "description": "This week’s guest is Elio Struyf! On September 3, he’ll join us on the show for some demo time, live coding, and a look into end-to-end testing.",
+        "coSpeakers": [],
+        "date": "2025-09-18",
+        "endDate": "2025-09-18",
+        "location": "Online (YouTube)",
+        "link": "https://devrel.wearedevelopers.com/live/2025-09-03.html",
+        "video": "https://www.youtube.com/live/fvx4OZH5U6w?si=DvefF3sN32Qyr4Xy",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
+        "session": "VS Code Live - Behind the scenes of Demo Time: building better presentations and live coding in VS Code",
+        "description": "Explore the development of Demo Time for VS Code and discover how it can improve your live coding and presentations.",
+        "coSpeakers": [],
+        "date": "2025-09-18",
+        "endDate": "2025-09-18",
+        "location": "Online (YouTube)",
+        "event": "Visual Studio Code Live",
+        "link": "https://www.youtube.com/@code/streams",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
+        "session": "Open Source Friday with GitHub",
+        "description": "Open Source Friday celebrates the creators, maintainers, and contributors who make the open source community thrive. Discover the world of open source with Open Source Fridays - Exciting talks, GitHub tips, and fun projects await! Join Hosts Andrea Griffiths, Kedasha Kerr and Kevin Crosby weekly!",
+        "coSpeakers": [],
+        "date": "2025-09-05",
+        "endDate": "2025-09-05",
+        "event": "GitHub - Open Source Fridays",
+        "location": "Online (YouTube)",
+        "link": "https://www.youtube.com/playlist?list=PL0lo9MOBetEFmtstItnKlhJJVmMghxc0P",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
         "session": "Don't ship it till you test it: End-to-End testing for Microsoft 365",
         "description": "Shipping untested Power Apps, SharePoint Framework components, or custom Microsoft 365 solutions is a risky move, especially when you're building on platforms you don't control. With multi-factor authentication and rapid release cycles in play, the stakes are even higher. In this session, you'll learn how to bring confidence to your releases by implementing robust end-to-end tests using Playwright. We'll cover everything from writing your first test to handling authentication (yes, even MFA), mocking APIs, and integrating it all into a GitHub Actions pipeline. Whether you're a developer, tester, or team lead, you'll walk away with practical strategies, real-world examples, and code samples to help you build a scalable testing setup for the Microsoft 365 ecosystem. If you're serious about quality—and tired of finding bugs in production, then this is the session for you.",
         "coSpeakers": [],
