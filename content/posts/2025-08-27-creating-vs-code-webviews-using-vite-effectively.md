@@ -4,8 +4,8 @@ longTitle: "Creating Visual Studio Code webviews using Vite"
 customField: ""
 slug: "/creating-code-webviews-vite/"
 description: ""
-date: null
-lastmod: null
+date: "2025-09-03T12:35:13.836Z"
+lastmod: "2025-09-03T12:35:14.330Z"
 preview: "<failed to process>"
 draft: true
 comments: true
