@@ -41,7 +41,8 @@
         "endDate": "2025-09-05",
         "event": "GitHub - Open Source Fridays",
         "location": "Online (YouTube)",
-        "link": "https://www.youtube.com/playlist?list=PL0lo9MOBetEFmtstItnKlhJJVmMghxc0P",
+        "link": "https://github.com",
+        "video": "https://www.youtube.com/watch?v=u0pHfrKdWHA",
         "reporting": {
           "gde": false,
           "mvp": false,
