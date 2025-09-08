@@ -66,7 +66,7 @@ This type of support lowers the operational cost of maintaining open-source soft
 
 Some companies have built structured programs to fund the open-source software they depend on.
 
-{{< blockquote type="important" text="I’d like to thank [CodeRabbit][https://coderabbit.ai] for their sponsorship, and also every individual sponsor supporting me on GitHub. 💛" >}}
+{{< blockquote type="important" text="I’d like to thank [CodeRabbit](https://coderabbit.ai) for their sponsorship, and also every individual sponsor supporting me on GitHub. 💛" >}}
 
 Examples of funding programs:
 
