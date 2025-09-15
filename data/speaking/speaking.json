@@ -1,8 +1,7 @@
 [
   {
-
     "year": "2026",
-    "events": 
+    "events": [
       {
         "session": "From Code to Cloud: Automated Deployments with GitHub Actions",
         "description": "Let us dive into the world of GitHub Actions, an instrumental component in modern Continuous Integration and Continuous Deployment (CI/CD) practices. In this session, Elio Struyf will explore how to harness GitHub Actions to streamline deployment workflows, making the process of moving from code commits to live deployments seamless and efficient. He will cover how to use variables, secrets, environment approvals, and more. If you are looking to automate your deployments, this session is for you! ",
