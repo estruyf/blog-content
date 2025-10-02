@@ -96,7 +96,7 @@ union traces,requests,exceptions
 
 This query will surface any errors related to entry point loading, making it easier to spot platform architecture issues or other deployment problems.
 
-{{< caption-new "/uploads/2025/09/logs-azure-functions.webp" "KQL query for finding the reason behind &quot;no functions&quot; on Azure Functions host" >}}
+{{< caption-new "/uploads/2025/09/logs-azure-functions.webp" "KQL query for finding the reason behind &quot;no functions&quot; on Azure Functions host"  "data:image/jpeg;base64,UklGRlgAAABXRUJQVlA4WAoAAAAQAAAACQAAAQAAQUxQSA0AAAABD/Bs8ogIsQIR/Q8FAFZQOCAkAAAAsAEAnQEqCgACAAFAJiWkAALc91wMAAD++tzObR3WCmAwAAAA" "4100" "672" >}}
 
 ## Conclusion
 

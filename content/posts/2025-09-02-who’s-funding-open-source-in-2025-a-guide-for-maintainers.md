@@ -23,7 +23,7 @@ Since **September 1st, 2025**, Microsoft officially **discontinued Azure Sponsor
 
 {{< blockquote type="info" text="The updated statement can be found here: [Azure credits for open source projects](https://opensource.microsoft.com/azure-credits/)." >}}
 
-{{< caption-new "/uploads/2025/09/azure-credits-os.webp" "Azure credits for open source projects" >}}
+{{< caption-new "/uploads/2025/09/azure-credits-os.webp" "Azure credits for open source projects"  "data:image/jpeg;base64,UklGRqYAAABXRUJQVlA4WAoAAAAQAAAACQAABgAAQUxQSC8AAAABL6AgAAg0pjnU40REpJzFQ1EjScqChbWwf1IAp4D82zkJEf0Py0ze7z39q7WWAABWUDggUAAAANABAJ0BKgoABwABQCYlpAAC7JIKi3gAAP7zZVf+af3wrJqQc1iTBnkNTf30XE2GKu3ZPkUV61jv/f/bes/Fyd9tFScIXLI1wHeMa4gaAAAA" "818" "610" >}}
 
 The program team had always communicated that support for open-source projects was not guaranteed indefinitely. Thanks to Microsoft’s backing, I was able to run hosting and services for [Front Matter CMS](https://frontmatter.codes) or two years at no cost. Now that my sponsored subscription has been converted to a pay-as-you-go model, I wanted to explore what other funding and sponsorship options are out there for open-source maintainers.
 
