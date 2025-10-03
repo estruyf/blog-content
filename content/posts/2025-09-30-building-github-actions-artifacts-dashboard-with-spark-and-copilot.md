@@ -40,7 +40,7 @@ GitHub Actions is fantastic for CI/CD, but storage management is a blind spot (f
 
 {{< blockquote type="info" text="More information on the GitHub Actions storage limits can be found in the official documentation at [GitHub Actions billing](https://docs.github.com/en/billing/concepts/product-billing/github-actions#free-use-of-github-actions)" >}}
 
-## The vision: A centralised dashboard
+## The vision: a centralised dashboard
 
 Running the scripts helped, but still, I wanted a more user-friendly solution. My vision for the dashboard included:
 
@@ -49,7 +49,7 @@ Running the scripts helped, but still, I wanted a more user-friendly solution. M
 - **Artefact Delete**: Ability to delete individual or multiple artifacts directly from the dashboard
 - **Cleanup Tool**: Bulk selection and deletion of old artifacts
 
-## Enter GitHub Spark: The perfect tool for the job
+## Enter GitHub Spark: the perfect tool for the job
 
 [GitHub Spark](https://github.com/spark) is GitHub's AI-powered tool for creating personalized micro apps. It's perfect for this use case because:
 
@@ -62,25 +62,28 @@ Running the scripts helped, but still, I wanted a more user-friendly solution. M
 
 Here's how I approached building the GitHub Actions Artifacts Dashboard:
 
-### 1. Starting with a Simple Idea
+### 1. Starting with a simple idea
 
 I started with a basic prompt in GitHub Spark:
 
-> "I want you to create a dashboard on which I can view in detail the GitHub Actions Artefact storage usage or all the repositories on my account."
+> I want you to create a dashboard on which I can view in detail the GitHub Actions Artefact storage usage or all the repositories on my account.
 
 GitHub Spark immediately generated a working prototype with:
 - GitHub API integration with a Personal Access Token (PAT)
 - Repository listing
 - Basic storage metrics
 
-### 2. Iterating with Natural Language
+### 2. Iterating with natural language
 
 The beauty of GitHub Spark is that you can refine your app using natural language. I made several iterations:
 
-> "Add the ability to delete a single artefact or all of them for a repo"
+> Add the ability to delete a single artefact or all of them for a repo"
+>
 > "Add the ability to sign out"
+>
 > "After deleting an artefact, it should be removed from the list, but don't refresh the whole page"
-> "Add support for enterprise repositories"
+>
+> "Add support for enterprise repositories
 
 Each iteration was instantly deployed and ready to test.
 
@@ -98,19 +101,19 @@ All of this was achieved by asking GitHub Copilot to help me with the implementa
 
 The final dashboard includes:
 
-### Repository Storage Overview
+### Repository storage overview
 - Display all repositories with Actions storage usage
 - Show artefact counts and retention policies
 
-### Detailed Storage Breakdown
+### Detailed storage breakdown
 - Individual artefact details (size, age, workflow source)
 - Retention status and cleanup actions
 
-### Enterprise Repository Support
+### Enterprise repository support
 - Access repositories from enterprise organisations
 - Fine-grained permission controls
 
-### Auto-Cleanup System
+### Cleanup System
 - Bulk operations across multiple repos
 - Preview mode to see what would be deleted
 - Start cleanup with a single click
