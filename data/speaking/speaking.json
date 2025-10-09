@@ -23,6 +23,21 @@
     "year": "2025",
     "events": [
       {
+        "session": "Enhancing web application quality with Playwright",
+        "description": "In this session, we will explore how to use Playwright to automate end-to-end testing of web applications. We will focus on how Playwright can be used to create end-to-end tests that verify the behavior of various web applications, including authentication scenarios for platforms like Microsoft 365. We will start from scratch and build up the test scenarios together. You will learn more about the techniques and best practices for creating practical tests during the session. By the end, you will have a deeper understanding of how to use Playwright to improve the quality of your solutions.",
+        "coSpeakers": [],
+        "date": "2025-12-18",
+        "endDate": "2025-12-18",
+        "event": "MC2MC Live: The Martian Codebase",
+        "location": "TBD",
+        "link": "https://mc2mc.be/mc2mc-live-the-martian-codebase-18-12-2025/",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
         "session": "WeAreDevelopers LIVE - Demo Time, Live Coding, End-to-End Testing and more",
         "description": "This week’s guest is Elio Struyf! On September 3, he’ll join us on the show for some demo time, live coding, and a look into end-to-end testing.",
         "coSpeakers": [],
