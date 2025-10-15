@@ -23,6 +23,26 @@
     "year": "2025",
     "events": [
       {
+        "session": "From Messy Live Coding to Demo Time Mastery",
+        "description": "Live coding can be powerful, but it's also one of the most stressful parts of any developer presentation. One typo, one forgotten command, or a context switch gone wrong can derail your flow and distract your audience. In this session, you'll learn how to fully control your presentations with Demo Time, a Visual Studio Code extension built to make live coding smoother, safer, and more engaging. We'll explore the most common pain points of live coding demos and walk through real-world examples of eliminating them using Demo Time. You’ll see how to script your entire demo, automate code insertions, highlight critical lines, and even present slides—all without ever leaving VS Code. By the end of this session, you’ll have a set of best practices and a toolset to transform your live demos from nerve-wracking to confidence-boosting.",
+        "coSpeakers": [
+          {
+            "name": "Stephan van Rooij",
+            "url": "https://www.linkedin.com/in/stephanvanrooij/"
+          }
+        ],
+        "date": "2025-10-18",
+        "endDate": "2025-10-18",
+        "event": "CollabDays BE",
+        "location": "Edegem (BE)",
+        "link": "https://www.collabdays.org/2025-belgium/",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
         "session": "Enhancing web application quality with Playwright",
         "description": "In this session, we will explore how to use Playwright to automate end-to-end testing of web applications. We will focus on how Playwright can be used to create end-to-end tests that verify the behavior of various web applications, including authentication scenarios for platforms like Microsoft 365. We will start from scratch and build up the test scenarios together. You will learn more about the techniques and best practices for creating practical tests during the session. By the end, you will have a deeper understanding of how to use Playwright to improve the quality of your solutions.",
         "coSpeakers": [],
