@@ -30,19 +30,19 @@ The Shokz OpenDots One are completely different. They are smaller, lighter, and 
 
 {{< caption-new "/uploads/2025/10/shokz-opendots-case.webp" "Shokz OpenDots One in the case"  "data:image/jpeg;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAQCdASoKAAkAAUAmJbACdLoAAm1uxNIA/ged4Cq6fVXHO+YyjDvxolvmFxMi0yiDC3iSaCFwUP2yBVcgfutIEoyf/kV5yP7gPvzKMnv/9G+ngMh/1SI6x760D3LID0iLwUCAAAA=" "1200" "1029" >}}
 
-One of the biggest advantages I noticed is that you can **use just one earbud**. This is incredibly handy for group rides because it allows you to keep one ear completely free to talk to the rider next to you while still having audio in the other ear. It give you a good balance between awareness and entertainment.
+One of the biggest advantages I noticed is that you can **use just one earbud**. This is incredibly handy for group rides because it allows you to keep one ear completely free to talk to the rider next to you while still having audio in the other ear. It gives you a good balance between awareness and entertainment.
 
 ## Sound quality
 
 The **sound quality** of the OpenDots One really surprised me. Compared to the OpenRun Pro 2, the audio is richer and more immersive, especially for **podcasts or spoken audio**. They deliver a clear, balanced tone with a nice bass presence for such a lightweight device.
 
-Even at higher speeds, the sound remains crisp and enjoyable. However, the **main downside** becomes noticeable on windy days. When the wind picks up, you will hardly hear anything. The open design lets in all ambient noise, which is great for safety but makes it hard to follow a podcast when facing strong gusts. I faced similar issues with the OpenRun Pro 2, although, this is where bone conduction has the benefit of slightly better wind handling.
+Even at higher speeds, the sound remains crisp and enjoyable. However, the **main downside** becomes noticeable on windy days. When the wind picks up, you will hardly hear anything. The open design lets in all ambient noise, which is great for safety but makes it hard to follow a podcast when facing strong gusts. I faced similar issues with the OpenRun Pro 2, although this is where bone conduction has the benefit of slightly better wind handling.
 
 ## Comfort and fit
 
 The OpenDots One are comfortable and feel secure on the ears. They do not interfere with glasses or helmet straps, which is always a plus. During long rides, I barely noticed them. I would say they are even more comfortable than the OpenRun Pro 2, which can feel weird depending on the glasses you wear.
 
-{{< caption-new "/uploads/2025/10/shokz-opendots-buts.webp" "Shokz OpenDots One buts"  "data:image/jpeg;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoKAAYAAUAmJbACdAEW0+w2KrsAAN4i/5QMRpDTf34kNTockoycfT6Ur1JtNtCflWlPv/O/G//bP/P/2vnbQR//Ruu/4JlfP/5N/4M+BtPTfWRd+ErqcdAAAAA=" "1200" "747" >}}
+{{< caption-new "/uploads/2025/10/shokz-opendots-buds.webp" "Shokz OpenDots One buds"  "data:image/jpeg;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoKAAYAAUAmJbACdAEW0+w2KrsAAN4i/5QMRpDTf34kNTockoycfT6Ur1JtNtCflWlPv/O/G//bP/P/2vnbQR//Ruu/4JlfP/5N/4M+BtPTfWRd+ErqcdAAAAA=" "1200" "747" >}}
 
 Compared to the OpenRun Pro 2, the OpenDots offer a bit more flexibility in how you wear them, thanks to the single-ear option. However, the **controls** are not as intuitive. Adjusting volume or skipping tracks is easier on the OpenRun Pro 2, which has more tactile buttons that are accessible even with gloves on.
 
