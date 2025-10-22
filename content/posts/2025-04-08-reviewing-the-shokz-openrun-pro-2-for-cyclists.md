@@ -10,6 +10,8 @@ preview: "/social/24aeb66a-f4d7-4fd3-b5b0-b70676d44ed6.png"
 draft: false
 comments: true
 tags:
+  - "cycling"
+  - "Shokz"
   - "Review"
   - "headphone"
 type: "post"
