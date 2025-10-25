@@ -120,6 +120,21 @@
         }
       },
       {
+        "session": "Techorama TV: Topic DevOps",
+        "description": "In this interactive Techorama TV panel discussion Alex Thissen will talk with our guests about the topic DevOps. You are welcomed as studio guest audience!",
+        "coSpeakers": [],
+        "date": "2025-10-29",
+        "endDate": "2025-10-29",
+        "event": "Techorama Netherlands",
+        "location": "Utrecht (NL)",
+        "link": "https://www.techorama.nl/",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
         "session": "Enhancing web application quality with Playwright",
         "description": "In this session, we will explore how to use Playwright to automate end-to-end testing of web applications. We will focus on how Playwright can be used to create end-to-end tests that verify the behavior of various web applications, including authentication scenarios for platforms like Microsoft 365. We will start from scratch and build up the test scenarios together. You will learn more about the techniques and best practices for creating practical tests during the session. By the end, you will have a deeper understanding of how to use Playwright to improve the quality of your solutions.",
         "coSpeakers": [],
