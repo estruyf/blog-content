@@ -37,9 +37,9 @@
         "location": "Edegem (BE)",
         "link": "https://www.collabdays.org/2025-belgium/",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -68,9 +68,9 @@
         "link": "https://devrel.wearedevelopers.com/live/2025-09-03.html",
         "video": "https://www.youtube.com/live/fvx4OZH5U6w?si=DvefF3sN32Qyr4Xy",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -83,9 +83,9 @@
         "event": "Visual Studio Code Live",
         "link": "https://www.youtube.com/live/6_shqDBaOE0",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -99,9 +99,9 @@
         "link": "https://github.com",
         "video": "https://www.youtube.com/watch?v=u0pHfrKdWHA",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -114,9 +114,9 @@
         "location": "Dublin (IE)",
         "link": "https://www.sharepointeurope.com/conference/schedule/2025/",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -129,9 +129,9 @@
         "location": "Utrecht (NL)",
         "link": "https://www.techorama.nl/",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -149,7 +149,7 @@
         "location": "Vienna (AT)",
         "link": "https://www.sharepointeurope.com/european-power-platform-conference/",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
           "github": true
         }
@@ -163,9 +163,9 @@
         "location": "Amsterdam (NL)",
         "link": "https://reactsummit.com",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -183,7 +183,7 @@
         "location": "Dusseldorf (DE)",
         "link": "https://bizappssummit.eu/",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
           "github": true
         }
@@ -197,7 +197,7 @@
         "location": "Dusseldorf (DE)",
         "link": "https://collabsummit.eu/",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
           "github": true
         }
@@ -212,9 +212,9 @@
         "link": "https://www.youtube.com/@ThisisTechTalks",
         "video": "https://www.youtube.com/watch?v=P0v2wvwDOU4",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -226,9 +226,9 @@
         "location": "Edegem (BE)",
         "link": "https://www.powerplatformbootcamp.com/2025/location-detail/?id=b708fc52-8d96-ef11-95f5-6045bd5f73bf&city=Belgian+PowerAddicts",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": true,
-          "github": false
+          "github": true
         }
       }
     ]
