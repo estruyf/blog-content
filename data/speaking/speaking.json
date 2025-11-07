@@ -105,8 +105,8 @@
         }
       },
       {
-        "session": "Don't ship it till you test it: End-to-End testing for Microsoft 365",
-        "description": "Shipping untested Power Apps, SharePoint Framework components, or custom Microsoft 365 solutions is a risky move, especially when you're building on platforms you don't control. With multi-factor authentication and rapid release cycles in play, the stakes are even higher. In this session, you'll learn how to bring confidence to your releases by implementing robust end-to-end tests using Playwright. We'll cover everything from writing your first test to handling authentication (yes, even MFA), mocking APIs, and integrating it all into a GitHub Actions pipeline. Whether you're a developer, tester, or team lead, you'll walk away with practical strategies, real-world examples, and code samples to help you build a scalable testing setup for the Microsoft 365 ecosystem. If you're serious about quality—and tired of finding bugs in production, then this is the session for you.",
+        "session": "Testing smarter: Bringing AI into your E2E testing workflows",
+        "description": "End-to-end testing with Playwright is something I use daily to ensure websites and tools are fully covered. But maintaining these tests can be time-consuming, especially in rapidly changing environments. What if AI could help you test smarter? In this session, we’ll explore how AI tools and MCP servers can assist in generating comprehensive Playwright test cases, analyzing failed runs, summarizing logs, and maintaining stable E2E tests. You’ll see how to combine pre-authenticated sessions, and AI-powered diagnostics to create a more resilient testing setup that ensures full coverage of your applications. Based on real-world automation scenarios, this talk will help you modernize your Playwright testing workflows and reduce maintenance while increasing confidence that every feature works as expected.",
         "coSpeakers": [],
         "date": "2025-12-02",
         "endDate": "2025-12-02",
