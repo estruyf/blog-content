@@ -60,6 +60,12 @@ When used with one bud, this awareness increases even more, and you can chat nat
 
 {{< caption-new "/uploads/2025/10/wearing-shokz-opendots.webp" "Me wearing the Shokz OpenDots One"  "data:image/jpeg;base64,UklGRowAAABXRUJQVlA4IIAAAADQAQCdASoKAA0AAUAmJYgCdADygJbMAAD+BXg/GhqCc3p+/gUnd2knlfQfodE+XaafEmY9X1F9/nZemLaziPAwvXHaF1W8pq7fY53y6bliVw2om/Y1n2CtJueY0p3HrvOZeZiAuGuHyscbuk9qdthVL/vGOO/vud1N6BFUhLhQAA==" "1200" "1600" >}}
 
+## Riding on colder days
+
+Another benefit of the OpenDots One compared to the OpenRun Pro 2 is that I can use them comfortably on colder days. Since they don’t wrap around the back of the head, I can wear a beanie or headband over my ears without interference. This is a big plus for autumn and winter rides when temperatures drop.
+
+{{< caption-new "/uploads/2025/10/wearing-dots-under-buff.webp" "Wearing my Dots under my buff"  "data:image/jpeg;base64,UklGRpAAAABXRUJQVlA4IIQAAACQAgCdASoKAA0AAUAmJZgCdIExgnifx2Paf8kiAAD+uCdoThiCLvjpBs2LD4wsEntL2JcTzOAVK07aaM7hcfl9h73O2XWUYRPtDcNj6LnxM/pdku2qFW/C1YwcqWdThf7cDpTV2arMRObXlM55fXf9plofHrslgDPv+a0cuKrYt8JgAAA=" "1200" "1600" >}}
+
 ## Comparing OpenDots One and OpenRun Pro 2
 
 Here is a quick summary of how both models perform based on my experience.
