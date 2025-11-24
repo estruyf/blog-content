@@ -1,7 +1,7 @@
 ---
 title: "Building FrameFit: AI-Powered macOS App in 3 Hours"
 description: "How I built FrameFit, a macOS screenshot utility, in 3 hours using AI tools. A story of collaboration between developer and AI."
-slug: "building-framefit-with-ai"
+slug: "/building-framefit-with-ai/"
 date: "2025-11-24T16:01:46.899Z"
 draft: false
 comments: true
