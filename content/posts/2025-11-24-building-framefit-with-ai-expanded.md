@@ -74,4 +74,4 @@ This experience taught me that AI doesn't replace the developer. It empowers the
 
 ---
 
-{{< blockquote type="note" text="This article was written with [Gemini CLI](https://github.com/google/generative-ai-cli) and [speedgrapher](https://github.com/danicat/speedgrapher), demonstrating how AI tools can also enhance the writing process itself." >}}
+{{< blockquote type="note" text="This article was written with [Gemini CLI](https://github.com/google-gemini/gemini-cli) and [speedgrapher](https://github.com/danicat/speedgrapher), demonstrating how AI tools can also enhance the writing process itself." >}}
