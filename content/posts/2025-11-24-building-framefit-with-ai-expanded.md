@@ -26,7 +26,7 @@ This is the story of that three-hour journey, the good, the bad, and the surpris
 
 I started my journey with [CommandCode.ai](https://commandcode.ai), an AI development tool I was beta testing. My first step wasn't writing code, but writing a clear prompt. I asked `cmd` to build the app with a simple set of requirements:
 
-> "Create me a macOS app that will be used to resize application windows to a preset of sizes and also allow to set custom presets. The application is inspired by the https://github.com/burkeholland/ResizeMe project."
+> Create me a macOS app that will be used to resize application windows to a preset of sizes and also allow to set custom presets. The application is inspired by the https://github.com/burkeholland/ResizeMe project.
 
 I also specified my preferred tech stack—what the tool calls "tastes"—including [TypeScript](https://www.typescriptlang.org/), [React](https://react.dev/), and that all app references should be named "[**FrameFit**](https://github.com/estruyf/FrameFit)". I decided on [Tauri](https://tauri.app/) for the underlying framework, which allows you to build desktop applications with web technologies.
 
