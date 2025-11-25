@@ -21,7 +21,7 @@ fmContentType: "post"
 
 As a developer, I'm always curious about tools that can make my workflow better. It's part of the fun of the job, right? As a [GitHub Star](https://stars.github.com/), I'm in a position to see a lot of new technology, so when AI-powered code review tools started gaining traction, I was naturally intrigued.
 
-My journey wasn't driven by a specific problem, but by sheer opportunity: [CodeRabbit](https://CodeRabbit.ai/) began sponsoring my work, the team from [Macroscope](https://www.macroscope.io/) reached out directly, and my work with GitHub meant I had early access to the latest [GitHub Copilot](https://github.com/features/copilot) features.
+My journey wasn't driven by a specific problem, but by sheer opportunity: [CodeRabbit](https://coderabbit.ai/) began sponsoring my work, the team from [Macroscope](https://macroscope.com/) reached out directly, and my work with GitHub meant I had early access to the latest [GitHub Copilot](https://github.com/features/copilot) features.
 
 This gave me a unique chance to compare these tools in a real-world setting. I want to share my personal experience, the good, the bad, and the surprisingly funny way of letting an AI join my code review process.
 
@@ -105,7 +105,7 @@ It’s great to have a partner that flags potential issues, but the AI's suggest
 
 # A different perspective: Macroscope for the big picture
 
-The third tool I tried, [Macroscope](https://www.macroscope.io/), offered a different angle. While its code review suggestions were similar to the others, its main strength was its project management dashboard.
+The third tool I tried, [Macroscope](https://macroscope.com/), offered a different angle. While its code review suggestions were similar to the others, its main strength was its project management dashboard.
 
 {{< caption-new "/uploads/2025/11/macroscope-code-review.webp" "Code review dashboard by Macroscope"  "data:image/jpeg;base64,UklGRoAAAABXRUJQVlA4WAoAAAAQAAAACQAAAwAAQUxQSCkAAAAAlcLCwsLCwsLClcT//////////8TE///////////EmMbGxsbGxsbGmABWUDggMAAAALABAJ0BKgoABAABQCYlpAAC51UzVgAA/vtkGP+BvOh5vmN5JPNXay3TAmTuzvwAAA==" "4196" "1642" >}}
 
