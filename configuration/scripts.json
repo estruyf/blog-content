@@ -20,6 +20,18 @@
       "contentTypes": ["post"]
     },
     {
+      "title": "Publish GDE profile",
+      "script": "./scripts/gde-activities.mjs",
+      "command": "~/.nvm/versions/node/v18.20.5/bin/node",
+      "contentTypes": ["post"]
+    },
+    {
+      "title": "Publish MVP profile",
+      "script": "./scripts/mvp-activities.mjs",
+      "command": "~/.nvm/versions/node/v18.20.5/bin/node",
+      "contentTypes": ["post"]
+    },
+    {
       "title": "Optimize media",
       "script": "./scripts/media.js",
       "command": "~/.nvm/versions/node/v18.20.5/bin/node",
