@@ -56,7 +56,7 @@ Instead of crafting one perfect prompt, I now approach AI collaboration like I w
 
 I start with a simple, high-level prompt. For example:
 
-> "Create me a dashboard with React and Tailwind CSS. The data I want to show is the session name, the description, and a link to the management page. Besides that, you also need to create a backend to fetch all the necessary data."
+> Create me a dashboard with React and Tailwind CSS. The data I want to show is the session name, the description, and a link to the management page. Besides that, you also need to create a backend to fetch all the necessary data.
 
 That's it. No 20-minute specification. Just a clear goal.
 
@@ -64,7 +64,7 @@ That's it. No 20-minute specification. Just a clear goal.
 
 As the agent works, I watch its progress. And then I think: "It would be useful to have the session ID there, to show the speaker, to do XYZ." So my next prompt becomes:
 
-> "The backend you created, can you also add a couple of other properties to the API, like `sessionId` and `speakerDetails`, so this data can be shown on the session cards?"
+> The backend you created, can you also add a couple of other properties to the API, like `sessionId` and `speakerDetails`, so this data can be shown on the session cards?
 
 This approach is much quicker for me. I can quickly think about what I need, see the outcome, and refine. Instead of taking 20 minutes to fully spec it out upfront and then still having issues or ideas like "I could actually do it differently."
 
