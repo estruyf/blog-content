@@ -1,12 +1,12 @@
 ---
 title: "Getting interviewed by AI to write better blog posts"
-longTitle: ""
+longTitle: "Getting interviewed by AI to write your technical content or blog posts"
 customField: ""
 slug: "/interviewed-ai-write-blog-posts/"
 description: "Discover how AI interviews can transform your blog writing process, enhancing creativity and structure for better technical content."
 date: "2025-12-13T13:04:28.101Z"
 lastmod: "2025-12-13T13:04:28.652Z"
-preview: "/social/13d2ccf3-80ae-4b0d-a99d-d3f75d82a7c5.png"
+preview: "/social/4829bd5f-8c6c-433b-8f7d-28f149e191ab.png"
 draft: false
 comments: true
 tags:
