@@ -57,13 +57,13 @@
         }
       },
       {
-        "session": "Enhancing web application quality with Playwright",
-        "description": "In this session, we will explore how to use Playwright to automate end-to-end testing of web applications. We will focus on how Playwright can be used to create end-to-end tests that verify the behavior of various web applications, including authentication scenarios for platforms like Microsoft 365. We will start from scratch and build up the test scenarios together. You will learn more about the techniques and best practices for creating practical tests during the session. By the end, you will have a deeper understanding of how to use Playwright to improve the quality of your solutions.",
+        "session": "Testing smarter: Bringing AI into your E2E testing workflows",
+        "description": "End-to-end testing with Playwright is something I use daily to ensure websites and tools are fully covered. But maintaining these tests can be time-consuming, especially in rapidly changing environments. What if AI could help you test smarter? In this session, we’ll explore how AI tools and MCP servers can assist in generating comprehensive Playwright test cases, analyzing failed runs, summarizing logs, and maintaining stable E2E tests. You’ll see how to combine pre-authenticated sessions, and AI-powered diagnostics to create a more resilient testing setup that ensures full coverage of your applications. Based on real-world automation scenarios, this talk will help you modernize your Playwright testing workflows and reduce maintenance while increasing confidence that every feature works as expected.",
         "coSpeakers": [],
         "date": "2025-12-18",
         "endDate": "2025-12-18",
         "event": "MC2MC Live: The Martian Codebase",
-        "location": "TBD",
+        "location": "Gent",
         "link": "https://mc2mc.be/mc2mc-live-the-martian-codebase-18-12-2025/",
         "reporting": {
           "gde": false,
