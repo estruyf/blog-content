@@ -3,10 +3,10 @@ title: "Reflecting on 2025: Finding Joy and Creating Value"
 longTitle: ""
 customField: ""
 slug: "/reflecting-2025-finding-joy-creating-value/"
-description: "A look back at 2025: finding joy in work, embracing agentic AI, the evolution of Demo Time, and the launch of EngageTime."
-date: "2025-12-22T09:38:26.197Z"
-lastmod: "2025-12-22T09:38:26.917Z"
-preview: "/social/749bd1c7-1b3b-4815-8346-62acc51888aa.png"
+description: "Reflect on 2025's transformative journey of joy, creativity, and sustainable value creation as we embrace a brighter future together."
+date: "2025-12-22T16:06:57.242Z"
+lastmod: "2025-12-22T16:06:57.876Z"
+preview: "/social/99fc382e-f64b-4aa4-921f-357a451e4be3.png"
 draft: false
 comments: true
 tags:
@@ -24,6 +24,9 @@ In this post, I want to share the story of my 2025, the highlights, the lessons 
 Here are some of the key moments from this year:
 
 - **13.000km cycled**: Completed my biggest cycling year yet, where I had my personal best on the **Mont Ventoux**, but also my worst time, six weeks later on it.
+
+{{< caption-new "/uploads/2025/12/mont-ventoux.webp" "Reaching the summit of Mont Ventoux"  "data:image/jpeg;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoKAAgAAUAmJZQCdAD0n23yWAAA/vPELIGfZbIldyejMqEvXlJRGWzO7Jk+0xAeMibbbT24AB1M4b0CENc1N/ewmmObAAAA" "1600" "1200" >}}
+
 - **[Demo Time](https://demotime.show)'s explosive growth**: Reached over **26,000 installs** and saw it used at major stages like **OpenAI DevDays**, **Microsoft Ignite**, and **GitHub Universe**.
 - **Launching EngageTime**: Built and successfully tested a new attendee engagement platform at **CollabDays Belgium** and **VisugXL**.
 - **Speaking across Europe**: Delivered **15+ sessions** at conferences including ESPC, Techorama, and the European Collaboration Summit.
@@ -43,6 +46,8 @@ I love looking at the data to see what I've been up to. Here is a breakdown of m
 - **13,000** Kilometers cycled
 - **50.000.000** badges generated with the [Visitor Badge](https://visitorbadge.io/) service
 
+{{< caption-new "/uploads/2025/12/github-stats.webp" "GitHub Stats from 2025"  "data:image/jpeg;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoKAA4AAUAmJZwCdAELTaZGiAD+/W7TsXfMJ/9Y8WHRv024MqubFX0N0MK9Y9DdLw9TFpU0Rag3zwxJ7G34iJy2pMBUGBo5ZaOAAA==" "1179" "1684" >}}
+
 ## Finding joy and creativity
 
 At the start of the year, I realized I needed to get to know myself better. I wanted to find a way to get more joy out of my work, and to identify what gives me energy and what drains it. I decided to work with a coach, and it was one of the best decisions I made.
@@ -54,6 +59,14 @@ This journey allowed me to explore my creativity again. It started with small th
 A huge part of this creative rediscovery was shifting how I work with AI. I moved from simple prompt engineering to an **"agentic-first" workflow**. I stopped just asking for code snippets and started treating AI as a partner in the development process.
 
 The Bing wallpaper app, for instance, was purely created with GitHub Copilot and coding agents. I defined what I wanted and the technology stack, and we built it together. This new workflow allowed me to be more ambitious. I built **FrameFit**, a macOS screenshot utility, in just three hours. It wasn't about replacing my skills; it was about removing the friction between an idea and its execution.
+
+## Getting interviewed by AI
+
+One of the experiments I ran this year was changing how I write. Inspired by [Daniela Petruzalek](https://bsky.app/profile/danicat83.bsky.social)'s Speedgrapher, I started using AI not just to generate text, but to **interview me**.
+
+I created a set of [Ghostwriter Agents](https://github.com/estruyf/ghostwriter-agents-ai) that work across GitHub Copilot, VS Code, and Claude. The process is simple: an AI agent interviews me about a topic, asking open-ended questions to capture the context and narrative. Then, another agent analyzes my writing style (my "voice"), and a third agent combines the transcript and voice profile to draft the post.
+
+The process reshaped my writing: it makes me explain the reasons behind my choices and teases out the narratives that vanish in a blank editor. This post began as an AI-led interview that I later edited and shaped into the final draft.
 
 ## From passion project to sustainable future
 
@@ -69,7 +82,11 @@ As a speaker and organizer since 2012, I've always felt something was missing. I
 
 We tested it live at **CollabDays Belgium** and **Visug XL**, and the results were fantastic. Seeing attendees join sessions by simply scanning a QR code—no auth, no app download required—and interacting in real-time was a validation of the vision. It proved that we were solving a real problem.
 
+{{< caption-new "/uploads/2025/12/54897584965_24a98ca86c_o.webp" "EngageTime in action at Techorama NL"  "data:image/jpeg;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoKAAcAAUAmJYwCdH8AGMJldZMAAP7wTX0fFwfsXS73r/++h2ROdGAwMOqp//D2c5Wj9HKcnrNn++WFfNY4vcSQWr2tCbadRwEY4UAA" "1200" "800" >}}
+
 ## Looking forward to 2026
+
+{{< caption-new "/uploads/2025/12/fortune-cookie.webp" "It doesn&#39;t matter where you go, as long as you do it with a big smile."  "data:image/jpeg;base64,UklGRnwAAABXRUJQVlA4IHAAAABQAgCdASoKAAgAAUAmJagCdLoAAs3VVLHrhgAA/vX/g+AiSGbLJCA7+PrBOEAPEedCRAEdFSire9Ui8K33cQ/XGLT5oXa8Zhc/GcNrAGbou0EZY3i8zZzSdc6uQs2cwHHDT95Vy4F+CMmrxljvAAAA" "1024" "813" >}}
 
 As I look toward 2026, I have some big goals:
 
@@ -77,6 +94,12 @@ As I look toward 2026, I have some big goals:
 - **Schleck GranFondo**: My first major personal goal of the year is to ride the Schleck GranFondo in May.
 - **Tour des Grands Cols Alpes**: Later in the year, I will embark on a 7-day cycling tour with 17,000 meters of elevation. We are riding this in memory of a friend who passed away from cancer this year. He rode it in 2022, and his wife will be joining us. It will be a special and emotional journey. 💫
 
-2025 was the year I found my footing again. I'm entering 2026 with a clear sense of direction, a sustainable approach to my work, and a heart full of gratitude.
+{{< caption-new "/uploads/2025/12/2025-kotk-yves.webp" "Sticker we sell for charity"  "data:image/jpeg;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoKAAoAAUAmJYgC7AELXbAgRQAA/vqjfG9gL9VCrfOPq7Rdxtlo7UzC4UKvF9sZkwMXHY4WZfidj+hfqjLpflk39sSjS4+e0sAAAA==" "1080" "1080" >}}
+
+2025 was the year I rediscovered my rhythm.. I'm entering 2026 with a clear sense of direction, a sustainable approach to my work, and a heart full of gratitude.
 
 Happy New Year! 🎆
+
+---
+
+{{< blockquote type="note" text="This article was created using the [ghostwriter AI agents](https://github.com/estruyf/ghostwriter-agents-ai)." >}}

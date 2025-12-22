@@ -105,7 +105,7 @@ Its job is to ask questions and gather raw material. The prompt instructs it to:
 
 When you're done, you tell the agent to stop, and it outputs a complete markdown transcript saved as `INTERVIEW.md`.
 
-{{< caption-new "/uploads/2025/12/interview.webp" "The interview with AI" >}}
+{{< caption-new "/uploads/2025/12/interview.webp" "The interview with AI"  "data:image/jpeg;base64,UklGRmwAAABXRUJQVlA4WAoAAAAQAAAACQAAAgAAQUxQSB8AAAAAoM7Ozs7Ozs7OoMj//////////8ii0NDQ0NDQ0NCiAFZQOCAmAAAA0AEAnQEqCgADAAFAJiWkAnQBDvbOLAAA/v5Ob13ZO5+htsJLYAA=" "1323" "448" >}}
 
 ### 2. The voice agent (optional but recommended)
 
@@ -120,7 +120,7 @@ This profile gets saved and used by the writer agent in the next step. The resul
 
 Running the voice agent is optional, you can skip straight to the writer, but I highly recommend doing it at least once. The quality difference is noticeable.
 
-{{< caption-new "/uploads/2025/12/voice.png" "The voice agent" >}}
+{{< caption-new "/uploads/2025/12/voice.png" "The voice agent"  "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAvklEQVR4nDXDTYrCMBQA4NyhNkl/kpf0vbaZ0aYooqu528AwMKcYKPQ2QleC4No7CLXwxIUffMJT/KGwu1LYnXzdT9j2k8VucnU/AXYn6zfXAj6+BTbduD98cdweF2wjUxvZ04YdrbmwtBgfWOXVIPKyGrr+wHUb71CF2bhmlhnMK2XnRJr7SgEn0vwLA/WI9MnWh6WEhnNDrIuKVe5fH7pEVhkMQpf4lxm8pRrOqbKXVLuLfM/cWWp3U9r9PgFP+D5BGJJ6kwAAAABJRU5ErkJggg==" "804" "442" >}}
 
 ### 3. The writer agent
 

@@ -245,7 +245,7 @@ jobs:
 
 {{< blockquote type="important" text="The GitHub Actions workflow requires you to create a secret named `COPILOT_GITHUB_TOKEN`. This token is a fine-grained personal access token with the **Copilot Requests read-only permission**. Add this token as a secret in your GitHub repository settings to enable the workflow to authenticate with Copilot." >}}
 
-{{< caption-new "/uploads/2025/11/fine-grained-copilot.webp" "Use the Copilot Requests read-only permission for the fine-grained personal access token." >}}
+{{< caption-new "/uploads/2025/11/fine-grained-copilot.webp" "Use the Copilot Requests read-only permission for the fine-grained personal access token."  "data:image/jpeg;base64,UklGRiwAAABXRUJQVlA4ICAAAACQAQCdASoKAAUAAUAmJaQAAudFrAAA/v7aoTdSgAAAAA==" "1594" "832" >}}
 
 {{< blockquote type="info" text="The timeout on the GitHub Action is set to 15 to make sure that it doesn't run too long." >}}
 
