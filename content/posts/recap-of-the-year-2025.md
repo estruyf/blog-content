@@ -24,12 +24,24 @@ In this post, I want to share the story of my 2025, the highlights, the lessons 
 Here are some of the key moments from this year:
 
 - **13.000km cycled**: Completed my biggest cycling year yet, where I had my personal best on the **Mont Ventoux**, but also my worst time, six weeks later on it.
-- **Demo Time's explosive growth**: Reached over **26,000 installs** and saw it used at major stages like **OpenAI DevDays**, **Microsoft Ignite**, and **GitHub Universe**.
+- **[Demo Time](https://demotime.show)'s explosive growth**: Reached over **26,000 installs** and saw it used at major stages like **OpenAI DevDays**, **Microsoft Ignite**, and **GitHub Universe**.
 - **Launching EngageTime**: Built and successfully tested a new attendee engagement platform at **CollabDays Belgium** and **VisugXL**.
 - **Speaking across Europe**: Delivered **15+ sessions** at conferences including ESPC, Techorama, and the European Collaboration Summit.
 - **Embracing Agentic AI**: Shifted my workflow to treat AI as a teammate, allowing me to build tools like **FrameFit** in just 3 hours.
 - **Hugo to Astro migration**: Successfully migrated my blog to Astro after 6 years with Hugo, improving my developer experience.
 - **Community contributions**: Published **30 blog posts** and continued my journey as a Microsoft MVP, GitHub Star, and Google Developer Expert.
+
+## 2025 in Numbers
+
+I love looking at the data to see what I've been up to. Here is a breakdown of my year in numbers:
+
+- **5378** GitHub commits
+- **41** New repositories created
+- **26,000+** [Demo Time](https://demotime.show) installations
+- **30** Blog posts published
+- **15+** Speaking engagements
+- **13,000** Kilometers cycled
+- **50.000.000** badges generated with the [Visitor Badge](https://visitorbadge.io/) service
 
 ## Finding joy and creativity
 
