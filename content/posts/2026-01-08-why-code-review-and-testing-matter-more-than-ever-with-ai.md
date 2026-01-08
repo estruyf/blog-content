@@ -207,6 +207,7 @@ Don't stay stuck. Don't let fear drive your decisions. Start small, build intuit
 ## Resources
 
 - [My evolving relationship with AI in development](https://www.eliostruyf.com/evolving-relationship-ai-development/) - My journey from prompt engineering to agentic AI
+- [My AI Code Review Journey: Copilot, CodeRabbit, Macroscope](https://www.eliostruyf.com/ai-code-review-journey-copilot-coderabbit-macroscope/) - Exploring various AI code review tools
 - [GitHub Copilot](https://github.com/features/copilot) - AI pair programmer
 - [Playwright](https://playwright.dev/) - End-to-end testing framework
 - [Claude](https://www.anthropic.com/claude) - AI assistant for development tasks
