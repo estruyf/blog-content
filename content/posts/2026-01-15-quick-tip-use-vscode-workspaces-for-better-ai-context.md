@@ -6,7 +6,7 @@ description: "Enhance your AI coding assistant's context with VS Code Workspaces
 date: "2026-01-15T10:25:20.654Z"
 lastmod: "2026-01-15T10:25:21.147Z"
 preview: "/social/e20de36a-1b30-4635-ad2c-cab2ac59b3d1.png"
-draft: true
+draft: false
 comments: true
 type: "post"
 fmContentType: "post"
