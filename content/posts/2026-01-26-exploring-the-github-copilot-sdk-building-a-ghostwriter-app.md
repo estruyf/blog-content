@@ -106,3 +106,7 @@ Let me know what you think if you give the SDK a try.
 *   [GitHub Copilot SDK](https://github.com/github/copilot-sdk)
 *   [Ghostwriter App Repository](https://github.com/estruyf/ghostwriter-app)
 *   [Ghostwriter Agents AI](https://github.com/estruyf/ghostwriter-agents-ai)
+
+---
+
+{{< blockquote type="note" text="This article was created using the [Ghostwriter app](github.com/estruyf/ghostwriter-app)." >}}
