@@ -109,4 +109,4 @@ Let me know what you think if you give the SDK a try.
 
 ---
 
-{{< blockquote type="note" text="This article was created using the [Ghostwriter app](github.com/estruyf/ghostwriter-app)." >}}
+{{< blockquote type="note" text="This article was created using the [Ghostwriter app](https://github.com/estruyf/ghostwriter-app)." >}}
