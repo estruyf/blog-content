@@ -28,7 +28,7 @@ Most of us live in **Visual Studio Code**. Switching context to a separate app j
 
 In this post, I want to introduce you to the **Ghostwriter for VS Code** extension. It brings the concept of "interview-based writing" directly into your favorite editor, leveraging the GitHub Copilot Chat API without needing the CLI or complex SDK setups.
 
-{{< blockquote type="info" text="[Install Ghostwriter for VS Code from the marketplace](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-ghostwriter)" >}}
+{{< blockquote type="info" text="Go to the VS Code marketplace to install [Ghostwriter for VS Code](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-ghostwriter)" >}}
 
 ## The problem with AI writing
 
@@ -108,3 +108,7 @@ I am keen to hear what you think. Does being "interviewed" help you write better
 *   **Ghostwriter Agents:** [github.com/estruyf/ghostwriter-agents-ai](https://github.com/estruyf/ghostwriter-agents-ai)
 *   **Ghostwriter App (Electron):** [github.com/estruyf/ghostwriter-app](https://github.com/estruyf/ghostwriter-app)
 *   **Original Article:** [How I was interviewed by AI to write blog posts](https://www.eliostruyf.com/interviewed-ai-write-blog-posts/)
+
+---
+
+{{< blockquote type="note" text="This article was created using the [Ghostwriter app](https://github.com/estruyf/ghostwriter-app)." >}}

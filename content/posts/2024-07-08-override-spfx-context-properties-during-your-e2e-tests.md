@@ -22,7 +22,7 @@ By overriding the context properties, you can perform the tests against the same
 
 ## How to override the context properties
 
-You first need access to the `context` object to override the context properties. When working in an SPFx solution, you can access it from `this.context`, but during an E2E test, you need to get access to it differently.
+You first need access to the `context` object to override the context properties. When working in a SPFx solution, you can access it from `this.context`, but during an E2E test, you need to get access to it differently.
 
 There is a `moduleLoaderPromise` property on the `window` object, a promise that resolves to the `moduleLoader` object together with the `spClientSidePageContext` object.
 
