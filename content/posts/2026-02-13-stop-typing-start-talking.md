@@ -1,7 +1,7 @@
 ---
 title: "Stop typing, start talking"
 longTitle: "Stop typing, start talking: How voice dictation changed my workflow"
-slug: "stop-typing-start-talking"
+slug: "/stop-typing-start-talking/"
 description: "Discover how voice dictation can transform your workflow and boost productivity. Stop typing and start talking today!"
 date: "2026-02-13T10:12:50.745Z"
 lastmod: "2026-02-13T10:12:51.361Z"
