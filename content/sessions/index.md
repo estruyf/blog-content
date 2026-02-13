@@ -13,7 +13,7 @@ tags:
 
 ## Additional information
 
-- Role: Lead DevTools Engineer
+- Role: Solutions Architect
 - Company: Struyf Consulting
 - Location: Belgium
 - Website: `https://www.eliostruyf.com`
@@ -21,7 +21,7 @@ tags:
 - LinkedIn: `https://linkedin.com/in/estruyf`
 - Twitter: `https://twitter.com/eliostruyf`
 - GitHub Star: `https://stars.github.com/profiles/estruyf/`
-- MVP Nr: `5001411`
+- MVP: `https://mvp.microsoft.com/en-us/PublicProfile/5001411`
 - Google Developer Experts: `https://developers.google.com/profile/u/eliostruyf`
 
 ## Picture
@@ -32,7 +32,7 @@ tags:
 
 Elio Struyf has led a remarkable career as an award-winning Engineering Lead, a trusted information technology thought-leader, and an energizing public speaker with over a decade of experience facilitating events and conferences across Europe.
 
-Over his career, Elio has been invited to speak in numerous cities, including Barcelona, London, Paris, and Stockholm. He has delivered thought-provoking talks on development-related topics such as Microsoft 365, SharePoint, and Azure DevOps. His extensive expertise has earned him recognition as a Microsoft MVP ten times, a GitHub Star four times, a Google Developer Expert for three years, and a SharePoint/Microsoft 365 Top 25 Influencer four times.
+Over his career, Elio has been invited to speak in numerous cities, including Barcelona, London, Paris, and Stockholm. He has delivered thought-provoking talks on development-related topics such as Microsoft 365, SharePoint, and Azure DevOps. His extensive expertise has earned him recognition as a Microsoft MVP eleven times, a GitHub Star five times, and a Google Developer Expert for four years.
 
 Today, along with acting as VP of BIWUG (Belgian Information Worker User Group), Elio works as an independent contractor for his own consulting company, Struyf Consulting.
 

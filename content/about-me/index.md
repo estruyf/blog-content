@@ -48,7 +48,7 @@ Over the years that followed, Elio has been recognized as a renowned public spea
 
 ## Awards and accolades
 
-Over his notable career, Elio's extensive knowledge of Azure, Microsoft 365 development, and Visual Studio Code extensions development has recognized him as a Microsoft MVP ten times, four times as a GitHub Star, a Google Developer Experts member for three years, and a SharePoint/Microsoft 365 Top 25 Influencer four times.
+Over his notable career, Elio's extensive knowledge of Azure, Microsoft 365 development, and Visual Studio Code extensions development has recognized him as a Microsoft MVP eleven times, five times as a GitHub Star, a Google Developer Experts member for four years, and a SharePoint/Microsoft 365 Top 25 Influencer four times.
 
 ## Resilience and innovation
 
