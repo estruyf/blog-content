@@ -6,7 +6,7 @@ description: "Discover how voice dictation can transform your workflow and boost
 date: "2026-02-13T10:12:50.745Z"
 lastmod: "2026-02-13T10:12:51.361Z"
 preview: "/social/f9016a6a-c98b-464f-bb91-3de31a5c1d70.png"
-draft: true
+draft: false
 comments: true
 tags:
   - "AI"
