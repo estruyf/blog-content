@@ -32,6 +32,12 @@
       "contentTypes": ["post"]
     },
     {
+      "title": "Publish HackerNews profile",
+      "script": "./scripts/hackernews-submit.mjs",
+      "command": "~/.nvm/versions/node/v18.20.5/bin/node",
+      "contentTypes": ["post"]
+    },
+    {
       "title": "Optimize media",
       "script": "./scripts/media.js",
       "command": "~/.nvm/versions/node/v18.20.5/bin/node",
