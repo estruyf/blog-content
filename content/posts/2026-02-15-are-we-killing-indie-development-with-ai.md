@@ -71,7 +71,7 @@ I have no room to preach. I am right there in the trenches with you.
 
 When I built **[Front Matter CMS](https://frontmatter.codes)**, it was way before the AI boom. I had to think deeply about the problem because the investment of time was massive. I looked at the market, saw a gap in Visual Studio Code, and built it because nothing else existed.
 
-Compare that to recently. I built a set of cycling tools (never released by the way) for myself. Did similar tools exist? Absolutely. Were they better? Definitely. But I wanted to see how far I could get with AI. I treated it as a training exercise. In the end, I started paying for a tool called [Join](join.cc), which does the same thing, because it was better and I could focus on my actual work instead of maintaining a tool that was just "good enough" for me.
+Compare that to recently. I built a set of cycling tools (never released by the way) for myself. Did similar tools exist? Absolutely. Were they better? Definitely. But I wanted to see how far I could get with AI. I treated it as a training exercise. In the end, I started paying for a tool called **[Join](https://join.cc)**, which does the same thing, because it was better and I could focus on my actual work instead of maintaining a tool that was just "good enough" for me.
 
 I did the same with **FrameFit**. I investigated the market a little, didn't see an exact match, and just started building.
 
