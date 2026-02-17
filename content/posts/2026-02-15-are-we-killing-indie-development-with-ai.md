@@ -93,6 +93,32 @@ That contrast taught me something important: **AI cannot commoditize the human c
 
 The developers who will thrive are not the fastest shippers. They are the ones who pair AI speed with human judgment. Who build communities, not just codebases. Who invest in trust, not just features. But that only happens if we slow down enough to think about what we are doing.
 
+## Problem is much bigger
+
+In the first week of February 2026, the SaaS sector lost approximately nearly $300 billion in market value in just 48 hours. Traders are calling it the "SaaSpocalypse." Salesforce is down roughly 30% year-to-date. Thomson Reuters dropped 16% in a single day. LegalZoom plummeted 20%.
+
+The trigger? The launch of agentic AI tools like Claude Cowork and the realization that companies might no longer need to buy software when AI can do the work directly. Why pay per-seat licenses for a CRM, a legal research tool, or an analytics platform when an AI agent can handle 80% of those tasks autonomously?
+
+This is the same dynamic I described above, but at enterprise scale. Indie developers see someone clone their $15 tool in an afternoon. SaaS companies see their entire business model questioned because a client can now reproduce "good enough" software internally, powered by AI, at a fraction of the cost.
+
+The investors are not panicking because SaaS products are bad. They are panicking because the moat around those products, the complexity of building and maintaining enterprise software, is eroding fast. The same moat that used to protect indie developers.
+
+The parallel is hard to ignore. Whether you are a solo developer with a screenshot tool or a billion-dollar company with a CRM platform, the question is the same: what do you offer that an AI cannot reproduce in an afternoon?
+
+And the answer, I believe, is the same at every scale: deep domain knowledge, trust, community, and the human judgment to keep improving based on real-world use. The companies and developers who survive this moment will be the ones who invested in those things long before the SaaSpocalypse arrived.
+
+## The enterprise advantage
+
+While smaller indie tools face existential threats from AI clones, larger SaaS platforms have built-in protections that are harder to replicate. The difference comes down to breadth and support.
+
+A company using Salesforce isn't just paying for a CRM. They are paying for integration with their email, their reporting tools, their customer support system, and dozens of other modules that work together seamlessly. Yes, someone could use AI to clone the contact management part in an afternoon. But cloning the entire ecosystem? The years of integrations, the training resources, the 24/7 support team that understands your business? That is not a weekend project.
+
+The same applies to Adobe Creative Suite or Microsoft Office. You could vibe-code a decent text editor or image editor with AI. People will, but you will not replicate the entire suite of interconnected tools that designers and businesses have built their workflows around. The moat is not just the software; it is the ecosystem.
+
+This dynamic actually makes the indie developer position even more precarious. The large SaaS companies can survive the clone wars because they offer a breadth of features and support that cannot be easily replicated. Indie developers, by definition, cannot. We are specialists, not platforms. We are vulnerable to the exact thing that makes enterprise software resilient: the ability to do one thing extremely well means we are easy to clone, while doing one thing well is all we have.
+
+This is why the thinking process matters even more. If you are going to build as an indie developer in this era, it cannot just be "another screenshot tool." It has to be the screenshot tool with the community, the support, the domain expertise, and the commitment to evolving with your users. You have to be willing to be the long-term partner, not the quick solution.
+
 ## The thinking process
 
 We need to re-introduce friction into our process. Not the old friction of writing boilerplate code. That friction is gone, and good riddance. I am talking about the friction of *thinking*. The pause that forces you to examine your intentions before you act on them.
@@ -111,6 +137,7 @@ That last one is crucial. If there is an open-source tool that does 80% of what 
 But "faster" isn't always "better" for the community. And here is the irony: we could use AI itself for this thinking step. Instead of prompting an LLM to start building, prompt it to research what already exists first. Use AI for the thinking, not just the building.
 
 ## Introducing the "Product Moral Compass"
+
 I don't expect AI platforms that allow you to vibe code to solve this for us. Their business model is predicated on you writing more code (read: prompts), not less. They want you to spin up new projects constantly. They have no incentive to say, "Hey, wait, this already exists."
 
 Think about it: when was the last time you saw a developer advocate from one of these platforms demonstrate how to *contribute to an existing project* instead of building something new from scratch? Their marketing is all about speed, novelty, and the thrill of creation. Not about responsibility.
@@ -148,6 +175,17 @@ The time to learn is right now, but the time to *think* is also right now.
 I want you to keep building. I want you to be prolific. But let's not let the ease of creation destroy the value of what we create.
 
 **I am curious to hear your thoughts.** Is this gatekeeping, or is it a necessary evolution of our responsibility as developers? Let me know in the comments below.
+
+---
+
+## Resources
+
+- [AI fears pummel software stocks: Is it 'illogical' panic or a SaaS apocalypse? - CNBC](https://www.cnbc.com/2026/02/06/ai-anthropic-tools-saas-software-stocks-selloff.html)
+- [What's Behind the 'SaaSpocalypse' Plunge in Software Stocks - Bloomberg](https://www.bloomberg.com/news/articles/2026-02-04/what-s-behind-the-saaspocalypse-plunge-in-software-stocks)
+- ['Get me out': Traders dump software stocks as AI fears erupt - Yahoo Finance / Bloomberg](https://finance.yahoo.com/news/traders-dump-software-stocks-ai-115502147.html)
+- [The Anthropic Effect: Fear of AI Agents Trigger Major SaaS Stock Sell-Off - Trending Topics](https://www.trendingtopics.eu/the-anthropic-effect-fear-of-ai-agents-trigger-major-saas-stock-sell-off/)
+- [Is SaaS Dead? The Truth Behind the Software Meltdown - TradingKey](https://www.tradingkey.com/analysis/stocks/us-stocks/261581475-ai-saas-selloff-who-really-wins-and-loses)
+- [The real story behind the 53% drop in SaaS AI traffic - Search Engine Land](https://searchengineland.com/saas-ai-traffic-drop-469149)
 
 ---
 
