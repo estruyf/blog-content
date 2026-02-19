@@ -18,6 +18,21 @@
         }
       },
       {
+        "session": "From idea to prompt to production-ready code? How AI-powered platforms can help you building apps.",
+        "description": "A new wave of AI-powered platforms like Bolt, Lovable, Replit, and others promise to turn a simple prompt into a fully working application. But how well do they actually deliver? And more importantly, can you take what they generate and ship it to production?\n\nIn this session, I'll put one of these platforms to the test. Starting from nothing but a prompt, you'll see me build a real application live on stage and take it through the full journey from generated prototype to something production-ready. We'll look at code quality, architecture decisions, customization options, and deployment.\n\nI'll also share what I've learned from working with these tools: when they work great, where they struggle, and how you as a developer can use them to move faster without losing control over what you're building. Whether you're looking at these platforms for rapid prototyping, client demos, or side projects, you'll leave with a good understanding of what's possible today.\n\nExpect an audience driven live demo going from prompt to deployment, honest takes, and plenty of practical takeaways.",
+        "coSpeakers": [],
+        "date": "2026-05-13",
+        "endDate": "2026-05-13",
+        "event": "Techorama 2026 Belgium",
+        "location": "Antwerp (BE)",
+        "link": "https://techorama.be/",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
         "session": "S04 E10 - Elio Struyf: Van falende demo’s naar een product: zo ontstaat een business",
         "description": "“Ik steek mijn hart en ziel daarin… maar er zijn grote bedrijven, zoals OpenAI, die dat al gebruikt hebben, maar die sponsoren niet.” – Elio. In deze tiende aflevering van seizoen 4 verwelkomen we Elio Struyf in onze studio: een technisch zwaargewicht met een unieke “triple crown” in de communitywereld (Microsoft MVP, Google Developer Expert én GitHub Star). We praten over freelancen, online presence, de realiteit achter open source, en hoe Elio van podiumstress (lees: falende demo’s) een productidee maakte dat sprekers en eventorganisatoren eindelijk meetbaarheid, interactie en feedback kan geven: EngageTime. Elio vertelt ook opvallend eerlijk over ondernemen met een gezin, het belang van een buffer, en hoe hij na een zwaar fietsongeluk toch terug de drive vond om te blijven bouwen.",
         "coSpeakers": [],
