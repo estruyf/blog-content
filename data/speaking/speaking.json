@@ -3,6 +3,21 @@
     "year": "2026",
     "events": [
       {
+        "session": "Testing smarter: Bringing AI into your E2E testing workflows",
+        "description": "End-to-end testing with Playwright is something I use daily to ensure websites and tools are fully covered. But maintaining these tests can be time-consuming, especially in rapidly changing environments. What if AI could help you test smarter? In this session, we’ll explore how AI tools and MCP servers can assist in generating comprehensive Playwright test cases, analyzing failed runs, summarizing logs, and maintaining stable E2E tests. You’ll see how to combine pre-authenticated sessions, and AI-powered diagnostics to create a more resilient testing setup that ensures full coverage of your applications. Based on real-world automation scenarios, this talk will help you modernize your Playwright testing workflows and reduce maintenance while increasing confidence that every feature works as expected.",
+        "coSpeakers": [],
+        "date": "2026-05-07",
+        "endDate": "2026-05-07",
+        "event": "European AI and Cloud Summit",
+        "location": "Cologne (DE)",
+        "link": "https://cloudsummit.eu/",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
         "session": "From Code to Cloud: Automated Deployments with GitHub Actions",
         "description": "Let us dive into the world of GitHub Actions, an instrumental component in modern Continuous Integration and Continuous Deployment (CI/CD) practices. In this session, Elio Struyf will explore how to harness GitHub Actions to streamline deployment workflows, making the process of moving from code commits to live deployments seamless and efficient. He will cover how to use variables, secrets, environment approvals, and more. If you are looking to automate your deployments, this session is for you! ",
         "coSpeakers": [],
@@ -13,8 +28,8 @@
         "link": "https://devdays.lt/",
         "reporting": {
           "gde": false,
-          "mvp": false,
-          "github": false
+          "mvp": true,
+          "github": true
         }
       },
       {
@@ -28,8 +43,8 @@
         "link": "https://techorama.be/",
         "reporting": {
           "gde": false,
-          "mvp": false,
-          "github": false
+          "mvp": true,
+          "github": true
         }
       },
       {
@@ -44,7 +59,7 @@
         "video": "https://www.youtube.com/watch?v=Nu23YA2xSv0",
         "reporting": {
           "gde": false,
-          "mvp": false,
+          "mvp": true,
           "github": false
         }
       }
@@ -54,7 +69,7 @@
     "year": "2025",
     "events": [
       {
-        "session": "Bringing Intelligence to Enteprise Search with Microsoft Foundry",
+        "session": "Bringing Intelligence to Enterprise Search with Microsoft Foundry",
         "description": "",
         "date": "2025-12-05",
         "endDate": "2025-12-05",
@@ -63,7 +78,7 @@
         "link": "https://pnp.github.io/blog/weekly-agenda/25-12-08/",
         "reporting": {
           "gde": true,
-          "mvp": false,
+          "mvp": true,
           "github": true
         }
       },
@@ -83,7 +98,7 @@
         "link": "https://www.collabdays.org/2025-belgium/",
         "reporting": {
           "gde": true,
-          "mvp": false,
+          "mvp": true,
           "github": true
         }
       },
@@ -98,7 +113,7 @@
         "link": "https://mc2mc.be/mc2mc-live-the-martian-codebase-18-12-2025/",
         "reporting": {
           "gde": false,
-          "mvp": false,
+          "mvp": true,
           "github": false
         }
       },
