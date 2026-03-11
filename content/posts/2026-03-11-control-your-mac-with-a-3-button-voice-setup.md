@@ -125,3 +125,7 @@ Let me know what you think.
 *   **[VoiceSnippets](https://github.com/estruyf/VoiceSnippets)** - My custom app for macOS voice automation.
 *   **[Handy](https://handy.computer)** - The AI transcription tool I use for dictation.
 *   **[SinLoon Mini Programmable Mechanical Keyboard](https://www.amazon.de/-/en/dp/B0GC97ZT4M)** - The hardware powering the 3-button setup.
+
+---
+
+{{< blockquote type="note" text="This article was created using the [Ghostwriter for VS Code](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-ghostwriter)." >}}
