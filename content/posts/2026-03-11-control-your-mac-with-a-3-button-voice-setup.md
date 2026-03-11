@@ -1,7 +1,7 @@
 ---
 title: "Control Your Mac with a 3-Button Voice Setup"
 longTitle: "Switching to a 3-button voice setup: how I control my Mac with Handy and VoiceSnippets"
-slug: "control-mac-3-button-voice-setup"
+slug: "/control-mac-3-button-voice-setup/"
 description: "Discover how to control your Mac effortlessly with a 3-button voice setup for a seamless workflow and enhanced productivity."
 date: "2026-03-11T12:00:00Z"
 lastmod: "2026-03-11T12:00:00Z"
