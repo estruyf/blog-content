@@ -43,7 +43,7 @@ If we all just clone everything we use, we completely commoditize the market. We
 
 {{< blockquote type="note" text="This screenshot tool is where I started to think about the impact of AI on indie development. I use [Xnapper](https://xnapper.com/) for years now, got a license for every device I own. Yesterday I saw somebody creating a clone, and mentioning it only took one hour to build. That is when I realized the true impact of AI on indie development and I started thinking about the broader implications." >}}
 
-{{< caption-new "/uploads/2026/02/ai-tool.webp" "The tool is not the issue, it is the mindset" >}}
+{{< caption-new "/uploads/2026/02/ai-tool.webp" "The tool is not the issue, it is the mindset"  "data:image/jpeg;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoKAAUAAUAmJQBOgCIfOobUAAD+1+L0d4THLYIyj3o/FJbXeyB+CrLpto2sPpMZqddTOcGVC47DMs3meEuOqabGrv1G9TAA" "2816" "1536" >}}
 
 ## The life of an indie developer in the AI age
 

@@ -39,11 +39,11 @@ Here is a snapshot of what that traffic looks like on my end (the last 24 hours)
 *   **BingBot:** 499 requests
 *   **Meta-ExternalAgent:** 498 requests
 
-{{< caption-new "/uploads/2026/02/crawl-bots.webp" "Cloudflare - AI Crawl Control" >}}
+{{< caption-new "/uploads/2026/02/crawl-bots.webp" "Cloudflare - AI Crawl Control"  "data:image/jpeg;base64,UklGRogAAABXRUJQVlA4WAoAAAAQAAAACQAABwAAQUxQSCkAAAABLyAkIP6PlPzgRkTEnMFA2ya7AzQ8OHgwgAX8C8JBRP9jkpyAerTtBQBWUDggOAAAALABAJ0BKgoACAABQCYlpAAC52q4vyAA/v4SLKLoIIoHDmbjxhEVs3kK21cZW1bE9VTRd3gAAAAA" "4116" "3098" >}}
 
 If I dig deeper, for the `ChatGPT-User` agent, I can see that the most requested pages are my review posts.
 
-{{< caption-new "/uploads/2026/02/chatgpt-most-crawled.webp" "Most crawled pages by ChatGPT" >}}
+{{< caption-new "/uploads/2026/02/chatgpt-most-crawled.webp" "Most crawled pages by ChatGPT"  "data:image/jpeg;base64,UklGRoAAAABXRUJQVlA4WAoAAAAQAAAACQAABAAAQUxQSCsAAAABJ6CQbQTIX/I+kJ1GRMTFgEJIVqibDN4k8BVIIX+uGCL6H1NVZ0B8LmkBAFZQOCAuAAAAsAEAnQEqCgAFAAFAJiWkAALnZu1+0AD+/hIqJDv9i8QNh2R/BbcUzOXF1rgAAA==" "4116" "2030" >}}
 
 {{< blockquote type="info" text="Cloudflare also offers managed `robots.txt` and bot blocking features, so you can decide how much of that traffic you want to allow or stop. It is worth noting that some bots have been caught bypassing `robots.txt`." >}}
 

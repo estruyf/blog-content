@@ -28,7 +28,7 @@ In this post, I will share how I use a tiny, three-button keyboard to control my
 
 Nowadays, I use a new programmable keyboard with just three buttons (well, technically four, but I only need three to use it). It is the SinLoon Mini Programmable Mechanical Keyboard.
 
-{{< caption-new "/uploads/2026/03/mini-keyboard.webp" "My 3-button SinLoon macro keyboard setup" >}}
+{{< caption-new "/uploads/2026/03/mini-keyboard.webp" "My 3-button SinLoon macro keyboard setup"  "data:image/jpeg;base64,UklGRp4AAABXRUJQVlA4IJIAAADwAQCdASoKAA0AAUAmJbACdAEU7Y+bpsAA/vbCaNPtKPtpL0O9HO7AGIBgUfhNhTykPXlMSWZ+xFsAf4/Pj4i1tQ8uH/XRo37jkNnx/Rwi8Q5K08H28fRPWtaeJcYy7ToapZpRh//lppkx/cSMH96op9Gjyh1EESj/iHcUH/mZYYtjd04kn6LcLf9uRLpqC8AAAA==" "1200" "1600" >}}
 
 The goal is simple: instead of hitting `Ctrl+Alt+Shift+Something`, I just press a single chunky button. 
 
@@ -44,7 +44,7 @@ I configured the three buttons to trigger the specific tools that power my voice
 2.  **Button 2:** Triggers [VoiceSnippets](https://github.com/estruyf/VoiceSnippets), a custom app I built for running commands and text expansion based on spoken trigger words. It sends `Ctrl+Alt+Shift+S`.
 3.  **Button 3:** Acts as my `Enter` key. 
 
-{{< caption-new "/uploads/2026/03/VoiceSnippets.webp" "VoiceSnippets app to controls your computer with trigger words" >}}
+{{< caption-new "/uploads/2026/03/voicesnippets.webp" "VoiceSnippets app to controls your computer with trigger words"  "data:image/jpeg;base64,UklGRnwAAABXRUJQVlA4WAoAAAAQAAAACQAACAAAQUxQSCwAAAABL6CQbQTI3/E+kptGRAT6AAratmGqMqhG4AMYhfEnNgYR/Y/JzCMA/5qkBVZQOCAqAAAA0AEAnQEqCgAJAAFAJiWkAAMXnLvxRAAA/v5LQhuh7jVwzWF+995AbIAA" "3796" "3522" >}}
 
 {{< blockquote type="tip" text="By offloading these complex `Ctrl+Alt+Shift` shortcuts to a dedicated macro pad, you completely eliminate the awkward finger aerobics usually required to trigger background apps." >}}
 
@@ -78,7 +78,7 @@ VoiceSnippets interprets that and runs the following configuration:
 }
 ```
 
-{{< caption-new "/uploads/2026/03/start-development-command.webp" "VoiceSnippet: Start development command configuration" >}}
+{{< caption-new "/uploads/2026/03/start-development-command.webp" "VoiceSnippet: Start development command configuration"  "data:image/jpeg;base64,UklGRoYAAABXRUJQVlA4WAoAAAAQAAAACQAACwAAQUxQSC0AAAABL6CQbQTI3/FekTuNiIhj76AQkhXqJoMfQA5vAkghf6IIIvofI+kM6Ody9wUAVlA4IDIAAAAQAgCdASoKAAwAAUAmJZwAAxamOnC5GWyAAP7+S0IbobsSr3vnkVtiizGZWxisPgAAAA==" "3796" "4612" >}}
 
 This sequence opens the VS Code command palette, focuses the terminal view, waits a second to ensure the terminal is ready, and then types and runs `npm run dev`. 
 
@@ -97,7 +97,7 @@ I also use text expansion with variables. For example, checking out a git branch
 }
 ```
 
-{{< caption-new "/uploads/2026/03/voicesnippets-branch-command.webp" "VoiceSnippet: branch command" >}}
+{{< caption-new "/uploads/2026/03/voicesnippets-branch-command.webp" "VoiceSnippet: branch command"  "data:image/jpeg;base64,UklGRoQAAABXRUJQVlA4WAoAAAAQAAAACQAACAAAQUxQSCwAAAABL6CQbQTI3/E+kptGRAT6AAratmGqMqhG4AMYhfEnNgYR/Y/JzCMA/5qkBVZQOCAyAAAAkAEAnQEqCgAJAAFAJiWcAAMWnK2AAP7+S0IbobsSt3wkT4rjNuAP338WLF+MJSqAAAA=" "3796" "3522" >}}
 
 If I say "branch dev", VoiceSnippets automatically expands it to `git checkout dev`.
 
