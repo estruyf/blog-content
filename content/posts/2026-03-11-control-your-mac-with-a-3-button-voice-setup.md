@@ -6,7 +6,7 @@ description: "Discover how to control your Mac effortlessly with a 3-button voic
 date: "2026-03-11T12:00:00Z"
 lastmod: "2026-03-11T12:00:00Z"
 preview: "/social/3b1d9d57-5eb2-4321-84ac-f3641bd31866.png"
-draft: true
+draft: false
 comments: true
 tags:
   - "DevHack"
