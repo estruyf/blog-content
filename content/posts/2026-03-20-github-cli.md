@@ -96,3 +96,7 @@ Let me know what you think when you try it out!
 - [Ghostty Terminal](https://ghostty.org/)
 - [Copilot CLI Fleet Documentation](https://docs.github.com/en/copilot/concepts/agents/copilot-cli/fleet)
 - [GitHub Copilot CLI for Beginners (GitHub Repo)](https://github.com/github/copilot-cli-for-beginners)
+
+---
+
+{{< blockquote type="note" text="This article was created using the [Ghostwriter for VS Code](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-ghostwriter)." >}}
