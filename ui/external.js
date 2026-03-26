@@ -278,7 +278,9 @@ class CardFooter extends LitElement {
             ` : ''
           }
   
-          <img src="https://api.visitorbadge.io/api/combined?path=https%3a%2f%2fwww.eliostruyf.com${data.slug}&readonly=true&labelColor=%230e131f&countColor=%23ffe45e&label=Page%20Views&style=flat-square" />
+          <a href="https://visitorbadge.io/status?path=https://www.eliostruyf.com${data.slug}">
+            <img src="https://api.visitorbadge.io/api/combined?path=https%3a%2f%2fwww.eliostruyf.com${data.slug}&readonly=true&labelColor=%230e131f&countColor=%23ffe45e&label=Page%20Views&style=flat-square" />
+          </a>
   
           ${
             (data?.comments?.count && data.comments.count >= 0) ? html `
