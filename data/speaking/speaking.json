@@ -65,7 +65,12 @@
       {
         "session": "Let the spec speak: Building intelligent tests with Gherkin and Playwright",
         "description": "Most teams still write user stories like “As a user, I want to log in so that I can access my account”. This neither defines the feature sufficiently nor describes anything testable. From there, engineers build different interpretations, and QA can’t do meaningful checks, which results in a loss of time, energy and delivery confidence.\n\nThis session introduces a better way to express intent. Using Gherkin, we’ll describe behavior in concrete, testable terms that mean the same thing to Product, Design, QA, and Development alike.\n\nGherkin scenarios go beyond the user story format: They make expectations explicit, define edge cases, and turn understanding into something that is both readable to humans (and even a lesser-technical audience) and verifiable by machines. We’ll use Playwright to connect those examples directly to real automation, to turn the shared understanding into living specifications.\n\nWe’ll build a Markdown → Feature → Test workflow with Playwright-BDD, and showcase Playwright MCP which can explore an app, find common user flows, and suggest test cases. This will give you a glimpse of how AI can help without getting in the way.\n\nThe result is a shared language that links conversation to code and replaces assumption with clarity. This way quality isn’t being fought for at the end, but built in from the start.",
-        "coSpeakers": [],
+        "coSpeakers": [
+          {
+            "name": "Luise Freese",
+            "url": "https://www.m365princess.com/"
+          }
+        ],
         "date": "2026-05-13",
         "endDate": "2026-05-13",
         "event": "Techorama 2026 Belgium",
