@@ -33,6 +33,21 @@
         }
       },
       {
+        "session": "Testing smarter: Bringing AI into your E2E testing workflows",
+        "description": "End-to-end testing with Playwright is something I use daily to ensure websites and tools are fully covered. But maintaining these tests can be time-consuming, especially in rapidly changing environments. What if AI could help you test smarter?\n\nIn this session, we’ll explore how AI tools and MCP servers can assist in generating comprehensive Playwright test cases, analyzing failed runs, summarizing logs, and maintaining stable E2E tests. You’ll see how to combine pre-authenticated sessions, and AI-powered diagnostics to create a more resilient testing setup that ensures full coverage of your applications.\n\nBased on real-world automation scenarios, this talk will help you modernize your Playwright testing workflows and reduce maintenance while increasing confidence that every feature works as expected.",
+        "coSpeakers": [],
+        "date": "2026-05-12",
+        "endDate": "2026-05-12",
+        "event": "Techorama 2026 Belgium",
+        "location": "Antwerp (BE)",
+        "link": "https://techorama.be/",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
         "session": "From idea to prompt to production-ready code? How AI-powered platforms can help you building apps.",
         "description": "A new wave of AI-powered platforms like Bolt, Lovable, Replit, and others promise to turn a simple prompt into a fully working application. But how well do they actually deliver? And more importantly, can you take what they generate and ship it to production?\n\nIn this session, I'll put one of these platforms to the test. Starting from nothing but a prompt, you'll see me build a real application live on stage and take it through the full journey from generated prototype to something production-ready. We'll look at code quality, architecture decisions, customization options, and deployment.\n\nI'll also share what I've learned from working with these tools: when they work great, where they struggle, and how you as a developer can use them to move faster without losing control over what you're building. Whether you're looking at these platforms for rapid prototyping, client demos, or side projects, you'll leave with a good understanding of what's possible today.\n\nExpect an audience driven live demo going from prompt to deployment, honest takes, and plenty of practical takeaways.",
         "coSpeakers": [],
@@ -45,6 +60,21 @@
           "gde": false,
           "mvp": true,
           "github": true
+        }
+      },
+      {
+        "session": "Let the spec speak: Building intelligent tests with Gherkin and Playwright",
+        "description": "Most teams still write user stories like “As a user, I want to log in so that I can access my account”. This neither defines the feature sufficiently nor describes anything testable. From there, engineers build different interpretations, and QA can’t do meaningful checks, which results in a loss of time, energy and delivery confidence.\n\nThis session introduces a better way to express intent. Using Gherkin, we’ll describe behavior in concrete, testable terms that mean the same thing to Product, Design, QA, and Development alike.\n\nGherkin scenarios go beyond the user story format: They make expectations explicit, define edge cases, and turn understanding into something that is both readable to humans (and even a lesser-technical audience) and verifiable by machines. We’ll use Playwright to connect those examples directly to real automation, to turn the shared understanding into living specifications.\n\nWe’ll build a Markdown → Feature → Test workflow with Playwright-BDD, and showcase Playwright MCP which can explore an app, find common user flows, and suggest test cases. This will give you a glimpse of how AI can help without getting in the way.\n\nThe result is a shared language that links conversation to code and replaces assumption with clarity. This way quality isn’t being fought for at the end, but built in from the start.",
+        "coSpeakers": [],
+        "date": "2026-05-13",
+        "endDate": "2026-05-13",
+        "event": "Techorama 2026 Belgium",
+        "location": "Antwerp (BE)",
+        "link": "https://techorama.be/",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
         }
       },
       {
