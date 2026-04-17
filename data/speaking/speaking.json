@@ -3,6 +3,21 @@
     "year": "2026",
     "events": [
       {
+        "session": "Building smarter: Bringing AI into your developer workflow",
+        "description": "AI isn’t just for chatbots. It’s changing how we build software. With so many AI tools available these days, it can feel overwhelming to know where to start. In this session, you’ll discover \"a\" way to integrate AI into your developer workflow, turning it into a true development partner for scaffolding new projects, generating documentation, writing tests, and optimizing CI/CD pipelines.\n\nI’ll share real examples of how I’ve integrated AI tools like GitHub Copilot, Bolt, GitHub Spark, and more into everyday development tasks, saving time while keeping control over quality. You’ll learn what works, what doesn’t, and how to find the right balance between automation and craftsmanship.\n\nExpect a mix of demos, practical tips, and insights that will help you start building smarter, not just faster, with AI at your side.",
+        "coSpeakers": [],
+        "date": "2026-12-02",
+        "endDate": "2026-12-02",
+        "event": "ESPC",
+        "location": "Amsterdam (NL)",
+        "link": "https://espc.tech/",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
         "session": "Testing smarter: Bringing AI into your E2E testing workflows",
         "description": "End-to-end testing with Playwright is something I use daily to ensure websites and tools are fully covered. But maintaining these tests can be time-consuming, especially in rapidly changing environments. What if AI could help you test smarter? In this session, we’ll explore how AI tools and MCP servers can assist in generating comprehensive Playwright test cases, analyzing failed runs, summarizing logs, and maintaining stable E2E tests. You’ll see how to combine pre-authenticated sessions, and AI-powered diagnostics to create a more resilient testing setup that ensures full coverage of your applications. Based on real-world automation scenarios, this talk will help you modernize your Playwright testing workflows and reduce maintenance while increasing confidence that every feature works as expected.",
         "coSpeakers": [],
