@@ -10,6 +10,7 @@ tags:
   - "AI"
   - "GitHub"
   - "GitHub Copilot"
+draft: false
 ---
 
 On June 1, 2026, GitHub Copilot switched to metered token-based billing, and developers threatened to leave. [The Register reported on the exodus](https://www.theregister.com/ai-and-ml/2026/06/02/github-copilot-users-threaten-exit-as-metered-billing-kicks-in/5249826). My own usage preview showed roughly €600 extra per month, and that was during a period when I was on holiday for part of the time. A normal month? Probably higher.

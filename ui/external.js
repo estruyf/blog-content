@@ -174,7 +174,7 @@ class CardFooter extends LitElement {
     .card__footer {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      gap: 1rem;
       align-items: center;
     }
 
@@ -203,11 +203,13 @@ class CardFooter extends LitElement {
 
         const contribution = await this.getContribution(slug);
         const comments = await this.getComments(slug);
+        const analytics = await this.getPageAnalytics(slug);
         
         return {
           slug,
           contribution,
-          comments
+          comments,
+          analytics
         }
       },
       args: () => [this.slug]
@@ -247,6 +249,45 @@ class CardFooter extends LitElement {
     }
 
     return;
+  };
+
+  getPageAnalytics = async (crntSlug) => {
+    let slug = crntSlug;
+    if (!slug.startsWith("/")) {
+      slug = `/${slug}`;
+    }
+    if (!slug.endsWith("/")) {
+      slug = `${slug}/`;
+    }
+
+    const apiUrl = `https://api.visitorbadge.io/api/combined?path=https%3a%2f%2fwww.eliostruyf.com${encodeURIComponent(slug)}&readonly=true&labelColor=%231f242cf&countColor=%23ffe45e&label=&style=flat-square`;
+    
+    try {
+      const response = await fetch(apiUrl);
+      if (!response.ok) return;
+
+      const svgText = await response.text();
+      
+      // Parse the SVG to extract the text content
+      const textMatch = svgText.match(/<text[^>]*>([^<]+)<\/text>/);
+      if (textMatch && textMatch[1]) {
+        const analyticsText = textMatch[1];
+        // Expected format: "current / total" or similar numbers
+        const numbers = analyticsText.match(/(\d+)\s*\/\s*(\d+)/);
+        
+        if (numbers) {
+          return {
+            current: parseInt(numbers[1]),
+            total: parseInt(numbers[2]),
+            text: analyticsText
+          };
+        }
+      }
+    } catch (err) {
+      console.error('Error fetching page analytics:', err);
+    }
+
+    return;
   }
 
   constructor() {
@@ -271,23 +312,33 @@ class CardFooter extends LitElement {
     return this.getDataTask.render({
       pending: () => html ``,
       complete: (data) => html `
-        <div class="card__footer">
+        <div class="card__footer">  
           ${
-            data.contribution ? html `
-              <span title="Published to GitHub Star profile"><svg data-v-54804d16="" width="21" height="20" viewBox="0 0 80 75" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#F6C247" d="M63.196 48.5l2.126 26.188-24.585-11.316-25.364 10.696 1.72-25.563L0 29.013l27.775-7.464L40.135 0l14.262 23.331L80 28.688 63.196 48.5"></path><path d="M60.097 48.955l1.657 20.42-15.109-6.954a1.755 1.755 0 01-1.022-1.61 995.1 995.1 0 00.036-6.576c0-1.89-.65-3.128-1.379-3.753 4.523-.503 9.268-2.216 9.268-10.004 0-2.212-.786-4.021-2.087-5.438.21-.513.906-2.574-.202-5.365 0 0-1.7-.545-5.575 2.078a19.514 19.514 0 00-5.08-.683 19.49 19.49 0 00-5.082.683c-3.877-2.623-5.58-2.078-5.58-2.078-1.106 2.79-.409 4.852-.2 5.365-1.298 1.417-2.09 3.226-2.09 5.438 0 7.77 4.738 9.507 9.246 10.02-.58.506-1.104 1.399-1.289 2.709-1.156.52-4.096 1.414-5.907-1.685 0 0-.717-1.643-2.754-1.787 0 0-1.982-.026-.14 1.232 0 0 1.314.754 1.9 2.126 0 0 1.19 3.942 6.837 2.718.006.981.014 3.32.02 5.113a1.756 1.756 0 01-1.075 1.624l-15.336 6.468 1.452-21.584-.973-1.11-13.54-15.443 22.64-6.085 1.43-.384L40.399 6.562l12.103 19.805 1.51.316 20.051 4.195-14.085 16.61.12 1.467" fill="#DE852E"></path></g></svg></span>
+            (data?.analytics?.current !== undefined && data?.analytics?.total !== undefined) ? html `
+              <a href="https://visitorbadge.io/status?path=https://www.eliostruyf.com${data.slug}" title="${data.analytics.text}" style="display: flex; align-items: center; gap: 0.25rem; text-decoration: none; color: var(--fm-text-lo);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+                <span>${data.analytics.text}</span>
+              </a>
             ` : ''
           }
   
-          <a href="https://visitorbadge.io/status?path=https://www.eliostruyf.com${data.slug}">
-            <img src="https://api.visitorbadge.io/api/combined?path=https%3a%2f%2fwww.eliostruyf.com${data.slug}&readonly=true&labelColor=%230e131f&countColor=%23ffe45e&label=Page%20Views&style=flat-square" />
-          </a>
-  
           ${
             (data?.comments?.count && data.comments.count >= 0) ? html `
-              <a href="${data.comments.url}">
-                <img src="https://img.shields.io/badge/${data.comments.count}-ffe45e?style=flat-square&label=comments&labelColor=0e131f
-                " />
+              <a href="${data.comments.url}" style="display: flex; align-items: center; gap: 0.25rem; text-decoration: none; color: var(--fm-text-lo);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                <span>${data.comments.count}</span>
               </a>
+            ` : ''
+          }
+
+          ${
+            data.contribution ? html `
+              <span title="Published to GitHub Star profile"><svg data-v-54804d16="" width="21" height="20" viewBox="0 0 80 75" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#F6C247" d="M63.196 48.5l2.126 26.188-24.585-11.316-25.364 10.696 1.72-25.563L0 29.013l27.775-7.464L40.135 0l14.262 23.331L80 28.688 63.196 48.5"></path><path d="M60.097 48.955l1.657 20.42-15.109-6.954a1.755 1.755 0 01-1.022-1.61 995.1 995.1 0 00.036-6.576c0-1.89-.65-3.128-1.379-3.753 4.523-.503 9.268-2.216 9.268-10.004 0-2.212-.786-4.021-2.087-5.438.21-.513.906-2.574-.202-5.365 0 0-1.7-.545-5.575 2.078a19.514 19.514 0 00-5.08-.683 19.49 19.49 0 00-5.082.683c-3.877-2.623-5.58-2.078-5.58-2.078-1.106 2.79-.409 4.852-.2 5.365-1.298 1.417-2.09 3.226-2.09 5.438 0 7.77 4.738 9.507 9.246 10.02-.58.506-1.104 1.399-1.289 2.709-1.156.52-4.096 1.414-5.907-1.685 0 0-.717-1.643-2.754-1.787 0 0-1.982-.026-.14 1.232 0 0 1.314.754 1.9 2.126 0 0 1.19 3.942 6.837 2.718.006.981.014 3.32.02 5.113a1.756 1.756 0 01-1.075 1.624l-15.336 6.468 1.452-21.584-.973-1.11-13.54-15.443 22.64-6.085 1.43-.384L40.399 6.562l12.103 19.805 1.51.316 20.051 4.195-14.085 16.61.12 1.467" fill="#DE852E"></path></g></svg></span>
             ` : ''
           }
         <div>
