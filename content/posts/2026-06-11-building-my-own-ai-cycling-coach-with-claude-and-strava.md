@@ -145,7 +145,7 @@ When you use the extension, you get a new "Workouts" button on Garmin Connect pa
 
 When you click it, you can view workouts, clone workouts, edit them, or upload ZWO files that get converted to the Garmin JSON format.
 
-{{< caption-new "/uploads/2026/06/garmin-connect-workout-detail.webp" "The workout detail page with the option to upload a ZWO file" >}}
+{{< caption-new "/uploads/2026/06/garmin-connect-workout-detail.webp" "The workout detail page with the option to upload a ZWO file"  "data:image/jpeg;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoKAAcAAUAmJZQCdAEf3T/c96AA/v2ZdetfnHrZ8GiAJGjwGpMFhNowjgdCJQo8pTFkClQFpBlMYmcojiOYxOwAAAA=" "2560" "1788" >}}
 
 ## Wrapping up
 
