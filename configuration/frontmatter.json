@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "frontMatter.experimental": true,
+  "frontMatter.experimental": false,
   "frontMatter.extensibility.scripts": [
     "[[workspace]]/.frontmatter/ui/external.js"
   ],
