@@ -92,7 +92,7 @@ az ad sp create --id e406a681-f3d4-42a8-90b6-c2b029497af1
 
 With the Service Principal active in the tenant, go back to the SharePoint Admin Center and click "Approve." It should now work.
 
-{{< blockquote type="note" text="In the original article, I mentioned you could use the `adminconsent` URL to grant the permission, but this doesn't work for first-party Microsoft services. The adminconsent endpoint doesn't just provision the SP, it also tries to grant consent for that app's own required permissions. The Azure Storage app declares a dependency on 00000002-0000-0000-c000-000000000000, which is the legacy Azure AD Graph API. Both are Microsoft-owned first-party apps, and consent between two first-party apps can't go through the normal admin consent flow. It has to be preauthorized by the API owner (Microsoft) on their side. You can't configure that, so the flow blocks with AADSTS65002." >}}
+{{< blockquote type="note" text="In the original article, I mentioned you could use the `adminconsent` URL to grant the permission, but this doesn't work for first-party Microsoft services. The adminconsent endpoint doesn't just provision the SP, it also tries to grant consent for that app's own required permissions. The Azure Storage app declares a dependency on `00000002-0000-0000-c000-000000000000`, which is the legacy Azure AD Graph API. Both are Microsoft-owned first-party apps, and consent between two first-party apps can't go through the normal admin consent flow. It has to be preauthorized by the API owner (Microsoft) on their side. You can't configure that, so the flow blocks with AADSTS65002." >}}
 
 ## Resources
 
