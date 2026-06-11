@@ -6,7 +6,7 @@ description: "Learn how to fix invalid Microsoft service API permissions in Shar
 date: "2026-06-11T08:40:22.542Z"
 lastmod: "2026-06-11T08:40:23.113Z"
 preview: "/social/d17540eb-b8a5-471d-bd4b-adffed22d60e.png"
-draft: true
+draft: false
 comments: true
 tags:
   - "Azure CLI"
