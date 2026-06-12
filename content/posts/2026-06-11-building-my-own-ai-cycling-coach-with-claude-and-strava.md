@@ -141,6 +141,8 @@ Because manually recreating Claude's workouts in the Garmin Connect UI took too 
 
 This Chrome extension fills the gap, letting you import those AI-generated ZWO files right into your Garmin calendar. It is currently waiting to be published in the Chrome Web Store, but you can check the source code here: [estruyf/garmin-workout-browser-extension](https://github.com/estruyf/garmin-workout-browser-extension).
 
+{{< blockquote type="info" text="The browser extension is available in the [Chrome web store - Garmin Workout Importer](https://chromewebstore.google.com/detail/garmin-workout-importer/faebbfokokipdpkbolpbpfadmgdbanpo?authuser=0&hl=en)" >}}
+
 When you use the extension, you get a new "Workouts" button on Garmin Connect pages.
 
 {{< caption-new "/uploads/2026/06/garmin-connect-workouts-overview.webp" "My Garmin connect workout overview"  "data:image/jpeg;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoKAAcAAUAmJZQC7AEQ/avaU+AA/v2ZdetfnHrZ7LzGxnm8VyTiPBxwB+5wFtDIAfSYPhvEoAAAAA==" "2560" "1788" >}}
