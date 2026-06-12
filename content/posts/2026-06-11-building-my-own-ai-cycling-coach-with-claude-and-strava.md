@@ -36,6 +36,8 @@ When the [Strava Connector](https://press.strava.com/articles/strava-launches-mc
 
 The skill is in this repository: [estruyf/skill-cycling-plan-coach](https://github.com/estruyf/skill-cycling-plan-coach). From the [releases page](https://github.com/estruyf/skill-cycling-plan-coach/releases), you can download the latest version and install it in Claude. The skill is built to work with the Strava Connector, so make sure that is set up and linked to your Strava account.
 
+{{< caption-new "/uploads/2026/06/install-claude-skill.webp" "Installing the cycling plan coach skill into Claude"  "data:image/jpeg;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoKAAcAAUAmJaQAAtz9wkgAAP7+XHKgYdRKn+Y3uZIBV9BjGXPhxKAgAAA=" "2786" "1880" >}}
+
 Once `cycling-plan-coach.skill` is installed, you can use it in Claude with the `/cycling-plan-coach` slash command. It should also work if you ask for a new cycling plan for the coming week.
 
 ## The setup: building the athlete profile
