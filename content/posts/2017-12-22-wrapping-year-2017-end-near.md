@@ -1,16 +1,16 @@
 ---
-title: Wrapping up the year 2017, and looking forward to 2018
-author: Elio Struyf
-type: post
-date: 2017-12-22T11:06:23+00:00
-slug: /wrapping-year-2017-end-near/
+title: "Wrapping up the year 2017, and looking forward to 2018"
+author: "Elio Struyf"
+type: "post"
+date: "2017-12-22T11:06:23+00:00"
+slug: "/wrapping-year-2017-end-near/"
 dsq_thread_id:
   - 6365582230
 categories:
-  - Personal
+  - "Personal"
 tags:
-  - Career
-  - Personal
+  - "Career"
+  - "personal"
 comments: true
 ---
 

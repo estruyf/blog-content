@@ -9,8 +9,8 @@ preview: "/social/9db1289d-4726-4fde-bb38-0ad143f9b35a.png"
 draft: false
 comments: true
 tags:
+  - "personal"
   - "recap"
-  - "Personal"
 type: "post"
 ---
 

@@ -6,8 +6,8 @@ type: "post"
 date: "2021-03-12T13:30:11.368Z"
 draft: false
 tags:
-  - "Personal"
   - "Career"
+  - "personal"
 categories: []
 comments: true
 preview: "/social/67dca7da-6891-4f8b-a9fc-6644fc5d28f1.png"

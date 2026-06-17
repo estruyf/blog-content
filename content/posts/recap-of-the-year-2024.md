@@ -10,8 +10,8 @@ preview: "/social/c53ff620-8263-48d5-b10e-6e7c8e8ad15c.png"
 draft: false
 comments: true
 tags:
+  - "personal"
   - "recap"
-  - "Personal"
 type: "post"
 ---
 

@@ -6,8 +6,8 @@ type: "post"
 date: "2020-12-21T13:33:51.230Z"
 draft: false
 tags:
+  - "personal"
   - "recap"
-  - "Personal"
 categories: []
 comments: true
 preview: "/social/07726dde-92d3-4f95-8a88-a5d50a339d88.png"
