@@ -51,7 +51,7 @@ It works with both transports Copilot uses, so you are covered whether the traff
 
 No install needed to try it:
 
-```bash {title="Install and run"}
+```bash title="Install and run"
 npx copilot-mock-server
 ```
 
@@ -63,7 +63,7 @@ Here is the flow I use when I am preparing a talk.
 
 You define what Copilot should say in a simple JSON file. Each rule matches keywords in your prompt and returns the response you want.
 
-```json {title="cms.mock.json"}
+```json title="cms.mock.json"
 [
   {
     "input": ["create a test.json file"],
@@ -92,19 +92,19 @@ Those `[[file:...]]` tags render as clickable file links in the chat response, s
 
 You do not have to edit settings by hand. The tool can inject the right Copilot override settings into your workspace for you:
 
-```bash {title="Add Copilot override settings"}
+```bash title="Add Copilot override settings"
 copilot-mock-server vscode add
 ```
 
 Reload the VS Code window and you are running against the mock. When the talk is over, remove the settings again:
 
-```bash {title="Remove Copilot override settings"}
+```bash title="Remove Copilot override settings"
 copilot-mock-server vscode remove
 ```
 
 Since the settings live in your workspace `.vscode/settings.json`, they only affect the project you are demoing. Your normal Copilot keeps working everywhere else. It will add the following to your workspace settings:
 
-```json {title=".vscode/settings.json"}
+```json title=".vscode/settings.json"
 {
   "github.copilot.advanced": {
     "debug.overrideProxyUrl": "http://localhost:3000",
@@ -126,7 +126,7 @@ Sometimes you want most of the session scripted, but one or two prompts to hit t
 
 In the config file, it looks like this:
 
-```json {title="cms.config.json"}
+```json title="cms.config.json"
 {
   "forwardUnmatched": true
 }
