@@ -51,7 +51,7 @@ It works with both transports Copilot uses, so you are covered whether the traff
 
 No install needed to try it:
 
-```bash
+```bash {title="Install and run"}
 npx copilot-mock-server
 ```
 
@@ -63,7 +63,7 @@ Here is the flow I use when I am preparing a talk.
 
 You define what Copilot should say in a simple JSON file. Each rule matches keywords in your prompt and returns the response you want.
 
-```json
+```json {title="cms.mock.json"}
 [
   {
     "input": ["create a test.json file"],
@@ -92,13 +92,13 @@ Those `[[file:...]]` tags render as clickable file links in the chat response, s
 
 You do not have to edit settings by hand. The tool can inject the right Copilot override settings into your workspace for you:
 
-```bash
+```bash {title="Add Copilot override settings"}
 copilot-mock-server vscode add
 ```
 
 Reload the VS Code window and you are running against the mock. When the talk is over, remove the settings again:
 
-```bash
+```bash {title="Remove Copilot override settings"}
 copilot-mock-server vscode remove
 ```
 
