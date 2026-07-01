@@ -21,7 +21,7 @@ keywords:
 
 This week, I tested out the Azure Web PubSub service, which is still in preview when writing this article. The Web PubSub service is a real-time messaging service that allows you to use the WebSockets APIs and the publish-subscribe pattern. It is excellent for collaborative applications.
 
-{{< blockquote type="info text="You can find the developer documentation at [Azure Web PubSub Service - Github](https://azure.github.io/azure-webpubsub/)." >}}
+{{< blockquote type="info" text="You can find the developer documentation at [Azure Web PubSub Service - Github](https://azure.github.io/azure-webpubsub/)." >}}
 
 ## What can do service do?
 
