@@ -29,11 +29,11 @@ Don't get me wrong, I still love developing. That's the part that makes this har
 
 ## Months of evenings
 
-I built Front Matter CMS from nothing. Just an idea, and then a lot of evenings and weekends turning it into something real. Demo Time went the exact same way. If I think about how many hours went into both of those tools, and then think about how an AI workspace agent would have saved me weeks, maybe months, of that work, the honest follow-up question is uncomfortable:
+I built Front Matter CMS from nothing. Just an idea, and then a lot of evenings and weekends turning it into something real. Demo Time went the exact same way. If I think about how many hours went into both of those tools, and then think about how an AI workspace agent would have saved me weeks, maybe months, of that work, and then I asked myself the following question:
 
-Would they even exist?
+> Would they even exist?
 
-Those months weren't just a cost. They were the thing that proved the idea was worth doing. The slowness was a filter. You don't spend a year of free evenings on something you don't believe in. AI removes that slowness, which means it also removes the filter. I'm not sure yet what that does to which ideas actually get built.
+Those months weren't wasted. Spending that long on something was how I knew I actually believed in it. If I wasn't willing to give up a year of evenings, it probably wasn't worth building. You don't spend a year of free evenings on something you don't believe in. AI removes that slowness, which means it also removes the filter. I'm not sure yet what that does to which ideas actually get built.
 
 Coding was always a fun hobby for me. The challenges or puzzles were the point. Nobody asked me to do it, I just wanted to build cool things and improve my workflow.
 
@@ -43,9 +43,9 @@ Now I sit on my sofa and tell an agent what to do.
 
 I've made peace with becoming an (AI agent) manager. That happens to most eventually in our careers. There's something strange about this particular kind of managing, though. When you ask a person to do something, you don't expect them back in five minutes saying it's done and ready for the next task. With an agent, that's exactly what happens. Done. Next. Done. Next.
 
-There's no breathing space. There's always a next thing to think about. The work used to have a rhythm to it. You'd struggle, you'd get stuck, you'd finally figure it out, and there was this moment of joy when it clicked. Hours in the code, and then *done*. The struggle was also the finish line.
+There's no breathing space. There's always a next thing to think about. The work used to have a rhythm to it. You'd struggle, you'd get stuck, you'd finally figure it out, and there was this moment of joy when it clicked. Hours in the code, and then *done*. Figuring it out was the whole reward.
 
-That moment barely happens now. Not because I never touch the code. I still write a lot of code, but I do way more code reviews now (which is the borign part, that is why I like to use [AI Code Reviewing tools](https://www.eliostruyf.com/ai-code-review-journey-copilot-coderabbit-macroscope/)). Still, the loop has no friction in it anymore. And it turns out, the friction was where the feeling lived.
+That moment barely happens now. Not because I never touch the code. I still write a lot of code, but I do way more code reviews now (which is the borign part, that is why I like to use [AI Code Reviewing tools](https://www.eliostruyf.com/ai-code-review-journey-copilot-coderabbit-macroscope/)). Still, the loop has no friction in it anymore. And that friction is apparently what I was doing it for in the first place. 
 
 {{< blockquote type="note" text="What would have taken months can now be done in weeks. What would have taken a week takes a day or two. The real question is: after those two days, what's next? I'm not sure we're always ready for the answer." >}}
 
@@ -57,7 +57,7 @@ The joy always came from solving hard puzzles. Figuring out what's going on, lea
 
 I just hand them over.
 
-I tell the agent to find the issue. Sometimes I guide it a little, give it a hand when it's lost, but that's it. The hard part, the part I used to love? I outsource it without thinking, every single time. That's not a model problem. That's a me problem.
+I tell the agent to find the issue. Sometimes I guide it a little, give it a hand when it's lost, but that's it. The hard part, the part I used to love? I outsource it without thinking, every single time. That's got nothing to do with the AI. That one's on me.
 
 When I ask myself why, the answer comes out sounding completely reasonable: *why put yourself through the hurdle and frustration of finding something, when AI can just figure it out, give you the key points, and you do the fix?*
 
@@ -85,7 +85,7 @@ They'd exist. They'd exist faster, and maybe they'd even be better. I'm just not
 
 I had it wrong earlier. The joy came from the challenges or puzzles, sure, but that's not the heart of it. What I actually loved was building something real, to improve my efficiency, something other people use, and knowing the code came from my own hands. The months of evenings were the proof of that.
 
-That's the thing AI can quietly take if I let it. Not the joy directly, but the ownership the joy was attached to. It hands me the finished thing, the finished thing works, and somewhere in there, I stop being the person who made it and become the person who approved it.
+That's what AI can quietly take from me. Not the joy itself, but the sense that the thing was mine, which is where the joy was coming from all along. It hands me the finished thing, the finished thing works, and somewhere in there, I stop being the person who made it and become the person who approved it.
 
 If I had to build Front Matter or Demo Time again from scratch today, all of it by hand, it would take too long. I know I wouldn't do it without AI. I'd reach for it because it helps me immensely. The one thing that would protect the joy is the one thing I'm no longer willing to pay for: the time.
 
