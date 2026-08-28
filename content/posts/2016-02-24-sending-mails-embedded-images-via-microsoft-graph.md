@@ -78,6 +78,7 @@ namespace ES.SendMail.Models
         public string contentLocation { get; set; }
         public string contentType { get; set; }
         public string name { get; set; }
+        public bool isInline { get; set; }
     }
 }
 ```
@@ -85,6 +86,8 @@ namespace ES.SendMail.Models
 The most important part about the mail model is the **Attachment** class. This contains all the required properties for successfully including images to the mail.
 
 > **Important**: it is important to include the **@odata.type** for your attachment. If you do not include it, your request ends up in a bad request. If you want to embed an image, it has to be set to **#microsoft.graph.fileAttachment**.
+
+> **Tip**: set **isInline** to **true** for the attachment. This makes sure the embedded image is not also shown as a downloadable attachment in the mail client. You can find all the attachment properties in the [attachment resource type documentation](https://learn.microsoft.com/en-us/graph/api/resources/attachment?view=graph-rest-1.0#properties).
 
 ## Creating the mail message with an embedded image
 
@@ -131,7 +134,8 @@ var mail = new Mail
                 contentBytes = contentBytes,
                 contentType = contentType,
                 contentId = "thumbsUp",
-                name = "thumbs-up.png"
+                name = "thumbs-up.png",
+                isInline = true
             }
         }
     },
