@@ -6,7 +6,7 @@ slug: "/full-engaging-room-techorama-nl-2025/"
 description: "Highlights from my Techorama session about Test Automation with Playwright. Polls, engagement, lessons learned with Demo Time and EngageTime."
 date: "2025-10-30T14:01:23.940Z"
 lastmod: "2025-10-30T14:01:24.480Z"
-preview: social/7183c5d2-9e71-49ec-b497-b773b4a7c020.png
+preview: /social/7183c5d2-9e71-49ec-b497-b773b4a7c020.png
 draft: false
 comments: true
 tags:
