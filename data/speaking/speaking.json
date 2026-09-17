@@ -15,7 +15,7 @@
           "mvp": false,
           "github": false
         }
-      }
+      },
       {
         "session": "Building smarter: Bringing AI into your developer workflow",
         "description": "AI isn’t just for chatbots. It’s changing how we build software. With so many AI tools available these days, it can feel overwhelming to know where to start. In this session, you’ll discover \"a\" way to integrate AI into your developer workflow, turning it into a true development partner for scaffolding new projects, generating documentation, writing tests, and optimizing CI/CD pipelines.\n\nI’ll share real examples of how I’ve integrated AI tools like GitHub Copilot, Bolt, GitHub Spark, and more into everyday development tasks, saving time while keeping control over quality. You’ll learn what works, what doesn’t, and how to find the right balance between automation and craftsmanship.\n\nExpect a mix of demos, practical tips, and insights that will help you start building smarter, not just faster, with AI at your side.",
