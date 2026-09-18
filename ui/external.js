@@ -25,21 +25,32 @@ import {
 // enableDevelopmentMode();
 
 const getContributions = async () => {
-  const response = await fetch("https://elio.dev/api/github-star", {
-    "method": "GET",
-    "headers": {
-      "Content-Type": "application/json; charset=utf-8"
-    }
-  });
+  try {
+    const response = await fetch("https://elio.dev/api/github-star", {
+      "method": "GET",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      }
+    });
+    if (!response.ok) return;
 
-  return await response.json();
+    return await response.json();
+  } catch (err) {
+    console.error('Error fetching GitHub Star contributions:', err);
+    return;
+  }
 }
 
 const fetchContributions = async () => {
   if (!window.contributions) {
     window.contributions = getContributions();
   }
-  return await window.contributions;
+  const contributions = await window.contributions;
+  // Don't cache a failed request, so the next card can retry
+  if (!contributions) {
+    window.contributions = undefined;
+  }
+  return contributions;
 }
 
 class CardTitle extends LitElement {
@@ -201,10 +212,13 @@ class CardFooter extends LitElement {
       task: async ([slug]) => {
         if (!this.slug) return;
 
-        const contribution = await this.getContribution(slug);
-        const comments = await this.getComments(slug);
-        const analytics = await this.getPageAnalytics(slug);
-        
+        // Fetch independently so one failing API doesn't hide the others
+        const [contribution, comments, analytics] = await Promise.all([
+          this.getContribution(slug),
+          this.getComments(slug),
+          this.getPageAnalytics(slug)
+        ]);
+
         return {
           slug,
           contribution,
@@ -219,11 +233,11 @@ class CardFooter extends LitElement {
   getContribution = async (crntSlug) => {
     const contributions = await fetchContributions();
 
-    if (!contributions?.data?.contributions) {
+    if (!contributions?.contributions) {
       return;
     }
 
-    const blogs = contributions.data.contributions.filter(i => i.type === "BLOGPOST");
+    const blogs = contributions.contributions.filter(i => i.type === "BLOGPOST");
     const blog = (blogs || []).find(i => i.url === `https://www.eliostruyf.com${crntSlug.startsWith("/") ? crntSlug : `/${crntSlug}`}`);
     return blog;
   };
@@ -231,21 +245,26 @@ class CardFooter extends LitElement {
   getComments = async (crntSlug) => {
     const url = crntSlug.replace(/\//g, "");
     const apiUrl = `https://elio.dev/api/comments?slug=${url}%2F`;
-    const response = await fetch(apiUrl, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-    });
-    if (!response.ok) return;
 
-    const data = await response.json();
-    if (data && data.count && data.url) {
-      return {
-        count: data.count,
-        url: data.url
+    try {
+      const response = await fetch(apiUrl, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+      });
+      if (!response.ok) return;
+
+      const data = await response.json();
+      if (data && data.count && data.url) {
+        return {
+          count: data.count,
+          url: data.url
+        }
       }
+    } catch (err) {
+      console.error('Error fetching comments:', err);
     }
 
     return;
@@ -402,16 +421,20 @@ class GitHubActions extends LitElement {
   )
 
   getWorkflowStatus = async () => {
-    const response = await fetch("https://elio.dev/api/blog-workflow");
-    if (!response.ok) return;
+    try {
+      const response = await fetch("https://elio.dev/api/blog-workflow");
+      if (!response.ok) return;
 
-    const data = await response.json();
-    if (data && data.name && data.status && data.url) {
-      return {
-        name: data.name,
-        status: data.status,
-        url: data.url
+      const data = await response.json();
+      if (data && data.name && data.status && data.url) {
+        return {
+          name: data.name,
+          status: data.status,
+          url: data.url
+        }
       }
+    } catch (err) {
+      console.error('Error fetching workflow status:', err);
     }
 
     return;
@@ -428,11 +451,11 @@ class GitHubActions extends LitElement {
   render() {
     return this.getDataTask.render({
       pending: () => html ``,
-      complete: (data) => html `
+      complete: (data) => data?.url ? html `
         <a href="${data.url}">
           <img src="https://img.shields.io/badge/${data.status}-ffe45e?style=flat-square&label=${data.name}&labelColor=0e131f" />
         </a>
-      `,
+      ` : html ``,
       error: (err) => html ``
     });
   }
