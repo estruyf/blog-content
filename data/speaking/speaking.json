@@ -3,6 +3,20 @@
     "year": "2026",
     "events": [
       {
+        "session": "The AI chaos beast in your head",
+        "description": "",
+        "date": "2026-10-21",
+        "endDate": "2026-10-21",
+        "event": "Collabdays Belgium",
+        "location": "Affligem, Belgium",
+        "link": "https://belgium.collabdays.org",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
         "session": "WebMCP in SharePoint Framework",
         "description": "",
         "date": "2026-09-03",
