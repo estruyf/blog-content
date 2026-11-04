@@ -5,10 +5,24 @@
       {
         "session": "The AI chaos beast in your head",
         "description": "",
+        "date": "2026-11-12",
+        "endDate": "2026-11-12",
+        "event": "PowerAddictsNL Live",
+        "location": "Utrecht (NL)",
+        "link": "https://www.eventbrite.nl/e/tickets-poweraddictsnl-live-it-rbls-2003199900828",
+        "reporting": {
+          "gde": false,
+          "mvp": false,
+          "github": false
+        }
+      },
+      {
+        "session": "The AI chaos beast in your head",
+        "description": "",
         "date": "2026-10-21",
         "endDate": "2026-10-21",
         "event": "Collabdays Belgium",
-        "location": "Affligem, Belgium",
+        "location": "Affligem (BE)",
         "link": "https://belgium.collabdays.org",
         "reporting": {
           "gde": false,
