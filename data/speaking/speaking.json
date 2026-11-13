@@ -11,9 +11,9 @@
         "location": "Utrecht (NL)",
         "link": "https://www.eventbrite.nl/e/tickets-poweraddictsnl-live-it-rbls-2003199900828",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -25,9 +25,9 @@
         "location": "Affligem (BE)",
         "link": "https://belgium.collabdays.org",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -39,9 +39,9 @@
         "location": "Online",
         "link": "https://www.youtube.com/watch?v=pJjt48qvtP0",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -69,9 +69,9 @@
         "location": "Cologne (DE)",
         "link": "https://cloudsummit.eu/",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -84,9 +84,9 @@
         "location": "Antwerp (BE)",
         "link": "https://techorama.be/",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -99,8 +99,8 @@
         "location": "Antwerp (BE)",
         "link": "https://techorama.be/",
         "reporting": {
-          "gde": false,
-          "mvp": true,
+          "gde": true,
+          "mvp": false,
           "github": true
         }
       },
@@ -119,9 +119,9 @@
         "location": "Antwerp (BE)",
         "link": "https://techorama.be/",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -135,9 +135,9 @@
         "link": "https://www.youtube.com/@devtoolsfm",
         "video": "https://www.youtube.com/watch?v=aaptbf20SJo",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": false,
-          "github": false
+          "github": true
         }
       },
       {
@@ -151,9 +151,9 @@
         "link": "https://www.youtube.com/@studioreklam",
         "video": "https://www.youtube.com/watch?v=Nu23YA2xSv0",
         "reporting": {
-          "gde": false,
+          "gde": true,
           "mvp": true,
-          "github": false
+          "github": true
         }
       }
     ]
